@@ -33,7 +33,7 @@ const WelcomeHeader = () => {
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
       >
         Bienvenue chez <br />
-        <span className="text-gradient-andrew">Andrew</span> ! ⚽
+        <span className="text-gradient-christian">Christian</span> ! 🏎️
       </motion.h1>
 
       <motion.p
@@ -42,7 +42,7 @@ const WelcomeHeader = () => {
         transition={{ delay: 0.6, duration: 0.8 }}
         className="text-2xl text-slate-500 max-w-2xl mx-auto font-medium"
       >
-        Choisis un sport et commence le match ! <span className="inline-block" style={{ transform: 'rotate(-90deg)' }}>👟</span>
+        Choisis ton circuit et lance la course ! 🏁
       </motion.p>
     </motion.div>
   );

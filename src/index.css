@@ -17,30 +17,41 @@
 @layer base {
   :root {
     /* Base colors - Forêt Magique */
-    --background: 130 53% 90%; /* Beige clair #D8F3DC */
-    --foreground: 235 21% 21%; /* Gris foncé #2B2D42 */
+    --background: 130 53% 90%;
+    /* Beige clair #D8F3DC */
+    --foreground: 235 21% 21%;
+    /* Gris foncé #2B2D42 */
 
     /* Vibrant Palette */
-    --primary: 154 40% 29%; /* Vert forêt #2D6A4F */
-    --primary-foreground: 0 0% 100%; /* White text on dark green */
-    
-    --orange: 27 87% 67%; /* Orange terre cuite #F4A261 */
-    --purple: 282 64% 42%; /* Keep purple for concentration or remove if unused? Prompt doesn't specify replacing it, but "Palette 4" implies specific set. I will keep it for now as secondary or specific module color if needed */
-    --green: 150 44% 62%; /* Vert clair #74C69D */
+    --primary: 154 40% 29%;
+    /* Vert forêt #2D6A4F */
+    --primary-foreground: 0 0% 100%;
+    /* White text on dark green */
 
-    --secondary: 150 44% 62%; /* Vert clair as secondary */
+    --orange: 27 87% 67%;
+    /* Orange terre cuite #F4A261 */
+    --purple: 282 64% 42%;
+    /* Keep purple for concentration or remove if unused? Prompt doesn't specify replacing it, but "Palette 4" implies specific set. I will keep it for now as secondary or specific module color if needed */
+    --green: 150 44% 62%;
+    /* Vert clair #74C69D */
+
+    --secondary: 150 44% 62%;
+    /* Vert clair as secondary */
     --secondary-foreground: 235 21% 21%;
 
-    --muted: 130 30% 85%; /* Slightly darker beige */
+    --muted: 130 30% 85%;
+    /* Slightly darker beige */
     --muted-foreground: 235 21% 30%;
 
-    --accent: 27 87% 67%; /* Orange terre cuite */
+    --accent: 27 87% 67%;
+    /* Orange terre cuite */
     --accent-foreground: 235 21% 21%;
 
     --destructive: 0 85% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 154 20% 80%; /* Greenish border */
+    --border: 154 20% 80%;
+    /* Greenish border */
     --input: 154 20% 80%;
     --ring: 154 40% 29%;
 
@@ -55,7 +66,8 @@
     --gradient-main: linear-gradient(135deg, #D8F3DC 0%, #FFFFFF 100%);
     --gradient-orthographe: linear-gradient(180deg, #74C69D 0%, #2D6A4F 100%);
     --gradient-maths: linear-gradient(180deg, #F4A261 0%, #E76F51 100%);
-    --gradient-concentration: linear-gradient(180deg, #9C27B0 0%, #6A1B9A 100%); /* Keep concentration purple for now */
+    --gradient-concentration: linear-gradient(180deg, #9C27B0 0%, #6A1B9A 100%);
+    /* Keep concentration purple for now */
     --gradient-background: linear-gradient(135deg, #D8F3DC 0%, #F0FFF4 100%);
   }
 }
@@ -140,7 +152,7 @@
     }
   }
 
-  .text-gradient-andrew {
+  .text-gradient-christian {
     background: linear-gradient(to right, #FF8A00, #9C27B0);
     -webkit-background-clip: text;
     background-clip: text;

@@ -110,7 +110,7 @@ export const StudentHomePage = ({
                         <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-6 backdrop-blur-sm shadow-inner">
                             <BookOpen className="w-10 h-10 text-white" />
                         </div>
-                        <h3 className="text-white text-5xl font-extrabold mb-2 tracking-wide drop-shadow-md">Étude de texte</h3>
+                        <h3 className="text-white text-5xl font-extrabold mb-2 tracking-wide drop-shadow-md">Études de texte</h3>
                     </div>
                 </div>
 

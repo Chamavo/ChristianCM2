@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Pencil, Calculator, Brain, Sparkles } from "lucide-react";
+import { Pencil, Calculator, Languages, Sparkles } from "lucide-react";
 import FloatingBubbles from "@/components/FloatingBubbles";
 import WelcomeHeader from "@/components/WelcomeHeader";
 import ModuleButton from "@/components/ModuleButton";
@@ -51,13 +51,13 @@ const Index = () => {
             />
 
             <ModuleButton
-              icon={Brain}
-              title="Concentration"
-              subtitle="Force de l'esprit"
+              icon={Languages}
+              title="Anglais"
+              subtitle="Le monde vous attend"
               variant="concentration"
               delay={0.7}
-              to="/concentration"
-              inactive={false}
+              to="/anglais"
+              inactive={true}
             />
           </motion.div>
 

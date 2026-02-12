@@ -89,7 +89,7 @@ const ProblemesDashboard: React.FC<ProblemesDashboardProps> = ({ onSelectProblem
                     >
                         ← Retour
                     </button>
-                    <h1 className="text-3xl font-black text-slate-800">150 Problèmes</h1>
+                    <h1 className="text-3xl font-black text-slate-800">150 Problèmes au CM2</h1>
                 </div>
 
                 {renderGrid(part1, "Partie 1 : Début d'année", "text-blue-600")}

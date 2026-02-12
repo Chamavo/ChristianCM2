@@ -3,12 +3,11 @@ import { toast } from 'sonner';
 import { ProgressionView } from '@/components/orthographe/ProgressionView';
 import { StudentHomePage } from '@/components/orthographe/StudentHomePage';
 import { DicteeModule } from '@/components/orthographe/DicteeModule';
-import { RedactionModule } from '@/components/orthographe/RedactionModule';
 import { EtudeTexteModule } from '@/components/orthographe/EtudeTexteModule';
 import { useProgress } from '@/hooks/useProgress';
 import { useNavigate } from 'react-router-dom';
 
-type View = 'home' | 'progression' | 'dictee' | 'etude' | 'orthographe' | 'redaction';
+type View = 'home' | 'progression' | 'dictee' | 'etude' | 'orthographe';
 
 const FrancaisPage = () => {
     const [view, setView] = useState<View>('home');

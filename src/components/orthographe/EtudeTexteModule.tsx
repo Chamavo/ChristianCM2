@@ -124,8 +124,8 @@ export const EtudeTexteModule = ({ onBack }: EtudeTexteModuleProps) => {
 
                                         {correctionData && (
                                             <div className={`mt-4 p-5 rounded-2xl border-2 animate-in fade-in slide-in-from-top-2 duration-500 ${correctionData.find(c => c.id === q.id)?.status === 'correct' ? 'bg-emerald-50 border-emerald-100 text-emerald-900' :
-                                                    correctionData.find(c => c.id === q.id)?.status === 'partial' ? 'bg-amber-50 border-amber-100 text-amber-900' :
-                                                        'bg-rose-50 border-rose-100 text-rose-900'
+                                                correctionData.find(c => c.id === q.id)?.status === 'partial' ? 'bg-amber-50 border-amber-100 text-amber-900' :
+                                                    'bg-rose-50 border-rose-100 text-rose-900'
                                                 }`}>
                                                 <div className="flex items-start gap-4">
                                                     <div className="mt-1">
@@ -232,7 +232,7 @@ export const EtudeTexteModule = ({ onBack }: EtudeTexteModuleProps) => {
                     <Button onClick={onBack} variant="outline" size="lg">
                         <ArrowLeft className="mr-2 h-5 w-5" /> Retour
                     </Button>
-                    <h1 className="text-3xl font-bold text-slate-900">Étude de texte</h1>
+                    <h1 className="text-3xl font-bold text-slate-900">Études de texte</h1>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

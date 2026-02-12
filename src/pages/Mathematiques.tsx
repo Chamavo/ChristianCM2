@@ -179,7 +179,7 @@ const Mathematiques: React.FC = () => {
                                     <BookOpen className="w-12 h-12 text-white" />
                                 </div>
                                 <div>
-                                    <h2 className="text-3xl font-black text-white mb-1">150 problèmes de CM1</h2>
+                                    <h2 className="text-3xl font-black text-white mb-1">150 problèmes au CM2</h2>
                                     <p className="text-purple-100 font-medium text-lg">Raisonnement • Logique • Enigmes</p>
                                 </div>
                             </div>
