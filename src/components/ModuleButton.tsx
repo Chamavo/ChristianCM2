@@ -50,18 +50,19 @@ const ModuleButton = ({ to, icon: Icon, title, subtitle, variant, delay = 0, ina
     <div
       className={`
         relative overflow-hidden rounded-[32px] p-10 flex flex-col items-center justify-center gap-6 
-        text-white min-h-[260px] md:min-h-[300px] bg-gradient-to-b ${variantStyles[variant].gradient} 
+        text-white min-h-[260px] md:min-h-[300px] 
+        ${variant === 'english' ? 'bg-union-jack' : `bg-gradient-to-b ${variantStyles[variant].gradient}`} 
         ${variantStyles[variant].shadow} transition-all duration-300 border-[6px] ${variantStyles[variant].border}
-        ${inactive ? 'opacity-60 cursor-not-allowed grayscale-[0.3]' : 'hover:brightness-110 active:scale-[0.98]'}
+        ${inactive ? (variant === 'english' ? 'opacity-80 cursor-not-allowed' : 'opacity-60 cursor-not-allowed grayscale-[0.3]') : 'hover:brightness-110 active:scale-[0.98]'}
         group shimmer
       `}
       style={{
-        boxShadow: !inactive ? `
+        boxShadow: `
           0 15px 35px rgba(0,0,0,0.15),
           0 10px 0 ${variant === 'orthographe' ? '#CC6E00' : variant === 'maths' ? '#1D5CC2' : variant === 'concentration' ? '#7B1FA2' : variant === 'english' ? '#011649' : '#64748b'},
           inset 0 -8px 0 rgba(0,0,0,0.1),
           inset 0 8px 0 rgba(255,255,255,0.2)
-        ` : undefined
+        `
       }}
     >
       <motion.div
@@ -80,8 +81,8 @@ const ModuleButton = ({ to, icon: Icon, title, subtitle, variant, delay = 0, ina
         )}
       </div>
 
-      {/* Glossy overlay effect */}
-      <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
+      {/* Glossy overlay effect - reduced opacity for english to see flag better */}
+      <div className={`absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/${variant === 'english' ? '5' : '10'} to-transparent pointer-events-none`} />
     </div>
   );
 
