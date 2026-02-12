@@ -1,16 +1,27 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ArrowLeft, BookOpen, Send, CheckCircle2, AlertCircle, Sparkles, CheckCircle, XCircle, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
-import { etudeTexteData, TextStudy } from '@/data/etudeTexteData';
+import { type TextStudy } from '@/data/etudeTexteData';
 
 interface EtudeTexteModuleProps {
     onBack: () => void;
 }
 
 export const EtudeTexteModule = ({ onBack }: EtudeTexteModuleProps) => {
+    const [texts, setTexts] = useState<TextStudy[]>([]);
+    const [isLoading, setIsLoading] = useState(true);
     const [selectedText, setSelectedText] = useState<TextStudy | null>(null);
+
+    useEffect(() => {
+        const load = async () => {
+            const data = await import('@/data/etudeTexteData');
+            setTexts(data.etudeTexteData);
+            setIsLoading(false);
+        };
+        load();
+    }, []);
     const [answers, setAnswers] = useState<Record<number, string>>({});
     const [correctionData, setCorrectionData] = useState<{
         id: number;
@@ -225,6 +236,14 @@ export const EtudeTexteModule = ({ onBack }: EtudeTexteModuleProps) => {
         );
     }
 
+    if (isLoading) {
+        return (
+            <div className="min-h-screen bg-slate-50 flex items-center justify-center">
+                <p className="text-slate-400 font-medium">Chargement des textes...</p>
+            </div>
+        );
+    }
+
     return (
         <div className="min-h-screen bg-slate-50 p-4 md:p-8">
             <div className="max-w-6xl mx-auto">
@@ -236,7 +255,7 @@ export const EtudeTexteModule = ({ onBack }: EtudeTexteModuleProps) => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {etudeTexteData.map((text) => (
+                    {texts.map((text) => (
                         <div
                             key={text.id}
                             onClick={() => setSelectedText(text)}

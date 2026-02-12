@@ -1,6 +1,3 @@
-
-import problemsData from '../../data/maths/problems150.json';
-
 export interface MathProblem {
     id: number;
     title: string;
@@ -14,19 +11,35 @@ export interface MathProblem {
     }[];
 }
 
-const problemsMap = new Map<number, MathProblem>();
-problemsData.forEach((p: any) => {
-    problemsMap.set(p.id, p);
-});
+let problemsData: MathProblem[] = [];
+let problemsMap = new Map<number, MathProblem>();
+let isLoaded = false;
+
+async function ensureLoaded() {
+    if (isLoaded) return;
+    const data = await import('../../data/maths/problems150.json');
+    problemsData = data.default as MathProblem[];
+    problemsData.forEach((p) => {
+        problemsMap.set(p.id, p);
+    });
+    isLoaded = true;
+}
 
 export const TOTAL_PROBLEMS = 200;
 
 export const getProblem = (id: number): MathProblem | null => {
+    // Note: This remains synchronous for UI compatibility, 
+    // but the data should be pre-loaded by the dashboard
     return problemsMap.get(id) || null;
 };
 
-export const getAllProblems = (): MathProblem[] => {
-    return problemsData as MathProblem[];
+export const getAllProblems = async (): Promise<MathProblem[]> => {
+    await ensureLoaded();
+    return problemsData;
+};
+
+export const prefetchProblems = async () => {
+    await ensureLoaded();
 };
 
 export const getProblemStatus = (id: number): 'locked' | 'unlocked' | 'solved' => {

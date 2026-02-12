@@ -42,8 +42,8 @@ const Mathematiques: React.FC = () => {
     }, [username]);
 
     // --- Calcul Logic ---
-    const handleStartLevel = (lvl: number) => {
-        const newExercises = generateLevelExercises(lvl);
+    const handleStartLevel = async (lvl: number) => {
+        const newExercises = await generateLevelExercises(lvl);
         // Ensure we limit to 10 questions if generator returns more
         const sessionExercises = newExercises.slice(0, 10);
 

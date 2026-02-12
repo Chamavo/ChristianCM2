@@ -10,9 +10,20 @@ interface ProblemesDashboardProps {
 }
 
 const ProblemesDashboard: React.FC<ProblemesDashboardProps> = ({ onSelectProblem, onBack }) => {
+    const [problems, setProblems] = React.useState<any[]>([]);
+    const [isLoading, setIsLoading] = React.useState(true);
+
+    React.useEffect(() => {
+        const load = async () => {
+            const data = await getAllProblems();
+            setProblems(data);
+            setIsLoading(false);
+        };
+        load();
+    }, []);
+
     // Generate 1 to 150
     const allIds = Array.from({ length: TOTAL_PROBLEMS }, (_, i) => i + 1);
-    const problems = getAllProblems();
 
     // Group by parts
     const part1 = allIds.filter(id => id <= 50);

@@ -1,5 +1,18 @@
-import { getExercisesForLevel, StructuredExercise } from '@/data/maths/structuredExercises';
-import { mentalMathQuestions } from '@/data/maths/mentalMathQuestions';
+let structuredExercisesData: any = null;
+let mentalMathQuestionsData: any[] = [];
+let isDataLoaded = false;
+
+const ensureDataLoaded = async () => {
+    if (isDataLoaded) return;
+    const [structured, mental] = await Promise.all([
+        import('@/data/maths/structuredExercises'),
+        import('@/data/maths/mentalMathQuestions')
+    ]);
+    structuredExercisesData = structured;
+    mentalMathQuestionsData = mental.mentalMathQuestions;
+    isDataLoaded = true;
+};
+
 import { parseFraction } from './fractionUtils';
 import { numberToFrench, intToWords } from './numberToFrench';
 
@@ -44,7 +57,7 @@ export const generateChoices = (correctAnswer: number): number[] => {
     return choices.sort(() => Math.random() - 0.5);
 };
 
-const convertToExercise = (structured: StructuredExercise, level: number): Exercise => {
+const convertToExercise = (structured: any, level: number): Exercise => {
     const answer = parseAnswer(structured.reponse);
     return {
         id: generateId(),
@@ -373,9 +386,11 @@ const convertMentalToExercise = (mmq: any): Exercise => {
     };
 };
 
-export const generateLevelExercises = (level: number): Exercise[] => {
+export const generateLevelExercises = async (level: number): Promise<Exercise[]> => {
+    await ensureDataLoaded();
+
     // 1. Try MentalMathQuestions (MathsEnLigne source)
-    const mentalQuestions = mentalMathQuestions.filter(q => q.level === level);
+    const mentalQuestions = mentalMathQuestionsData.filter(q => q.level === level);
 
     if (mentalQuestions.length >= 10) {
         // Shuffle and pick 10
@@ -384,9 +399,9 @@ export const generateLevelExercises = (level: number): Exercise[] => {
     }
 
     // 2. Fallback to StructuredExercises (CM1 legacy)
-    const structured = getExercisesForLevel(level);
+    const structured = structuredExercisesData.getExercisesForLevel(level);
     if (structured.length > 0) {
-        const converted = structured.map(s => convertToExercise(s, level));
+        const converted = structured.map((s: any) => convertToExercise(s, level));
         if (converted.length >= 10) return converted;
 
         // precise fallback
