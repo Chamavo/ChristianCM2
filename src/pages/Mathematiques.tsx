@@ -31,7 +31,7 @@ const Mathematiques: React.FC = () => {
     // Problemes State
     const [selectedProblem, setSelectedProblem] = useState<MathProblem | null>(null);
 
-    const [username] = useState('Andrew'); // Hardcoded based on current session logic
+    const [username] = useState('Christian'); // Christian hardcoded based on current session logic
 
     useEffect(() => {
         const loadLevel = async () => {
