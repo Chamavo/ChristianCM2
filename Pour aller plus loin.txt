@@ -1,0 +1,571 @@
+
+
+# 📘 EXERCICES 151 À 200 – CM2
+
+---
+
+## 🔵 PARTAGES INÉGAUX (151–155)
+
+---
+
+### **Exercice 151**
+
+Trois amis, Paul, Hugo et Lucas, se partagent 72 000 €.
+Paul reçoit le double de la somme reçue par Hugo.
+Lucas reçoit 8 000 € de plus que Hugo.
+
+**Question : Quelle somme reçoit chacun ?**
+
+**Solution :**
+72 000 – 8 000 = 64 000
+64 000 ÷ 4 = 16 000
+
+Hugo : 16 000 €
+Paul : 32 000 €
+Lucas : 24 000 €
+
+---
+
+### **Exercice 152**
+
+Une somme de 150 000 € est partagée entre Emma et Léa.
+Emma reçoit le triple de Léa.
+
+**Question : Calcule la part de chacune.**
+
+150 000 ÷ 4 = 37 500
+
+Léa : 37 500 €
+Emma : 112 500 €
+
+---
+
+### **Exercice 153**
+
+Une prime de 90 000 € est partagée entre trois employés.
+Le premier reçoit le double du deuxième.
+Le troisième reçoit 10 000 € de moins que le deuxième.
+
+**Question : Quelle somme reçoit chacun ?**
+
+90 000 + 10 000 = 100 000
+100 000 ÷ 4 = 25 000
+
+Premier : 50 000 €
+Deuxième : 25 000 €
+Troisième : 15 000 €
+
+---
+
+### **Exercice 154**
+
+Un père partage 60 000 € entre ses deux enfants.
+L’aîné reçoit 15 000 € de plus que le cadet.
+
+**Question : Quelle somme reçoit chacun ?**
+
+60 000 – 15 000 = 45 000
+45 000 ÷ 2 = 22 500
+
+Cadet : 22 500 €
+Aîné : 37 500 €
+
+---
+
+### **Exercice 155**
+
+84 000 € sont partagés entre trois personnes.
+La deuxième reçoit le double de la première.
+La troisième reçoit le triple de la première.
+
+**Question : Quelle somme reçoit chacun ?**
+
+84 000 ÷ 6 = 14 000
+
+Première : 14 000 €
+Deuxième : 28 000 €
+Troisième : 42 000 €
+
+---
+
+## 🔵 TEMPS – VITESSE – DISTANCE (156–160)
+
+---
+
+### **Exercice 156**
+
+Une voiture roule à 80 km/h pendant 3 heures.
+
+**Question : Quelle distance parcourt-elle ?**
+
+80 × 3 = 240 km
+
+---
+
+### **Exercice 157**
+
+Un cycliste parcourt 90 km en 3 heures.
+
+**Question : Quelle est sa vitesse moyenne ?**
+
+90 ÷ 3 = 30 km/h
+
+---
+
+### **Exercice 158**
+
+Un train roule à 120 km/h pendant 2 h 30 min.
+
+**Question : Quelle distance parcourt-il ?**
+
+2,5 h
+120 × 2,5 = 300 km
+
+---
+
+### **Exercice 159**
+
+Un marcheur avance à 5 km/h pendant 1 h 30 min.
+
+**Question : Quelle distance parcourt-il ?**
+
+1,5 h
+5 × 1,5 = 7,5 km
+
+---
+
+### **Exercice 160**
+
+Un camion parcourt 360 km à 90 km/h.
+
+**Question : Combien d’heures met-il ?**
+
+360 ÷ 90 = 4 h
+
+---
+
+## 🔵 MESURES AGRAIRES (161–168)
+
+---
+
+### **Exercice 161**
+
+Un champ mesure 3 hectares.
+
+**Question : Quelle est sa superficie en m² ?**
+
+3 × 10 000 = 30 000 m²
+
+---
+
+### **Exercice 162**
+
+Un terrain mesure 5 000 m².
+
+**Question : Exprime cette superficie en hectares.**
+
+5 000 ÷ 10 000 = 0,5 ha
+
+---
+
+### **Exercice 163**
+
+Un agriculteur possède 2 ha et 50 ares.
+
+**Question : Quelle est la superficie totale en m² ?**
+
+20 000 + 5 000 = 25 000 m²
+
+---
+
+### **Exercice 164**
+
+Un champ de 4 ha est partagé en 8 parcelles égales.
+
+**Question : Quelle est la superficie d’une parcelle ?**
+
+40 000 ÷ 8 = 5 000 m²
+
+---
+
+### **Exercice 165**
+
+Un terrain rectangulaire mesure 200 m sur 150 m.
+
+**Question : Calcule son aire en m² puis en hectares.**
+
+200 × 150 = 30 000 m²
+30 000 ÷ 10 000 = 3 ha
+
+---
+
+### **Exercice 166**
+
+Un agriculteur possède 3 ha et vend 1,5 ha.
+
+**Question : Quelle superficie lui reste-t-il ?**
+
+3 – 1,5 = 1,5 ha
+= 15 000 m²
+
+---
+
+### **Exercice 167**
+
+Un champ mesure 25 000 m².
+
+**Question : Exprime cette superficie en hectares.**
+
+25 000 ÷ 10 000 = 2,5 ha
+
+---
+
+### **Exercice 168**
+
+Un terrain de 6 ha est partagé en 3 parts égales.
+
+**Question : Quelle est la superficie d’une part en hectares et en m² ?**
+
+6 ÷ 3 = 2 ha
+= 20 000 m²
+
+---
+
+## 🔵 CAPACITÉS (169–176)
+
+---
+
+### **Exercice 169**
+
+Un bidon contient 5 L.
+
+**Question : Exprime en mL.**
+
+5 000 mL
+
+---
+
+### **Exercice 170**
+
+Une citerne contient 2 500 L. On retire 750 L.
+
+**Question : Quelle quantité reste-t-il ?**
+
+1 750 L
+
+---
+
+### **Exercice 171**
+
+3 citernes contiennent chacune 1 200 L.
+
+**Question : Quelle quantité totale ?**
+
+3 600 L
+
+---
+
+### **Exercice 172**
+
+Une cuve de 4 000 L est remplie aux 3/4.
+
+**Question : Quelle quantité contient-elle ?**
+
+3 000 L
+
+---
+
+### **Exercice 173**
+
+On verse 250 mL dans 12 bouteilles.
+
+**Question : Quelle quantité totale en litres ?**
+
+3 L
+
+---
+
+### **Exercice 174**
+
+Un réservoir contient 6 L 500 mL.
+
+**Question : Exprime en mL.**
+
+6 500 mL
+
+---
+
+### **Exercice 175**
+
+Un camion transporte 2 000 L d’eau.
+Il livre 650 L.
+
+**Question : Quelle quantité reste-t-il ?**
+
+1 350 L
+
+---
+
+### **Exercice 176**
+
+Une citerne contient 3 500 L.
+On ajoute 1 500 L.
+
+**Question : Quelle est la capacité totale ?**
+
+5 000 L
+
+---
+
+## 🔵 BÉNÉFICES – POURCENTAGES – INTÉRÊTS (177–200)
+
+---
+
+### **Exercice 177**
+
+Un commerçant achète 200 cahiers à 3 € et les revend 5 €.
+
+**Question : Quel est son bénéfice ?**
+
+Achat : 600 €
+Vente : 1 000 €
+Bénéfice : 400 €
+
+---
+
+### **Exercice 178**
+
+Un capital de 500 000 € est placé à 5 % pendant 1 an.
+
+**Question : Quel est le montant des intérêts ?**
+
+25 000 €
+
+---
+
+### **Exercice 179**
+
+10 % de 2 500 élèves participent à une sortie.
+
+**Question : Combien d’élèves participent ?**
+
+250 élèves
+
+---
+
+### **Exercice 180**
+
+Un agriculteur vend 1 000 poulets à 3 000 €.
+5 % meurent avant la vente.
+
+**Question : Combien en vend-il ?**
+
+5 % de 1 000 = 50
+1 000 – 50 = 950
+
+---
+
+### **Exercice 181**
+
+Un capital de 2 000 000 € est placé à 4 %.
+
+**Question : Quel est l’intérêt annuel ?**
+
+80 000 €
+
+---
+
+### **Exercice 182**
+
+25 % de 2 400 élèves sont des filles.
+
+**Question : Combien y a-t-il de filles ?**
+
+600
+
+---
+
+### **Exercice 183**
+
+Un objet coûte 50 000 €.
+Il subit une réduction de 10 %.
+
+**Question : Quel est le nouveau prix ?**
+
+Réduction : 5 000 €
+Prix final : 45 000 €
+
+---
+
+### **Exercice 184**
+
+Un marchand achète 300 kg de riz à 400 € le kg et revend à 550 €.
+
+**Question : Quel est son bénéfice ?**
+
+45 000 €
+
+---
+
+### **Exercice 185**
+
+15 % de 800 arbres sont malades.
+
+**Question : Combien d’arbres sont malades ?**
+
+120
+
+---
+
+### **Exercice 186**
+
+Un capital de 1 200 000 € est placé à 3 %.
+
+**Question : Quel est l’intérêt ?**
+
+36 000 €
+
+---
+
+### **Exercice 187**
+
+Un libraire achète 200 livres à 8 € et les revend 12 €.
+
+**Question : Quel est le bénéfice ?**
+
+800 €
+
+---
+
+### **Exercice 188**
+
+Un agriculteur vend 2 000 melons à 1 500 €.
+
+**Question : Quelle est la recette totale ?**
+
+3 000 000 €
+
+---
+
+### **Exercice 189**
+
+Une école vend 800 tickets à 250 €.
+
+**Question : Quelle est la recette totale ?**
+
+200 000 €
+
+---
+
+### **Exercice 190**
+
+Un commerçant perd 10 % sur 50 000 €.
+
+**Question : Quelle est la perte ?**
+
+5 000 €
+
+---
+
+### **Exercice 191**
+
+5 % de 600 arbres sont coupés.
+
+**Question : Combien sont coupés ?**
+
+30
+
+---
+
+### **Exercice 192**
+
+Un capital de 1 300 000 € est placé à 6 %.
+
+**Question : Quel est l’intérêt ?**
+
+78 000 €
+
+---
+
+### **Exercice 193**
+
+400 cahiers à 3 € sont vendus 5 €.
+
+**Question : Quel est le bénéfice ?**
+
+800 €
+
+---
+
+### **Exercice 194**
+
+Un terrain vaut 200 000 €.
+Il augmente de 10 %.
+
+**Question : Quel est le nouveau prix ?**
+
+220 000 €
+
+---
+
+### **Exercice 195**
+
+75 % de 4 000 L d’eau sont utilisés.
+
+**Question : Quelle quantité est utilisée ?**
+
+3 000 L
+
+---
+
+### **Exercice 196**
+
+Un capital de 600 000 € placé à 2 %.
+
+**Question : Quel est l’intérêt ?**
+
+12 000 €
+
+---
+
+### **Exercice 197**
+
+Une entreprise gagne 300 000 € et dépense 250 000 €.
+
+**Question : Quel est le bénéfice ?**
+
+50 000 €
+
+---
+
+### **Exercice 198**
+
+Une réduction de 20 % est appliquée sur 40 000 €.
+
+**Question : Quel est le montant de la réduction ?**
+
+8 000 €
+
+---
+
+### **Exercice 199**
+
+Un magasin vend 500 articles à 2 000 €.
+
+**Question : Quelle est la recette ?**
+
+1 000 000 €
+
+---
+
+### **Exercice 200**
+
+Un agriculteur vend 2 000 melons à 1 500 €.
+Ses dépenses sont de 2 400 000 €.
+
+**Question : Quel est son bénéfice ?**
+
+Recette : 3 000 000 €
+Bénéfice : 600 000 €
+
+-

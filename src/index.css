@@ -1,0 +1,182 @@
+@import '@fontsource/nunito/400.css';
+@import '@fontsource/nunito/600.css';
+@import '@fontsource/nunito/700.css';
+@import '@fontsource/nunito/800.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Espace de Travail Andrew - Design System
+   Inspired by Maître Lucas: bright, high-contrast, playful educational colors
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base colors - Forêt Magique */
+    --background: 130 53% 90%; /* Beige clair #D8F3DC */
+    --foreground: 235 21% 21%; /* Gris foncé #2B2D42 */
+
+    /* Vibrant Palette */
+    --primary: 154 40% 29%; /* Vert forêt #2D6A4F */
+    --primary-foreground: 0 0% 100%; /* White text on dark green */
+    
+    --orange: 27 87% 67%; /* Orange terre cuite #F4A261 */
+    --purple: 282 64% 42%; /* Keep purple for concentration or remove if unused? Prompt doesn't specify replacing it, but "Palette 4" implies specific set. I will keep it for now as secondary or specific module color if needed */
+    --green: 150 44% 62%; /* Vert clair #74C69D */
+
+    --secondary: 150 44% 62%; /* Vert clair as secondary */
+    --secondary-foreground: 235 21% 21%;
+
+    --muted: 130 30% 85%; /* Slightly darker beige */
+    --muted-foreground: 235 21% 30%;
+
+    --accent: 27 87% 67%; /* Orange terre cuite */
+    --accent-foreground: 235 21% 21%;
+
+    --destructive: 0 85% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 154 20% 80%; /* Greenish border */
+    --input: 154 20% 80%;
+    --ring: 154 40% 29%;
+
+    --radius: 1.5rem;
+
+    /* 3D Effects */
+    --shadow-3d: 0 15px 35px rgba(45, 106, 79, 0.15);
+    --shadow-button-3d: 0 6px 0 rgba(43, 45, 66, 0.2), 0 8px 15px rgba(45, 106, 79, 0.2);
+    --shadow-button-pressed: 0 2px 0 rgba(43, 45, 66, 0.2);
+
+    /* Gradients */
+    --gradient-main: linear-gradient(135deg, #D8F3DC 0%, #FFFFFF 100%);
+    --gradient-orthographe: linear-gradient(180deg, #74C69D 0%, #2D6A4F 100%);
+    --gradient-maths: linear-gradient(180deg, #F4A261 0%, #E76F51 100%);
+    --gradient-concentration: linear-gradient(180deg, #9C27B0 0%, #6A1B9A 100%); /* Keep concentration purple for now */
+    --gradient-background: linear-gradient(135deg, #D8F3DC 0%, #F0FFF4 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: 'Nunito', system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: var(--gradient-background);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .btn-3d {
+    @apply relative transition-all duration-200 active:translate-y-[4px];
+    box-shadow: var(--shadow-button-3d);
+  }
+
+  .btn-3d:active {
+    box-shadow: var(--shadow-button-pressed);
+  }
+
+  .floating-icon {
+    animation: floating 3s ease-in-out infinite;
+  }
+
+  @keyframes floating {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shimmer::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -150%;
+    /* Start off-screen */
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(to bottom right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.1) 40%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0.1) 60%,
+        rgba(255, 255, 255, 0) 100%);
+    transform: rotate(45deg);
+    pointer-events: none;
+  }
+
+  /* Trigger shimmer on group hover */
+  .group:hover.shimmer::after {
+    animation: shimmer 1.5s ease-out;
+  }
+
+  @keyframes shimmer {
+    0% {
+      left: -150%;
+    }
+
+    100% {
+      left: 150%;
+    }
+  }
+
+  .text-gradient-andrew {
+    background: linear-gradient(to right, #FF8A00, #9C27B0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-bg {
+    background: var(--gradient-background);
+  }
+
+  .kumon-shape {
+    @apply absolute rounded-full opacity-10 pointer-events-none;
+    filter: blur(40px);
+  }
+
+  .kumon-shape-1 {
+    width: 300px;
+    height: 300px;
+    background: hsl(var(--orange));
+    top: -100px;
+    left: -100px;
+  }
+
+  .kumon-shape-2 {
+    width: 400px;
+    height: 400px;
+    background: hsl(var(--primary));
+    bottom: -150px;
+    right: -100px;
+  }
+
+  .kumon-shape-3 {
+    width: 250px;
+    height: 250px;
+    background: hsl(var(--purple));
+    top: 20%;
+    right: 5%;
+  }
+}

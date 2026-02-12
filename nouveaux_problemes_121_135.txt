@@ -1,0 +1,171 @@
+## **121**
+
+Un film commence à 14 h 30 et se termine à 16 h 15.
+Quelle est la durée du film ?
+
+**Réponse :**
+16h15 - 14h30 = 1h45
+Durée = **1 h 45 min**
+
+---
+
+## **122**
+
+Un train part de Paris à 8 h 55 et arrive à Lyon à 11 h 05.
+Combien de temps a duré le voyage ?
+
+**Réponse :**
+De 8h55 à 9h00 = 5 min
+De 9h00 à 11h00 = 2 h
+De 11h00 à 11h05 = 5 min
+Total = **2 h 10 min**
+
+---
+
+## **123**
+
+Une voiture roule à une vitesse constante de 85 km/h.
+Quelle distance parcourt-elle en 3 heures ?
+
+**Réponse :**
+3 × 85 = 255
+Distance = **255 km**
+
+---
+
+## **124**
+
+Un cycliste parcourt 60 km en 4 heures.
+Quelle est sa vitesse moyenne en km/h ?
+
+**Réponse :**
+60 ÷ 4 = 15
+Vitesse = **15 km/h**
+
+---
+
+## **125**
+
+Pour faire un gâteau pour 4 personnes, il faut 200 g de farine.
+Combien de farine faut-il pour 10 personnes ?
+
+**Réponse :**
+Pour 2 personnes : 100 g
+Pour 10 personnes : 5 × 100 = 500
+Quantité = **500 g**
+
+---
+
+## **126**
+
+3 kg d'oranges coûtent 450 F.
+Quel est le prix de 7 kg d'oranges ?
+
+**Réponse :**
+1 kg = 450 ÷ 3 = 150 F
+7 kg = 150 × 7 = 1050
+Prix = **1 050 F**
+
+---
+
+## **127**
+
+Sur un plan à l'échelle 1/50, un couloir mesure 6 cm. Quelle est sa longueur réelle en mètres ?
+
+**Réponse :**
+6 × 50 = 300 cm = 3 m
+Longueur = **3 m**
+
+---
+
+## **128**
+
+On partage équitablement une bouteille de 150 cl de jus de fruits entre 6 verres.
+Quelle quantité de jus y a-t-il dans chaque verre ?
+
+**Réponse :**
+150 ÷ 6 = 25
+Quantité = **25 cl**
+
+---
+
+## **129**
+
+Dans une classe de 30 élèves, les 2/3 sont des garçons.
+Combien y a-t-il de garçons ?
+
+**Réponse :**
+(30 ÷ 3) × 2 = 10 × 2 = 20
+Nombre de garçons = **20**
+
+---
+
+## **130**
+
+J'ai acheté un pantalon à 4 000 F.
+Le commerçant me fait une remise de 10 %.
+Quel est le montant de la remise ?
+Combiens dois-je payer ?
+
+**Réponse :**
+10 % de 4 000 = 400
+Remise = **400 F**
+
+Je dois payer 4000F - 400F = **3600F**
+----
+
+## **131**
+
+Un réservoir contient 500 litres d'eau. Il est rempli à 50 %.
+Quelle est la capacité totale du réservoir ?
+
+**Réponse :**
+50 % = la moitié
+Total = 500 × 2 = 1000
+Capacité = **1 000 L**
+
+---
+
+## **132**
+
+Un jardin rectangulaire mesure 25 m de long et 12 m de large.
+On veut poser une clôture tout autour. Quelle longueur de clôture faut-il ?
+
+**Réponse :**
+Périmètre = (25 + 12) × 2 = 37 × 2 = 74
+Longueur = **74 m**
+
+---
+
+## **133**
+
+Quelle est l'aire du jardin de l'exercice précédent (25 m sur 12 m) ?
+
+**Réponse :**
+Aire = 25 × 12 = 300
+Aire = **300 m²**
+
+---
+
+## **134**
+
+Une boîte a la forme d'un pavé droit. Elle mesure 10 cm de long, 5 cm de large et 4 cm de haut.
+Quel est son volume ?
+
+**Réponse :**
+Volume = 10 × 5 × 4 = 200
+Volume = **200 cm³**
+
+---
+
+## **135**
+
+Voici une suite logique de nombres : 2 - 5 - 11 - 23 - ...
+Quel est le nombre suivant ?
+
+**Réponse :**
+(2 × 2) + 1 = 5
+(5 × 2) + 1 = 11
+(11 × 2) + 1 = 23
+(23 × 2) + 1 = 47
+Nombre = **47**
