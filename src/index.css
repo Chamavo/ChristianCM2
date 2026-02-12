@@ -192,19 +192,4 @@
     right: 5%;
   }
 
-  .bg-union-jack {
-    background:
-      /* St George's Cross (Red) */
-      linear-gradient(90deg, transparent 46%, #C8102E 46%, #C8102E 54%, transparent 54%),
-      linear-gradient(0deg, transparent 42%, #C8102E 42%, #C8102E 58%, transparent 58%),
-      /* White background for St George */
-      linear-gradient(90deg, transparent 42%, #FFFFFF 42%, #FFFFFF 58%, transparent 58%),
-      linear-gradient(0deg, transparent 38%, #FFFFFF 38%, #FFFFFF 62%, transparent 62%),
-      /* St Andrew's Cross (White Diagonals) */
-      linear-gradient(30deg, transparent 40%, #FFFFFF 40%, #FFFFFF 60%, transparent 60%),
-      linear-gradient(-30deg, transparent 40%, #FFFFFF 40%, #FFFFFF 60%, transparent 60%),
-      /* Base Blue */
-      #012169;
-    background-size: 100% 100%;
-  }
 }
