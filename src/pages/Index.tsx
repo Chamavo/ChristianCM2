@@ -52,9 +52,9 @@ const Index = () => {
 
             <ModuleButton
               icon={Languages}
-              title="Anglais"
-              subtitle="Le monde vous attend"
-              variant="concentration"
+              title="English"
+              subtitle="The world awaits you"
+              variant="english"
               delay={0.7}
               to="/anglais"
               inactive={true}

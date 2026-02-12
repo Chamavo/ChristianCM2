@@ -7,7 +7,7 @@ interface ModuleButtonProps {
   icon: LucideIcon;
   title: string;
   subtitle: string;
-  variant: "orthographe" | "maths" | "concentration" | "soon";
+  variant: "orthographe" | "maths" | "concentration" | "soon" | "english";
   delay?: number;
   inactive?: boolean;
 }
@@ -36,6 +36,12 @@ const variantStyles = {
     shadow: "shadow-[0_20px_50px_-12px_rgba(30,41,59,0.5)]",
     border: "border-slate-500",
     iconBg: "bg-white/10",
+  },
+  english: {
+    gradient: "from-[#012169] via-[#012169] to-[#C8102E]", // Union Jack Blue and Red
+    shadow: "shadow-[0_20px_50px_-12px_rgba(1,33,105,0.5)]",
+    border: "border-white",
+    iconBg: "bg-white/20",
   }
 };
 
@@ -52,7 +58,7 @@ const ModuleButton = ({ to, icon: Icon, title, subtitle, variant, delay = 0, ina
       style={{
         boxShadow: !inactive ? `
           0 15px 35px rgba(0,0,0,0.15),
-          0 10px 0 ${variant === 'orthographe' ? '#CC6E00' : variant === 'maths' ? '#1D5CC2' : variant === 'concentration' ? '#7B1FA2' : '#64748b'},
+          0 10px 0 ${variant === 'orthographe' ? '#CC6E00' : variant === 'maths' ? '#1D5CC2' : variant === 'concentration' ? '#7B1FA2' : variant === 'english' ? '#011649' : '#64748b'},
           inset 0 -8px 0 rgba(0,0,0,0.1),
           inset 0 8px 0 rgba(255,255,255,0.2)
         ` : undefined
@@ -69,7 +75,7 @@ const ModuleButton = ({ to, icon: Icon, title, subtitle, variant, delay = 0, ina
         <p className="text-xl font-bold text-white/90 drop-shadow-sm">{subtitle}</p>
         {inactive && (
           <span className="mt-4 inline-block px-4 py-1.5 bg-black/20 rounded-full text-xs font-black uppercase tracking-widest">
-            À venir 🔒
+            {variant === 'english' || title.toLowerCase() === 'english' ? 'Coming Soon 🔒' : 'À venir 🔒'}
           </span>
         )}
       </div>
