@@ -58,32 +58,22 @@ export const useExercises = () => {
         return generateExercise(level, usedIds);
     }, [dbExercises]);
 
-    const validateAnswer = useCallback(async (
+    const validateAnswer = useCallback((
         exercise: ExerciseWithDbId,
         userAnswer: string
-    ): Promise<{ isCorrect: boolean; correctAnswer?: string }> => {
+    ): { isCorrect: boolean; correctAnswer?: string } => {
+        // Instant local comparison — no network wait
+        const isCorrect = userAnswer.trim().toLowerCase() === exercise.correctAnswer.toLowerCase();
+
+        // Fire-and-forget: log to Supabase edge function in background (if DB exercise)
         if (exercise.dbId) {
-            try {
-                const { data, error } = await supabase.functions.invoke('validate-answer', {
-                    body: { exerciseId: exercise.dbId, userAnswer }
-                });
-
-                if (error) {
-                    console.error('Error validating answer:', error);
-                    return { isCorrect: false };
-                }
-
-                return {
-                    isCorrect: data.isCorrect,
-                    correctAnswer: data.correctAnswer
-                };
-            } catch (error) {
-                console.error('Error calling validate-answer:', error);
-                return { isCorrect: false };
-            }
+            supabase.functions.invoke('validate-answer', {
+                body: { exerciseId: exercise.dbId, userAnswer }
+            }).then(({ error }) => {
+                if (error) console.error('Background validation sync error:', error);
+            });
         }
 
-        const isCorrect = userAnswer.trim().toLowerCase() === exercise.correctAnswer.toLowerCase();
         return {
             isCorrect,
             correctAnswer: isCorrect ? undefined : exercise.correctAnswer

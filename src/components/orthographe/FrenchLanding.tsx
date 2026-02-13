@@ -19,6 +19,17 @@ interface FrenchLandingProps {
 
 const TOTAL_PROGRESSION_LEVELS = 50;
 
+const applyProgressData = (
+    data: { current_level: number; all_completed: boolean },
+    setProgressionCompleted: (v: boolean) => void,
+    setCurrentLevel: (v: number) => void,
+    setPercentage: (v: number) => void
+) => {
+    setProgressionCompleted(data.all_completed);
+    setCurrentLevel(data.current_level);
+    setPercentage(Math.round(((data.current_level - 1) / TOTAL_PROGRESSION_LEVELS) * 100));
+};
+
 const FrenchLanding = ({
     studentName,
     onModuleSelect,
@@ -29,42 +40,28 @@ const FrenchLanding = ({
     const [percentage, setPercentage] = useState(0);
 
     useEffect(() => {
-        const loadProgressionStatus = async () => {
+        // 1. Instant: read from localStorage (no network wait)
+        const stored = localStorage.getItem(`orthographe_progression_${studentName.toLowerCase()}`);
+        if (stored) {
             try {
-                const { data, error } = await supabase
-                    .from('progression_levels')
-                    .select('current_level, all_completed')
-                    .eq('student_id', studentName)
-                    .maybeSingle();
-
-                if (error) throw error;
-
-                if (data) {
-                    setProgressionCompleted(data.all_completed);
-                    setCurrentLevel(data.current_level);
-                    setPercentage(Math.round(((data.current_level - 1) / TOTAL_PROGRESSION_LEVELS) * 100));
-                } else {
-                    const stored = localStorage.getItem(`orthographe_progression_${studentName.toLowerCase()}`);
-                    if (stored) {
-                        const local = JSON.parse(stored);
-                        setProgressionCompleted(local.all_completed);
-                        setCurrentLevel(local.current_level);
-                        setPercentage(Math.round(((local.current_level - 1) / TOTAL_PROGRESSION_LEVELS) * 100));
-                    }
-                }
-            } catch (error) {
-                console.error('Error loading progression status (Supabase), trying local storage:', error);
-                const stored = localStorage.getItem(`orthographe_progression_${studentName.toLowerCase()}`);
-                if (stored) {
-                    const local = JSON.parse(stored);
-                    setProgressionCompleted(local.all_completed);
-                    setCurrentLevel(local.current_level);
-                    setPercentage(Math.round(((local.current_level - 1) / TOTAL_PROGRESSION_LEVELS) * 100));
-                }
+                const local = JSON.parse(stored);
+                applyProgressData(local, setProgressionCompleted, setCurrentLevel, setPercentage);
+            } catch (e) {
+                console.error('Error parsing local progression:', e);
             }
-        };
+        }
 
-        loadProgressionStatus();
+        // 2. Background: refresh from Supabase (fire-and-forget)
+        supabase
+            .from('progression_levels')
+            .select('current_level, all_completed')
+            .eq('student_id', studentName)
+            .maybeSingle()
+            .then(({ data, error }) => {
+                if (!error && data) {
+                    applyProgressData(data as any, setProgressionCompleted, setCurrentLevel, setPercentage);
+                }
+            });
     }, [studentName]);
 
     return (

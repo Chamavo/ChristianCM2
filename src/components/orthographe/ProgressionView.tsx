@@ -63,7 +63,7 @@ export const ProgressionView = ({ studentName, onComplete, onBack }: Progression
         return new Date(progress.lockout_until) > new Date();
     }, [progress.lockout_until]);
 
-    const handleStart = useCallback(async () => {
+    const handleStart = useCallback(() => {
         if (isLocked) return;
         setStep('exercise');
         if (progress.answered_indices.length === 0) {
@@ -71,7 +71,7 @@ export const ProgressionView = ({ studentName, onComplete, onBack }: Progression
             setSessionCorrect(0);
             setSessionTotal(0);
             if (exercises.length === 0) {
-                await generateExercises();
+                generateExercises();
             }
         }
     }, [exercises, generateExercises, progress.answered_indices, isLocked]);
