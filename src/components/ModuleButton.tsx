@@ -50,7 +50,7 @@ const ModuleButton = ({ to, icon: Icon, title, subtitle, variant, delay = 0, ina
     <div
       className={`
         relative overflow-hidden rounded-[32px] p-10 flex flex-col items-center justify-center gap-6 
-        text-white min-h-[260px] md:min-h-[300px] bg-gradient-to-b ${variantStyles[variant].gradient} 
+        text-white min-h-[300px] md:min-h-[400px] h-full bg-gradient-to-b ${variantStyles[variant].gradient} 
         ${variantStyles[variant].shadow} transition-all duration-300 border-[6px] ${variantStyles[variant].border}
         ${inactive ? 'opacity-60 cursor-not-allowed grayscale-[0.3]' : 'hover:brightness-110 active:scale-[0.98]'}
         group shimmer
@@ -64,21 +64,24 @@ const ModuleButton = ({ to, icon: Icon, title, subtitle, variant, delay = 0, ina
         `
       }}
     >
-      <motion.div
-        className={`rounded-full ${variantStyles[variant].iconBg} p-6 backdrop-blur-md floating-icon shadow-inner`}
-      >
-        <Icon className="w-14 h-14 md:w-20 md:h-20 drop-shadow-lg" strokeWidth={2.5} />
-      </motion.div>
+      <div className="flex-1 flex flex-col items-center justify-center gap-6 w-full">
+        <motion.div
+          className={`rounded-full ${variantStyles[variant].iconBg} p-6 backdrop-blur-md floating-icon shadow-inner`}
+        >
+          <Icon className="w-14 h-14 md:w-20 md:h-20 drop-shadow-lg" strokeWidth={2.5} />
+        </motion.div>
 
-      <div className="text-center">
-        <h2 className="text-3xl md:text-4xl font-black mb-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">{title}</h2>
-        <p className="text-xl font-bold text-white/90 drop-shadow-sm">{subtitle}</p>
-        {inactive && (
-          <span className="mt-4 inline-block px-4 py-1.5 bg-black/20 rounded-full text-xs font-black uppercase tracking-widest">
-            {variant === 'english' || title.toLowerCase() === 'english' ? 'Coming Soon 🔒' : 'À venir 🔒'}
-          </span>
-        )}
+        <div className="text-center">
+          <h2 className="text-3xl md:text-4xl font-black mb-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">{title}</h2>
+          <p className="text-xl font-bold text-white/90 drop-shadow-sm">{subtitle}</p>
+        </div>
       </div>
+
+      {inactive && (
+        <span className="mt-auto inline-block px-4 py-1.5 bg-black/20 rounded-full text-xs font-black uppercase tracking-widest translate-y-2">
+          {variant === 'english' || title.toLowerCase() === 'english' ? 'Coming Soon 🔒' : 'À venir 🔒'}
+        </span>
+      )}
 
       {/* Glossy overlay effect */}
       <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
@@ -87,6 +90,7 @@ const ModuleButton = ({ to, icon: Icon, title, subtitle, variant, delay = 0, ina
 
   return (
     <motion.div
+      className="h-full"
       initial={{ opacity: 0, y: 60, scale: 0.8 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{
@@ -103,9 +107,9 @@ const ModuleButton = ({ to, icon: Icon, title, subtitle, variant, delay = 0, ina
       whileTap={inactive ? {} : { y: 4 }}
     >
       {!inactive && to ? (
-        <Link to={to} className="block">{content}</Link>
+        <Link to={to} className="flex flex-col h-full">{content}</Link>
       ) : (
-        <div className="block">{content}</div>
+        <div className="flex flex-col h-full">{content}</div>
       )}
     </motion.div>
   );
