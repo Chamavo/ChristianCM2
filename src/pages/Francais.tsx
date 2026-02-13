@@ -4,7 +4,6 @@ import { ProgressionView } from '@/components/orthographe/ProgressionView';
 import FrenchLanding from '../components/orthographe/FrenchLanding';
 import { DicteeModule } from '@/components/orthographe/DicteeModule';
 import { EtudeTexteModule } from '@/components/orthographe/EtudeTexteModule';
-import { useProgressionModule } from '@/hooks/useProgressionModule';
 import { useNavigate } from 'react-router-dom';
 import ModulePageLayout from '@/components/shared/ModulePageLayout';
 
@@ -14,13 +13,6 @@ const FrancaisPage = () => {
     const [view, setView] = useState<View>('home');
     const [studentName] = useState('Christian');
     const navigate = useNavigate();
-
-    // Use the primary hook for French progression
-    const {
-        progress,
-        overallPercentage,
-        status
-    } = useProgressionModule(studentName);
 
     const handleModuleSelect = useCallback((module: string) => {
         switch (module) {

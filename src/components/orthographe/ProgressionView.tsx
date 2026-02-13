@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useMemo } from 'react';
+import { useState, useEffect, useCallback, useMemo, memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Loader2, CheckCircle2, XCircle,
@@ -76,7 +76,7 @@ export const ProgressionView = ({ studentName, onComplete, onBack }: Progression
         }
     }, [exercises, generateExercises, progress.answered_indices, isLocked]);
 
-    const checkAnswer = useCallback(async (answer: string) => {
+    const checkAnswer = useCallback((answer: string) => {
         if (!currentExercise || isValidating) return;
         setIsValidating(true);
         setUserAnswer(answer);
@@ -94,19 +94,19 @@ export const ProgressionView = ({ studentName, onComplete, onBack }: Progression
         setSessionTotal(prev => prev + 1);
         if (correct) setSessionCorrect(prev => prev + 1);
 
-        const result = await recordAnswer(correct, currentExerciseIdx);
+        const result = recordAnswer(correct, currentExerciseIdx);
         if (result) setLevelResult(result);
 
         setIsValidating(false);
         setStep('result');
     }, [currentExercise, isValidating, recordAnswer, currentExerciseIdx]);
 
-    const handleSubmit = useCallback(async () => {
-        if (userAnswer.trim()) await checkAnswer(userAnswer);
+    const handleSubmit = useCallback(() => {
+        if (userAnswer.trim()) checkAnswer(userAnswer);
     }, [userAnswer, checkAnswer]);
 
-    const handleOptionClick = useCallback(async (option: string) => {
-        await checkAnswer(option);
+    const handleOptionClick = useCallback((option: string) => {
+        checkAnswer(option);
     }, [checkAnswer]);
 
     const handleNext = useCallback(async () => {
@@ -272,7 +272,7 @@ const renderTextWithUnderline = (text: string) => {
     });
 };
 
-const ProgressionIntro = ({ currentLevel, percentage, totalExercises, onStart, isGenerating, isLocked, hasProgress }: any) => (
+const ProgressionIntro = memo(({ currentLevel, percentage, totalExercises, onStart, isGenerating, isLocked, hasProgress }: any) => (
     <motion.div
         key="intro"
         initial={{ scale: 0.95, opacity: 0 }}
@@ -318,9 +318,10 @@ const ProgressionIntro = ({ currentLevel, percentage, totalExercises, onStart, i
             ) : isLocked ? 'REPOSE-TOI ENCORE' : 'C\'EST PARTI !'}
         </Button>
     </motion.div>
-);
+));
+ProgressionIntro.displayName = 'ProgressionIntro';
 
-const ExerciseCard = ({ exercise, userAnswer, isValidating, onAnswerChange, onSubmit, onOptionClick, exerciseNumber, totalExercises, timer }: any) => {
+const ExerciseCard = memo(({ exercise, userAnswer, isValidating, onAnswerChange, onSubmit, onOptionClick, exerciseNumber, totalExercises, timer }: any) => {
     const minutes = timer !== null ? Math.floor(timer / 60) : 0;
     const seconds = timer !== null ? timer % 60 : 0;
 
@@ -388,9 +389,10 @@ const ExerciseCard = ({ exercise, userAnswer, isValidating, onAnswerChange, onSu
             </div>
         </motion.div>
     );
-};
+});
+ExerciseCard.displayName = 'ExerciseCard';
 
-const ResultCard = ({ isCorrect, correctAnswer }: any) => (
+const ResultCard = memo(({ isCorrect, correctAnswer }: any) => (
     <motion.div
         key="result"
         initial={{ scale: 0.9, opacity: 0 }}
@@ -422,9 +424,10 @@ const ResultCard = ({ isCorrect, correctAnswer }: any) => (
             </>
         )}
     </motion.div>
-);
+));
+ResultCard.displayName = 'ResultCard';
 
-const AllCompleteScreen = ({ onBack }: any) => (
+const AllCompleteScreen = memo(({ onBack }: any) => (
     <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -445,9 +448,10 @@ const AllCompleteScreen = ({ onBack }: any) => (
             RETOUR AU MODULE
         </Button>
     </motion.div>
-);
+));
+AllCompleteScreen.displayName = 'AllCompleteScreen';
 
-const LevelCompleteScreen = ({ advanced, sessionCorrect, sessionTotal, onContinue }: any) => (
+const LevelCompleteScreen = memo(({ advanced, sessionCorrect, sessionTotal, onContinue }: any) => (
     <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -470,9 +474,10 @@ const LevelCompleteScreen = ({ advanced, sessionCorrect, sessionTotal, onContinu
             {advanced ? 'NIVEAU SUIVANT' : 'CONTINUER'} <ChevronRight className="ml-2 w-8 h-8" strokeWidth={3} />
         </Button>
     </motion.div>
-);
+));
+LevelCompleteScreen.displayName = 'LevelCompleteScreen';
 
-const GlobalLockoutScreen = ({ lockoutRemaining }: { lockoutRemaining: number }) => (
+const GlobalLockoutScreen = memo(({ lockoutRemaining }: { lockoutRemaining: number }) => (
     <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -487,4 +492,5 @@ const GlobalLockoutScreen = ({ lockoutRemaining }: { lockoutRemaining: number })
             Reviens bientôt pour de nouveaux défis
         </div>
     </motion.div>
-);
+));
+GlobalLockoutScreen.displayName = 'GlobalLockoutScreen';

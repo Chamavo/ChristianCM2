@@ -2,7 +2,17 @@
  * Sound effects using Web Audio API (no external files needed)
  */
 
-const audioCtx = () => new (window.AudioContext || (window as any).webkitAudioContext)();
+let _audioCtx: AudioContext | null = null;
+const audioCtx = () => {
+    if (!_audioCtx || _audioCtx.state === 'closed') {
+        _audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
+    }
+    // Resume if suspended (e.g. after user interaction policy)
+    if (_audioCtx.state === 'suspended') {
+        _audioCtx.resume();
+    }
+    return _audioCtx;
+};
 
 /** Play a success/fanfare sound when leveling up */
 export function playLevelUpSound() {

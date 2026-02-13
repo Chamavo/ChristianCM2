@@ -136,7 +136,6 @@ export const useProgressionModule = (studentName: string) => {
     const generateExercises = useCallback(async () => {
         setStatus('generating_pool');
         try {
-            // For now, use generated exercises client-side until full pool creation logic is moved
             const { generateExercise } = await import('@/types/orthographe');
             const newPool = Array.from({ length: 20 }, (_, i) => {
                 const ex = generateExercise(progress.current_level, []);
@@ -150,16 +149,6 @@ export const useProgressionModule = (studentName: string) => {
                 };
             });
 
-            await supabase
-                .from('progression_levels')
-                .update({
-                    exercises_pool: newPool,
-                    answered_indices: [],
-                    exercises_done: 0,
-                    correct_answers: 0
-                })
-                .eq('student_id', studentName);
-
             const updatedProgress = {
                 ...progress,
                 exercises_pool: newPool,
@@ -168,12 +157,24 @@ export const useProgressionModule = (studentName: string) => {
                 correct_answers: 0
             };
 
+            // Update UI immediately
             saveToLocal(studentName, updatedProgress);
             setExercises(newPool);
             setStatus('ready');
+
+            // Fire-and-forget Supabase write
+            supabase
+                .from('progression_levels')
+                .update({
+                    exercises_pool: newPool,
+                    answered_indices: [],
+                    exercises_done: 0,
+                    correct_answers: 0
+                })
+                .eq('student_id', studentName)
+                .then(({ error }) => { if (error) console.error('Supabase sync error:', error); });
         } catch (err) {
             console.error('Error generating exercises:', err);
-            // Even if Supabase fails, we can continue locally if we have the level
             const { generateExercise } = await import('@/types/orthographe');
             const newPool = Array.from({ length: 20 }, (_, i) => {
                 const ex = generateExercise(progress.current_level, []);
@@ -205,7 +206,7 @@ export const useProgressionModule = (studentName: string) => {
         }
     }, [status, generateExercises]);
 
-    const recordAnswer = useCallback(async (isCorrect: boolean, exerciseIndex: number) => {
+    const recordAnswer = useCallback((isCorrect: boolean, exerciseIndex: number) => {
         const newDone = progress.exercises_done + 1;
         const newCorrect = progress.correct_answers + (isCorrect ? 1 : 0);
         const newAnsweredIndices = [...progress.answered_indices, exerciseIndex];
@@ -216,20 +217,6 @@ export const useProgressionModule = (studentName: string) => {
             const isPass = (newCorrect / currentLevelTotal) >= 0.9;
             if (isPass) {
                 const nextLevel = progress.current_level + 1;
-                try {
-                    await supabase
-                        .from('progression_levels')
-                        .update({
-                            current_level: nextLevel,
-                            exercises_done: 0,
-                            correct_answers: 0,
-                            exercises_pool: [],
-                            answered_indices: []
-                        })
-                        .eq('student_id', studentName);
-                } catch (err) {
-                    console.error('Failed to update Supabase level:', err);
-                }
 
                 const updatedProgress: ProgressionProgress = {
                     ...progress,
@@ -240,24 +227,26 @@ export const useProgressionModule = (studentName: string) => {
                     exercises_pool: []
                 };
 
+                // Update UI immediately
                 saveToLocal(studentName, updatedProgress);
                 setProgress(updatedProgress);
                 setStatus('generating_pool');
+
+                // Fire-and-forget Supabase write
+                supabase
+                    .from('progression_levels')
+                    .update({
+                        current_level: nextLevel,
+                        exercises_done: 0,
+                        correct_answers: 0,
+                        exercises_pool: [],
+                        answered_indices: []
+                    })
+                    .eq('student_id', studentName)
+                    .then(({ error }) => { if (error) console.error('Supabase sync error:', error); });
+
                 return { levelComplete: true, advanced: true, perfectSession: newCorrect === currentLevelTotal };
             } else {
-                try {
-                    await supabase
-                        .from('progression_levels')
-                        .update({
-                            exercises_done: 0,
-                            correct_answers: 0,
-                            answered_indices: []
-                        })
-                        .eq('student_id', studentName);
-                } catch (err) {
-                    console.error('Failed to reset session on Supabase:', err);
-                }
-
                 const updatedProgress: ProgressionProgress = {
                     ...progress,
                     exercises_done: 0,
@@ -265,8 +254,21 @@ export const useProgressionModule = (studentName: string) => {
                     answered_indices: []
                 };
 
+                // Update UI immediately
                 saveToLocal(studentName, updatedProgress);
                 setProgress(updatedProgress);
+
+                // Fire-and-forget Supabase write
+                supabase
+                    .from('progression_levels')
+                    .update({
+                        exercises_done: 0,
+                        correct_answers: 0,
+                        answered_indices: []
+                    })
+                    .eq('student_id', studentName)
+                    .then(({ error }) => { if (error) console.error('Supabase sync error:', error); });
+
                 return { levelComplete: true, advanced: false, perfectSession: false };
             }
         }
@@ -278,21 +280,20 @@ export const useProgressionModule = (studentName: string) => {
             answered_indices: newAnsweredIndices
         };
 
+        // Update UI immediately
         setProgress(updatedProgress);
         saveToLocal(studentName, updatedProgress);
 
-        try {
-            await supabase
-                .from('progression_levels')
-                .update({
-                    exercises_done: newDone,
-                    correct_answers: newCorrect,
-                    answered_indices: newAnsweredIndices
-                })
-                .eq('student_id', studentName);
-        } catch (err) {
-            console.error('Failed to update progress on Supabase:', err);
-        }
+        // Fire-and-forget Supabase write
+        supabase
+            .from('progression_levels')
+            .update({
+                exercises_done: newDone,
+                correct_answers: newCorrect,
+                answered_indices: newAnsweredIndices
+            })
+            .eq('student_id', studentName)
+            .then(({ error }) => { if (error) console.error('Supabase sync error:', error); });
 
         return null;
     }, [progress, studentName]);
