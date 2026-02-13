@@ -14,27 +14,43 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
+import { UserProvider, useUser } from "@/contexts/UserContext";
+import LoginScreen from "@/components/auth/LoginScreen";
+
+const AppContent = () => {
+  const { user, isLoading } = useUser();
+
+  if (isLoading) return null;
+  if (!user) return <LoginScreen />;
+
+  return (
+    <BrowserRouter>
+      <Suspense fallback={
+        <div className="min-h-screen flex items-center justify-center bg-white text-slate-400 font-medium">
+          Chargement...
+        </div>
+      }>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/francais" element={<Francais />} />
+          <Route path="/mathematiques" element={<Mathematiques />} />
+          <Route path="/concentration" element={<Concentration />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
+  );
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <Suspense fallback={
-          <div className="min-h-screen flex items-center justify-center bg-white text-slate-400 font-medium">
-            Chargement...
-          </div>
-        }>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/francais" element={<Francais />} />
-            <Route path="/mathematiques" element={<Mathematiques />} />
-            <Route path="/concentration" element={<Concentration />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
+      <UserProvider>
+        <AppContent />
+      </UserProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );

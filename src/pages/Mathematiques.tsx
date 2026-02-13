@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useUser } from '@/contexts/UserContext';
 import { useNavigate } from 'react-router-dom';
 import MathDashboard from '@/components/maths/MathDashboard';
 import MathSession from '@/components/maths/MathSession';
@@ -14,8 +15,9 @@ type ViewState = 'landing' | 'calcul_dashboard' | 'calcul_session' | 'calcul_res
 
 const Mathematiques: React.FC = () => {
     const navigate = useNavigate();
+    const { user } = useUser();
     const [currentView, setCurrentView] = useState<ViewState>('landing');
-    const [username] = useState('Christian');
+    const username = user || 'Christian'; // Fallback to 'Christian' just in case, though LoginScreen should prevent this
 
     // Calcul State
     const [level, setLevel] = useState(1);

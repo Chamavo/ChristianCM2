@@ -8,13 +8,15 @@ import { useNavigate } from 'react-router-dom';
 import ModulePageLayout from '@/components/shared/ModulePageLayout';
 import { useSessionTimer } from '@/hooks/useSessionTimer';
 import { Clock, Lock } from 'lucide-react';
+import { useUser } from '@/contexts/UserContext';
 import { motion, AnimatePresence } from 'framer-motion';
 
 type View = 'home' | 'progression' | 'dictee' | 'etude' | 'orthographe';
 
 const FrancaisPage = () => {
     const [view, setView] = useState<View>('home');
-    const [studentName] = useState('Christian');
+    const { user } = useUser();
+    const studentName = user || 'Christian';
     const navigate = useNavigate();
     const { remainingSec, isTimeUp, formattedTime, isRunning, start, pause } = useSessionTimer();
 
@@ -87,8 +89,8 @@ const FrancaisPage = () => {
             {view === 'home' && (
                 <div className="w-full max-w-2xl mx-auto mb-4 px-6">
                     <div className={`flex items-center justify-center gap-3 py-3 px-6 rounded-2xl text-sm font-black uppercase tracking-wider ${isTimeUp
-                            ? 'bg-rose-100 text-rose-600 border-2 border-rose-200'
-                            : 'bg-orange-50 text-orange-600 border-2 border-orange-100'
+                        ? 'bg-rose-100 text-rose-600 border-2 border-rose-200'
+                        : 'bg-orange-50 text-orange-600 border-2 border-orange-100'
                         }`}>
                         <Clock className="w-4 h-4" />
                         {isTimeUp

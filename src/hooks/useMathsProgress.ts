@@ -48,10 +48,13 @@ export const getMaxErrorsForLevel = (levelIndex: number): number => {
   return levelIndex < 2 ? 0 : 1;
 };
 
-export const useMathsProgress = () => {
+import { supabase } from "@/integrations/supabase/mathsClient";
+
+export const useMathsProgress = (studentId: string) => {
   const [progress, setProgress] = useState<MathsProgress>(() => {
+    // Try to load from local storage first for immediate UI
     try {
-      const saved = localStorage.getItem(STORAGE_KEY);
+      const saved = localStorage.getItem(`${STORAGE_KEY}_${studentId}`);
       if (saved) {
         return JSON.parse(saved);
       }
@@ -61,14 +64,67 @@ export const useMathsProgress = () => {
     return getDefaultProgress();
   });
 
-  // Save to localStorage whenever progress changes
+  // Load from Supabase on mount
   useEffect(() => {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
-    } catch (e) {
-      console.error("Failed to save progress:", e);
+    const loadFromSupabase = async () => {
+      try {
+        const { data, error } = await supabase
+          .from('progression_maths')
+          .select('data')
+          .eq('student_id', studentId)
+          .maybeSingle();
+
+        if (error) throw error;
+
+        if (data && data.data) {
+          // Merge or replace? For now, server wins if it exists
+          const serverProgress = data.data as unknown as MathsProgress;
+          setProgress(serverProgress);
+          // Update local storage to match server
+          localStorage.setItem(`${STORAGE_KEY}_${studentId}`, JSON.stringify(serverProgress));
+        }
+      } catch (e) {
+        console.error("Failed to load from Supabase:", e);
+      }
+    };
+
+    if (studentId) {
+      loadFromSupabase();
     }
-  }, [progress]);
+  }, [studentId]);
+
+  // Save to localStorage AND Supabase whenever progress changes
+  useEffect(() => {
+    if (!studentId) return;
+
+    // 1. Local Storage
+    try {
+      localStorage.setItem(`${STORAGE_KEY}_${studentId}`, JSON.stringify(progress));
+    } catch (e) {
+      console.error("Failed to save progress locally:", e);
+    }
+
+    // 2. Supabase (Debounced or fire-and-forget)
+    const saveToSupabase = async () => {
+      try {
+        const { error } = await supabase
+          .from('progression_maths')
+          .upsert({
+            student_id: studentId,
+            data: progress as any,
+            last_updated: new Date().toISOString()
+          });
+
+        if (error) throw error;
+      } catch (e) {
+        console.error("Failed to save to Supabase:", e);
+      }
+    };
+
+    // Simple fire-and-forget for now to avoid complexity
+    saveToSupabase();
+
+  }, [progress, studentId]);
 
   const updateLevelProgress = useCallback((
     levelIndex: number,
@@ -79,11 +135,11 @@ export const useMathsProgress = () => {
     setProgress((prev) => {
       const existingLevel = prev.levels[levelIndex];
       const isNewBest = !existingLevel || score > existingLevel.bestScore;
-      
+
       // Check if level is passed based on error rules
       const maxErrors = getMaxErrorsForLevel(levelIndex);
       const isPassed = errors <= maxErrors && score >= totalQuestions - maxErrors;
-      
+
       // Calculate stars earned
       let starsEarned = 0;
       const isPerfect = score === totalQuestions;
@@ -182,7 +238,7 @@ export const useMathsProgress = () => {
   const isLevelUnlocked = useCallback((levelIndex: number): boolean => {
     // Level 1 (index 0) is always unlocked
     if (levelIndex === 0) return true;
-    
+
     // Check if previous level is completed
     const previousLevel = progress.levels[levelIndex - 1];
     return previousLevel?.completed === true;
