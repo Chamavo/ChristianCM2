@@ -1891,694 +1891,1224 @@
     },
     {
         "id": 151,
-        "title": "Pour aller plus loin",
+        "title": "Un commerçant avait acheté 258 kg de cerises pour ",
         "part": 4,
-        "text": "Trois amis, Paul, Hugo et Lucas, se partagent 72 000 €.\nPaul reçoit le double de la somme reçue par Hugo.\nLucas reçoit 8 000 € de plus que Hugo.\nQuelle somme reçoit chacun ?",
-        "answer": "72 000 – 8 000 = 64 000\n64 000 ÷ 4 = 16 000\nHugo : 16 000 €\nPaul : 32 000 €\nLucas : 24 000 €",
+        "text": "Un commerçant avait acheté 258 kg de cerises pour 361 200 FCFA. 1/4 de ces fruits est devenu impropre à la vente au consommateur et il faut le céder au grossiste avec une perte de 600 FCFA par kg. Quel est le montant de la vente des fruits avariés? Le reste ayant été vendu au détail, l'affaire se termine par un bénéfice de 77 400 FCFA. Combien les cerises ont-elles été achetées par le consommateur (prix au kg)?",
+        "answer": "1) Quantité de fruits avariés :\n   1/4 de 258 kg = 258 ÷ 4 = 64,5 kg\n\n2) Prix d'achat au kg :\n   361 200 ÷ 258 = 1 400 FCFA/kg\n\n3) Perte par kg sur les fruits avariés = 600 FCFA\n   Prix de vente au grossiste par kg = 1 400 - 600 = 800 FCFA/kg\n\n4) Montant de la vente des fruits avariés :\n   64,5 kg × 800 FCFA/kg = 51 600 FCFA\n\n5) Quantité de fruits vendus au détail :\n   258 - 64,5 = 193,5 kg\n\n6) Calcul du prix de vente au détail :\n   Prix d'achat total = 361 200 FCFA\n   Vente des fruits avariés = 51 600 FCFA\n   Bénéfice total = 77 400 FCFA\n   \n   Prix de vente total = Prix d'achat + Bénéfice\n   Prix de vente total = 361 200 + 77 400 = 438 600 FCFA\n   \n   Vente au détail = Prix de vente total - Vente fruits avariés\n   Vente au détail = 438 600 - 51 600 = 387 000 FCFA\n   \n   Prix au kg pour le consommateur = 387 000 ÷ 193,5 = 2 000 FCFA/kg",
         "questions": [
             {
-                "label": "Hugo",
-                "response": "16000",
-                "unit": "€"
+                "label": "Montant de la vente des fruits avariés",
+                "response": "51600",
+                "unit": "FCFA"
             },
             {
-                "label": "Paul",
-                "response": "32000",
-                "unit": "€"
-            },
-            {
-                "label": "Lucas",
-                "response": "24000",
-                "unit": "€"
+                "label": "Prix au kg pour le consommateur",
+                "response": "2000",
+                "unit": "FCFA/kg"
             }
         ]
     },
     {
         "id": 152,
-        "title": "Pour aller plus loin",
+        "title": "Sur un plan à échelle de 1/2 500, un champ mesure ",
         "part": 4,
-        "text": "Une somme de 150 000 € est partagée entre Emma et Léa.\nEmma reçoit le triple de Léa.\nCalcule la part de chacune.",
-        "answer": "150 000 ÷ 4 = 37 500\nLéa : 37 500 €\nEmma : 112 500 €",
+        "text": "Sur un plan à échelle de 1/2 500, un champ mesure 3,8 cm de long sur 1,3 cm de large. Quelles sont ses dimensions réelles? Quelle est sa surface? Quel est son prix à 2 180 000 FCFA l'hectare?",
+        "answer": "1) Dimensions réelles :\n   Échelle 1/2 500 signifie : 1 cm sur le plan = 2 500 cm en réalité\n   \n   Longueur réelle = 3,8 cm × 2 500 = 9 500 cm = 95 m\n   Largeur réelle = 1,3 cm × 2 500 = 3 250 cm = 32,5 m\n\n2) Surface du champ :\n   Surface = Longueur × Largeur\n   Surface = 95 m × 32,5 m = 3 087,5 m²\n\n3) Conversion en hectares :\n   1 hectare = 10 000 m²\n   Surface = 3 087,5 ÷ 10 000 = 0,30875 ha\n\n4) Prix du champ :\n   Prix = 0,30875 ha × 2 180 000 FCFA/ha = 673 075 FCFA",
         "questions": [
             {
-                "label": "Léa",
-                "response": "37500",
-                "unit": "€"
+                "label": "Dimensions réelles",
+                "response": "95",
+                "unit": "m × 32,5 m"
             },
             {
-                "label": "Emma",
-                "response": "112500",
-                "unit": "€"
+                "label": "Surface",
+                "response": "3087.5",
+                "unit": "m² ou 0,30875 ha"
+            },
+            {
+                "label": "Prix",
+                "response": "673075",
+                "unit": "FCFA"
             }
         ]
     },
     {
         "id": 153,
-        "title": "Pour aller plus loin",
+        "title": "Un tas de sable pèse 5 tonnes. Un camion le transp",
         "part": 4,
-        "text": "Une prime de 90 000 € est partagée entre trois employés.\nLe premier reçoit le double du deuxième.\nLe troisième reçoit 10 000 € de moins que le deuxième.\nQuelle somme reçoit chacun ?",
-        "answer": "90 000 + 10 000 = 100 000\n100 000 ÷ 4 = 25 000\nPremier : 50 000 €\nDeuxième : 25 000 €\nTroisième : 15 000 €",
-        "questions": [
-            {
-                "label": "Premier",
-                "response": "50000",
-                "unit": "€"
-            },
-            {
-                "label": "Deuxième",
-                "response": "25000",
-                "unit": "€"
-            },
-            {
-                "label": "Troisième",
-                "response": "15000",
-                "unit": "€"
-            }
-        ]
+        "text": "Un tas de sable pèse 5 tonnes. Un camion le transporte en 3 fois. Au premier voyage, le camion chargé pèse 2 175 kg ; au deuxième voyage, le camion chargé pèse 1 875 kg ; au troisième voyage, le camion chargé pèse 3 150 kg. Quel est le poids du camion vide?",
+        "answer": "1) Poids total du sable = 5 tonnes = 5 000 kg\n\n2) Soit P le poids du camion vide\n   \n   Au 1er voyage : Camion + Sable₁ = 2 175 kg\n   Au 2ème voyage : Camion + Sable₂ = 1 875 kg\n   Au 3ème voyage : Camion + Sable₃ = 3 150 kg\n\n3) Poids total des trois voyages :\n   3P + (Sable₁ + Sable₂ + Sable₃) = 2 175 + 1 875 + 3 150\n   3P + 5 000 = 7 200\n   3P = 7 200 - 5 000\n   3P = 2 200\n   P = 733,33 kg\n\nVÉRIFICATION :\n- Sable au 1er voyage : 2 175 - 733,33 = 1 441,67 kg\n- Sable au 2ème voyage : 1 875 - 733,33 = 1 141,67 kg\n- Sable au 3ème voyage : 3 150 - 733,33 = 2 416,67 kg\n- Total : 1 441,67 + 1 141,67 + 2 416,67 ≈ 5 000 kg ✓\n\nRÉPONSE : Le poids du camion vide est 733,33 kg (environ 733 kg)",
+        "questions": []
     },
     {
         "id": 154,
-        "title": "Pour aller plus loin",
+        "title": "Un garagiste fait payer 11 000 FCFA le lavage d'un",
         "part": 4,
-        "text": "Un père partage 60 000 € entre ses deux enfants.\nL’aîné reçoit 15 000 € de plus que le cadet.\nQuelle somme reçoit chacun ?",
-        "answer": "60 000 – 15 000 = 45 000\n45 000 ÷ 2 = 22 500\nCadet : 22 500 €\nAîné : 37 500 €",
-        "questions": [
-            {
-                "label": "Cadet",
-                "response": "22500",
-                "unit": "€"
-            },
-            {
-                "label": "Aîné",
-                "response": "37500",
-                "unit": "€"
-            }
-        ]
+        "text": "Un garagiste fait payer 11 000 FCFA le lavage d'une automobile. Un propriétaire achète 24 m de tuyau à 2 720 FCFA le mètre, une lance de 49 800 FCFA et un raccord de 6 320 FCFA pour laver lui-même sa voiture. Après combien de lavages aura-t-il rattrapé la dépense engagée?",
+        "answer": "1) Dépense totale pour l'équipement :\n   - Tuyau : 24 m × 2 720 FCFA/m = 65 280 FCFA\n   - Lance : 49 800 FCFA\n   - Raccord : 6 320 FCFA\n   \n   Total = 65 280 + 49 800 + 6 320 = 121 400 FCFA\n\n2) Économie par lavage :\n   Au lieu de payer 11 000 FCFA au garagiste, il lave lui-même\n   Économie = 11 000 FCFA par lavage\n\n3) Nombre de lavages pour rentabiliser :\n   Nombre de lavages = Dépense totale ÷ Économie par lavage\n   Nombre de lavages = 121 400 ÷ 11 000 = 11,04 lavages\n   \n   Il faut donc 12 lavages pour rentabiliser complètement la dépense.\n\nRÉPONSE : Après 12 lavages, il aura rattrapé la dépense engagée.",
+        "questions": []
     },
     {
         "id": 155,
-        "title": "Pour aller plus loin",
+        "title": "Une auge en pierre a intérieurement 1,00 m de long",
         "part": 4,
-        "text": "84 000 € sont partagés entre trois personnes.\nLa deuxième reçoit le double de la première.\nLa troisième reçoit le triple de la première.\nQuelle somme reçoit chacun ?",
-        "answer": "84 000 ÷ 6 = 14 000\nPremière : 14 000 €\nDeuxième : 28 000 €\nTroisième : 42 000 €\n## 🔵 TEMPS – VITESSE – DISTANCE (156–160)",
+        "text": "Une auge en pierre a intérieurement 1,00 m de longueur, 0,80 m de largeur et 0,70 m de profondeur ; ses parois et le fond ont une épaisseur de 14 cm. Calculez : 1° la capacité de cette auge ; 2° le volume du bloc dans lequel elle a été taillée ; 3° son poids quand elle est vide, le poids spécifique de la pierre étant 2,5 kg/dm³.",
+        "answer": "1) Capacité de l'auge (volume intérieur) :\n   Longueur = 1,00 m = 100 cm\n   Largeur = 0,80 m = 80 cm\n   Profondeur = 0,70 m = 70 cm\n   \n   Volume intérieur = 100 × 80 × 70 = 560 000 cm³ = 560 dm³ = 560 litres\n\n2) Volume du bloc extérieur :\n   Épaisseur des parois = 14 cm\n   \n   Longueur extérieure = 100 + 2×14 = 128 cm\n   Largeur extérieure = 80 + 2×14 = 108 cm\n   Hauteur extérieure = 70 + 14 = 84 cm (fond seulement)\n   \n   Volume total = 128 × 108 × 84 = 1 161 216 cm³ = 1 161,216 dm³\n\n3) Volume de pierre (bloc - cavité) :\n   Volume de pierre = 1 161,216 - 560 = 601,216 dm³\n\n4) Poids de l'auge vide :\n   Poids = Volume de pierre × Masse volumique\n   Poids = 601,216 dm³ × 2,5 kg/dm³ = 1 503,04 kg",
         "questions": [
             {
-                "label": "Première",
-                "response": "14000",
-                "unit": "€"
+                "label": "Capacité",
+                "response": "560",
+                "unit": "litres"
             },
             {
-                "label": "Deuxième",
-                "response": "28000",
-                "unit": "€"
+                "label": "Volume du bloc",
+                "response": "1161.216",
+                "unit": "dm³"
             },
             {
-                "label": "Troisième",
-                "response": "42000",
-                "unit": "€"
+                "label": "Poids à vide",
+                "response": "1503.04",
+                "unit": "kg (environ 1 503 kg)"
             }
         ]
     },
     {
         "id": 156,
-        "title": "Pour aller plus loin",
+        "title": "Un commerçant achète pour 191 000 FCFA une barriqu",
         "part": 4,
-        "text": "Une voiture roule à 80 km/h pendant 3 heures.\nQuelle distance parcourt-elle ?",
-        "answer": "80 × 3 = 240 km",
-        "questions": [
-            {
-                "response": "240",
-                "unit": "km"
-            }
-        ]
+        "text": "Un commerçant achète pour 191 000 FCFA une barrique de vinaigre de 225 litres. Il paye 18 700 FCFA de frais de transport. Il veut revendre son vinaigre en faisant un bénéfice de 40 % sur le prix de revient. Quel doit être le prix du litre de vinaigre, si le commerçant a perdu 15 litres à la mise en bouteilles?",
+        "answer": "1) Prix de revient total :\n   Prix d'achat = 191 000 FCFA\n   Frais de transport = 18 700 FCFA\n   Prix de revient = 191 000 + 18 700 = 209 700 FCFA\n\n2) Prix de vente total (avec 40% de bénéfice) :\n   Bénéfice = 40% de 209 700 = 0,40 × 209 700 = 83 880 FCFA\n   Prix de vente total = 209 700 + 83 880 = 293 580 FCFA\n\n3) Quantité de vinaigre à vendre :\n   Quantité initiale = 225 litres\n   Perte = 15 litres\n   Quantité à vendre = 225 - 15 = 210 litres\n\n4) Prix du litre :\n   Prix du litre = 293 580 ÷ 210 = 1 398 FCFA/litre\n\nRÉPONSE : Le prix du litre de vinaigre doit être 1 398 FCFA.",
+        "questions": []
     },
     {
         "id": 157,
-        "title": "Pour aller plus loin",
+        "title": "Votre maman avait acheté un tapis de table rectang",
         "part": 4,
-        "text": "Un cycliste parcourt 90 km en 3 heures.\nQuelle est sa vitesse moyenne ?",
-        "answer": "90 ÷ 3 = 30 km/h",
+        "text": "Votre maman avait acheté un tapis de table rectangulaire mesurant 7 m de périmètre et dont la largeur était les 3/4 de sa longueur. À cause de ses bords usés, elle lui enlève tout autour une bande de 0,15 m de large et elle borde ce qui reste du tapis avec une frange valant 2 700 FCFA le mètre courant. Quelle est la dépense sachant qu'elle a employé 5 cm de plus pour chaque coin?",
+        "answer": "1) Dimensions du tapis initial :\n   Soit L la longueur et l la largeur\n   l = 3/4 × L\n   \n   Périmètre = 2(L + l) = 7 m\n   2(L + 3L/4) = 7\n   2(7L/4) = 7\n   7L/2 = 7\n   L = 2 m\n   \n   l = 3/4 × 2 = 1,5 m\n\n2) Dimensions après découpe :\n   On enlève 0,15 m de chaque côté\n   \n   Nouvelle longueur = 2 - 2×0,15 = 2 - 0,30 = 1,70 m\n   Nouvelle largeur = 1,5 - 2×0,15 = 1,5 - 0,30 = 1,20 m\n\n3) Périmètre du tapis réduit :\n   Périmètre = 2(1,70 + 1,20) = 2 × 2,90 = 5,80 m\n\n4) Longueur de frange nécessaire :\n   Frange = 5,80 m + 4 coins × 0,05 m\n   Frange = 5,80 + 0,20 = 6 m\n\n5) Dépense :\n   Dépense = 6 m × 2 700 FCFA/m = 16 200 FCFA\n\nRÉPONSE : La dépense est de 16 200 FCFA.",
         "questions": []
     },
     {
         "id": 158,
-        "title": "Pour aller plus loin",
+        "title": "Un vase est plein d'eau. Il pèse alors 29 700 kg. ",
         "part": 4,
-        "text": "Un train roule à 120 km/h pendant 2 h 30 min.\nQuelle distance parcourt-il ?",
-        "answer": "2,5 h\n120 × 2,5 = 300 km",
+        "text": "Un vase est plein d'eau. Il pèse alors 29 700 kg. Si on enlève les 2/3 de l'eau qu'il contient, il ne pèse plus que 14 400 kg. Trouver : 1° sa capacité en centilitres ; 2° son poids en grammes lorsqu'il est vide.",
+        "answer": "1) Soit E le poids de l'eau et V le poids du vase vide\n   \n   Vase plein : V + E = 29 700 kg\n   Après avoir enlevé 2/3 de l'eau : V + E/3 = 14 400 kg\n\n2) Par soustraction :\n   (V + E) - (V + E/3) = 29 700 - 14 400\n   E - E/3 = 15 300\n   2E/3 = 15 300\n   E = 15 300 × 3/2 = 22 950 kg\n\n3) Poids du vase vide :\n   V = 29 700 - 22 950 = 6 750 kg = 6 750 000 g\n\n4) Capacité du vase :\n   1 litre d'eau pèse 1 kg\n   Capacité = 22 950 kg = 22 950 litres = 2 295 000 centilitres",
         "questions": [
             {
-                "response": "300",
-                "unit": "km"
+                "label": "Capacité",
+                "response": "2295000",
+                "unit": "cl"
+            },
+            {
+                "label": "Poids du vase vide",
+                "response": "6750000",
+                "unit": "g"
             }
         ]
     },
     {
         "id": 159,
-        "title": "Pour aller plus loin",
+        "title": "Un ouvrier travaille 8 h par jour et gagne 2 800 F",
         "part": 4,
-        "text": "Un marcheur avance à 5 km/h pendant 1 h 30 min.\nQuelle distance parcourt-il ?",
-        "answer": "1,5 h\n5 × 1,5 = 7,5 km",
-        "questions": [
-            {
-                "response": "5",
-                "unit": "km"
-            }
-        ]
+        "text": "Un ouvrier travaille 8 h par jour et gagne 2 800 FCFA de l'heure. Il ne travaille pas le samedi ni le dimanche mais il dépense en moyenne 14 400 FCFA par jour. Au bout de combien de mois aura-t-il économisé la somme nécessaire pour acheter une motocyclette de 1 845 000 FCFA?",
+        "answer": "1) Salaire journalier :\n   Salaire/jour = 8 h × 2 800 FCFA/h = 22 400 FCFA\n\n2) Économie journalière (jours travaillés) :\n   Économie/jour = 22 400 - 14 400 = 8 000 FCFA\n\n3) Jours travaillés par semaine :\n   5 jours (du lundi au vendredi)\n\n4) Économie hebdomadaire :\n   Économie/semaine = 5 jours × 8 000 FCFA/jour = 40 000 FCFA\n   \n   Mais il dépense aussi le samedi et dimanche :\n   Dépense week-end = 2 jours × 14 400 FCFA/jour = 28 800 FCFA\n   \n   Économie nette/semaine = 40 000 - 28 800 = 11 200 FCFA\n\n5) Nombre de semaines nécessaires :\n   Nombre de semaines = 1 845 000 ÷ 11 200 = 164,73 semaines\n\n6) Nombre de mois :\n   164,73 semaines ÷ 4,33 semaines/mois ≈ 38 mois\n\nRÉPONSE : Il faudra environ 38 mois pour économiser la somme nécessaire.",
+        "questions": []
     },
     {
         "id": 160,
-        "title": "Pour aller plus loin",
+        "title": "Un jardin mesure 140 m de longueur sur 65 m de lar",
         "part": 4,
-        "text": "Un camion parcourt 360 km à 90 km/h.\nCombien d’heures met-il ?",
-        "answer": "360 ÷ 90 = 4 h\n## 🔵 MESURES AGRAIRES (161–168)",
+        "text": "Un jardin mesure 140 m de longueur sur 65 m de largeur. Il appartient en commun à deux frères qui le partagent par une limite parallèle à la largeur, de telle manière qu'une des parcelles soit un carré. Le terrain vaut 2 500 000 FCFA l'hectare. Combien l'un des frères doit-il donner à l'autre pour que le partage soit équitable?",
+        "answer": "1) Surface totale du jardin :\n   Surface = 140 m × 65 m = 9 100 m²\n\n2) Partage du terrain :\n   Une parcelle est un carré de côté 65 m\n   Surface parcelle 1 (carré) = 65 × 65 = 4 225 m²\n   \n   Parcelle 2 (rectangle) = 9 100 - 4 225 = 4 875 m²\n\n3) Différence de surface :\n   Différence = 4 875 - 4 225 = 650 m²\n\n4) Valeur de la différence :\n   Conversion : 650 m² = 0,065 ha\n   Valeur = 0,065 ha × 2 500 000 FCFA/ha = 162 500 FCFA\n\n5) Compensation :\n   Le frère qui reçoit la plus grande parcelle doit donner la moitié de la différence :\n   Compensation = 162 500 ÷ 2 = 81 250 FCFA\n\nRÉPONSE : L'un des frères doit donner 81 250 FCFA à l'autre pour un partage équitable.",
         "questions": []
     },
     {
         "id": 161,
-        "title": "Pour aller plus loin",
+        "title": "Pour faire 6 chemises, une mère de famille achète ",
         "part": 4,
-        "text": "Un champ mesure 3 hectares.\nQuelle est sa superficie en m² ?",
-        "answer": "3 × 10 000 = 30 000 m²",
+        "text": "Pour faire 6 chemises, une mère de famille achète 18,30 m de cretonne à 10 200 FCFA le mètre. Elle les fait confectionner par une ouvrière qu'elle paie 6 940 FCFA par chemise. Quel est le prix de revient des 6 chemises ; d'une chemise?",
+        "answer": "1) Prix du tissu :\n   Prix tissu = 18,30 m × 10 200 FCFA/m = 186 660 FCFA\n\n2) Prix de la confection :\n   Prix confection = 6 chemises × 6 940 FCFA/chemise = 41 640 FCFA\n\n3) Prix de revient des 6 chemises :\n   Prix total = 186 660 + 41 640 = 228 300 FCFA\n\n4) Prix de revient d'une chemise :\n   Prix unitaire = 228 300 ÷ 6 = 38 050 FCFA",
         "questions": [
             {
-                "response": "30000",
-                "unit": "m²"
+                "label": "Prix de revient des 6 chemises",
+                "response": "228300",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Prix de revient d'une chemise",
+                "response": "38050",
+                "unit": "FCFA"
             }
         ]
     },
     {
         "id": 162,
-        "title": "Pour aller plus loin",
+        "title": "Un seau vide pèse 3 200 kg. Rempli de miel, il pès",
         "part": 4,
-        "text": "Un terrain mesure 5 000 m².\nExprime cette superficie en hectares.",
-        "answer": "5 000 ÷ 10 000 = 0,5 ha",
-        "questions": [
-            {
-                "response": "5",
-                "unit": "ha"
-            }
-        ]
+        "text": "Un seau vide pèse 3 200 kg. Rempli de miel, il pèse 41 600 kg. Ce miel a été payé 246 400 FCFA. Quel est le prix d'achat du kg de miel? Le miel est mis en pots de 750 g et chaque pot est vendu 8 200 FCFA. Quel bénéfice a-t-on réalisé?",
+        "answer": "1) Poids du miel :\n   Poids miel = 41 600 - 3 200 = 38 400 kg\n\n2) Prix d'achat du kg de miel :\n   Prix/kg = 246 400 ÷ 38 400 = 6,42 FCFA/kg (environ)\n   \n   Note: Ces chiffres semblent inhabituels (seau de 3,2 tonnes, miel très bon marché)\n   Probablement une erreur d'unités dans l'énoncé original\n\n3) Nombre de pots de 750 g :\n   Nombre de pots = 38 400 kg ÷ 0,75 kg = 51 200 pots\n\n4) Recette de la vente :\n   Recette = 51 200 pots × 8 200 FCFA/pot = 419 840 000 FCFA\n\n5) Bénéfice :\n   Bénéfice = 419 840 000 - 246 400 = 419 593 600 FCFA\n\nRÉPONSES (sous réserve de cohérence des données) :\n- Prix d'achat : 6,42 FCFA/kg\n- Bénéfice : 419 593 600 FCFA",
+        "questions": []
     },
     {
         "id": 163,
-        "title": "Pour aller plus loin",
+        "title": "Un jardin rectangulaire a 51,40 m de long et 30,80",
         "part": 4,
-        "text": "Un agriculteur possède 2 ha et 50 ares.\nQuelle est la superficie totale en m² ?",
-        "answer": "20 000 + 5 000 = 25 000 m²",
+        "text": "Un jardin rectangulaire a 51,40 m de long et 30,80 m de large. \na) Calculer sa surface et son périmètre. \nb) 150 m² de votre jardin sont en allées et les sentiers. Quelle est la surface cultivable?\nAvec votre arrosoir, vous arrosez 9,00 m². Combien faut-il d'arrosoirs pour arroser votre jardin? Combien de temps mettrez-vous pour arroser votre jardin, sachant qu'il vous faut deux minutes par arrosoir?",
+        "answer": "a) Surface et périmètre :\n\n1) Surface :\n   Surface = 51,40 × 30,80 = 1 583,12 m²\n\n2) Périmètre :\n   Périmètre = 2(51,40 + 30,80) = 2 × 82,20 = 164,40 m\n\nb) Surface cultivable :\n   Surface cultivable = 1 583,12 - 150 = 1 433,12 m²\n\nc) Nombre d'arrosoirs :\n   Nombre d'arrosoirs = 1 433,12 ÷ 9,00 = 159,24 arrosoirs\n   Soit environ 160 arrosoirs\n\nd) Temps d'arrosage :\n   Temps = 160 arrosoirs × 2 minutes/arrosoir = 320 minutes\n   320 minutes = 5 heures 20 minutes",
         "questions": [
             {
-                "response": "25000",
+                "label": "Surface",
+                "response": "1583.12",
                 "unit": "m²"
+            },
+            {
+                "label": "Périmètre",
+                "response": "164.40",
+                "unit": "m"
+            },
+            {
+                "label": "Surface cultivable",
+                "response": "1433.12",
+                "unit": "m²"
+            },
+            {
+                "label": "Nombre d'arrosoirs",
+                "response": "160",
+                "unit": ""
+            },
+            {
+                "label": "Temps d'arrosage",
+                "response": "5",
+                "unit": "h 20 min"
             }
         ]
     },
     {
         "id": 164,
-        "title": "Pour aller plus loin",
+        "title": "Une table rectangulaire de 6 m de périmètre est mu",
         "part": 4,
-        "text": "Un champ de 4 ha est partagé en 8 parcelles égales.\nQuelle est la superficie d’une parcelle ?",
-        "answer": "40 000 ÷ 8 = 5 000 m²",
-        "questions": [
-            {
-                "response": "5000",
-                "unit": "m²"
-            }
-        ]
+        "text": "Une table rectangulaire de 6 m de périmètre est munie de 2 rallonges demi-circulaires placées sur les petits côtés. La longueur dépasse la largeur de 60 cm.\na) Faire un croquis de la table sans ses rallonges ;\nb) Quelle est, en dm², la surface totale de la table avec ses rallonges? (Prendre π = 3,14.)",
+        "answer": "a) Dimensions de la table :\n\n1) Soit L la longueur et l la largeur\n   L = l + 0,60 m\n   \n   Périmètre = 2(L + l) = 6 m\n   2(l + 0,60 + l) = 6\n   2(2l + 0,60) = 6\n   4l + 1,20 = 6\n   4l = 4,80\n   l = 1,20 m\n   \n   L = 1,20 + 0,60 = 1,80 m\n\nb) Surface totale avec rallonges :\n\n1) Surface du rectangle :\n   Surface rectangle = 1,80 × 1,20 = 2,16 m²\n\n2) Les deux rallonges demi-circulaires :\n   Rayon des demi-cercles = largeur/2 = 1,20/2 = 0,60 m\n   \n   Deux demi-cercles = un cercle complet\n   Surface des rallonges = π × r² = 3,14 × 0,60² = 3,14 × 0,36 = 1,1304 m²\n\n3) Surface totale :\n   Surface totale = 2,16 + 1,1304 = 3,2904 m²\n   \n   Conversion en dm² : 3,2904 m² = 329,04 dm²\n\nRÉPONSE : La surface totale est de 329,04 dm² (environ 329 dm²).",
+        "questions": []
     },
     {
         "id": 165,
-        "title": "Pour aller plus loin",
+        "title": "Une ménagère dépense les 2/5 de son argent. Il lui",
         "part": 4,
-        "text": "Un terrain rectangulaire mesure 200 m sur 150 m.\nCalcule son aire en m² puis en hectares.",
-        "answer": "200 × 150 = 30 000 m²\n30 000 ÷ 10 000 = 3 ha",
-        "questions": [
-            {
-                "response": "3",
-                "unit": "ha"
-            }
-        ]
+        "text": "Une ménagère dépense les 2/5 de son argent. Il lui manque alors 1 050 000 FCFA pour acheter 2 580 m de toile à 900 FCFA le mètre. Quelle somme possédait-elle?",
+        "answer": "1) Prix de la toile :\n   Prix toile = 2 580 m × 900 FCFA/m = 2 322 000 FCFA\n\n2) Soit S la somme initiale\n   \n   Après avoir dépensé 2/5 : il lui reste 3/5 de S\n   \n   3S/5 + 1 050 000 = 2 322 000\n   3S/5 = 2 322 000 - 1 050 000\n   3S/5 = 1 272 000\n   S = 1 272 000 × 5/3\n   S = 2 120 000 FCFA\n\nVÉRIFICATION :\n- Dépense : 2/5 × 2 120 000 = 848 000 FCFA\n- Reste : 2 120 000 - 848 000 = 1 272 000 FCFA\n- Avec le manque : 1 272 000 + 1 050 000 = 2 322 000 FCFA ✓\n\nRÉPONSE : Elle possédait 2 120 000 FCFA.",
+        "questions": []
     },
     {
         "id": 166,
-        "title": "Pour aller plus loin",
+        "title": "Deux terrains ont le même périmètre : l'un est car",
         "part": 4,
-        "text": "Un agriculteur possède 3 ha et vend 1,5 ha.\nQuelle superficie lui reste-t-il ?",
-        "answer": "3 – 1,5 = 1,5 ha\n= 15 000 m²",
+        "text": "Deux terrains ont le même périmètre : l'un est carré, l'autre est rectangulaire. Ce dernier a 124 m de long et 60 m de large. Exprimez la différence de surface des deux terrains. Exprimez cette différence en centiares, puis en ares, puis en hectares.",
+        "answer": "1) Périmètre du terrain rectangulaire :\n   Périmètre = 2(124 + 60) = 2 × 184 = 368 m\n\n2) Côté du terrain carré :\n   Le carré a le même périmètre : 4c = 368\n   c = 368 ÷ 4 = 92 m\n\n3) Surface du terrain carré :\n   Surface carré = 92² = 8 464 m²\n\n4) Surface du terrain rectangulaire :\n   Surface rectangle = 124 × 60 = 7 440 m²\n\n5) Différence de surface :\n   Différence = 8 464 - 7 440 = 1 024 m²\n\n6) Conversions :\n   - En centiares : 1 m² = 1 ca, donc 1 024 ca\n   - En ares : 1 are = 100 m², donc 1 024 ÷ 100 = 10,24 ares\n   - En hectares : 1 ha = 10 000 m², donc 1 024 ÷ 10 000 = 0,1024 ha",
         "questions": [
             {
-                "response": "15000",
-                "unit": "m²"
+                "label": "Différence",
+                "response": "1024",
+                "unit": "m² = 1 024 ca = 10,24 a = 0,1024 ha"
             }
         ]
     },
     {
         "id": 167,
-        "title": "Pour aller plus loin",
+        "title": "Un ouvrier dépense les 4/5 de son gain annuel pour",
         "part": 4,
-        "text": "Un champ mesure 25 000 m².\nExprime cette superficie en hectares.",
-        "answer": "25 000 ÷ 10 000 = 2,5 ha",
+        "text": "Un ouvrier dépense les 4/5 de son gain annuel pour sa nourriture et son entretien. Avec le reste, il paie le loyer de son logement : 372 000 FCFA et porte 620 000 FCFA à la Caisse d'Épargne.\n1° S'il s'est reposé 62 jours non payés dans l'année (il est question de l'année normale qui compte 365 jours), quel est son salaire journalier?\n2° Sachant qu'il dépense 9 000 FCFA par jour pour sa nourriture, quelle est sa dépense annuelle pour son entretien?",
+        "answer": "1) Calcul du gain annuel :\n   \n   Le reste (1/5 du gain) = Loyer + Épargne\n   1/5 × Gain = 372 000 + 620 000\n   1/5 × Gain = 992 000\n   Gain annuel = 992 000 × 5 = 4 960 000 FCFA\n\n2) Salaire journalier :\n   \n   Jours travaillés = 365 - 62 = 303 jours\n   Salaire journalier = 4 960 000 ÷ 303 = 16 370,30 FCFA/jour\n\n3) Dépense pour nourriture et entretien :\n   \n   Dépense totale (nourriture + entretien) = 4/5 × 4 960 000 = 3 968 000 FCFA\n   \n   Dépense nourriture annuelle = 9 000 × 365 = 3 285 000 FCFA\n   \n   Dépense entretien = 3 968 000 - 3 285 000 = 683 000 FCFA",
         "questions": [
             {
-                "response": "5",
-                "unit": "ha"
+                "label": "Salaire journalier",
+                "response": "16370.30",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Dépense annuelle pour l'entretien",
+                "response": "683000",
+                "unit": "FCFA"
             }
         ]
     },
     {
         "id": 168,
-        "title": "Pour aller plus loin",
+        "title": "Un réservoir rectangulaire mesure intérieurement 1",
         "part": 4,
-        "text": "Un terrain de 6 ha est partagé en 3 parts égales.\nQuelle est la superficie d’une part en hectares et en m² ?",
-        "answer": "6 ÷ 3 = 2 ha\n= 20 000 m²\n## 🔵 CAPACITÉS (169–176)",
-        "questions": []
+        "text": "Un réservoir rectangulaire mesure intérieurement 1,50 m de long, 0,92 m de largeur et 1,20 m de hauteur. Quelle est sa contenance en litres? Il contient actuellement de l'eau jusqu'à une hauteur de 24 cm. Pour achever de le remplir, on fait fonctionner une petite moto-pompe qui débite 76 litres d'eau par minute. Combien de temps lui faudra-t-il pour remplir le réservoir?",
+        "answer": "1) Contenance totale du réservoir :\n   Volume = Longueur × Largeur × Hauteur\n   Volume = 1,50 × 0,92 × 1,20 = 1,656 m³\n   \n   Contenance = 1,656 m³ = 1 656 litres\n\n2) Volume d'eau actuellement dans le réservoir :\n   Hauteur d'eau = 24 cm = 0,24 m\n   Volume actuel = 1,50 × 0,92 × 0,24 = 0,3312 m³ = 331,2 litres\n\n3) Volume à ajouter :\n   Volume à ajouter = 1 656 - 331,2 = 1 324,8 litres\n\n4) Temps de remplissage :\n   Débit = 76 litres/minute\n   Temps = 1 324,8 ÷ 76 = 17,43 minutes\n   \n   17,43 minutes = 17 minutes et 0,43 × 60 = 26 secondes\n   Soit environ 17 minutes 26 secondes",
+        "questions": [
+            {
+                "label": "Contenance",
+                "response": "1656",
+                "unit": "litres"
+            },
+            {
+                "label": "Temps de remplissage",
+                "response": "17",
+                "unit": "minutes 26 secondes (environ 17,5 minutes)"
+            }
+        ]
     },
     {
         "id": 169,
-        "title": "Pour aller plus loin",
+        "title": "Un commerçant achète une pièce de drap de 96 m pou",
         "part": 4,
-        "text": "Un bidon contient 5 L.\nExprime en mL.",
-        "answer": "5 000 mL",
+        "text": "Un commerçant achète une pièce de drap de 96 m pour 2 044 800 FCFA. Il paie 34 000 FCFA de transport. Il veut faire un bénéfice égal à 40 % du prix de revient. Quel sera le prix de revient total, le prix de vente d'un mètre de drap?\nEn réalité, il vend seulement les 5/6 de la pièce à ce dernier prix, et solde le reste au prix de revient. Quel est alors le prix de vente total et le bénéfice moyen par mètre?",
+        "answer": "Partie 1 : Calculs prévus\n\n1) Prix de revient total :\n   Prix de revient = 2 044 800 + 34 000 = 2 078 800 FCFA\n\n2) Prix de revient au mètre :\n   Prix de revient/m = 2 078 800 ÷ 96 = 21 654,17 FCFA/m\n\n3) Bénéfice prévu : 40% du prix de revient\n   Prix de vente/m = 21 654,17 × 1,40 = 30 315,83 FCFA/m\n\nPartie 2 : Vente réelle\n\n1) Vente des 5/6 au prix majoré :\n   Quantité = 5/6 × 96 = 80 m\n   Recette = 80 × 30 315,83 = 2 425 266,40 FCFA\n\n2) Solde du reste (1/6) au prix de revient :\n   Quantité = 1/6 × 96 = 16 m\n   Recette = 16 × 21 654,17 = 346 466,72 FCFA\n\n3) Prix de vente total :\n   Prix de vente total = 2 425 266,40 + 346 466,72 = 2 771 733,12 FCFA\n\n4) Bénéfice total :\n   Bénéfice = 2 771 733,12 - 2 078 800 = 692 933,12 FCFA\n\n5) Bénéfice moyen par mètre :\n   Bénéfice/m = 692 933,12 ÷ 96 = 7 218,05 FCFA/m",
         "questions": [
             {
-                "response": "5000",
-                "unit": "mL"
+                "label": "Prix de revient total",
+                "response": "2078800",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Prix de vente prévu/m",
+                "response": "30315.83",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Prix de vente total réel",
+                "response": "2771733.12",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Bénéfice moyen/m",
+                "response": "7218.05",
+                "unit": "FCFA"
             }
         ]
     },
     {
         "id": 170,
-        "title": "Pour aller plus loin",
+        "title": "Une fermière part au marché, où elle vend 25 kg de",
         "part": 4,
-        "text": "Une citerne contient 2 500 L. On retire 750 L.\nQuelle quantité reste-t-il ?",
-        "answer": "1 750 L",
-        "questions": [
-            {
-                "response": "1750",
-                "unit": "L"
-            }
-        ]
+        "text": "Une fermière part au marché, où elle vend 25 kg de beurre à 19 200 FCFA le kg et 102 œufs à 5 040 FCFA la douzaine. Elle possède également, en arrivant au marché, des poules qu'elle espère placer et avoir vendu une somme de 77 520 FCFA. Après avoir vendu ces denrées, elle se rend chez le quincailler où elle achète 1 500 g de clous à 5 440 FCFA le kg. Puis elle règle chez un marchand une note de 175 600 FCFA. Elle se rend enfin chez un tailleur où elle achète 7,80 m de tissu pour faire une robe. Elle rentre chez elle avec 75 680 FCFA. Combien a-t-elle payé le mètre de tissu?",
+        "answer": "1) Recettes :\n   - Beurre : 25 kg × 19 200 FCFA/kg = 480 000 FCFA\n   - Œufs : 102 œufs = 102 ÷ 12 = 8,5 douzaines\n     8,5 douzaines × 5 040 FCFA/douzaine = 42 840 FCFA\n   - Poules : 77 520 FCFA\n   \n   Total recettes = 480 000 + 42 840 + 77 520 = 600 360 FCFA\n\n2) Dépenses :\n   - Clous : 1,5 kg × 5 440 FCFA/kg = 8 160 FCFA\n   - Note chez le marchand : 175 600 FCFA\n   - Tissu : à déterminer\n   \n3) Équation :\n   Argent de départ + Recettes - Dépenses = Argent final\n   \n   Supposons qu'elle n'avait pas d'argent au départ (vente pour acheter) :\n   600 360 - 8 160 - 175 600 - Prix tissu = 75 680\n   416 600 - Prix tissu = 75 680\n   Prix tissu = 416 600 - 75 680 = 340 920 FCFA\n\n4) Prix au mètre :\n   Prix/m = 340 920 ÷ 7,80 = 43 707,69 FCFA/m\n\nRÉPONSE : Le mètre de tissu a été payé 43 707,69 FCFA.",
+        "questions": []
     },
     {
         "id": 171,
-        "title": "Pour aller plus loin",
+        "title": "Un berger parque ses moutons dans un pré entouré d",
         "part": 4,
-        "text": "3 citernes contiennent chacune 1 200 L.\nQuelle quantité totale ?",
-        "answer": "3 600 L",
+        "text": "Un berger parque ses moutons dans un pré entouré de 48 barrières. Sachant que chaque barrière mesure 1 m, quelle serait dans chacun des cas suivants la surface enclose?\n1° Le champ est un carré. \n2° Le champ est un rectangle dont la largeur est formée de 9 barrières. \n3° Prouvez qu'à rayon du parc s'il était un cercle. Quelle en serait la surface? (π = 3, pour simplifier les calculs.)",
+        "answer": "Périmètre total = 48 barrières × 1 m = 48 m\n\n1) Si le champ est un carré :\n   Côté = 48 ÷ 4 = 12 m\n   Surface = 12² = 144 m²\n\n2) Si le champ est un rectangle avec largeur = 9 m :\n   Périmètre = 2(L + l) = 48\n   2(L + 9) = 48\n   L + 9 = 24\n   L = 15 m\n   \n   Surface = 15 × 9 = 135 m²\n\n3) Si le parc est un cercle :\n   Périmètre = 2πr = 48\n   r = 48 ÷ (2π) = 48 ÷ (2 × 3) = 48 ÷ 6 = 8 m\n   \n   Surface = πr² = 3 × 8² = 3 × 64 = 192 m²\n\nCOMPARAISON :\nLe cercle donne la plus grande surface (192 m²), suivi du carré (144 m²), \npuis du rectangle (135 m²).",
         "questions": [
             {
-                "response": "3600",
-                "unit": "L"
+                "label": "Carré",
+                "response": "144",
+                "unit": "m²"
+            },
+            {
+                "label": "Rectangle",
+                "response": "135",
+                "unit": "m²"
+            },
+            {
+                "label": "Cercle",
+                "response": "192",
+                "unit": "m²"
             }
         ]
     },
     {
         "id": 172,
-        "title": "Pour aller plus loin",
+        "title": "Une terrasse rectangulaire a 38,80 m de long sur 1",
         "part": 4,
-        "text": "Une cuve de 4 000 L est remplie aux 3/4.\nQuelle quantité contient-elle ?",
-        "answer": "3 000 L",
+        "text": "Une terrasse rectangulaire a 38,80 m de long sur 15,30 m de large. \n1° Quelle est sa surface? \n2° Sachant que la hauteur d'eau qui tomberait annuellement sur la terrasse serait de 1,70 m, on demande le volume de cette eau et son poids. \n3° Combien de pacs de 175 hl faudrait-il pour contenir cette eau?",
+        "answer": "1) Surface de la terrasse :\n   Surface = 38,80 × 15,30 = 593,64 m²\n\n2) Volume et poids de l'eau :\n   Volume = Surface × Hauteur\n   Volume = 593,64 × 1,70 = 1 009,188 m³\n   \n   Poids : 1 m³ d'eau = 1 000 kg\n   Poids = 1 009,188 × 1 000 = 1 009 188 kg = 1 009,188 tonnes\n\n3) Nombre de pacs nécessaires :\n   Conversion du volume : 1 009,188 m³ = 10 091,88 hl\n   \n   Nombre de pacs = 10 091,88 ÷ 175 = 57,67 pacs\n   \n   Il faut donc 58 pacs de 175 hl.",
         "questions": [
             {
-                "response": "3000",
-                "unit": "L"
+                "label": "Surface",
+                "response": "593.64",
+                "unit": "m²"
+            },
+            {
+                "label": "Volume d'eau",
+                "response": "1009.188",
+                "unit": "m³"
+            },
+            {
+                "label": "Poids de l'eau",
+                "response": "1009188",
+                "unit": "kg (ou 1 009,188 tonnes)"
+            },
+            {
+                "label": "Nombre de pacs",
+                "response": "58",
+                "unit": ""
             }
         ]
     },
     {
         "id": 173,
-        "title": "Pour aller plus loin",
+        "title": "Un cultivateur achète deux prairies ayant l'une la",
         "part": 4,
-        "text": "On verse 250 mL dans 12 bouteilles.\nQuelle quantité totale en litres ?",
-        "answer": "3 L",
+        "text": "Un cultivateur achète deux prairies ayant l'une la forme d'un rectangle de 165 m de long, large de 72 m, et l'autre celle d'un carré de 85 m de côté.\n1° Quelle est la différence entre la surface de ces deux prairies?\n2° Le prix du m² étant le même pour les deux prairies, on a payé la première 642 000 FCFA de plus que la seconde. Quelle est la valeur de chaque prairie?",
+        "answer": "1) Surfaces des prairies :\n   \n   Prairie rectangulaire :\n   Surface₁ = 165 × 72 = 11 880 m²\n   \n   Prairie carrée :\n   Surface₂ = 85² = 7 225 m²\n   \n   Différence = 11 880 - 7 225 = 4 655 m²\n\n2) Prix du m² et valeur des prairies :\n   \n   Soit P le prix au m²\n   \n   Prix prairie 1 = 11 880 × P\n   Prix prairie 2 = 7 225 × P\n   \n   Différence de prix = 642 000 FCFA\n   11 880P - 7 225P = 642 000\n   4 655P = 642 000\n   P = 642 000 ÷ 4 655 = 137,91 FCFA/m²\n   \n   Valeur prairie 1 = 11 880 × 137,91 = 1 638 388,80 FCFA\n   Valeur prairie 2 = 7 225 × 137,91 = 996 388,75 FCFA\n\nVÉRIFICATION :\n1 638 388,80 - 996 388,75 = 642 000,05 ≈ 642 000 ✓",
         "questions": [
             {
-                "response": "3",
-                "unit": "L"
+                "label": "Différence de surface",
+                "response": "4655",
+                "unit": "m²"
+            },
+            {
+                "label": "Valeur prairie rectangulaire",
+                "response": "1638389",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Valeur prairie carrée",
+                "response": "996389",
+                "unit": "FCFA"
             }
         ]
     },
     {
         "id": 174,
-        "title": "Pour aller plus loin",
+        "title": "(Épreuve N°11 - Exercice complet)",
         "part": 4,
-        "text": "Un réservoir contient 6 L 500 mL.\nExprime en mL.",
-        "answer": "6 500 mL",
+        "text": "(Épreuve N°11 - Exercice complet)\nLe papa de Junior, pour l'anniversaire de son fils, se rend dans un magasin pour lui acheter un cadeau : « La Nintendo Switch » dont le prix marqué est de 255 000 FCFA. Il ne paie pas comptant :\nIl verse le 1/3 du prix d'achat à la commande et un quart de ce même prix d'achat le jour de la livraison.\n\n1) Combien lui reste-t-il à payer ?\n2) Le reste à payer sera majoré de 8% et réglé en 10 versements égaux augmentés chacun de 1000 FCFA pour les frais de recouvrement. Calcule le montant de chaque versement.\n3) Quel sera, le prix réel qu'aura versé au total le papa de Junior pour le cadeau ?",
+        "answer": "1) Calcul du reste à payer :\n   \n   À la commande : 1/3 × 255 000 = 85 000 FCFA\n   À la livraison : 1/4 × 255 000 = 63 750 FCFA\n   \n   Total payé = 85 000 + 63 750 = 148 750 FCFA\n   \n   Reste à payer = 255 000 - 148 750 = 106 250 FCFA\n\n2) Montant de chaque versement :\n   \n   Majoration de 8% : 106 250 × 0,08 = 8 500 FCFA\n   Reste majoré = 106 250 + 8 500 = 114 750 FCFA\n   \n   Versement de base = 114 750 ÷ 10 = 11 475 FCFA\n   \n   Avec frais de recouvrement :\n   Montant par versement = 11 475 + 1 000 = 12 475 FCFA\n\n3) Prix réel total :\n   \n   Total versements = 10 × 12 475 = 124 750 FCFA\n   \n   Prix total = 148 750 + 124 750 = 273 500 FCFA",
         "questions": [
             {
-                "response": "6500",
-                "unit": "mL"
+                "label": "Reste à payer",
+                "response": "106250",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Montant de chaque versement",
+                "response": "12475",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Prix réel total",
+                "response": "273500",
+                "unit": "FCFA"
             }
         ]
     },
     {
         "id": 175,
-        "title": "Pour aller plus loin",
+        "title": "(Épreuve N°11 - Suite géométrie)",
         "part": 4,
-        "text": "Un camion transporte 2 000 L d’eau.\nIl livre 650 L.\nQuelle quantité reste-t-il ?",
-        "answer": "1 350 L",
+        "text": "(Épreuve N°11 - Suite géométrie)\nLe papa de Junior décide de répartir à ses trois enfants un terrain rectangulaire ABCD en trois parties ; deux parties triangulaires ADC et EFC et la troisième la partie hachurée ABFE.\nOn donne AB = 10 cm, AD = 6 cm, BF = 3 cm et DE = 4 cm.\nLe plan étant à l'échelle 1/1000\n\n4) Détermine en mètre les longueurs réelles des côtés [AB], [AD], [DE], [EC] et [CF].\n5) Calcule en m² l'aire de ABCD et de ABFE.",
+        "answer": "4) Longueurs réelles :\n   \n   Échelle 1/1000 signifie : 1 cm sur le plan = 1000 cm = 10 m en réalité\n   \n   AB = 10 cm → AB réel = 10 × 10 = 100 m\n   AD = 6 cm → AD réel = 6 × 10 = 60 m\n   DE = 4 cm → DE réel = 4 × 10 = 40 m\n   \n   Pour EC : C est sur le prolongement de D\n   Comme ABCD est rectangle : DC = AB = 100 m\n   EC = DC - DE = 100 - 40 = 60 m\n   \n   Pour CF : F est sur BC\n   BC = AD = 60 m (rectangle)\n   BF = 3 cm → BF réel = 30 m\n   CF = BC - BF = 60 - 30 = 30 m\n\n5) Aires :\n   \n   Aire de ABCD :\n   Aire ABCD = AB × AD = 100 × 60 = 6 000 m²\n   \n   Aire de ABFE :\n   ABFE est un trapèze de bases AB et FE, hauteur = BF\n   FE = AD = 60 m\n   Aire ABFE = (AB + FE) × BF / 2 = (100 + 60) × 30 / 2 = 160 × 15 = 2 400 m²",
+        "questions": []
+    },
+    {
+        "id": 176,
+        "title": "(Épreuve N°11 - Partage proportionnel)",
+        "part": 4,
+        "text": "(Épreuve N°11 - Partage proportionnel)\nLa somme de 1 200 000 FCFA doit être partagée à chacun des trois enfants Nathan, Junior et Williams proportionnellement et respectivement aux nombres 1200, 900 et 3900.\nCombien recevra Nathan, Junior, et Williams ?",
+        "answer": "1) Somme des coefficients :\n   Total = 1 200 + 900 + 3 900 = 6 000\n\n2) Valeur d'une part :\n   Une part = 1 200 000 ÷ 6 000 = 200 FCFA\n\n3) Parts de chacun :\n   \n   Nathan : 1 200 × 200 = 240 000 FCFA\n   Junior : 900 × 200 = 180 000 FCFA\n   Williams : 3 900 × 200 = 780 000 FCFA\n\nVÉRIFICATION :\n240 000 + 180 000 + 780 000 = 1 200 000 ✓",
         "questions": [
             {
-                "response": "1350",
-                "unit": "L"
+                "label": "Nathan recevra",
+                "response": "240000",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Junior recevra",
+                "response": "180000",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Williams recevra",
+                "response": "780000",
+                "unit": "FCFA"
             }
         ]
     },
     {
-        "id": 176,
-        "title": "Pour aller plus loin",
-        "part": 4,
-        "text": "Une citerne contient 3 500 L.\nOn ajoute 1 500 L.\nQuelle est la capacité totale ?",
-        "answer": "5 000 L\n## 🔵 BÉNÉFICES – POURCENTAGES – INTÉRÊTS (177–200)",
-        "questions": []
-    },
-    {
         "id": 177,
-        "title": "Pour aller plus loin",
+        "title": "(Épreuve N°12 - Exercice 1)",
         "part": 4,
-        "text": "Un commerçant achète 200 cahiers à 3 € et les revend 5 €.\nQuel est son bénéfice ?",
-        "answer": "Achat : 600 €\nVente : 1 000 €\nBénéfice : 400 €",
+        "text": "(Épreuve N°12 - Exercice 1)\nPaul achète un terrain rectangulaire de 250m de long et de 200m de large à 175 000F l'hectare.\n1) Calcule la surface et le prix d'achat de ce terrain.\n2) Pour désherber le terrain, il emploie deux manœuvres pendant 15 jours et paie chacun 1 500F par jour. Quelle somme dépense-t-il pour le travail des manœuvres ?\n3) Il entoure ce terrain d'une clôture valant 750F le mètre. Calcule le prix de la clôture.\n4) Calcule le prix de revient du terrain.\n5) Quelques années après, il revend ce terrain en faisant un bénéfice de 475 825F. A combien a-t-il vendu ce terrain ?",
+        "answer": "1) Surface et prix d'achat :\n   \n   Surface = 250 × 200 = 50 000 m²\n   Conversion : 50 000 m² = 5 hectares\n   \n   Prix d'achat = 5 × 175 000 = 875 000 FCFA\n\n2) Coût du désherbage :\n   \n   Coût = 2 manœuvres × 15 jours × 1 500 FCFA/jour\n   Coût = 2 × 15 × 1 500 = 45 000 FCFA\n\n3) Prix de la clôture :\n   \n   Périmètre = 2(250 + 200) = 2 × 450 = 900 m\n   Prix clôture = 900 × 750 = 675 000 FCFA\n\n4) Prix de revient :\n   \n   Prix de revient = Prix d'achat + Désherbage + Clôture\n   Prix de revient = 875 000 + 45 000 + 675 000 = 1 595 000 FCFA\n\n5) Prix de vente :\n   \n   Prix de vente = Prix de revient + Bénéfice\n   Prix de vente = 1 595 000 + 475 825 = 2 070 825 FCFA",
         "questions": [
             {
-                "label": "Achat",
-                "response": "600",
-                "unit": "€"
+                "label": "Surface",
+                "response": "50000",
+                "unit": "m² (5 ha) ; Prix d'achat : 875 000 FCFA"
             },
             {
-                "label": "Vente",
-                "response": "1000",
-                "unit": "€"
+                "label": "Coût désherbage",
+                "response": "45000",
+                "unit": "FCFA"
             },
             {
-                "label": "Bénéfice",
-                "response": "400",
-                "unit": "€"
+                "label": "Prix clôture",
+                "response": "675000",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Prix de revient",
+                "response": "1595000",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Prix de vente",
+                "response": "2070825",
+                "unit": "FCFA"
             }
         ]
     },
     {
         "id": 178,
-        "title": "Pour aller plus loin",
+        "title": "(Épreuve N°12 - Exercice 2)",
         "part": 4,
-        "text": "Un capital de 500 000 € est placé à 5 % pendant 1 an.\nQuel est le montant des intérêts ?",
-        "answer": "25 000 €",
+        "text": "(Épreuve N°12 - Exercice 2)\nUne course cycliste se déroule sur une piste circulaire de 5km à couvrir 30 fois.\n1) Calculer la distance totale à parcourir par chaque cycliste.\n2) Sur 75 coureurs ayant pris le départ, seul 35 ont terminé la course. Calcule le nombre de coureurs qui ont abandonné.\n3) Parmi ceux qui ont abandonné, ISSA n'a fait que 18 tours.\n   a) Quelle distance a-t-il parcouru ?\n   b) Quel pourcentage du parcours total ISSA a-t-il fait ?\n4) La course a commencé à 6h15mn et a pris fin à 10h.\n   a) Quelle a été la durée de la course ?\n   b) A quelle vitesse moyenne en km/h les coureurs ont-ils roulée ?",
+        "answer": "1) Distance totale :\n   Distance = 5 km × 30 tours = 150 km\n\n2) Nombre d'abandons :\n   Abandons = 75 - 35 = 40 coureurs\n\n3a) Distance parcourue par ISSA :\n   Distance ISSA = 5 km × 18 = 90 km\n\n3b) Pourcentage :\n   Pourcentage = (90 ÷ 150) × 100 = 60%\n\n4a) Durée de la course :\n   Début : 6h15\n   Fin : 10h00\n   Durée = 10h00 - 6h15 = 3h45 = 3,75 heures\n\n4b) Vitesse moyenne :\n   Vitesse = Distance ÷ Temps = 150 ÷ 3,75 = 40 km/h",
         "questions": [
             {
-                "response": "25000",
-                "unit": "€"
+                "label": "Distance totale",
+                "response": "150",
+                "unit": "km"
+            },
+            {
+                "label": "Nombre d'abandons",
+                "response": "40",
+                "unit": "coureurs"
+            },
+            {
+                "label": "Distance ISSA",
+                "response": "90",
+                "unit": "km"
+            },
+            {
+                "label": "Pourcentage ISSA",
+                "response": "60",
+                "unit": "%"
+            },
+            {
+                "label": "Durée de la course",
+                "response": "3",
+                "unit": "h45"
+            },
+            {
+                "label": "Vitesse moyenne",
+                "response": "40",
+                "unit": "km/h"
             }
         ]
     },
     {
         "id": 179,
-        "title": "Pour aller plus loin",
+        "title": "(Épreuve N°12 - Exercice 3)",
         "part": 4,
-        "text": "10 % de 2 500 élèves participent à une sortie.\nCombien d’élèves participent ?",
-        "answer": "250 élèves",
+        "text": "(Épreuve N°12 - Exercice 3)\nUn rond-point a un diamètre de 4,48m. On plante sur son pourtour des arbustes espacés de 2m. Combien d'arbustes seront-ils nécessaires ?",
+        "answer": "1) Périmètre du rond-point :\n   Périmètre = π × diamètre\n   Périmètre = 3,14 × 4,48 = 14,07 m (environ)\n\n2) Nombre d'arbustes :\n   Espacement = 2 m\n   Nombre d'arbustes = Périmètre ÷ Espacement\n   Nombre d'arbustes = 14,07 ÷ 2 = 7,035\n   \n   On arrondit à 7 arbustes\n\nRÉPONSE : Il faut 7 arbustes.",
         "questions": []
     },
     {
         "id": 180,
-        "title": "Pour aller plus loin",
+        "title": "(Épreuve N°12 - Exercice 4)",
         "part": 4,
-        "text": "Un agriculteur vend 1 000 poulets à 3 000 €.\n5 % meurent avant la vente.\nCombien en vend-il ?",
-        "answer": "5 % de 1 000 = 50\n1 000 – 50 = 950",
+        "text": "(Épreuve N°12 - Exercice 4)\nUn chef de famille achète pour équiper sa maison, un téléviseur, un magnétoscope et une table à manger pour un montant de 955 000F. On te dit que le téléviseur vaut deux fois le prix du magnétoscope et le magnétoscope trois fois le prix de la table à manger.\nQuel est le prix de chacun de ces objets ?",
+        "answer": "1) Soit T le prix de la table\n   \n   Prix magnétoscope = 3T\n   Prix téléviseur = 2 × (3T) = 6T\n   \n2) Équation :\n   T + 3T + 6T = 955 000\n   10T = 955 000\n   T = 95 500 FCFA\n\n3) Prix de chaque objet :\n   Table = 95 500 FCFA\n   Magnétoscope = 3 × 95 500 = 286 500 FCFA\n   Téléviseur = 6 × 95 500 = 573 000 FCFA\n\nVÉRIFICATION :\n95 500 + 286 500 + 573 000 = 955 000 ✓",
         "questions": [
             {
-                "response": "950",
-                "unit": ""
+                "label": "Table",
+                "response": "95500",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Magnétoscope",
+                "response": "286500",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Téléviseur",
+                "response": "573000",
+                "unit": "FCFA"
             }
         ]
     },
     {
         "id": 181,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°43 - Problème a)",
         "part": 4,
-        "text": "Un capital de 2 000 000 € est placé à 4 %.\nQuel est l’intérêt annuel ?",
-        "answer": "80 000 €",
+        "text": "(Sujet N°43 - Problème a)\nLe jardin de ton oncle est entouré d'une rangée de fil de fer soutenue par 45 piquets espacés de 0,80m les uns des autres. Calcule le périmètre et l'aire de ce jardin s'il est un carré.",
+        "answer": "1) Périmètre du jardin :\n   \n   Entre 45 piquets, il y a 44 intervalles (forme fermée = 45 intervalles)\n   Note : Pour un jardin carré fermé avec 45 piquets, on a bien 45 intervalles\n   \n   Périmètre = 45 × 0,80 = 36 m\n\n2) Côté du carré :\n   Côté = 36 ÷ 4 = 9 m\n\n3) Aire du jardin :\n   Aire = 9² = 81 m²",
         "questions": [
             {
-                "response": "80000",
-                "unit": "€"
+                "label": "Périmètre",
+                "response": "36",
+                "unit": "m"
+            },
+            {
+                "label": "Aire",
+                "response": "81",
+                "unit": "m²"
             }
         ]
     },
     {
         "id": 182,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°43 - Problème b)",
         "part": 4,
-        "text": "25 % de 2 400 élèves sont des filles.\nCombien y a-t-il de filles ?",
-        "answer": "600",
+        "text": "(Sujet N°43 - Problème b)\nTa maman te remet 1 000f pour acheter un cahier, un compas et un crayon.\nTu lui rapportes 210f.\nSachant que le cahier coûte 300f et que le crayon coûte 90f de moins que le compas, aide-la à trouver le prix du crayon et du compas.",
+        "answer": "1) Montant dépensé :\n   Dépense = 1 000 - 210 = 790 FCFA\n\n2) Soit C le prix du compas\n   Prix crayon = C - 90\n   Prix cahier = 300\n   \n   Équation :\n   300 + C + (C - 90) = 790\n   300 + 2C - 90 = 790\n   210 + 2C = 790\n   2C = 580\n   C = 290 FCFA\n\n3) Prix de chaque article :\n   Compas = 290 FCFA\n   Crayon = 290 - 90 = 200 FCFA\n   Cahier = 300 FCFA\n\nVÉRIFICATION :\n300 + 290 + 200 = 790 ✓",
         "questions": [
             {
-                "response": "600",
-                "unit": ""
+                "label": "Prix du compas",
+                "response": "290",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Prix du crayon",
+                "response": "200",
+                "unit": "FCFA"
             }
         ]
     },
     {
         "id": 183,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°43 - Problème c)",
         "part": 4,
-        "text": "Un objet coûte 50 000 €.\nIl subit une réduction de 10 %.\nQuel est le nouveau prix ?",
-        "answer": "Réduction : 5 000 €\nPrix final : 45 000 €",
+        "text": "(Sujet N°43 - Problème c)\nUn épicier achète des boîtes de sardines qu'il revend en faisant un bénéfice égal à 25% du prix d'achat. Il réalise ainsi un bénéfice de 67 000F en vendant chaque boîte à 150f.\nOn demande :\na) Le prix d'achat total des boîtes de sardine ;\nb) Le prix de vente total ;\nc) Le nombre de boîtes vendues ;\nd) Le prix d'achat d'une boîte.",
+        "answer": "1) Soit PA le prix d'achat total\n   \n   Bénéfice = 25% de PA = 0,25 × PA\n   0,25 × PA = 67 000\n   PA = 67 000 ÷ 0,25 = 268 000 FCFA\n\n2) Prix de vente total :\n   PV = PA + Bénéfice = 268 000 + 67 000 = 335 000 FCFA\n\n3) Nombre de boîtes :\n   Nombre = PV total ÷ Prix unitaire\n   Nombre = 335 000 ÷ 150 = 2 233,33 boîtes\n   \n   Arrondi : environ 2 233 boîtes\n\n4) Prix d'achat d'une boîte :\n   Prix achat unitaire = PA total ÷ Nombre\n   Prix achat unitaire = 268 000 ÷ 2 233,33 = 120 FCFA/boîte\n   \n   Vérification : 120 × 1,25 = 150 ✓",
         "questions": [
             {
-                "label": "Réduction",
-                "response": "5000",
-                "unit": "€"
+                "label": "a) Prix d'achat total",
+                "response": "268000",
+                "unit": "FCFA"
             },
             {
-                "label": "Prix final",
-                "response": "45000",
-                "unit": "€"
+                "label": "b) Prix de vente total",
+                "response": "335000",
+                "unit": "FCFA"
+            },
+            {
+                "label": "c) Nombre de boîtes",
+                "response": "2233",
+                "unit": "boîtes (environ)"
+            },
+            {
+                "label": "d) Prix d'achat unitaire",
+                "response": "120",
+                "unit": "FCFA"
             }
         ]
     },
     {
         "id": 184,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°42 - Problème I)",
         "part": 4,
-        "text": "Un marchand achète 300 kg de riz à 400 € le kg et revend à 550 €.\nQuel est son bénéfice ?",
-        "answer": "45 000 €",
-        "questions": [
-            {
-                "response": "45000",
-                "unit": "€"
-            }
-        ]
+        "text": "(Sujet N°42 - Problème I)\nLa table de votre cuisine est rectangulaire et mesure 1,40m de long sur 0,85m de large. Votre mère veut la couvrir d'une nappe qui débordera en tous sens de 25cm.\nQuelle sera la surface de cette nappe ?",
+        "answer": "1) Dimensions de la nappe :\n   \n   Débordement = 25 cm = 0,25 m de chaque côté\n   \n   Longueur nappe = 1,40 + 2×0,25 = 1,40 + 0,50 = 1,90 m\n   Largeur nappe = 0,85 + 2×0,25 = 0,85 + 0,50 = 1,35 m\n\n2) Surface de la nappe :\n   Surface = 1,90 × 1,35 = 2,565 m²\n\nRÉPONSE : La surface de la nappe sera 2,565 m² (ou 2,57 m²).",
+        "questions": []
     },
     {
         "id": 185,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°42 - Problème II)",
         "part": 4,
-        "text": "15 % de 800 arbres sont malades.\nCombien d’arbres sont malades ?",
-        "answer": "120",
-        "questions": [
-            {
-                "response": "120",
-                "unit": ""
-            }
-        ]
+        "text": "(Sujet N°42 - Problème II)\nVotre oncle cultivateur a récolté 32hl de blé par ha dans son champ qui est en forme de trapèze dont les bases mesurent respectivement 162m et 148m et la hauteur 60m.\nQuelle a été sa récolte totale ?",
+        "answer": "1) Surface du champ (trapèze) :\n   \n   Surface = (Grande base + Petite base) × Hauteur / 2\n   Surface = (162 + 148) × 60 / 2\n   Surface = 310 × 30 = 9 300 m²\n\n2) Conversion en hectares :\n   Surface = 9 300 m² = 0,93 ha\n\n3) Récolte totale :\n   Rendement = 32 hl/ha\n   Récolte = 0,93 × 32 = 29,76 hl\n\nRÉPONSE : La récolte totale a été de 29,76 hectolitres (environ 30 hl).",
+        "questions": []
     },
     {
         "id": 186,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°42 - Problème III)",
         "part": 4,
-        "text": "Un capital de 1 200 000 € est placé à 3 %.\nQuel est l’intérêt ?",
-        "answer": "36 000 €",
-        "questions": [
-            {
-                "response": "36000",
-                "unit": "€"
-            }
-        ]
+        "text": "(Sujet N°42 - Problème III)\nVotre père achète une maison pour une somme de 425 000f. Il paie en plus des frais qui s'élèvent à 20% du prix d'achat de la maison. A combien lui revient cette maison ?",
+        "answer": "1) Prix d'achat : 425 000 FCFA\n\n2) Frais supplémentaires :\n   Frais = 20% de 425 000 = 0,20 × 425 000 = 85 000 FCFA\n\n3) Prix de revient total :\n   Prix de revient = 425 000 + 85 000 = 510 000 FCFA\n\nRÉPONSE : La maison lui revient à 510 000 FCFA.",
+        "questions": []
     },
     {
         "id": 187,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°42 - Problème IV)",
         "part": 4,
-        "text": "Un libraire achète 200 livres à 8 € et les revend 12 €.\nQuel est le bénéfice ?",
-        "answer": "800 €",
-        "questions": [
-            {
-                "response": "800",
-                "unit": "€"
-            }
-        ]
+        "text": "(Sujet N°42 - Problème IV)\nVotre tante veut acheter une machine à coudre qui coute 264 000F. Comme elle n'a pas assez d'argent, elle verse à l'achat le 1/3 du prix marqué. Le reste versé en dix versements égaux sera majoré de 5% après chaque 6 mois. Combien doit-elle verser chaque 6 mois ?",
+        "answer": "1) Versement initial :\n   Versement initial = 1/3 × 264 000 = 88 000 FCFA\n\n2) Reste à payer :\n   Reste = 264 000 - 88 000 = 176 000 FCFA\n\n3) Premier semestre (5 versements) :\n   Majoration 1 = 5% de 176 000 = 8 800 FCFA\n   Montant majoré 1 = 176 000 + 8 800 = 184 800 FCFA\n\n4) Deuxième semestre (5 versements) :\n   Il faut calculer sur le reste après 6 mois\n   \n   Interprétation : La majoration de 5% s'applique après chaque période de 6 mois\n   \n   Solution simplifiée :\n   - 5 versements dans les 6 premiers mois\n   - 5 versements dans les 6 mois suivants\n   \n   Si majoration simple :\n   Total avec majoration = 176 000 × 1,05 = 184 800 FCFA\n   Versement = 184 800 ÷ 10 = 18 480 FCFA tous les mois\n   \n   Par semestre : 5 × 18 480 = 92 400 FCFA\n\nRÉPONSE : Elle doit verser 92 400 FCFA chaque 6 mois.",
+        "questions": []
     },
     {
         "id": 188,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°42 - Problème V)",
         "part": 4,
-        "text": "Un agriculteur vend 2 000 melons à 1 500 €.\nQuelle est la recette totale ?",
-        "answer": "3 000 000 €",
-        "questions": [
-            {
-                "response": "3000000",
-                "unit": "€"
-            }
-        ]
+        "text": "(Sujet N°42 - Problème V)\nOn blanchit les quatre murs et le plafond d'une chambre de 8m de long, 6m de large et 4m de hauteur, à raison de 1600F le m². Quelle la dépense si on tiendra compte que les ouvertures ne sont pas peintes et mesurent 18m² ?",
+        "answer": "1) Surface des quatre murs :\n   \n   2 murs de 8m × 4m = 2 × 32 = 64 m²\n   2 murs de 6m × 4m = 2 × 24 = 48 m²\n   Total murs = 64 + 48 = 112 m²\n\n2) Surface du plafond :\n   Surface plafond = 8 × 6 = 48 m²\n\n3) Surface totale à peindre :\n   Surface totale = 112 + 48 = 160 m²\n\n4) Surface réelle (sans ouvertures) :\n   Surface à peindre = 160 - 18 = 142 m²\n\n5) Dépense :\n   Dépense = 142 × 1 600 = 227 200 FCFA\n\nRÉPONSE : La dépense sera de 227 200 FCFA.\n\n═══════════════════════════════════════════════════════════════════════════════\n                              FIN DU DOCUMENT",
+        "questions": []
     },
     {
         "id": 189,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°22 - Exercice I)",
         "part": 4,
-        "text": "Une école vend 800 tickets à 250 €.\nQuelle est la recette totale ?",
-        "answer": "200 000 €",
-        "questions": [
-            {
-                "response": "200000",
-                "unit": "€"
-            }
-        ]
+        "text": "(Sujet N°22 - Exercice I)\nUn Boeing 747 de Cameroon-Air lines part de Douala à 22 heures et arrive à Paris à 4 heures du matin à la vitesse moyenne de 600km/h.\nCalculez la distance entre Paris et Douala.",
+        "answer": "1) Calcul de la durée du voyage :\n   Départ : 22h00\n   Arrivée : 4h00 du matin (le lendemain)\n   \n   Durée = 24h - 22h + 4h = 6 heures\n\n2) Distance parcourue :\n   Distance = Vitesse × Temps\n   Distance = 600 km/h × 6 h = 3 600 km\n\nRÉPONSE : La distance entre Paris et Douala est de 3 600 km.",
+        "questions": []
     },
     {
         "id": 190,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°22 - Exercice II)",
         "part": 4,
-        "text": "Un commerçant perd 10 % sur 50 000 €.\nQuelle est la perte ?",
-        "answer": "5 000 €",
-        "questions": [
-            {
-                "response": "5000",
-                "unit": "€"
-            }
-        ]
+        "text": "(Sujet N°22 - Exercice II)\nIl transporte 348 passagers et 10 membres d'équipage dont le poids moyen par personne est de 70kg et du fret (bagages) de 6 tonnes. Sachant que le poids de l'avion est de 10,5 tonnes et celui de l'essence 7500kg, quel est le poids total de la cargaison volante ?",
+        "answer": "1) Poids des personnes :\n   Nombre total de personnes = 348 + 10 = 358 personnes\n   Poids total personnes = 358 × 70 kg = 25 060 kg = 25,06 tonnes\n\n2) Poids du fret : 6 tonnes\n\n3) Poids de l'avion : 10,5 tonnes\n\n4) Poids de l'essence : 7 500 kg = 7,5 tonnes\n\n5) Poids total de la cargaison volante :\n   Poids total = 25,06 + 6 + 10,5 + 7,5 = 49,06 tonnes\n\nRÉPONSE : Le poids total de la cargaison volante est 49,06 tonnes.",
+        "questions": []
     },
     {
         "id": 191,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°22 - Exercice III)",
         "part": 4,
-        "text": "5 % de 600 arbres sont coupés.\nCombien sont coupés ?",
-        "answer": "30",
+        "text": "(Sujet N°22 - Exercice III)\nDans un champ on creuse un puits circulaire de 3m de diamètre et 6m de profondeur. Calculez le volume de terre à évacuer. Combien de brouettes de terre peut-on retirer sachant qu'une brouette est égale à 0,6m et que la terre remuée augmente son volume de 3,5%, (π =3,14).",
+        "answer": "1) Volume du cylindre (puits) :\n   Rayon = Diamètre ÷ 2 = 3 ÷ 2 = 1,5 m\n   Hauteur = 6 m\n   \n   Volume = π × r² × h\n   Volume = 3,14 × 1,5² × 6\n   Volume = 3,14 × 2,25 × 6\n   Volume = 42,39 m³\n\n2) Volume de terre remuée (augmentation de 3,5%) :\n   Augmentation = 42,39 × 0,035 = 1,48365 m³\n   Volume total remué = 42,39 + 1,48365 = 43,87365 m³\n\n3) Nombre de brouettes :\n   Volume d'une brouette = 0,6 m³\n   Nombre = 43,87365 ÷ 0,6 = 73,12 brouettes\n   \n   Soit environ 74 brouettes",
         "questions": [
             {
-                "response": "30",
-                "unit": ""
+                "label": "Volume à évacuer",
+                "response": "42.39",
+                "unit": "m³"
+            },
+            {
+                "label": "Nombre de brouettes",
+                "response": "74",
+                "unit": "brouettes"
             }
         ]
     },
     {
         "id": 192,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°22 - Exercice IV)",
         "part": 4,
-        "text": "Un capital de 1 300 000 € est placé à 6 %.\nQuel est l’intérêt ?",
-        "answer": "78 000 €",
+        "text": "(Sujet N°22 - Exercice IV)\nLa somme des bases d'un trapèze rectangulaire est 11,4cm. La grande base est double de la petite base, et la hauteur mesure 1cm de moins que la petite base sur un plan au 1/5000.\na) Calculez les dimensions réelles de ce trapèze.\nb) Calculez sa surface en ha.\nc) Sa valeur à raison de 4000F / ha.",
+        "answer": "1) Dimensions sur le plan :\n   Soit b la petite base\n   Grande base = 2b\n   \n   b + 2b = 11,4 cm\n   3b = 11,4\n   b = 3,8 cm\n   \n   Grande base = 2 × 3,8 = 7,6 cm\n   Hauteur = 3,8 - 1 = 2,8 cm\n\n2) Dimensions réelles (échelle 1/5000) :\n   1 cm sur le plan = 5000 cm = 50 m en réalité\n   \n   Petite base réelle = 3,8 × 50 = 190 m\n   Grande base réelle = 7,6 × 50 = 380 m\n   Hauteur réelle = 2,8 × 50 = 140 m\n\n3) Surface du trapèze :\n   Surface = (Petite base + Grande base) × Hauteur / 2\n   Surface = (190 + 380) × 140 / 2\n   Surface = 570 × 70 = 39 900 m²\n   \n   Conversion en hectares : 39 900 m² = 3,99 ha\n\n4) Valeur du terrain :\n   Valeur = 3,99 ha × 4000 F/ha = 15 960 FCFA",
         "questions": [
             {
-                "response": "78000",
-                "unit": "€"
+                "label": "a) Dimensions réelles",
+                "response": "",
+                "unit": "base 190 m, Grande base 380 m, Hauteur 140 m"
+            },
+            {
+                "label": "b) Surface",
+                "response": "3.99",
+                "unit": "ha"
+            },
+            {
+                "label": "c) Valeur",
+                "response": "15960",
+                "unit": "FCFA"
             }
         ]
     },
     {
         "id": 193,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°21 - Exercice 2)",
         "part": 4,
-        "text": "400 cahiers à 3 € sont vendus 5 €.\nQuel est le bénéfice ?",
-        "answer": "800 €",
-        "questions": [
-            {
-                "response": "800",
-                "unit": "€"
-            }
-        ]
+        "text": "(Sujet N°21 - Exercice 2)\nIl embauche quatre ouvriers pour le défrichage de son terrain. Il prévoit de dépenser 393000F pour les salaires. Quel sera le salaire de chaque ouvrier.",
+        "answer": "Salaire par ouvrier = Salaire total ÷ Nombre d'ouvriers\nSalaire par ouvrier = 393 000 ÷ 4 = 98 250 FCFA\n\nRÉPONSE : Chaque ouvrier recevra 98 250 FCFA.",
+        "questions": []
     },
     {
         "id": 194,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°21 - Exercice 3)",
         "part": 4,
-        "text": "Un terrain vaut 200 000 €.\nIl augmente de 10 %.\nQuel est le nouveau prix ?",
-        "answer": "220 000 €",
-        "questions": [
-            {
-                "response": "220000",
-                "unit": "€"
-            }
-        ]
+        "text": "(Sujet N°21 - Exercice 3)\nLes services de l'agriculture estiment qu'il faut en moyenne 1200 boutures par ha. Combien de boutures doit-on prévoir pour cette nouvelle cacaoyère ?",
+        "answer": "Note : Cet exercice fait référence à une cacaoyère dont la surface doit être donnée dans un exercice précédent. Sans cette information, je vais présumer qu'il s'agit de la cacaoyère de l'exercice précédent.\n\nSi la surface est S hectares :\nNombre de boutures = S × 1 200 boutures/ha\n\nRÉPONSE : Sans la surface exacte, nombre de boutures = Surface (en ha) × 1 200",
+        "questions": []
     },
     {
         "id": 195,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°21 - Exercice 4)",
         "part": 4,
-        "text": "75 % de 4 000 L d’eau sont utilisés.\nQuelle quantité est utilisée ?",
-        "answer": "3 000 L",
-        "questions": [
-            {
-                "response": "3000",
-                "unit": "L"
-            }
-        ]
+        "text": "(Sujet N°21 - Exercice 4)\nJean plante les boutures à 3,5m l'une de l'autre dans le sens de la longueur et à 2,5m l'une de l'autre dans le sens de la largeur. Quel sera le nombre réel de boutures nécessaires ?",
+        "answer": "Note : Cet exercice nécessite les dimensions du terrain. En supposant un terrain rectangulaire de longueur L et largeur l :\n\n1) Nombre de boutures dans le sens de la longueur :\n   Nombre en longueur = (L ÷ 3,5) + 1\n\n2) Nombre de boutures dans le sens de la largeur :\n   Nombre en largeur = (l ÷ 2,5) + 1\n\n3) Nombre total de boutures :\n   Total = Nombre en longueur × Nombre en largeur\n\nRÉPONSE : Sans dimensions précises, impossible de calculer le nombre exact.",
+        "questions": []
     },
     {
         "id": 196,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°21 - Exercice 5)",
         "part": 4,
-        "text": "Un capital de 600 000 € placé à 2 %.\nQuel est l’intérêt ?",
-        "answer": "12 000 €",
-        "questions": [
-            {
-                "response": "12000",
-                "unit": "€"
-            }
-        ]
+        "text": "(Sujet N°21 - Exercice 5)\nLes services de l'agriculture lui font cadeau de 3600 boutures. Le prix de revient de ces boutures est de 100F les 12. Combien dépensera les services de l'agriculture pour cette cacaoyère ?",
+        "answer": "1) Prix de revient par bouture :\n   Prix unitaire = 100 F ÷ 12 = 8,33 FCFA/bouture\n\n2) Coût total pour 3600 boutures :\n   Coût total = 3 600 × 8,33 = 29 988 FCFA\n   \n   Ou par douzaines :\n   Nombre de douzaines = 3 600 ÷ 12 = 300 douzaines\n   Coût = 300 × 100 = 30 000 FCFA\n\nRÉPONSE : Les services de l'agriculture dépenseront 30 000 FCFA.",
+        "questions": []
     },
     {
         "id": 197,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°21 - Exercice 1)",
         "part": 4,
-        "text": "Une entreprise gagne 300 000 € et dépense 250 000 €.\nQuel est le bénéfice ?",
-        "answer": "50 000 €",
+        "text": "(Sujet N°21 - Exercice 1)\nAkapa, un industriel construit une usine de transformation de l'huile de palme en produit de beauté. Il achète un terrain de 125m de long sur 71m de large à 3500F le mètre carré. Les frais d'acquisition représentent les 10% du coût du terrain. Calcule le montant des frais d'acquisition ainsi que les prix de revient du terrain.",
+        "answer": "1) Surface du terrain :\n   Surface = 125 × 71 = 8 875 m²\n\n2) Prix d'achat du terrain :\n   Prix achat = 8 875 × 3 500 = 31 062 500 FCFA\n\n3) Frais d'acquisition (10% du coût) :\n   Frais = 10% × 31 062 500 = 3 106 250 FCFA\n\n4) Prix de revient total :\n   Prix de revient = Prix achat + Frais\n   Prix de revient = 31 062 500 + 3 106 250 = 34 168 750 FCFA",
         "questions": [
             {
-                "response": "50000",
-                "unit": "€"
+                "label": "Frais d'acquisition",
+                "response": "3106250",
+                "unit": "FCFA"
+            },
+            {
+                "label": "Prix de revient",
+                "response": "34168750",
+                "unit": "FCFA"
             }
         ]
     },
     {
         "id": 198,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°21 - Exercice 2)",
         "part": 4,
-        "text": "Une réduction de 20 % est appliquée sur 40 000 €.\nQuel est le montant de la réduction ?",
-        "answer": "8 000 €",
-        "questions": [
-            {
-                "response": "8000",
-                "unit": "€"
-            }
-        ]
+        "text": "(Sujet N°21 - Exercice 2)\nUn automobiliste part de Yaoundé à 6h08mn et arrive à Bangangté à 11h. Durant son voyage il a eu à échange une roue crevée pendant 30mn. Il s'est arrêté 25mn pour manger dans un restaurant un bout de pain et du bœuf à 350F. Quelles questions peux-tu poser pour que ce texte devienne un problème ? Pose-les et résouds-les.",
+        "answer": "Questions possibles :\n\n1) Quelle a été la durée effective du trajet (sans les arrêts) ?\n   Durée totale = 11h00 - 6h08 = 4h52 min\n   Temps d'arrêt = 30 min + 25 min = 55 min\n   Durée de conduite = 4h52 - 55 min = 3h57 min = 237 minutes\n\n2) Si la distance Yaoundé-Bangangté est de 285 km, quelle a été la vitesse moyenne ?\n   Vitesse = 285 km ÷ 3,95 h ≈ 72,15 km/h\n\n3) Quel a été le coût total du voyage sachant qu'il a dépensé 350F pour le repas et que l'essence coûte 15 000F ?\n   Coût total = 350 + 15 000 = 15 350 FCFA",
+        "questions": []
     },
     {
         "id": 199,
-        "title": "Pour aller plus loin",
+        "title": "(Sujet N°21 - Exercice 3)",
         "part": 4,
-        "text": "Un magasin vend 500 articles à 2 000 €.\nQuelle est la recette ?",
-        "answer": "1 000 000 €",
+        "text": "(Sujet N°21 - Exercice 3)\nSur le plan cadastral à l'échelle de 1/1000 ? Un champ est représenté par un trapèze. Sur le plan, la base du trapèze mesure 8,5cm et 5,5cm et la hauteur 6cm. Calcule:\n1) Les dimensions réelles du champ\n2) Calculez l'aire du champ",
+        "answer": "1) Dimensions réelles (échelle 1/1000) :\n   1 cm sur le plan = 1000 cm = 10 m en réalité\n   \n   Grande base = 8,5 × 10 = 85 m\n   Petite base = 5,5 × 10 = 55 m\n   Hauteur = 6 × 10 = 60 m\n\n2) Aire du champ (trapèze) :\n   Aire = (Grande base + Petite base) × Hauteur / 2\n   Aire = (85 + 55) × 60 / 2\n   Aire = 140 × 30 = 4 200 m²",
         "questions": [
             {
-                "response": "1000000",
-                "unit": "€"
+                "label": "1) Dimensions réelles",
+                "response": "",
+                "unit": "base 85 m, Petite base 55 m, Hauteur 60 m"
+            },
+            {
+                "label": "2) Aire",
+                "response": "4200",
+                "unit": "m²"
             }
         ]
     },
     {
         "id": 200,
-        "title": "Pour aller plus loin",
+        "title": "(Page 49 - Exercice II)",
         "part": 4,
-        "text": "Un agriculteur vend 2 000 melons à 1 500 €.\nSes dépenses sont de 2 400 000 €.\nQuel est son bénéfice ?",
-        "answer": "Recette : 3 000 000 €\nBénéfice : 600 000 €\n-",
+        "text": "(Page 49 - Exercice II)\nLe champ voisin de celui de ton oncle est un rectangle mesure 38m de long sur 24m de large. Une piste de 2,5 m de largeur le traverse dans le sens de la longueur. Pose deux questions et calcule.",
+        "answer": "Questions possibles :\n\n1) Quelle est la surface totale du champ ?\n   Surface totale = 38 × 24 = 912 m²\n\n2) Quelle est la surface de la piste ?\n   Surface piste = 38 × 2,5 = 95 m²\n\n3) Quelle est la surface cultivable (sans la piste) ?\n   Surface cultivable = 912 - 95 = 817 m²",
         "questions": [
             {
-                "label": "Recette",
-                "response": "3000000",
-                "unit": "€"
+                "label": "Surface totale",
+                "response": "912",
+                "unit": "m²"
             },
             {
-                "label": "Bénéfice",
-                "response": "600000",
-                "unit": "€"
+                "label": "Surface de la piste",
+                "response": "95",
+                "unit": "m²"
+            },
+            {
+                "label": "Surface cultivable",
+                "response": "817",
+                "unit": "m²"
+            }
+        ]
+    },
+    {
+        "id": 201,
+        "title": "(Page 49 - Exercice III)",
+        "part": 4,
+        "text": "(Page 49 - Exercice III)\nTu vas dans une piscine qui à la forme d'un pavé mesurant intérieurement de long, 1,2m de large et 2,5m de profondeur. Combien selon toi doit-elle contenir de litres d'eaux ?",
+        "answer": "Note : Il manque la longueur dans l'énoncé. En supposant \"L\" mètres de long :\n\n1) Volume de la piscine :\n   Volume = Longueur × Largeur × Profondeur\n   Volume = L × 1,2 × 2,5 = 3L m³\n\n2) Conversion en litres :\n   1 m³ = 1 000 litres\n   Capacité = 3L × 1 000 = 3 000L litres\n\nSi la longueur est 4 m par exemple :\nVolume = 4 × 1,2 × 2,5 = 12 m³ = 12 000 litres\n\nRÉPONSE : Sans la longueur exacte, capacité = 3 000 × L litres (où L est la longueur en mètres).",
+        "questions": []
+    },
+    {
+        "id": 202,
+        "title": "(Page 49 - Exercice IV)",
+        "part": 4,
+        "text": "(Page 49 - Exercice IV)\nPour aller en vacances Paul prend un train qui roule à une vitesse moyenne de 90km/h. Il part d'une gare à 8h 40min, parcourt 45km avant de s'arrêter à la gare suivante. Quelle est la durée du trajet entre les deux gares ? Que peux-tu encore calculer ? Calcule alors.",
+        "answer": "1) Durée du trajet :\n   Distance = 45 km\n   Vitesse = 90 km/h\n   \n   Temps = Distance ÷ Vitesse = 45 ÷ 90 = 0,5 heure = 30 minutes\n\n2) Heure d'arrivée :\n   Départ : 8h40\n   Durée : 30 min\n   Arrivée : 8h40 + 30 min = 9h10\n\n3) Autres calculs possibles :\n   - Vitesse en m/s : 90 km/h = 90 000 m ÷ 3 600 s = 25 m/s\n   - Distance en mètres : 45 km = 45 000 m",
+        "questions": [
+            {
+                "label": "Durée du trajet",
+                "response": "30",
+                "unit": "minutes"
+            },
+            {
+                "label": "Heure d'arrivée",
+                "response": "9",
+                "unit": "h10"
+            },
+            {
+                "label": "Vitesse",
+                "response": "25",
+                "unit": "m/s"
+            }
+        ]
+    },
+    {
+        "id": 203,
+        "title": "(Page 49 - Exercice V - Tableau)",
+        "part": 4,
+        "text": "(Page 49 - Exercice V - Tableau)\nLe directeur de ton école a construit le tableau ci-dessous indiquant les résultats du CEP à la fin d'année scolaire dans ton école. Il y a des informations qui manquent. Complète-les.\n\nTableau :\n| Catégorie | Composés | Admis | Échoués | Pourcentage Réussite |\n|-----------|----------|-------|---------|---------------------|\n| Filles    | 193      | 172   | b)...   | e)...              |\n| Garçons   | 219      | 203   | c)...   | f)...              |\n| Total     | 412      | a)... | d)...   | g)...              |",
+        "answer": "1) a) Total admis :\n   Total admis = 172 + 203 = 375\n\n2) b) Échouées (filles) :\n   Échouées = 193 - 172 = 21\n\n3) c) Échoués (garçons) :\n   Échoués = 219 - 203 = 16\n\n4) d) Total échoués :\n   Total échoués = 21 + 16 = 37\n\n5) e) Pourcentage réussite filles :\n   Pourcentage = (172 ÷ 193) × 100 = 89,12%\n\n6) f) Pourcentage réussite garçons :\n   Pourcentage = (203 ÷ 219) × 100 = 92,69%\n\n7) g) Pourcentage réussite total :\n   Pourcentage = (375 ÷ 412) × 100 = 91,02%",
+        "questions": []
+    },
+    {
+        "id": 204,
+        "title": "(Sujet N°18 - Exercice I)",
+        "part": 4,
+        "text": "(Sujet N°18 - Exercice I)\nVoici un camion qui fait sa tournée. Il contient 180 000 L d'essence. Il livre 1/5 de son essence à la TEXACO et 3/4 à la TOTALE.\n- Quelle quantité d'essence a-t-il livré dans chacune des 2 stations ?\n- Quelle quantité d'essence lui reste- t- il à livrer dans la station TRADEX ?\nAttention utilise tes connaissances en fraction pour trouver ces quantités.",
+        "answer": "1) Livraison à TEXACO (1/5 de 180 000 L) :\n   Quantité TEXACO = 1/5 × 180 000 = 36 000 L\n\n2) Livraison à TOTALE (3/4 de 180 000 L) :\n   Quantité TOTALE = 3/4 × 180 000 = 135 000 L\n\n3) Total livré aux deux premières stations :\n   Total livré = 36 000 + 135 000 = 171 000 L\n\n4) Reste pour TRADEX :\n   Reste = 180 000 - 171 000 = 9 000 L",
+        "questions": [
+            {
+                "label": "TEXACO",
+                "response": "36000",
+                "unit": "L"
+            },
+            {
+                "label": "TOTALE",
+                "response": "135000",
+                "unit": "L"
+            },
+            {
+                "label": "Reste pour TRADEX",
+                "response": "9000",
+                "unit": "L"
+            }
+        ]
+    },
+    {
+        "id": 205,
+        "title": "(Page 51 - Sujet N°18 - Exercice II)",
+        "part": 4,
+        "text": "(Page 51 - Sujet N°18 - Exercice II)\nUn champ rectangulaire a 432 m de périmètre. La largeur mesure 38 m de moins que la longueur.\n- Quelles sont ses dimensions ?\n- Calculez sa surface en are ?",
+        "answer": "1) Dimensions du champ :\n   Soit L la longueur et l la largeur\n   l = L - 38\n   \n   Périmètre = 2(L + l) = 432\n   2(L + L - 38) = 432\n   2(2L - 38) = 432\n   4L - 76 = 432\n   4L = 508\n   L = 127 m\n   \n   l = 127 - 38 = 89 m\n\n2) Surface :\n   Surface = 127 × 89 = 11 303 m²\n   \n   Conversion en ares : 11 303 m² = 113,03 ares",
+        "questions": [
+            {
+                "label": "Dimensions",
+                "response": "127",
+                "unit": "m × 89 m"
+            },
+            {
+                "label": "Surface",
+                "response": "113.03",
+                "unit": "ares"
+            }
+        ]
+    },
+    {
+        "id": 206,
+        "title": "(Page 51 - Sujet N°18 - Exercice III - Facture)",
+        "part": 4,
+        "text": "(Page 51 - Sujet N°18 - Exercice III - Facture)\nComplète cette facture :\n\n| QT  | Nature    | PU       | A PAYER         |\n|-----|-----------|----------|-----------------|\n| 25m | Fil       | 1200 F   | a)...           |\n| 30  | Ampoules  | 250F     | b)...           |\n|     |           |TOTAL A PAYER| c)...        |\n|     |           |TVA 6%    | d)...           |\n|     |           |NET A PAYER| e)...          |",
+        "answer": "a) Montant du fil :\n   25 m × 1 200 F/m = 30 000 F\n\nb) Montant des ampoules :\n   30 × 250 F = 7 500 F\n\nc) Total à payer (avant TVA) :\n   Total = 30 000 + 7 500 = 37 500 F\n\nd) TVA (6% du total) :\n   TVA = 6% × 37 500 = 2 250 F\n\ne) Net à payer (avec TVA) :\n   Net = 37 500 + 2 250 = 39 750 F",
+        "questions": []
+    },
+    {
+        "id": 207,
+        "title": "(Sujet N°20 - Exercice 1)",
+        "part": 4,
+        "text": "(Sujet N°20 - Exercice 1)\nJean veut créer une cacaoyère à Ebolowa. Son terrain mesure 350m de long sur 75m de large. Quelle est en m² puis en ha, la surface de sa plantation ?",
+        "answer": "1) Surface en m² :\n   Surface = 350 × 75 = 26 250 m²\n\n2) Conversion en hectares :\n   1 hectare = 10 000 m²\n   Surface = 26 250 ÷ 10 000 = 2,625 ha",
+        "questions": [
+            {
+                "label": "Surface",
+                "response": "26250",
+                "unit": "m²"
+            },
+            {
+                "label": "Surface",
+                "response": "2.625",
+                "unit": "ha"
+            }
+        ]
+    },
+    {
+        "id": 208,
+        "title": "(Sujet N°19 - Exercice I)",
+        "part": 4,
+        "text": "(Sujet N°19 - Exercice I)\nTa maman achète 12 serviettes à 1050f l'une et 2,25m de toile à 1200F le mètre. Aide- la à trouver combien a -elle dépense en tout ?\nEn réfléchissant, elle te dit qu'elle vient de dépenser les ¾ de son argent. Combien avait – elle ?",
+        "answer": "1) Dépense pour les serviettes :\n   Dépense serviettes = 12 × 1 050 = 12 600 F\n\n2) Dépense pour la toile :\n   Dépense toile = 2,25 m × 1 200 F/m = 2 700 F\n\n3) Dépense totale :\n   Total dépensé = 12 600 + 2 700 = 15 300 F\n\n4) Argent initial :\n   Si 3/4 = 15 300 F\n   Alors 1/4 = 15 300 ÷ 3 = 5 100 F\n   Total initial = 4 × 5 100 = 20 400 F",
+        "questions": [
+            {
+                "label": "Dépense totale",
+                "response": "15300",
+                "unit": "F"
+            },
+            {
+                "label": "Argent initial",
+                "response": "20400",
+                "unit": "F"
+            }
+        ]
+    },
+    {
+        "id": 209,
+        "title": "(Sujet N°19 - Exercice II)",
+        "part": 4,
+        "text": "(Sujet N°19 - Exercice II)\nDans une classe de CM1de la ville il y a 80 élèves, 85% d'élèves passent pour le CM2.\na) Quel est le nombre d'élèves admis ?\nb) Combien d'élèves redoublent le CM1 ?",
+        "answer": "1) Nombre d'élèves admis (85% de 80) :\n   Admis = 85% × 80 = 0,85 × 80 = 68 élèves\n\n2) Nombre de redoublants :\n   Redoublants = 80 - 68 = 12 élèves",
+        "questions": []
+    },
+    {
+        "id": 210,
+        "title": "(Sujet N°19 - Exercice III)",
+        "part": 4,
+        "text": "(Sujet N°19 - Exercice III)\nUne citerne qui a la forme d'un parallélépipède a les dimensions suivantes. Longueur 3,5 m, largeur 1,4m, et hauteur 2m. Calcule : sa surface latérale – son volume",
+        "answer": "1) Surface latérale (4 faces verticales) :\n   Deux faces de 3,5 m × 2 m = 2 × 7 = 14 m²\n   Deux faces de 1,4 m × 2 m = 2 × 2,8 = 5,6 m²\n   \n   Surface latérale totale = 14 + 5,6 = 19,6 m²\n\n2) Volume :\n   Volume = Longueur × Largeur × Hauteur\n   Volume = 3,5 × 1,4 × 2 = 9,8 m³",
+        "questions": [
+            {
+                "label": "Surface latérale",
+                "response": "19.6",
+                "unit": "m²"
+            },
+            {
+                "label": "Volume",
+                "response": "9.8",
+                "unit": "m³"
+            }
+        ]
+    },
+    {
+        "id": 211,
+        "title": "(Sujet N°19 - Exercice IV)",
+        "part": 4,
+        "text": "(Sujet N°19 - Exercice IV)\nMr Eteba achète un champ qui coûte 900 000f. Il paie au 1er versement les 2/3 du comptant et le reste 1an après\na) quel est le montant du 1er versement ?\nb) Que lui reste t – il à verser ?\nc) Ce reste est majoré de 10%. Combien doit – il verser au bout d'un an ?",
+        "answer": "1) Montant du 1er versement (2/3 de 900 000) :\n   1er versement = 2/3 × 900 000 = 600 000 F\n\n2) Reste à verser :\n   Reste = 900 000 - 600 000 = 300 000 F\n\n3) Reste majoré de 10% :\n   Majoration = 10% × 300 000 = 30 000 F\n   Montant à verser = 300 000 + 30 000 = 330 000 F",
+        "questions": []
+    },
+    {
+        "id": 212,
+        "title": "(Page 47 - Sujet N°15 - Exercice V)",
+        "part": 4,
+        "text": "(Page 47 - Sujet N°15 - Exercice V)\nUn vase cylindrique de 7cm de rayon intérieur et de 45cm de profondeur est au 3/4 rempli d'huile et pèse ainsi 8,154kg. Le poids du vase vide étant égal à 4kg, calculer le poids par litre. Le poids spécifique de l'huile (Π = 22/7). N.B : poids spécifique poids par litre",
+        "answer": "1) Volume du vase :\n   V = π × r² × h\n   V = (22/7) × 7² × 45\n   V = (22/7) × 49 × 45\n   V = 22 × 7 × 45 = 6 930 cm³ = 6,93 litres\n\n2) Volume d'huile (3/4 du vase) :\n   Volume huile = 3/4 × 6,93 = 5,1975 litres\n\n3) Poids de l'huile :\n   Poids total = 8,154 kg\n   Poids vase vide = 4 kg\n   Poids huile = 8,154 - 4 = 4,154 kg\n\n4) Poids spécifique (poids par litre) :\n   Poids par litre = 4,154 ÷ 5,1975 = 0,799 kg/litre ≈ 0,8 kg/litre\n\nRÉPONSE : Le poids spécifique de l'huile est environ 0,8 kg/litre.",
+        "questions": []
+    },
+    {
+        "id": 213,
+        "title": "(Page 47 - Sujet N°15 - Exercice I)",
+        "part": 4,
+        "text": "(Page 47 - Sujet N°15 - Exercice I)\nUn propriétaire possède un terrain rectangulaire de 45,60m de longueur et 28,10m de largeur. Il le vend et emploie 1/3 de l'argent qu'il a retiré à payer une dette. Il place le reste à 5%. Au bout de 1an 6 mois, il retire 216505f, capital et intérêts réunis. On demande le prix de vente du m² de terrain. Intérêt total 15105F",
+        "answer": "1) Surface du terrain :\n   Surface = 45,60 × 28,10 = 1 281,36 m²\n\n2) Montant placé :\n   Retrait total = 216 505 F (capital + intérêts)\n   Intérêts = 15 105 F\n   Capital placé = 216 505 - 15 105 = 201 400 F\n\n3) Argent de la vente :\n   Le capital placé = 2/3 de l'argent de la vente (car 1/3 pour la dette)\n   Argent vente = 201 400 × 3/2 = 302 100 F\n\n4) Prix du m² :\n   Prix/m² = 302 100 ÷ 1 281,36 = 235,75 F/m²\n\nRÉPONSE : Le prix de vente est 235,75 F/m².",
+        "questions": []
+    },
+    {
+        "id": 214,
+        "title": "(Page 47 - Sujet N°15 - Exercice II)",
+        "part": 4,
+        "text": "(Page 47 - Sujet N°15 - Exercice II)\nUn champ rectangulaire, long de 80m et large de 20,60m, est planté d'asperges espacées en chaque sens de 0,90m. Celles des bords sont elles-mêmes à 1,30m de la limite. Si chaque pied fournit en moyenne chaque année 0,250kg d'asperges, que vaut la récolte annuelle au prix moyen de 80F le kg?",
+        "answer": "1) Nombre de pieds en longueur :\n   Distance utile = 80 - 2 × 1,30 = 77,4 m\n   Nombre en longueur = (77,4 ÷ 0,90) + 1 = 86 + 1 = 87 pieds\n\n2) Nombre de pieds en largeur :\n   Distance utile = 20,60 - 2 × 1,30 = 18 m\n   Nombre en largeur = (18 ÷ 0,90) + 1 = 20 + 1 = 21 pieds\n\n3) Nombre total de pieds :\n   Total = 87 × 21 = 1 827 pieds\n\n4) Production annuelle :\n   Production = 1 827 × 0,250 = 456,75 kg\n\n5) Valeur de la récolte :\n   Valeur = 456,75 × 80 = 36 540 F\n\nRÉPONSE : La récolte annuelle vaut 36 540 F.",
+        "questions": []
+    },
+    {
+        "id": 215,
+        "title": "(Page 47 - Sujet N°15 - Exercice III)",
+        "part": 4,
+        "text": "(Page 47 - Sujet N°15 - Exercice III)\nUne personne dépense les 2/3 de la somme qu'elle possède ; pour acheter 6 m de ruban à 38f le mètre, il lui manque 84f. Combien possédait-elle avant l'achat ?",
+        "answer": "1) Prix du ruban :\n   Prix ruban = 6 × 38 = 228 F\n\n2) Argent restant après avoir dépensé les 2/3 :\n   Reste = 1/3 de la somme initiale\n   \n   Ce reste + 84 = 228\n   Reste = 228 - 84 = 144 F\n\n3) Somme initiale :\n   Si 1/3 = 144 F\n   Alors la somme totale = 144 × 3 = 432 F\n\nVÉRIFICATION :\n- Dépense 2/3 : 432 × 2/3 = 288 F\n- Reste : 432 - 288 = 144 F\n- Pour acheter le ruban : 144 + 84 = 228 F ✓\n\nRÉPONSE : Elle possédait 432 F avant l'achat.",
+        "questions": []
+    },
+    {
+        "id": 216,
+        "title": "(Page 47 - Sujet N°15 - Exercice IV)",
+        "part": 4,
+        "text": "(Page 47 - Sujet N°15 - Exercice IV)\nTon père achète pour un prix total de 20400F un terrain rectangulaire valant 30000F l'hectare. Il veut planter des arbustes autour de ce terrain. Aide-le à trouver le nombre d'arbustes dont –il aura besoin. Attention chaque arbuste est espacé de 10m l'un de l'autre et il y a un arbuste à chaque extrémité. Longueur 170m. N'oublie surtout pas de commencer par trouver la surface du terrain de ton père.",
+        "answer": "1) Surface du terrain :\n   Prix total = 20 400 F\n   Prix à l'hectare = 30 000 F/ha\n   \n   Surface = 20 400 ÷ 30 000 = 0,68 ha = 6 800 m²\n\n2) Longueur donnée : 170 m\n   Largeur = Surface ÷ Longueur = 6 800 ÷ 170 = 40 m\n\n3) Périmètre :\n   Périmètre = 2(170 + 40) = 2 × 210 = 420 m\n\n4) Nombre d'arbustes :\n   Espacement = 10 m\n   Nombre d'intervalles = 420 ÷ 10 = 42\n   \n   Pour un périmètre fermé, nombre d'arbustes = nombre d'intervalles = 42 arbustes\n\nRÉPONSE : Il aura besoin de 42 arbustes.",
+        "questions": []
+    },
+    {
+        "id": 217,
+        "title": "(Page 47 - Sujet N°15 - Exercice V)",
+        "part": 4,
+        "text": "(Page 47 - Sujet N°15 - Exercice V)\nUne fermière achète des moutons et des agneaux, en tout 48, pour 132000F Sachant que le nombre des moutons dépasse de 8 celui des agneaux et qu'un mouton coûte 1560 F de plus qu'un agneau, on demande de calculer le prix d'un mouton et celui d'un agneau.",
+        "answer": "1) Soit a le nombre d'agneaux et m le nombre de moutons\n   m = a + 8\n   a + m = 48\n   \n   a + (a + 8) = 48\n   2a = 40\n   a = 20 agneaux\n   m = 28 moutons\n\n2) Soit x le prix d'un agneau et y le prix d'un mouton\n   y = x + 1 560\n   20x + 28y = 132 000\n   \n   20x + 28(x + 1 560) = 132 000\n   20x + 28x + 43 680 = 132 000\n   48x = 88 320\n   x = 1 840 F (prix d'un agneau)\n   \n   y = 1 840 + 1 560 = 3 400 F (prix d'un mouton)\n\nVÉRIFICATION :\n20 × 1 840 + 28 × 3 400 = 36 800 + 95 200 = 132 000 ✓",
+        "questions": [
+            {
+                "label": "Prix d'un agneau",
+                "response": "1840",
+                "unit": "F"
+            },
+            {
+                "label": "Prix d'un mouton",
+                "response": "3400",
+                "unit": "F"
+            }
+        ]
+    },
+    {
+        "id": 218,
+        "title": "(Page 48 - Sujet N°16 - Exercice I)",
+        "part": 4,
+        "text": "(Page 48 - Sujet N°16 - Exercice I)\nVotre commune fait construire une école qui lui coûtera 655000F. L'état lui alloue (donne) une subvention de 45% de la dépense, et la commune emprunte le reste à la poste à 6,40%. À quelle somme s'élève son emprunt ? Combien paiera-t-elle chaque année pour s'acquitter de sa dette si en plus de l'intérêt annuel il doit verser une somme égale au double de cet intérêt.",
+        "answer": "1) Subvention de l'État (45% de 655 000) :\n   Subvention = 45% × 655 000 = 294 750 F\n\n2) Montant de l'emprunt :\n   Emprunt = 655 000 - 294 750 = 360 250 F\n\n3) Intérêt annuel (6,40%) :\n   Intérêt = 6,40% × 360 250 = 23 056 F\n\n4) Remboursement annuel :\n   Paiement = Intérêt + 2 × Intérêt\n   Paiement = 3 × Intérêt = 3 × 23 056 = 69 168 F",
+        "questions": [
+            {
+                "label": "Emprunt",
+                "response": "360250",
+                "unit": "F"
+            },
+            {
+                "label": "Paiement annuel",
+                "response": "69168",
+                "unit": "F"
+            }
+        ]
+    },
+    {
+        "id": 219,
+        "title": "(Page 48 - Sujet N°16 - Exercice II)",
+        "part": 4,
+        "text": "(Page 48 - Sujet N°16 - Exercice II)\nLes boîtes de lait condensé sont cylindriques et mesurent 7cm de diamètre de base et 12cm de hauteur. On veut les expédier dans des caisses où on les rangera, l'une contre l'autre, 6 boites dans le sens de la longueur, 4 boites dans la largeur, 2 dans la hauteur. Combien chaque caisse renfermera-t- elle de boites ? 2°) quelle sera la valeur d'une caisse si les boites coûtent 744F la douzaine ? 3°) quelles dimensions devront avoir les caisses destinées à l'emballage ?",
+        "answer": "1) Nombre de boîtes par caisse :\n   Nombre = 6 × 4 × 2 = 48 boîtes\n\n2) Valeur d'une caisse :\n   Prix d'une boîte = 744 ÷ 12 = 62 F\n   Valeur caisse = 48 × 62 = 2 976 F\n\n3) Dimensions de la caisse :\n   Diamètre d'une boîte = 7 cm\n   \n   Longueur = 6 boîtes × 7 cm = 42 cm\n   Largeur = 4 boîtes × 7 cm = 28 cm\n   Hauteur = 2 boîtes × 12 cm = 24 cm",
+        "questions": [
+            {
+                "label": "Valeur",
+                "response": "2976",
+                "unit": "F"
+            },
+            {
+                "label": "Dimensions",
+                "response": "42",
+                "unit": "cm × 28 cm × 24 cm"
+            }
+        ]
+    },
+    {
+        "id": 220,
+        "title": "(Page 48 - Sujet N°16 - Exercice III)",
+        "part": 4,
+        "text": "(Page 48 - Sujet N°16 - Exercice III)\nTu places deux sommes dans une banque à 5%. Elles rapportent annuellement à elles deux 14 500F. Sachant que l'intérêt de la première surpasse de 2 100F celui de la seconde, calculer ces deux sommes.",
+        "answer": "1) Soit I₁ et I₂ les intérêts des deux sommes\n   I₁ + I₂ = 14 500\n   I₁ = I₂ + 2 100\n   \n   (I₂ + 2 100) + I₂ = 14 500\n   2I₂ = 12 400\n   I₂ = 6 200 F\n   I₁ = 8 300 F\n\n2) Calcul des capitaux (C = I ÷ taux) :\n   Première somme : C₁ = 8 300 ÷ 0,05 = 166 000 F\n   Deuxième somme : C₂ = 6 200 ÷ 0,05 = 124 000 F\n\nVÉRIFICATION :\n- Intérêt 1 : 166 000 × 0,05 = 8 300 F ✓\n- Intérêt 2 : 124 000 × 0,05 = 6 200 F ✓\n- Total : 8 300 + 6 200 = 14 500 F ✓\n- Différence : 8 300 - 6 200 = 2 100 F ✓",
+        "questions": [
+            {
+                "label": "Première somme",
+                "response": "166000",
+                "unit": "F"
+            },
+            {
+                "label": "Deuxième somme",
+                "response": "124000",
+                "unit": "F"
+            }
+        ]
+    },
+    {
+        "id": 221,
+        "title": "(Page 48 - Sujet N°16 - Exercice IV)",
+        "part": 4,
+        "text": "(Page 48 - Sujet N°16 - Exercice IV)\nTonton Antoine a un jardin rectangulaire dont la largeur est le double de la longueur et son périmètre mesure 168m. Peux-tu l'aider à calculer les dimensions et sa valeur à raison de 950f l'are ? Si oui prouve-le.",
+        "answer": "1) Dimensions :\n   Soit L la longueur\n   Largeur = 2L\n   \n   Périmètre = 2(L + 2L) = 168\n   6L = 168\n   L = 28 m\n   \n   Largeur = 2 × 28 = 56 m\n\n2) Surface :\n   Surface = 28 × 56 = 1 568 m²\n   \n   Conversion en ares : 1 568 m² = 15,68 ares\n\n3) Valeur :\n   Valeur = 15,68 × 950 = 14 896 F",
+        "questions": [
+            {
+                "label": "Dimensions",
+                "response": "28",
+                "unit": "m × 56 m"
+            },
+            {
+                "label": "Valeur",
+                "response": "14896",
+                "unit": "F"
+            }
+        ]
+    },
+    {
+        "id": 222,
+        "title": "(Page 48 - Sujet N°16 - Exercice V)",
+        "part": 4,
+        "text": "(Page 48 - Sujet N°16 - Exercice V)\nChaussée qui mène chez vous mesure 4,5km de long et 3,25m de large. La commune décide d'y poser un empierrement de 7cm d'épaisseur. Les pierres coûtent 1500f le m3 et leur transport 900f le tombereau de 1,5m3. À combien reviendra cet empierrement à la commune?",
+        "answer": "1) Volume d'empierrement :\n   Longueur = 4,5 km = 4 500 m\n   Largeur = 3,25 m\n   Épaisseur = 7 cm = 0,07 m\n   \n   Volume = 4 500 × 3,25 × 0,07 = 1 023,75 m³\n\n2) Coût des pierres :\n   Coût pierres = 1 023,75 × 1 500 = 1 535 625 F\n\n3) Coût du transport :\n   Nombre de tombereaux = 1 023,75 ÷ 1,5 = 682,5 tombereaux\n   Coût transport = 682,5 × 900 = 614 250 F\n\n4) Coût total :\n   Total = 1 535 625 + 614 250 = 2 149 875 F\n\nRÉPONSE : L'empierrement reviendra à 2 149 875 F.",
+        "questions": []
+    },
+    {
+        "id": 223,
+        "title": "(Page 48 - Sujet N°17 - Exercice I)",
+        "part": 4,
+        "text": "(Page 48 - Sujet N°17 - Exercice I)\nTon oncle te présente le plan de son champ qui sur un plan cadastral à l'échelle 1/1000 est représenté par un trapèze. Sur le plan, les bases du trapèze mesurent 9,5cm et 5,5cm et la hauteur 5 cm.\na) Aide-le à calculer les dimensions réelles du champ.\nb) Quel est le prix de ce champ sachant que le m² vaut 2 700 F ?",
+        "answer": "1) Dimensions réelles (échelle 1/1000) :\n   1 cm sur le plan = 1 000 cm = 10 m en réalité\n   \n   Grande base = 9,5 × 10 = 95 m\n   Petite base = 5,5 × 10 = 55 m\n   Hauteur = 5 × 10 = 50 m\n\n2) Surface du champ (trapèze) :\n   Surface = (Grande base + Petite base) × Hauteur / 2\n   Surface = (95 + 55) × 50 / 2\n   Surface = 150 × 25 = 3 750 m²\n\n3) Prix du champ :\n   Prix = 3 750 × 2 700 = 10 125 000 F",
+        "questions": [
+            {
+                "label": "a) Dimensions",
+                "response": "",
+                "unit": "base 95 m, Petite base 55 m, Hauteur 50 m"
+            },
+            {
+                "label": "b) Prix",
+                "response": "10125000",
+                "unit": "F"
+            }
+        ]
+    },
+    {
+        "id": 224,
+        "title": "(Page 50 - Sujet N°18 - Exercice IV - Facture comp",
+        "part": 4,
+        "text": "(Page 50 - Sujet N°18 - Exercice IV - Facture complète)\nMme BILL achète une table dont le prix est 110 000F. Elle paye les 3/5 au comptant et le reste le jour de la livraison ajouté d'une somme de 2 500F.\n- Combien paye-t-elle au comptant ?\n- Combien verse t-elle le jour de la livraison ?\n- Combien lui revient cette table ?",
+        "answer": "1) Paiement au comptant (3/5 de 110 000) :\n   Au comptant = 3/5 × 110 000 = 66 000 F\n\n2) Reste à payer :\n   Reste = 110 000 - 66 000 = 44 000 F\n   \n   À la livraison = 44 000 + 2 500 = 46 500 F\n\n3) Prix de revient total :\n   Total = 66 000 + 46 500 = 112 500 F",
+        "questions": [
+            {
+                "label": "Au comptant",
+                "response": "66000",
+                "unit": "F"
+            },
+            {
+                "label": "À la livraison",
+                "response": "46500",
+                "unit": "F"
+            },
+            {
+                "label": "Prix de revient",
+                "response": "112500",
+                "unit": "F"
+            }
+        ]
+    },
+    {
+        "id": 225,
+        "title": "(Page 50 - Sujet N°18 - Exercice V - Plan de l'éco",
+        "part": 4,
+        "text": "(Page 50 - Sujet N°18 - Exercice V - Plan de l'école)\nVoici le plan de l'école du centre.\n\n[Schéma montrant trois figures : A (triangle), B (trapèze), C (rectangle)\nDimensions : AB = 24m, hauteur = 40m, BC = 17m, C = 22m de hauteur, total largeur = 28m]\n\n1) Donne la nature (nom) des figures :\n   A : ................  B : ................  C: ................\n\n2) Trouve la surface de chaque figure.\n   Aire A = ..................  Aire B = ..................  Aire C = ..................",
+        "answer": "1) Nature des figures :\n   A : Triangle\n   B : Trapèze\n   C : Rectangle\n\n2) Aires :\n   \n   Aire A (triangle) :\n   Base = 24 m, Hauteur = 40 m\n   Aire A = (24 × 40) / 2 = 480 m²\n   \n   Aire B (trapèze) :\n   D'après le schéma : bases du trapèze et hauteur\n   Il faudrait les dimensions exactes du trapèze B\n   \n   Aire C (rectangle) :\n   Longueur = 28 m, Largeur = 22 m\n   Aire C = 28 × 22 = 616 m²",
+        "questions": [
+            {
+                "label": "1) A",
+                "response": ".",
+                "unit": "B : Trapèze,  C : Rectangle"
+            }
+        ]
+    },
+    {
+        "id": 226,
+        "title": "(Page 53 - Exercice 4 - Cylindre)",
+        "part": 4,
+        "text": "(Page 53 - Exercice 4 - Cylindre)\nUn cylindre possède des dimensions suivantes :\nRayon du cercle de base : 2m, hauteur : 10cm (on prendra π = 3,143. Pose les questions et calcule",
+        "answer": "Questions possibles :\n\n1) Quelle est l'aire de la base ?\n   Aire base = π × r²\n   Aire = 3,143 × 2² = 3,143 × 4 = 12,572 m²\n\n2) Quel est le volume du cylindre ?\n   Note : Il y a une incohérence dans les unités (rayon en m, hauteur en cm)\n   En supposant hauteur = 10 cm = 0,1 m :\n   \n   Volume = Aire base × hauteur\n   Volume = 12,572 × 0,1 = 1,2572 m³\n\n3) Quelle est la surface latérale ?\n   Surface latérale = 2 × π × r × h\n   Surface = 2 × 3,143 × 2 × 0,1 = 1,2572 m²",
+        "questions": [
+            {
+                "label": "Aire de la base",
+                "response": "12.572",
+                "unit": "m²"
+            },
+            {
+                "label": "Volume",
+                "response": "1.2572",
+                "unit": "m³"
+            },
+            {
+                "label": "Surface latérale",
+                "response": "1.2572",
+                "unit": "m²"
+            }
+        ]
+    },
+    {
+        "id": 227,
+        "title": "(Page 53 - Exercice 5 - Loyer)",
+        "part": 4,
+        "text": "(Page 53 - Exercice 5 - Loyer)\nUn commerçant paye 65000F par mois pour couvrir le loyer de son magasin. À partir du 1er septembre, son loyer se trouve augmenté de 25%. Calculez :\na) Le montant du nouveau loyer.\nb) Le montant total des loyers pour l'année où a lieu cette augmentation.",
+        "answer": "1) Nouveau loyer (à partir de septembre) :\n   Augmentation = 25% × 65 000 = 16 250 F\n   Nouveau loyer = 65 000 + 16 250 = 81 250 F\n\n2) Loyers pour l'année :\n   - Janvier à août : 8 mois × 65 000 = 520 000 F\n   - Septembre à décembre : 4 mois × 81 250 = 325 000 F\n   \n   Total annuel = 520 000 + 325 000 = 845 000 F",
+        "questions": [
+            {
+                "label": "a) Nouveau loyer",
+                "response": "81250",
+                "unit": "F"
+            },
+            {
+                "label": "b) Total annuel",
+                "response": "845000",
+                "unit": "F"
+            },
+            {
+                "label": "Nombre total d'exercices traités",
+                "response": "77",
+                "unit": "exercices (numérotés de 151 à 227)"
+            },
+            {
+                "label": "Exercices sur",
+                "response": "",
+                "unit": "de distance et durée, poids, volumes, trapèzes,"
             }
         ]
     }

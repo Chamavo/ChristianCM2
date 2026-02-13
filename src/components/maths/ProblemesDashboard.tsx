@@ -1,8 +1,9 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Lock, Check } from 'lucide-react';
+import { Lock, Check, BookOpen } from 'lucide-react';
 import { getAllProblems, getProblemStatus, TOTAL_PROBLEMS } from '@/utils/maths/problemManager';
+import ModulePageLayout from '../shared/ModulePageLayout';
+import ModuleHeader from '../shared/ModuleHeader';
 
 interface ProblemesDashboardProps {
     onSelectProblem: (id: number) => void;
@@ -22,10 +23,10 @@ const ProblemesDashboard: React.FC<ProblemesDashboardProps> = ({ onSelectProblem
         load();
     }, []);
 
-    // Generate 1 to 150
+    // Generate IDS based on TOTAL_PROBLEMS
     const allIds = Array.from({ length: TOTAL_PROBLEMS }, (_, i) => i + 1);
 
-    // Group by parts
+    // Dynamic grouping based on current structure
     const part1 = allIds.filter(id => id <= 50);
     const part2 = allIds.filter(id => id > 50 && id <= 100);
     const part3 = allIds.filter(id => id > 100 && id <= 150);
@@ -33,20 +34,22 @@ const ProblemesDashboard: React.FC<ProblemesDashboardProps> = ({ onSelectProblem
 
     const getButtonColor = (id: number) => {
         const colors = [
-            'bg-blue-100 text-blue-700 border-blue-300 shadow-blue-200',
-            'bg-green-100 text-green-700 border-green-300 shadow-green-200',
-            'bg-yellow-100 text-yellow-700 border-yellow-300 shadow-yellow-200',
-            'bg-pink-100 text-pink-700 border-pink-300 shadow-pink-200',
-            'bg-purple-100 text-purple-700 border-purple-300 shadow-purple-200',
-            'bg-orange-100 text-orange-700 border-orange-300 shadow-orange-200',
+            'bg-blue-50 text-blue-700 border-blue-200 shadow-blue-100',
+            'bg-emerald-50 text-emerald-700 border-emerald-200 shadow-emerald-100',
+            'bg-amber-50 text-amber-700 border-amber-200 shadow-amber-100',
+            'bg-rose-50 text-rose-700 border-rose-200 shadow-rose-100',
+            'bg-violet-50 text-violet-700 border-violet-200 shadow-violet-100',
+            'bg-sky-50 text-sky-700 border-sky-200 shadow-sky-100',
         ];
         return colors[(id - 1) % colors.length];
     };
 
     const renderGrid = (ids: number[], title: string, colorClass: string) => (
-        <div className="mb-12">
-            <h3 className={`text-2xl font-bold mb-6 ${colorClass}`}>{title}</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
+        <div className="mb-16 last:mb-0">
+            <h3 className={`text-2xl font-black mb-8 p-4 rounded-2xl bg-white/50 border-2 border-slate-100 shadow-sm inline-block ${colorClass} uppercase tracking-tight`}>
+                {title}
+            </h3>
+            <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 lg:grid-cols-9 gap-5 px-2">
                 {ids.map(id => {
                     const problem = problems.find(p => p.id === id);
                     const isMissing = !problem;
@@ -57,31 +60,27 @@ const ProblemesDashboard: React.FC<ProblemesDashboardProps> = ({ onSelectProblem
                     return (
                         <motion.button
                             key={id}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
+                            whileHover={isMissing ? {} : { scale: 1.1, y: -5 }}
+                            whileTap={isMissing ? {} : { scale: 0.9 }}
                             onClick={() => !isMissing && onSelectProblem(id)}
                             disabled={isMissing}
                             className={`
-                                relative aspect-square rounded-2xl p-2 flex flex-col items-center justify-center gap-1 transition-all
-                                border-2 border-b-4
+                                relative aspect-square rounded-[24px] p-2 flex flex-col items-center justify-center gap-1 transition-all
+                                border-4 border-b-8
                                 ${isMissing
-                                    ? 'bg-slate-100 text-slate-300 border-slate-200 cursor-not-allowed'
+                                    ? 'bg-slate-100 text-slate-300 border-slate-200 cursor-not-allowed grayscale'
                                     : isSolved
-                                        ? 'bg-green-500 border-green-600 text-white shadow-green-200'
-                                        : `${colorStyle} hover:brightness-110 cursor-pointer`
+                                        ? 'bg-green-500 border-green-700 text-white shadow-lg shadow-green-100'
+                                        : `${colorStyle} hover:brightness-105 cursor-pointer shadow-md`
                                 }
-                                active:border-b-2 active:translate-y-[2px]
+                                active:border-b-4 active:translate-y-1
                             `}
                         >
-                            <span className={`text-lg font-black`}>
+                            <span className={`text-2xl font-black`}>
                                 {id}
                             </span>
-                            {isMissing ? (
-                                <Lock className="w-5 h-5 opacity-50" />
-                            ) : isSolved ? (
-                                <Check className="w-6 h-6 text-white stroke-[3]" />
-                            ) : (
-                                <div className="w-0" />
+                            {isSolved && (
+                                <Check className="absolute top-1 right-1 w-5 h-5 text-white/50 stroke-[4]" />
                             )}
                         </motion.button>
                     );
@@ -90,25 +89,35 @@ const ProblemesDashboard: React.FC<ProblemesDashboardProps> = ({ onSelectProblem
         </div>
     );
 
-    return (
-        <div className="min-h-screen bg-slate-50 p-6">
-            <div className="max-w-6xl mx-auto">
-                <div className="flex items-center gap-4 mb-8">
-                    <button
-                        onClick={onBack}
-                        className="p-2 rounded-full hover:bg-slate-200 transition-colors"
-                    >
-                        ← Retour
-                    </button>
-                    <h1 className="text-3xl font-black text-slate-800">150 Problèmes au CM2</h1>
+    if (isLoading) {
+        return (
+            <ModulePageLayout>
+                <div className="h-screen flex items-center justify-center">
+                    <p className="text-xl font-black text-slate-400 animate-pulse uppercase tracking-widest">Chargement des problèmes...</p>
                 </div>
+            </ModulePageLayout>
+        );
+    }
 
-                {renderGrid(part1, "Partie 1 : Début d'année", "text-blue-600")}
-                {renderGrid(part2, "Partie 2 : Milieu d'année", "text-purple-600")}
-                {renderGrid(part3, "Partie 3 : Fin d'année", "text-pink-600")}
-                {renderGrid(part4, "Pour aller plus loin", "text-orange-600")}
+    return (
+        <ModulePageLayout>
+            <div className="max-w-7xl w-full mx-auto px-6 py-10">
+                <ModuleHeader
+                    title={`${TOTAL_PROBLEMS} Problèmes au CM2`}
+                    subtitle="Logique & Raisonnement"
+                    icon={BookOpen}
+                    onBack={onBack}
+                    variant="maths"
+                />
+
+                <div className="bg-white/40 backdrop-blur-sm rounded-[42px] p-8 md:p-12 border-4 border-white shadow-2xl">
+                    {renderGrid(part1, "Partie 1 : Début d'année", "text-blue-600")}
+                    {renderGrid(part2, "Partie 2 : Milieu d'année", "text-indigo-600")}
+                    {renderGrid(part3, "Partie 3 : Fin d'année", "text-violet-600")}
+                    {renderGrid(part4, "Pour aller plus loin", "text-rose-600")}
+                </div>
             </div>
-        </div>
+        </ModulePageLayout>
     );
 };
 

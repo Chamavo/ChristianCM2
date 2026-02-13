@@ -25,7 +25,7 @@ async function ensureLoaded() {
     isLoaded = true;
 }
 
-export const TOTAL_PROBLEMS = 200;
+export const TOTAL_PROBLEMS = 227;
 
 export const getProblem = (id: number): MathProblem | null => {
     // Note: This remains synchronous for UI compatibility, 
@@ -61,6 +61,17 @@ export const saveProblemStatus = (id: number, status: 'solved') => {
         localStorage.setItem('math_problems_progress', JSON.stringify(progress));
     } catch (e) {
         console.error("Failed to save progress", e);
+    }
+};
+
+export const getSolvedCount = (): number => {
+    try {
+        const saved = localStorage.getItem('math_problems_progress');
+        if (!saved) return 0;
+        const progress = JSON.parse(saved);
+        return Object.values(progress).filter(status => status === 'solved').length;
+    } catch (e) {
+        return 0;
     }
 };
 
