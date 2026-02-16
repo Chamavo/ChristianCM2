@@ -23,7 +23,7 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: {
           'vendor': ['react', 'react-dom', 'react-router-dom', '@tanstack/react-query'],
-          'ui-libs': ['framer-motion', 'lucide-react', 'recharts', 'canvas-confetti'],
+          'ui-libs': ['framer-motion', 'lucide-react'],
           'shadcn': [
             '@radix-ui/react-accordion',
             '@radix-ui/react-alert-dialog',
