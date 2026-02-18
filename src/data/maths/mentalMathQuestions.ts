@@ -13,7 +13,7 @@ export interface MentalMathQuestion {
 export const mentalMathQuestions: MentalMathQuestion[] = [
   // ============= LEVEL 1 (60 questions) =============
   // Small numbers, direct mental strategies, no traps
-  
+
   // ARITHMETIC (15 questions - 25%)
   { id: "L1_01", level: 1, question: "27 + 9 = ?", answer: 36, category: "arithmetic" },
   { id: "L1_02", level: 1, question: "45 + 19 = ?", answer: 64, category: "arithmetic" },
@@ -86,7 +86,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 2 (60 questions) =============
   // Small numbers, slightly more complex strategies
-  
+
   // ARITHMETIC (15 questions)
   { id: "L2_01", level: 2, question: "67 + 29 = ?", answer: 96, category: "arithmetic" },
   { id: "L2_02", level: 2, question: "83 + 19 = ?", answer: 102, category: "arithmetic" },
@@ -159,7 +159,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 3 (60 questions) =============
   // Slightly larger numbers, two-step thinking
-  
+
   // ARITHMETIC (15 questions)
   { id: "L3_01", level: 3, question: "145 + 99 = ?", answer: 244, category: "arithmetic" },
   { id: "L3_02", level: 3, question: "237 + 49 = ?", answer: 286, category: "arithmetic" },
@@ -232,7 +232,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 4 (60 questions) =============
   // Increased complexity, more varied operations
-  
+
   // ARITHMETIC (15 questions)
   { id: "L4_01", level: 4, question: "267 + 199 = ?", answer: 466, category: "arithmetic" },
   { id: "L4_02", level: 4, question: "543 - 198 = ?", answer: 345, category: "arithmetic" },
@@ -305,7 +305,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 5 (60 questions) =============
   // End of easy levels, transition to standard CM2
-  
+
   // ARITHMETIC (15 questions)
   { id: "L5_01", level: 5, question: "387 + 299 = ?", answer: 686, category: "arithmetic" },
   { id: "L5_02", level: 5, question: "724 - 398 = ?", answer: 326, category: "arithmetic" },
@@ -378,7 +378,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 6 (60 questions) =============
   // Standard CM2: fractions, perimeter, angles, smart calculations
-  
+
   // ARITHMETIC (15 questions - 25%)
   { id: "L6_01", level: 6, question: "99 × 7 = ?", answer: 693, category: "arithmetic" },
   { id: "L6_02", level: 6, question: "101 × 6 = ?", answer: 606, category: "arithmetic" },
@@ -451,7 +451,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 7 (60 questions) =============
   // Standard CM2: more complex fractions, area, volume intro
-  
+
   // ARITHMETIC (15 questions)
   { id: "L7_01", level: 7, question: "99 × 15 = ?", answer: 1485, category: "arithmetic" },
   { id: "L7_02", level: 7, question: "101 × 14 = ?", answer: 1414, category: "arithmetic" },
@@ -524,7 +524,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 8 (60 questions) =============
   // Standard CM2: proportions, mixed operations
-  
+
   // ARITHMETIC (15 questions)
   { id: "L8_01", level: 8, question: "99 × 35 = ?", answer: 3465, category: "arithmetic" },
   { id: "L8_02", level: 8, question: "101 × 45 = ?", answer: 4545, category: "arithmetic" },
@@ -597,7 +597,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 9 (60 questions) =============
   // Standard CM2: advanced, preparing for harder levels
-  
+
   // ARITHMETIC (15 questions)
   { id: "L9_01", level: 9, question: "99 × 55 = ?", answer: 5445, category: "arithmetic" },
   { id: "L9_02", level: 9, question: "101 × 65 = ?", answer: 6565, category: "arithmetic" },
@@ -670,7 +670,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 10 (60 questions) =============
   // End of standard CM2, transition to strong
-  
+
   // ARITHMETIC (15 questions)
   { id: "L10_01", level: 10, question: "99 × 75 = ?", answer: 7425, category: "arithmetic" },
   { id: "L10_02", level: 10, question: "101 × 85 = ?", answer: 8585, category: "arithmetic" },
@@ -743,7 +743,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 11 (60 questions) =============
   // Strong CM2: tricky numbers, averages, equivalent fractions, counting
-  
+
   // ARITHMETIC (15 questions - 25%)
   { id: "L11_01", level: 11, question: "999 × 8 = ?", answer: 7992, category: "arithmetic" },
   { id: "L11_02", level: 11, question: "1001 × 7 = ?", answer: 7007, category: "arithmetic" },
@@ -816,7 +816,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 12 (60 questions) =============
   // Strong CM2: complex calculations, proportional reasoning
-  
+
   // ARITHMETIC (15 questions)
   { id: "L12_01", level: 12, question: "999 × 15 = ?", answer: 14985, category: "arithmetic" },
   { id: "L12_02", level: 12, question: "1001 × 14 = ?", answer: 14014, category: "arithmetic" },
@@ -837,7 +837,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
   // FRACTIONS (12 questions)
   { id: "L12_16", level: 12, question: "13/15 de 225 = ?", answer: 195, category: "fractions" },
   { id: "L12_17", level: 12, question: "11/18 de 162 = ?", answer: 99, category: "fractions" },
-  { id: "L12_18", level: 12, question: "17/25 en pourcentage = ? %", answer: 68, category: "fractions" },
+  { id: "L12_18", level: 12, question: "Convertir 17/25 en pourcentage", answer: 68, category: "fractions" },
   { id: "L12_19", level: 12, question: "9/16 en pourcentage = ? % (arrondir)", answer: 56, category: "fractions" },
   { id: "L12_20", level: 12, question: "90/126 simplifié = 5/? (dénominateur)", answer: 7, category: "fractions" },
   { id: "L12_21", level: 12, question: "15/16 de 192 = ?", answer: 180, category: "fractions" },
@@ -889,7 +889,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 13 (60 questions) =============
   // Strong CM2: harder counting, multi-step logic
-  
+
   // ARITHMETIC (15 questions)
   { id: "L13_01", level: 13, question: "999 × 24 = ?", answer: 23976, category: "arithmetic" },
   { id: "L13_02", level: 13, question: "1001 × 23 = ?", answer: 23023, category: "arithmetic" },
@@ -962,7 +962,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 14 (60 questions) =============
   // Strong CM2: advanced fractions, complex averages
-  
+
   // ARITHMETIC (15 questions)
   { id: "L14_01", level: 14, question: "999 × 32 = ?", answer: 31968, category: "arithmetic" },
   { id: "L14_02", level: 14, question: "1001 × 31 = ?", answer: 31031, category: "arithmetic" },
@@ -1035,7 +1035,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 15 (60 questions) =============
   // End of strong CM2, transition to very strong
-  
+
   // ARITHMETIC (15 questions)
   { id: "L15_01", level: 15, question: "999 × 45 = ?", answer: 44955, category: "arithmetic" },
   { id: "L15_02", level: 15, question: "1001 × 44 = ?", answer: 44044, category: "arithmetic" },
@@ -1108,7 +1108,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 16 (60 questions) =============
   // Very strong CM2: contest-style, logic, structure reasoning, classic traps
-  
+
   // ARITHMETIC (15 questions - 25%)
   { id: "L16_01", level: 16, question: "999 × 56 = ?", answer: 55944, category: "arithmetic" },
   { id: "L16_02", level: 16, question: "1001 × 55 = ?", answer: 55055, category: "arithmetic" },
@@ -1181,7 +1181,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 17 (60 questions) =============
   // Very strong CM2: contest problems, tricky logic
-  
+
   // ARITHMETIC (15 questions)
   { id: "L17_01", level: 17, question: "999 × 72 = ?", answer: 71928, category: "arithmetic" },
   { id: "L17_02", level: 17, question: "1001 × 71 = ?", answer: 71071, category: "arithmetic" },
@@ -1254,7 +1254,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 18 (60 questions) =============
   // Very strong CM2: advanced contest problems
-  
+
   // ARITHMETIC (15 questions)
   { id: "L18_01", level: 18, question: "999 × 84 = ?", answer: 83916, category: "arithmetic" },
   { id: "L18_02", level: 18, question: "1001 × 83 = ?", answer: 83083, category: "arithmetic" },
@@ -1327,7 +1327,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 19 (60 questions) =============
   // Very strong CM2: near-olympiad level
-  
+
   // ARITHMETIC (15 questions)
   { id: "L19_01", level: 19, question: "999 × 92 = ?", answer: 91908, category: "arithmetic" },
   { id: "L19_02", level: 19, question: "1001 × 91 = ?", answer: 91091, category: "arithmetic" },
@@ -1400,7 +1400,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= LEVEL 20 (60 questions) =============
   // Championship level: olympiad-style mental math
-  
+
   // ARITHMETIC (15 questions)
   { id: "L20_01", level: 20, question: "999 × 99 = ?", answer: 98901, category: "arithmetic" },
   { id: "L20_02", level: 20, question: "1001 × 99 = ?", answer: 99099, category: "arithmetic" },
@@ -1473,7 +1473,7 @@ export const mentalMathQuestions: MentalMathQuestion[] = [
 
   // ============= NEW EXERCISES FROM CALCUL RAPIDE WORKSHEETS =============
   // Extracted from exam preparation materials - diverse topics
-  
+
   // === LEVEL 7-8: Number writing, basic conversions ===
   { id: "CR_01", level: 7, question: "Écris en chiffres : Deux millions quatre cent trente-sept mille quatre-vingt-dix-sept", answer: 2437097, category: "arithmetic" },
   { id: "CR_02", level: 8, question: "20% de 120 = ?", answer: 24, category: "fractions" },

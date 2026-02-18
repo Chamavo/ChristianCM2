@@ -751,17 +751,11 @@
         "title": "Les économies (Logique)",
         "part": 1,
         "text": "Chaque semaine, Tom économise 500 F.\nCombien de semaines lui faudra-t-il pour acheter un ballon à 4500 F ?",
-        "answer": "4500 : 500 = 9 semaines.\n## Partie 3 : Fin d'année - Problèmes à étapes implicites, Décimaux, Fractions, Pourcentages\n**Thèmes : Décimaux, Fractions, Pourcentages, Aires, Échelles, Problèmes complexes**",
+        "answer": "4500 : 500 = 9 semaines.",
         "questions": [
             {
-                "label": "## Partie 3",
-                "response": "",
-                "unit": "Fin"
-            },
-            {
-                "label": "**Thèmes",
-                "response": "",
-                "unit": "D"
+                "response": "9",
+                "unit": "semaines"
             }
         ]
     },
@@ -1213,7 +1207,7 @@
         "answer": "1h = 60 min. 110 - 60 = 50. Donc 1h50.",
         "questions": [
             {
-                "response": "50",
+                "response": "1h50",
                 "unit": ""
             }
         ]
@@ -1237,7 +1231,12 @@
         "part": 2,
         "text": "Une boîte contient 12 œufs. J'utilise 2/3 des œufs pour un gâteau.\nCombien d'œufs ai-je utilisés ?",
         "answer": "(12 x 2) : 3 = 8 œufs.",
-        "questions": []
+        "questions": [
+            {
+                "response": "8",
+                "unit": "œufs"
+            }
+        ]
     },
     {
         "id": 89,
@@ -1258,7 +1257,18 @@
         "part": 2,
         "text": "Au saut en longueur, Marc a sauté 3,45 m et Léo 3,6 m.\nQui a sauté le plus loin ? De combien ?",
         "answer": "Léo (3,60 > 3,45). Différence = 0,15 m (ou 15 cm).",
-        "questions": []
+        "questions": [
+            {
+                "label": "Qui ?",
+                "response": "Léo",
+                "unit": ""
+            },
+            {
+                "label": "De combien ?",
+                "response": "15",
+                "unit": "cm"
+            }
+        ]
     },
     {
         "id": 91,
@@ -1268,6 +1278,12 @@
         "answer": "Pierre a 1 part, Paul a 3 parts. Total 4 parts. 2000 : 4 = 500 F. Pierre = 500 F, Paul = 1500 F.",
         "questions": [
             {
+                "label": "Pierre",
+                "response": "500",
+                "unit": "F"
+            },
+            {
+                "label": "Paul",
                 "response": "1500",
                 "unit": "F"
             }
@@ -1292,7 +1308,12 @@
         "part": 2,
         "text": "J'ai lu 160 pages lundi, 0 mardi, et 200 mercredi.\nQuelle est ma moyenne de pages lues par jour sur ces 3 jours ?",
         "answer": "(160 + 0 + 200) : 3 = 360 : 3 = 120 pages).",
-        "questions": []
+        "questions": [
+            {
+                "response": "120",
+                "unit": "pages"
+            }
+        ]
     },
     {
         "id": 94,
@@ -1315,8 +1336,14 @@
         "answer": "50 : 6 = 8 reste 2.",
         "questions": [
             {
+                "label": "Chacun",
+                "response": "8",
+                "unit": "bonbons"
+            },
+            {
+                "label": "Reste",
                 "response": "2",
-                "unit": ""
+                "unit": "bonbons"
             }
         ]
     },
@@ -1341,7 +1368,7 @@
         "answer": "8 x 6 = 48 litres. Non, 48 > 45.",
         "questions": [
             {
-                "response": "45",
+                "response": "Non",
                 "unit": ""
             }
         ]
@@ -1377,11 +1404,11 @@
         "title": "Le grand problème final",
         "part": 2,
         "text": "Une fanfare compte 4 rangées de 8 musiciens. 1/4 des musiciens jouent de la trompette, et les autres du tambour.\nCombien y a-t-il de joueurs de tambour ?",
-        "answer": "Total = 4 x 8 = 32 musiciens. Trompette = 32 : 4 = 8. Tambour = 32 - 8 = 24.\nParfait — tu as raison.\nVoici les **50 problèmes (101 à 150)** rédigés en **langage naturel complet**, avec des **questions explicites** et les **réponses détaillées sous chaque exercice**.\nLes **15 derniers (136 à 150)** comportent une complexité supplémentaire avec une étape intermédiaire implicite.",
+        "answer": "Total = 4 x 8 = 32 musiciens. Trompette = 32 : 4 = 8. Tambour = 32 - 8 = 24.",
         "questions": [
             {
-                "response": "",
-                "unit": "implicite"
+                "response": "24",
+                "unit": "joueurs"
             }
         ]
     },
@@ -2578,8 +2605,8 @@
         "questions": [
             {
                 "label": "a) Dimensions réelles",
-                "response": "",
-                "unit": "base 190 m, Grande base 380 m, Hauteur 140 m"
+                "response": "190 m, 380 m, 140 m",
+                "unit": "(petite base, grande base, hauteur)"
             },
             {
                 "label": "b) Surface",
@@ -2661,8 +2688,8 @@
         "questions": [
             {
                 "label": "1) Dimensions réelles",
-                "response": "",
-                "unit": "base 85 m, Petite base 55 m, Hauteur 60 m"
+                "response": "85 m, 55 m, 60 m",
+                "unit": "(grande base, petite base, hauteur)"
             },
             {
                 "label": "2) Aire",
@@ -3011,8 +3038,8 @@
         "questions": [
             {
                 "label": "a) Dimensions",
-                "response": "",
-                "unit": "base 95 m, Petite base 55 m, Hauteur 50 m"
+                "response": "95 m, 55 m, 50 m",
+                "unit": "(Grande base, Petite base, Hauteur)"
             },
             {
                 "label": "b) Prix",
@@ -3104,11 +3131,6 @@
                 "label": "Nombre total d'exercices traités",
                 "response": "77",
                 "unit": "exercices (numérotés de 151 à 227)"
-            },
-            {
-                "label": "Exercices sur",
-                "response": "",
-                "unit": "de distance et durée, poids, volumes, trapèzes,"
             }
         ]
     }

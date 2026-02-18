@@ -206,17 +206,18 @@ export const dictees: Dictee[] = [
   {
     id: 29,
     titre: "Le renard curieux",
-    texte: "Filliou, le renard, avait aper\u00e7u deux hommes dans la clairi\u00e8re et il s'\u00e9tait cach\u00e9 sous un buisson pour les observer sans \u00eatre vu. Que faisaient-ils l\u00e0 ? Pourquoi se fatiguaient- ils \u00e0 frapper contre un arbre avec de longs b\u00e2tons termin\u00e9s par des masses \u00e9tincelantes ? Comme il n'avait jamais vu de hache, Filliou ne pouvait deviner que ces deux chercheurs d'or coupaient du bois pour se chauffer. La curiosit\u00e9 est le plus gros d\u00e9faut des renards. C'\u00e9tait \u00e0 ce vice que Filliou devait la plupart de ses m\u00e9saventures. Une course folle \u00e0 travers les bois lui suffisait pour oublier le",
-    auteur: "pass\u00e9. George C. Franklin",
+    texte: "Filliou, le renard, avait aperçu deux hommes dans la clairière et il s'était caché sous un buisson pour les observer sans être vu. Que faisaient-ils là ? Pourquoi se fatiguaient- ils à frapper contre un arbre avec de longs bâtons terminés par des masses étincelantes ? Comme il n'avait jamais vu de hache, Filliou ne pouvait deviner que ces deux chercheurs d'or coupaient du bois pour se chauffer. La curiosité est le plus gros défaut des renards. C'était à ce vice que Filliou devait la plupart de ses mésaventures. Une course folle à travers les bois lui suffisait pour oublier le passé.",
+    auteur: "George C. Franklin",
     niveau: "CM1"
   },
   {
     id: 30,
-    titre: "L'ourson s'\u00e9veille \u00e0 la vie",
-    texte: "C'est vers la fin du mois de mars, au d\u00e9clin de la lune, que Nioua, l'ourson noir, vit r\u00e9ellement le monde pour la premi\u00e8re fois. Sa m\u00e8re, Nouzak, \u00e9tait \u00e2g\u00e9e, accabl\u00e9e de rhumatismes et, comme les vieilles gens, elle aimait dormir longtemps. Elle avait choisi sa caverne sur une cime \u00e9lev\u00e9e et st\u00e9rile. C'est l\u00e0 que Nioua jeta son premier coup d'oeil sur la vall\u00e9e. Depuis quinze jours, un printemps pr\u00e9coce avait transform\u00e9 la r\u00e9gion.",
+    titre: "L'ourson s'éveille à la vie",
+    texte: "C'est vers la fin du mois de mars, au déclin de la lune, que Nioua, l'ourson noir, vit réellement le monde pour la première fois. Sa mère, Nouzak, était âgée, accablée de rhumatismes et, comme les vieilles gens, elle aimait dormir longtemps. Elle avait choisi sa caverne sur une cime élevée et stérile. C'est là que Nioua jeta son premier coup d'oeil sur la vallée. Depuis quinze jours, un printemps précoce avait transformé la région.",
     auteur: "James Olivier Curwood",
     niveau: "CM1"
   },
+
   {
     id: 31,
     titre: "Au verger",
@@ -311,8 +312,8 @@ export const dictees: Dictee[] = [
   {
     id: 44,
     titre: "En route pour la Lune",
-    texte: "Au cr\u00e9puscule, j'ouvris le panneau et n'eus aucun mal \u00e0 le mouvoir. Je me levai dans le noir et je pus jeter mon premier bon coup d'oeil sur l'univers qui s'\u00e9tendait autour de moi. \u00c0 l'int\u00e9rieur de G\u00e9mini, la vue \u00e9tait limit\u00e9e par les minuscules hublots, mais \u00e0 pr\u00e9sent, je pouvais regarder en haut et en bas, \u00e0 gauche et \u00e0 droite. Il y avait des \u00e9toiles partout, au- dessus de moi et de tous les c\u00f4t\u00e9s, et m\u00eame en dessous pr\u00e8s de l'invisible horizon. M. Collins",
-    auteur: "",
+    texte: "Au crépuscule, j'ouvris le panneau et n'eus aucun mal à le mouvoir. Je me levai dans le noir et je pus jeter mon premier bon coup d'oeil sur l'univers qui s'étendait autour de moi. À l'intérieur de Gémini, la vue était limitée par les minuscules hublots, mais à présent, je pouvais regarder en haut et en bas, à gauche et à droite. Il y avait des étoiles partout, au- dessus de moi et de tous les côtés, et même en dessous près de l'invisible horizon.",
+    auteur: "M. Collins",
     niveau: "CM1"
   },
   {
