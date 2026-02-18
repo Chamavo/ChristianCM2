@@ -73,15 +73,17 @@ const ProblemeSession: React.FC<ProblemeSessionProps> = ({ problem, onBack, onCo
         }
 
         const allCorrect = validQuestions.every((q, i) => {
-            const userVal = userAnswers[i].trim().replace(/\s/g, '').replace(',', '.');
-            const correctVal = q.response.trim().replace(/\s/g, '').replace(',', '.');
-            const userNum = parseFloat(userVal);
-            const correctNum = parseFloat(correctVal);
+            const userVal = userAnswers[i].trim().replace(/\s/g, '').replace(',', '.').toLowerCase();
+            const correctVal = q.response.trim().replace(/\s/g, '').replace(',', '.').toLowerCase();
 
-            if (!isNaN(userNum) && !isNaN(correctNum)) {
-                return userNum === correctNum;
+            // Check if both are valid numbers
+            const userNum = Number(userVal);
+            const correctNum = Number(correctVal);
+
+            if (!isNaN(userNum) && !isNaN(correctNum) && userVal !== '' && correctVal !== '') {
+                return Math.abs(userNum - correctNum) < 0.0001;
             }
-            return userVal.toLowerCase() === correctVal.toLowerCase();
+            return userVal === correctVal;
         });
 
         if (allCorrect) {

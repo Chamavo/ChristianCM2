@@ -355,8 +355,8 @@
             },
             {
                 "label": "b)",
-                "response": "10",
-                "unit": "h"
+                "response": "10h50",
+                "unit": ""
             }
         ]
     },
@@ -418,6 +418,12 @@
         "answer": "1500 + 3000 = 4500 F par élève. 4500 x 75 = 337 500 F.",
         "questions": [
             {
+                "label": "Coût par élève",
+                "response": "4500",
+                "unit": "F"
+            },
+            {
+                "label": "Coût total",
                 "response": "337500",
                 "unit": "F"
             }
@@ -444,7 +450,7 @@
         "answer": "20h30 + 1h45 = 22h15.",
         "questions": [
             {
-                "response": "15",
+                "response": "22h15",
                 "unit": ""
             }
         ]
@@ -569,6 +575,12 @@
         "answer": "Père = 12 x 3 = 36 ans. Différence = 36 - 12 = 24 ans.",
         "questions": [
             {
+                "label": "Âge du père",
+                "response": "36",
+                "unit": "ans"
+            },
+            {
+                "label": "Différence",
                 "response": "24",
                 "unit": "ans"
             }
@@ -676,6 +688,12 @@
         "answer": "25 x 30 = 750 places. Vides = 750 - 600 = 150 places.",
         "questions": [
             {
+                "label": "Places totales",
+                "response": "750",
+                "unit": "places"
+            },
+            {
+                "label": "Places vides",
                 "response": "150",
                 "unit": "places"
             }
