@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/orthographeClient';
 import ModuleHeader from '../shared/ModuleHeader';
+import LogoutButton from '../shared/LogoutButton';
 
 interface FrenchLandingProps {
     studentName: string;
@@ -73,6 +74,10 @@ const FrenchLanding = ({
                 onBack={onBack}
                 variant="orthographe"
             />
+
+            <div className="flex justify-end mb-4">
+                <LogoutButton />
+            </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                 {/* Left Column: Profile & Main Progression */}

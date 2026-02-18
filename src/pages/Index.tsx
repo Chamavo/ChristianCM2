@@ -5,6 +5,7 @@ import WelcomeHeader from "@/components/WelcomeHeader";
 import ModuleButton from "@/components/ModuleButton";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import LogoutButton from "@/components/shared/LogoutButton";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -21,7 +22,12 @@ const Index = () => {
 
       <main className="relative z-10 container py-10 px-4 max-w-6xl mx-auto flex flex-col items-center">
         <section className="w-full flex flex-col items-center text-center">
+
+          <div className="w-full flex justify-end absolute top-4 right-4 z-50">
+            <LogoutButton />
+          </div>
           <WelcomeHeader />
+
 
 
 

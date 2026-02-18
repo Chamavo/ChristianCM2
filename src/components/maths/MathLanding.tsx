@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Calculator, BookOpen, ArrowLeft } from 'lucide-react';
 import ModulePageLayout from '../shared/ModulePageLayout';
+import LogoutButton from '../shared/LogoutButton';
 
 interface MathLandingProps {
     level: number;
@@ -31,6 +32,10 @@ const MathLanding: React.FC<MathLandingProps> = ({
                 >
                     <ArrowLeft className="w-6 h-6 text-slate-700" />
                 </motion.button>
+
+                <div className="absolute top-6 right-6 z-30">
+                    <LogoutButton />
+                </div>
 
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
