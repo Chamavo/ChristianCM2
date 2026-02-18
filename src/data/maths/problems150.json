@@ -307,8 +307,8 @@
         "id": 17,
         "title": "Le camion",
         "part": 1,
-        "text": "Un camion vide pèse 3500 kg. On le charge avec 2000 kg de marchandises.\na) Quel est le poids du camion chargé ?\nb) Le camion doit passer sur un pont limité à 5000 kg. Peut-il passer ? Justifie.",
-        "answer": "a) 3500 + 2000 = 5500 kg. b) Non, car 5500 > 5000.",
+        "text": "Un camion vide pèse 3500 kg. On le charge avec 2000 kg de marchandises.\na) Quel est le poids du camion chargé ?\nb) Le camion doit passer sur un pont limité à 5000 kg. De combien de kg le camion dépasse-t-il cette limite ?",
+        "answer": "a) 3500 + 2000 = 5500 kg. b) 5500 - 5000 = 500 kg.",
         "questions": [
             {
                 "label": "a)",
@@ -317,8 +317,8 @@
             },
             {
                 "label": "b)",
-                "response": "5000",
-                "unit": ""
+                "response": "500",
+                "unit": "kg"
             }
         ]
     },
