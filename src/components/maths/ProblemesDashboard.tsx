@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Lock, Check, BookOpen } from 'lucide-react';
-import { getAllProblems, getProblemStatus, TOTAL_PROBLEMS } from '@/utils/maths/problemManager';
+import { getAllProblems, TOTAL_PROBLEMS } from '@/utils/maths/problemManager';
 import ModulePageLayout from '../shared/ModulePageLayout';
 import ModuleHeader from '../shared/ModuleHeader';
+import { useUser } from '@/contexts/UserContext';
 
 interface ProblemesDashboardProps {
     onSelectProblem: (id: number) => void;
@@ -13,6 +14,7 @@ interface ProblemesDashboardProps {
 const ProblemesDashboard: React.FC<ProblemesDashboardProps> = ({ onSelectProblem, onBack }) => {
     const [problems, setProblems] = React.useState<any[]>([]);
     const [isLoading, setIsLoading] = React.useState(true);
+    const { progress } = useUser();
 
     React.useEffect(() => {
         const load = async () => {
@@ -53,8 +55,7 @@ const ProblemesDashboard: React.FC<ProblemesDashboardProps> = ({ onSelectProblem
                 {ids.map(id => {
                     const problem = problems.find(p => p.id === id);
                     const isMissing = !problem;
-                    const status = getProblemStatus(id);
-                    const isSolved = status === 'solved';
+                    const isSolved = progress.solvedProblems.includes(id);
                     const colorStyle = getButtonColor(id);
 
                     return (

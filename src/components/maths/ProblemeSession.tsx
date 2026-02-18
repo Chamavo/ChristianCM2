@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Check, HelpCircle } from 'lucide-react';
 import confetti from 'canvas-confetti';
-import { MathProblem, saveProblemStatus } from '@/utils/maths/problemManager';
+import { MathProblem } from '@/utils/maths/problemManager';
+import { useUser } from '@/contexts/UserContext';
 
 interface ProblemeSessionProps {
     problem: MathProblem;
@@ -19,6 +20,7 @@ const ProblemeSession: React.FC<ProblemeSessionProps> = ({ problem, onBack, onCo
     const [hintLevel, setHintLevel] = useState(0);
     const [isAiThinking, setIsAiThinking] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
+    const { markProblemSolved } = useUser();
 
     // Filter questions to remove metadata (e.g. total count info)
     const validQuestions = React.useMemo(() => {
@@ -91,7 +93,7 @@ const ProblemeSession: React.FC<ProblemeSessionProps> = ({ problem, onBack, onCo
 
     const handleSolved = () => {
         setIsSuccess(true);
-        saveProblemStatus(problem.id, 'solved');
+        markProblemSolved(problem.id);
         confetti({
             particleCount: 150,
             spread: 80,

@@ -42,39 +42,6 @@ export const prefetchProblems = async () => {
     await ensureLoaded();
 };
 
-export const getProblemStatus = (id: number): 'locked' | 'unlocked' | 'solved' => {
-    try {
-        const saved = localStorage.getItem('math_problems_progress');
-        if (!saved) return 'unlocked';
-        const progress = JSON.parse(saved);
-        return progress[id] || 'unlocked';
-    } catch (e) {
-        return 'unlocked';
-    }
-};
-
-export const saveProblemStatus = (id: number, status: 'solved') => {
-    try {
-        const saved = localStorage.getItem('math_problems_progress');
-        const progress = saved ? JSON.parse(saved) : {};
-        progress[id] = status;
-        localStorage.setItem('math_problems_progress', JSON.stringify(progress));
-    } catch (e) {
-        console.error("Failed to save progress", e);
-    }
-};
-
-export const getSolvedCount = (): number => {
-    try {
-        const saved = localStorage.getItem('math_problems_progress');
-        if (!saved) return 0;
-        const progress = JSON.parse(saved);
-        return Object.values(progress).filter(status => status === 'solved').length;
-    } catch (e) {
-        return 0;
-    }
-};
-
 export const getProblemsByPart = (part: number): MathProblem[] => {
     return problemsData.filter((p: any) => p.part === part) as MathProblem[];
 };

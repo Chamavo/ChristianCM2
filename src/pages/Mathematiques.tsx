@@ -9,13 +9,13 @@ import ProblemeSession from '@/components/maths/ProblemeSession';
 import MathLanding from '@/components/maths/MathLanding';
 import { getCurrentLevel, updateCurrentLevel } from '@/utils/maths/levelBlockingSystem';
 import { generateLevelExercises, Exercise } from '@/utils/maths/exerciseGenerator';
-import { getProblem, MathProblem, TOTAL_PROBLEMS, getSolvedCount } from '@/utils/maths/problemManager';
+import { getProblem, MathProblem, TOTAL_PROBLEMS } from '@/utils/maths/problemManager';
 
 type ViewState = 'landing' | 'calcul_dashboard' | 'calcul_session' | 'calcul_result' | 'problemes_dashboard' | 'probleme_session';
 
 const Mathematiques: React.FC = () => {
     const navigate = useNavigate();
-    const { user } = useUser();
+    const { user, progress } = useUser();
     const [currentView, setCurrentView] = useState<ViewState>('landing');
     const username = user || 'Christian'; // Fallback to 'Christian' just in case, though LoginScreen should prevent this
 
@@ -31,13 +31,11 @@ const Mathematiques: React.FC = () => {
 
     // Problemes State
     const [selectedProblem, setSelectedProblem] = useState<MathProblem | null>(null);
-    const [solvedCount, setSolvedCount] = useState(0);
 
     useEffect(() => {
         const loadInitialData = async () => {
             const l = await getCurrentLevel(username, 'progression');
             setLevel(l);
-            setSolvedCount(getSolvedCount());
         };
         loadInitialData();
     }, [username, currentView]);
@@ -90,7 +88,7 @@ const Mathematiques: React.FC = () => {
                 <MathLanding
                     level={level}
                     totalProblems={TOTAL_PROBLEMS}
-                    solvedProblemsCount={solvedCount}
+                    solvedProblemsCount={progress.solvedProblems.length}
                     onSelectCalcul={() => setCurrentView('calcul_dashboard')}
                     onSelectProblemes={() => setCurrentView('problemes_dashboard')}
                     onBack={handleExitApp}
