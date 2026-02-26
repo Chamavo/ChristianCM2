@@ -1,4 +1,4 @@
-import { Suspense, lazy, useEffect } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -29,14 +29,22 @@ const AppRoutes = () => {
     }
   }, [location, user, isLoading, updateLastPath]);
 
+  const [hasRestored, setHasRestored] = useState(false);
+
   // Restore session on login/load
   useEffect(() => {
     if (user && !isLoading && progress.lastPath && location.pathname === '/') {
-      if (progress.lastPath !== '/') {
-        navigate(progress.lastPath);
+      if (!hasRestored) {
+        setHasRestored(true);
+        if (progress.lastPath !== '/') {
+          navigate(progress.lastPath);
+        }
       }
+    } else if (user && !isLoading && location.pathname !== '/' && !hasRestored) {
+      // If we are already on a sub-page, we consider restoration "done" or bypassed
+      setHasRestored(true);
     }
-  }, [user, isLoading, progress.lastPath, location.pathname, navigate]);
+  }, [user, isLoading, progress.lastPath, location.pathname, navigate, hasRestored]);
 
   if (isLoading) return null;
   if (!user) return <LoginScreen />;
