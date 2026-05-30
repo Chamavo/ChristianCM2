@@ -50,7 +50,7 @@ export async function calculerRattrapage(
 
   let jour_reel = 1;
   if (progressRows && progressRows.length > 0) {
-    for (const row of progressRows as Array<{ exercises: { jour: number } | null }>) {
+    for (const row of progressRows as unknown as Array<{ exercises: { jour: number } | null }>) {
       const j = row.exercises?.jour;
       if (typeof j === 'number' && j > jour_reel) jour_reel = j;
     }

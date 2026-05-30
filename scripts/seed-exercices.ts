@@ -254,7 +254,8 @@ async function seedQuiz(): Promise<{ inserted: number; skipped: number }> {
 
 async function main(): Promise<void> {
   console.log(c.blue('Poudlard Maths — Seed Supabase'));
-  console.log(c.dim(`Source : ${DATA_DIR_PARENT}`));
+  console.log(c.dim(`Source exos : ${DATA_EXOS_DIR}`));
+  console.log(c.dim(`Source quiz : ${DATA_QUIZ_DIR}`));
   console.log(c.dim(`Fallback : ${DATA_DIR_LOCAL}`));
 
   const exos = await seedExercices();

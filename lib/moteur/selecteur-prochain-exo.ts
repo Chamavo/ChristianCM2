@@ -159,7 +159,7 @@ async function getCurrentNonMaitrise(
 
   if (error || !data) return null;
   // On préfère un exo du jour courant
-  const rows = data as Array<{ exercises: Exercise | null }>;
+  const rows = data as unknown as Array<{ exercises: Exercise | null }>;
   const candidats = rows.map((r) => r.exercises).filter((e): e is Exercise => !!e);
   const duJour = candidats.find((e) => e.jour === jour);
   return duJour ?? candidats[0] ?? null;
