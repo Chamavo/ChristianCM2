@@ -56,19 +56,24 @@ export default async function AccueilEnfantPage() {
     .returns<(Progress & { exercises: { jour: number } })[]>();
 
   const maitrisesParJour = new Map<number, number>();
+  // « Réglés » = maîtrisés OU passés définitivement ('reporte') : sert au déblocage.
+  const reglesParJour = new Map<number, number>();
   if (progressRows) {
     for (const row of progressRows) {
+      const j = row.exercises.jour;
       if (row.statut === 'maitrise') {
-        const j = row.exercises.jour;
         maitrisesParJour.set(j, (maitrisesParJour.get(j) ?? 0) + 1);
+      }
+      if (row.statut === 'maitrise' || row.statut === 'reporte') {
+        reglesParJour.set(j, (reglesParJour.get(j) ?? 0) + 1);
       }
     }
   }
 
-  // Détermine le jour actuel = premier jour non encore à 100%
+  // Détermine le jour actuel = premier jour non entièrement réglé
   let jourActuel = 1;
   for (let j = 1; j <= NB_JOURS_TOTAL; j++) {
-    if ((maitrisesParJour.get(j) ?? 0) < NB_EXOS_PAR_JOUR) {
+    if ((reglesParJour.get(j) ?? 0) < NB_EXOS_PAR_JOUR) {
       jourActuel = j;
       break;
     }
@@ -196,7 +201,7 @@ export default async function AccueilEnfantPage() {
       <div className="grid grid-cols-3 gap-3 mb-8">
         {Array.from({ length: NB_JOURS_TOTAL }, (_, i) => i + 1).map((j) => {
           const maitrises = maitrisesParJour.get(j) ?? 0;
-          const termine = maitrises >= NB_EXOS_PAR_JOUR;
+          const termine = (reglesParJour.get(j) ?? 0) >= NB_EXOS_PAR_JOUR;
           const actuel = j === jourActuel && !termine;
           const verrouille = j > jourActuel;
           const emoji = verrouille ? '🔒' : (SCENES_PAR_JOUR[j] ?? '✨');

@@ -135,11 +135,12 @@ async function prochainDansJour(
   for (const e of exos as Exercise[]) {
     if (!statuts.has(e.id)) return { exo: e, revisite: false };
   }
-  // Phase 2 : tenté mais pas encore maîtrisé
+  // Phase 2 : tenté mais ni maîtrisé ni passé définitivement ('reporte')
   for (const e of exos as Exercise[]) {
-    if (statuts.get(e.id) !== 'maitrise') return { exo: e, revisite: true };
+    const s = statuts.get(e.id);
+    if (s !== 'maitrise' && s !== 'reporte') return { exo: e, revisite: true };
   }
-  // Tout maîtrisé
+  // Jour réglé : tout est maîtrisé ou passé définitivement
   return null;
 }
 

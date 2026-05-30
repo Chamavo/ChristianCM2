@@ -13,6 +13,7 @@ import { DecompositionWizard } from './DecompositionWizard';
 import { FeedbackPanel } from './FeedbackPanel';
 import { PointsMaisonBadge } from '@/components/gamification/PointsMaisonBadge';
 import { BoutonQuitter } from '@/components/layout/BoutonQuitter';
+import { skipExercise } from '@/app/(child)/actions';
 import { cn } from '@/lib/utils';
 
 interface ExerciceClientProps {
@@ -184,6 +185,23 @@ export function ExerciceClient({
       router.push(retourHref);
     }
   }, [router, retourHref]);
+
+  // Anti-blocage : passer DÉFINITIVEMENT l'exercice (statut 'reporte' côté serveur),
+  // puis avancer. Évite qu'un exercice invalidable bloque tout le marathon.
+  const passerDefinitivement = useCallback(async () => {
+    const ok = window.confirm(
+      'Passer définitivement cette question ?\n\n' +
+        'Elle ne te sera plus reposée et ne comptera pas comme réussie. ' +
+        'À utiliser seulement si tu es vraiment bloqué.'
+    );
+    if (!ok) return;
+    try {
+      await skipExercise(exercise.id);
+    } catch {
+      /* on avance quand même */
+    }
+    suivant();
+  }, [exercise.id, suivant]);
 
   // Touche Entrée → valider si réponse remplie et pas en feedback
   useEffect(() => {
@@ -443,6 +461,7 @@ export function ExerciceClient({
             onReessayer={reessayer}
             proposerDecomposition={nbErreurs >= 1}
             onDecomposer={lancerDecomposition}
+            onPasserDefinitivement={passerDefinitivement}
           />
         )}
 

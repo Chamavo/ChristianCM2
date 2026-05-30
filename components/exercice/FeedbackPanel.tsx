@@ -16,6 +16,8 @@ interface FeedbackPanelProps {
   onDecomposer?: () => void;
   /** Correction IA indisponible : on ne bloque pas, on invite à continuer. */
   indetermine?: boolean;
+  /** Passe DÉFINITIVEMENT la question (anti-blocage) : ne sera plus reposée. */
+  onPasserDefinitivement?: () => void;
 }
 
 export function FeedbackPanel({
@@ -29,6 +31,7 @@ export function FeedbackPanel({
   proposerDecomposition = false,
   onDecomposer,
   indetermine = false,
+  onPasserDefinitivement,
 }: FeedbackPanelProps) {
   // États visuels : indéterminé (ambre) > correct (vert) > incorrect (rouge)
   const ton = indetermine ? 'neutre' : estCorrecte ? 'ok' : 'ko';
@@ -112,14 +115,25 @@ export function FeedbackPanel({
       <div className="flex flex-col gap-2 mt-4">
         {indetermine ? (
           // Correction IA indisponible : on ne bloque pas l'élève.
-          <button
-            type="button"
-            onClick={onSuivant}
-            className="w-full btn-gryffondor"
-            autoFocus
-          >
-            Continuer →
-          </button>
+          <>
+            <button
+              type="button"
+              onClick={onSuivant}
+              className="w-full btn-gryffondor"
+              autoFocus
+            >
+              Continuer →
+            </button>
+            {onPasserDefinitivement && (
+              <button
+                type="button"
+                onClick={onPasserDefinitivement}
+                className="w-full text-stone-600 text-sm underline-offset-2 hover:underline py-2"
+              >
+                Passer définitivement cette question
+              </button>
+            )}
+          </>
         ) : estCorrecte ? (
           <button
             type="button"
@@ -157,6 +171,15 @@ export function FeedbackPanel({
             >
               Passer à l'exercice suivant
             </button>
+            {onPasserDefinitivement && (
+              <button
+                type="button"
+                onClick={onPasserDefinitivement}
+                className="w-full text-stone-500 text-xs underline-offset-2 hover:underline py-1"
+              >
+                Passer définitivement (ne plus reposer cette question)
+              </button>
+            )}
           </>
         )}
       </div>
