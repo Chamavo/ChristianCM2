@@ -53,13 +53,15 @@ export default async function ExercicePage({ params }: PageProps) {
         exosJour.map((e) => e.id)
       )
       .returns<Pick<Progress, 'exercise_id' | 'statut'>[]>();
-    const maitrise = new Set(
+    // 'reporte' (passé définitivement) compte comme réglé, au même titre que 'maitrise'
+    const regle = new Set(
       (progJour ?? [])
-        .filter((p) => p.statut === 'maitrise')
+        .filter((p) => p.statut === 'maitrise' || p.statut === 'reporte')
         .map((p) => p.exercise_id)
     );
 
-    const cible = exosJour.find((e) => !maitrise.has(e.id)) ?? exosJour[0];
+    const cible = exosJour.find((e) => !regle.has(e.id));
+    if (!cible) redirect('/accueil'); // jour entièrement réglé
     redirect(`/exercice/${cible.id}`);
   }
 
