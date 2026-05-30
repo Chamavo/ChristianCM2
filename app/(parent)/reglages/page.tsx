@@ -6,7 +6,7 @@ import { AjouterEnfantDialog } from '@/components/dashboard/AjouterEnfantDialog'
 import type { Profile, Maison } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
-export const metadata = { title: 'Réglages — Poudlard Maths' };
+export const metadata = { title: 'Réglages — Maths à l\'école des sorciers' };
 
 const EMOJI_MAISON: Record<Maison, string> = {
   gryffondor: '🦁',

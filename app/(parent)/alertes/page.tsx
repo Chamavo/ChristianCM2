@@ -10,7 +10,7 @@ import {
 } from './AlertesActions';
 
 export const dynamic = 'force-dynamic';
-export const metadata = { title: 'Alertes — Poudlard Maths' };
+export const metadata = { title: 'Alertes — Maths à l\'école des sorciers' };
 
 const EMOJI_MAISON: Record<Maison, string> = {
   gryffondor: '🦁',
