@@ -1,0 +1,823 @@
+{
+  "jour": 15,
+  "titre": "Pierre Philosophale — Duel final : épreuve Libermann complète",
+  "theme_principal": "epreuve_libermann_integrale_chronometree",
+  "scene_globale": "C'est la nuit du grand défi. Harry, Ron et Hermione descendent à travers la trappe gardée par Touffu, le chien à trois têtes. Ils traversent l'épreuve du filet du Diable, attrapent la clé volante, gagnent la partie d'échecs version sorcier, esquivent les flammes du potion, et Harry affronte enfin Quirrell-Voldemort devant le miroir du Riséd pour empêcher le vol de la pierre philosophale. Chaque épreuve gardienne est un problème de type Libermann complet, chronométré, avec sous-questions a, b, c, d, e. C'est l'épreuve finale, la simulation intégrale du concours.",
+  "mix_qcm_redige": "30/70",
+  "duree_estimee_min": 220,
+  "exercices": [
+    {
+      "id": "j15-e01",
+      "ordre_jour": 1,
+      "theme": "echauffement_libermann",
+      "sous_theme": "multiplication_mentale",
+      "scene_hp": "trappe_touffu",
+      "narration": "Harry, Ron et Hermione s'enfoncent dans la trappe ouverte par le chien à trois têtes Touffu.",
+      "type": "qcm",
+      "competence": "Calculer rapidement une multiplication",
+      "difficulte_relative": 1,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Touffu a 3 têtes. Chaque tête a 36 dents. Combien de dents en tout ?",
+      "choix": [
+        {"id": "a", "texte": "108"},
+        {"id": "b", "texte": "98"},
+        {"id": "c", "texte": "118"},
+        {"id": "d", "texte": "120"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bravo ! 3 × 36 = 108 dents.",
+      "indices": [
+        {"niveau": 1, "texte": "3 × 36 = 3 × 30 + 3 × 6 = 90 + 18 = 108.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e02",
+      "ordre_jour": 2,
+      "theme": "echauffement_libermann",
+      "sous_theme": "fraction_decimal",
+      "scene_hp": "trappe_touffu",
+      "narration": "Hermione vérifie ses notes avant d'avancer.",
+      "type": "qcm",
+      "competence": "Convertir une fraction en décimal",
+      "difficulte_relative": 2,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Combien fait 3/4 sous forme décimale ?",
+      "choix": [
+        {"id": "a", "texte": "0,25"},
+        {"id": "b", "texte": "0,5"},
+        {"id": "c", "texte": "0,75"},
+        {"id": "d", "texte": "1,25"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Exact ! 3/4 = 3 ÷ 4 = 0,75.",
+      "indices": [
+        {"niveau": 1, "texte": "1/4 = 0,25. Donc 3/4 = 3 × 0,25 = 0,75.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e03",
+      "ordre_jour": 3,
+      "theme": "echauffement_libermann",
+      "sous_theme": "duree_min_sec",
+      "scene_hp": "filet_diable",
+      "narration": "Ils tombent dans le filet du Diable. Hermione le détend en moins d'une minute.",
+      "type": "qcm",
+      "competence": "Convertir min+s en secondes",
+      "difficulte_relative": 3,
+      "duree_estimee_sec": 40,
+      "points_maison": 2,
+      "enonce": "Hermione a mis 2 min 45 s pour libérer Harry et Ron. Combien de secondes au total ?",
+      "choix": [
+        {"id": "a", "texte": "165 s"},
+        {"id": "b", "texte": "245 s"},
+        {"id": "c", "texte": "120 s"},
+        {"id": "d", "texte": "245 min"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bravo ! 2 min = 120 s. 120 + 45 = 165 s.",
+      "indices": [
+        {"niveau": 1, "texte": "1 min = 60 s, donc 2 min = 120 s. Ajoute les 45 s restantes.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e04",
+      "ordre_jour": 4,
+      "theme": "echauffement_libermann",
+      "sous_theme": "pourcentage_simple",
+      "scene_hp": "salle_cles_volantes",
+      "narration": "Harry attrape une clé volante. 100 clés volent dans la salle.",
+      "type": "qcm",
+      "competence": "Calculer 75% d'un nombre",
+      "difficulte_relative": 4,
+      "duree_estimee_sec": 40,
+      "points_maison": 2,
+      "enonce": "Dans la salle, 75% des 100 clés volent vers le haut. Combien volent vers le haut ?",
+      "choix": [
+        {"id": "a", "texte": "25 clés"},
+        {"id": "b", "texte": "50 clés"},
+        {"id": "c", "texte": "75 clés"},
+        {"id": "d", "texte": "100 clés"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Exact ! 75% de 100 = 75. Et 25% (= 25 clés) volent vers le bas.",
+      "indices": [
+        {"niveau": 1, "texte": "Astuce : 100 × le pourcentage = le pourcentage lui-même.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e05",
+      "ordre_jour": 5,
+      "theme": "echauffement_libermann",
+      "sous_theme": "aire_carre",
+      "scene_hp": "echiquier_geant",
+      "narration": "Ils entrent dans la salle de l'échiquier géant. Chaque case est carrée.",
+      "type": "qcm",
+      "competence": "Calculer l'aire d'un carré",
+      "difficulte_relative": 5,
+      "duree_estimee_sec": 45,
+      "points_maison": 3,
+      "enonce": "Chaque case de l'échiquier est un carré de 1,5 m de côté. Quelle est l'aire d'une case ?",
+      "choix": [
+        {"id": "a", "texte": "3 m²"},
+        {"id": "b", "texte": "2,25 m²"},
+        {"id": "c", "texte": "6 m²"},
+        {"id": "d", "texte": "4,5 m²"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! Aire du carré = côté × côté = 1,5 × 1,5 = 2,25 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Aire du carré = côté². Calcule 1,5 × 1,5.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e06",
+      "ordre_jour": 6,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "echiquier_partage_pourcentage",
+      "scene_hp": "echiquier_geant",
+      "narration": "Ron, en tant que tour, calcule combien de cases blanches et noires composent l'échiquier.",
+      "type": "redige_court",
+      "competence": "Combiner aire totale et pourcentage",
+      "difficulte_relative": 6,
+      "duree_estimee_sec": 90,
+      "points_maison": 3,
+      "enonce": "L'échiquier est un carré de 12 m de côté. Combien de m² occupent les cases noires (qui font 50% de la surface) ? (Donne juste le nombre en m²)",
+      "reponse_attendue_redige": "72",
+      "tolerance_numerique": 0,
+      "regex_validation": "^72(\\s*m.?.?)?$",
+      "explication_correcte": "Bien ! Aire totale = 12 × 12 = 144 m². Cases noires = 50% de 144 = 72 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : aire totale = côté². Étape 2 : prends la moitié (50%).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e07",
+      "ordre_jour": 7,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "vitesse_clef_volante",
+      "scene_hp": "salle_cles_volantes",
+      "narration": "Harry vole derrière la clé argentée.",
+      "type": "redige_court",
+      "competence": "Calculer une vitesse en m/s",
+      "difficulte_relative": 7,
+      "duree_estimee_sec": 100,
+      "points_maison": 4,
+      "enonce": "Harry parcourt 150 m en 30 s pour attraper la clé. Quelle est sa vitesse en m/s ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "5",
+      "tolerance_numerique": 0,
+      "regex_validation": "^5(\\s*m/s)?$",
+      "explication_correcte": "Bravo ! Vitesse = distance ÷ temps = 150 ÷ 30 = 5 m/s.",
+      "indices": [
+        {"niveau": 1, "texte": "Vitesse = distance ÷ temps.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e08",
+      "ordre_jour": 8,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "conversion_vitesse",
+      "scene_hp": "salle_cles_volantes",
+      "narration": "Hermione calcule la vitesse de Harry en km/h pour comparer à un balai professionnel.",
+      "type": "redige_court",
+      "competence": "Convertir m/s en km/h",
+      "difficulte_relative": 8,
+      "duree_estimee_sec": 100,
+      "points_maison": 4,
+      "enonce": "Harry vole à 5 m/s. Quelle est cette vitesse en km/h ? (rappel : ×3,6)",
+      "reponse_attendue_redige": "18",
+      "tolerance_numerique": 0,
+      "regex_validation": "^18(\\s*km/h)?$",
+      "explication_correcte": "Excellent ! 5 m/s × 3,6 = 18 km/h.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour convertir m/s en km/h, on multiplie par 3,6.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e09",
+      "ordre_jour": 9,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "fioles_potion",
+      "scene_hp": "salle_potions_logique",
+      "narration": "Ils arrivent dans la salle de Rogue : 7 fioles, une énigme à résoudre pour passer.",
+      "type": "redige_court",
+      "competence": "Combiner pourcentage et soustraction",
+      "difficulte_relative": 9,
+      "duree_estimee_sec": 120,
+      "points_maison": 4,
+      "enonce": "Sur les 7 fioles, 3 contiennent du poison. Quel pourcentage des fioles contiennent du poison (arrondi à l'entier) ? (Donne juste le nombre en %)",
+      "reponse_attendue_redige": "43",
+      "tolerance_numerique": 1,
+      "regex_validation": "^4[23](\\s*%)?$",
+      "explication_correcte": "Exact ! 3/7 = 0,4285... ≈ 43%.",
+      "indices": [
+        {"niveau": 1, "texte": "Divise 3 par 7, puis multiplie par 100.", "cout_points": 1},
+        {"niveau": 2, "texte": "3 ÷ 7 ≈ 0,43. En % : 43%.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j15-e10",
+      "ordre_jour": 10,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "perimetre_aire_combine",
+      "scene_hp": "salle_potions_logique",
+      "narration": "La table où Rogue a posé les fioles est rectangulaire.",
+      "type": "redige_court",
+      "competence": "Calculer périmètre puis aire",
+      "difficulte_relative": 10,
+      "duree_estimee_sec": 120,
+      "points_maison": 4,
+      "enonce": "La table de Rogue mesure 1,8 m de long et 0,6 m de large. Quel est son périmètre, en m ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "4,8",
+      "tolerance_numerique": 0.01,
+      "regex_validation": "^4[,.]8(\\s*m)?$",
+      "explication_correcte": "Bravo ! P = (1,8 + 0,6) × 2 = 2,4 × 2 = 4,8 m.",
+      "indices": [
+        {"niveau": 1, "texte": "P = (L + l) × 2.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e11",
+      "ordre_jour": 11,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "echelle_distance",
+      "scene_hp": "carte_chateau_secret",
+      "narration": "Hermione consulte la carte secrète du château avant de continuer.",
+      "type": "redige_court",
+      "competence": "Calculer une distance réelle avec une échelle",
+      "difficulte_relative": 11,
+      "duree_estimee_sec": 100,
+      "points_maison": 4,
+      "enonce": "Sur la carte à l'échelle 1/4 000, la distance jusqu'au miroir du Riséd est de 7,5 cm. Quelle est la distance réelle (en m) ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "300",
+      "tolerance_numerique": 0,
+      "regex_validation": "^300(\\s*m)?$",
+      "explication_correcte": "Exact ! 1 cm = 4 000 cm = 40 m. 7,5 cm = 7,5 × 40 = 300 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Échelle 1/4 000 → 1 cm carte = 40 m réels.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e12",
+      "ordre_jour": 12,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "partage_avec_difference",
+      "scene_hp": "vestiaires_potter",
+      "narration": "Ron prend 3 chocogrenouilles de plus qu'Hermione dans la sacoche.",
+      "type": "redige_court",
+      "competence": "Résoudre un partage inégal avec différence",
+      "difficulte_relative": 12,
+      "duree_estimee_sec": 120,
+      "points_maison": 4,
+      "enonce": "Ron et Hermione se partagent 17 chocogrenouilles. Ron en prend 3 de plus qu'Hermione. Combien Hermione en a-t-elle ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "7",
+      "tolerance_numerique": 0,
+      "regex_validation": "^7$",
+      "explication_correcte": "Bravo ! 17 − 3 = 14. 14 ÷ 2 = 7. Hermione = 7, Ron = 10.",
+      "indices": [
+        {"niveau": 1, "texte": "Enlève la différence (3) du total, puis divise par 2.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e13",
+      "ordre_jour": 13,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "interets_simples",
+      "scene_hp": "rappel_gringotts",
+      "narration": "Avant le duel final, Harry repense aux Gallions de ses parents.",
+      "type": "redige_court",
+      "competence": "Calculer des intérêts simples",
+      "difficulte_relative": 13,
+      "duree_estimee_sec": 120,
+      "points_maison": 4,
+      "enonce": "Harry place 4 500 F à 6% par an pendant 5 ans (intérêts simples). Combien d'intérêts en tout (en F) ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "1350",
+      "tolerance_numerique": 0,
+      "regex_validation": "^1\\s*350(\\s*F)?$",
+      "explication_correcte": "Excellent ! Intérêt annuel = 6% de 4 500 = 270 F. Sur 5 ans = 270 × 5 = 1 350 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : 6% de 4 500. Étape 2 : ×5 ans.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e14",
+      "ordre_jour": 14,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "volume_capacite",
+      "scene_hp": "chaudron_potion",
+      "narration": "Hermione vérifie le contenu d'un chaudron.",
+      "type": "redige_court",
+      "competence": "Calculer un volume et le convertir",
+      "difficulte_relative": 14,
+      "duree_estimee_sec": 120,
+      "points_maison": 5,
+      "enonce": "Un chaudron pavé mesure 5 dm × 4 dm × 3 dm. Combien de litres peut-il contenir ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "60",
+      "tolerance_numerique": 0,
+      "regex_validation": "^60(\\s*L)?$",
+      "explication_correcte": "Bravo ! V = 5 × 4 × 3 = 60 dm³ = 60 L.",
+      "indices": [
+        {"niveau": 1, "texte": "V = L × l × h. 1 dm³ = 1 L.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e15",
+      "ordre_jour": 15,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "vitesse_distance_temps",
+      "scene_hp": "course_pierre",
+      "narration": "Quirrell sprinte vers le miroir du Riséd.",
+      "type": "redige_court",
+      "competence": "Calculer une durée avec vitesse et distance",
+      "difficulte_relative": 15,
+      "duree_estimee_sec": 140,
+      "points_maison": 5,
+      "enonce": "Quirrell court à 9 km/h. La distance jusqu'au miroir est 1 800 m. Combien de minutes lui faut-il ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "12",
+      "tolerance_numerique": 0,
+      "regex_validation": "^12(\\s*min)?$",
+      "explication_correcte": "Bravo ! 1 800 m = 1,8 km. Temps = 1,8 ÷ 9 = 0,2 h = 12 min.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis 1 800 m en km (=1,8 km). Temps = distance ÷ vitesse, puis convertis en min.", "cout_points": 1}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j15-e15-d1", "enonce": "1 800 m = ? km", "type": "numerique", "reponse": 1.8, "tolerance_numerique": 0.01},
+          {"id": "j15-e15-d2", "enonce": "Temps en h = 1,8 ÷ 9 = ?", "type": "numerique", "reponse": 0.2, "tolerance_numerique": 0.01},
+          {"id": "j15-e15-d3", "enonce": "0,2 h = ? min", "type": "numerique", "reponse": 12}
+        ]
+      }
+    },
+    {
+      "id": "j15-e16",
+      "ordre_jour": 16,
+      "theme": "epreuve_libermann_complete",
+      "sous_theme": "filet_diable_complet",
+      "scene_hp": "filet_diable",
+      "narration": "Première épreuve type Libermann complète : le Filet du Diable se développe à une vitesse inquiétante.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann complète (proportionnalité + temps)",
+      "difficulte_relative": 16,
+      "duree_estimee_sec": 360,
+      "points_maison": 8,
+      "enonce": "Le Filet du Diable grandit à raison de 5 cm par minute. Au début de l'épreuve, il mesure 2,4 m de long. a) En combien de minutes pousse-t-il de 1 mètre ? b) Combien de cm pousse-t-il en 1 h ? c) Quelle sera sa longueur en m après 30 minutes ? d) Au bout de combien de temps fera-t-il 5 m ?",
+      "donnees_supplementaires": "a) Temps pour 1 m ? b) Croissance en 1 h ? c) Longueur après 30 min ? d) Temps pour atteindre 5 m ?",
+      "reponse_attendue_redige": "a) 20 min ; b) 300 cm (= 3 m) ; c) 3,9 m ; d) 52 min",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 1 m = 100 cm. À 5 cm/min, il faut 100 ÷ 5 = 20 min",
+        "b) En 1 h = 60 min, croissance = 60 × 5 = 300 cm = 3 m",
+        "c) Croissance en 30 min = 30 × 5 = 150 cm = 1,5 m. Nouvelle longueur = 2,4 + 1,5 = 3,9 m",
+        "d) Croissance nécessaire = 5 − 2,4 = 2,6 m = 260 cm. Temps = 260 ÷ 5 = 52 min"
+      ],
+      "explication_correcte": "Bravo ! a) 100÷5 = 20 min. b) 60×5 = 300 cm. c) 2,4 + 1,5 = 3,9 m. d) 260÷5 = 52 min.",
+      "indices": [
+        {"niveau": 1, "texte": "Utilise un tableau de proportionnalité : temps ↔ croissance.", "cout_points": 1},
+        {"niveau": 2, "texte": "d) Calcule la croissance nécessaire (5 − 2,4 = 2,6 m = 260 cm), puis divise par 5 cm/min.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j15-e17",
+      "ordre_jour": 17,
+      "theme": "epreuve_libermann_complete",
+      "sous_theme": "echiquier_complet",
+      "scene_hp": "echiquier_sorcier",
+      "narration": "Deuxième épreuve : la partie d'échecs version sorcier. Hermione mesure l'échiquier.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann complète (géométrie + partage)",
+      "difficulte_relative": 17,
+      "duree_estimee_sec": 360,
+      "points_maison": 8,
+      "enonce": "L'échiquier sorcier est un grand carré de 16 m de côté, divisé en 64 cases carrées identiques (8 × 8). a) Quelle est l'aire totale de l'échiquier ? b) Quelle est l'aire d'une case ? c) Quel est le côté d'une case ? d) Quel est le périmètre d'une case ?",
+      "donnees_supplementaires": "a) Aire totale ? b) Aire d'une case ? c) Côté d'une case ? d) Périmètre d'une case ?",
+      "reponse_attendue_redige": "a) 256 m² ; b) 4 m² ; c) 2 m ; d) 8 m",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Aire totale = 16 × 16 = 256 m²",
+        "b) Aire d'une case = 256 ÷ 64 = 4 m²",
+        "c) Aire d'un carré = côté², donc côté = √4 = 2 m (ou directement : 16÷8 = 2 m)",
+        "d) Périmètre d'une case = 4 × 2 = 8 m"
+      ],
+      "explication_correcte": "Excellent ! a) 16² = 256 m². b) 256÷64 = 4 m². c) Côté = 16÷8 = 2 m. d) P = 4×2 = 8 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Pense au fait que 64 = 8 × 8. Le côté d'une case = côté grand carré ÷ 8.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e18",
+      "ordre_jour": 18,
+      "theme": "epreuve_libermann_complete",
+      "sous_theme": "potions_logique_complet",
+      "scene_hp": "salle_potions",
+      "narration": "L'épreuve de Rogue : 7 fioles, une logique stricte. Hermione organise.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann complète (pourcentages + proportionnalité)",
+      "difficulte_relative": 18,
+      "duree_estimee_sec": 360,
+      "points_maison": 8,
+      "enonce": "Rogue a préparé 7 fioles. 3 contiennent du poison, 2 du vin d'ortie, 1 fait avancer dans les flammes noires (à droite), 1 fait reculer dans les flammes violettes (à gauche). a) Quel pourcentage des fioles contient du poison (arrondi à l'entier) ? b) Quel pourcentage contient du vin d'ortie (arrondi à l'entier) ? c) Combien de fioles ne contiennent ni poison ni vin d'ortie ? d) Si une dose de potion fait 50 mL et que la fiole de droite contient 3 doses, quel est son volume en mL ?",
+      "donnees_supplementaires": "a) % poison ? b) % vin d'ortie ? c) Nombre fioles ni poison ni vin ? d) Volume fiole de droite ?",
+      "reponse_attendue_redige": "a) 43% ; b) 29% ; c) 2 fioles ; d) 150 mL",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 3/7 ≈ 0,4285 ≈ 43%",
+        "b) 2/7 ≈ 0,2857 ≈ 29%",
+        "c) 7 − 3 − 2 = 2 fioles",
+        "d) Volume = 3 × 50 = 150 mL"
+      ],
+      "explication_correcte": "Bravo ! a) 3÷7 ≈ 43%. b) 2÷7 ≈ 29%. c) 7−3−2 = 2 fioles. d) 3×50 = 150 mL.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour le pourcentage : (nombre voulu ÷ total) × 100, arrondi à l'entier.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e19",
+      "ordre_jour": 19,
+      "theme": "epreuve_libermann_complete",
+      "sous_theme": "course_quirrell_complet",
+      "scene_hp": "couloir_miroir",
+      "narration": "Quirrell est parti devant. Harry doit le rattraper.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann complète (vitesses + course-poursuite)",
+      "difficulte_relative": 19,
+      "duree_estimee_sec": 360,
+      "points_maison": 8,
+      "enonce": "Quirrell court à 6 km/h. Harry, qui le poursuit, court à 9 km/h. Quirrell a 600 m d'avance au début. a) Convertis 600 m en km. b) De combien de km Harry se rapproche-t-il en 1 h ? c) En combien d'heures Harry rattrape-t-il Quirrell ? d) Convertis cette durée en minutes.",
+      "donnees_supplementaires": "a) 600 m en km ? b) Vitesse de rapprochement ? c) Durée en h ? d) Durée en min ?",
+      "reponse_attendue_redige": "a) 0,6 km ; b) 3 km/h ; c) 0,2 h ; d) 12 min",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 600 m = 0,6 km",
+        "b) Rapprochement = 9 − 6 = 3 km/h",
+        "c) Durée = 0,6 ÷ 3 = 0,2 h",
+        "d) 0,2 h = 0,2 × 60 = 12 min"
+      ],
+      "explication_correcte": "Excellent ! a) 0,6 km. b) 9−6 = 3 km/h. c) 0,6÷3 = 0,2 h. d) 12 min.",
+      "indices": [
+        {"niveau": 1, "texte": "Course-poursuite : vitesse de rapprochement = différence des vitesses. Durée = avance ÷ rapprochement.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j15-e20",
+      "ordre_jour": 20,
+      "theme": "epreuve_libermann_complete",
+      "sous_theme": "miroir_rised_dimensions",
+      "scene_hp": "salle_miroir_rised",
+      "narration": "Harry entre dans la salle du miroir. Il fait des mesures pour préparer sa stratégie.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann complète (géométrie + échelle)",
+      "difficulte_relative": 20,
+      "duree_estimee_sec": 360,
+      "points_maison": 9,
+      "enonce": "Le miroir du Riséd est un grand rectangle. Sur le plan (échelle 1/40), il mesure 5 cm de haut et 3 cm de large. a) Quelle est la hauteur réelle (en m) ? b) Quelle est la largeur réelle (en m) ? c) Quelle est l'aire réelle du miroir (en m²) ? d) Quel est son périmètre réel ?",
+      "donnees_supplementaires": "a) Hauteur ? b) Largeur ? c) Aire ? d) Périmètre ?",
+      "reponse_attendue_redige": "a) 2 m ; b) 1,2 m ; c) 2,4 m² ; d) 6,4 m",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 1 cm carte = 40 cm réels = 0,4 m. Hauteur = 5 × 0,4 = 2 m",
+        "b) Largeur = 3 × 0,4 = 1,2 m",
+        "c) Aire = 2 × 1,2 = 2,4 m²",
+        "d) Périmètre = (2 + 1,2) × 2 = 3,2 × 2 = 6,4 m"
+      ],
+      "explication_correcte": "Bravo ! a) 1 cm = 40 cm = 0,4 m. H = 2 m. b) L = 1,2 m. c) A = 2 × 1,2 = 2,4 m². d) P = 6,4 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Échelle 1/40 : 1 cm carte = 40 cm = 0,4 m réels.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j15-e21",
+      "ordre_jour": 21,
+      "theme": "epreuve_libermann_complete",
+      "sous_theme": "horloge_chronometree",
+      "scene_hp": "horloge_chateau",
+      "narration": "L'horloge du château chronomètre l'épreuve.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann complète (durées + horaires)",
+      "difficulte_relative": 21,
+      "duree_estimee_sec": 360,
+      "points_maison": 9,
+      "enonce": "Harry et ses amis sont entrés dans la trappe à 21 h 45. Ils ont mis 22 min pour le filet du Diable, 15 min pour la clé volante, 35 min pour l'échiquier, et 18 min pour les potions. a) Combien de minutes ont-ils mis en tout pour les 4 épreuves ? b) Convertis cette durée en h+min. c) À quelle heure Harry arrive-t-il devant le miroir du Riséd ? d) S'il termine l'épreuve à 23 h 50, combien de minutes a duré le duel final ?",
+      "donnees_supplementaires": "a) Total minutes 4 épreuves ? b) En h+min ? c) Heure d'arrivée miroir ? d) Durée duel final ?",
+      "reponse_attendue_redige": "a) 90 min ; b) 1 h 30 min ; c) 23 h 15 ; d) 35 min",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 22 + 15 + 35 + 18 = 90 minutes",
+        "b) 90 min = 1 h 30 min",
+        "c) 21 h 45 + 1 h 30 = 23 h 15",
+        "d) De 23 h 15 à 23 h 50 = 35 min"
+      ],
+      "explication_correcte": "Excellent ! a) 22+15+35+18 = 90 min. b) 1 h 30. c) 21h45 + 1h30 = 23h15. d) 23h50 − 23h15 = 35 min.",
+      "indices": [
+        {"niveau": 1, "texte": "Additionne les minutes, convertis en h+min (60 min = 1 h), puis ajoute à l'heure de départ.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_420s",
+        "micro_etapes": [
+          {"id": "j15-e21-d1", "enonce": "22 + 15 + 35 + 18 = ?", "type": "numerique", "reponse": 90},
+          {"id": "j15-e21-d2", "enonce": "90 min en h+min = ?", "type": "redige_court", "reponse_attendue": "1 h 30 min", "regex_validation": "^1\\s*h\\s*30(\\s*min)?$"},
+          {"id": "j15-e21-d3", "enonce": "21 h 45 + 1 h 30 = ? (format hhmm)", "type": "redige_court", "reponse_attendue": "23 h 15", "regex_validation": "^23\\s*h\\s*15$"},
+          {"id": "j15-e21-d4", "enonce": "De 23 h 15 à 23 h 50 = ? min", "type": "numerique", "reponse": 35}
+        ]
+      }
+    },
+    {
+      "id": "j15-e22",
+      "ordre_jour": 22,
+      "theme": "epreuve_libermann_complete",
+      "sous_theme": "stock_marchand_complet",
+      "scene_hp": "rappel_pre_au_lard",
+      "narration": "Harry pense à Honeydukes, la boutique de bonbons, où il s'arrêtait avec ses amis.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann complète (commerce + pourcentage + bénéfice)",
+      "difficulte_relative": 22,
+      "duree_estimee_sec": 360,
+      "points_maison": 9,
+      "enonce": "Le patron d'Honeydukes achète 600 Patacitrouilles à 25 F l'unité. Il les vend 40 F l'unité, mais 5% des bonbons sont défectueux et invendables. a) Quel est le coût d'achat total ? b) Combien de bonbons sont invendables ? c) Combien de bonbons sont vendus ? d) Quelle est la recette totale ? e) Quel est le bénéfice ?",
+      "donnees_supplementaires": "a) Coût achat ? b) Bonbons défectueux ? c) Bonbons vendus ? d) Recette ? e) Bénéfice ?",
+      "reponse_attendue_redige": "a) 15 000 F ; b) 30 bonbons ; c) 570 bonbons ; d) 22 800 F ; e) 7 800 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Coût = 600 × 25 = 15 000 F",
+        "b) Défectueux = 5% de 600 = 30 bonbons",
+        "c) Vendus = 600 − 30 = 570 bonbons",
+        "d) Recette = 570 × 40 = 22 800 F",
+        "e) Bénéfice = 22 800 − 15 000 = 7 800 F"
+      ],
+      "explication_correcte": "Bravo ! a) 600×25 = 15 000 F. b) 5% de 600 = 30. c) 600−30 = 570. d) 570×40 = 22 800 F. e) 22 800−15 000 = 7 800 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Coût d'achat porte sur 600, mais la vente seulement sur 570 (570 = 95% de 600).", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j15-e23",
+      "ordre_jour": 23,
+      "theme": "epreuve_libermann_integrale",
+      "sous_theme": "epreuve_finale_terrain",
+      "scene_hp": "vision_finale_chateau",
+      "narration": "Devant le miroir, Harry voit la propriété finale de Poudlard.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann intégrale 1 : Aires, partage et coût (5 sous-questions)",
+      "difficulte_relative": 23,
+      "duree_estimee_sec": 420,
+      "points_maison": 10,
+      "enonce": "Le parc de Poudlard est un grand rectangle de 200 m de long et 150 m de large. On le partage ainsi : 30% pour le lac, 20% pour la forêt, 25% pour les pelouses, le reste pour les bâtiments. a) Quelle est l'aire totale du parc ? b) Quelle est l'aire du lac ? c) Quelle est l'aire de la forêt ? d) Quelle est l'aire des pelouses ? e) Quelle est l'aire des bâtiments ?",
+      "donnees_supplementaires": "a) Aire totale ? b) Lac ? c) Forêt ? d) Pelouses ? e) Bâtiments ?",
+      "reponse_attendue_redige": "a) 30 000 m² ; b) 9 000 m² ; c) 6 000 m² ; d) 7 500 m² ; e) 7 500 m²",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Aire totale = 200 × 150 = 30 000 m²",
+        "b) Lac = 30% de 30 000 = 9 000 m²",
+        "c) Forêt = 20% de 30 000 = 6 000 m²",
+        "d) Pelouses = 25% de 30 000 = 7 500 m²",
+        "e) Bâtiments = 30 000 − 9 000 − 6 000 − 7 500 = 7 500 m² (= 25%, car 30+20+25 = 75, reste 25%)"
+      ],
+      "explication_correcte": "Excellent ! a) 200×150 = 30 000 m². b) 9 000. c) 6 000. d) 7 500. e) 7 500 m² (= les 25% restants).",
+      "indices": [
+        {"niveau": 1, "texte": "Pour les bâtiments : 100% − 30% − 20% − 25% = 25%. Ou par soustraction.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j15-e24",
+      "ordre_jour": 24,
+      "theme": "epreuve_libermann_integrale",
+      "sous_theme": "epreuve_finale_marchand",
+      "scene_hp": "rappel_marchand_chocogrenouilles",
+      "narration": "Harry repense à un marchand qui les avait régalés.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann intégrale 2 : Commerce avec remise et perte (5 sous-questions)",
+      "difficulte_relative": 24,
+      "duree_estimee_sec": 480,
+      "points_maison": 10,
+      "enonce": "Un marchand achète 500 chocogrenouilles à 60 F l'unité. Il vend 350 chocogrenouilles à 90 F. Pour écouler les 150 restantes, il les solde à 25% de remise sur le prix de vente initial. a) Coût d'achat total ? b) Recette des 350 premières ? c) Prix soldé d'une chocogrenouille ? d) Recette des 150 soldées ? e) Bénéfice total ?",
+      "donnees_supplementaires": "a) Coût ? b) Recette 350 ? c) Prix soldé ? d) Recette 150 ? e) Bénéfice ?",
+      "reponse_attendue_redige": "a) 30 000 F ; b) 31 500 F ; c) 67,5 F ; d) 10 125 F ; e) 11 625 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Coût = 500 × 60 = 30 000 F",
+        "b) Recette 350 = 350 × 90 = 31 500 F",
+        "c) Prix soldé = 90 − 25% de 90 = 90 − 22,5 = 67,5 F",
+        "d) Recette 150 = 150 × 67,5 = 10 125 F",
+        "e) Bénéfice = (31 500 + 10 125) − 30 000 = 41 625 − 30 000 = 11 625 F"
+      ],
+      "explication_correcte": "Bravo ! a) 500×60 = 30 000. b) 350×90 = 31 500. c) 25% de 90 = 22,5 ; prix soldé = 67,5 F. d) 150×67,5 = 10 125 F. e) 41 625 − 30 000 = 11 625 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Suis les sous-questions dans l'ordre. Bénéfice = recettes totales − coût.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_540s",
+        "micro_etapes": [
+          {"id": "j15-e24-d1", "enonce": "500 × 60 = ?", "type": "numerique", "reponse": 30000},
+          {"id": "j15-e24-d2", "enonce": "350 × 90 = ?", "type": "numerique", "reponse": 31500},
+          {"id": "j15-e24-d3", "enonce": "25% de 90 = ?", "type": "numerique", "reponse": 22.5, "tolerance_numerique": 0.01},
+          {"id": "j15-e24-d4", "enonce": "90 − 22,5 = ?", "type": "numerique", "reponse": 67.5, "tolerance_numerique": 0.01},
+          {"id": "j15-e24-d5", "enonce": "150 × 67,5 = ?", "type": "numerique", "reponse": 10125},
+          {"id": "j15-e24-d6", "enonce": "Recettes totales = 31 500 + 10 125 = ?", "type": "numerique", "reponse": 41625},
+          {"id": "j15-e24-d7", "enonce": "Bénéfice = 41 625 − 30 000 = ?", "type": "numerique", "reponse": 11625}
+        ]
+      }
+    },
+    {
+      "id": "j15-e25",
+      "ordre_jour": 25,
+      "theme": "epreuve_libermann_integrale",
+      "sous_theme": "epreuve_finale_volume_remplissage",
+      "scene_hp": "potion_finale",
+      "narration": "Devant le miroir, Quirrell prépare une potion dans une cuve géante.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann intégrale 3 : Volume, débit et durée (5 sous-questions)",
+      "difficulte_relative": 25,
+      "duree_estimee_sec": 480,
+      "points_maison": 10,
+      "enonce": "Une cuve cubique a une arête de 12 dm. On la remplit avec un robinet de 24 L/min. La potion coûte 8 F le litre. a) Quel est le volume de la cuve en dm³ ? b) Convertis ce volume en litres. c) Combien de minutes pour la remplir entièrement ? d) Convertis cette durée en h+min. e) Quel est le coût total de la potion ?",
+      "donnees_supplementaires": "a) Volume (dm³) ? b) Volume (L) ? c) Durée (min) ? d) Durée (h+min) ? e) Coût ?",
+      "reponse_attendue_redige": "a) 1 728 dm³ ; b) 1 728 L ; c) 72 min ; d) 1 h 12 min ; e) 13 824 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Volume = 12 × 12 × 12 = 1 728 dm³",
+        "b) 1 728 dm³ = 1 728 L",
+        "c) Durée = 1 728 ÷ 24 = 72 min",
+        "d) 72 min = 60 + 12 = 1 h 12 min",
+        "e) Coût = 1 728 × 8 = 13 824 F"
+      ],
+      "explication_correcte": "Excellent ! a) 12³ = 1 728. b) 1 728 L. c) 1 728÷24 = 72 min. d) 1 h 12 min. e) 1 728×8 = 13 824 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Cube : V = arête³. Pour 12³ : 12×12 = 144, puis 144×12 = 1 728.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j15-e26",
+      "ordre_jour": 26,
+      "theme": "epreuve_libermann_integrale",
+      "sous_theme": "epreuve_finale_voyage",
+      "scene_hp": "voyage_train_final",
+      "narration": "Harry pense à son voyage de retour en Poudlard Express.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann intégrale 4 : Vitesses, distances, conversion et coût (5 sous-questions)",
+      "difficulte_relative": 26,
+      "duree_estimee_sec": 480,
+      "points_maison": 11,
+      "enonce": "Le Poudlard Express part de Londres à 11 h 00 et roule à la vitesse moyenne de 75 km/h. Il doit parcourir 525 km pour arriver à Poudlard. Le billet coûte 8 000 F avec une remise de 15% pour les élèves. a) Combien d'heures dure le trajet ? b) Convertis cette durée en h+min. c) À quelle heure arrive-t-il à Poudlard ? d) Quel est le montant de la remise ? e) Quel est le prix payé par un élève ?",
+      "donnees_supplementaires": "a) Durée (h) ? b) Durée (h+min) ? c) Heure d'arrivée ? d) Remise ? e) Prix élève ?",
+      "reponse_attendue_redige": "a) 7 h ; b) 7 h 00 min ; c) 18 h 00 ; d) 1 200 F ; e) 6 800 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Durée = 525 ÷ 75 = 7 h",
+        "b) 7 h = 7 h 00 min",
+        "c) 11 h 00 + 7 h = 18 h 00",
+        "d) Remise = 15% de 8 000 = 1 200 F",
+        "e) Prix élève = 8 000 − 1 200 = 6 800 F"
+      ],
+      "explication_correcte": "Bravo ! a) 525÷75 = 7 h. b) 7 h 00. c) 11h00 + 7h = 18h00. d) 15% de 8 000 = 1 200 F. e) 8 000−1 200 = 6 800 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Durée = distance ÷ vitesse. Puis remise = pourcentage. Prix = prix − remise.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j15-e27",
+      "ordre_jour": 27,
+      "theme": "epreuve_libermann_integrale",
+      "sous_theme": "epreuve_finale_heritage",
+      "scene_hp": "rappel_gringotts_final",
+      "narration": "Harry pense à l'héritage que ses parents lui ont laissé.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann intégrale 5 : Intérêts simples + partage proportionnel (5 sous-questions)",
+      "difficulte_relative": 27,
+      "duree_estimee_sec": 480,
+      "points_maison": 11,
+      "enonce": "Les Potter avaient placé 50 000 F à Gringotts au taux annuel de 5% (intérêts simples) pendant 10 ans. À la fin, l'argent est partagé entre Harry (4 parts), Hagrid (1 part) et Sainte-Mangouste (1 part). a) Intérêts sur 1 an ? b) Intérêts totaux sur 10 ans ? c) Capital total après 10 ans ? d) Combien vaut 1 part ? e) Combien Harry reçoit-il ?",
+      "donnees_supplementaires": "a) Intérêts 1 an ? b) Intérêts 10 ans ? c) Capital total ? d) Valeur d'1 part ? e) Part de Harry ?",
+      "reponse_attendue_redige": "a) 2 500 F ; b) 25 000 F ; c) 75 000 F ; d) 12 500 F ; e) 50 000 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Intérêts 1 an = 5% de 50 000 = 2 500 F",
+        "b) Intérêts 10 ans = 2 500 × 10 = 25 000 F",
+        "c) Capital total = 50 000 + 25 000 = 75 000 F",
+        "d) Total parts = 4 + 1 + 1 = 6 parts. 1 part = 75 000 ÷ 6 = 12 500 F",
+        "e) Harry = 4 × 12 500 = 50 000 F"
+      ],
+      "explication_correcte": "Excellent ! a) 5% de 50 000 = 2 500 F. b) 25 000 F. c) 75 000 F. d) 75 000÷6 = 12 500 F. e) 4×12 500 = 50 000 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Intérêts simples : annuel × années. Total parts = 4+1+1 = 6. Une part = capital total ÷ 6.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j15-e28",
+      "ordre_jour": 28,
+      "theme": "epreuve_libermann_integrale",
+      "sous_theme": "epreuve_finale_carte_chateau",
+      "scene_hp": "carte_finale_poudlard",
+      "narration": "Hermione étale la carte finale de Poudlard pour planifier la fuite.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann intégrale 6 : Échelle, périmètre, aire, taxe (5 sous-questions)",
+      "difficulte_relative": 28,
+      "duree_estimee_sec": 480,
+      "points_maison": 11,
+      "enonce": "Sur la carte de Poudlard (échelle 1/1 000), la cour principale est un rectangle de 12 cm sur 8 cm. Pour la rénover, on doit acheter du dallage à 1 800 F le m², et payer une taxe de 5% sur le coût des dalles. a) Quelles sont les dimensions réelles (en m) ? b) Quel est le périmètre réel ? c) Quelle est l'aire réelle ? d) Quel est le coût des dalles avant taxe ? e) Quel est le coût total avec taxe ?",
+      "donnees_supplementaires": "a) Dimensions ? b) Périmètre ? c) Aire ? d) Coût dalles ? e) Coût total avec taxe ?",
+      "reponse_attendue_redige": "a) L = 120 m, l = 80 m ; b) 400 m ; c) 9 600 m² ; d) 17 280 000 F ; e) 18 144 000 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 1 cm carte = 1 000 cm = 10 m. L = 12 × 10 = 120 m, l = 8 × 10 = 80 m",
+        "b) Périmètre = (120 + 80) × 2 = 200 × 2 = 400 m",
+        "c) Aire = 120 × 80 = 9 600 m²",
+        "d) Coût dalles = 9 600 × 1 800 = 17 280 000 F",
+        "e) Taxe = 5% de 17 280 000 = 864 000 F. Coût total = 17 280 000 + 864 000 = 18 144 000 F"
+      ],
+      "explication_correcte": "Bravo ! a) 1 cm = 10 m. L=120 m, l=80 m. b) P = 400 m. c) Aire = 9 600 m². d) 9 600×1 800 = 17 280 000 F. e) Taxe = 864 000 F ; total = 18 144 000 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Échelle 1/1 000 → 1 cm = 10 m. Périmètre, aire, coût, puis taxe sur le coût.", "cout_points": 2},
+        {"niveau": 2, "texte": "Pour 5% de 17 280 000 : 10% = 1 728 000, donc 5% = 864 000.", "cout_points": 3}
+      ]
+    },
+    {
+      "id": "j15-e29",
+      "ordre_jour": 29,
+      "theme": "epreuve_libermann_chronometree",
+      "sous_theme": "epreuve_complete_geometrie_commerce",
+      "scene_hp": "duel_quirrell",
+      "narration": "Harry affronte Quirrell-Voldemort. Pour gagner, il doit résoudre cette épreuve type Libermann intégrale.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann intégrale chronométrée (géométrie + commerce + 5 sous-questions)",
+      "difficulte_relative": 29,
+      "duree_estimee_sec": 540,
+      "points_maison": 12,
+      "enonce": "Un terrain rectangulaire mesure 80 m sur 60 m. Le propriétaire le vend 2 500 F le m². Il paie 8% de frais d'agence sur le prix de vente, et place ensuite 80% de ce qui lui reste à Gringotts au taux de 5% par an pendant 2 ans (intérêts simples). a) Quelle est l'aire du terrain ? b) Quel est le prix de vente brut ? c) Quel est le montant des frais d'agence ? d) Combien le propriétaire place-t-il à Gringotts ? e) Combien d'intérêts touche-t-il après 2 ans ?",
+      "donnees_supplementaires": "a) Aire ? b) Prix brut ? c) Frais agence ? d) Somme placée ? e) Intérêts ?",
+      "reponse_attendue_redige": "a) 4 800 m² ; b) 12 000 000 F ; c) 960 000 F ; d) 8 832 000 F ; e) 883 200 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Aire = 80 × 60 = 4 800 m²",
+        "b) Prix brut = 4 800 × 2 500 = 12 000 000 F",
+        "c) Frais agence = 8% de 12 000 000 = 960 000 F",
+        "d) Reste après agence = 12 000 000 − 960 000 = 11 040 000 F. Placé = 80% de 11 040 000 = 8 832 000 F",
+        "e) Intérêts 1 an = 5% de 8 832 000 = 441 600 F. Sur 2 ans = 441 600 × 2 = 883 200 F"
+      ],
+      "explication_correcte": "Excellent ! a) 80×60 = 4 800 m². b) 4 800×2 500 = 12 000 000 F. c) 8% = 960 000 F. d) Reste = 11 040 000 ; 80% = 8 832 000 F. e) 5%×2 = 10% de 8 832 000 = 883 200 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Procède pas-à-pas. Calcule aire, prix, frais, reste, placement, puis intérêts.", "cout_points": 2},
+        {"niveau": 2, "texte": "Astuce e) : 5% × 2 ans = 10% du capital placé.", "cout_points": 3}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_600s",
+        "micro_etapes": [
+          {"id": "j15-e29-d1", "enonce": "Aire = 80 × 60 = ?", "type": "numerique", "reponse": 4800},
+          {"id": "j15-e29-d2", "enonce": "Prix brut = 4 800 × 2 500 = ?", "type": "numerique", "reponse": 12000000},
+          {"id": "j15-e29-d3", "enonce": "8% de 12 000 000 = ?", "type": "numerique", "reponse": 960000},
+          {"id": "j15-e29-d4", "enonce": "Reste après frais = 12 000 000 − 960 000 = ?", "type": "numerique", "reponse": 11040000},
+          {"id": "j15-e29-d5", "enonce": "80% de 11 040 000 = ?", "type": "numerique", "reponse": 8832000},
+          {"id": "j15-e29-d6", "enonce": "5% de 8 832 000 = ? (intérêts 1 an)", "type": "numerique", "reponse": 441600},
+          {"id": "j15-e29-d7", "enonce": "Intérêts 2 ans = 441 600 × 2 = ?", "type": "numerique", "reponse": 883200}
+        ]
+      }
+    },
+    {
+      "id": "j15-e30",
+      "ordre_jour": 30,
+      "theme": "epreuve_libermann_chronometree",
+      "sous_theme": "epreuve_finale_pierre_philosophale",
+      "scene_hp": "victoire_pierre_philosophale",
+      "narration": "Harry repousse Quirrell. La pierre philosophale est dans sa poche. Dumbledore arrive et lui pose la dernière énigme, l'ultime défi avant les vacances : l'épreuve Libermann intégrale finale.",
+      "type": "redige_libre",
+      "competence": "Épreuve Libermann intégrale FINALE : géométrie composée + pourcentages + partage + intérêts (5 sous-questions)",
+      "difficulte_relative": 30,
+      "duree_estimee_sec": 600,
+      "points_maison": 15,
+      "enonce": "Dumbledore explique : le château de Poudlard occupe un terrain rectangulaire de 240 m sur 180 m. Le terrain a 3 zones : 50% pour le château lui-même, 30% pour le parc, et le reste (20%) pour les serres. Les serres sont entretenues par les elfes de maison qui sont payés 200 F par m² par an. Le ministère de la Magie accorde une subvention de 75% sur ce coût annuel. a) Quelle est l'aire totale du terrain ? b) Quelle est l'aire des serres ? c) Quel est le coût annuel d'entretien des serres ? d) Quel est le montant de la subvention du ministère ? e) Combien Poudlard paie-t-il finalement par an pour les serres ?",
+      "donnees_supplementaires": "a) Aire totale ? b) Aire serres ? c) Coût annuel ? d) Subvention ? e) Coût final Poudlard ?",
+      "reponse_attendue_redige": "a) 43 200 m² ; b) 8 640 m² ; c) 1 728 000 F ; d) 1 296 000 F ; e) 432 000 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Aire totale = 240 × 180 = 43 200 m²",
+        "b) Aire serres = 20% de 43 200 = 8 640 m²",
+        "c) Coût annuel = 8 640 × 200 = 1 728 000 F",
+        "d) Subvention = 75% de 1 728 000 = 1 296 000 F",
+        "e) Coût Poudlard = 1 728 000 − 1 296 000 = 432 000 F (= 25% de 1 728 000)"
+      ],
+      "explication_correcte": "BRAVO HARRY ! a) 240×180 = 43 200 m². b) 20% = 8 640 m². c) 8 640×200 = 1 728 000 F. d) 75% = 1 296 000 F. e) 432 000 F (= 25% restants). Tu as réussi l'épreuve finale ! La pierre philosophale est sauve, et tu pars en vacances chez les Dursley en sachant que tu seras un grand sorcier mathématicien. Bonne chance pour le vrai concours Libermann !",
+      "indices": [
+        {"niveau": 1, "texte": "Procède pas-à-pas. Aire totale, puis pourcentage pour serres, puis coût, puis subvention.", "cout_points": 2},
+        {"niveau": 2, "texte": "Astuce e) : si subvention = 75%, Poudlard paie 25% du coût.", "cout_points": 3}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_660s",
+        "micro_etapes": [
+          {"id": "j15-e30-d1", "enonce": "Aire totale = 240 × 180 = ?", "type": "numerique", "reponse": 43200},
+          {"id": "j15-e30-d2", "enonce": "20% de 43 200 = ?", "type": "numerique", "reponse": 8640},
+          {"id": "j15-e30-d3", "enonce": "Coût annuel = 8 640 × 200 = ?", "type": "numerique", "reponse": 1728000},
+          {"id": "j15-e30-d4", "enonce": "75% de 1 728 000 = ? (subvention)", "type": "numerique", "reponse": 1296000},
+          {"id": "j15-e30-d5", "enonce": "Coût final = 1 728 000 − 1 296 000 = ?", "type": "numerique", "reponse": 432000}
+        ]
+      },
+      "reformulation_alternative": {
+        "declenchee_si": "echec_decomposition",
+        "narration_alt": "Dumbledore reformule plus simplement : 'Pense-toi étape par étape : tu calcules d'abord l'aire totale du terrain, puis combien font 20% pour les serres, puis le coût total à payer, et enfin combien le ministère t'aide.'",
+        "enonce_alt": "Imagine que tu gères Poudlard et que tu dois remplir le tableau : aire totale, aire serres (20%), coût (par m²), subvention (75%), reste à payer.",
+        "indice_visuel": "schema_terrain_3_zones_couleurs"
+      },
+      "tags": ["epreuve_libermann_finale", "geometrie", "pourcentages", "subvention", "multi_etapes", "chronometree"],
+      "source_inspiration_libermann": "Épreuve Libermann intégrale finale - aires, pourcentages, partage et coût composé"
+    }
+  ]
+}

@@ -1,0 +1,826 @@
+{
+  "jour": 3,
+  "titre": "Le Poudlard Express — Voie 9 3/4 et le voyage",
+  "theme_principal": "operations_posees_division",
+  "scene_globale": "Sur le quai 9 3/4 de la gare King's Cross, Harry rencontre la famille Weasley, monte dans le Poudlard Express, partage un compartiment avec Ron et Hermione, et rencontre Drago Malefoy. Pendant le voyage, on partage friandises, on compte les chocolats, on prépare les groupes pour la Répartition.",
+  "mix_qcm_redige": "60/40",
+  "duree_estimee_min": 170,
+  "exercices": [
+    {
+      "id": "j03-e01",
+      "ordre_jour": 1,
+      "theme": "operations_posees",
+      "sous_theme": "division_table",
+      "scene_hp": "king_cross",
+      "narration": "Sur le quai, Madame Weasley range les valises de ses enfants par groupes égaux.",
+      "type": "qcm",
+      "competence": "Division simple (table de multiplication inversée)",
+      "difficulte_relative": 1,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Madame Weasley a 24 chocogrenouilles à partager équitablement entre ses 6 enfants. Combien chacun en aura-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "3"},
+        {"id": "b", "texte": "4"},
+        {"id": "c", "texte": "5"},
+        {"id": "d", "texte": "6"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! 24 ÷ 6 = 4 (car 6 × 4 = 24). Chaque enfant Weasley aura 4 chocogrenouilles.",
+      "indices": [
+        {"niveau": 1, "texte": "Cherche dans la table de 6 : combien de fois 6 dans 24 ?", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j03-e02",
+      "ordre_jour": 2,
+      "theme": "operations_posees",
+      "sous_theme": "division_table",
+      "scene_hp": "king_cross",
+      "narration": "Ron offre ses sandwichs maison à ses frères.",
+      "type": "qcm",
+      "competence": "Division simple",
+      "difficulte_relative": 2,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Ron a 35 sandwichs à partager entre 7 personnes. Combien chacun en aura ?",
+      "choix": [
+        {"id": "a", "texte": "5"},
+        {"id": "b", "texte": "4"},
+        {"id": "c", "texte": "6"},
+        {"id": "d", "texte": "7"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bien ! 35 ÷ 7 = 5 (car 7 × 5 = 35).",
+      "indices": [
+        {"niveau": 1, "texte": "Table de 7 : 7 × ? = 35.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j03-e03",
+      "ordre_jour": 3,
+      "theme": "operations_posees",
+      "sous_theme": "sens_division",
+      "scene_hp": "voie_9_3_4",
+      "narration": "Harry hésite : quel opération choisir quand on partage ?",
+      "type": "qcm",
+      "competence": "Choisir la bonne opération (sens de la division)",
+      "difficulte_relative": 3,
+      "duree_estimee_sec": 35,
+      "points_maison": 3,
+      "enonce": "On a 48 dragées à répartir en parts égales dans 8 sachets. Quelle opération doit-on faire ?",
+      "choix": [
+        {"id": "a", "texte": "48 + 8"},
+        {"id": "b", "texte": "48 × 8"},
+        {"id": "c", "texte": "48 ÷ 8"},
+        {"id": "d", "texte": "48 - 8"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Exact ! 'Partage en parts égales' = division. 48 ÷ 8 = 6 dragées par sachet.",
+      "indices": [
+        {"niveau": 1, "texte": "Quand on partage équitablement, on divise.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j03-e04",
+      "ordre_jour": 4,
+      "theme": "operations_posees",
+      "sous_theme": "sens_operations",
+      "scene_hp": "voie_9_3_4",
+      "narration": "Hermione interroge Harry sur le sens des opérations.",
+      "type": "qcm",
+      "competence": "Identifier le sens d'une opération dans un problème",
+      "difficulte_relative": 4,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "'Combien de groupes de 4 peut-on faire avec 36 élèves ?' Quelle opération ?",
+      "choix": [
+        {"id": "a", "texte": "36 × 4"},
+        {"id": "b", "texte": "36 - 4"},
+        {"id": "c", "texte": "36 + 4"},
+        {"id": "d", "texte": "36 ÷ 4"}
+      ],
+      "reponse_correcte": "d",
+      "explication_correcte": "Bien ! 'Combien de groupes de 4 dans 36' = division. 36 ÷ 4 = 9 groupes.",
+      "indices": [
+        {"niveau": 1, "texte": "Quand on cherche 'combien de fois ... dans ...', c'est une division.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j03-e05",
+      "ordre_jour": 5,
+      "theme": "operations_posees",
+      "sous_theme": "division_avec_reste",
+      "scene_hp": "poudlard_express",
+      "narration": "Dans le compartiment, Ron sort 23 chocogrenouilles pour les partager avec 4 amis (et lui).",
+      "type": "qcm",
+      "competence": "Division avec reste (cas simple)",
+      "difficulte_relative": 5,
+      "duree_estimee_sec": 45,
+      "points_maison": 3,
+      "enonce": "23 chocogrenouilles partagées entre 5 amis : combien chacun en aura ? Et combien en reste-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "4 chacun, reste 3"},
+        {"id": "b", "texte": "5 chacun, reste 0"},
+        {"id": "c", "texte": "3 chacun, reste 8"},
+        {"id": "d", "texte": "4 chacun, reste 2"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Parfait ! 23 = 5 × 4 + 3. Donc chacun en a 4, et il en reste 3.",
+      "indices": [
+        {"niveau": 1, "texte": "Cherche dans la table de 5 le plus grand multiple sans dépasser 23.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j03-e06",
+      "ordre_jour": 6,
+      "theme": "operations_posees",
+      "sous_theme": "division_x1chiffre",
+      "scene_hp": "poudlard_express",
+      "narration": "La dame au chariot vient de passer. Hermione partage les bonbons.",
+      "type": "qcm",
+      "competence": "Division d'un nombre à 2 chiffres par 1 chiffre",
+      "difficulte_relative": 6,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Hermione a 96 dragées surprises de Bertie Crochue. Elle les partage entre 4 amis (Harry, Ron, Neville et elle). Combien chacun en aura-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "23"},
+        {"id": "b", "texte": "24"},
+        {"id": "c", "texte": "25"},
+        {"id": "d", "texte": "22"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! 96 ÷ 4 = 24 (car 4 × 24 = 96). Chacun reçoit 24 dragées.",
+      "indices": [
+        {"niveau": 1, "texte": "Combien de fois 4 dans 9 ? (2 fois, reste 1). On abaisse le 6 : 16. Combien de fois 4 dans 16 ?", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j03-e07",
+      "ordre_jour": 7,
+      "theme": "operations_posees",
+      "sous_theme": "division_x1chiffre",
+      "scene_hp": "poudlard_express",
+      "narration": "Ron continue à compter ses fameux Patacitrouille.",
+      "type": "qcm",
+      "competence": "Division d'un nombre à 2 chiffres par 1 chiffre",
+      "difficulte_relative": 7,
+      "duree_estimee_sec": 55,
+      "points_maison": 4,
+      "enonce": "Ron a 84 Patacitrouille. Il en met le même nombre dans 6 sachets pour ses frères. Combien par sachet ?",
+      "choix": [
+        {"id": "a", "texte": "12"},
+        {"id": "b", "texte": "13"},
+        {"id": "c", "texte": "14"},
+        {"id": "d", "texte": "11"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Excellent ! 84 ÷ 6 = 14 (car 6 × 14 = 84).",
+      "indices": [
+        {"niveau": 1, "texte": "Combien de fois 6 dans 8 ? (1 fois, reste 2). Abaisse le 4 : 24. Combien de fois 6 dans 24 ?", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j03-e08",
+      "ordre_jour": 8,
+      "theme": "operations_posees",
+      "sous_theme": "division_x1chiffre",
+      "scene_hp": "poudlard_express",
+      "narration": "Le contrôleur compte les passagers du Poudlard Express.",
+      "type": "qcm",
+      "competence": "Division d'un nombre à 3 chiffres par 1 chiffre",
+      "difficulte_relative": 8,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Il y a 168 élèves dans le train. Le contrôleur les répartit dans 8 wagons à égalité. Combien d'élèves par wagon ?",
+      "choix": [
+        {"id": "a", "texte": "21"},
+        {"id": "b", "texte": "22"},
+        {"id": "c", "texte": "20"},
+        {"id": "d", "texte": "23"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bravo ! 168 ÷ 8 = 21 (car 8 × 21 = 168).",
+      "indices": [
+        {"niveau": 1, "texte": "16 ÷ 8 = 2. Reste 0. Abaisse 8 : 8 ÷ 8 = 1.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j03-e09",
+      "ordre_jour": 9,
+      "theme": "operations_posees",
+      "sous_theme": "division_x1chiffre",
+      "scene_hp": "poudlard_express",
+      "narration": "Madame Pomfresh, l'infirmière, compte les fioles de potion à distribuer.",
+      "type": "qcm",
+      "competence": "Division d'un nombre à 3 chiffres par 1 chiffre",
+      "difficulte_relative": 9,
+      "duree_estimee_sec": 65,
+      "points_maison": 4,
+      "enonce": "Madame Pomfresh a 245 fioles à répartir dans 5 caisses. Combien par caisse ?",
+      "choix": [
+        {"id": "a", "texte": "49"},
+        {"id": "b", "texte": "48"},
+        {"id": "c", "texte": "50"},
+        {"id": "d", "texte": "47"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Parfait ! 245 ÷ 5 = 49 (car 5 × 49 = 245).",
+      "indices": [
+        {"niveau": 1, "texte": "Combien de fois 5 dans 24 ? (4 fois, reste 4). Abaisse 5 : 45. Combien de fois 5 dans 45 ?", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j03-e10",
+      "ordre_jour": 10,
+      "theme": "operations_posees",
+      "sous_theme": "division_avec_reste",
+      "scene_hp": "poudlard_express",
+      "narration": "Drago Malefoy veut partager des bonbons avec Crabbe et Goyle (sans en garder un de plus pour lui).",
+      "type": "qcm",
+      "competence": "Division d'un nombre à 3 chiffres par 1 chiffre avec reste",
+      "difficulte_relative": 10,
+      "duree_estimee_sec": 65,
+      "points_maison": 4,
+      "enonce": "Drago a 100 bonbons à partager entre lui, Crabbe et Goyle (3 personnes). Combien chacun aura, et combien restera-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "33 chacun, reste 1"},
+        {"id": "b", "texte": "33 chacun, reste 0"},
+        {"id": "c", "texte": "30 chacun, reste 10"},
+        {"id": "d", "texte": "34 chacun, reste 0"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Exact ! 100 = 3 × 33 + 1. Donc 33 bonbons chacun, et il reste 1 bonbon.",
+      "indices": [
+        {"niveau": 1, "texte": "Combien de fois 3 dans 10 ? (3, reste 1). Abaisse 0 : 10. Combien de fois 3 dans 10 ? (3, reste 1).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j03-e11",
+      "ordre_jour": 11,
+      "theme": "operations_posees",
+      "sous_theme": "division_x1chiffre",
+      "scene_hp": "poudlard_express",
+      "narration": "Ron explique à Harry comment poser une division avec retenue intelligente.",
+      "type": "qcm",
+      "competence": "Division d'un nombre à 3 chiffres par 1 chiffre (avec retenues)",
+      "difficulte_relative": 11,
+      "duree_estimee_sec": 75,
+      "points_maison": 5,
+      "enonce": "Calcule : 372 ÷ 4 = ?",
+      "choix": [
+        {"id": "a", "texte": "93"},
+        {"id": "b", "texte": "92"},
+        {"id": "c", "texte": "94"},
+        {"id": "d", "texte": "83"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bravo ! 372 ÷ 4 = 93 (car 4 × 93 = 372).",
+      "indices": [
+        {"niveau": 1, "texte": "3 < 4, donc on prend 37. Combien de fois 4 dans 37 ? (9, reste 1). Abaisse 2 : 12 ÷ 4 = 3.", "cout_points": 1},
+        {"niveau": 2, "texte": "37 ÷ 4 = 9 (reste 1). Puis 12 ÷ 4 = 3 (reste 0). Donc 93.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j03-e12",
+      "ordre_jour": 12,
+      "theme": "operations_posees",
+      "sous_theme": "division_x1chiffre",
+      "scene_hp": "poudlard_express",
+      "narration": "Hermione vérifie son calcul de division en posant l'opération sur son cahier.",
+      "type": "redige_court",
+      "competence": "Poser et calculer une division 3 chiffres ÷ 1 chiffre",
+      "difficulte_relative": 12,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Pose et calcule : 456 ÷ 3 = ? (Donne le résultat)",
+      "reponse_attendue_redige": "152",
+      "tolerance_numerique": 0,
+      "regex_validation": "^152$",
+      "explication_correcte": "Excellent ! 456 ÷ 3 = 152. (4÷3=1 reste 1 ; 15÷3=5 reste 0 ; 6÷3=2.)",
+      "indices": [
+        {"niveau": 1, "texte": "Commence par 4 ÷ 3.", "cout_points": 1},
+        {"niveau": 2, "texte": "4÷3=1 (reste 1). Abaisse 5 : 15÷3=5. Abaisse 6 : 6÷3=2.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j03-e12-d1", "enonce": "4 ÷ 3 = ? (quotient seulement)", "type": "numerique", "reponse": 1},
+          {"id": "j03-e12-d2", "enonce": "Le reste 1, on abaisse 5, ça fait 15. Combien font 15 ÷ 3 ?", "type": "numerique", "reponse": 5},
+          {"id": "j03-e12-d3", "enonce": "On abaisse le 6. Combien font 6 ÷ 3 ?", "type": "numerique", "reponse": 2},
+          {"id": "j03-e12-d4", "enonce": "Donc 456 ÷ 3 = ?", "type": "numerique", "reponse": 152}
+        ]
+      }
+    },
+    {
+      "id": "j03-e13",
+      "ordre_jour": 13,
+      "theme": "operations_posees",
+      "sous_theme": "division_avec_reste",
+      "scene_hp": "poudlard_express",
+      "narration": "Le préfet de Gryffondor répartit les nouveaux élèves dans les barques pour la traversée du lac.",
+      "type": "qcm",
+      "competence": "Division avec reste, interprétation",
+      "difficulte_relative": 13,
+      "duree_estimee_sec": 75,
+      "points_maison": 5,
+      "enonce": "Il y a 87 nouveaux élèves. Chaque barque transporte 4 élèves. Combien de barques sont nécessaires pour TOUS les transporter ?",
+      "choix": [
+        {"id": "a", "texte": "21 barques"},
+        {"id": "b", "texte": "22 barques"},
+        {"id": "c", "texte": "23 barques"},
+        {"id": "d", "texte": "20 barques"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 87 ÷ 4 = 21 reste 3. Il faut 21 barques pleines + 1 barque pour les 3 restants = 22 barques.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule 87 ÷ 4. Ensuite, n'oublie pas que les élèves restants ont aussi besoin d'une barque !", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j03-e14",
+      "ordre_jour": 14,
+      "theme": "operations_posees",
+      "sous_theme": "division_x1chiffre",
+      "scene_hp": "poudlard_express",
+      "narration": "Le chariot à friandises est plein à craquer.",
+      "type": "redige_court",
+      "competence": "Poser et calculer une division 3 chiffres ÷ 1 chiffre avec reste",
+      "difficulte_relative": 14,
+      "duree_estimee_sec": 100,
+      "points_maison": 5,
+      "enonce": "Pose et calcule : 537 ÷ 6 = ? (Donne le quotient entier, sans le reste)",
+      "reponse_attendue_redige": "89",
+      "tolerance_numerique": 0,
+      "regex_validation": "^89$",
+      "explication_correcte": "Bravo ! 537 ÷ 6 = 89 reste 3 (car 6 × 89 = 534, et 537 - 534 = 3). Quotient = 89.",
+      "indices": [
+        {"niveau": 1, "texte": "5 < 6, prends donc 53. Combien de fois 6 dans 53 ? Pas plus de 8 (car 6×8=48, 6×9=54 trop grand).", "cout_points": 1},
+        {"niveau": 2, "texte": "53÷6=8 reste 5. Abaisse 7 : 57÷6=9 reste 3. Donc 89, reste 3.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j03-e14-d1", "enonce": "On prend 53. Combien de fois 6 entre dans 53 ?", "type": "numerique", "reponse": 8},
+          {"id": "j03-e14-d2", "enonce": "53 - 48 = ? (reste)", "type": "numerique", "reponse": 5},
+          {"id": "j03-e14-d3", "enonce": "On abaisse le 7, ça fait 57. Combien de fois 6 dans 57 ?", "type": "numerique", "reponse": 9},
+          {"id": "j03-e14-d4", "enonce": "Quotient final : 537 ÷ 6 = ?", "type": "numerique", "reponse": 89}
+        ]
+      }
+    },
+    {
+      "id": "j03-e15",
+      "ordre_jour": 15,
+      "theme": "operations_posees",
+      "sous_theme": "division_x1chiffre",
+      "scene_hp": "poudlard_express",
+      "narration": "Encore une division, plus longue cette fois.",
+      "type": "qcm",
+      "competence": "Division 4 chiffres ÷ 1 chiffre",
+      "difficulte_relative": 15,
+      "duree_estimee_sec": 100,
+      "points_maison": 6,
+      "enonce": "Calcule : 1 248 ÷ 6 = ?",
+      "choix": [
+        {"id": "a", "texte": "208"},
+        {"id": "b", "texte": "218"},
+        {"id": "c", "texte": "198"},
+        {"id": "d", "texte": "228"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Parfait ! 1 248 ÷ 6 = 208 (car 6 × 208 = 1 248).",
+      "indices": [
+        {"niveau": 1, "texte": "1 < 6, prends 12. 12÷6=2. Abaisse 4 : 4÷6 = 0 (reste 4). Abaisse 8 : 48÷6=8.", "cout_points": 1},
+        {"niveau": 2, "texte": "Attention au 0 au quotient quand 4 < 6 !", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j03-e16",
+      "ordre_jour": 16,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_1_etape",
+      "scene_hp": "poudlard_express",
+      "narration": "Hagrid range les caisses de Chocogrenouilles en lots égaux pour le festin.",
+      "type": "redige_court",
+      "competence": "Résoudre un problème de division à 1 étape",
+      "difficulte_relative": 16,
+      "duree_estimee_sec": 110,
+      "points_maison": 6,
+      "enonce": "Hagrid a 392 Chocogrenouilles à répartir en 7 caisses égales. Combien de Chocogrenouilles par caisse ? (Réponds par un nombre)",
+      "reponse_attendue_redige": "56",
+      "tolerance_numerique": 0,
+      "regex_validation": "^56$",
+      "explication_correcte": "Bravo ! 392 ÷ 7 = 56 (car 7 × 56 = 392). 56 Chocogrenouilles par caisse.",
+      "indices": [
+        {"niveau": 1, "texte": "C'est une division : 392 ÷ 7.", "cout_points": 1},
+        {"niveau": 2, "texte": "39÷7=5 (reste 4). Abaisse 2 : 42÷7=6.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j03-e17",
+      "ordre_jour": 17,
+      "theme": "operations_posees",
+      "sous_theme": "division_x2chiffres",
+      "scene_hp": "poudlard_express",
+      "narration": "Le préfet en chef explique comment diviser quand le diviseur a 2 chiffres.",
+      "type": "qcm",
+      "competence": "Découverte de la division par un nombre à 2 chiffres",
+      "difficulte_relative": 17,
+      "duree_estimee_sec": 90,
+      "points_maison": 6,
+      "enonce": "Pour calculer 144 ÷ 12, on cherche combien de fois 12 entre dans 144. Combien ?",
+      "choix": [
+        {"id": "a", "texte": "12"},
+        {"id": "b", "texte": "11"},
+        {"id": "c", "texte": "13"},
+        {"id": "d", "texte": "10"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Exact ! 12 × 12 = 144, donc 144 ÷ 12 = 12.",
+      "indices": [
+        {"niveau": 1, "texte": "Cherche dans la table de 12 : 12 × 10 = 120, 12 × 12 = 144.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j03-e18",
+      "ordre_jour": 18,
+      "theme": "operations_posees",
+      "sous_theme": "division_x2chiffres",
+      "scene_hp": "poudlard_express",
+      "narration": "Les compartiments du Poudlard Express sont alignés ; le contrôleur compte.",
+      "type": "qcm",
+      "competence": "Division d'un nombre à 3 chiffres par un nombre à 2 chiffres",
+      "difficulte_relative": 18,
+      "duree_estimee_sec": 100,
+      "points_maison": 6,
+      "enonce": "Le train a 256 places, réparties à égalité dans 16 compartiments. Combien de places par compartiment ?",
+      "choix": [
+        {"id": "a", "texte": "16"},
+        {"id": "b", "texte": "15"},
+        {"id": "c", "texte": "17"},
+        {"id": "d", "texte": "14"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Parfait ! 256 ÷ 16 = 16 (car 16 × 16 = 256). Curieux : c'est un carré !",
+      "indices": [
+        {"niveau": 1, "texte": "Cherche un nombre qui multiplié par 16 donne 256. Essaie 15, 16, 17...", "cout_points": 1},
+        {"niveau": 2, "texte": "16 × 10 = 160, 16 × 6 = 96, 160 + 96 = 256. Donc 16 × 16 = 256.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j03-e19",
+      "ordre_jour": 19,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_1_etape",
+      "scene_hp": "poudlard_express",
+      "narration": "Les bagages des élèves sont chargés dans les wagons de queue.",
+      "type": "redige_court",
+      "competence": "Résoudre un problème de division 3 chiffres ÷ 2 chiffres",
+      "difficulte_relative": 19,
+      "duree_estimee_sec": 130,
+      "points_maison": 7,
+      "enonce": "375 valises sont chargées dans 15 wagons à égalité. Combien de valises par wagon ?",
+      "reponse_attendue_redige": "25",
+      "tolerance_numerique": 0,
+      "regex_validation": "^25$",
+      "explication_correcte": "Bravo ! 375 ÷ 15 = 25 (car 15 × 25 = 375).",
+      "indices": [
+        {"niveau": 1, "texte": "Cherche dans la table de 15 : 15 × 20 = 300, 15 × 25 = 375.", "cout_points": 1},
+        {"niveau": 2, "texte": "37 ÷ 15 = 2 (reste 7). Abaisse 5 : 75 ÷ 15 = 5. Donc 25.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j03-e19-d1", "enonce": "Combien de fois 15 entre dans 37 ?", "type": "numerique", "reponse": 2},
+          {"id": "j03-e19-d2", "enonce": "37 - 30 = ? (reste)", "type": "numerique", "reponse": 7},
+          {"id": "j03-e19-d3", "enonce": "On abaisse le 5, ça fait 75. Combien de fois 15 dans 75 ?", "type": "numerique", "reponse": 5},
+          {"id": "j03-e19-d4", "enonce": "Donc 375 ÷ 15 = ?", "type": "numerique", "reponse": 25}
+        ]
+      }
+    },
+    {
+      "id": "j03-e20",
+      "ordre_jour": 20,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_1_etape",
+      "scene_hp": "poudlard_express",
+      "narration": "Hermione prépare des paquets de Patacitrouille pour ses voisins de compartiment.",
+      "type": "redige_court",
+      "competence": "Résoudre un problème de division avec interprétation du reste",
+      "difficulte_relative": 20,
+      "duree_estimee_sec": 130,
+      "points_maison": 7,
+      "enonce": "Hermione a 158 Patacitrouille. Elle veut en mettre exactement 12 dans chaque petit sachet. Combien de sachets complets peut-elle faire ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "13",
+      "tolerance_numerique": 0,
+      "regex_validation": "^13$",
+      "explication_correcte": "Excellent ! 158 ÷ 12 = 13 reste 2. Donc 13 sachets complets, et il reste 2 Patacitrouille à part.",
+      "indices": [
+        {"niveau": 1, "texte": "Combien de fois 12 dans 158 ? Ne dépasse pas !", "cout_points": 1},
+        {"niveau": 2, "texte": "12 × 13 = 156. Donc 13 sachets complets, reste 158 - 156 = 2.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j03-e21",
+      "ordre_jour": 21,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_1_etape",
+      "scene_hp": "poudlard_express",
+      "narration": "Ron rêve d'argent : 'Si seulement on partageait les Gallions à égalité...'",
+      "type": "redige_court",
+      "competence": "Résoudre un problème de division par 1 chiffre",
+      "difficulte_relative": 21,
+      "duree_estimee_sec": 130,
+      "points_maison": 7,
+      "enonce": "On partage 824 Gallions équitablement entre 8 personnes. Combien chacune reçoit-elle ?",
+      "reponse_attendue_redige": "103",
+      "tolerance_numerique": 0,
+      "regex_validation": "^103$",
+      "explication_correcte": "Bravo ! 824 ÷ 8 = 103 (car 8 × 103 = 824). Attention au 0 au milieu du quotient !",
+      "indices": [
+        {"niveau": 1, "texte": "8 ÷ 8 = 1. 2 ÷ 8 = 0 (reste 2). Abaisse 4 : 24 ÷ 8 = 3.", "cout_points": 1},
+        {"niveau": 2, "texte": "Quand 2 < 8, on écrit 0 au quotient et on abaisse le chiffre suivant.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j03-e21-d1", "enonce": "8 ÷ 8 = ?", "type": "numerique", "reponse": 1},
+          {"id": "j03-e21-d2", "enonce": "Reste 0. On abaisse 2. Combien de fois 8 dans 2 ?", "type": "numerique", "reponse": 0},
+          {"id": "j03-e21-d3", "enonce": "On abaisse 4, ça fait 24. Combien de fois 8 dans 24 ?", "type": "numerique", "reponse": 3},
+          {"id": "j03-e21-d4", "enonce": "Donc 824 ÷ 8 = ?", "type": "numerique", "reponse": 103}
+        ]
+      }
+    },
+    {
+      "id": "j03-e22",
+      "ordre_jour": 22,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_1_etape",
+      "scene_hp": "poudlard_express",
+      "narration": "Le chef de gare compte les billets vendus pour le voyage de retour.",
+      "type": "redige_court",
+      "competence": "Résoudre un problème de division 4 chiffres ÷ 1 chiffre",
+      "difficulte_relative": 22,
+      "duree_estimee_sec": 140,
+      "points_maison": 7,
+      "enonce": "Le chef de gare a vendu pour 1 575 Mornilles de billets, à 9 Mornilles le billet. Combien de billets a-t-il vendus ?",
+      "reponse_attendue_redige": "175",
+      "tolerance_numerique": 0,
+      "regex_validation": "^175$",
+      "explication_correcte": "Bravo ! 1 575 ÷ 9 = 175 (car 9 × 175 = 1 575).",
+      "indices": [
+        {"niveau": 1, "texte": "C'est une division : 1 575 ÷ 9.", "cout_points": 1},
+        {"niveau": 2, "texte": "15÷9=1 (reste 6). 67÷9=7 (reste 4). 45÷9=5. Donc 175.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j03-e22-d1", "enonce": "On prend 15. Combien de fois 9 dans 15 ?", "type": "numerique", "reponse": 1},
+          {"id": "j03-e22-d2", "enonce": "Reste 6. Abaisse 7, ça fait 67. Combien de fois 9 dans 67 ?", "type": "numerique", "reponse": 7},
+          {"id": "j03-e22-d3", "enonce": "Reste 4. Abaisse 5, ça fait 45. Combien de fois 9 dans 45 ?", "type": "numerique", "reponse": 5},
+          {"id": "j03-e22-d4", "enonce": "Donc 1 575 ÷ 9 = ?", "type": "numerique", "reponse": 175}
+        ]
+      }
+    },
+    {
+      "id": "j03-e23",
+      "ordre_jour": 23,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "poudlard_express",
+      "narration": "La dame au chariot fait ses comptes avant l'arrivée à Pré-au-Lard.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème à 2 étapes (multiplication + division)",
+      "difficulte_relative": 23,
+      "duree_estimee_sec": 200,
+      "points_maison": 8,
+      "enonce": "La dame au chariot a vendu 24 boîtes de Chocogrenouilles à 6 Mornilles chacune. Elle veut maintenant déposer toute cette recette dans 4 bourses égales. Combien y aura-t-il dans chaque bourse ?",
+      "reponse_attendue_redige": "36",
+      "tolerance_numerique": 0,
+      "regex_validation": "^36$",
+      "explication_correcte": "Bravo ! Étape 1 : recette = 24 × 6 = 144 Mornilles. Étape 2 : 144 ÷ 4 = 36 Mornilles par bourse.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : recette totale (multiplication). Étape 2 : partage entre 4 bourses (division).", "cout_points": 1},
+        {"niveau": 2, "texte": "24 × 6 = 144. Puis 144 ÷ 4 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j03-e23-d1", "enonce": "Recette totale : 24 × 6 ?", "type": "numerique", "reponse": 144},
+          {"id": "j03-e23-d2", "enonce": "Par bourse : 144 ÷ 4 ?", "type": "numerique", "reponse": 36}
+        ]
+      }
+    },
+    {
+      "id": "j03-e24",
+      "ordre_jour": 24,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "poudlard_express",
+      "narration": "Madame Pomfresh range les potions par boîtes pour le voyage.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème à 2 étapes (soustraction + division)",
+      "difficulte_relative": 24,
+      "duree_estimee_sec": 210,
+      "points_maison": 8,
+      "enonce": "Madame Pomfresh a 348 fioles. Elle en utilise 48 pour son cabinet personnel. Le reste, elle le partage à égalité dans 5 cartons. Combien de fioles par carton ?",
+      "reponse_attendue_redige": "60",
+      "tolerance_numerique": 0,
+      "regex_validation": "^60$",
+      "explication_correcte": "Excellent ! Étape 1 : 348 - 48 = 300 fioles restantes. Étape 2 : 300 ÷ 5 = 60 fioles par carton.",
+      "indices": [
+        {"niveau": 1, "texte": "D'abord, combien de fioles à répartir après les 48 mises de côté ?", "cout_points": 1},
+        {"niveau": 2, "texte": "348 - 48 = 300. Puis 300 ÷ 5.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j03-e24-d1", "enonce": "Fioles à répartir : 348 - 48 ?", "type": "numerique", "reponse": 300},
+          {"id": "j03-e24-d2", "enonce": "Par carton : 300 ÷ 5 ?", "type": "numerique", "reponse": 60}
+        ]
+      }
+    },
+    {
+      "id": "j03-e25",
+      "ordre_jour": 25,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "poudlard_express",
+      "narration": "Hagrid prépare les barques pour amener les nouveaux à Poudlard.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème à 2 étapes (multiplication + division avec reste)",
+      "difficulte_relative": 25,
+      "duree_estimee_sec": 220,
+      "points_maison": 9,
+      "enonce": "Hagrid attend 4 trains. Chaque train transporte 27 nouveaux élèves. Chaque barque peut prendre 4 enfants. Combien de barques au TOTAL Hagrid doit-il préparer ?",
+      "reponse_attendue_redige": "27",
+      "tolerance_numerique": 0,
+      "regex_validation": "^27$",
+      "explication_correcte": "Bravo ! Étape 1 : 4 × 27 = 108 élèves. Étape 2 : 108 ÷ 4 = 27 barques exactement (pas de reste, ça tombe juste !).",
+      "indices": [
+        {"niveau": 1, "texte": "D'abord le nombre total d'élèves, puis le nombre de barques nécessaires.", "cout_points": 1},
+        {"niveau": 2, "texte": "4 × 27 = 108 élèves. 108 ÷ 4 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j03-e25-d1", "enonce": "Total d'élèves : 4 × 27 ?", "type": "numerique", "reponse": 108},
+          {"id": "j03-e25-d2", "enonce": "Nombre de barques : 108 ÷ 4 ?", "type": "numerique", "reponse": 27}
+        ]
+      }
+    },
+    {
+      "id": "j03-e26",
+      "ordre_jour": 26,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "poudlard_express",
+      "narration": "Ron sort sa bourse pour acheter des friandises à toute la bande.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème à 2 étapes (division + soustraction)",
+      "difficulte_relative": 26,
+      "duree_estimee_sec": 230,
+      "points_maison": 9,
+      "enonce": "Ron a 144 Mornilles. Il achète 6 Chocogrenouilles identiques avec exactement 72 Mornilles. Combien coûte UNE Chocogrenouille, et combien d'argent reste-t-il à Ron ?",
+      "reponse_attendue_redige": "12 et 72",
+      "tolerance_numerique": 0,
+      "regex_validation": "^12\\s+et\\s+72$",
+      "explication_correcte": "Excellent ! Prix unitaire : 72 ÷ 6 = 12 Mornilles. Argent restant : 144 - 72 = 72 Mornilles.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : prix d'une Chocogrenouille = 72 ÷ 6. Étape 2 : ce qui reste = 144 - 72.", "cout_points": 1},
+        {"niveau": 2, "texte": "72 ÷ 6 = 12. 144 - 72 = 72. Écris : '12 et 72'.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j03-e26-d1", "enonce": "Prix d'une Chocogrenouille : 72 ÷ 6 ?", "type": "numerique", "reponse": 12},
+          {"id": "j03-e26-d2", "enonce": "Argent restant : 144 - 72 ?", "type": "numerique", "reponse": 72}
+        ]
+      }
+    },
+    {
+      "id": "j03-e27",
+      "ordre_jour": 27,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "poudlard_express",
+      "narration": "Le chef de gare répartit les wagons et les places pour la rentrée suivante.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème à 2 étapes (multiplication + division)",
+      "difficulte_relative": 27,
+      "duree_estimee_sec": 240,
+      "points_maison": 9,
+      "enonce": "Un train a 8 wagons. Chaque wagon a 24 compartiments. On veut répartir 384 élèves de façon égale dans tous les compartiments. Combien d'élèves par compartiment ?",
+      "reponse_attendue_redige": "2",
+      "tolerance_numerique": 0,
+      "regex_validation": "^2$",
+      "explication_correcte": "Bravo ! Étape 1 : 8 × 24 = 192 compartiments en tout. Étape 2 : 384 ÷ 192 = 2 élèves par compartiment.",
+      "indices": [
+        {"niveau": 1, "texte": "Total de compartiments d'abord, puis nombre d'élèves par compartiment.", "cout_points": 1},
+        {"niveau": 2, "texte": "8 × 24 = 192 compartiments. Puis 384 ÷ 192.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j03-e27-d1", "enonce": "Total de compartiments : 8 × 24 ?", "type": "numerique", "reponse": 192},
+          {"id": "j03-e27-d2", "enonce": "Élèves par compartiment : 384 ÷ 192 ?", "type": "numerique", "reponse": 2}
+        ]
+      }
+    },
+    {
+      "id": "j03-e28",
+      "ordre_jour": 28,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "poudlard_express",
+      "narration": "Hermione, toujours organisée, planifie ses lectures pour le voyage.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème à 2 étapes (soustraction + division)",
+      "difficulte_relative": 28,
+      "duree_estimee_sec": 250,
+      "points_maison": 10,
+      "enonce": "Hermione a un livre de 564 pages. Elle a déjà lu 84 pages. Elle veut finir le reste en 8 jours en lisant chaque jour le même nombre de pages. Combien de pages par jour ?",
+      "reponse_attendue_redige": "60",
+      "tolerance_numerique": 0,
+      "regex_validation": "^60$",
+      "explication_correcte": "Excellent ! Étape 1 : pages restantes = 564 - 84 = 480. Étape 2 : 480 ÷ 8 = 60 pages par jour.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : combien de pages restent à lire ? Étape 2 : divise par 8 jours.", "cout_points": 1},
+        {"niveau": 2, "texte": "564 - 84 = 480. Puis 480 ÷ 8.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j03-e28-d1", "enonce": "Pages restantes : 564 - 84 ?", "type": "numerique", "reponse": 480},
+          {"id": "j03-e28-d2", "enonce": "Pages par jour : 480 ÷ 8 ?", "type": "numerique", "reponse": 60}
+        ]
+      }
+    },
+    {
+      "id": "j03-e29",
+      "ordre_jour": 29,
+      "theme": "probleme_synthese",
+      "sous_theme": "mini_probleme_libermann",
+      "scene_hp": "poudlard_express",
+      "narration": "Mini-épreuve type concours : le partage final avant l'arrivée à Pré-au-Lard.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème complexe à 3 étapes",
+      "difficulte_relative": 29,
+      "duree_estimee_sec": 320,
+      "points_maison": 12,
+      "enonce": "Dans le Poudlard Express, il y a 7 wagons de 36 places et 3 wagons de 48 places. Aujourd'hui, on doit transporter 432 élèves. Combien de places resteront vides ?",
+      "reponse_attendue_redige": "-36",
+      "tolerance_numerique": 0,
+      "regex_validation": "^(?:-36|0)$",
+      "explication_correcte": "Bravo ! Wagons de 36 : 7 × 36 = 252 places. Wagons de 48 : 3 × 48 = 144 places. Total : 252 + 144 = 396 places. Or il y a 432 élèves ! Il manque 432 - 396 = 36 places (réponse : -36, donc 0 place vide et il manque même 36 places !). Réfléchis bien au problème.",
+      "indices": [
+        {"niveau": 1, "texte": "1) Total des places des wagons type 36. 2) Total des places des wagons type 48. 3) Somme. 4) Compare aux 432 élèves.", "cout_points": 1},
+        {"niveau": 2, "texte": "7×36=252, 3×48=144. Total = 396. Compare à 432 élèves.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_360s",
+        "micro_etapes": [
+          {"id": "j03-e29-d1", "enonce": "Places des 7 wagons type 36 : 7 × 36 ?", "type": "numerique", "reponse": 252},
+          {"id": "j03-e29-d2", "enonce": "Places des 3 wagons type 48 : 3 × 48 ?", "type": "numerique", "reponse": 144},
+          {"id": "j03-e29-d3", "enonce": "Total des places : 252 + 144 ?", "type": "numerique", "reponse": 396},
+          {"id": "j03-e29-d4", "enonce": "Y a-t-il assez de places pour 432 élèves ? Tape 0 si oui, 1 si non.", "type": "numerique", "reponse": 1}
+        ]
+      },
+      "source_inspiration_libermann": "Épreuve problème - capacité totale et comparaison"
+    },
+    {
+      "id": "j03-e30",
+      "ordre_jour": 30,
+      "theme": "probleme_synthese",
+      "sous_theme": "mini_probleme_libermann",
+      "scene_hp": "poudlard_express",
+      "narration": "Boss final : Hermione organise une distribution équitable de friandises pour toute la classe.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème complexe type concours (multiplication + addition + division avec reste)",
+      "difficulte_relative": 30,
+      "duree_estimee_sec": 400,
+      "points_maison": 15,
+      "enonce": "Hermione a acheté 12 boîtes de Chocogrenouilles à 15 chocogrenouilles par boîte, et 5 sachets de 24 dragées surprises. Elle veut tout partager EQUITABLEMENT entre 25 élèves de la classe (chocogrenouilles ET dragées mélangées comptent comme des friandises). Combien chaque élève recevra-t-il de friandises ? Et combien en restera-t-il pour Hermione ?",
+      "reponse_attendue_redige": "12 et 0",
+      "tolerance_numerique": 0,
+      "regex_validation": "^12\\s+et\\s+0$",
+      "explication_correcte": "Bravo, vraie petite Hermione ! Chocogrenouilles : 12 × 15 = 180. Dragées : 5 × 24 = 120. Total : 180 + 120 = 300 friandises. 300 ÷ 25 = 12 (reste 0). Chaque élève reçoit 12 friandises, et il ne reste RIEN pour Hermione (la pauvre !). Écris : '12 et 0'.",
+      "indices": [
+        {"niveau": 1, "texte": "1) Total des chocogrenouilles. 2) Total des dragées. 3) Total des friandises. 4) Division par 25.", "cout_points": 1},
+        {"niveau": 2, "texte": "12×15=180. 5×24=120. Total = 300. 300 ÷ 25 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_480s",
+        "micro_etapes": [
+          {"id": "j03-e30-d1", "enonce": "Total chocogrenouilles : 12 × 15 ?", "type": "numerique", "reponse": 180},
+          {"id": "j03-e30-d2", "enonce": "Total dragées : 5 × 24 ?", "type": "numerique", "reponse": 120},
+          {"id": "j03-e30-d3", "enonce": "Total friandises : 180 + 120 ?", "type": "numerique", "reponse": 300},
+          {"id": "j03-e30-d4", "enonce": "Par élève : 300 ÷ 25 ?", "type": "numerique", "reponse": 12},
+          {"id": "j03-e30-d5", "enonce": "Reste : 300 - (25 × 12) ?", "type": "numerique", "reponse": 0}
+        ]
+      },
+      "source_inspiration_libermann": "Épreuve problème - calcul total puis partage équitable avec reste"
+    }
+  ]
+}

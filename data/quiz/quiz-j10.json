@@ -1,0 +1,75 @@
+{
+  "id": "quiz-j10",
+  "jour": 10,
+  "titre": "Quiz Libermann J10 — Le Parc de Poudlard",
+  "duree_min": 45,
+  "note_max": 20,
+  "themes_couverts": [
+    "perimetre",
+    "aires rectangle / trapeze",
+    "volumes",
+    "conversions m3 / L"
+  ],
+  "scene_hp": "parc_poudlard",
+  "narration": "Le professeur Chourave t'emmene dans le parc de Poudlard. Il faut amenager un jardin de plantes magiques, calculer la cloture, l'engrais et la quantite d'eau pour le bassin du fond. Mesure bien, jeune sorcier : Mimbulus Mimbletonia ne pardonne pas les erreurs.",
+  "exercices": [
+    {
+      "id": "q-j10-1",
+      "titre_exercice": "EXERCICE 1 (6 points) - Perimetre et aire rectangle",
+      "enonce": "Le jardin des plantes magiques a la forme d'un rectangle de 24 m de long et 15 m de large. a) Calcule le perimetre de ce jardin. b) Calcule l'aire de ce jardin (en metres carres). c) On veut entourer ce jardin d'une cloture magique qui coute 4,50 mornilles le metre. Quel est le prix total de la cloture ? d) Le professeur Chourave a un budget de 500 mornilles pour la cloture. Combien lui reste-t-il apres l'achat ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Perimetre du jardin ?", "reponse": "78 m", "points": 1},
+        {"id": "b", "enonce": "Aire du jardin ?", "reponse": "360 m2", "points": 2},
+        {"id": "c", "enonce": "Prix de la cloture ?", "reponse": "351 mornilles", "points": 2},
+        {"id": "d", "enonce": "Reste sur 500 mornilles ?", "reponse": "149 mornilles", "points": 1}
+      ],
+      "points_total": 6,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) P = 2 x (24 + 15) = 2 x 39 = 78 m",
+        "b) A = 24 x 15 = 360 m2",
+        "c) 78 x 4,50 = 351 mornilles",
+        "d) 500 - 351 = 149 mornilles"
+      ]
+    },
+    {
+      "id": "q-j10-2",
+      "titre_exercice": "EXERCICE 2 (7 points) - Aire trapeze + proportionnalite",
+      "enonce": "Un champ de mandragores a la forme d'un trapeze. La grande base mesure 18 m, la petite base 12 m et la hauteur 8 m. Pour chaque metre carre, le professeur Chourave a besoin de 1,6 kg d'engrais magique. L'engrais est vendu en sacs de 50 kg a 80 mornilles le sac. a) Calcule l'aire du champ. b) Quelle masse totale d'engrais faut-il pour le champ ? c) Combien de sacs faut-il acheter (sachant qu'on ne peut acheter que des sacs entiers) ? d) Quel sera le prix total des sacs ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Aire du trapeze ?", "reponse": "120 m2", "points": 2},
+        {"id": "b", "enonce": "Masse d'engrais necessaire ?", "reponse": "192 kg", "points": 2},
+        {"id": "c", "enonce": "Nombre de sacs ?", "reponse": "4 sacs", "points": 1},
+        {"id": "d", "enonce": "Prix total ?", "reponse": "320 mornilles", "points": 2}
+      ],
+      "points_total": 7,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) A = (B+b) x h / 2 = (18+12) x 8 / 2 = 30 x 8 / 2 = 120 m2",
+        "b) 120 x 1,6 = 192 kg",
+        "c) 192 / 50 = 3,84 -> 4 sacs (arrondi superieur)",
+        "d) 4 x 80 = 320 mornilles"
+      ]
+    },
+    {
+      "id": "q-j10-3",
+      "titre_exercice": "EXERCICE 3 (7 points) - Volume parallelepipede",
+      "enonce": "Au fond du parc se trouve un bassin en forme de pave droit (parallelepipede rectangle). Il mesure 2 m de long, 1,5 m de large et 80 cm de profondeur. a) Convertis 80 cm en metres. b) Calcule le volume du bassin en metres cubes. c) Combien de litres d'eau peut contenir ce bassin (quand il est plein) ? d) On ne remplit le bassin qu'aux 3/4 de sa capacite. A raison de 1,5 mornille le litre d'eau magique, combien va couter le remplissage ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "80 cm en m ?", "reponse": "0,8 m", "points": 1},
+        {"id": "b", "enonce": "Volume du bassin ?", "reponse": "2,4 m3", "points": 2},
+        {"id": "c", "enonce": "Capacite en litres ?", "reponse": "2 400 L", "points": 2},
+        {"id": "d", "enonce": "Cout du remplissage aux 3/4 ?", "reponse": "2 700 mornilles", "points": 2}
+      ],
+      "points_total": 7,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 80 cm = 0,8 m",
+        "b) V = 2 x 1,5 x 0,8 = 2,4 m3",
+        "c) 2,4 m3 = 2 400 dm3 = 2 400 L",
+        "d) 2 400 x 3/4 = 1 800 L ; 1 800 x 1,5 = 2 700 mornilles"
+      ]
+    }
+  ],
+  "ponderation_finale": {"q-j10-1": 6, "q-j10-2": 7, "q-j10-3": 7}
+}

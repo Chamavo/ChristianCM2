@@ -1,0 +1,889 @@
+{
+  "jour": 13,
+  "titre": "La forêt interdite et les énigmes — Épreuve blanche n°1",
+  "theme_principal": "epreuve_blanche_problemes_multi_etapes",
+  "scene_globale": "À la nuit tombée, Harry, Ron, Hermione, Neville et Drago sont conduits par Hagrid dans la Forêt interdite pour leur retenue. Des centaures, des licornes blessées, des araignées géantes... Chaque énigme rencontrée mélange plusieurs notions vues depuis le début de l'année. C'est la première vraie mise en situation type concours Libermann : des problèmes multi-étapes qui mêlent 2 ou 3 thèmes à la fois.",
+  "mix_qcm_redige": "40/60",
+  "duree_estimee_min": 180,
+  "exercices": [
+    {
+      "id": "j13-e01",
+      "ordre_jour": 1,
+      "theme": "echauffement_calcul_mental",
+      "sous_theme": "operations_rapides",
+      "scene_hp": "lisiere_foret",
+      "narration": "Hagrid distribue les lanternes à l'entrée de la forêt. 'Avant d'entrer, échauffons-nous l'esprit.'",
+      "type": "qcm",
+      "competence": "Calculer rapidement une multiplication par 25",
+      "difficulte_relative": 1,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Hagrid a 4 lanternes par sac et 25 sacs. Combien de lanternes en tout ?",
+      "choix": [
+        {"id": "a", "texte": "29"},
+        {"id": "b", "texte": "100"},
+        {"id": "c", "texte": "104"},
+        {"id": "d", "texte": "1 000"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! 4 × 25 = 100 lanternes. Astuce : 4 × 25 = 100, un classique à mémoriser.",
+      "indices": [
+        {"niveau": 1, "texte": "4 × 25 est une multiplication à connaître par cœur. Sinon, calcule 25 + 25 + 25 + 25.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j13-e02",
+      "ordre_jour": 2,
+      "theme": "echauffement_calcul_mental",
+      "sous_theme": "pourcentage_simple",
+      "scene_hp": "lisiere_foret",
+      "narration": "Hermione vérifie qu'elle se souvient des pourcentages avant d'entrer.",
+      "type": "qcm",
+      "competence": "Calculer 10% d'un nombre",
+      "difficulte_relative": 2,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Combien font 10% de 350 ?",
+      "choix": [
+        {"id": "a", "texte": "3,5"},
+        {"id": "b", "texte": "35"},
+        {"id": "c", "texte": "3 500"},
+        {"id": "d", "texte": "350"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 10% de 350 = 350 ÷ 10 = 35. Pour 10%, on divise toujours par 10.",
+      "indices": [
+        {"niveau": 1, "texte": "10% = 1/10. Donc 10% d'un nombre = ce nombre ÷ 10.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j13-e03",
+      "ordre_jour": 3,
+      "theme": "echauffement_calcul_mental",
+      "sous_theme": "conversion_longueur",
+      "scene_hp": "lisiere_foret",
+      "narration": "Hagrid mesure la profondeur du sentier : 2,5 km.",
+      "type": "qcm",
+      "competence": "Convertir des km en m",
+      "difficulte_relative": 3,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "2,5 km, c'est combien de mètres ?",
+      "choix": [
+        {"id": "a", "texte": "25 m"},
+        {"id": "b", "texte": "250 m"},
+        {"id": "c", "texte": "2 500 m"},
+        {"id": "d", "texte": "25 000 m"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bien ! 1 km = 1 000 m, donc 2,5 km = 2,5 × 1 000 = 2 500 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour passer des km aux m, on multiplie par 1 000 (on décale la virgule de 3 rangs vers la droite).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j13-e04",
+      "ordre_jour": 4,
+      "theme": "echauffement_calcul_mental",
+      "sous_theme": "fraction_simple",
+      "scene_hp": "lisiere_foret",
+      "narration": "Hermione partage des sandwichs.",
+      "type": "qcm",
+      "competence": "Calculer le tiers d'un nombre",
+      "difficulte_relative": 4,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Hermione partage 24 sandwichs en 3 parts égales. Chaque part contient :",
+      "choix": [
+        {"id": "a", "texte": "6 sandwichs"},
+        {"id": "b", "texte": "8 sandwichs"},
+        {"id": "c", "texte": "12 sandwichs"},
+        {"id": "d", "texte": "21 sandwichs"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! 24 ÷ 3 = 8. Chaque part contient 8 sandwichs.",
+      "indices": [
+        {"niveau": 1, "texte": "Partager en 3 parts égales = diviser par 3.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j13-e05",
+      "ordre_jour": 5,
+      "theme": "echauffement_calcul_mental",
+      "sous_theme": "duree",
+      "scene_hp": "lisiere_foret",
+      "narration": "Hagrid annonce : 'On part à 21h15 et on rentre à 23h45.'",
+      "type": "qcm",
+      "competence": "Calculer une durée entre deux heures",
+      "difficulte_relative": 5,
+      "duree_estimee_sec": 45,
+      "points_maison": 3,
+      "enonce": "Quelle est la durée totale de la retenue (de 21h15 à 23h45) ?",
+      "choix": [
+        {"id": "a", "texte": "2 h 15 min"},
+        {"id": "b", "texte": "2 h 30 min"},
+        {"id": "c", "texte": "3 h"},
+        {"id": "d", "texte": "1 h 30 min"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! De 21h15 à 23h15, il y a 2 h. De 23h15 à 23h45, il y a 30 min. Total : 2 h 30 min.",
+      "indices": [
+        {"niveau": 1, "texte": "Décompose : d'abord les heures entières, puis les minutes.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j13-e06",
+      "ordre_jour": 6,
+      "theme": "probleme_proportionnalite_pourcentage",
+      "sous_theme": "remise_simple",
+      "scene_hp": "entree_foret",
+      "narration": "Hagrid mentionne le marchand de lanternes du Chemin de Traverse qui a fait une remise.",
+      "type": "qcm",
+      "competence": "Appliquer un pourcentage de remise",
+      "difficulte_relative": 6,
+      "duree_estimee_sec": 60,
+      "points_maison": 3,
+      "enonce": "Une lanterne coûte 80 F. Le marchand fait une remise de 25%. Quel est le prix après remise ?",
+      "choix": [
+        {"id": "a", "texte": "20 F"},
+        {"id": "b", "texte": "55 F"},
+        {"id": "c", "texte": "60 F"},
+        {"id": "d", "texte": "75 F"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bien ! 25% de 80 F = 80 ÷ 4 = 20 F de remise. Prix final : 80 − 20 = 60 F.",
+      "explications_erreurs": {
+        "a": "Tu as donné le montant de la remise, pas le prix final.",
+        "b": "Recalcule : 25% de 80 = 20, pas 25.",
+        "d": "Tu as enlevé 5 F. Or 25% de 80 = 20 F."
+      },
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : calcule la remise (25% de 80). Étape 2 : soustrais-la du prix initial.", "cout_points": 1},
+        {"niveau": 2, "texte": "25% = 1/4. Donc 25% de 80 = 80 ÷ 4 = 20. Prix final = 80 − 20.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j13-e07",
+      "ordre_jour": 7,
+      "theme": "probleme_vitesse_duree",
+      "sous_theme": "vitesse_distance",
+      "scene_hp": "sentier_foret",
+      "narration": "Hagrid avance à grands pas. Sa vitesse est de 6 km/h.",
+      "type": "qcm",
+      "competence": "Calculer une distance à partir d'une vitesse et d'une durée",
+      "difficulte_relative": 7,
+      "duree_estimee_sec": 60,
+      "points_maison": 3,
+      "enonce": "Hagrid marche à 6 km/h pendant 2 h 30 min. Quelle distance parcourt-il ?",
+      "choix": [
+        {"id": "a", "texte": "12 km"},
+        {"id": "b", "texte": "15 km"},
+        {"id": "c", "texte": "18 km"},
+        {"id": "d", "texte": "9 km"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Excellent ! 2 h 30 min = 2,5 h. Distance = vitesse × temps = 6 × 2,5 = 15 km.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis 2 h 30 min en heures décimales (30 min = 0,5 h).", "cout_points": 1},
+        {"niveau": 2, "texte": "2 h 30 min = 2,5 h. Maintenant : 6 km/h × 2,5 h = ?", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j13-e08",
+      "ordre_jour": 8,
+      "theme": "probleme_partage_pourcentage",
+      "sous_theme": "partage_apres_pourcentage",
+      "scene_hp": "sentier_foret",
+      "narration": "Harry distribue des bonbons à ses 4 amis présents (Ron, Hermione, Neville, Drago).",
+      "type": "qcm",
+      "competence": "Appliquer un pourcentage puis partager",
+      "difficulte_relative": 8,
+      "duree_estimee_sec": 75,
+      "points_maison": 4,
+      "enonce": "Harry a 200 bonbons. Il en garde 20% pour lui, puis partage le reste à parts égales entre ses 4 amis. Combien chaque ami reçoit-il ?",
+      "choix": [
+        {"id": "a", "texte": "40 bonbons"},
+        {"id": "b", "texte": "45 bonbons"},
+        {"id": "c", "texte": "50 bonbons"},
+        {"id": "d", "texte": "60 bonbons"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bravo ! 20% de 200 = 40 pour Harry. Reste : 200 − 40 = 160. Partagé en 4 : 160 ÷ 4 = 40 bonbons par ami.",
+      "explications_erreurs": {
+        "b": "Tu as peut-être divisé 180 par 4. Or Harry garde 40 bonbons (20%), reste 160.",
+        "c": "Tu as divisé 200 par 4 directement, sans enlever les 20% de Harry.",
+        "d": "Recompte : reste = 160, divisé par 4 = 40."
+      },
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : combien Harry garde-t-il ? (20% de 200). Étape 2 : combien reste-t-il ? Étape 3 : divise le reste par 4.", "cout_points": 1}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j13-e08-d1", "enonce": "Combien font 20% de 200 ?", "type": "numerique", "reponse": 40},
+          {"id": "j13-e08-d2", "enonce": "Si Harry garde 40 bonbons, combien en reste-t-il pour les amis ?", "type": "numerique", "reponse": 160},
+          {"id": "j13-e08-d3", "enonce": "Partage 160 bonbons en 4 parts égales : combien chacun ?", "type": "numerique", "reponse": 40}
+        ]
+      }
+    },
+    {
+      "id": "j13-e09",
+      "ordre_jour": 9,
+      "theme": "probleme_mesures_proportionnalite",
+      "sous_theme": "mesure_capacite_proportionnalite",
+      "scene_hp": "clairiere_licornes",
+      "narration": "Hagrid prépare une potion pour soigner une licorne blessée. Sa recette est proportionnelle.",
+      "type": "qcm",
+      "competence": "Appliquer une règle de proportionnalité avec une mesure de capacité",
+      "difficulte_relative": 9,
+      "duree_estimee_sec": 75,
+      "points_maison": 4,
+      "enonce": "La recette d'Hagrid : pour 3 L de potion, il faut 450 g de poudre de corne. Quelle masse de poudre faut-il pour 5 L de potion ?",
+      "choix": [
+        {"id": "a", "texte": "600 g"},
+        {"id": "b", "texte": "750 g"},
+        {"id": "c", "texte": "900 g"},
+        {"id": "d", "texte": "150 g"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! Pour 1 L : 450 ÷ 3 = 150 g. Pour 5 L : 150 × 5 = 750 g.",
+      "indices": [
+        {"niveau": 1, "texte": "Trouve d'abord la quantité pour 1 L (passage à l'unité), puis multiplie par 5.", "cout_points": 1},
+        {"niveau": 2, "texte": "450 ÷ 3 = 150 g pour 1 L. Maintenant 150 × 5 = ?", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j13-e10",
+      "ordre_jour": 10,
+      "theme": "probleme_geometrie_proportionnalite",
+      "sous_theme": "perimetre_proportionnel",
+      "scene_hp": "clairiere_licornes",
+      "narration": "Hagrid trace au sol un cercle protecteur (ici, un rectangle magique).",
+      "type": "qcm",
+      "competence": "Calculer un périmètre et l'utiliser dans un problème de coût",
+      "difficulte_relative": 10,
+      "duree_estimee_sec": 90,
+      "points_maison": 4,
+      "enonce": "Hagrid trace un enclos rectangulaire de 12 m de long et 8 m de large. La corde magique coûte 250 F le mètre. Combien coûte la corde pour faire tout le tour ?",
+      "choix": [
+        {"id": "a", "texte": "5 000 F"},
+        {"id": "b", "texte": "10 000 F"},
+        {"id": "c", "texte": "2 400 F"},
+        {"id": "d", "texte": "24 000 F"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! Périmètre = (12 + 8) × 2 = 40 m. Coût = 40 × 250 = 10 000 F.",
+      "explications_erreurs": {
+        "a": "Tu as oublié le ×2 du périmètre du rectangle. P = (L+l)×2, pas (L+l).",
+        "c": "C'est l'aire (12 × 8 × 250 ÷ 12 ?), pas le périmètre.",
+        "d": "Tu as confondu le prix au m avec le prix au cm peut-être."
+      },
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : calcule le périmètre du rectangle (formule : (L+l)×2). Étape 2 : multiplie par le prix au mètre.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j13-e11",
+      "ordre_jour": 11,
+      "theme": "probleme_partage_inegal",
+      "sous_theme": "partage_avec_difference",
+      "scene_hp": "clairiere_licornes",
+      "narration": "Hagrid partage 60 baies magiques entre Harry et Hermione. Hermione reçoit 10 baies de plus que Harry.",
+      "type": "qcm",
+      "competence": "Résoudre un problème de partage inégal avec différence",
+      "difficulte_relative": 11,
+      "duree_estimee_sec": 90,
+      "points_maison": 4,
+      "enonce": "Hagrid partage 60 baies entre Harry et Hermione. Hermione reçoit 10 baies de plus que Harry. Combien Harry reçoit-il ?",
+      "choix": [
+        {"id": "a", "texte": "20 baies"},
+        {"id": "b", "texte": "25 baies"},
+        {"id": "c", "texte": "30 baies"},
+        {"id": "d", "texte": "35 baies"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! Si Harry = x, Hermione = x+10. Donc x + (x+10) = 60, soit 2x = 50, x = 25. Harry a 25 baies, Hermione 35.",
+      "indices": [
+        {"niveau": 1, "texte": "Enlève d'abord les 10 baies en plus d'Hermione. Il reste 50 à partager équitablement.", "cout_points": 1},
+        {"niveau": 2, "texte": "60 − 10 = 50. Puis 50 ÷ 2 = 25 (part de Harry). Hermione = 25 + 10 = 35.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j13-e12",
+      "ordre_jour": 12,
+      "theme": "probleme_pourcentage_progressif",
+      "sous_theme": "augmentation_pourcentage",
+      "scene_hp": "sentier_foret",
+      "narration": "Hagrid raconte que le prix de la baguette de Harry était de 700 F, et qu'il a augmenté.",
+      "type": "redige_court",
+      "competence": "Appliquer un pourcentage d'augmentation",
+      "difficulte_relative": 12,
+      "duree_estimee_sec": 90,
+      "points_maison": 4,
+      "enonce": "La baguette coûtait 700 F. Le prix a augmenté de 15%. Quel est le nouveau prix ? (Donne juste le résultat en F)",
+      "reponse_attendue_redige": "805",
+      "tolerance_numerique": 0,
+      "regex_validation": "^805(\\s*F)?$",
+      "explication_correcte": "Bien joué ! 15% de 700 = 105 F d'augmentation. Nouveau prix : 700 + 105 = 805 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : calcule l'augmentation (15% de 700). Étape 2 : ajoute-la au prix initial.", "cout_points": 1},
+        {"niveau": 2, "texte": "15% de 700 = 700 × 15 ÷ 100 = 105. Nouveau prix = 700 + 105.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j13-e12-d1", "enonce": "Combien font 10% de 700 ?", "type": "numerique", "reponse": 70},
+          {"id": "j13-e12-d2", "enonce": "Combien font 5% de 700 ?", "type": "numerique", "reponse": 35},
+          {"id": "j13-e12-d3", "enonce": "Donc 15% de 700 = 70 + 35 = ?", "type": "numerique", "reponse": 105},
+          {"id": "j13-e12-d4", "enonce": "Nouveau prix = 700 + 105 = ?", "type": "numerique", "reponse": 805}
+        ]
+      }
+    },
+    {
+      "id": "j13-e13",
+      "ordre_jour": 13,
+      "theme": "probleme_echelle_distance",
+      "sous_theme": "echelle_carte",
+      "scene_hp": "carte_maraudeur_foret",
+      "narration": "Hermione consulte une carte de la forêt à l'échelle 1/10 000.",
+      "type": "redige_court",
+      "competence": "Calculer une distance réelle à partir d'une échelle",
+      "difficulte_relative": 13,
+      "duree_estimee_sec": 90,
+      "points_maison": 4,
+      "enonce": "Sur la carte (échelle 1/10 000), la distance entre le château et la clairière mesure 8 cm. Quelle est la distance réelle, en mètres ? (Donne juste le nombre en m)",
+      "reponse_attendue_redige": "800",
+      "tolerance_numerique": 0,
+      "regex_validation": "^800(\\s*m)?$",
+      "explication_correcte": "Exact ! 1 cm sur la carte = 10 000 cm en réalité = 100 m. Donc 8 cm = 800 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : 1 cm sur la carte = 10 000 cm en réalité. Convertis 10 000 cm en m.", "cout_points": 1},
+        {"niveau": 2, "texte": "10 000 cm = 100 m. Donc 1 cm carte = 100 m réels. 8 cm = 8 × 100 m.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j13-e14",
+      "ordre_jour": 14,
+      "theme": "probleme_aire_cout",
+      "sous_theme": "aire_rectangle_cout",
+      "scene_hp": "clairiere_centaures",
+      "narration": "Les centaures vivent dans une clairière rectangulaire qu'il faut clôturer et tapisser de mousse magique.",
+      "type": "redige_court",
+      "competence": "Calculer une aire et un coût total",
+      "difficulte_relative": 14,
+      "duree_estimee_sec": 120,
+      "points_maison": 5,
+      "enonce": "La clairière des centaures est un rectangle de 25 m de long et 12 m de large. La mousse magique coûte 200 F le m². Combien coûte la mousse pour couvrir toute la clairière ? (Donne juste le résultat en F)",
+      "reponse_attendue_redige": "60000",
+      "tolerance_numerique": 0,
+      "regex_validation": "^60\\s*000(\\s*F)?$",
+      "explication_correcte": "Bravo ! Aire = 25 × 12 = 300 m². Coût = 300 × 200 = 60 000 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : calcule l'aire (L × l). Étape 2 : multiplie par le prix au m².", "cout_points": 1}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j13-e14-d1", "enonce": "Quelle est la formule de l'aire du rectangle ?", "type": "qcm", "choix": [{"id": "a", "texte": "L × l"}, {"id": "b", "texte": "(L + l) × 2"}, {"id": "c", "texte": "L + l"}], "reponse_correcte": "a"},
+          {"id": "j13-e14-d2", "enonce": "Calcule l'aire : 25 × 12 = ?", "type": "numerique", "reponse": 300},
+          {"id": "j13-e14-d3", "enonce": "Coût total : 300 × 200 = ?", "type": "numerique", "reponse": 60000}
+        ]
+      }
+    },
+    {
+      "id": "j13-e15",
+      "ordre_jour": 15,
+      "theme": "probleme_volume_capacite",
+      "sous_theme": "volume_pave_litres",
+      "scene_hp": "cuve_hagrid_foret",
+      "narration": "Hagrid a apporté une cuve pour récolter la sève d'arbres magiques.",
+      "type": "redige_court",
+      "competence": "Calculer un volume en dm³ et convertir en litres",
+      "difficulte_relative": 15,
+      "duree_estimee_sec": 120,
+      "points_maison": 5,
+      "enonce": "La cuve de Hagrid mesure 8 dm de long, 5 dm de large et 6 dm de haut. Combien de litres de sève peut-elle contenir ? (Donne juste le nombre en L)",
+      "reponse_attendue_redige": "240",
+      "tolerance_numerique": 0,
+      "regex_validation": "^240(\\s*L)?$",
+      "explication_correcte": "Excellent ! Volume = 8 × 5 × 6 = 240 dm³. Or 1 dm³ = 1 L, donc 240 L.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : calcule le volume en dm³ (L × l × h). Étape 2 : rappelle-toi que 1 dm³ = 1 L.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j13-e16",
+      "ordre_jour": 16,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "proportionnalite_pourcentage",
+      "scene_hp": "tombe_voldemort_foret",
+      "narration": "Dans une clairière sombre, Hagrid raconte : 'Le sorcier en cape noire qui rôde a volé des chocogrenouilles au marchand. Voici ce que sait l'enquête...'",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème en 3 sous-questions enchaînées (coût, prix de vente, bénéfice)",
+      "difficulte_relative": 16,
+      "duree_estimee_sec": 240,
+      "points_maison": 6,
+      "enonce": "Un marchand achète 200 chocogrenouilles à 50 F l'unité. Il revend chaque chocogrenouille avec une marge de 20% sur le prix d'achat unitaire. a) Quel est le coût d'achat total des 200 chocogrenouilles ? b) Quel est le prix de vente d'une chocogrenouille ? c) Si le marchand vend les 200 chocogrenouilles, quel est son bénéfice total ?",
+      "donnees_supplementaires": "a) Coût total ? b) Prix de vente unitaire ? c) Bénéfice total ?",
+      "reponse_attendue_redige": "a) 10 000 F ; b) 60 F ; c) 2 000 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Coût d'achat total = 200 × 50 = 10 000 F",
+        "b) Prix de vente unitaire = 50 + 20% de 50 = 50 + 10 = 60 F",
+        "c) Bénéfice total = (60 − 50) × 200 = 10 × 200 = 2 000 F (ou : 60 × 200 − 10 000 = 12 000 − 10 000 = 2 000 F)"
+      ],
+      "explication_correcte": "Excellent ! a) Coût = 200 × 50 = 10 000 F. b) Marge unitaire = 20% de 50 = 10 F, donc prix de vente = 60 F. c) Bénéfice unitaire = 10 F, total = 10 × 200 = 2 000 F.",
+      "indices": [
+        {"niveau": 1, "texte": "a) Multiplie la quantité par le prix unitaire. b) Calcule 20% de 50 F, ajoute au prix d'achat. c) Bénéfice = (prix de vente − prix d'achat) × quantité.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j13-e16-d1", "enonce": "Coût total = 200 × 50 = ?", "type": "numerique", "reponse": 10000},
+          {"id": "j13-e16-d2", "enonce": "20% de 50 = ?", "type": "numerique", "reponse": 10},
+          {"id": "j13-e16-d3", "enonce": "Prix de vente unitaire = 50 + 10 = ?", "type": "numerique", "reponse": 60},
+          {"id": "j13-e16-d4", "enonce": "Bénéfice unitaire = 60 − 50 = ?", "type": "numerique", "reponse": 10},
+          {"id": "j13-e16-d5", "enonce": "Bénéfice total = 10 × 200 = ?", "type": "numerique", "reponse": 2000}
+        ]
+      }
+    },
+    {
+      "id": "j13-e17",
+      "ordre_jour": 17,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "vitesse_duree_distance",
+      "scene_hp": "course_centaures",
+      "narration": "Les centaures défient Hagrid à la course à travers la forêt.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème vitesse-durée-distance en 3 sous-questions",
+      "difficulte_relative": 17,
+      "duree_estimee_sec": 240,
+      "points_maison": 6,
+      "enonce": "Bane, le centaure, parcourt 18 km en 1 h 30 min. a) Quelle est sa vitesse en km/h ? b) Quelle distance parcourt-il en 4 h à cette vitesse ? c) Combien de temps lui faut-il pour parcourir 60 km ?",
+      "donnees_supplementaires": "a) Vitesse ? b) Distance en 4 h ? c) Durée pour 60 km ?",
+      "reponse_attendue_redige": "a) 12 km/h ; b) 48 km ; c) 5 h",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Vitesse = distance ÷ durée = 18 ÷ 1,5 = 12 km/h",
+        "b) Distance = vitesse × temps = 12 × 4 = 48 km",
+        "c) Durée = distance ÷ vitesse = 60 ÷ 12 = 5 h"
+      ],
+      "explication_correcte": "Bravo ! a) 1 h 30 min = 1,5 h, donc 18 ÷ 1,5 = 12 km/h. b) 12 × 4 = 48 km. c) 60 ÷ 12 = 5 h.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis d'abord 1 h 30 min en heures décimales (= 1,5 h).", "cout_points": 1},
+        {"niveau": 2, "texte": "Formules : V = D/T ; D = V × T ; T = D/V.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j13-e17-d1", "enonce": "1 h 30 min = combien d'heures décimales ?", "type": "numerique", "reponse": 1.5, "tolerance_numerique": 0.01},
+          {"id": "j13-e17-d2", "enonce": "Vitesse = 18 ÷ 1,5 = ?", "type": "numerique", "reponse": 12},
+          {"id": "j13-e17-d3", "enonce": "Distance en 4 h = 12 × 4 = ?", "type": "numerique", "reponse": 48},
+          {"id": "j13-e17-d4", "enonce": "Durée pour 60 km = 60 ÷ 12 = ?", "type": "numerique", "reponse": 5}
+        ]
+      }
+    },
+    {
+      "id": "j13-e18",
+      "ordre_jour": 18,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "echelle_perimetre",
+      "scene_hp": "carte_foret_interdite",
+      "narration": "Hermione étale la carte de la forêt. Une zone rectangulaire est marquée 'Antre des araignées'.",
+      "type": "redige_libre",
+      "competence": "Combiner échelle, conversions et périmètre",
+      "difficulte_relative": 18,
+      "duree_estimee_sec": 240,
+      "points_maison": 6,
+      "enonce": "Sur la carte (échelle 1/5 000), l'antre des araignées est un rectangle de 6 cm de long et 4 cm de large. a) Quelles sont les dimensions réelles, en mètres ? b) Quel est le périmètre réel ? c) Combien faudrait-il de mètres de corde magique pour clôturer cette zone ?",
+      "donnees_supplementaires": "a) Dimensions réelles (L et l) ? b) Périmètre réel ? c) Mètres de corde nécessaires ?",
+      "reponse_attendue_redige": "a) L = 300 m, l = 200 m ; b) 1 000 m ; c) 1 000 m",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 1 cm carte = 5 000 cm réels = 50 m. Donc L = 6 × 50 = 300 m, l = 4 × 50 = 200 m.",
+        "b) Périmètre = (300 + 200) × 2 = 500 × 2 = 1 000 m",
+        "c) Corde nécessaire = périmètre = 1 000 m"
+      ],
+      "explication_correcte": "Excellent ! a) 1 cm carte = 50 m réels. L = 300 m, l = 200 m. b) P = (300+200)×2 = 1 000 m. c) Il faut 1 000 m de corde.",
+      "indices": [
+        {"niveau": 1, "texte": "a) Échelle 1/5 000 : 1 cm sur la carte = 5 000 cm = 50 m réels. b) Périmètre du rectangle = (L+l)×2.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j13-e19",
+      "ordre_jour": 19,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "partage_avec_pourcentage",
+      "scene_hp": "tresor_centaures",
+      "narration": "Les centaures donnent à Harry un trésor de 1 500 F à partager.",
+      "type": "redige_libre",
+      "competence": "Combiner pourcentage et partage inégal",
+      "difficulte_relative": 19,
+      "duree_estimee_sec": 240,
+      "points_maison": 6,
+      "enonce": "Harry reçoit 1 500 F des centaures. Il donne 40% à Hagrid et partage le reste à parts égales entre Ron et Hermione. a) Combien Hagrid reçoit-il ? b) Combien reste-t-il après le don à Hagrid ? c) Combien Ron et Hermione reçoivent-ils chacun ?",
+      "donnees_supplementaires": "a) Part de Hagrid ? b) Reste ? c) Part de Ron (= part d'Hermione) ?",
+      "reponse_attendue_redige": "a) 600 F ; b) 900 F ; c) 450 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 40% de 1 500 = 1 500 × 40 ÷ 100 = 600 F",
+        "b) Reste = 1 500 − 600 = 900 F",
+        "c) Part de chacun = 900 ÷ 2 = 450 F"
+      ],
+      "explication_correcte": "Bravo ! a) 40% de 1 500 = 600 F pour Hagrid. b) Reste : 1 500 − 600 = 900 F. c) 900 ÷ 2 = 450 F chacun.",
+      "indices": [
+        {"niveau": 1, "texte": "Procédez dans l'ordre : a) calcule 40% de 1 500. b) soustrais pour avoir le reste. c) divise le reste par 2.", "cout_points": 1}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j13-e19-d1", "enonce": "10% de 1 500 = ?", "type": "numerique", "reponse": 150},
+          {"id": "j13-e19-d2", "enonce": "40% de 1 500 = 4 × 150 = ?", "type": "numerique", "reponse": 600},
+          {"id": "j13-e19-d3", "enonce": "Reste = 1 500 − 600 = ?", "type": "numerique", "reponse": 900},
+          {"id": "j13-e19-d4", "enonce": "Part de chacun = 900 ÷ 2 = ?", "type": "numerique", "reponse": 450}
+        ]
+      }
+    },
+    {
+      "id": "j13-e20",
+      "ordre_jour": 20,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "aire_partage_cout",
+      "scene_hp": "potager_hagrid_foret",
+      "narration": "Hagrid possède un potager dans une clairière. Il veut le partager en 3 zones égales.",
+      "type": "redige_libre",
+      "competence": "Combiner aire, partage et coût",
+      "difficulte_relative": 20,
+      "duree_estimee_sec": 240,
+      "points_maison": 7,
+      "enonce": "Le potager d'Hagrid est un rectangle de 30 m sur 18 m. Il veut le diviser en 3 zones rectangulaires de même aire, et acheter du fumier magique à 50 F le m² pour une seule zone. a) Quelle est l'aire totale du potager ? b) Quelle est l'aire d'une zone ? c) Combien coûte le fumier pour une zone ?",
+      "donnees_supplementaires": "a) Aire totale ? b) Aire d'une zone ? c) Coût du fumier pour une zone ?",
+      "reponse_attendue_redige": "a) 540 m² ; b) 180 m² ; c) 9 000 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Aire totale = 30 × 18 = 540 m²",
+        "b) Aire d'une zone = 540 ÷ 3 = 180 m²",
+        "c) Coût = 180 × 50 = 9 000 F"
+      ],
+      "explication_correcte": "Bravo ! a) 30 × 18 = 540 m². b) 540 ÷ 3 = 180 m². c) 180 × 50 = 9 000 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : aire totale = L × l. Étape 2 : divise par 3. Étape 3 : multiplie par le prix au m².", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j13-e21",
+      "ordre_jour": 21,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "conversion_masse_proportionnalite",
+      "scene_hp": "feu_camp_hagrid",
+      "narration": "Hagrid prépare une grande gamelle de ragoût pour les créatures de la forêt.",
+      "type": "redige_libre",
+      "competence": "Combiner conversion de masse et proportionnalité",
+      "difficulte_relative": 21,
+      "duree_estimee_sec": 240,
+      "points_maison": 7,
+      "enonce": "Hagrid utilise 2,5 kg de viande pour préparer un ragoût pour 5 créatures. a) Combien de grammes de viande utilise-t-il pour 5 créatures ? b) Quelle masse de viande utilise-t-il pour 1 créature, en grammes ? c) Combien de viande lui faut-il, en kg, pour nourrir 12 créatures ?",
+      "donnees_supplementaires": "a) Masse en g pour 5 créatures ? b) Masse en g pour 1 créature ? c) Masse en kg pour 12 créatures ?",
+      "reponse_attendue_redige": "a) 2 500 g ; b) 500 g ; c) 6 kg",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 2,5 kg = 2 500 g",
+        "b) 2 500 ÷ 5 = 500 g par créature",
+        "c) 500 × 12 = 6 000 g = 6 kg"
+      ],
+      "explication_correcte": "Excellent ! a) 2,5 kg = 2 500 g. b) 2 500 ÷ 5 = 500 g. c) 500 × 12 = 6 000 g = 6 kg.",
+      "indices": [
+        {"niveau": 1, "texte": "a) 1 kg = 1 000 g. b) Passage à l'unité (divise par 5). c) Multiplie par 12, puis reconvertis en kg.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j13-e22",
+      "ordre_jour": 22,
+      "theme": "probleme_libermann_court",
+      "sous_theme": "duree_vitesse_distance",
+      "scene_hp": "fuite_voldemort",
+      "narration": "Le sorcier en cape noire s'enfuit en buvant le sang d'une licorne. Hagrid et Harry tentent de le rattraper.",
+      "type": "redige_libre",
+      "competence": "Combiner durée, vitesse, distance avec conversion",
+      "difficulte_relative": 22,
+      "duree_estimee_sec": 270,
+      "points_maison": 7,
+      "enonce": "Le sorcier en cape noire fuit à la vitesse de 8 km/h. Il a 15 minutes d'avance sur Hagrid qui court à 12 km/h. a) Quelle distance le sorcier a-t-il parcourue pendant ces 15 minutes d'avance ? b) De combien Hagrid se rapproche-t-il en 1 heure ? c) En combien de temps Hagrid le rattrape-t-il ?",
+      "donnees_supplementaires": "a) Avance du sorcier en km ? b) Vitesse de rapprochement ? c) Durée pour rattraper ?",
+      "reponse_attendue_redige": "a) 2 km ; b) 4 km/h ; c) 30 min",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 15 min = 0,25 h. Distance = 8 × 0,25 = 2 km",
+        "b) Rapprochement = 12 − 8 = 4 km/h",
+        "c) Temps = 2 ÷ 4 = 0,5 h = 30 min"
+      ],
+      "explication_correcte": "Bravo ! a) 15 min = 0,25 h, donc 8 × 0,25 = 2 km. b) Vitesse de rapprochement = 12 − 8 = 4 km/h. c) Temps = 2 km ÷ 4 km/h = 0,5 h = 30 min.",
+      "indices": [
+        {"niveau": 1, "texte": "a) Convertis 15 min en heures (15/60 = 0,25 h). b) La vitesse de rapprochement = différence des vitesses (course-poursuite). c) Distance/vitesse = temps.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_360s",
+        "micro_etapes": [
+          {"id": "j13-e22-d1", "enonce": "15 min en h décimales = ?", "type": "numerique", "reponse": 0.25, "tolerance_numerique": 0.01},
+          {"id": "j13-e22-d2", "enonce": "Avance en km = 8 × 0,25 = ?", "type": "numerique", "reponse": 2},
+          {"id": "j13-e22-d3", "enonce": "Vitesse de rapprochement = 12 − 8 = ?", "type": "numerique", "reponse": 4},
+          {"id": "j13-e22-d4", "enonce": "Durée en h = 2 ÷ 4 = ?", "type": "numerique", "reponse": 0.5, "tolerance_numerique": 0.01},
+          {"id": "j13-e22-d5", "enonce": "Combien de minutes font 0,5 h ?", "type": "numerique", "reponse": 30}
+        ]
+      }
+    },
+    {
+      "id": "j13-e23",
+      "ordre_jour": 23,
+      "theme": "probleme_libermann_long",
+      "sous_theme": "pourcentage_partage_complet",
+      "scene_hp": "duel_voldemort_quirrell",
+      "narration": "Hagrid raconte que le vol de pierre philosophale a rapporté 8 000 F à un complice. L'argent doit être réparti.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème type Libermann complet en 4 sous-questions",
+      "difficulte_relative": 23,
+      "duree_estimee_sec": 300,
+      "points_maison": 8,
+      "enonce": "Un complice de Voldemort touche 8 000 F. Il dépense 25% pour acheter du matériel, donne ensuite 1 200 F à un informateur, et partage le reste entre 2 acolytes. a) Quel est le montant dépensé en matériel ? b) Combien reste-t-il après le matériel ? c) Combien reste-t-il après le don à l'informateur ? d) Combien chaque acolyte reçoit-il ?",
+      "donnees_supplementaires": "a) Matériel ? b) Reste après matériel ? c) Reste après informateur ? d) Part de chaque acolyte ?",
+      "reponse_attendue_redige": "a) 2 000 F ; b) 6 000 F ; c) 4 800 F ; d) 2 400 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 25% de 8 000 = 8 000 ÷ 4 = 2 000 F",
+        "b) Reste = 8 000 − 2 000 = 6 000 F",
+        "c) Reste = 6 000 − 1 200 = 4 800 F",
+        "d) Part = 4 800 ÷ 2 = 2 400 F"
+      ],
+      "explication_correcte": "Excellent ! a) 25% de 8 000 = 2 000 F. b) 8 000 − 2 000 = 6 000 F. c) 6 000 − 1 200 = 4 800 F. d) 4 800 ÷ 2 = 2 400 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Procède étape par étape, en gardant à chaque fois le résultat précédent.", "cout_points": 1},
+        {"niveau": 2, "texte": "25% = 1/4. Donc 25% de 8 000 = 8 000 ÷ 4 = 2 000.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j13-e24",
+      "ordre_jour": 24,
+      "theme": "probleme_libermann_long",
+      "sous_theme": "vitesse_distance_cout",
+      "scene_hp": "retour_chateau",
+      "narration": "Au retour vers le château, Hagrid raconte le voyage d'un sorcier qui vient acheter des chocogrenouilles.",
+      "type": "redige_libre",
+      "competence": "Combiner vitesse, durée, conversion et coût",
+      "difficulte_relative": 24,
+      "duree_estimee_sec": 300,
+      "points_maison": 8,
+      "enonce": "Un sorcier parcourt 240 km en 4 h en balai. a) Quelle est sa vitesse moyenne en km/h ? b) Combien de mètres parcourt-il en 1 minute ? (rappel : 1 km = 1 000 m, 1 h = 60 min). c) S'il consomme 5 cL d'essence de fée par km, combien lui faut-il en tout, en L ?",
+      "donnees_supplementaires": "a) Vitesse moyenne ? b) Distance en 1 minute (en m) ? c) Quantité d'essence en L ?",
+      "reponse_attendue_redige": "a) 60 km/h ; b) 1 000 m ; c) 12 L",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Vitesse = 240 ÷ 4 = 60 km/h",
+        "b) 60 km/h = 60 000 m/h = 60 000 ÷ 60 = 1 000 m/min",
+        "c) Essence = 240 × 5 cL = 1 200 cL = 12 L (car 100 cL = 1 L)"
+      ],
+      "explication_correcte": "Bravo ! a) 240 ÷ 4 = 60 km/h. b) 60 000 m ÷ 60 = 1 000 m/min. c) 240 × 5 = 1 200 cL = 12 L.",
+      "indices": [
+        {"niveau": 1, "texte": "a) Vitesse = distance ÷ temps. b) Convertis km/h en m/min (×1 000 puis ÷60). c) Multiplie consommation × distance, puis convertis cL en L (÷100).", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_420s",
+        "micro_etapes": [
+          {"id": "j13-e24-d1", "enonce": "Vitesse = 240 ÷ 4 = ?", "type": "numerique", "reponse": 60},
+          {"id": "j13-e24-d2", "enonce": "60 km en mètres = ?", "type": "numerique", "reponse": 60000},
+          {"id": "j13-e24-d3", "enonce": "60 000 m parcourus en 60 min, donc en 1 min = ?", "type": "numerique", "reponse": 1000},
+          {"id": "j13-e24-d4", "enonce": "Essence totale en cL = 240 × 5 = ?", "type": "numerique", "reponse": 1200},
+          {"id": "j13-e24-d5", "enonce": "1 200 cL = ? L (divise par 100)", "type": "numerique", "reponse": 12}
+        ]
+      }
+    },
+    {
+      "id": "j13-e25",
+      "ordre_jour": 25,
+      "theme": "probleme_libermann_long",
+      "sous_theme": "geometrie_pourcentage_cout",
+      "scene_hp": "potager_hagrid_extension",
+      "narration": "Hagrid veut agrandir son potager rectangulaire pour faire pousser plus de citrouilles géantes.",
+      "type": "redige_libre",
+      "competence": "Combiner aire, augmentation en pourcentage et coût",
+      "difficulte_relative": 25,
+      "duree_estimee_sec": 330,
+      "points_maison": 8,
+      "enonce": "Le potager d'Hagrid mesure 20 m de long et 15 m de large. Il l'agrandit en augmentant chaque côté de 20%. a) Quelle est l'aire actuelle du potager ? b) Quelles seront les nouvelles dimensions après augmentation ? c) Quelle est la nouvelle aire ? d) De combien de m² l'aire a-t-elle augmenté ?",
+      "donnees_supplementaires": "a) Aire actuelle ? b) Nouvelles dimensions (L et l) ? c) Nouvelle aire ? d) Différence d'aire ?",
+      "reponse_attendue_redige": "a) 300 m² ; b) L = 24 m, l = 18 m ; c) 432 m² ; d) 132 m²",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Aire actuelle = 20 × 15 = 300 m²",
+        "b) 20% de 20 = 4, donc L = 20 + 4 = 24 m. 20% de 15 = 3, donc l = 15 + 3 = 18 m.",
+        "c) Nouvelle aire = 24 × 18 = 432 m²",
+        "d) Différence = 432 − 300 = 132 m²"
+      ],
+      "explication_correcte": "Excellent ! a) 20 × 15 = 300 m². b) L = 24 m, l = 18 m (chacun +20%). c) 24 × 18 = 432 m². d) 432 − 300 = 132 m² de plus.",
+      "indices": [
+        {"niveau": 1, "texte": "Attention : augmenter chaque côté de 20% n'augmente pas l'aire de 20% ! Recalcule chaque dimension d'abord.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j13-e26",
+      "ordre_jour": 26,
+      "theme": "probleme_libermann_long",
+      "sous_theme": "interets_partage",
+      "scene_hp": "gringotts_retour",
+      "narration": "Harry consulte le registre de Gringotts. Ses parents avaient placé de l'argent à intérêts.",
+      "type": "redige_libre",
+      "competence": "Combiner intérêts simples et partage",
+      "difficulte_relative": 26,
+      "duree_estimee_sec": 330,
+      "points_maison": 8,
+      "enonce": "Les parents de Harry avaient placé 5 000 F à Gringotts à un taux d'intérêts simples de 4% par an, pendant 3 ans. À la fin, l'argent est partagé : Harry reçoit 60% du total et Hagrid garde le reste pour la tutelle. a) Combien d'intérêts ont été produits en 1 an ? b) Combien d'intérêts en 3 ans ? c) Quel est le capital total après 3 ans ? d) Combien Harry reçoit-il ?",
+      "donnees_supplementaires": "a) Intérêts 1 an ? b) Intérêts 3 ans ? c) Capital total ? d) Part de Harry ?",
+      "reponse_attendue_redige": "a) 200 F ; b) 600 F ; c) 5 600 F ; d) 3 360 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Intérêts 1 an = 4% de 5 000 = 200 F",
+        "b) Intérêts 3 ans = 200 × 3 = 600 F",
+        "c) Capital total = 5 000 + 600 = 5 600 F",
+        "d) Part de Harry = 60% de 5 600 = 5 600 × 60 ÷ 100 = 3 360 F"
+      ],
+      "explication_correcte": "Bravo ! a) 4% de 5 000 = 200 F. b) 200 × 3 = 600 F. c) 5 000 + 600 = 5 600 F. d) 60% de 5 600 = 3 360 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Intérêts simples : intérêts annuels × nombre d'années. Total = capital + intérêts. Puis pourcentage du total.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j13-e27",
+      "ordre_jour": 27,
+      "theme": "probleme_libermann_long",
+      "sous_theme": "volume_cout_partage",
+      "scene_hp": "cuve_potion_hagrid",
+      "narration": "Hagrid prépare une potion dans une grande cuve cubique pour soigner toutes les licornes blessées.",
+      "type": "redige_libre",
+      "competence": "Combiner volume, conversion, partage et coût",
+      "difficulte_relative": 27,
+      "duree_estimee_sec": 360,
+      "points_maison": 9,
+      "enonce": "Hagrid possède une cuve cubique de 10 dm d'arête. Il la remplit complètement de potion. Il répartit ensuite la potion à parts égales entre 5 licornes. La potion coûte 12 F le litre à fabriquer. a) Quel est le volume de la cuve en dm³ ? b) Combien de litres de potion contient-elle ? c) Combien de litres chaque licorne reçoit-elle ? d) Quel est le coût total de la potion ?",
+      "donnees_supplementaires": "a) Volume cuve (dm³) ? b) Capacité en L ? c) Litres par licorne ? d) Coût total ?",
+      "reponse_attendue_redige": "a) 1 000 dm³ ; b) 1 000 L ; c) 200 L ; d) 12 000 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Volume = 10 × 10 × 10 = 1 000 dm³",
+        "b) 1 dm³ = 1 L, donc 1 000 L",
+        "c) 1 000 ÷ 5 = 200 L par licorne",
+        "d) Coût total = 1 000 × 12 = 12 000 F"
+      ],
+      "explication_correcte": "Excellent ! a) 10³ = 1 000 dm³. b) 1 000 L. c) 200 L par licorne. d) 12 000 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Cube : V = arête × arête × arête. 1 dm³ = 1 L. Puis partage et coût.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j13-e28",
+      "ordre_jour": 28,
+      "theme": "probleme_libermann_long",
+      "sous_theme": "echelle_aire_proportionnalite",
+      "scene_hp": "carte_chateau",
+      "narration": "Hermione recopie le plan du château. Elle veut connaître la surface totale au sol.",
+      "type": "redige_libre",
+      "competence": "Combiner échelle, aire et proportionnalité",
+      "difficulte_relative": 28,
+      "duree_estimee_sec": 360,
+      "points_maison": 9,
+      "enonce": "Sur le plan du château (échelle 1/500), la Grande Salle est un rectangle de 8 cm sur 5 cm. a) Quelles sont les dimensions réelles, en mètres ? b) Quelle est l'aire réelle, en m² ? c) Si on couvre le sol de dalles à 1 200 F le m², combien coûteront les dalles ? d) Si l'école paie en 4 mensualités égales, combien coûte chaque mensualité ?",
+      "donnees_supplementaires": "a) Dimensions réelles ? b) Aire réelle ? c) Coût total dalles ? d) Coût d'une mensualité ?",
+      "reponse_attendue_redige": "a) 40 m × 25 m ; b) 1 000 m² ; c) 1 200 000 F ; d) 300 000 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 1 cm = 500 cm réels = 5 m. L = 8 × 5 = 40 m, l = 5 × 5 = 25 m.",
+        "b) Aire = 40 × 25 = 1 000 m²",
+        "c) Coût = 1 000 × 1 200 = 1 200 000 F",
+        "d) Mensualité = 1 200 000 ÷ 4 = 300 000 F"
+      ],
+      "explication_correcte": "Bravo ! a) 1 cm = 5 m. L = 40 m, l = 25 m. b) 40 × 25 = 1 000 m². c) 1 000 × 1 200 = 1 200 000 F. d) 1 200 000 ÷ 4 = 300 000 F.",
+      "indices": [
+        {"niveau": 1, "texte": "Échelle 1/500 : 1 cm carte = 500 cm = 5 m réels. Puis enchaîne aire, coût total, mensualité.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j13-e29",
+      "ordre_jour": 29,
+      "theme": "epreuve_libermann_integrale",
+      "sous_theme": "probleme_chocogrenouilles_complet",
+      "scene_hp": "retour_dortoir",
+      "narration": "De retour au dortoir, Harry doit résoudre une dernière énigme avant de dormir. C'est un vrai problème type concours Libermann complet.",
+      "type": "redige_libre",
+      "competence": "Résoudre une épreuve Libermann complète (5 sous-questions enchaînées)",
+      "difficulte_relative": 29,
+      "duree_estimee_sec": 480,
+      "points_maison": 10,
+      "enonce": "Un marchand de Pré-au-Lard achète 500 chocogrenouilles à 80 F l'unité. Il vend 300 chocogrenouilles à 110 F l'unité, puis solde les 200 restantes avec une remise de 25% sur le prix de vente initial. a) Quel est le coût d'achat total ? b) Combien rapporte la vente des 300 premières chocogrenouilles ? c) Quel est le prix soldé d'une chocogrenouille ? d) Combien rapportent les 200 chocogrenouilles soldées ? e) Quel est le bénéfice total du marchand ?",
+      "donnees_supplementaires": "a) Coût total achat ? b) Recette des 300 premières ? c) Prix soldé unitaire ? d) Recette des 200 soldées ? e) Bénéfice total ?",
+      "reponse_attendue_redige": "a) 40 000 F ; b) 33 000 F ; c) 82,50 F ; d) 16 500 F ; e) 9 500 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Coût d'achat total = 500 × 80 = 40 000 F",
+        "b) Recette 300 premières = 300 × 110 = 33 000 F",
+        "c) Prix soldé = 110 − (25% de 110) = 110 − 27,50 = 82,50 F",
+        "d) Recette 200 soldées = 200 × 82,50 = 16 500 F",
+        "e) Bénéfice total = (33 000 + 16 500) − 40 000 = 49 500 − 40 000 = 9 500 F"
+      ],
+      "explication_correcte": "Excellent ! a) 500 × 80 = 40 000 F. b) 300 × 110 = 33 000 F. c) 25% de 110 = 27,50 ; prix soldé = 82,50 F. d) 200 × 82,50 = 16 500 F. e) Recette totale 49 500 F − coût 40 000 F = 9 500 F de bénéfice.",
+      "indices": [
+        {"niveau": 1, "texte": "Procède dans l'ordre des questions. À chaque étape, conserve le résultat.", "cout_points": 1},
+        {"niveau": 2, "texte": "Bénéfice = recettes totales − coût total. Recettes totales = recette 1 + recette 2.", "cout_points": 3}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_540s",
+        "micro_etapes": [
+          {"id": "j13-e29-d1", "enonce": "Coût total = 500 × 80 = ?", "type": "numerique", "reponse": 40000},
+          {"id": "j13-e29-d2", "enonce": "Recette 300 premières = 300 × 110 = ?", "type": "numerique", "reponse": 33000},
+          {"id": "j13-e29-d3", "enonce": "25% de 110 = ?", "type": "numerique", "reponse": 27.5, "tolerance_numerique": 0.01},
+          {"id": "j13-e29-d4", "enonce": "Prix soldé = 110 − 27,50 = ?", "type": "numerique", "reponse": 82.5, "tolerance_numerique": 0.01},
+          {"id": "j13-e29-d5", "enonce": "Recette 200 soldées = 200 × 82,50 = ?", "type": "numerique", "reponse": 16500},
+          {"id": "j13-e29-d6", "enonce": "Bénéfice = (33 000 + 16 500) − 40 000 = ?", "type": "numerique", "reponse": 9500}
+        ]
+      }
+    },
+    {
+      "id": "j13-e30",
+      "ordre_jour": 30,
+      "theme": "epreuve_libermann_integrale",
+      "sous_theme": "probleme_potager_complet",
+      "scene_hp": "reve_dumbledore",
+      "narration": "Dans son rêve, Dumbledore apparaît à Harry et lui pose une dernière énigme avant le grand défi.",
+      "type": "redige_libre",
+      "competence": "Résoudre une épreuve Libermann intégrale (5 sous-questions, géométrie + proportionnalité)",
+      "difficulte_relative": 30,
+      "duree_estimee_sec": 540,
+      "points_maison": 12,
+      "enonce": "Le potager de Poudlard est un grand rectangle de 60 m de long et 40 m de large. Une allée traverse le potager en son milieu, parallèle à la largeur, sur 2 m de large. Le reste est cultivé. On y plante des choux : il faut 4 plants par m². Chaque plant coûte 50 F. a) Quelle est l'aire totale du potager ? b) Quelle est l'aire de l'allée ? c) Quelle est l'aire réellement cultivée ? d) Combien de plants faut-il en tout ? e) Quel est le coût total des plants ?",
+      "donnees_supplementaires": "a) Aire totale ? b) Aire allée ? c) Aire cultivée ? d) Nombre de plants ? e) Coût total ?",
+      "reponse_attendue_redige": "a) 2 400 m² ; b) 80 m² ; c) 2 320 m² ; d) 9 280 plants ; e) 464 000 F",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) Aire totale = 60 × 40 = 2 400 m²",
+        "b) Aire allée = 40 × 2 = 80 m² (allée perpendiculaire à la longueur, donc longueur = largeur du rectangle = 40 m, et 2 m de large)",
+        "c) Aire cultivée = 2 400 − 80 = 2 320 m²",
+        "d) Nombre de plants = 2 320 × 4 = 9 280 plants",
+        "e) Coût = 9 280 × 50 = 464 000 F"
+      ],
+      "explication_correcte": "Bravo Harry ! a) 60×40 = 2 400 m². b) Allée : 40 × 2 = 80 m². c) Cultivé : 2 400 − 80 = 2 320 m². d) Plants : 2 320 × 4 = 9 280. e) Coût : 9 280 × 50 = 464 000 F. Tu es prêt pour le miroir du Riséd !",
+      "indices": [
+        {"niveau": 1, "texte": "Décompose : aire grande − aire allée = aire cultivée. Puis multiplie par 4 (plants/m²) puis par 50 F.", "cout_points": 2},
+        {"niveau": 2, "texte": "L'allée traverse parallèlement à la largeur, donc elle fait 40 m de long sur 2 m de large.", "cout_points": 3}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_600s",
+        "micro_etapes": [
+          {"id": "j13-e30-d1", "enonce": "Aire totale = 60 × 40 = ?", "type": "numerique", "reponse": 2400},
+          {"id": "j13-e30-d2", "enonce": "Aire de l'allée = 40 × 2 = ?", "type": "numerique", "reponse": 80},
+          {"id": "j13-e30-d3", "enonce": "Aire cultivée = 2 400 − 80 = ?", "type": "numerique", "reponse": 2320},
+          {"id": "j13-e30-d4", "enonce": "Nombre de plants = 2 320 × 4 = ?", "type": "numerique", "reponse": 9280},
+          {"id": "j13-e30-d5", "enonce": "Coût total = 9 280 × 50 = ?", "type": "numerique", "reponse": 464000}
+        ]
+      },
+      "tags": ["epreuve_libermann", "geometrie", "proportionnalite", "multi_etapes"],
+      "source_inspiration_libermann": "Épreuve type Libermann - problème géométrie/proportionnalité complet"
+    }
+  ]
+}

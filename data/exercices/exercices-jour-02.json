@@ -1,0 +1,851 @@
+{
+  "jour": 2,
+  "titre": "Le Chemin de Traverse — Fournitures de Poudlard",
+  "theme_principal": "operations_posees_multiplication",
+  "scene_globale": "Harry et Hagrid arpentent le Chemin de Traverse. De la boutique de Madame Guipure aux baguettes d'Ollivander, en passant par la ménagerie magique, chaque achat est l'occasion de calculer prix, quantités et totaux en Gallions, Mornilles et Noises.",
+  "mix_qcm_redige": "65/35",
+  "duree_estimee_min": 160,
+  "exercices": [
+    {
+      "id": "j02-e01",
+      "ordre_jour": 1,
+      "theme": "operations_posees",
+      "sous_theme": "addition_simple",
+      "scene_hp": "chaudron_baveur",
+      "narration": "Au Chaudron Baveur, Tom le barman compte les pièces du tiroir-caisse avant l'ouverture.",
+      "type": "qcm",
+      "competence": "Addition mentale de deux nombres à 2 chiffres",
+      "difficulte_relative": 1,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Tom a 34 Mornilles dans le tiroir du matin et 28 Mornilles de la soirée précédente. Combien en a-t-il en tout ?",
+      "choix": [
+        {"id": "a", "texte": "52 Mornilles"},
+        {"id": "b", "texte": "62 Mornilles"},
+        {"id": "c", "texte": "72 Mornilles"},
+        {"id": "d", "texte": "63 Mornilles"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! 34 + 28 = 62 Mornilles. 4+8=12 (2, retiens 1), 3+2+1=6.",
+      "indices": [
+        {"niveau": 1, "texte": "Additionne d'abord les unités, puis les dizaines.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j02-e02",
+      "ordre_jour": 2,
+      "theme": "operations_posees",
+      "sous_theme": "addition_simple",
+      "scene_hp": "chaudron_baveur",
+      "narration": "Tom ajoute la recette de la veille au soir.",
+      "type": "qcm",
+      "competence": "Addition de deux nombres à 3 chiffres",
+      "difficulte_relative": 2,
+      "duree_estimee_sec": 35,
+      "points_maison": 2,
+      "enonce": "Hier soir, le Chaudron Baveur a encaissé 145 Mornilles. Ce matin, 132 de plus. Total ?",
+      "choix": [
+        {"id": "a", "texte": "267 Mornilles"},
+        {"id": "b", "texte": "277 Mornilles"},
+        {"id": "c", "texte": "287 Mornilles"},
+        {"id": "d", "texte": "377 Mornilles"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! 145 + 132 = 277. Pas de retenue ici, c'est direct.",
+      "indices": [
+        {"niveau": 1, "texte": "Pose l'addition en colonnes : unités sous unités, dizaines sous dizaines.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j02-e03",
+      "ordre_jour": 3,
+      "theme": "operations_posees",
+      "sous_theme": "addition_avec_retenue",
+      "scene_hp": "chemin_de_traverse",
+      "narration": "Hagrid pousse la porte du mur de briques et la rue magique s'ouvre devant Harry.",
+      "type": "qcm",
+      "competence": "Addition avec une retenue",
+      "difficulte_relative": 3,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "Hagrid a 256 Gallions dans sa bourse, plus 137 Gallions que Dumbledore lui a confiés. Combien en a-t-il en tout ?",
+      "choix": [
+        {"id": "a", "texte": "393 Gallions"},
+        {"id": "b", "texte": "383 Gallions"},
+        {"id": "c", "texte": "493 Gallions"},
+        {"id": "d", "texte": "383 Mornilles"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Parfait ! 256 + 137 = 393. 6+7=13 (3, retiens 1), 5+3+1=9, 2+1=3.",
+      "indices": [
+        {"niveau": 1, "texte": "Aux unités : 6+7=13. Pose 3, retiens 1.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j02-e04",
+      "ordre_jour": 4,
+      "theme": "operations_posees",
+      "sous_theme": "soustraction_simple",
+      "scene_hp": "gringotts",
+      "narration": "Le gobelin Gripsec note le retrait que vient de faire Harry sur son grand registre.",
+      "type": "qcm",
+      "competence": "Soustraction de deux nombres à 3 chiffres",
+      "difficulte_relative": 4,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "Le coffre de Harry contenait 458 Gallions visibles sur le dessus. Hagrid en prend 124 pour les fournitures. Combien reste-t-il visible ?",
+      "choix": [
+        {"id": "a", "texte": "334 Gallions"},
+        {"id": "b", "texte": "324 Gallions"},
+        {"id": "c", "texte": "344 Gallions"},
+        {"id": "d", "texte": "434 Gallions"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bien ! 458 - 124 = 334 Gallions. Pas d'emprunt nécessaire.",
+      "indices": [
+        {"niveau": 1, "texte": "Pose la soustraction en colonnes. Chaque chiffre du haut est plus grand que celui du bas, c'est facile.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j02-e05",
+      "ordre_jour": 5,
+      "theme": "operations_posees",
+      "sous_theme": "soustraction_avec_emprunt",
+      "scene_hp": "gringotts",
+      "narration": "Hagrid sort encore quelques pièces pour la cage d'Hedwige.",
+      "type": "qcm",
+      "competence": "Soustraction avec emprunt",
+      "difficulte_relative": 5,
+      "duree_estimee_sec": 50,
+      "points_maison": 3,
+      "enonce": "Il restait 500 Gallions sur la pile. Hagrid en retire 137. Combien reste-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "363 Gallions"},
+        {"id": "b", "texte": "373 Gallions"},
+        {"id": "c", "texte": "473 Gallions"},
+        {"id": "d", "texte": "353 Gallions"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Excellent ! 500 - 137 = 363. Aux unités : 0-7 impossible, on emprunte aux dizaines (0 aussi !) puis aux centaines.",
+      "indices": [
+        {"niveau": 1, "texte": "Quand le 0 ne peut pas prêter, on remonte plus loin. 500 devient 4 centaines, 9 dizaines, 10 unités.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j02-e06",
+      "ordre_jour": 6,
+      "theme": "operations_posees",
+      "sous_theme": "addition_avec_retenue",
+      "scene_hp": "madame_guipure",
+      "narration": "Chez Madame Guipure, Harry achète son uniforme de Poudlard.",
+      "type": "qcm",
+      "competence": "Addition de trois prix",
+      "difficulte_relative": 6,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "La robe coûte 87 Mornilles, le chapeau pointu 24 Mornilles et la cape d'hiver 58 Mornilles. Total ?",
+      "choix": [
+        {"id": "a", "texte": "159 Mornilles"},
+        {"id": "b", "texte": "169 Mornilles"},
+        {"id": "c", "texte": "149 Mornilles"},
+        {"id": "d", "texte": "179 Mornilles"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! 87 + 24 = 111, puis 111 + 58 = 169 Mornilles.",
+      "indices": [
+        {"niveau": 1, "texte": "Additionne 87 et 24 d'abord, puis ajoute 58.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j02-e07",
+      "ordre_jour": 7,
+      "theme": "operations_posees",
+      "sous_theme": "multiplication_x1chiffre",
+      "scene_hp": "fleury_et_bott",
+      "narration": "À la librairie Fleury et Bott, Harry doit acheter plusieurs exemplaires d'un même livre.",
+      "type": "qcm",
+      "competence": "Multiplier un nombre à 2 chiffres par 1 chiffre",
+      "difficulte_relative": 7,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Le manuel 'Histoire de la magie' coûte 23 Mornilles. Harry en achète 4 (pour lui, Ron, Hermione et Neville). Prix total ?",
+      "choix": [
+        {"id": "a", "texte": "82 Mornilles"},
+        {"id": "b", "texte": "92 Mornilles"},
+        {"id": "c", "texte": "72 Mornilles"},
+        {"id": "d", "texte": "102 Mornilles"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Parfait ! 23 × 4 = 92. (3×4=12 ; pose 2, retiens 1 ; 2×4=8 +1=9).",
+      "indices": [
+        {"niveau": 1, "texte": "Multiplie d'abord les unités (3×4), puis les dizaines (2×4), en n'oubliant pas la retenue.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j02-e08",
+      "ordre_jour": 8,
+      "theme": "operations_posees",
+      "sous_theme": "multiplication_x1chiffre",
+      "scene_hp": "fleury_et_bott",
+      "narration": "Hermione craque pour un livre de potions avancées et en prend pour ses amies.",
+      "type": "qcm",
+      "competence": "Multiplier un nombre à 2 chiffres par 1 chiffre (retenues multiples)",
+      "difficulte_relative": 8,
+      "duree_estimee_sec": 55,
+      "points_maison": 4,
+      "enonce": "Le grimoire 'Potions magiques' coûte 47 Mornilles. Hermione en prend 5 exemplaires. Prix total ?",
+      "choix": [
+        {"id": "a", "texte": "235 Mornilles"},
+        {"id": "b", "texte": "205 Mornilles"},
+        {"id": "c", "texte": "225 Mornilles"},
+        {"id": "d", "texte": "245 Mornilles"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Excellent ! 47 × 5 = 235. (7×5=35 ; pose 5, retiens 3 ; 4×5=20 +3=23).",
+      "indices": [
+        {"niveau": 1, "texte": "7×5=35. Pose 5, retiens 3. Puis 4×5=20, +3 retenue = 23.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j02-e09",
+      "ordre_jour": 9,
+      "theme": "operations_posees",
+      "sous_theme": "multiplication_x1chiffre",
+      "scene_hp": "menagerie_magique",
+      "narration": "À la ménagerie magique, les crapauds sont vendus en cages de plusieurs.",
+      "type": "qcm",
+      "competence": "Multiplier un nombre à 3 chiffres par 1 chiffre",
+      "difficulte_relative": 9,
+      "duree_estimee_sec": 60,
+      "points_maison": 5,
+      "enonce": "Une cage de crapauds coûte 132 Mornilles. Le marchand en a vendu 6 aujourd'hui. Recette ?",
+      "choix": [
+        {"id": "a", "texte": "792 Mornilles"},
+        {"id": "b", "texte": "682 Mornilles"},
+        {"id": "c", "texte": "892 Mornilles"},
+        {"id": "d", "texte": "702 Mornilles"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bravo ! 132 × 6 = 792. (2×6=12 ; pose 2, retiens 1 ; 3×6=18 +1=19 ; pose 9, retiens 1 ; 1×6=6 +1=7).",
+      "indices": [
+        {"niveau": 1, "texte": "Multiplie chiffre par chiffre de 132 par 6, en commençant par les unités.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j02-e10",
+      "ordre_jour": 10,
+      "theme": "operations_posees",
+      "sous_theme": "multiplication_x1chiffre",
+      "scene_hp": "menagerie_magique",
+      "narration": "Les hiboux gris-souris sont les plus chers de la boutique.",
+      "type": "qcm",
+      "competence": "Multiplier un nombre à 3 chiffres par 1 chiffre",
+      "difficulte_relative": 10,
+      "duree_estimee_sec": 65,
+      "points_maison": 5,
+      "enonce": "Un hibou gris-souris coûte 175 Mornilles. Le marchand en a vendu 7 cette semaine. Recette totale ?",
+      "choix": [
+        {"id": "a", "texte": "1 225 Mornilles"},
+        {"id": "b", "texte": "1 125 Mornilles"},
+        {"id": "c", "texte": "1 235 Mornilles"},
+        {"id": "d", "texte": "1 215 Mornilles"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Parfait ! 175 × 7 = 1 225. (5×7=35, retiens 3 ; 7×7=49 +3=52, retiens 5 ; 1×7=7 +5=12).",
+      "indices": [
+        {"niveau": 1, "texte": "Trois multiplications successives à faire, en cumulant les retenues.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j02-e11",
+      "ordre_jour": 11,
+      "theme": "operations_posees",
+      "sous_theme": "multiplication_x1chiffre",
+      "scene_hp": "ollivander",
+      "narration": "Ollivander a vendu beaucoup de baguettes ce mois-ci aux nouveaux élèves de Poudlard.",
+      "type": "qcm",
+      "competence": "Multiplier un nombre à 3 chiffres par 1 chiffre",
+      "difficulte_relative": 11,
+      "duree_estimee_sec": 70,
+      "points_maison": 5,
+      "enonce": "Une baguette en bois de houx coûte 248 Mornilles. Ollivander en a vendu 8 ce mois-ci. Recette ?",
+      "choix": [
+        {"id": "a", "texte": "1 984 Mornilles"},
+        {"id": "b", "texte": "1 884 Mornilles"},
+        {"id": "c", "texte": "2 084 Mornilles"},
+        {"id": "d", "texte": "1 964 Mornilles"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Excellent ! 248 × 8 = 1 984. (8×8=64, retiens 6 ; 4×8=32 +6=38, retiens 3 ; 2×8=16 +3=19).",
+      "indices": [
+        {"niveau": 1, "texte": "8×8 = 64. C'est la première étape.", "cout_points": 1},
+        {"niveau": 2, "texte": "Pose 4, retiens 6. Puis 4×8=32 +6=38. Pose 8, retiens 3. Enfin 2×8=16 +3=19.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j02-e12",
+      "ordre_jour": 12,
+      "theme": "operations_posees",
+      "sous_theme": "multiplication_x1chiffre",
+      "scene_hp": "florian_fortarome",
+      "narration": "Chez Florian Fortarôme, le glacier, les enfants commandent des coupes glacées.",
+      "type": "redige_court",
+      "competence": "Multiplier un nombre à 2 chiffres par 1 chiffre",
+      "difficulte_relative": 12,
+      "duree_estimee_sec": 80,
+      "points_maison": 5,
+      "enonce": "Une coupe à 3 boules coûte 36 Mornilles. Pose et calcule : 36 × 9 = ? (Donne le résultat)",
+      "reponse_attendue_redige": "324",
+      "tolerance_numerique": 0,
+      "regex_validation": "^324$",
+      "explication_correcte": "Bravo ! 36 × 9 = 324. (6×9=54, retiens 5 ; 3×9=27 +5=32).",
+      "indices": [
+        {"niveau": 1, "texte": "Commence par 6×9 = 54.", "cout_points": 1},
+        {"niveau": 2, "texte": "Pose 4, retiens 5. Puis 3×9 = 27, +5 = 32.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j02-e12-d1", "enonce": "Combien font 6 × 9 ?", "type": "numerique", "reponse": 54},
+          {"id": "j02-e12-d2", "enonce": "On pose 4, on retient 5. Combien font 3 × 9 ?", "type": "numerique", "reponse": 27},
+          {"id": "j02-e12-d3", "enonce": "On ajoute la retenue : 27 + 5 = ?", "type": "numerique", "reponse": 32},
+          {"id": "j02-e12-d4", "enonce": "Donc 36 × 9 = ?", "type": "numerique", "reponse": 324}
+        ]
+      }
+    },
+    {
+      "id": "j02-e13",
+      "ordre_jour": 13,
+      "theme": "operations_posees",
+      "sous_theme": "multiplication_x2chiffres",
+      "scene_hp": "chemin_de_traverse",
+      "narration": "Hagrid explique à Harry comment on multiplie quand il y a deux chiffres au multiplicateur.",
+      "type": "qcm",
+      "competence": "Découvrir la multiplication par un nombre à 2 chiffres",
+      "difficulte_relative": 13,
+      "duree_estimee_sec": 70,
+      "points_maison": 5,
+      "enonce": "Pour calculer 24 × 13, on additionne en réalité quoi ?",
+      "choix": [
+        {"id": "a", "texte": "24 × 3 et 24 × 10"},
+        {"id": "b", "texte": "24 × 3 et 24 × 1"},
+        {"id": "c", "texte": "2 × 13 et 4 × 13"},
+        {"id": "d", "texte": "24 × 13 et 24 × 13"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Exact ! 13 = 3 + 10. Donc 24 × 13 = 24 × 3 + 24 × 10 = 72 + 240 = 312.",
+      "indices": [
+        {"niveau": 1, "texte": "13 c'est 1 dizaine et 3 unités. On multiplie par chaque partie.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j02-e14",
+      "ordre_jour": 14,
+      "theme": "operations_posees",
+      "sous_theme": "multiplication_x2chiffres",
+      "scene_hp": "chemin_de_traverse",
+      "narration": "Application directe : on continue l'apprentissage.",
+      "type": "qcm",
+      "competence": "Multiplier un nombre à 2 chiffres par un nombre à 2 chiffres",
+      "difficulte_relative": 14,
+      "duree_estimee_sec": 90,
+      "points_maison": 6,
+      "enonce": "Combien font 24 × 13 ?",
+      "choix": [
+        {"id": "a", "texte": "312"},
+        {"id": "b", "texte": "302"},
+        {"id": "c", "texte": "322"},
+        {"id": "d", "texte": "212"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Parfait ! 24 × 3 = 72, 24 × 10 = 240, 72 + 240 = 312.",
+      "indices": [
+        {"niveau": 1, "texte": "Pose la multiplication. Première ligne : 24 × 3. Deuxième ligne : 24 × 1 (décalée d'un cran).", "cout_points": 1},
+        {"niveau": 2, "texte": "24 × 3 = 72. 24 × 1 = 24 (mais on écrit 240 car c'est × dizaines). Additionne 72 + 240.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j02-e14-d1", "enonce": "Combien font 24 × 3 ?", "type": "numerique", "reponse": 72},
+          {"id": "j02-e14-d2", "enonce": "Combien font 24 × 10 ?", "type": "numerique", "reponse": 240},
+          {"id": "j02-e14-d3", "enonce": "Additionne : 72 + 240 = ?", "type": "numerique", "reponse": 312}
+        ]
+      }
+    },
+    {
+      "id": "j02-e15",
+      "ordre_jour": 15,
+      "theme": "operations_posees",
+      "sous_theme": "multiplication_x2chiffres",
+      "scene_hp": "fleury_et_bott",
+      "narration": "À la librairie, on prépare la commande pour toute une classe de première année.",
+      "type": "qcm",
+      "competence": "Multiplier un nombre à 2 chiffres par un nombre à 2 chiffres",
+      "difficulte_relative": 15,
+      "duree_estimee_sec": 95,
+      "points_maison": 6,
+      "enonce": "Chaque pack 'Première année à Poudlard' coûte 36 Mornilles. La classe de Gryffondor compte 25 élèves. Combien Madame Bibine va-t-elle payer ?",
+      "choix": [
+        {"id": "a", "texte": "900 Mornilles"},
+        {"id": "b", "texte": "800 Mornilles"},
+        {"id": "c", "texte": "950 Mornilles"},
+        {"id": "d", "texte": "850 Mornilles"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Excellent ! 36 × 25 = 36 × 5 + 36 × 20 = 180 + 720 = 900 Mornilles.",
+      "indices": [
+        {"niveau": 1, "texte": "25 = 20 + 5. Calcule 36 × 5 puis 36 × 20, et additionne.", "cout_points": 1},
+        {"niveau": 2, "texte": "36 × 5 = 180. 36 × 20 = 720. Total : 180 + 720.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j02-e15-d1", "enonce": "Combien font 36 × 5 ?", "type": "numerique", "reponse": 180},
+          {"id": "j02-e15-d2", "enonce": "Combien font 36 × 20 ?", "type": "numerique", "reponse": 720},
+          {"id": "j02-e15-d3", "enonce": "Additionne : 180 + 720 = ?", "type": "numerique", "reponse": 900}
+        ]
+      }
+    },
+    {
+      "id": "j02-e16",
+      "ordre_jour": 16,
+      "theme": "operations_posees",
+      "sous_theme": "multiplication_x1chiffre",
+      "scene_hp": "ollivander",
+      "narration": "Ollivander commande des plumes de phénix pour fabriquer ses baguettes.",
+      "type": "redige_court",
+      "competence": "Poser et calculer une multiplication 3 chiffres × 1 chiffre",
+      "difficulte_relative": 16,
+      "duree_estimee_sec": 100,
+      "points_maison": 6,
+      "enonce": "Pose et calcule : 386 × 7 = ?",
+      "reponse_attendue_redige": "2702",
+      "tolerance_numerique": 0,
+      "regex_validation": "^2\\s*702$",
+      "explication_correcte": "Bravo ! 386 × 7 = 2 702. (6×7=42, retiens 4 ; 8×7=56 +4=60, retiens 6 ; 3×7=21 +6=27).",
+      "indices": [
+        {"niveau": 1, "texte": "Commence par 6×7=42. Pose 2, retiens 4.", "cout_points": 1},
+        {"niveau": 2, "texte": "8×7=56, +4 retenue = 60. Pose 0, retiens 6. Puis 3×7=21, +6=27.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j02-e16-d1", "enonce": "Combien font 6 × 7 ?", "type": "numerique", "reponse": 42},
+          {"id": "j02-e16-d2", "enonce": "On pose 2, on retient 4. Combien font 8 × 7 + 4 ?", "type": "numerique", "reponse": 60},
+          {"id": "j02-e16-d3", "enonce": "On pose 0, on retient 6. Combien font 3 × 7 + 6 ?", "type": "numerique", "reponse": 27},
+          {"id": "j02-e16-d4", "enonce": "Donc 386 × 7 = ?", "type": "numerique", "reponse": 2702}
+        ]
+      }
+    },
+    {
+      "id": "j02-e17",
+      "ordre_jour": 17,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_1_etape",
+      "scene_hp": "menagerie_magique",
+      "narration": "Hagrid offre Hedwige à Harry, le plus beau cadeau de sa vie.",
+      "type": "redige_court",
+      "competence": "Résoudre un problème de multiplication à 1 étape",
+      "difficulte_relative": 17,
+      "duree_estimee_sec": 110,
+      "points_maison": 6,
+      "enonce": "Hedwige mange 4 souris par jour. Combien de souris devra-t-on lui donner pendant les 28 jours du mois de février ?",
+      "reponse_attendue_redige": "112",
+      "tolerance_numerique": 0,
+      "regex_validation": "^112$",
+      "explication_correcte": "Parfait ! 4 × 28 = 112 souris. Hedwige aura bien à manger tout février !",
+      "indices": [
+        {"niveau": 1, "texte": "Combien Hedwige mange-t-elle par jour, multiplié par combien de jours ?", "cout_points": 1},
+        {"niveau": 2, "texte": "4 × 28 = 4 × 30 - 4 × 2 = 120 - 8 = 112.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j02-e18",
+      "ordre_jour": 18,
+      "theme": "operations_posees",
+      "sous_theme": "multiplication_x2chiffres",
+      "scene_hp": "fleury_et_bott",
+      "narration": "Le libraire prépare l'envoi des livres pour toute la promotion de Poufsouffle.",
+      "type": "redige_court",
+      "competence": "Poser et calculer une multiplication 3 chiffres × 2 chiffres",
+      "difficulte_relative": 18,
+      "duree_estimee_sec": 130,
+      "points_maison": 7,
+      "enonce": "Pose et calcule : 124 × 23 = ?",
+      "reponse_attendue_redige": "2852",
+      "tolerance_numerique": 0,
+      "regex_validation": "^2\\s*852$",
+      "explication_correcte": "Bravo ! 124 × 23 = 124 × 3 + 124 × 20 = 372 + 2 480 = 2 852.",
+      "indices": [
+        {"niveau": 1, "texte": "Décompose : 124 × 3 puis 124 × 20, et additionne.", "cout_points": 1},
+        {"niveau": 2, "texte": "124 × 3 = 372. 124 × 20 = 2 480. Additionne 372 + 2 480.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j02-e18-d1", "enonce": "Combien font 124 × 3 ?", "type": "numerique", "reponse": 372},
+          {"id": "j02-e18-d2", "enonce": "Combien font 124 × 20 ?", "type": "numerique", "reponse": 2480},
+          {"id": "j02-e18-d3", "enonce": "Additionne : 372 + 2 480 = ?", "type": "numerique", "reponse": 2852}
+        ]
+      }
+    },
+    {
+      "id": "j02-e19",
+      "ordre_jour": 19,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_1_etape",
+      "scene_hp": "chemin_de_traverse",
+      "narration": "Sur le Chemin de Traverse, les marchands préparent la rentrée.",
+      "type": "qcm",
+      "competence": "Résoudre un problème de multiplication à 1 étape",
+      "difficulte_relative": 19,
+      "duree_estimee_sec": 100,
+      "points_maison": 6,
+      "enonce": "Madame Guipure a 18 robes de sorcier en stock. Chaque robe coûte 75 Mornilles. Si elle vend tout, combien gagnera-t-elle ?",
+      "choix": [
+        {"id": "a", "texte": "1 350 Mornilles"},
+        {"id": "b", "texte": "1 250 Mornilles"},
+        {"id": "c", "texte": "1 450 Mornilles"},
+        {"id": "d", "texte": "1 300 Mornilles"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Excellent ! 75 × 18 = 75 × 8 + 75 × 10 = 600 + 750 = 1 350 Mornilles.",
+      "indices": [
+        {"niveau": 1, "texte": "Multiplie le prix d'une robe par le nombre de robes : 75 × 18.", "cout_points": 1},
+        {"niveau": 2, "texte": "75 × 8 = 600 et 75 × 10 = 750. Additionne.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j02-e20",
+      "ordre_jour": 20,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_1_etape",
+      "scene_hp": "menagerie_magique",
+      "narration": "Le marchand fait l'inventaire des cages de souris pour les hiboux.",
+      "type": "redige_court",
+      "competence": "Résoudre un problème de multiplication à 1 étape",
+      "difficulte_relative": 20,
+      "duree_estimee_sec": 120,
+      "points_maison": 7,
+      "enonce": "Chaque cage contient 15 souris. La boutique a 24 cages. Combien de souris en tout ? (Réponds par un nombre)",
+      "reponse_attendue_redige": "360",
+      "tolerance_numerique": 0,
+      "regex_validation": "^360$",
+      "explication_correcte": "Bravo ! 15 × 24 = 15 × 4 + 15 × 20 = 60 + 300 = 360 souris.",
+      "indices": [
+        {"niveau": 1, "texte": "C'est une multiplication : 15 × 24.", "cout_points": 1},
+        {"niveau": 2, "texte": "15 × 4 = 60. 15 × 20 = 300. Additionne 60 + 300.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j02-e20-d1", "enonce": "Combien font 15 × 4 ?", "type": "numerique", "reponse": 60},
+          {"id": "j02-e20-d2", "enonce": "Combien font 15 × 20 ?", "type": "numerique", "reponse": 300},
+          {"id": "j02-e20-d3", "enonce": "Additionne : 60 + 300 = ?", "type": "numerique", "reponse": 360}
+        ]
+      }
+    },
+    {
+      "id": "j02-e21",
+      "ordre_jour": 21,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_1_etape",
+      "scene_hp": "florian_fortarome",
+      "narration": "Florian Fortarôme prépare sa caisse en fin de journée.",
+      "type": "redige_court",
+      "competence": "Résoudre un problème de multiplication 3 chiffres × 1 chiffre",
+      "difficulte_relative": 21,
+      "duree_estimee_sec": 130,
+      "points_maison": 7,
+      "enonce": "Florian a vendu 156 coupes glacées aujourd'hui, à 8 Mornilles la coupe. Combien d'argent a-t-il gagné ? (Réponds par un nombre)",
+      "reponse_attendue_redige": "1248",
+      "tolerance_numerique": 0,
+      "regex_validation": "^1\\s*248$",
+      "explication_correcte": "Parfait ! 156 × 8 = 1 248 Mornilles. (6×8=48, retiens 4 ; 5×8=40 +4=44, retiens 4 ; 1×8=8 +4=12).",
+      "indices": [
+        {"niveau": 1, "texte": "Multiplie 156 par 8, en posant l'opération.", "cout_points": 1},
+        {"niveau": 2, "texte": "6×8=48 (retiens 4), 5×8=40+4=44 (retiens 4), 1×8=8+4=12.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j02-e21-d1", "enonce": "Combien font 6 × 8 ?", "type": "numerique", "reponse": 48},
+          {"id": "j02-e21-d2", "enonce": "On pose 8, on retient 4. Combien font 5 × 8 + 4 ?", "type": "numerique", "reponse": 44},
+          {"id": "j02-e21-d3", "enonce": "On pose 4, on retient 4. Combien font 1 × 8 + 4 ?", "type": "numerique", "reponse": 12},
+          {"id": "j02-e21-d4", "enonce": "Donc 156 × 8 = ?", "type": "numerique", "reponse": 1248}
+        ]
+      }
+    },
+    {
+      "id": "j02-e22",
+      "ordre_jour": 22,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_1_etape",
+      "scene_hp": "ollivander",
+      "narration": "Ollivander note la quantité de crins de licorne reçus pour le mois.",
+      "type": "redige_court",
+      "competence": "Résoudre un problème de multiplication 2 chiffres × 2 chiffres",
+      "difficulte_relative": 22,
+      "duree_estimee_sec": 140,
+      "points_maison": 7,
+      "enonce": "Ollivander reçoit 32 lots de crins. Chaque lot contient 45 crins. Combien de crins a-t-il en tout ? (Réponds par un nombre)",
+      "reponse_attendue_redige": "1440",
+      "tolerance_numerique": 0,
+      "regex_validation": "^1\\s*440$",
+      "explication_correcte": "Bravo ! 32 × 45 = 32 × 5 + 32 × 40 = 160 + 1 280 = 1 440 crins.",
+      "indices": [
+        {"niveau": 1, "texte": "Pose la multiplication 32 × 45 ou décompose : 32 × 5 et 32 × 40.", "cout_points": 1},
+        {"niveau": 2, "texte": "32 × 5 = 160. 32 × 40 = 1 280. Additionne.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j02-e22-d1", "enonce": "Combien font 32 × 5 ?", "type": "numerique", "reponse": 160},
+          {"id": "j02-e22-d2", "enonce": "Combien font 32 × 40 ?", "type": "numerique", "reponse": 1280},
+          {"id": "j02-e22-d3", "enonce": "Additionne : 160 + 1 280 = ?", "type": "numerique", "reponse": 1440}
+        ]
+      }
+    },
+    {
+      "id": "j02-e23",
+      "ordre_jour": 23,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "madame_guipure",
+      "narration": "Madame Guipure prépare la commande de toute une promotion.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème à 2 étapes (multiplication + addition)",
+      "difficulte_relative": 23,
+      "duree_estimee_sec": 180,
+      "points_maison": 8,
+      "enonce": "Madame Guipure prépare 12 robes pour Gryffondor (à 75 Mornilles chacune) et 8 robes pour Serpentard (à 75 Mornilles aussi). Combien d'argent va-t-elle encaisser en tout ? Donne juste le nombre final en Mornilles.",
+      "reponse_attendue_redige": "1500",
+      "tolerance_numerique": 0,
+      "regex_validation": "^1\\s*500$",
+      "explication_correcte": "Excellent ! Étape 1 : 12 + 8 = 20 robes. Étape 2 : 20 × 75 = 1 500 Mornilles. (Tu pouvais aussi faire 12×75=900 et 8×75=600 puis additionner.)",
+      "indices": [
+        {"niveau": 1, "texte": "Combien y a-t-il de robes en tout (Gryffondor + Serpentard) ?", "cout_points": 1},
+        {"niveau": 2, "texte": "20 robes au total. Multiplie 20 × 75.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j02-e23-d1", "enonce": "Combien de robes en tout : 12 + 8 ?", "type": "numerique", "reponse": 20},
+          {"id": "j02-e23-d2", "enonce": "Maintenant calcule 20 × 75.", "type": "numerique", "reponse": 1500}
+        ]
+      }
+    },
+    {
+      "id": "j02-e24",
+      "ordre_jour": 24,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "fleury_et_bott",
+      "narration": "Le libraire compte ce qu'il a encaissé après la grande commande de Poudlard.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème à 2 étapes (multiplication + soustraction)",
+      "difficulte_relative": 24,
+      "duree_estimee_sec": 200,
+      "points_maison": 8,
+      "enonce": "Le libraire avait 250 manuels en stock. Il vend 7 paquets de 28 manuels chacun à Poudlard. Combien de manuels lui reste-t-il ? Donne le nombre final.",
+      "reponse_attendue_redige": "54",
+      "tolerance_numerique": 0,
+      "regex_validation": "^54$",
+      "explication_correcte": "Bravo ! Étape 1 : 7 × 28 = 196 manuels vendus. Étape 2 : 250 - 196 = 54 manuels restants.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : combien de manuels vendus en tout ? Étape 2 : combien il en reste.", "cout_points": 1},
+        {"niveau": 2, "texte": "7 × 28 = 196. Puis 250 - 196 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j02-e24-d1", "enonce": "Combien de manuels vendus : 7 × 28 ?", "type": "numerique", "reponse": 196},
+          {"id": "j02-e24-d2", "enonce": "Combien reste-t-il : 250 - 196 ?", "type": "numerique", "reponse": 54}
+        ]
+      }
+    },
+    {
+      "id": "j02-e25",
+      "ordre_jour": 25,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "ollivander",
+      "narration": "Ollivander fait le bilan financier de la semaine de la rentrée.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème à 2 étapes (deux multiplications + addition)",
+      "difficulte_relative": 25,
+      "duree_estimee_sec": 210,
+      "points_maison": 9,
+      "enonce": "Ollivander a vendu 14 baguettes en bois de houx (à 248 Mornilles) et 9 baguettes en bois de saule (à 175 Mornilles). Combien a-t-il gagné en tout ? Donne le nombre final.",
+      "reponse_attendue_redige": "5047",
+      "tolerance_numerique": 0,
+      "regex_validation": "^5\\s*047$",
+      "explication_correcte": "Excellent ! Étape 1 : 14 × 248 = 3 472. Étape 2 : 9 × 175 = 1 575. Étape 3 : 3 472 + 1 575 = 5 047 Mornilles.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule séparément la recette de chaque type de baguette, puis additionne.", "cout_points": 1},
+        {"niveau": 2, "texte": "14 × 248 = 3 472. 9 × 175 = 1 575. Additionne ces deux nombres.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j02-e25-d1", "enonce": "Combien rapportent les baguettes de houx : 14 × 248 ?", "type": "numerique", "reponse": 3472},
+          {"id": "j02-e25-d2", "enonce": "Combien rapportent les baguettes de saule : 9 × 175 ?", "type": "numerique", "reponse": 1575},
+          {"id": "j02-e25-d3", "enonce": "Additionne les deux recettes : 3 472 + 1 575 ?", "type": "numerique", "reponse": 5047}
+        ]
+      }
+    },
+    {
+      "id": "j02-e26",
+      "ordre_jour": 26,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "florian_fortarome",
+      "narration": "À la sortie de Gringotts, Harry et Hagrid font une pause chez Florian Fortarôme.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème à 2 étapes (multiplication + soustraction)",
+      "difficulte_relative": 26,
+      "duree_estimee_sec": 220,
+      "points_maison": 9,
+      "enonce": "Hagrid a 200 Mornilles dans sa poche. Il achète 6 glaces à 15 Mornilles chacune pour lui, Harry et leurs voisins de banc. Combien lui reste-t-il ? Donne le nombre final.",
+      "reponse_attendue_redige": "110",
+      "tolerance_numerique": 0,
+      "regex_validation": "^110$",
+      "explication_correcte": "Bravo ! Étape 1 : 6 × 15 = 90 Mornilles dépensés. Étape 2 : 200 - 90 = 110 Mornilles restants.",
+      "indices": [
+        {"niveau": 1, "texte": "Combien Hagrid dépense-t-il pour les 6 glaces ? Ensuite, soustrais.", "cout_points": 1},
+        {"niveau": 2, "texte": "6 × 15 = 90. Puis 200 - 90 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j02-e26-d1", "enonce": "Combien coûtent 6 glaces à 15 Mornilles : 6 × 15 ?", "type": "numerique", "reponse": 90},
+          {"id": "j02-e26-d2", "enonce": "Reste à Hagrid : 200 - 90 ?", "type": "numerique", "reponse": 110}
+        ]
+      }
+    },
+    {
+      "id": "j02-e27",
+      "ordre_jour": 27,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "madame_guipure",
+      "narration": "Madame Guipure ajuste les tarifs spéciaux pour les boursiers.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème à 2 étapes (multiplications + addition)",
+      "difficulte_relative": 27,
+      "duree_estimee_sec": 230,
+      "points_maison": 9,
+      "enonce": "Madame Guipure vend 25 robes à 75 Mornilles aux élèves normaux et 12 robes à 45 Mornilles aux boursiers. Quelle est sa recette totale ?",
+      "reponse_attendue_redige": "2415",
+      "tolerance_numerique": 0,
+      "regex_validation": "^2\\s*415$",
+      "explication_correcte": "Parfait ! Étape 1 : 25 × 75 = 1 875. Étape 2 : 12 × 45 = 540. Étape 3 : 1 875 + 540 = 2 415 Mornilles.",
+      "indices": [
+        {"niveau": 1, "texte": "Deux recettes différentes : calcule chacune, puis additionne.", "cout_points": 1},
+        {"niveau": 2, "texte": "25 × 75 = 1 875 et 12 × 45 = 540. Additionne.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j02-e27-d1", "enonce": "Recette normale : 25 × 75 ?", "type": "numerique", "reponse": 1875},
+          {"id": "j02-e27-d2", "enonce": "Recette boursiers : 12 × 45 ?", "type": "numerique", "reponse": 540},
+          {"id": "j02-e27-d3", "enonce": "Total : 1 875 + 540 ?", "type": "numerique", "reponse": 2415}
+        ]
+      }
+    },
+    {
+      "id": "j02-e28",
+      "ordre_jour": 28,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "menagerie_magique",
+      "narration": "Le marchand de la ménagerie calcule le bénéfice de la journée.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème à 2 étapes (multiplications + soustraction)",
+      "difficulte_relative": 28,
+      "duree_estimee_sec": 240,
+      "points_maison": 10,
+      "enonce": "Le marchand a vendu 7 hiboux à 175 Mornilles chacun. Il avait acheté ces hiboux à un fournisseur pour 95 Mornilles l'unité. Quel est son bénéfice total ? (Bénéfice = ce qu'il gagne - ce qu'il a payé)",
+      "reponse_attendue_redige": "560",
+      "tolerance_numerique": 0,
+      "regex_validation": "^560$",
+      "explication_correcte": "Bravo ! Recette : 7 × 175 = 1 225. Coût : 7 × 95 = 665. Bénéfice : 1 225 - 665 = 560 Mornilles. (Astuce : 7 × (175 - 95) = 7 × 80 = 560.)",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule la recette totale, puis le coût total, puis soustrais.", "cout_points": 1},
+        {"niveau": 2, "texte": "7 × 175 = 1 225 (recette). 7 × 95 = 665 (coût). Bénéfice = 1 225 - 665.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j02-e28-d1", "enonce": "Combien rapportent les ventes : 7 × 175 ?", "type": "numerique", "reponse": 1225},
+          {"id": "j02-e28-d2", "enonce": "Combien ont coûté les hiboux : 7 × 95 ?", "type": "numerique", "reponse": 665},
+          {"id": "j02-e28-d3", "enonce": "Bénéfice : 1 225 - 665 ?", "type": "numerique", "reponse": 560}
+        ]
+      }
+    },
+    {
+      "id": "j02-e29",
+      "ordre_jour": 29,
+      "theme": "probleme_synthese",
+      "sous_theme": "mini_probleme_libermann",
+      "scene_hp": "chemin_de_traverse",
+      "narration": "Mini-épreuve type concours : Harry fait ses comptes après une grosse journée d'achats.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème complexe à 2-3 étapes",
+      "difficulte_relative": 29,
+      "duree_estimee_sec": 300,
+      "points_maison": 12,
+      "enonce": "Au Chemin de Traverse, Harry achète : 4 manuels à 23 Mornilles, 2 robes à 87 Mornilles, et 1 baguette à 248 Mornilles. Il paie avec un billet de 600 Mornilles. Combien la vendeuse doit-elle lui rendre ?",
+      "reponse_attendue_redige": "86",
+      "tolerance_numerique": 0,
+      "regex_validation": "^86$",
+      "explication_correcte": "Excellent ! Manuels : 4×23=92. Robes : 2×87=174. Baguette : 248. Total : 92+174+248=514. Rendu : 600-514=86 Mornilles.",
+      "indices": [
+        {"niveau": 1, "texte": "1) Calcule le prix de chaque type d'achat. 2) Additionne. 3) Soustrais du billet de 600.", "cout_points": 1},
+        {"niveau": 2, "texte": "92 (manuels) + 174 (robes) + 248 (baguette) = 514. Puis 600 - 514.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_360s",
+        "micro_etapes": [
+          {"id": "j02-e29-d1", "enonce": "Prix des 4 manuels : 4 × 23 ?", "type": "numerique", "reponse": 92},
+          {"id": "j02-e29-d2", "enonce": "Prix des 2 robes : 2 × 87 ?", "type": "numerique", "reponse": 174},
+          {"id": "j02-e29-d3", "enonce": "Total des achats : 92 + 174 + 248 ?", "type": "numerique", "reponse": 514},
+          {"id": "j02-e29-d4", "enonce": "Rendu de monnaie : 600 - 514 ?", "type": "numerique", "reponse": 86}
+        ]
+      },
+      "source_inspiration_libermann": "Épreuve problème - achats multiples avec rendu de monnaie"
+    },
+    {
+      "id": "j02-e30",
+      "ordre_jour": 30,
+      "theme": "probleme_synthese",
+      "sous_theme": "mini_probleme_libermann",
+      "scene_hp": "gringotts",
+      "narration": "Boss de fin de journée : Hagrid montre à Harry comment calculer la valeur totale d'un trésor.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème complexe type concours (multiplications + addition)",
+      "difficulte_relative": 30,
+      "duree_estimee_sec": 360,
+      "points_maison": 15,
+      "enonce": "Dans son coffre, Harry compte : 145 pièces d'or (Gallions, qui valent 17 Mornilles chacun), 86 pièces d'argent (Mornilles, qui valent 1 Mornille chacune) et 250 piécettes de bronze (Noises, qui valent... 29 Noises font 1 Mornille, mais simplifions : 1 Noise = 1 Mornille pour cet exercice). Quelle est la valeur totale du coffre exprimée en Mornilles ?",
+      "reponse_attendue_redige": "2801",
+      "tolerance_numerique": 0,
+      "regex_validation": "^2\\s*801$",
+      "explication_correcte": "Bravo, jeune sorcier ! Or : 145 × 17 = 2 465. Argent : 86 × 1 = 86. Bronze : 250 × 1 = 250. Total : 2 465 + 86 + 250 = 2 801 Mornilles.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule la valeur de chaque tas séparément, puis additionne tout.", "cout_points": 1},
+        {"niveau": 2, "texte": "145 × 17 = 2 465 (or). 86 (argent). 250 (bronze). Additionne 2 465 + 86 + 250.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_420s",
+        "micro_etapes": [
+          {"id": "j02-e30-d1", "enonce": "Valeur de l'or : 145 × 17 ?", "type": "numerique", "reponse": 2465},
+          {"id": "j02-e30-d2", "enonce": "Valeur du tas d'argent : 86 × 1 ?", "type": "numerique", "reponse": 86},
+          {"id": "j02-e30-d3", "enonce": "Valeur du tas de bronze : 250 × 1 ?", "type": "numerique", "reponse": 250},
+          {"id": "j02-e30-d4", "enonce": "Total : 2 465 + 86 + 250 ?", "type": "numerique", "reponse": 2801}
+        ]
+      },
+      "source_inspiration_libermann": "Épreuve problème - calcul de valeur totale par catégories"
+    }
+  ]
+}

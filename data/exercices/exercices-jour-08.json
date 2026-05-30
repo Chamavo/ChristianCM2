@@ -1,0 +1,1641 @@
+{
+  "jour": 8,
+  "titre": "Le grand match de Quidditch — Mesures, vitesses et durées",
+  "theme_principal": "mesures_conversions_vitesses",
+  "scene_globale": "C'est le premier match de Quidditch de Harry. Il est Attrapeur pour Gryffondor contre Serpentard. Le terrain, les balais, les durées, la poursuite du Vif d'or : tout devient mathématique.",
+  "mix_qcm_redige": "35/65",
+  "duree_estimee_min": 240,
+  "exercices": [
+    {
+      "id": "j08-e01",
+      "ordre_jour": 1,
+      "theme": "mesures",
+      "sous_theme": "conversion_longueur_m_cm",
+      "scene_hp": "terrain_quidditch",
+      "narration": "Harry mesure son balai Nimbus 2000 avant le match.",
+      "type": "qcm",
+      "competence": "Convertir des mètres en centimètres",
+      "difficulte_relative": 1,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "Le balai de Harry mesure 1,80 m. Combien cela fait-il en centimètres ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "18 cm"
+        },
+        {
+          "id": "b",
+          "texte": "180 cm"
+        },
+        {
+          "id": "c",
+          "texte": "1 800 cm"
+        },
+        {
+          "id": "d",
+          "texte": "18 000 cm"
+        }
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 1 m = 100 cm, donc 1,80 m = 180 cm.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Pour convertir des mètres en centimètres, multiplie par 100.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j08-e02",
+      "ordre_jour": 2,
+      "theme": "mesures",
+      "sous_theme": "conversion_km_m",
+      "scene_hp": "terrain_quidditch",
+      "narration": "Le terrain de Quidditch fait 200 m de long.",
+      "type": "qcm",
+      "competence": "Convertir des mètres en kilomètres",
+      "difficulte_relative": 2,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "Combien font 200 m en kilomètres ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "0,2 km"
+        },
+        {
+          "id": "b",
+          "texte": "2 km"
+        },
+        {
+          "id": "c",
+          "texte": "20 km"
+        },
+        {
+          "id": "d",
+          "texte": "0,02 km"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bien ! 1 km = 1 000 m, donc 200 m = 200/1000 = 0,2 km.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Divise par 1 000 pour passer des mètres aux kilomètres.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j08-e03",
+      "ordre_jour": 3,
+      "theme": "mesures",
+      "sous_theme": "perimetre_rectangle",
+      "scene_hp": "terrain_quidditch",
+      "narration": "Madame Bibine fait le tour du terrain en volant pour vérifier les bordures.",
+      "type": "qcm",
+      "competence": "Calculer le périmètre d'un rectangle",
+      "difficulte_relative": 3,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Le terrain de Quidditch est un rectangle de 200 m sur 60 m. Quel est son périmètre ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "260 m"
+        },
+        {
+          "id": "b",
+          "texte": "520 m"
+        },
+        {
+          "id": "c",
+          "texte": "12 000 m"
+        },
+        {
+          "id": "d",
+          "texte": "320 m"
+        }
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! Périmètre = 2 × (L + l) = 2 × (200 + 60) = 2 × 260 = 520 m.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Périmètre d'un rectangle = (Longueur + largeur) × 2.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j08-e04",
+      "ordre_jour": 4,
+      "theme": "mesures",
+      "sous_theme": "aire_rectangle",
+      "scene_hp": "terrain_quidditch",
+      "narration": "L'intendant doit recouvrir la pelouse avant le match.",
+      "type": "redige_court",
+      "competence": "Calculer l'aire d'un rectangle",
+      "difficulte_relative": 4,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Calcule l'aire du terrain de Quidditch (200 m × 60 m). Donne le résultat en m² (juste le nombre).",
+      "reponse_attendue_redige": "12000",
+      "regex_validation": "^12\\s*000$|^12000$",
+      "explication_correcte": "Parfait ! Aire = Longueur × largeur = 200 × 60 = 12 000 m².",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Aire d'un rectangle = Longueur × largeur.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j08-e05",
+      "ordre_jour": 5,
+      "theme": "mesures",
+      "sous_theme": "conversion_h_min",
+      "scene_hp": "vestiaire",
+      "narration": "Avant le match, le capitaine Olivier Dubois fait un discours de 1h15.",
+      "type": "qcm",
+      "competence": "Convertir des heures et minutes en minutes",
+      "difficulte_relative": 5,
+      "duree_estimee_sec": 45,
+      "points_maison": 3,
+      "enonce": "Combien font 1 h 15 min en minutes ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "115 min"
+        },
+        {
+          "id": "b",
+          "texte": "75 min"
+        },
+        {
+          "id": "c",
+          "texte": "175 min"
+        },
+        {
+          "id": "d",
+          "texte": "65 min"
+        }
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 1 h = 60 min, donc 1 h 15 min = 60 + 15 = 75 min.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "1 heure = 60 minutes. Ajoute les 15 minutes en plus.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j08-e06",
+      "ordre_jour": 6,
+      "theme": "mesures",
+      "sous_theme": "conversion_min_s",
+      "scene_hp": "vestiaire",
+      "narration": "Le coup de sifflet va retentir dans 2 minutes et 30 secondes.",
+      "type": "qcm",
+      "competence": "Convertir minutes/secondes en secondes",
+      "difficulte_relative": 6,
+      "duree_estimee_sec": 45,
+      "points_maison": 3,
+      "enonce": "Combien font 2 min 30 s en secondes ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "230 s"
+        },
+        {
+          "id": "b",
+          "texte": "150 s"
+        },
+        {
+          "id": "c",
+          "texte": "120 s"
+        },
+        {
+          "id": "d",
+          "texte": "250 s"
+        }
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! 1 min = 60 s, donc 2 min = 120 s, + 30 s = 150 s.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "1 minute = 60 secondes. Calcule 2 × 60 puis ajoute 30.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j08-e07",
+      "ordre_jour": 7,
+      "theme": "mesures",
+      "sous_theme": "duree_composee",
+      "scene_hp": "match_quidditch",
+      "narration": "Le match commence à 14 h 25 et dure 2 h 50 min.",
+      "type": "qcm",
+      "competence": "Calculer une heure de fin",
+      "difficulte_relative": 7,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "À quelle heure le match se termine-t-il ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "16 h 75"
+        },
+        {
+          "id": "b",
+          "texte": "17 h 15"
+        },
+        {
+          "id": "c",
+          "texte": "16 h 15"
+        },
+        {
+          "id": "d",
+          "texte": "17 h 25"
+        }
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! 14 h 25 + 2 h 50 = 16 h 75. Mais 75 min = 1 h 15 min, donc 17 h 15.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Ajoute d'abord 2 h aux heures, puis 50 min aux minutes. Attention : 75 min n'existe pas comme heure !",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "14 h + 2 h = 16 h. 25 min + 50 min = 75 min = 1 h 15 min. Donc 16 h + 1 h 15 = 17 h 15.",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {
+            "id": "j08-e07-d1",
+            "enonce": "14 h + 2 h = ?",
+            "type": "numerique",
+            "reponse": 16
+          },
+          {
+            "id": "j08-e07-d2",
+            "enonce": "25 min + 50 min = ? (en minutes)",
+            "type": "numerique",
+            "reponse": 75
+          },
+          {
+            "id": "j08-e07-d3",
+            "enonce": "75 minutes = 1 h et combien de minutes ?",
+            "type": "numerique",
+            "reponse": 15
+          },
+          {
+            "id": "j08-e07-d4",
+            "enonce": "Donc 16 h + 1 h 15 min = ?",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "17 h 15"
+              },
+              {
+                "id": "b",
+                "texte": "16 h 75"
+              }
+            ],
+            "reponse_correcte": "a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "j08-e08",
+      "ordre_jour": 8,
+      "theme": "mesures",
+      "sous_theme": "vitesse_basique",
+      "scene_hp": "match_quidditch",
+      "narration": "Harry vole sur son Nimbus à grande vitesse pour rattraper le Vif d'or.",
+      "type": "qcm",
+      "competence": "Comprendre la notion de vitesse (km/h)",
+      "difficulte_relative": 8,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Harry parcourt 60 km en 1 heure. Quelle est sa vitesse ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "60 km/h"
+        },
+        {
+          "id": "b",
+          "texte": "6 km/h"
+        },
+        {
+          "id": "c",
+          "texte": "600 km/h"
+        },
+        {
+          "id": "d",
+          "texte": "1 km/h"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Exact ! Vitesse = distance / temps. 60 km en 1 h = 60 km/h.",
+      "indices": []
+    },
+    {
+      "id": "j08-e09",
+      "ordre_jour": 9,
+      "theme": "mesures",
+      "sous_theme": "vitesse_distance_temps",
+      "scene_hp": "match_quidditch",
+      "narration": "Le Vif d'or file à toute allure.",
+      "type": "qcm",
+      "competence": "Calculer une distance à partir de la vitesse et du temps",
+      "difficulte_relative": 9,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Le Vif d'or vole à 120 km/h. Combien de kilomètres parcourt-il en 30 minutes ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "30 km"
+        },
+        {
+          "id": "b",
+          "texte": "60 km"
+        },
+        {
+          "id": "c",
+          "texte": "120 km"
+        },
+        {
+          "id": "d",
+          "texte": "240 km"
+        }
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! 30 min = 1/2 h, donc 120 × 1/2 = 60 km.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "30 minutes = la moitié d'une heure.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Distance = vitesse × temps. Ici : 120 km/h × 0,5 h = ?",
+          "cout_points": 2
+        }
+      ]
+    },
+    {
+      "id": "j08-e10",
+      "ordre_jour": 10,
+      "theme": "mesures",
+      "sous_theme": "vitesse_km_h_m_s",
+      "scene_hp": "match_quidditch",
+      "narration": "Hermione, calculatrice, veut savoir la vitesse de Harry en mètres par seconde.",
+      "type": "qcm",
+      "competence": "Convertir km/h en m/s (approximation simple)",
+      "difficulte_relative": 10,
+      "duree_estimee_sec": 90,
+      "points_maison": 6,
+      "enonce": "Harry vole à 72 km/h. Combien cela fait-il en mètres par seconde (m/s) ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "20 m/s"
+        },
+        {
+          "id": "b",
+          "texte": "10 m/s"
+        },
+        {
+          "id": "c",
+          "texte": "72 m/s"
+        },
+        {
+          "id": "d",
+          "texte": "2 m/s"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Excellent ! Pour passer de km/h à m/s, on divise par 3,6. 72 ÷ 3,6 = 20 m/s.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "1 km = 1 000 m et 1 h = 3 600 s. Donc 1 km/h = 1000/3600 m/s ≈ 1/3,6 m/s.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Divise 72 par 3,6 pour obtenir le résultat en m/s.",
+          "cout_points": 2
+        }
+      ]
+    },
+    {
+      "id": "j08-e11",
+      "ordre_jour": 11,
+      "theme": "mesures",
+      "sous_theme": "vitesse_moyenne",
+      "scene_hp": "match_quidditch",
+      "narration": "Le compteur du balai de Harry indique sa distance totale.",
+      "type": "redige_court",
+      "competence": "Calculer une vitesse moyenne à partir d'une durée composée",
+      "difficulte_relative": 11,
+      "duree_estimee_sec": 180,
+      "points_maison": 7,
+      "enonce": "Harry a parcouru 45 km en 1 h 30 min. Calcule sa vitesse moyenne en km/h. (Juste le nombre)",
+      "reponse_attendue_redige": "30",
+      "tolerance_numerique": 0,
+      "regex_validation": "^30$",
+      "explication_correcte": "Bien joué ! 1 h 30 min = 1,5 h. Vitesse = 45 ÷ 1,5 = 30 km/h.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "D'abord convertis 1 h 30 min en heures décimales (hint : 30 min = 0,5 h).",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "1 h 30 = 1,5 h. Maintenant : vitesse = distance ÷ temps = 45 ÷ 1,5 = ?",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {
+            "id": "j08-e11-d1",
+            "enonce": "Convertis 1 h 30 min en heures décimales.",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "1,5 h"
+              },
+              {
+                "id": "b",
+                "texte": "1,3 h"
+              },
+              {
+                "id": "c",
+                "texte": "1,30 h"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j08-e11-d2",
+            "enonce": "Calcule 45 ÷ 1,5 = ?",
+            "type": "numerique",
+            "reponse": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "j08-e12",
+      "ordre_jour": 12,
+      "theme": "mesures",
+      "sous_theme": "masse_conversion",
+      "scene_hp": "vestiaire",
+      "narration": "Madame Pomfresh pèse Harry avant le match : il a pris du poids depuis la rentrée.",
+      "type": "qcm",
+      "competence": "Convertir kg en g",
+      "difficulte_relative": 12,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Harry pèse 38,5 kg. Combien cela fait-il en grammes ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "385 g"
+        },
+        {
+          "id": "b",
+          "texte": "3 850 g"
+        },
+        {
+          "id": "c",
+          "texte": "38 500 g"
+        },
+        {
+          "id": "d",
+          "texte": "385 000 g"
+        }
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bien ! 1 kg = 1 000 g, donc 38,5 × 1 000 = 38 500 g.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Pour passer des kg aux g, multiplie par 1 000 (décale la virgule de 3 rangs vers la droite).",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j08-e13",
+      "ordre_jour": 13,
+      "theme": "mesures",
+      "sous_theme": "capacite_volume",
+      "scene_hp": "salle_commune_gryffondor",
+      "narration": "Après la victoire, la salle commune fête avec des cruches de jus de citrouille.",
+      "type": "qcm",
+      "competence": "Convertir litres en centilitres",
+      "difficulte_relative": 13,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Une cruche contient 2,5 L de jus de citrouille. Combien cela fait-il en centilitres ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "25 cL"
+        },
+        {
+          "id": "b",
+          "texte": "250 cL"
+        },
+        {
+          "id": "c",
+          "texte": "2 500 cL"
+        },
+        {
+          "id": "d",
+          "texte": "25 000 cL"
+        }
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 1 L = 100 cL, donc 2,5 × 100 = 250 cL.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "1 L = 100 cL. Multiplie par 100.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j08-e14",
+      "ordre_jour": 14,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_vitesse_2_etapes",
+      "scene_hp": "match_quidditch",
+      "narration": "Hermione veut tout calculer : combien Harry parcourt-il sur tout le match ?",
+      "type": "redige_court",
+      "competence": "Problème à 2 étapes : durée → temps en h → distance",
+      "difficulte_relative": 14,
+      "duree_estimee_sec": 240,
+      "points_maison": 8,
+      "enonce": "Le match dure 2 h 15 min. Harry vole à une vitesse moyenne de 40 km/h. Quelle distance a-t-il parcourue à la fin du match ? (En km, juste le nombre. Tu peux donner un nombre décimal.)",
+      "reponse_attendue_redige": "90",
+      "tolerance_numerique": 0.5,
+      "regex_validation": "^90$|^90,0$|^90\\.0$",
+      "explication_correcte": "Excellent ! 2 h 15 min = 2,25 h. Distance = 40 × 2,25 = 90 km.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Étape 1 : convertis 2 h 15 min en heures décimales (15 min = 0,25 h).",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Étape 1 : 2 h 15 min = 2,25 h. Étape 2 : distance = vitesse × temps = 40 × 2,25 = ?",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {
+            "id": "j08-e14-d1",
+            "enonce": "15 minutes représente quelle fraction d'une heure (en décimal) ?",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "0,25 h"
+              },
+              {
+                "id": "b",
+                "texte": "0,15 h"
+              },
+              {
+                "id": "c",
+                "texte": "0,5 h"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j08-e14-d2",
+            "enonce": "Donc 2 h 15 min = ?",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "2,25 h"
+              },
+              {
+                "id": "b",
+                "texte": "2,15 h"
+              },
+              {
+                "id": "c",
+                "texte": "2,5 h"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j08-e14-d3",
+            "enonce": "Calcule 40 × 2,25 = ?",
+            "type": "numerique",
+            "reponse": 90
+          }
+        ]
+      }
+    },
+    {
+      "id": "j08-e15",
+      "ordre_jour": 15,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_libermann_complet",
+      "scene_hp": "tour_gryffondor",
+      "narration": "Mini-épreuve type Libermann. Tu maîtrises toutes les mesures maintenant — montre-le.",
+      "type": "redige_libre",
+      "competence": "Problème multi-étapes avec conversions, vitesse et durée",
+      "difficulte_relative": 15,
+      "duree_estimee_sec": 360,
+      "points_maison": 10,
+      "enonce": "Harry et Ron quittent Pré-au-Lard à 8 h 45 sur leurs balais. Ils volent à 36 km/h et arrivent à Poudlard à 9 h 25. 1) Combien de temps a duré le trajet ? (en min) 2) Quelle distance ont-ils parcourue ? (en km)",
+      "reponse_attendue_redige": "40 min ; 24 km",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "Le trajet dure 40 minutes (9h25 - 8h45)",
+        "40 min = 40/60 h = 2/3 h ≈ 0,667 h",
+        "Distance = 36 × 2/3 = 24 km",
+        "Accepter aussi : 'durée 40 min, distance 24 km'"
+      ],
+      "explication_correcte": "Parfait ! Trajet : 9h25 - 8h45 = 40 min. Distance : 40 min = 40/60 h ; 36 × 40/60 = 1440/60 = 24 km.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Étape 1 : calcule la durée du trajet (différence d'heures).",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Étape 2 : convertis la durée en heures (décimales ou fraction), puis multiplie par la vitesse.",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_360s",
+        "micro_etapes": [
+          {
+            "id": "j08-e15-d1",
+            "enonce": "Combien y a-t-il entre 8 h 45 et 9 h 25 ? (en minutes)",
+            "type": "numerique",
+            "reponse": 40
+          },
+          {
+            "id": "j08-e15-d2",
+            "enonce": "Convertis 40 min en heures (sous forme de fraction simple).",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "2/3 h"
+              },
+              {
+                "id": "b",
+                "texte": "4/10 h"
+              },
+              {
+                "id": "c",
+                "texte": "40 h"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j08-e15-d3",
+            "enonce": "Distance = 36 km/h × 2/3 h = ?",
+            "type": "numerique",
+            "reponse": 24
+          }
+        ]
+      }
+    },
+    {
+      "id": "j08-e16",
+      "ordre_jour": 16,
+      "theme": "mesures",
+      "sous_theme": "vitesse_moyenne_duree_composee",
+      "scene_hp": "match_quidditch",
+      "narration": "Lors du dernier entraînement, Harry a parcouru 50 km en 1 h 15 min, en plusieurs allers-retours sur le terrain.",
+      "type": "redige_court",
+      "competence": "Calculer une vitesse moyenne avec durée composée (h + min)",
+      "difficulte_relative": 16,
+      "duree_estimee_sec": 180,
+      "points_maison": 7,
+      "enonce": "Quelle est la vitesse moyenne de Harry pendant cet entraînement, en km/h ? (Juste le nombre)",
+      "reponse_attendue_redige": "40",
+      "tolerance_numerique": 0,
+      "regex_validation": "^40$",
+      "explication_correcte": "Bravo ! 1 h 15 min = 1,25 h. Vitesse = 50 ÷ 1,25 = 40 km/h.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Convertis d'abord 1 h 15 min en heures décimales. Hint : 15 min = 0,25 h.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "1 h 15 min = 1,25 h. Vitesse = distance ÷ temps = 50 ÷ 1,25.",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {
+            "id": "j08-e16-d1",
+            "enonce": "15 min = combien d'heure (en décimal) ?",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "0,25 h"
+              },
+              {
+                "id": "b",
+                "texte": "0,15 h"
+              },
+              {
+                "id": "c",
+                "texte": "0,5 h"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j08-e16-d2",
+            "enonce": "Donc 1 h 15 min = ?",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "1,25 h"
+              },
+              {
+                "id": "b",
+                "texte": "1,15 h"
+              },
+              {
+                "id": "c",
+                "texte": "1,5 h"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j08-e16-d3",
+            "enonce": "Calcule 50 ÷ 1,25 = ?",
+            "type": "numerique",
+            "reponse": 40
+          }
+        ]
+      }
+    },
+    {
+      "id": "j08-e17",
+      "ordre_jour": 17,
+      "theme": "mesures",
+      "sous_theme": "conversion_min_s_composee",
+      "scene_hp": "match_quidditch",
+      "narration": "La dernière poursuite du Vif d'or a duré 12 min 45 s, montre en main.",
+      "type": "redige_court",
+      "competence": "Convertir une durée composée min/s en secondes",
+      "difficulte_relative": 17,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Combien de secondes a duré la poursuite ? Convertis 12 min 45 s en secondes. (Juste le nombre)",
+      "reponse_attendue_redige": "765",
+      "tolerance_numerique": 0,
+      "regex_validation": "^765$",
+      "explication_correcte": "Bien ! 12 min = 12 × 60 = 720 s. 720 + 45 = 765 s.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "1 minute = 60 secondes. Calcule d'abord les secondes des minutes, puis ajoute.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "12 × 60 = 720 s. Puis 720 + 45 = ?",
+          "cout_points": 2
+        }
+      ]
+    },
+    {
+      "id": "j08-e18",
+      "ordre_jour": 18,
+      "theme": "mesures",
+      "sous_theme": "conversion_km_h_m_s",
+      "scene_hp": "match_quidditch",
+      "narration": "Drago Malefoy se vante : son nouveau balai atteint 108 km/h en pointe.",
+      "type": "redige_court",
+      "competence": "Convertir km/h en m/s",
+      "difficulte_relative": 18,
+      "duree_estimee_sec": 120,
+      "points_maison": 6,
+      "enonce": "Convertis 108 km/h en m/s. (Juste le nombre)",
+      "reponse_attendue_redige": "30",
+      "tolerance_numerique": 0,
+      "regex_validation": "^30$",
+      "explication_correcte": "Excellent ! Pour passer de km/h à m/s, on divise par 3,6. Donc 108 ÷ 3,6 = 30 m/s.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Pour convertir km/h en m/s, divise par 3,6.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "108 ÷ 3,6 = ? Astuce : 108 ÷ 3,6 = 1080 ÷ 36 = 30.",
+          "cout_points": 2
+        }
+      ]
+    },
+    {
+      "id": "j08-e19",
+      "ordre_jour": 19,
+      "theme": "mesures",
+      "sous_theme": "vitesse_distance_m_s",
+      "scene_hp": "match_quidditch",
+      "narration": "Le Vif d'or fonce à 25 m/s en ligne droite vers les buts.",
+      "type": "redige_court",
+      "competence": "Calculer une distance à partir d'une vitesse en m/s et d'une durée en minutes",
+      "difficulte_relative": 19,
+      "duree_estimee_sec": 180,
+      "points_maison": 7,
+      "enonce": "À cette vitesse, quelle distance parcourt-il en 2 minutes ? (En mètres, juste le nombre)",
+      "reponse_attendue_redige": "3000",
+      "tolerance_numerique": 0,
+      "regex_validation": "^3\\s*000$|^3000$",
+      "explication_correcte": "Bravo ! 2 min = 120 s. Distance = 25 × 120 = 3 000 m (soit 3 km).",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "La vitesse est en m/s, donc convertis d'abord 2 minutes en secondes.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "2 min = 120 s. Distance = vitesse × temps = 25 × 120 = ?",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {
+            "id": "j08-e19-d1",
+            "enonce": "Convertis 2 min en secondes.",
+            "type": "numerique",
+            "reponse": 120
+          },
+          {
+            "id": "j08-e19-d2",
+            "enonce": "Distance = 25 m/s × 120 s = ?",
+            "type": "numerique",
+            "reponse": 3000
+          }
+        ]
+      }
+    },
+    {
+      "id": "j08-e20",
+      "ordre_jour": 20,
+      "theme": "mesures",
+      "sous_theme": "perimetre_tours",
+      "scene_hp": "terrain_quidditch",
+      "narration": "Madame Bibine décide de faire 5 tours complets autour du terrain (200 m × 60 m) pour s'échauffer.",
+      "type": "redige_court",
+      "competence": "Périmètre × nombre de tours",
+      "difficulte_relative": 20,
+      "duree_estimee_sec": 150,
+      "points_maison": 6,
+      "enonce": "Quelle distance totale parcourt-elle ? (En mètres, juste le nombre)",
+      "reponse_attendue_redige": "2600",
+      "tolerance_numerique": 0,
+      "regex_validation": "^2\\s*600$|^2600$",
+      "explication_correcte": "Bien ! Périmètre = 2 × (200 + 60) = 520 m. 5 tours : 520 × 5 = 2 600 m.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Étape 1 : calcule le périmètre du terrain. Étape 2 : multiplie par 5.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Périmètre = 2 × (200 + 60) = 520 m. Distance totale = 520 × 5 = ?",
+          "cout_points": 2
+        }
+      ]
+    },
+    {
+      "id": "j08-e21",
+      "ordre_jour": 21,
+      "theme": "mesures",
+      "sous_theme": "distance_vitesse_duree_composee",
+      "scene_hp": "match_quidditch",
+      "narration": "Le Vif d'or zigzague à 90 km/h pendant 40 minutes avant que Harry ne le rattrape enfin.",
+      "type": "redige_court",
+      "competence": "Calculer une distance avec durée en minutes (conversion fraction d'heure)",
+      "difficulte_relative": 21,
+      "duree_estimee_sec": 180,
+      "points_maison": 7,
+      "enonce": "Quelle distance le Vif d'or a-t-il parcourue pendant ces 40 minutes ? (En km, juste le nombre)",
+      "reponse_attendue_redige": "60",
+      "tolerance_numerique": 0,
+      "regex_validation": "^60$",
+      "explication_correcte": "Excellent ! 40 min = 40/60 h = 2/3 h. Distance = 90 × 2/3 = 60 km.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Convertis 40 min en fraction d'heure.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "40 min = 40/60 h = 2/3 h. Distance = 90 × 2/3 = 180/3 = ?",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {
+            "id": "j08-e21-d1",
+            "enonce": "Convertis 40 min en fraction d'heure simplifiée.",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "2/3 h"
+              },
+              {
+                "id": "b",
+                "texte": "4/10 h"
+              },
+              {
+                "id": "c",
+                "texte": "1/2 h"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j08-e21-d2",
+            "enonce": "Calcule 90 × 2/3.",
+            "type": "numerique",
+            "reponse": 60
+          }
+        ]
+      }
+    },
+    {
+      "id": "j08-e22",
+      "ordre_jour": 22,
+      "theme": "mesures",
+      "sous_theme": "masse_conversion_addition",
+      "scene_hp": "vestiaire",
+      "narration": "Avant le match, Madame Pomfresh pèse l'équipement de Harry. Le balai pèse 4 500 g. La tenue (cape, gants, casque) pèse 2,5 kg.",
+      "type": "qcm",
+      "competence": "Convertir et additionner des masses",
+      "difficulte_relative": 22,
+      "duree_estimee_sec": 120,
+      "points_maison": 6,
+      "enonce": "Quelle est la masse totale de l'équipement de Harry, en kilogrammes ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "7 kg"
+        },
+        {
+          "id": "b",
+          "texte": "6,5 kg"
+        },
+        {
+          "id": "c",
+          "texte": "4 502,5 kg"
+        },
+        {
+          "id": "d",
+          "texte": "7,5 kg"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bravo ! 4 500 g = 4,5 kg. Total = 4,5 + 2,5 = 7 kg.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "D'abord, convertis 4 500 g en kg (divise par 1 000).",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "4 500 g = 4,5 kg. Puis 4,5 + 2,5 = ?",
+          "cout_points": 2
+        }
+      ]
+    },
+    {
+      "id": "j08-e23",
+      "ordre_jour": 23,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_distance_vitesse_2_etapes",
+      "scene_hp": "match_quidditch",
+      "narration": "Harry vole à 36 km/h pour rattraper le Souafle. La cible est à 18 km.",
+      "type": "redige_court",
+      "competence": "Problème à 2 étapes : durée en heures → conversion en min",
+      "difficulte_relative": 23,
+      "duree_estimee_sec": 210,
+      "points_maison": 7,
+      "enonce": "Combien de temps Harry met-il pour atteindre le Souafle ? (En minutes, juste le nombre)",
+      "reponse_attendue_redige": "30",
+      "tolerance_numerique": 0,
+      "regex_validation": "^30$",
+      "explication_correcte": "Bravo ! Temps = distance ÷ vitesse = 18 ÷ 36 = 0,5 h = 30 min.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Étape 1 : Temps = distance ÷ vitesse. Tu obtiendras un temps en heures. Étape 2 : convertis en minutes.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "18 ÷ 36 = 0,5 h. Puis 0,5 h = 0,5 × 60 = ? min.",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {
+            "id": "j08-e23-d1",
+            "enonce": "Calcule 18 ÷ 36 (en heures).",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "0,5 h"
+              },
+              {
+                "id": "b",
+                "texte": "2 h"
+              },
+              {
+                "id": "c",
+                "texte": "1,5 h"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j08-e23-d2",
+            "enonce": "Convertis 0,5 h en minutes.",
+            "type": "numerique",
+            "reponse": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "j08-e24",
+      "ordre_jour": 24,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_distance_2_etapes",
+      "scene_hp": "match_quidditch",
+      "narration": "Harry vole à 24 km/h pendant 45 minutes pour patrouiller dans son camp, puis accélère pour rattraper le Vif d'or.",
+      "type": "redige_court",
+      "competence": "Distance parcourue durant une durée composée",
+      "difficulte_relative": 24,
+      "duree_estimee_sec": 210,
+      "points_maison": 8,
+      "enonce": "Quelle distance Harry a-t-il parcourue durant ces 45 minutes de patrouille ? (En km, juste le nombre)",
+      "reponse_attendue_redige": "18",
+      "tolerance_numerique": 0,
+      "regex_validation": "^18$",
+      "explication_correcte": "Bravo ! 45 min = 45/60 h = 3/4 h = 0,75 h. Distance = 24 × 0,75 = 18 km.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Convertis 45 min en heures (fraction ou décimal).",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "45 min = 3/4 h = 0,75 h. Distance = 24 × 0,75 = ?",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_270s",
+        "micro_etapes": [
+          {
+            "id": "j08-e24-d1",
+            "enonce": "Convertis 45 min en heures.",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "0,75 h"
+              },
+              {
+                "id": "b",
+                "texte": "0,45 h"
+              },
+              {
+                "id": "c",
+                "texte": "0,5 h"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j08-e24-d2",
+            "enonce": "Calcule 24 × 0,75 = ?",
+            "type": "numerique",
+            "reponse": 18
+          }
+        ]
+      }
+    },
+    {
+      "id": "j08-e25",
+      "ordre_jour": 25,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_vitesse_double_conversion",
+      "scene_hp": "tour_astronomie",
+      "narration": "Pour gagner du temps, Harry plonge en piqué vertical du haut de la tour d'astronomie : il descend 90 mètres en 6 secondes !",
+      "type": "redige_libre",
+      "competence": "Calculer une vitesse en m/s puis convertir en km/h",
+      "difficulte_relative": 25,
+      "duree_estimee_sec": 270,
+      "points_maison": 9,
+      "enonce": "1) Quelle est la vitesse moyenne de Harry pendant le piqué, en m/s ? 2) Combien cela fait-il en km/h ?",
+      "reponse_attendue_redige": "1) 15 m/s ; 2) 54 km/h",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "1) Vitesse = 90 / 6 = 15 m/s",
+        "2) Pour passer de m/s à km/h, on multiplie par 3,6 : 15 × 3,6 = 54 km/h",
+        "Accepter : '15 m/s et 54 km/h', '15 ; 54', etc."
+      ],
+      "explication_correcte": "Excellent ! 1) Vitesse = 90 m ÷ 6 s = 15 m/s. 2) Pour passer de m/s à km/h, on multiplie par 3,6 : 15 × 3,6 = 54 km/h.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "1) Vitesse = distance ÷ temps. 2) Pour passer de m/s à km/h, multiplie par 3,6.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "1) 90 ÷ 6 = 15 m/s. 2) 15 × 3,6 = ?",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {
+            "id": "j08-e25-d1",
+            "enonce": "Calcule la vitesse en m/s : 90 ÷ 6 = ?",
+            "type": "numerique",
+            "reponse": 15
+          },
+          {
+            "id": "j08-e25-d2",
+            "enonce": "Maintenant convertis 15 m/s en km/h (multiplie par 3,6).",
+            "type": "numerique",
+            "reponse": 54
+          }
+        ]
+      }
+    },
+    {
+      "id": "j08-e26",
+      "ordre_jour": 26,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_aire_consommation",
+      "scene_hp": "terrain_quidditch",
+      "narration": "L'intendant doit traiter toute la pelouse du terrain (200 m × 60 m). Un sac d'engrais magique couvre 80 m² et coûte 7 Gallions.",
+      "type": "redige_libre",
+      "competence": "Problème : aire → nombre d'unités → coût total",
+      "difficulte_relative": 26,
+      "duree_estimee_sec": 300,
+      "points_maison": 10,
+      "enonce": "1) Combien de sacs d'engrais sont nécessaires pour couvrir tout le terrain ? 2) Quel est le coût total ?",
+      "reponse_attendue_redige": "1) 150 sacs ; 2) 1 050 Gallions",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "Aire du terrain = 200 × 60 = 12 000 m²",
+        "1) Nombre de sacs = 12 000 / 80 = 150 sacs",
+        "2) Coût = 150 × 7 = 1 050 Gallions",
+        "Accepter : '150 ; 1050', '150 sacs et 1050 G', etc."
+      ],
+      "explication_correcte": "Bravo ! Aire = 200 × 60 = 12 000 m². 1) Sacs nécessaires = 12 000 ÷ 80 = 150 sacs. 2) Coût = 150 × 7 = 1 050 Gallions.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Étape 0 : calcule l'aire du terrain. Étape 1 : divise par 80. Étape 2 : multiplie par 7.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Aire = 12 000 m². Sacs = 12 000 ÷ 80 = 150. Coût = 150 × 7 = ?",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_360s",
+        "micro_etapes": [
+          {
+            "id": "j08-e26-d1",
+            "enonce": "Calcule l'aire du terrain (200 × 60).",
+            "type": "numerique",
+            "reponse": 12000
+          },
+          {
+            "id": "j08-e26-d2",
+            "enonce": "Combien de sacs ? (12 000 ÷ 80)",
+            "type": "numerique",
+            "reponse": 150
+          },
+          {
+            "id": "j08-e26-d3",
+            "enonce": "Coût total : 150 × 7 = ?",
+            "type": "numerique",
+            "reponse": 1050
+          }
+        ]
+      }
+    },
+    {
+      "id": "j08-e27",
+      "ordre_jour": 27,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_duree_horaire_fin",
+      "scene_hp": "match_quidditch",
+      "narration": "Le match débute à 13 h 45. La rencontre dure 1 h 30 min, suivie de prolongations de 25 minutes après le but litigieux de Drago.",
+      "type": "redige_court",
+      "competence": "Additionner des durées et calculer une heure de fin",
+      "difficulte_relative": 27,
+      "duree_estimee_sec": 240,
+      "points_maison": 8,
+      "enonce": "À quelle heure le match se termine-t-il ? (Réponse au format HHhMM, ex: 15h40)",
+      "reponse_attendue_redige": "15h40",
+      "regex_validation": "^15\\s*h\\s*40$",
+      "explication_correcte": "Excellent ! Durée totale = 1 h 30 + 25 min = 1 h 55. Fin = 13 h 45 + 1 h 55 = 14 h + 1 h 40 = 15 h 40.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Étape 1 : ajoute les durées (1 h 30 + 25 min). Étape 2 : ajoute à 13 h 45.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Durée totale = 1 h 55. 13 h 45 + 1 h 55 : ajoute 1 h (→ 14 h 45), puis 55 min (→ 14 h 100 min = 15 h 40).",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {
+            "id": "j08-e27-d1",
+            "enonce": "Quelle est la durée totale du match (1 h 30 + 25 min) ? (en minutes)",
+            "type": "numerique",
+            "reponse": 115
+          },
+          {
+            "id": "j08-e27-d2",
+            "enonce": "115 min = 1 h et combien de minutes ?",
+            "type": "numerique",
+            "reponse": 55
+          },
+          {
+            "id": "j08-e27-d3",
+            "enonce": "Heure de fin : 13 h 45 + 1 h 55 = ?",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "15 h 40"
+              },
+              {
+                "id": "b",
+                "texte": "14 h 100"
+              },
+              {
+                "id": "c",
+                "texte": "15 h 00"
+              }
+            ],
+            "reponse_correcte": "a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "j08-e28",
+      "ordre_jour": 28,
+      "theme": "probleme_synthese",
+      "sous_theme": "conversion_s_h_min_s",
+      "scene_hp": "match_quidditch",
+      "narration": "Le chronomètre magique de Madame Bibine indique que le match a duré 7 560 secondes en tout.",
+      "type": "redige_libre",
+      "competence": "Convertir des secondes en h-min-s",
+      "difficulte_relative": 28,
+      "duree_estimee_sec": 240,
+      "points_maison": 8,
+      "enonce": "Convertis 7 560 secondes en heures, minutes et secondes. Écris ta réponse sous la forme : X h Y min Z s.",
+      "reponse_attendue_redige": "2 h 6 min 0 s",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "7 560 ÷ 3 600 = 2 heures avec un reste de 7 560 − 7 200 = 360 secondes",
+        "360 secondes = 6 minutes (360 ÷ 60 = 6) avec 0 seconde restante",
+        "Donc 7 560 s = 2 h 6 min 0 s",
+        "Accepter : '2h6min', '2h 6min', '2 h 06 min', etc."
+      ],
+      "explication_correcte": "Bravo ! 7 560 ÷ 3 600 = 2 h, reste 360 s. 360 ÷ 60 = 6 min, reste 0 s. Donc 7 560 s = 2 h 6 min 0 s.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "1 h = 3 600 s. Divise d'abord par 3 600 pour avoir les heures, puis convertis le reste.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "7 560 ÷ 3 600 = 2 (reste 360). Puis 360 ÷ 60 = 6 min (reste 0).",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {
+            "id": "j08-e28-d1",
+            "enonce": "Combien y a-t-il de secondes dans 1 heure ?",
+            "type": "numerique",
+            "reponse": 3600
+          },
+          {
+            "id": "j08-e28-d2",
+            "enonce": "Combien de fois 3 600 entre dans 7 560 ?",
+            "type": "numerique",
+            "reponse": 2
+          },
+          {
+            "id": "j08-e28-d3",
+            "enonce": "Quel est le reste après avoir enlevé 2 heures ? (7 560 − 7 200)",
+            "type": "numerique",
+            "reponse": 360
+          },
+          {
+            "id": "j08-e28-d4",
+            "enonce": "360 secondes = combien de minutes ?",
+            "type": "numerique",
+            "reponse": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "j08-e29",
+      "ordre_jour": 29,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_libermann_vitesse_complet",
+      "scene_hp": "match_quidditch",
+      "narration": "Mini-épreuve type Libermann. Harry s'entraîne à différentes vitesses. Premier exercice : il parcourt 12 km en 20 minutes.",
+      "type": "redige_libre",
+      "competence": "Problème multi-étapes vitesse/distance/temps (3 sous-questions)",
+      "difficulte_relative": 29,
+      "duree_estimee_sec": 420,
+      "points_maison": 13,
+      "enonce": "a) Quelle est la vitesse moyenne de Harry sur ce trajet, en km/h ? b) Pour le second exercice, Harry double sa vitesse. Quelle distance parcourt-il alors en 1 heure ? c) À cette nouvelle vitesse, combien de temps lui faut-il pour parcourir 90 km ? (Réponse en h et min)",
+      "reponse_attendue_redige": "a) 36 km/h ; b) 72 km ; c) 1 h 15 min",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 20 min = 1/3 h. Vitesse = 12 ÷ (1/3) = 12 × 3 = 36 km/h",
+        "b) Double = 72 km/h. En 1 h, il parcourt donc 72 km",
+        "c) Temps = 90 ÷ 72 = 1,25 h = 1 h 15 min",
+        "Accepter : '36 / 72 / 1h15', '36 km/h, 72 km, 1h15 min'"
+      ],
+      "explication_correcte": "Bravo ! a) 20 min = 1/3 h ; v = 12 ÷ (1/3) = 36 km/h. b) Double = 72 km/h, donc 72 km en 1 h. c) 90 ÷ 72 = 1,25 h = 1 h 15 min.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "a) Vitesse = distance/temps (attention à convertir 20 min en heures). b) Multiplie la vitesse par 2 et par 1 h. c) Temps = distance/vitesse (puis convertis en h et min).",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "a) 20 min = 1/3 h ; 12 ÷ 1/3 = 36. b) 36 × 2 = 72 km/h. c) 90 ÷ 72 = 1,25 h.",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_420s",
+        "micro_etapes": [
+          {
+            "id": "j08-e29-d1",
+            "enonce": "Convertis 20 min en heures (fraction).",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "1/3 h"
+              },
+              {
+                "id": "b",
+                "texte": "0,2 h"
+              },
+              {
+                "id": "c",
+                "texte": "20 h"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j08-e29-d2",
+            "enonce": "Calcule la vitesse : 12 ÷ (1/3) = ?",
+            "type": "numerique",
+            "reponse": 36
+          },
+          {
+            "id": "j08-e29-d3",
+            "enonce": "Si Harry double cette vitesse, quelle est sa nouvelle vitesse ?",
+            "type": "numerique",
+            "reponse": 72
+          },
+          {
+            "id": "j08-e29-d4",
+            "enonce": "À 72 km/h, en 1 h il parcourt combien de km ?",
+            "type": "numerique",
+            "reponse": 72
+          },
+          {
+            "id": "j08-e29-d5",
+            "enonce": "Calcule 90 ÷ 72 (en heures décimales).",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "1,25 h"
+              },
+              {
+                "id": "b",
+                "texte": "1,5 h"
+              },
+              {
+                "id": "c",
+                "texte": "0,8 h"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j08-e29-d6",
+            "enonce": "1,25 h = combien d'h et de minutes ?",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "1 h 15 min"
+              },
+              {
+                "id": "b",
+                "texte": "1 h 25 min"
+              },
+              {
+                "id": "c",
+                "texte": "1 h 5 min"
+              }
+            ],
+            "reponse_correcte": "a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "j08-e30",
+      "ordre_jour": 30,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_libermann_poursuite_vif_or",
+      "scene_hp": "match_quidditch",
+      "narration": "Mini-épreuve finale type Libermann. C'est la grande poursuite ! Le Vif d'or file à 25 m/s pendant 4 minutes avant que Harry ne le voie. Harry, à 90 km/h, s'élance pour le rattraper.",
+      "type": "redige_libre",
+      "competence": "Problème multi-étapes complexe : conversions m/s ↔ km/h et calcul de durée",
+      "difficulte_relative": 30,
+      "duree_estimee_sec": 480,
+      "points_maison": 15,
+      "enonce": "a) Quelle distance le Vif d'or a-t-il parcourue pendant ces 4 minutes ? (en mètres puis en km) b) Convertis la vitesse du Vif d'or (25 m/s) en km/h. c) Une fois lancé, Harry vole à 90 km/h et doit parcourir 6 km pour rejoindre l'endroit où se trouve le Vif d'or. Combien de minutes lui faut-il ? (On suppose que le Vif d'or s'arrête là.)",
+      "reponse_attendue_redige": "a) 6 000 m soit 6 km ; b) 90 km/h ; c) 4 min",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 4 min = 240 s ; distance = 25 × 240 = 6 000 m = 6 km",
+        "b) 25 m/s × 3,6 = 90 km/h",
+        "c) Temps = 6 km ÷ 90 km/h = 6/90 h = 1/15 h = 60/15 min = 4 min",
+        "Accepter : '6000 m / 6 km / 90 km/h / 4 min', etc."
+      ],
+      "explication_correcte": "Bravo champion ! a) 4 min = 240 s ; 25 × 240 = 6 000 m = 6 km. b) 25 × 3,6 = 90 km/h (étonnant : ils volent à la même vitesse !). c) 6 ÷ 90 = 1/15 h = 60/15 = 4 min. Tu es prêt pour le concours Libermann !",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "a) Convertis 4 min en secondes, puis distance = vitesse × temps. b) m/s → km/h : multiplie par 3,6. c) Temps = distance ÷ vitesse, puis convertis en minutes.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "a) 25 × 240 = 6 000 m = 6 km. b) 25 × 3,6 = 90 km/h. c) 6 ÷ 90 = 1/15 h, et 1/15 × 60 = 4 min.",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_480s",
+        "micro_etapes": [
+          {
+            "id": "j08-e30-d1",
+            "enonce": "Convertis 4 minutes en secondes.",
+            "type": "numerique",
+            "reponse": 240
+          },
+          {
+            "id": "j08-e30-d2",
+            "enonce": "Distance parcourue par le Vif d'or : 25 × 240 = ? (en m)",
+            "type": "numerique",
+            "reponse": 6000
+          },
+          {
+            "id": "j08-e30-d3",
+            "enonce": "Convertis 6 000 m en km.",
+            "type": "numerique",
+            "reponse": 6
+          },
+          {
+            "id": "j08-e30-d4",
+            "enonce": "Convertis 25 m/s en km/h (multiplie par 3,6).",
+            "type": "numerique",
+            "reponse": 90
+          },
+          {
+            "id": "j08-e30-d5",
+            "enonce": "Temps de Harry pour 6 km à 90 km/h : 6 ÷ 90 = ? (en heures, sous forme décimale ou fraction)",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "1/15 h"
+              },
+              {
+                "id": "b",
+                "texte": "1/10 h"
+              },
+              {
+                "id": "c",
+                "texte": "1/6 h"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j08-e30-d6",
+            "enonce": "1/15 h = combien de minutes ? (×60)",
+            "type": "numerique",
+            "reponse": 4
+          }
+        ]
+      }
+    }
+  ]
+}

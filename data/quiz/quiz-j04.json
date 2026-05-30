@@ -1,0 +1,73 @@
+{
+  "id": "quiz-j04",
+  "jour": 4,
+  "titre": "Quiz Libermann J4 — Le Cachot des Potions",
+  "duree_min": 45,
+  "note_max": 20,
+  "themes_couverts": [
+    "division posee",
+    "proportionnalite",
+    "regle de trois",
+    "fractions"
+  ],
+  "scene_hp": "cachot_potions",
+  "narration": "Le professeur Rogue te toise du haut de son estrade. 'Voyons si vous savez compter aussi bien que vous brassez les potions...' Tu sors plume et parchemin. Tu as 45 minutes pour prouver que les chiffres ne te font pas peur, meme dans ce cachot glacial.",
+  "exercices": [
+    {
+      "id": "q-j04-1",
+      "titre_exercice": "EXERCICE 1 (6 points)",
+      "enonce": "Le professeur Rogue a recu 1 728 fioles vides qu'il faut ranger dans 24 caisses identiques. a) Combien de fioles met-on dans chaque caisse ? b) S'il avait 35 caisses au lieu de 24, et qu'il met le meme nombre de fioles par caisse (le resultat trouve en a), combien de fioles lui faudrait-il en tout ? c) Si finalement Rogue garde 24 caisses mais que la nouvelle livraison contient 2 520 fioles, combien de fioles va-t-il y avoir dans chaque caisse ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Fioles par caisse (1 728 / 24) ?", "reponse": "72 fioles", "points": 2},
+        {"id": "b", "enonce": "Total pour 35 caisses de 72 fioles ?", "reponse": "2 520 fioles", "points": 2},
+        {"id": "c", "enonce": "Fioles par caisse pour 2 520 / 24 ?", "reponse": "105 fioles", "points": 2}
+      ],
+      "points_total": 6,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 1 728 / 24 = 72 fioles par caisse",
+        "b) 35 x 72 = 2 520 fioles",
+        "c) 2 520 / 24 = 105 fioles par caisse"
+      ]
+    },
+    {
+      "id": "q-j04-2",
+      "titre_exercice": "EXERCICE 2 (7 points)",
+      "enonce": "Pour preparer une potion d'amortentia, le professeur Rogue utilise 56 doses d'essence de rose pour 8 chaudrons identiques. a) Recopie et complete le tableau de proportionnalite ci-dessous. (Chaudrons : 1 - 8 - 15 - ?) (Doses : ? - 56 - ? - 84). b) Combien faut-il de doses pour 1 chaudron ? c) Combien faut-il de doses pour 15 chaudrons ? d) Combien peut-on preparer de chaudrons avec 84 doses ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Tableau complet : 1 chaudron / 56 doses pour 8 / 15 chaudrons / 84 doses correspond a ?", "reponse": "1 chaudron -> 7 doses ; 15 chaudrons -> 105 doses ; 84 doses -> 12 chaudrons", "points": 2},
+        {"id": "b", "enonce": "Doses pour 1 chaudron ?", "reponse": "7 doses", "points": 1},
+        {"id": "c", "enonce": "Doses pour 15 chaudrons ?", "reponse": "105 doses", "points": 2},
+        {"id": "d", "enonce": "Chaudrons possibles avec 84 doses ?", "reponse": "12 chaudrons", "points": 2}
+      ],
+      "points_total": 7,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "Coefficient : 56 / 8 = 7 doses par chaudron",
+        "b) 1 chaudron = 7 doses",
+        "c) 15 x 7 = 105 doses",
+        "d) 84 / 7 = 12 chaudrons"
+      ]
+    },
+    {
+      "id": "q-j04-3",
+      "titre_exercice": "EXERCICE 3 (7 points)",
+      "enonce": "Hermione doit etudier 240 pages d'un grimoire avant la fin de la semaine. Lundi, elle lit les 3/4 du grimoire. a) Combien de pages a-t-elle lues lundi ? b) Combien de pages lui reste-t-il a lire ? c) Mardi, elle lit les 2/5 des pages restantes. Combien de pages a-t-elle lues mardi ? d) Combien de pages lui reste-t-il a lire apres mardi ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Pages lues lundi (3/4 de 240) ?", "reponse": "180 pages", "points": 2},
+        {"id": "b", "enonce": "Pages restantes apres lundi ?", "reponse": "60 pages", "points": 1},
+        {"id": "c", "enonce": "Pages lues mardi (2/5 de 60) ?", "reponse": "24 pages", "points": 2},
+        {"id": "d", "enonce": "Pages restantes apres mardi ?", "reponse": "36 pages", "points": 2}
+      ],
+      "points_total": 7,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 3/4 x 240 = 720/4 = 180 pages",
+        "b) 240 - 180 = 60 pages",
+        "c) 2/5 x 60 = 120/5 = 24 pages",
+        "d) 60 - 24 = 36 pages"
+      ]
+    }
+  ],
+  "ponderation_finale": {"q-j04-1": 6, "q-j04-2": 7, "q-j04-3": 7}
+}

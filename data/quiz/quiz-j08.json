@@ -1,0 +1,74 @@
+{
+  "id": "quiz-j08",
+  "jour": 8,
+  "titre": "Quiz Libermann J8 — Le Match de Quidditch",
+  "duree_min": 45,
+  "note_max": 20,
+  "themes_couverts": [
+    "conversions de longueurs",
+    "masses",
+    "capacites",
+    "durees",
+    "vitesses"
+  ],
+  "scene_hp": "match_quidditch",
+  "narration": "Madame Bibine te demande d'aider a chronometrer le match Gryffondor-Serpentard. Tu prends place pres de la table des arbitres, ta plume a la main. 'Sois precis, jeune sorcier : un mauvais calcul, et le vainqueur sera mal designe.'",
+  "exercices": [
+    {
+      "id": "q-j08-1",
+      "titre_exercice": "EXERCICE 1 (7 points) - Vitesses et conversions",
+      "enonce": "Pendant le match, Harry sur son Eclair de Feu parcourt 4 800 metres en 2 minutes. a) Convertis 4 800 m en kilometres. b) Quelle est la vitesse de Harry en kilometres par heure ? c) Quelle est sa vitesse en metres par seconde ? d) A cette vitesse, combien de temps met-il pour parcourir 12 km (en minutes) ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "4 800 m en km ?", "reponse": "4,8 km", "points": 1},
+        {"id": "b", "enonce": "Vitesse en km/h ?", "reponse": "144 km/h", "points": 2},
+        {"id": "c", "enonce": "Vitesse en m/s ?", "reponse": "40 m/s", "points": 2},
+        {"id": "d", "enonce": "Temps pour 12 km ?", "reponse": "5 minutes", "points": 2}
+      ],
+      "points_total": 7,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 4 800 m = 4,8 km",
+        "b) 4,8 km en 2 min = 2,4 km/min = 2,4 x 60 = 144 km/h",
+        "c) 4 800 m en 120 s = 40 m/s",
+        "d) 12 km a 144 km/h : t = 12/144 h = 1/12 h = 5 minutes"
+      ]
+    },
+    {
+      "id": "q-j08-2",
+      "titre_exercice": "EXERCICE 2 (6 points) - Durees composees",
+      "enonce": "Le match a dure 2 h 35 min. Une pause de 25 minutes a precede le match. Avant la pause, l'equipe s'est entrainee pendant 1 h 45 min. a) Calcule la duree totale (entrainement + pause + match). b) Si le match s'est termine a 18 h 05, a quelle heure l'entrainement a-t-il commence ? c) Si la finale dure 3 fois plus longtemps que ce match, quelle sera la duree de la finale ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Duree totale ?", "reponse": "4 h 45 min", "points": 2},
+        {"id": "b", "enonce": "Heure de debut de l'entrainement ?", "reponse": "13 h 20", "points": 2},
+        {"id": "c", "enonce": "Duree de la finale ?", "reponse": "7 h 45 min", "points": 2}
+      ],
+      "points_total": 6,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 1h45 + 25 min + 2h35 = 4h45 min",
+        "b) 18h05 - 4h45 = 13h20",
+        "c) 2h35 x 3 = 6h 105 min = 7h45 min"
+      ]
+    },
+    {
+      "id": "q-j08-3",
+      "titre_exercice": "EXERCICE 3 (7 points) - Masses et capacites",
+      "enonce": "Pour le banquet apres le match, Madame Pomfresh prepare le ravitaillement. Elle charge un chariot avec : 3 caisses de viande de 12,5 kg chacune, et 80 bouteilles de jus de citrouille de 750 g chacune (chaque bouteille contient 75 cL). a) Quelle est la masse totale des 3 caisses de viande ? b) Quelle est la masse totale des 80 bouteilles (en kg) ? c) Quelle est la masse totale du chargement ? d) Quelle est la capacite totale des 80 bouteilles en litres ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Masse des 3 caisses ?", "reponse": "37,5 kg", "points": 2},
+        {"id": "b", "enonce": "Masse des 80 bouteilles en kg ?", "reponse": "60 kg", "points": 2},
+        {"id": "c", "enonce": "Masse totale du chargement ?", "reponse": "97,5 kg", "points": 1},
+        {"id": "d", "enonce": "Capacite totale en litres ?", "reponse": "60 L", "points": 2}
+      ],
+      "points_total": 7,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 3 x 12,5 = 37,5 kg",
+        "b) 80 x 750 g = 60 000 g = 60 kg",
+        "c) 37,5 + 60 = 97,5 kg",
+        "d) 80 x 75 cL = 6 000 cL = 60 L"
+      ]
+    }
+  ],
+  "ponderation_finale": {"q-j08-1": 7, "q-j08-2": 6, "q-j08-3": 7}
+}

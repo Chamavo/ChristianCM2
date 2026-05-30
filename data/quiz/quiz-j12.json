@@ -1,0 +1,74 @@
+{
+  "id": "quiz-j12",
+  "jour": 12,
+  "titre": "Quiz Libermann J12 — L'Heritage des Potter",
+  "duree_min": 45,
+  "note_max": 20,
+  "themes_couverts": [
+    "partages proportionnels",
+    "interets simples",
+    "pourcentages composes (hausse / baisse successives)"
+  ],
+  "scene_hp": "gringotts_heritage",
+  "narration": "Le gobelin Gripsec t'ouvre le grand coffre des Potter. 'Avant de toucher l'or, il faut le partager : c'est la regle de Gringotts. Et tu dois aussi savoir calculer ce qu'il rapporte chaque annee.' Tu sors ta plume : il faut etre exact, ici on ne pardonne aucune erreur de calcul.",
+  "exercices": [
+    {
+      "id": "q-j12-1",
+      "titre_exercice": "EXERCICE 1 (7 points) - Partage proportionnel",
+      "enonce": "Un sorcier laisse a sa mort un heritage de 3 600 gallions a partager entre ses trois enfants : Hugo, Lily et Tom. Le partage doit se faire proportionnellement a leur age : Hugo (l'aine) a 15 ans, Lily a 12 ans et Tom (le plus jeune) a 9 ans. a) Quelle est la somme des parts (5+4+3) ? b) Quelle est la valeur d'une part ? c) Combien recoit Hugo ? d) Combien recoivent Lily et Tom (chacun) ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Somme des parts ?", "reponse": "12 parts", "points": 1},
+        {"id": "b", "enonce": "Valeur d'une part ?", "reponse": "300 gallions", "points": 2},
+        {"id": "c", "enonce": "Part de Hugo ?", "reponse": "1 500 gallions", "points": 2},
+        {"id": "d", "enonce": "Parts de Lily et Tom ?", "reponse": "Lily : 1 200 gallions ; Tom : 900 gallions", "points": 2}
+      ],
+      "points_total": 7,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "Ages 15/12/9 sont proportionnels a 5/4/3 (en divisant par 3)",
+        "a) 5 + 4 + 3 = 12 parts",
+        "b) 3 600 / 12 = 300 gallions par part",
+        "c) Hugo : 5 x 300 = 1 500 gallions",
+        "d) Lily : 4 x 300 = 1 200 gallions ; Tom : 3 x 300 = 900 gallions",
+        "Verification : 1 500 + 1 200 + 900 = 3 600"
+      ]
+    },
+    {
+      "id": "q-j12-2",
+      "titre_exercice": "EXERCICE 2 (7 points) - Interets simples",
+      "enonce": "Hugo decide de placer ses 2 500 gallions a la banque Gringotts a un taux d'interet simple de 4% par an. a) Quel est le montant des interets pour 1 an ? b) Combien rapporte ce placement au bout de 3 ans ? c) Quel est le capital total (capital initial + interets) au bout de 3 ans ? d) Si finalement le taux propose est de 5% au lieu de 4%, quel serait le capital total au bout de 4 ans (interets sur 4 ans + 2 500 de depart) ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Interets pour 1 an a 4% ?", "reponse": "100 gallions", "points": 2},
+        {"id": "b", "enonce": "Interets pour 3 ans a 4% ?", "reponse": "300 gallions", "points": 2},
+        {"id": "c", "enonce": "Capital total apres 3 ans a 4% ?", "reponse": "2 800 gallions", "points": 1},
+        {"id": "d", "enonce": "Capital total apres 4 ans a 5% ?", "reponse": "3 000 gallions", "points": 2}
+      ],
+      "points_total": 7,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 2 500 x 4 / 100 = 100 gallions par an",
+        "b) 100 x 3 = 300 gallions",
+        "c) 2 500 + 300 = 2 800 gallions",
+        "d) Interets annuels : 2 500 x 5 / 100 = 125 ; sur 4 ans : 500 ; capital final : 2 500 + 500 = 3 000 gallions"
+      ]
+    },
+    {
+      "id": "q-j12-3",
+      "titre_exercice": "EXERCICE 3 (6 points) - Pourcentages composes",
+      "enonce": "Chez Madame Guipure, un grand manteau de sorcier coute 600 gallions. A cause de la rentree, le prix augmente de 20%. Le mois suivant, Madame Guipure fait une promotion : elle baisse le NOUVEAU prix de 10%. a) Quel est le prix apres l'augmentation de 20% ? b) Quel est le prix final apres la baisse de 10% ? c) Le client paie-t-il plus ou moins que les 600 gallions de depart ? De combien (en gallions) ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Prix apres +20% ?", "reponse": "720 gallions", "points": 2},
+        {"id": "b", "enonce": "Prix final apres -10% ?", "reponse": "648 gallions", "points": 2},
+        {"id": "c", "enonce": "Difference avec le prix initial ?", "reponse": "Plus cher de 48 gallions", "points": 2}
+      ],
+      "points_total": 6,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 600 + 20% de 600 = 600 + 120 = 720 gallions",
+        "b) 720 - 10% de 720 = 720 - 72 = 648 gallions",
+        "c) 648 - 600 = 48 gallions de plus que le prix initial"
+      ]
+    }
+  ],
+  "ponderation_finale": {"q-j12-1": 7, "q-j12-2": 7, "q-j12-3": 6}
+}

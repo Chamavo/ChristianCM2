@@ -1,0 +1,795 @@
+{
+  "jour": 4,
+  "titre": "Cours de potions avec Rogue — Proportionnalité & fractions",
+  "theme_principal": "proportionnalite_fractions",
+  "scene_globale": "Premier cours de potions dans les cachots. Le professeur Rogue, sévère et exigeant, fait préparer aux élèves la potion d'oubli. Les ingrédients doivent être dosés en proportions précises : racines de mandragore, ailes de fée, poudre de lune, yeux de triton. Une erreur de dosage et le chaudron explose !",
+  "mix_qcm_redige": "60/40",
+  "duree_estimee_min": 160,
+  "exercices": [
+    {
+      "id": "j04-e01",
+      "ordre_jour": 1,
+      "theme": "proportionnalite",
+      "sous_theme": "reconnaitre_situation_proportionnelle",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue annonce : 'Pour 1 chaudron, il faut 2 racines de mandragore.'",
+      "type": "qcm",
+      "competence": "Reconnaître une situation de proportionnalité simple",
+      "difficulte_relative": 1,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Si 1 chaudron = 2 racines de mandragore, combien faut-il de racines pour 2 chaudrons ?",
+      "choix": [
+        {"id": "a", "texte": "2 racines"},
+        {"id": "b", "texte": "3 racines"},
+        {"id": "c", "texte": "4 racines"},
+        {"id": "d", "texte": "5 racines"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bravo ! 2 chaudrons = 2 fois plus, donc 2 × 2 = 4 racines. Rogue acquiesce à peine.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour 2 fois plus de chaudrons, il faut 2 fois plus d'ingrédients.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e02",
+      "ordre_jour": 2,
+      "theme": "proportionnalite",
+      "sous_theme": "tableau_proportionnalite",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue continue : 'Pour 1 chaudron, il faut 3 ailes de fée.'",
+      "type": "qcm",
+      "competence": "Calculer une valeur proportionnelle (×3)",
+      "difficulte_relative": 2,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Si 1 chaudron = 3 ailes de fée, combien faut-il d'ailes pour 3 chaudrons ?",
+      "choix": [
+        {"id": "a", "texte": "6 ailes"},
+        {"id": "b", "texte": "9 ailes"},
+        {"id": "c", "texte": "12 ailes"},
+        {"id": "d", "texte": "3 ailes"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 3 × 3 = 9 ailes de fée. Tu maîtrises le coefficient de proportionnalité.",
+      "indices": [
+        {"niveau": 1, "texte": "Multiplie le nombre d'ingrédients par le nombre de chaudrons.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e03",
+      "ordre_jour": 3,
+      "theme": "fractions",
+      "sous_theme": "demi",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue saisit une fiole pleine de poudre de lune.",
+      "type": "qcm",
+      "competence": "Reconnaître la moitié (1/2) d'un nombre simple",
+      "difficulte_relative": 3,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "La fiole contient 10 g de poudre de lune. Rogue en verse la moitié (1/2). Combien verse-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "2 g"},
+        {"id": "b", "texte": "5 g"},
+        {"id": "c", "texte": "10 g"},
+        {"id": "d", "texte": "20 g"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! La moitié de 10 = 10 ÷ 2 = 5 g.",
+      "indices": [
+        {"niveau": 1, "texte": "Prendre la moitié, c'est diviser par 2.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e04",
+      "ordre_jour": 4,
+      "theme": "fractions",
+      "sous_theme": "quart",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue ouvre un bocal de 20 yeux de triton.",
+      "type": "qcm",
+      "competence": "Calculer le quart (1/4) d'un nombre",
+      "difficulte_relative": 4,
+      "duree_estimee_sec": 35,
+      "points_maison": 2,
+      "enonce": "Le bocal contient 20 yeux de triton. Rogue en prend 1/4. Combien d'yeux prend-il ?",
+      "choix": [
+        {"id": "a", "texte": "4 yeux"},
+        {"id": "b", "texte": "5 yeux"},
+        {"id": "c", "texte": "10 yeux"},
+        {"id": "d", "texte": "16 yeux"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Parfait ! 1/4 de 20 = 20 ÷ 4 = 5 yeux.",
+      "indices": [
+        {"niveau": 1, "texte": "1/4 c'est diviser par 4.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e05",
+      "ordre_jour": 5,
+      "theme": "fractions",
+      "sous_theme": "tiers",
+      "scene_hp": "cachots_potions",
+      "narration": "Une bouteille de jus de mandragore est posée sur le bureau.",
+      "type": "qcm",
+      "competence": "Calculer le tiers (1/3) d'un nombre",
+      "difficulte_relative": 5,
+      "duree_estimee_sec": 35,
+      "points_maison": 3,
+      "enonce": "La bouteille contient 30 mL de jus de mandragore. Rogue en utilise 1/3. Combien de mL utilise-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "3 mL"},
+        {"id": "b", "texte": "9 mL"},
+        {"id": "c", "texte": "10 mL"},
+        {"id": "d", "texte": "15 mL"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Excellent ! 1/3 de 30 = 30 ÷ 3 = 10 mL.",
+      "indices": [
+        {"niveau": 1, "texte": "Prendre 1/3, c'est diviser par 3.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e06",
+      "ordre_jour": 6,
+      "theme": "proportionnalite",
+      "sous_theme": "tableau_proportionnalite",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue dessine un tableau au tableau noir.",
+      "type": "qcm",
+      "competence": "Compléter un tableau de proportionnalité (×4)",
+      "difficulte_relative": 6,
+      "duree_estimee_sec": 50,
+      "points_maison": 3,
+      "enonce": "Tableau : 1 chaudron → 2 racines ; 4 chaudrons → ? racines. Combien faut-il de racines ?",
+      "choix": [
+        {"id": "a", "texte": "4 racines"},
+        {"id": "b", "texte": "6 racines"},
+        {"id": "c", "texte": "8 racines"},
+        {"id": "d", "texte": "10 racines"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bravo ! On multiplie par 4 : 2 × 4 = 8 racines.",
+      "indices": [
+        {"niveau": 1, "texte": "Trouve le coefficient : pour passer de 1 à 4 chaudrons, on multiplie par 4.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e07",
+      "ordre_jour": 7,
+      "theme": "fractions",
+      "sous_theme": "deux_tiers",
+      "scene_hp": "cachots_potions",
+      "narration": "Hermione lève la main : 'Professeur, et pour 2/3 ?'",
+      "type": "qcm",
+      "competence": "Calculer 2/3 d'un nombre",
+      "difficulte_relative": 7,
+      "duree_estimee_sec": 50,
+      "points_maison": 3,
+      "enonce": "Calcule 2/3 de 30 mL de jus de mandragore.",
+      "choix": [
+        {"id": "a", "texte": "10 mL"},
+        {"id": "b", "texte": "15 mL"},
+        {"id": "c", "texte": "20 mL"},
+        {"id": "d", "texte": "60 mL"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Très bien ! 1/3 de 30 = 10, donc 2/3 = 2 × 10 = 20 mL.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule d'abord 1/3, puis multiplie par 2.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e08",
+      "ordre_jour": 8,
+      "theme": "fractions",
+      "sous_theme": "trois_quarts",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue prend une fiole presque pleine.",
+      "type": "qcm",
+      "competence": "Calculer 3/4 d'un nombre",
+      "difficulte_relative": 8,
+      "duree_estimee_sec": 55,
+      "points_maison": 3,
+      "enonce": "La fiole contient 20 cL de venin de serpent. Rogue en verse 3/4 dans le chaudron. Combien de cL verse-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "5 cL"},
+        {"id": "b", "texte": "10 cL"},
+        {"id": "c", "texte": "15 cL"},
+        {"id": "d", "texte": "16 cL"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Parfait ! 1/4 de 20 = 5 cL, donc 3/4 = 3 × 5 = 15 cL.",
+      "indices": [
+        {"niveau": 1, "texte": "1/4 de 20 d'abord, puis multiplie par 3.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e09",
+      "ordre_jour": 9,
+      "theme": "fractions",
+      "sous_theme": "equivalences",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue griffonne : 1/2 = ?/4",
+      "type": "qcm",
+      "competence": "Reconnaître des fractions équivalentes",
+      "difficulte_relative": 9,
+      "duree_estimee_sec": 45,
+      "points_maison": 3,
+      "enonce": "Quelle fraction est égale à 1/2 ?",
+      "choix": [
+        {"id": "a", "texte": "1/4"},
+        {"id": "b", "texte": "2/4"},
+        {"id": "c", "texte": "3/4"},
+        {"id": "d", "texte": "2/3"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 1/2 = 2/4 (on multiplie numérateur et dénominateur par 2).",
+      "indices": [
+        {"niveau": 1, "texte": "Si tu multiplies haut ET bas par le même nombre, la fraction garde la même valeur.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e10",
+      "ordre_jour": 10,
+      "theme": "proportionnalite",
+      "sous_theme": "regle_de_trois_simple",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue interroge Drago : 'Si 2 chaudrons demandent 6 ailes de fée, combien pour 1 chaudron ?'",
+      "type": "qcm",
+      "competence": "Trouver la valeur unitaire (passer par l'unité)",
+      "difficulte_relative": 10,
+      "duree_estimee_sec": 55,
+      "points_maison": 4,
+      "enonce": "2 chaudrons = 6 ailes de fée. Combien d'ailes pour 1 chaudron ?",
+      "choix": [
+        {"id": "a", "texte": "2 ailes"},
+        {"id": "b", "texte": "3 ailes"},
+        {"id": "c", "texte": "4 ailes"},
+        {"id": "d", "texte": "6 ailes"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! Pour 1 chaudron, on divise par 2 : 6 ÷ 2 = 3 ailes.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour 2 fois moins de chaudrons, 2 fois moins d'ingrédients.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e11",
+      "ordre_jour": 11,
+      "theme": "fractions",
+      "sous_theme": "comparaison",
+      "scene_hp": "cachots_potions",
+      "narration": "Hermione hésite entre 1/2 et 1/3 de poudre.",
+      "type": "qcm",
+      "competence": "Comparer deux fractions de même numérateur",
+      "difficulte_relative": 11,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Quelle fraction est la plus grande : 1/2 ou 1/3 ?",
+      "choix": [
+        {"id": "a", "texte": "1/2"},
+        {"id": "b", "texte": "1/3"},
+        {"id": "c", "texte": "Elles sont égales"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Exact ! Si on partage en 2, chaque part est plus grosse qu'en partageant en 3. Donc 1/2 > 1/3.",
+      "indices": [
+        {"niveau": 1, "texte": "Imagine un gâteau. Plus tu coupes de parts, plus chaque part est petite.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e12",
+      "ordre_jour": 12,
+      "theme": "proportionnalite",
+      "sous_theme": "regle_de_trois",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue ajoute une ligne au tableau : 3 chaudrons → 12 yeux de triton. Et pour 5 chaudrons ?",
+      "type": "qcm",
+      "competence": "Règle de trois : passer par l'unité puis multiplier",
+      "difficulte_relative": 12,
+      "duree_estimee_sec": 80,
+      "points_maison": 5,
+      "enonce": "Si 3 chaudrons demandent 12 yeux de triton, combien d'yeux pour 5 chaudrons ?",
+      "choix": [
+        {"id": "a", "texte": "15 yeux"},
+        {"id": "b", "texte": "18 yeux"},
+        {"id": "c", "texte": "20 yeux"},
+        {"id": "d", "texte": "24 yeux"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Excellent ! 1 chaudron = 12 ÷ 3 = 4 yeux. Donc 5 chaudrons = 5 × 4 = 20 yeux.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : combien d'yeux pour 1 seul chaudron ?", "cout_points": 1},
+        {"niveau": 2, "texte": "12 ÷ 3 = 4 par chaudron. Maintenant multiplie par 5.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j04-e12-d1", "enonce": "Combien d'yeux faut-il pour 1 seul chaudron ? (12 ÷ 3)", "type": "numerique", "reponse": 4},
+          {"id": "j04-e12-d2", "enonce": "Maintenant, pour 5 chaudrons : 5 × 4 = ?", "type": "numerique", "reponse": 20}
+        ]
+      }
+    },
+    {
+      "id": "j04-e13",
+      "ordre_jour": 13,
+      "theme": "fractions",
+      "sous_theme": "fraction_dun_nombre",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue verse 2/5 d'une bouteille de 40 mL d'essence de bélladone.",
+      "type": "redige_court",
+      "competence": "Calculer une fraction d'un nombre",
+      "difficulte_relative": 13,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Calcule 2/5 de 40 mL. Donne juste le nombre de mL.",
+      "reponse_attendue_redige": "16",
+      "tolerance_numerique": 0,
+      "regex_validation": "^16$",
+      "explication_correcte": "Bien joué ! 1/5 de 40 = 8, donc 2/5 = 2 × 8 = 16 mL.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule d'abord 1/5 (divise par 5), puis multiplie par 2.", "cout_points": 1}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j04-e13-d1", "enonce": "Combien fait 40 ÷ 5 ?", "type": "numerique", "reponse": 8},
+          {"id": "j04-e13-d2", "enonce": "Maintenant, multiplie ce résultat par 2 : 8 × 2 = ?", "type": "numerique", "reponse": 16}
+        ]
+      }
+    },
+    {
+      "id": "j04-e14",
+      "ordre_jour": 14,
+      "theme": "proportionnalite",
+      "sous_theme": "tableau_proportionnalite",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue complète son tableau : '6 chaudrons demandent 18 pétales de rose. Et pour 9 chaudrons ?'",
+      "type": "redige_court",
+      "competence": "Compléter une valeur dans un tableau de proportionnalité",
+      "difficulte_relative": 14,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "6 chaudrons = 18 pétales. Combien de pétales pour 9 chaudrons ? (donne juste le nombre)",
+      "reponse_attendue_redige": "27",
+      "tolerance_numerique": 0,
+      "regex_validation": "^27$",
+      "explication_correcte": "Parfait ! 1 chaudron = 18 ÷ 6 = 3 pétales, donc 9 chaudrons = 9 × 3 = 27 pétales.",
+      "indices": [
+        {"niveau": 1, "texte": "Trouve d'abord la valeur pour 1 chaudron.", "cout_points": 1},
+        {"niveau": 2, "texte": "18 ÷ 6 = 3 par chaudron. Pour 9 chaudrons : 9 × 3.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j04-e15",
+      "ordre_jour": 15,
+      "theme": "fractions",
+      "sous_theme": "equivalences",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue écrit : '1/4 = ?/12'. Drago bafouille.",
+      "type": "redige_court",
+      "competence": "Trouver le numérateur d'une fraction équivalente",
+      "difficulte_relative": 15,
+      "duree_estimee_sec": 75,
+      "points_maison": 5,
+      "enonce": "Complète : 1/4 = ? / 12. (Donne juste le numérateur manquant.)",
+      "reponse_attendue_redige": "3",
+      "tolerance_numerique": 0,
+      "regex_validation": "^3$",
+      "explication_correcte": "Bravo ! Pour passer de 4 à 12, on multiplie par 3. Donc 1 × 3 = 3. On a 1/4 = 3/12.",
+      "indices": [
+        {"niveau": 1, "texte": "De 4 à 12, par combien multiplie-t-on ? (12 ÷ 4)", "cout_points": 1},
+        {"niveau": 2, "texte": "On multiplie par 3. Fais pareil en haut : 1 × 3 = ?", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j04-e16",
+      "ordre_jour": 16,
+      "theme": "proportionnalite",
+      "sous_theme": "probleme_1_etape",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue : 'Si 4 fioles coûtent 12 Gallions, combien pour 7 fioles ?'",
+      "type": "redige_court",
+      "competence": "Résoudre un problème de proportionnalité (prix)",
+      "difficulte_relative": 16,
+      "duree_estimee_sec": 120,
+      "points_maison": 6,
+      "enonce": "4 fioles coûtent 12 Gallions. Quel est le prix de 7 fioles ? (donne juste le nombre de Gallions)",
+      "reponse_attendue_redige": "21",
+      "tolerance_numerique": 0,
+      "regex_validation": "^21$",
+      "explication_correcte": "Excellent ! 1 fiole = 12 ÷ 4 = 3 Gallions. Donc 7 fioles = 7 × 3 = 21 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "D'abord, combien coûte 1 seule fiole ?", "cout_points": 1},
+        {"niveau": 2, "texte": "1 fiole = 3 Gallions. Multiplie par 7.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j04-e16-d1", "enonce": "Prix d'une seule fiole : 12 ÷ 4 = ?", "type": "numerique", "reponse": 3},
+          {"id": "j04-e16-d2", "enonce": "Prix de 7 fioles : 7 × 3 = ?", "type": "numerique", "reponse": 21}
+        ]
+      }
+    },
+    {
+      "id": "j04-e17",
+      "ordre_jour": 17,
+      "theme": "fractions",
+      "sous_theme": "fraction_dune_quantite",
+      "scene_hp": "cachots_potions",
+      "narration": "Le chaudron de Neville contient 60 mL de potion. Rogue ordonne d'en jeter 1/4 (trop concentrée).",
+      "type": "redige_court",
+      "competence": "Calculer une fraction d'une quantité (problème)",
+      "difficulte_relative": 17,
+      "duree_estimee_sec": 120,
+      "points_maison": 6,
+      "enonce": "Neville a 60 mL de potion. Il en jette 1/4. Combien de mL jette-t-il ? (juste le nombre)",
+      "reponse_attendue_redige": "15",
+      "tolerance_numerique": 0,
+      "regex_validation": "^15$",
+      "explication_correcte": "Bien ! 1/4 de 60 = 60 ÷ 4 = 15 mL.",
+      "indices": [
+        {"niveau": 1, "texte": "Prendre 1/4, c'est diviser par 4.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e18",
+      "ordre_jour": 18,
+      "theme": "fractions",
+      "sous_theme": "fraction_dune_quantite",
+      "scene_hp": "cachots_potions",
+      "narration": "Hermione observe : 'Et combien lui reste-t-il ?'",
+      "type": "redige_court",
+      "competence": "Calculer le complément d'une fraction",
+      "difficulte_relative": 18,
+      "duree_estimee_sec": 130,
+      "points_maison": 6,
+      "enonce": "Neville avait 60 mL et a jeté 15 mL (le 1/4). Combien de mL reste-t-il dans son chaudron ? (juste le nombre)",
+      "reponse_attendue_redige": "45",
+      "tolerance_numerique": 0,
+      "regex_validation": "^45$",
+      "explication_correcte": "Parfait ! Il reste 60 - 15 = 45 mL. C'est aussi les 3/4 du chaudron (3/4 de 60 = 45).",
+      "indices": [
+        {"niveau": 1, "texte": "Tu peux soustraire (60 - 15) ou calculer 3/4 de 60.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e19",
+      "ordre_jour": 19,
+      "theme": "proportionnalite",
+      "sous_theme": "probleme_1_etape",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue : 'Pour 5 chaudrons, il faut 35 g de poudre de lune. Quelle quantité pour 8 chaudrons ?'",
+      "type": "redige_court",
+      "competence": "Règle de trois — quantité d'ingrédient",
+      "difficulte_relative": 19,
+      "duree_estimee_sec": 140,
+      "points_maison": 6,
+      "enonce": "5 chaudrons demandent 35 g de poudre de lune. Combien de g pour 8 chaudrons ? (juste le nombre)",
+      "reponse_attendue_redige": "56",
+      "tolerance_numerique": 0,
+      "regex_validation": "^56$",
+      "explication_correcte": "Excellent ! 1 chaudron = 35 ÷ 5 = 7 g. Donc 8 chaudrons = 8 × 7 = 56 g.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : combien de g pour 1 chaudron ?", "cout_points": 1},
+        {"niveau": 2, "texte": "35 ÷ 5 = 7. Maintenant 8 × 7.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j04-e19-d1", "enonce": "Quantité pour 1 chaudron : 35 ÷ 5 = ?", "type": "numerique", "reponse": 7},
+          {"id": "j04-e19-d2", "enonce": "Quantité pour 8 chaudrons : 8 × 7 = ?", "type": "numerique", "reponse": 56}
+        ]
+      }
+    },
+    {
+      "id": "j04-e20",
+      "ordre_jour": 20,
+      "theme": "fractions",
+      "sous_theme": "comparaison_meme_denominateur",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue compare 2/5 et 3/5 d'une potion.",
+      "type": "qcm",
+      "competence": "Comparer deux fractions de même dénominateur",
+      "difficulte_relative": 20,
+      "duree_estimee_sec": 60,
+      "points_maison": 5,
+      "enonce": "Quelle fraction est la plus grande : 2/5 ou 3/5 ?",
+      "choix": [
+        {"id": "a", "texte": "2/5"},
+        {"id": "b", "texte": "3/5"},
+        {"id": "c", "texte": "Elles sont égales"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! Avec le même dénominateur, la plus grande fraction est celle qui a le plus grand numérateur. 3/5 > 2/5.",
+      "indices": [
+        {"niveau": 1, "texte": "Quand le dénominateur est pareil, compare juste les numérateurs.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e21",
+      "ordre_jour": 21,
+      "theme": "proportionnalite",
+      "sous_theme": "tableau_proportionnalite",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue dresse un grand tableau pour la potion d'oubli.",
+      "type": "redige_court",
+      "competence": "Compléter un tableau à deux valeurs manquantes",
+      "difficulte_relative": 21,
+      "duree_estimee_sec": 150,
+      "points_maison": 7,
+      "enonce": "Tableau : 2 chaudrons → 10 racines ; 6 chaudrons → ? racines. Donne juste le nombre de racines pour 6 chaudrons.",
+      "reponse_attendue_redige": "30",
+      "tolerance_numerique": 0,
+      "regex_validation": "^30$",
+      "explication_correcte": "Parfait ! De 2 à 6, on multiplie par 3. Donc 10 × 3 = 30 racines. (Ou : 1 chaudron = 5 racines, 6 × 5 = 30.)",
+      "indices": [
+        {"niveau": 1, "texte": "Pour passer de 2 à 6 chaudrons, par combien multiplies-tu ?", "cout_points": 1},
+        {"niveau": 2, "texte": "× 3. Donc 10 × 3 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j04-e21-d1", "enonce": "Par combien multiplie-t-on pour passer de 2 à 6 ?", "type": "numerique", "reponse": 3},
+          {"id": "j04-e21-d2", "enonce": "Donc 10 × 3 = ?", "type": "numerique", "reponse": 30}
+        ]
+      }
+    },
+    {
+      "id": "j04-e22",
+      "ordre_jour": 22,
+      "theme": "fractions",
+      "sous_theme": "equivalences",
+      "scene_hp": "cachots_potions",
+      "narration": "Hermione murmure : '3/4, c'est combien de 12èmes ?'",
+      "type": "redige_court",
+      "competence": "Trouver une fraction équivalente avec un dénominateur donné",
+      "difficulte_relative": 22,
+      "duree_estimee_sec": 130,
+      "points_maison": 6,
+      "enonce": "Complète : 3/4 = ? / 12. (Donne juste le numérateur manquant.)",
+      "reponse_attendue_redige": "9",
+      "tolerance_numerique": 0,
+      "regex_validation": "^9$",
+      "explication_correcte": "Bravo Hermione ! De 4 à 12, on multiplie par 3. Donc 3 × 3 = 9. On a 3/4 = 9/12.",
+      "indices": [
+        {"niveau": 1, "texte": "Trouve par combien on multiplie 4 pour obtenir 12.", "cout_points": 1},
+        {"niveau": 2, "texte": "On multiplie par 3. Fais pareil au numérateur : 3 × 3.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j04-e23",
+      "ordre_jour": 23,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue : 'Pour 3 chaudrons, il faut 6 racines et 9 ailes de fée. Et pour 7 chaudrons ?'",
+      "type": "redige_court",
+      "competence": "Problème de proportionnalité à 2 ingrédients",
+      "difficulte_relative": 23,
+      "duree_estimee_sec": 180,
+      "points_maison": 8,
+      "enonce": "3 chaudrons demandent 6 racines ET 9 ailes de fée. Pour 7 chaudrons, combien d'ailes de fée faut-il ? (juste le nombre)",
+      "reponse_attendue_redige": "21",
+      "tolerance_numerique": 0,
+      "regex_validation": "^21$",
+      "explication_correcte": "Excellent ! 1 chaudron = 9 ÷ 3 = 3 ailes. Donc 7 chaudrons = 7 × 3 = 21 ailes.",
+      "indices": [
+        {"niveau": 1, "texte": "Concentre-toi sur les ailes de fée seulement. Combien pour 1 chaudron ?", "cout_points": 1},
+        {"niveau": 2, "texte": "9 ÷ 3 = 3 ailes par chaudron. Maintenant × 7.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j04-e23-d1", "enonce": "Combien d'ailes pour 1 chaudron ? (9 ÷ 3)", "type": "numerique", "reponse": 3},
+          {"id": "j04-e23-d2", "enonce": "Pour 7 chaudrons : 7 × 3 = ?", "type": "numerique", "reponse": 21}
+        ]
+      }
+    },
+    {
+      "id": "j04-e24",
+      "ordre_jour": 24,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "cachots_potions",
+      "narration": "Le chaudron d'Hermione contient 80 mL. Elle en utilise 1/4 pour un essai, puis 1/2 du reste pour la version finale.",
+      "type": "redige_court",
+      "competence": "Problème en 2 étapes — fractions successives",
+      "difficulte_relative": 24,
+      "duree_estimee_sec": 200,
+      "points_maison": 8,
+      "enonce": "Hermione a 80 mL de potion. Elle en utilise 1/4 pour un essai. Combien de mL reste-t-il après l'essai ? (juste le nombre)",
+      "reponse_attendue_redige": "60",
+      "tolerance_numerique": 0,
+      "regex_validation": "^60$",
+      "explication_correcte": "Parfait ! 1/4 de 80 = 20 mL utilisés. Reste : 80 - 20 = 60 mL.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : combien fait 1/4 de 80 ?", "cout_points": 1},
+        {"niveau": 2, "texte": "1/4 de 80 = 20. Maintenant soustrais : 80 - 20.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j04-e24-d1", "enonce": "Combien fait 1/4 de 80 ?", "type": "numerique", "reponse": 20},
+          {"id": "j04-e24-d2", "enonce": "Reste après l'essai : 80 - 20 = ?", "type": "numerique", "reponse": 60}
+        ]
+      }
+    },
+    {
+      "id": "j04-e25",
+      "ordre_jour": 25,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "cachots_potions",
+      "narration": "Suite : Hermione utilise maintenant 1/2 du reste pour la version finale.",
+      "type": "redige_court",
+      "competence": "Calculer une fraction d'un résultat intermédiaire",
+      "difficulte_relative": 25,
+      "duree_estimee_sec": 200,
+      "points_maison": 8,
+      "enonce": "Il restait 60 mL. Elle utilise 1/2 de ces 60 mL pour la version finale. Combien de mL utilise-t-elle ? (juste le nombre)",
+      "reponse_attendue_redige": "30",
+      "tolerance_numerique": 0,
+      "regex_validation": "^30$",
+      "explication_correcte": "Bravo ! 1/2 de 60 = 30 mL utilisés pour la version finale.",
+      "indices": [
+        {"niveau": 1, "texte": "1/2 de 60, c'est 60 divisé par 2.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j04-e26",
+      "ordre_jour": 26,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue lance un problème difficile à toute la classe.",
+      "type": "redige_court",
+      "competence": "Problème à 2 étapes — proportionnalité + soustraction",
+      "difficulte_relative": 26,
+      "duree_estimee_sec": 220,
+      "points_maison": 9,
+      "enonce": "Pour 4 chaudrons, il faut 24 g de poudre de lune. Rogue a déjà préparé 40 g de poudre. Combien de g lui reste-t-il après avoir servi 4 chaudrons ? (juste le nombre)",
+      "reponse_attendue_redige": "16",
+      "tolerance_numerique": 0,
+      "regex_validation": "^16$",
+      "explication_correcte": "Parfait ! Pour 4 chaudrons, il utilise 24 g. Il lui reste 40 - 24 = 16 g.",
+      "indices": [
+        {"niveau": 1, "texte": "Combien Rogue va-t-il utiliser pour 4 chaudrons ?", "cout_points": 1},
+        {"niveau": 2, "texte": "24 g utilisés. Soustrais de 40 g.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j04-e26-d1", "enonce": "Quantité utilisée pour 4 chaudrons (l'énoncé le dit) :", "type": "numerique", "reponse": 24},
+          {"id": "j04-e26-d2", "enonce": "Reste : 40 - 24 = ?", "type": "numerique", "reponse": 16}
+        ]
+      }
+    },
+    {
+      "id": "j04-e27",
+      "ordre_jour": 27,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue calcule le coût total des ingrédients.",
+      "type": "redige_court",
+      "competence": "Problème de proportionnalité — calcul de prix total",
+      "difficulte_relative": 27,
+      "duree_estimee_sec": 230,
+      "points_maison": 9,
+      "enonce": "Une fiole de venin coûte 5 Gallions. Une fiole d'essence de bélladone coûte 7 Gallions. Rogue achète 3 fioles de venin et 2 fioles d'essence. Combien dépense-t-il en tout ? (juste le nombre de Gallions)",
+      "reponse_attendue_redige": "29",
+      "tolerance_numerique": 0,
+      "regex_validation": "^29$",
+      "explication_correcte": "Excellent ! 3 × 5 = 15 Gallions de venin + 2 × 7 = 14 Gallions d'essence. Total = 15 + 14 = 29 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule séparément le coût du venin et le coût de l'essence.", "cout_points": 1},
+        {"niveau": 2, "texte": "Venin : 3 × 5 = 15. Essence : 2 × 7 = 14. Additionne.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j04-e27-d1", "enonce": "Coût du venin : 3 × 5 = ?", "type": "numerique", "reponse": 15},
+          {"id": "j04-e27-d2", "enonce": "Coût de l'essence : 2 × 7 = ?", "type": "numerique", "reponse": 14},
+          {"id": "j04-e27-d3", "enonce": "Total : 15 + 14 = ?", "type": "numerique", "reponse": 29}
+        ]
+      }
+    },
+    {
+      "id": "j04-e28",
+      "ordre_jour": 28,
+      "theme": "probleme_synthese",
+      "sous_theme": "fraction_probleme",
+      "scene_hp": "cachots_potions",
+      "narration": "Rogue veut vérifier que la classe comprend les fractions à fond.",
+      "type": "redige_court",
+      "competence": "Problème — fraction d'une quantité puis comparaison",
+      "difficulte_relative": 28,
+      "duree_estimee_sec": 240,
+      "points_maison": 9,
+      "enonce": "Drago a une fiole de 24 mL. Il en utilise 2/3. Combien de mL utilise-t-il ? (juste le nombre)",
+      "reponse_attendue_redige": "16",
+      "tolerance_numerique": 0,
+      "regex_validation": "^16$",
+      "explication_correcte": "Bravo ! 1/3 de 24 = 8 mL, donc 2/3 = 2 × 8 = 16 mL.",
+      "indices": [
+        {"niveau": 1, "texte": "D'abord 1/3 (divise par 3), puis multiplie par 2.", "cout_points": 1},
+        {"niveau": 2, "texte": "24 ÷ 3 = 8. Puis 8 × 2.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j04-e28-d1", "enonce": "Calcule 1/3 de 24.", "type": "numerique", "reponse": 8},
+          {"id": "j04-e28-d2", "enonce": "Maintenant 2 × 8 = ?", "type": "numerique", "reponse": 16}
+        ]
+      }
+    },
+    {
+      "id": "j04-e29",
+      "ordre_jour": 29,
+      "theme": "probleme_synthese",
+      "sous_theme": "mini_libermann",
+      "scene_hp": "cachots_potions",
+      "narration": "Mini-épreuve type Libermann : 'Le maître des potions doit fournir l'infirmerie.'",
+      "type": "redige_court",
+      "competence": "Problème complet de proportionnalité + soustraction",
+      "difficulte_relative": 29,
+      "duree_estimee_sec": 300,
+      "points_maison": 10,
+      "enonce": "Madame Pomfresh commande 12 fioles de potion d'oubli. Pour 4 fioles, il faut 20 g de poudre de lune. Rogue dispose de 80 g de poudre. Combien de g lui restera-t-il après avoir préparé les 12 fioles ? (juste le nombre)",
+      "reponse_attendue_redige": "20",
+      "tolerance_numerique": 0,
+      "regex_validation": "^20$",
+      "explication_correcte": "Excellent ! Étape 1 : 1 fiole = 20 ÷ 4 = 5 g. Étape 2 : 12 fioles = 12 × 5 = 60 g. Étape 3 : 80 - 60 = 20 g restants.",
+      "indices": [
+        {"niveau": 1, "texte": "3 étapes : combien pour 1 fiole, puis combien pour 12, puis ce qui reste.", "cout_points": 1},
+        {"niveau": 2, "texte": "1 fiole = 5 g. 12 fioles = 60 g. Reste = 80 - 60.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j04-e29-d1", "enonce": "Quantité pour 1 fiole : 20 ÷ 4 = ?", "type": "numerique", "reponse": 5},
+          {"id": "j04-e29-d2", "enonce": "Quantité pour 12 fioles : 12 × 5 = ?", "type": "numerique", "reponse": 60},
+          {"id": "j04-e29-d3", "enonce": "Reste de poudre : 80 - 60 = ?", "type": "numerique", "reponse": 20}
+        ]
+      },
+      "tags": ["proportionnalite", "soustraction", "probleme_libermann"],
+      "source_inspiration_libermann": "Problème multi-étapes proportionnalité + soustraction"
+    },
+    {
+      "id": "j04-e30",
+      "ordre_jour": 30,
+      "theme": "probleme_synthese",
+      "sous_theme": "mini_libermann",
+      "scene_hp": "cachots_potions",
+      "narration": "Épreuve finale du cours : Rogue lance un défi qui combine fractions ET proportionnalité.",
+      "type": "redige_court",
+      "competence": "Problème complet — fraction d'une quantité + proportionnalité",
+      "difficulte_relative": 30,
+      "duree_estimee_sec": 360,
+      "points_maison": 12,
+      "enonce": "Rogue a un stock de 60 racines de mandragore. Il en utilise 1/3 pour préparer 5 chaudrons de potion. Combien de racines faudrait-il pour 8 chaudrons au même rythme ? (juste le nombre)",
+      "reponse_attendue_redige": "32",
+      "tolerance_numerique": 0,
+      "regex_validation": "^32$",
+      "explication_correcte": "Bravo Maître des Potions ! Étape 1 : 1/3 de 60 = 20 racines pour 5 chaudrons. Étape 2 : 1 chaudron = 20 ÷ 5 = 4 racines. Étape 3 : 8 × 4 = 32 racines. Rogue te regarde avec un soupçon d'approbation.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : combien de racines utilisées (1/3 de 60) ?", "cout_points": 1},
+        {"niveau": 2, "texte": "Étape 1 : 20 racines pour 5 chaudrons. Maintenant règle de trois pour 8 chaudrons.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j04-e30-d1", "enonce": "Combien de racines utilisées ? (1/3 de 60)", "type": "numerique", "reponse": 20},
+          {"id": "j04-e30-d2", "enonce": "Combien de racines pour 1 chaudron ? (20 ÷ 5)", "type": "numerique", "reponse": 4},
+          {"id": "j04-e30-d3", "enonce": "Combien de racines pour 8 chaudrons ? (8 × 4)", "type": "numerique", "reponse": 32}
+        ]
+      },
+      "tags": ["fractions", "proportionnalite", "probleme_libermann"],
+      "source_inspiration_libermann": "Problème complexe combinant fraction et règle de trois"
+    }
+  ]
+}

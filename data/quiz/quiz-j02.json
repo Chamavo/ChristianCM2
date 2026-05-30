@@ -1,0 +1,74 @@
+{
+  "id": "quiz-j02",
+  "jour": 2,
+  "titre": "Quiz Libermann J2 — Le Chemin de Traverse",
+  "duree_min": 45,
+  "note_max": 20,
+  "themes_couverts": [
+    "grands nombres",
+    "addition posee",
+    "soustraction posee",
+    "multiplication posee",
+    "problemes 1-2 etapes"
+  ],
+  "scene_hp": "chemin_de_traverse",
+  "narration": "Le professeur Flitwick t'a convoque au Chemin de Traverse pour ta toute premiere epreuve d'arithmancie. Sur la table : un parchemin, une plume, un encrier. Tu as 45 minutes pour montrer que tu maitrises les nombres comme un vrai sorcier.",
+  "exercices": [
+    {
+      "id": "q-j02-1",
+      "titre_exercice": "EXERCICE 1 (6 points)",
+      "enonce": "Un sorcier achete 12 plumes magiques a 320 mornilles chacune. Il paie avec un billet de 5 000 mornilles. a) Quel est le prix total des plumes ? b) Combien lui rend-on ? c) S'il revient le lendemain avec 4 amis et que chacun des 4 amis achete 3 plumes au meme prix, quel est le cout total pour les 4 amis ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Prix total des 12 plumes ?", "reponse": "3 840 mornilles", "points": 2},
+        {"id": "b", "enonce": "Combien lui rend-on sur 5 000 mornilles ?", "reponse": "1 160 mornilles", "points": 2},
+        {"id": "c", "enonce": "Cout total pour les 4 amis (3 plumes chacun) ?", "reponse": "3 840 mornilles", "points": 2}
+      ],
+      "points_total": 6,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 12 x 320 = 3 840 mornilles",
+        "b) 5 000 - 3 840 = 1 160 mornilles",
+        "c) 4 x 3 x 320 = 12 x 320 = 3 840 mornilles"
+      ]
+    },
+    {
+      "id": "q-j02-2",
+      "titre_exercice": "EXERCICE 2 (7 points)",
+      "enonce": "Le grand registre de Gringotts indique que le coffre n 687 contient 458 736 gallions. Le coffre n 688 en contient 129 408 de moins que le coffre n 687, et le coffre n 689 en contient le double du coffre n 688. a) Ecris en lettres le nombre 458 736. b) Combien de gallions contient le coffre n 688 ? c) Combien de gallions contient le coffre n 689 ? d) Combien y a-t-il de gallions dans les trois coffres reunis ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "458 736 en lettres", "reponse": "quatre cent cinquante-huit mille sept cent trente-six", "points": 1},
+        {"id": "b", "enonce": "Coffre n 688 ?", "reponse": "329 328 gallions", "points": 2},
+        {"id": "c", "enonce": "Coffre n 689 ?", "reponse": "658 656 gallions", "points": 2},
+        {"id": "d", "enonce": "Total des trois coffres ?", "reponse": "1 446 720 gallions", "points": 2}
+      ],
+      "points_total": 7,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) quatre cent cinquante-huit mille sept cent trente-six",
+        "b) 458 736 - 129 408 = 329 328 gallions",
+        "c) 329 328 x 2 = 658 656 gallions",
+        "d) 458 736 + 329 328 + 658 656 = 1 446 720 gallions"
+      ]
+    },
+    {
+      "id": "q-j02-3",
+      "titre_exercice": "EXERCICE 3 (7 points)",
+      "enonce": "Madame Guipure prepare la rentree. Elle a commande 144 robes de sorcier a 75 mornilles l'unite. Elle vend les robes 95 mornilles l'unite. a) Combien Madame Guipure a-t-elle paye pour ses 144 robes ? b) Combien va-t-elle gagner si elle vend toutes les robes ? c) Quel sera son benefice total si elle vend toutes les robes ? d) Si elle decide finalement de ne vendre que 120 robes au prix de 95 mornilles et garde les autres pour elle, quelle sera sa recette ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Cout d'achat des 144 robes ?", "reponse": "10 800 mornilles", "points": 2},
+        {"id": "b", "enonce": "Recette si toutes vendues ?", "reponse": "13 680 mornilles", "points": 2},
+        {"id": "c", "enonce": "Benefice total ?", "reponse": "2 880 mornilles", "points": 2},
+        {"id": "d", "enonce": "Recette pour 120 robes vendues ?", "reponse": "11 400 mornilles", "points": 1}
+      ],
+      "points_total": 7,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 144 x 75 = 10 800 mornilles",
+        "b) 144 x 95 = 13 680 mornilles",
+        "c) 13 680 - 10 800 = 2 880 mornilles (ou 144 x 20 = 2 880)",
+        "d) 120 x 95 = 11 400 mornilles"
+      ]
+    }
+  ],
+  "ponderation_finale": {"q-j02-1": 6, "q-j02-2": 7, "q-j02-3": 7}
+}

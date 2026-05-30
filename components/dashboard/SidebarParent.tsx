@@ -1,0 +1,138 @@
+'use client';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { cn } from '@/lib/utils';
+import {
+  LayoutDashboard,
+  Bell,
+  Settings,
+  UserPlus,
+  GraduationCap,
+} from 'lucide-react';
+import type { Maison } from '@/lib/types';
+
+const EMOJI_MAISON: Record<Maison, string> = {
+  gryffondor: '🦁',
+  serdaigle: '🦅',
+  poufsouffle: '🦡',
+  serpentard: '🐍',
+};
+
+export interface SidebarEnfant {
+  id: string;
+  display_name: string | null;
+  maison_choisie: Maison | null;
+}
+
+interface SidebarParentProps {
+  enfants: SidebarEnfant[];
+  alertesNonLues: number;
+}
+
+export function SidebarParent({ enfants, alertesNonLues }: SidebarParentProps) {
+  const pathname = usePathname();
+
+  const isActive = (href: string) =>
+    href === '/dashboard'
+      ? pathname === '/dashboard'
+      : pathname?.startsWith(href);
+
+  return (
+    <aside
+      className="w-60 shrink-0 bg-stone-100 border-r border-stone-200 min-h-[calc(100vh-4rem)] p-4 space-y-2 text-sm hidden md:block"
+      aria-label="Navigation principale"
+    >
+      <div className="text-xs uppercase tracking-wider text-stone-500 mb-2 font-bold">
+        Vue d&apos;ensemble
+      </div>
+
+      <Link
+        href="/dashboard"
+        className={cn(
+          'flex items-center gap-2 px-3 py-2 rounded transition-colors',
+          isActive('/dashboard')
+            ? 'bg-amber-100 text-amber-900 font-semibold'
+            : 'hover:bg-stone-200 text-stone-700'
+        )}
+      >
+        <LayoutDashboard className="w-4 h-4" /> Dashboard
+      </Link>
+
+      <Link
+        href="/alertes"
+        className={cn(
+          'flex items-center justify-between px-3 py-2 rounded transition-colors',
+          isActive('/alertes')
+            ? 'bg-amber-100 text-amber-900 font-semibold'
+            : 'hover:bg-stone-200 text-stone-700'
+        )}
+      >
+        <span className="flex items-center gap-2">
+          <Bell className="w-4 h-4" /> Alertes
+        </span>
+        {alertesNonLues > 0 && (
+          <span
+            className="bg-red-600 text-white text-xs px-2 py-0.5 rounded-full font-bold"
+            aria-label={`${alertesNonLues} alertes non lues`}
+          >
+            {alertesNonLues}
+          </span>
+        )}
+      </Link>
+
+      <Link
+        href="/reglages"
+        className={cn(
+          'flex items-center gap-2 px-3 py-2 rounded transition-colors',
+          isActive('/reglages')
+            ? 'bg-amber-100 text-amber-900 font-semibold'
+            : 'hover:bg-stone-200 text-stone-700'
+        )}
+      >
+        <Settings className="w-4 h-4" /> Réglages
+      </Link>
+
+      <div className="text-xs uppercase tracking-wider text-stone-500 mb-2 mt-6 font-bold">
+        Mes enfants
+      </div>
+
+      {enfants.length === 0 && (
+        <p className="text-xs text-stone-400 px-3 py-2">
+          Aucun enfant pour le moment.
+        </p>
+      )}
+
+      {enfants.map((e) => (
+        <Link
+          key={e.id}
+          href={`/enfants/${e.id}`}
+          className={cn(
+            'flex items-center gap-2 px-3 py-2 rounded transition-colors',
+            pathname?.startsWith(`/enfants/${e.id}`)
+              ? 'bg-stone-200 font-semibold text-stone-900'
+              : 'hover:bg-stone-200 text-stone-700'
+          )}
+        >
+          <span aria-hidden="true">
+            {e.maison_choisie ? EMOJI_MAISON[e.maison_choisie] : '👤'}
+          </span>
+          <span className="truncate">
+            {e.display_name ?? 'Enfant sans nom'}
+          </span>
+        </Link>
+      ))}
+
+      <Link
+        href="/enfants/nouveau"
+        className="flex items-center gap-2 px-3 py-2 rounded hover:bg-stone-200 text-stone-500 italic"
+      >
+        <UserPlus className="w-4 h-4" /> Ajouter un enfant
+      </Link>
+
+      <div className="pt-6 mt-6 border-t border-stone-200 text-xs text-stone-400 px-3">
+        <GraduationCap className="w-4 h-4 inline mr-1" /> Poudlard Maths CM2
+      </div>
+    </aside>
+  );
+}

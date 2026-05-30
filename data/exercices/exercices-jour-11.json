@@ -1,0 +1,860 @@
+{
+  "jour": 11,
+  "titre": "Le banquet de Halloween — bonbons Bertie Crochue",
+  "theme_principal": "division_partages_egaux",
+  "scene_globale": "C'est Halloween à Poudlard. La Grande Salle est décorée de citrouilles géantes et de chauves-souris vivantes. Sur les tables, des montagnes de bonbons de Bertie Crochue, de Chocogrenouilles et de Fizwizbiz. Harry, Ron et Hermione doivent partager équitablement avec leurs camarades. Mais soudain, un troll des montagnes entre dans la salle ! Le banquet est interrompu et les préfets distribuent les paquets de bonbons restants en parts égales.",
+  "mix_qcm_redige": "45/55",
+  "duree_estimee_min": 165,
+  "exercices": [
+    {
+      "id": "j11-e01",
+      "ordre_jour": 1,
+      "theme": "division_partages_egaux",
+      "sous_theme": "table_de_division_simple",
+      "scene_hp": "grande_salle_halloween",
+      "narration": "Avant le festin, Hermione distribue ses bonbons de Bertie Crochue à 4 amis.",
+      "type": "qcm",
+      "competence": "Diviser un petit nombre par un nombre à 1 chiffre (sans reste)",
+      "difficulte_relative": 1,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Hermione a 12 bonbons et veut les partager équitablement entre 4 amis. Combien chaque ami reçoit-il ?",
+      "choix": [
+        {"id": "a", "texte": "2 bonbons"},
+        {"id": "b", "texte": "3 bonbons"},
+        {"id": "c", "texte": "4 bonbons"},
+        {"id": "d", "texte": "6 bonbons"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! 12 ÷ 4 = 3. Chaque ami reçoit 3 bonbons. (3 × 4 = 12, donc c'est juste.)",
+      "indices": [
+        {"niveau": 1, "texte": "Cherche dans la table de 4 : quel nombre multiplié par 4 donne 12 ?", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j11-e02",
+      "ordre_jour": 2,
+      "theme": "division_partages_egaux",
+      "sous_theme": "table_de_division_simple",
+      "scene_hp": "grande_salle_halloween",
+      "narration": "Ron, gourmand, sort 24 Chocogrenouilles de sa poche.",
+      "type": "qcm",
+      "competence": "Diviser un nombre à 2 chiffres par un nombre à 1 chiffre",
+      "difficulte_relative": 2,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Ron partage 24 Chocogrenouilles équitablement entre 6 amis. Combien chacun reçoit-il ?",
+      "choix": [
+        {"id": "a", "texte": "3 Chocogrenouilles"},
+        {"id": "b", "texte": "4 Chocogrenouilles"},
+        {"id": "c", "texte": "5 Chocogrenouilles"},
+        {"id": "d", "texte": "6 Chocogrenouilles"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 24 ÷ 6 = 4. Chacun reçoit 4 Chocogrenouilles. (4 × 6 = 24)",
+      "indices": [
+        {"niveau": 1, "texte": "Table de 6 : 6 × 4 = 24. Donc 24 ÷ 6 = 4.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j11-e03",
+      "ordre_jour": 3,
+      "theme": "division_partages_egaux",
+      "sous_theme": "vocabulaire_division",
+      "scene_hp": "grande_salle_halloween",
+      "narration": "Le professeur McGonagall explique la division aux élèves de première année.",
+      "type": "qcm",
+      "competence": "Reconnaître le quotient dans une division",
+      "difficulte_relative": 3,
+      "duree_estimee_sec": 40,
+      "points_maison": 2,
+      "enonce": "Dans l'opération 35 ÷ 5 = 7, comment s'appelle le nombre 7 ?",
+      "choix": [
+        {"id": "a", "texte": "Le dividende"},
+        {"id": "b", "texte": "Le diviseur"},
+        {"id": "c", "texte": "Le quotient"},
+        {"id": "d", "texte": "Le reste"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bien ! Dans 35 ÷ 5 = 7 : 35 est le dividende, 5 est le diviseur, 7 est le quotient.",
+      "indices": [
+        {"niveau": 1, "texte": "Le résultat d'une division s'appelle le quotient.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j11-e04",
+      "ordre_jour": 4,
+      "theme": "division_partages_egaux",
+      "sous_theme": "division_avec_reste_simple",
+      "scene_hp": "grande_salle_halloween",
+      "narration": "Hermione veut partager 13 bonbons entre 4 amis. Tout ne va pas tomber juste !",
+      "type": "qcm",
+      "competence": "Comprendre la notion de reste",
+      "difficulte_relative": 4,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "Hermione partage 13 bonbons entre 4 amis, en parts égales. Chaque ami reçoit 3 bonbons. Combien reste-t-il de bonbons ?",
+      "choix": [
+        {"id": "a", "texte": "0 bonbon"},
+        {"id": "b", "texte": "1 bonbon"},
+        {"id": "c", "texte": "2 bonbons"},
+        {"id": "d", "texte": "3 bonbons"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 4 × 3 = 12, donc 13 - 12 = 1. Il reste 1 bonbon dans le bol d'Hermione.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule 4 × 3 (ce que tout le monde reçoit) puis 13 - (4 × 3).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j11-e05",
+      "ordre_jour": 5,
+      "theme": "division_partages_egaux",
+      "sous_theme": "division_avec_reste_simple",
+      "scene_hp": "grande_salle_halloween",
+      "narration": "Ron tente de partager ses 25 Fizwizbiz entre 4 amis.",
+      "type": "qcm",
+      "competence": "Trouver quotient et reste d'une division simple",
+      "difficulte_relative": 5,
+      "duree_estimee_sec": 45,
+      "points_maison": 3,
+      "enonce": "Ron veut partager 25 Fizwizbiz équitablement entre 4 amis. Combien chacun reçoit-il et combien en reste-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "Chacun 6, reste 1"},
+        {"id": "b", "texte": "Chacun 5, reste 5"},
+        {"id": "c", "texte": "Chacun 4, reste 9"},
+        {"id": "d", "texte": "Chacun 6, reste 0"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Parfait ! 4 × 6 = 24, et 25 - 24 = 1. Chacun a 6 Fizwizbiz et il en reste 1.",
+      "indices": [
+        {"niveau": 1, "texte": "Cherche le plus grand multiple de 4 qui est inférieur ou égal à 25.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j11-e06",
+      "ordre_jour": 6,
+      "theme": "division_partages_egaux",
+      "sous_theme": "division_posee_courte",
+      "scene_hp": "table_gryffondor",
+      "narration": "À la table de Gryffondor, Seamus a un grand bocal de bonbons à partager.",
+      "type": "qcm",
+      "competence": "Diviser un nombre à 2 chiffres par 1 chiffre",
+      "difficulte_relative": 6,
+      "duree_estimee_sec": 50,
+      "points_maison": 3,
+      "enonce": "Seamus a 84 bonbons. Il les partage équitablement entre 7 amis. Combien chacun reçoit-il ?",
+      "choix": [
+        {"id": "a", "texte": "11 bonbons"},
+        {"id": "b", "texte": "12 bonbons"},
+        {"id": "c", "texte": "13 bonbons"},
+        {"id": "d", "texte": "14 bonbons"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! 84 ÷ 7 = 12, car 7 × 12 = 84. Chaque ami reçoit 12 bonbons.",
+      "indices": [
+        {"niveau": 1, "texte": "Décompose : combien de fois 7 dans 84 ? Pense à 7 × 10 = 70, il reste 14, et 14 = 7 × 2.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j11-e07",
+      "ordre_jour": 7,
+      "theme": "division_partages_egaux",
+      "sous_theme": "division_avec_reste",
+      "scene_hp": "table_gryffondor",
+      "narration": "Neville a un sachet de 67 dragées qu'il veut distribuer à ses camarades.",
+      "type": "qcm",
+      "competence": "Division à 2 chiffres avec reste",
+      "difficulte_relative": 7,
+      "duree_estimee_sec": 55,
+      "points_maison": 3,
+      "enonce": "Neville partage 67 dragées équitablement entre 5 amis. Quel est le quotient et quel est le reste ?",
+      "choix": [
+        {"id": "a", "texte": "Quotient 13, reste 2"},
+        {"id": "b", "texte": "Quotient 12, reste 7"},
+        {"id": "c", "texte": "Quotient 14, reste 3"},
+        {"id": "d", "texte": "Quotient 13, reste 0"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Excellent ! 5 × 13 = 65, et 67 - 65 = 2. Le quotient est 13, le reste est 2.",
+      "indices": [
+        {"niveau": 1, "texte": "Cherche le plus grand multiple de 5 inférieur ou égal à 67 : c'est 65 (= 5 × 13).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j11-e08",
+      "ordre_jour": 8,
+      "theme": "division_partages_egaux",
+      "sous_theme": "verification_division",
+      "scene_hp": "table_gryffondor",
+      "narration": "Hermione vérifie toujours ses calculs : 'dividende = diviseur × quotient + reste'.",
+      "type": "qcm",
+      "competence": "Vérifier une division par la formule",
+      "difficulte_relative": 8,
+      "duree_estimee_sec": 55,
+      "points_maison": 4,
+      "enonce": "On a divisé 47 par 6 et trouvé : quotient = 7, reste = 5. Laquelle de ces égalités vérifie le calcul ?",
+      "choix": [
+        {"id": "a", "texte": "47 = 6 × 7 + 5"},
+        {"id": "b", "texte": "47 = 7 × 5 + 6"},
+        {"id": "c", "texte": "47 = 6 × 5 + 7"},
+        {"id": "d", "texte": "47 = 6 + 7 + 5"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Parfait ! La formule de la division euclidienne : dividende = diviseur × quotient + reste. Donc 47 = 6 × 7 + 5 = 42 + 5.",
+      "indices": [
+        {"niveau": 1, "texte": "Multiplie le diviseur (6) par le quotient (7), puis ajoute le reste (5).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j11-e09",
+      "ordre_jour": 9,
+      "theme": "division_partages_egaux",
+      "sous_theme": "combien_de_paquets",
+      "scene_hp": "dame_au_chariot",
+      "narration": "La dame au chariot range les Chocogrenouilles en paquets de 6.",
+      "type": "qcm",
+      "competence": "Trouver combien de paquets dans un total (division-groupement)",
+      "difficulte_relative": 9,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "La dame au chariot a 48 Chocogrenouilles. Elle veut faire des paquets de 6. Combien de paquets pourra-t-elle faire ?",
+      "choix": [
+        {"id": "a", "texte": "6 paquets"},
+        {"id": "b", "texte": "7 paquets"},
+        {"id": "c", "texte": "8 paquets"},
+        {"id": "d", "texte": "9 paquets"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Exact ! 48 ÷ 6 = 8. Elle pourra faire 8 paquets complets.",
+      "indices": [
+        {"niveau": 1, "texte": "Cherche combien de fois 6 'entre' dans 48.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j11-e10",
+      "ordre_jour": 10,
+      "theme": "division_partages_egaux",
+      "sous_theme": "combien_de_paquets_reste",
+      "scene_hp": "dame_au_chariot",
+      "narration": "Plus tard, la dame au chariot a 53 dragées à mettre en paquets de 8.",
+      "type": "qcm",
+      "competence": "Combien de paquets et combien reste-t-il (division avec reste)",
+      "difficulte_relative": 10,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "La dame au chariot a 53 dragées et fait des paquets de 8. Combien de paquets complets fera-t-elle, et combien de dragées resteront sans paquet ?",
+      "choix": [
+        {"id": "a", "texte": "6 paquets, 5 dragées restent"},
+        {"id": "b", "texte": "7 paquets, 3 dragées restent"},
+        {"id": "c", "texte": "6 paquets, 8 dragées restent"},
+        {"id": "d", "texte": "8 paquets, 0 dragée reste"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bien ! 8 × 6 = 48, et 53 - 48 = 5. Elle fera 6 paquets et il restera 5 dragées.",
+      "indices": [
+        {"niveau": 1, "texte": "8 × 6 = 48, 8 × 7 = 56. 56 est déjà trop. Donc 6 paquets.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j11-e11",
+      "ordre_jour": 11,
+      "theme": "division_partages_egaux",
+      "sous_theme": "combien_de_paquets",
+      "scene_hp": "cuisines_poudlard",
+      "narration": "Aux cuisines, les elfes de maison préparent les paquets de bonbons pour le banquet.",
+      "type": "numerique",
+      "competence": "Trouver le nombre de paquets dans un total à 3 chiffres",
+      "difficulte_relative": 11,
+      "duree_estimee_sec": 75,
+      "points_maison": 4,
+      "enonce": "Les elfes ont 247 bonbons. Combien de paquets de 6 bonbons peuvent-ils faire au maximum ? (Donne juste le nombre de paquets complets.)",
+      "reponse_attendue_redige": "41",
+      "tolerance_numerique": 0,
+      "regex_validation": "^41$",
+      "explication_correcte": "Bravo ! 6 × 41 = 246, et 247 - 246 = 1. Ils feront 41 paquets et il restera 1 bonbon.",
+      "indices": [
+        {"niveau": 1, "texte": "Pose la division 247 ÷ 6. Cherche combien de fois 6 dans 24, puis traite le 7.", "cout_points": 1},
+        {"niveau": 2, "texte": "24 ÷ 6 = 4 (donc 40 paquets pour 240 bonbons). Reste 7. Combien de fois 6 dans 7 ? Une fois. Total : 41 paquets.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j11-e12",
+      "ordre_jour": 12,
+      "theme": "division_partages_egaux",
+      "sous_theme": "division_posee_3_chiffres",
+      "scene_hp": "cuisines_poudlard",
+      "narration": "Les elfes de maison comptent les bonbons et veulent vérifier leur travail.",
+      "type": "numerique",
+      "competence": "Poser et calculer une division à 3 chiffres ÷ 1 chiffre (sans reste)",
+      "difficulte_relative": 12,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Les elfes partagent 252 bonbons entre 4 plats. Combien chaque plat reçoit-il ?",
+      "reponse_attendue_redige": "63",
+      "tolerance_numerique": 0,
+      "regex_validation": "^63$",
+      "explication_correcte": "Excellent ! 252 ÷ 4 = 63. Vérification : 4 × 63 = 252.",
+      "indices": [
+        {"niveau": 1, "texte": "Pose 252 ÷ 4. Combien de fois 4 dans 25 ? Puis traite le 2 final.", "cout_points": 1}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j11-e12-d1", "enonce": "Combien de fois 4 dans 25 ?", "type": "numerique", "reponse": 6},
+          {"id": "j11-e12-d2", "enonce": "4 × 6 = 24. Combien reste-t-il (25 - 24) ?", "type": "numerique", "reponse": 1},
+          {"id": "j11-e12-d3", "enonce": "On abaisse le 2 : on a maintenant 12. Combien de fois 4 dans 12 ?", "type": "numerique", "reponse": 3},
+          {"id": "j11-e12-d4", "enonce": "Le quotient final est donc... ?", "type": "numerique", "reponse": 63}
+        ]
+      }
+    },
+    {
+      "id": "j11-e13",
+      "ordre_jour": 13,
+      "theme": "division_partages_egaux",
+      "sous_theme": "division_posee_avec_reste",
+      "scene_hp": "cuisines_poudlard",
+      "narration": "Nouveau partage chez les elfes : pas toujours juste cette fois.",
+      "type": "qcm",
+      "competence": "Division à 3 chiffres ÷ 1 chiffre avec reste",
+      "difficulte_relative": 13,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Les elfes ont 175 bonbons à partager équitablement entre 8 maisons-tables. Combien chaque table reçoit-elle et combien de bonbons restent-ils ?",
+      "choix": [
+        {"id": "a", "texte": "Chaque table 21, reste 7"},
+        {"id": "b", "texte": "Chaque table 22, reste 1"},
+        {"id": "c", "texte": "Chaque table 20, reste 15"},
+        {"id": "d", "texte": "Chaque table 21, reste 1"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bravo ! 8 × 21 = 168, et 175 - 168 = 7. Chaque table reçoit 21 bonbons et il en reste 7.",
+      "indices": [
+        {"niveau": 1, "texte": "Pose la division 175 ÷ 8. Combien de fois 8 dans 17 ? Dans le reste suivi du 5 ?", "cout_points": 1},
+        {"niveau": 2, "texte": "17 ÷ 8 = 2, reste 1. On abaisse 5 → 15. 15 ÷ 8 = 1, reste 7. Quotient 21, reste 7.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j11-e13-d1", "enonce": "Combien de fois 8 dans 17 ?", "type": "numerique", "reponse": 2},
+          {"id": "j11-e13-d2", "enonce": "8 × 2 = 16. Combien reste-t-il (17 - 16) ?", "type": "numerique", "reponse": 1},
+          {"id": "j11-e13-d3", "enonce": "On abaisse le 5 : on a 15. Combien de fois 8 dans 15 ?", "type": "numerique", "reponse": 1},
+          {"id": "j11-e13-d4", "enonce": "8 × 1 = 8. Reste final : 15 - 8 = ?", "type": "numerique", "reponse": 7}
+        ]
+      }
+    },
+    {
+      "id": "j11-e14",
+      "ordre_jour": 14,
+      "theme": "division_partages_egaux",
+      "sous_theme": "division_par_2_chiffres_simple",
+      "scene_hp": "grande_salle_banquet",
+      "narration": "Au banquet, les bonbons sont rangés par dizaines sur les plateaux.",
+      "type": "qcm",
+      "competence": "Diviser par 10",
+      "difficulte_relative": 14,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Les elfes ont préparé 360 bonbons à mettre dans des plateaux de 10. Combien de plateaux pleins ?",
+      "choix": [
+        {"id": "a", "texte": "30 plateaux"},
+        {"id": "b", "texte": "36 plateaux"},
+        {"id": "c", "texte": "360 plateaux"},
+        {"id": "d", "texte": "3 600 plateaux"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! Diviser par 10 = supprimer le 0 à la fin. 360 ÷ 10 = 36 plateaux.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour diviser par 10, on supprime un zéro à la fin du nombre (si possible).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j11-e15",
+      "ordre_jour": 15,
+      "theme": "division_partages_egaux",
+      "sous_theme": "combien_de_paquets",
+      "scene_hp": "grande_salle_banquet",
+      "narration": "Hermione observe les paquets de Bertie Crochue.",
+      "type": "numerique",
+      "competence": "Trouver combien de paquets dans un total à 3 chiffres",
+      "difficulte_relative": 15,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Hermione doit emballer 312 bonbons dans des paquets de 12 bonbons chacun. Combien de paquets complets peut-elle faire ? (Donne juste le nombre.)",
+      "reponse_attendue_redige": "26",
+      "tolerance_numerique": 0,
+      "regex_validation": "^26$",
+      "explication_correcte": "Bravo ! 12 × 26 = 312. Donc 312 ÷ 12 = 26 paquets exactement.",
+      "indices": [
+        {"niveau": 1, "texte": "Cherche le multiple de 12 le plus proche de 312. Pense à 12 × 10 = 120, 12 × 20 = 240.", "cout_points": 1},
+        {"niveau": 2, "texte": "12 × 20 = 240, il reste 312 - 240 = 72. Et 72 = 12 × 6. Total : 20 + 6 = 26.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j11-e15-d1", "enonce": "12 × 10 fait combien ?", "type": "numerique", "reponse": 120},
+          {"id": "j11-e15-d2", "enonce": "12 × 20 fait combien ?", "type": "numerique", "reponse": 240},
+          {"id": "j11-e15-d3", "enonce": "312 - 240 = ?", "type": "numerique", "reponse": 72},
+          {"id": "j11-e15-d4", "enonce": "Combien de fois 12 dans 72 ?", "type": "numerique", "reponse": 6}
+        ]
+      }
+    },
+    {
+      "id": "j11-e16",
+      "ordre_jour": 16,
+      "theme": "division_partages_egaux",
+      "sous_theme": "probleme_partage_simple",
+      "scene_hp": "grande_salle_banquet",
+      "narration": "Le banquet bat son plein. Les préfets distribuent.",
+      "type": "redige_court",
+      "competence": "Résoudre un problème de partage simple (division sans reste)",
+      "difficulte_relative": 16,
+      "duree_estimee_sec": 120,
+      "points_maison": 5,
+      "enonce": "Le préfet Percy a 144 bonbons à distribuer équitablement entre 8 élèves de première année. Combien chaque élève reçoit-il ? (Donne juste le nombre.)",
+      "reponse_attendue_redige": "18",
+      "tolerance_numerique": 0,
+      "regex_validation": "^18$",
+      "explication_correcte": "Très bien ! 144 ÷ 8 = 18. Chaque élève reçoit 18 bonbons. (Vérification : 8 × 18 = 144.)",
+      "indices": [
+        {"niveau": 1, "texte": "Pose la division 144 ÷ 8. Combien de fois 8 dans 14 ? Puis dans le reste suivi du 4.", "cout_points": 1}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j11-e16-d1", "enonce": "Combien de fois 8 dans 14 ?", "type": "numerique", "reponse": 1},
+          {"id": "j11-e16-d2", "enonce": "14 - 8 = 6. On abaisse le 4 : on a 64. Combien de fois 8 dans 64 ?", "type": "numerique", "reponse": 8},
+          {"id": "j11-e16-d3", "enonce": "Le quotient est donc... ?", "type": "numerique", "reponse": 18}
+        ]
+      }
+    },
+    {
+      "id": "j11-e17",
+      "ordre_jour": 17,
+      "theme": "division_partages_egaux",
+      "sous_theme": "probleme_partage_avec_reste",
+      "scene_hp": "table_gryffondor_banquet",
+      "narration": "Fred et George Weasley, jumeaux farceurs, ont une bonne idée.",
+      "type": "redige_court",
+      "competence": "Résoudre un problème de partage avec reste (interpréter le reste)",
+      "difficulte_relative": 17,
+      "duree_estimee_sec": 120,
+      "points_maison": 5,
+      "enonce": "Fred et George ont 95 Chocogrenouilles à partager équitablement entre 7 amis. Combien chaque ami reçoit-il et combien reste-t-il aux jumeaux ? (Réponds sous la forme : 'Chacun X, reste Y'.)",
+      "reponse_attendue_redige": "Chacun 13, reste 4",
+      "regex_validation": "^[Cc]hacun\\s*13,?\\s*reste\\s*4$",
+      "explication_correcte": "Parfait ! 7 × 13 = 91, et 95 - 91 = 4. Chaque ami reçoit 13 Chocogrenouilles et 4 restent aux jumeaux (qui les mangeront, bien sûr !).",
+      "indices": [
+        {"niveau": 1, "texte": "Pose 95 ÷ 7. Combien de fois 7 dans 9 ? Puis traite le 5.", "cout_points": 1},
+        {"niveau": 2, "texte": "9 ÷ 7 = 1, reste 2. On abaisse 5 → 25. 25 ÷ 7 = 3, reste 4.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j11-e17-d1", "enonce": "Combien de fois 7 dans 9 ?", "type": "numerique", "reponse": 1},
+          {"id": "j11-e17-d2", "enonce": "9 - 7 = 2. On abaisse 5 → 25. Combien de fois 7 dans 25 ?", "type": "numerique", "reponse": 3},
+          {"id": "j11-e17-d3", "enonce": "25 - (7 × 3) = ?", "type": "numerique", "reponse": 4}
+        ]
+      }
+    },
+    {
+      "id": "j11-e18",
+      "ordre_jour": 18,
+      "theme": "division_partages_egaux",
+      "sous_theme": "interpretation_reste",
+      "scene_hp": "table_gryffondor_banquet",
+      "narration": "Hermione réfléchit : 'Le reste, qu'est-ce qu'on en fait ?'",
+      "type": "qcm",
+      "competence": "Interpréter le reste dans un contexte concret",
+      "difficulte_relative": 18,
+      "duree_estimee_sec": 80,
+      "points_maison": 5,
+      "enonce": "On veut transporter 38 élèves dans des calèches qui contiennent 6 élèves chacune. Combien de calèches faut-il au minimum ?",
+      "choix": [
+        {"id": "a", "texte": "6 calèches"},
+        {"id": "b", "texte": "7 calèches"},
+        {"id": "c", "texte": "8 calèches"},
+        {"id": "d", "texte": "5 calèches"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien réfléchi ! 38 ÷ 6 = 6 reste 2. Il faut 6 calèches pour 36 élèves + 1 calèche pour les 2 derniers = 7 calèches. (On ne peut pas laisser 2 élèves sur le quai !)",
+      "explications_erreurs": {
+        "a": "6 calèches ne suffisent pas : 6 × 6 = 36, il manquerait 2 places.",
+        "c": "8 c'est trop : 7 calèches suffisent puisque la dernière n'a que 2 élèves.",
+        "d": "5 calèches ne contiennent que 30 places. Beaucoup trop peu."
+      },
+      "indices": [
+        {"niveau": 1, "texte": "Calcule d'abord 38 ÷ 6 (quotient et reste). Si le reste n'est pas 0, ajoute 1 calèche supplémentaire.", "cout_points": 1}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j11-e18-d1", "enonce": "Combien font 6 × 6 ?", "type": "numerique", "reponse": 36},
+          {"id": "j11-e18-d2", "enonce": "Combien d'élèves restent à transporter après 6 calèches pleines ?", "type": "numerique", "reponse": 2},
+          {"id": "j11-e18-d3", "enonce": "Il reste 2 élèves : faut-il une calèche de plus ?", "type": "qcm", "choix": [{"id": "a", "texte": "Oui, sinon ils restent à pied"}, {"id": "b", "texte": "Non, ils marcheront"}], "reponse_correcte": "a"}
+        ]
+      }
+    },
+    {
+      "id": "j11-e19",
+      "ordre_jour": 19,
+      "theme": "division_partages_egaux",
+      "sous_theme": "division_par_25",
+      "scene_hp": "salle_commune_gryffondor",
+      "narration": "Dans la salle commune, les Gryffondor partagent leurs derniers bonbons après le banquet.",
+      "type": "numerique",
+      "competence": "Diviser un nombre à 3 chiffres par 25",
+      "difficulte_relative": 19,
+      "duree_estimee_sec": 100,
+      "points_maison": 5,
+      "enonce": "Lavande Brown a 175 bonbons à partager équitablement entre 25 élèves. Combien chacun reçoit-il ?",
+      "reponse_attendue_redige": "7",
+      "tolerance_numerique": 0,
+      "regex_validation": "^7$",
+      "explication_correcte": "Bravo ! 175 ÷ 25 = 7. Vérification : 25 × 7 = 175. Chacun a 7 bonbons.",
+      "indices": [
+        {"niveau": 1, "texte": "Pense à la table de 25 : 25, 50, 75, 100, 125, 150, 175. Combien de termes ?", "cout_points": 1}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j11-e19-d1", "enonce": "Combien font 25 × 4 ?", "type": "numerique", "reponse": 100},
+          {"id": "j11-e19-d2", "enonce": "175 - 100 = ?", "type": "numerique", "reponse": 75},
+          {"id": "j11-e19-d3", "enonce": "75 ÷ 25 = ?", "type": "numerique", "reponse": 3},
+          {"id": "j11-e19-d4", "enonce": "Donc le quotient total est 4 + 3 = ?", "type": "numerique", "reponse": 7}
+        ]
+      }
+    },
+    {
+      "id": "j11-e20",
+      "ordre_jour": 20,
+      "theme": "division_partages_egaux",
+      "sous_theme": "probleme_combien_de_groupes",
+      "scene_hp": "salle_commune_gryffondor",
+      "narration": "Le préfet Percy organise des groupes de révision.",
+      "type": "redige_court",
+      "competence": "Résoudre un problème : combien de groupes ?",
+      "difficulte_relative": 20,
+      "duree_estimee_sec": 120,
+      "points_maison": 5,
+      "enonce": "Percy a 138 sujets de révision à distribuer par groupes de 6 élèves. Chaque groupe reçoit 6 sujets. Combien de groupes pourra-t-il former et combien de sujets resteront-ils ? (Réponds : 'X groupes, Y sujets restent'.)",
+      "reponse_attendue_redige": "23 groupes, 0 sujet reste",
+      "regex_validation": "^23\\s*groupes?,?\\s*0\\s*sujets?\\s*reste(nt)?$",
+      "explication_correcte": "Excellent ! 138 ÷ 6 = 23 reste 0. Il fera exactement 23 groupes, sans aucun sujet en trop.",
+      "indices": [
+        {"niveau": 1, "texte": "Pose la division 138 ÷ 6. Cherche combien de fois 6 dans 13, puis dans le reste suivi du 8.", "cout_points": 1},
+        {"niveau": 2, "texte": "13 ÷ 6 = 2 reste 1. 18 ÷ 6 = 3 reste 0. Quotient 23, reste 0.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j11-e20-d1", "enonce": "Combien de fois 6 dans 13 ?", "type": "numerique", "reponse": 2},
+          {"id": "j11-e20-d2", "enonce": "13 - 12 = 1. On abaisse 8 → 18. Combien de fois 6 dans 18 ?", "type": "numerique", "reponse": 3},
+          {"id": "j11-e20-d3", "enonce": "Le quotient final est donc... ?", "type": "numerique", "reponse": 23}
+        ]
+      }
+    },
+    {
+      "id": "j11-e21",
+      "ordre_jour": 21,
+      "theme": "division_partages_egaux",
+      "sous_theme": "probleme_combien_chacun",
+      "scene_hp": "couloirs_poudlard",
+      "narration": "Dans les couloirs, Hermione redistribue ses devoirs aux Gryffondor.",
+      "type": "redige_court",
+      "competence": "Résoudre un problème de partage à 3 chiffres",
+      "difficulte_relative": 21,
+      "duree_estimee_sec": 120,
+      "points_maison": 6,
+      "enonce": "Hermione a 504 cartes de révision à partager équitablement entre les 14 élèves de Gryffondor de leur année. Combien chaque élève reçoit-il ?",
+      "reponse_attendue_redige": "36",
+      "tolerance_numerique": 0,
+      "regex_validation": "^36$",
+      "explication_correcte": "Magnifique ! 504 ÷ 14 = 36. Vérification : 14 × 36 = 504. Chaque élève reçoit 36 cartes.",
+      "indices": [
+        {"niveau": 1, "texte": "Pense d'abord à 14 × 10 = 140, puis 14 × 30 = 420.", "cout_points": 1},
+        {"niveau": 2, "texte": "14 × 30 = 420. 504 - 420 = 84. Et 84 ÷ 14 = 6. Donc 30 + 6 = 36.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j11-e21-d1", "enonce": "14 × 10 = ?", "type": "numerique", "reponse": 140},
+          {"id": "j11-e21-d2", "enonce": "14 × 30 = ?", "type": "numerique", "reponse": 420},
+          {"id": "j11-e21-d3", "enonce": "504 - 420 = ?", "type": "numerique", "reponse": 84},
+          {"id": "j11-e21-d4", "enonce": "84 ÷ 14 = ?", "type": "numerique", "reponse": 6}
+        ]
+      }
+    },
+    {
+      "id": "j11-e22",
+      "ordre_jour": 22,
+      "theme": "division_partages_egaux",
+      "sous_theme": "probleme_paquets_3_chiffres",
+      "scene_hp": "couloirs_poudlard",
+      "narration": "Les jumeaux Weasley fabriquent des paquets-surprises.",
+      "type": "redige_court",
+      "competence": "Problème : combien de paquets et reste à 3 chiffres",
+      "difficulte_relative": 22,
+      "duree_estimee_sec": 130,
+      "points_maison": 6,
+      "enonce": "Fred et George ont 425 farces à mettre dans des paquets de 9. Combien de paquets complets pourront-ils faire et combien de farces resteront-elles ? (Réponds : 'X paquets, Y restent'.)",
+      "reponse_attendue_redige": "47 paquets, 2 restent",
+      "regex_validation": "^47\\s*paquets?,?\\s*2\\s*reste(nt)?$",
+      "explication_correcte": "Bravo ! 9 × 47 = 423, et 425 - 423 = 2. Ils feront 47 paquets et il restera 2 farces (qu'ils garderont pour Rusard !).",
+      "indices": [
+        {"niveau": 1, "texte": "Pose 425 ÷ 9. Combien de fois 9 dans 42 ? Puis traite le 5.", "cout_points": 1},
+        {"niveau": 2, "texte": "42 ÷ 9 = 4 reste 6. On abaisse 5 → 65. 65 ÷ 9 = 7 reste 2.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j11-e22-d1", "enonce": "Combien de fois 9 dans 42 ?", "type": "numerique", "reponse": 4},
+          {"id": "j11-e22-d2", "enonce": "42 - 36 = 6. On abaisse le 5 → 65. Combien de fois 9 dans 65 ?", "type": "numerique", "reponse": 7},
+          {"id": "j11-e22-d3", "enonce": "65 - 63 = ? (c'est le reste)", "type": "numerique", "reponse": 2},
+          {"id": "j11-e22-d4", "enonce": "Quotient final : 47, reste : 2. C'est juste ?", "type": "qcm", "choix": [{"id": "a", "texte": "Oui"}, {"id": "b", "texte": "Non"}], "reponse_correcte": "a"}
+        ]
+      }
+    },
+    {
+      "id": "j11-e23",
+      "ordre_jour": 23,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_division",
+      "scene_hp": "tour_gryffondor",
+      "narration": "Dans la tour de Gryffondor, Ron compte ses gains de Bertie Crochue.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème à 2 étapes (multiplication puis division)",
+      "difficulte_relative": 23,
+      "duree_estimee_sec": 200,
+      "points_maison": 7,
+      "enonce": "Ron a acheté 8 boîtes de Bertie Crochue contenant 36 bonbons chacune. Il veut partager équitablement TOUS ces bonbons entre lui-même, Harry et Hermione (3 personnes). Combien chacun recevra-t-il ?",
+      "reponse_attendue_redige": "96",
+      "tolerance_numerique": 0,
+      "regex_validation": "^96$",
+      "explication_correcte": "Excellent ! Étape 1 : 8 × 36 = 288 bonbons. Étape 2 : 288 ÷ 3 = 96. Chacun reçoit 96 bonbons.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : combien Ron a-t-il de bonbons au total ? (multiplication)", "cout_points": 1},
+        {"niveau": 2, "texte": "8 × 36 = 288. Maintenant divise 288 par 3.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j11-e23-d1", "enonce": "Étape 1 : combien font 8 × 36 ?", "type": "numerique", "reponse": 288},
+          {"id": "j11-e23-d2", "enonce": "Étape 2 : combien font 288 ÷ 3 ?", "type": "numerique", "reponse": 96}
+        ]
+      }
+    },
+    {
+      "id": "j11-e24",
+      "ordre_jour": 24,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_division_reste",
+      "scene_hp": "tour_gryffondor",
+      "narration": "Hermione veut être juste : elle compte les bonbons restants après le banquet.",
+      "type": "redige_libre",
+      "competence": "Problème à 2 étapes avec interprétation du reste",
+      "difficulte_relative": 24,
+      "duree_estimee_sec": 220,
+      "points_maison": 7,
+      "enonce": "Il reste 6 sachets de 25 bonbons chacun à la table de Gryffondor. Hermione veut les partager équitablement entre les 7 élèves de leur année. Combien chacun aura-t-il ? Combien restera-t-il de bonbons ?",
+      "reponse_attendue_redige": "21 et reste 3",
+      "regex_validation": "^21\\s*(et|,)?\\s*reste\\s*3$",
+      "explication_correcte": "Bravo ! Étape 1 : 6 × 25 = 150 bonbons. Étape 2 : 150 ÷ 7 = 21 reste 3. Chacun reçoit 21 bonbons, il en reste 3 dans le sachet.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : combien y a-t-il de bonbons en tout ? Étape 2 : divise par 7.", "cout_points": 1},
+        {"niveau": 2, "texte": "6 × 25 = 150. Puis 150 ÷ 7 : 7 × 21 = 147, donc reste 3.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j11-e24-d1", "enonce": "Combien font 6 × 25 ?", "type": "numerique", "reponse": 150},
+          {"id": "j11-e24-d2", "enonce": "Combien font 7 × 21 ?", "type": "numerique", "reponse": 147},
+          {"id": "j11-e24-d3", "enonce": "150 - 147 = ? (c'est le reste)", "type": "numerique", "reponse": 3}
+        ]
+      }
+    },
+    {
+      "id": "j11-e25",
+      "ordre_jour": 25,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_soustraction_division",
+      "scene_hp": "tour_gryffondor",
+      "narration": "Neville range la salle commune après le banquet.",
+      "type": "redige_libre",
+      "competence": "Problème à 2 étapes (soustraction puis division)",
+      "difficulte_relative": 25,
+      "duree_estimee_sec": 220,
+      "points_maison": 7,
+      "enonce": "Neville a ramassé 248 bonbons sur les tables. Il en garde 32 pour Trevor son crapaud, puis partage le reste équitablement entre 8 amis. Combien chaque ami reçoit-il ?",
+      "reponse_attendue_redige": "27",
+      "tolerance_numerique": 0,
+      "regex_validation": "^27$",
+      "explication_correcte": "Excellent ! Étape 1 : 248 - 32 = 216 bonbons. Étape 2 : 216 ÷ 8 = 27. Chaque ami reçoit 27 bonbons.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : combien reste-t-il après que Neville prend 32 ? Étape 2 : divise par 8.", "cout_points": 1},
+        {"niveau": 2, "texte": "248 - 32 = 216. Puis 216 ÷ 8 = 27.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j11-e25-d1", "enonce": "Étape 1 : combien font 248 - 32 ?", "type": "numerique", "reponse": 216},
+          {"id": "j11-e25-d2", "enonce": "Étape 2 : combien font 216 ÷ 8 ?", "type": "numerique", "reponse": 27}
+        ]
+      }
+    },
+    {
+      "id": "j11-e26",
+      "ordre_jour": 26,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_multiple",
+      "scene_hp": "infirmerie_poudlard",
+      "narration": "Madame Pomfresh prépare les paniers de bonbons pour les élèves malades.",
+      "type": "redige_libre",
+      "competence": "Problème à 2 étapes (addition puis division)",
+      "difficulte_relative": 26,
+      "duree_estimee_sec": 220,
+      "points_maison": 7,
+      "enonce": "Madame Pomfresh a 158 bonbons de Bertie Crochue et 142 Chocogrenouilles. Elle prépare des paniers identiques contenant le total partagé équitablement entre 12 paniers. Combien de friandises chaque panier contient-il ?",
+      "reponse_attendue_redige": "25",
+      "tolerance_numerique": 0,
+      "regex_validation": "^25$",
+      "explication_correcte": "Parfait ! Étape 1 : 158 + 142 = 300 friandises au total. Étape 2 : 300 ÷ 12 = 25. Chaque panier en a 25.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : combien y a-t-il de friandises au total ? Étape 2 : divise par 12.", "cout_points": 1},
+        {"niveau": 2, "texte": "158 + 142 = 300. 12 × 25 = 300, donc 300 ÷ 12 = 25.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j11-e26-d1", "enonce": "Combien font 158 + 142 ?", "type": "numerique", "reponse": 300},
+          {"id": "j11-e26-d2", "enonce": "Combien font 12 × 25 ?", "type": "numerique", "reponse": 300},
+          {"id": "j11-e26-d3", "enonce": "Donc 300 ÷ 12 = ?", "type": "numerique", "reponse": 25}
+        ]
+      }
+    },
+    {
+      "id": "j11-e27",
+      "ordre_jour": 27,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_paquets",
+      "scene_hp": "ollivander_apres_banquet",
+      "narration": "Chez Ollivander, Hermione veut faire des cadeaux aux Premiers Années.",
+      "type": "redige_libre",
+      "competence": "Problème à 2 étapes : multiplication + division avec reste",
+      "difficulte_relative": 27,
+      "duree_estimee_sec": 240,
+      "points_maison": 8,
+      "enonce": "Hermione achète 7 grands sachets contenant chacun 48 bonbons. Elle veut faire des paquets-cadeaux de 11 bonbons. Combien de paquets-cadeaux pourra-t-elle faire au maximum ? Combien de bonbons resteront-ils ?",
+      "reponse_attendue_redige": "30 paquets, 6 restent",
+      "regex_validation": "^30\\s*paquets?,?\\s*6\\s*reste(nt)?$",
+      "explication_correcte": "Magnifique ! Étape 1 : 7 × 48 = 336 bonbons. Étape 2 : 336 ÷ 11 = 30 reste 6 (car 11 × 30 = 330, et 336 - 330 = 6).",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : combien Hermione a-t-elle de bonbons au total ?", "cout_points": 1},
+        {"niveau": 2, "texte": "7 × 48 = 336. Maintenant divise 336 par 11. Pense à 11 × 30 = 330.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j11-e27-d1", "enonce": "Étape 1 : 7 × 48 = ?", "type": "numerique", "reponse": 336},
+          {"id": "j11-e27-d2", "enonce": "11 × 30 = ?", "type": "numerique", "reponse": 330},
+          {"id": "j11-e27-d3", "enonce": "336 - 330 = ? (c'est le reste)", "type": "numerique", "reponse": 6},
+          {"id": "j11-e27-d4", "enonce": "Donc 30 paquets et 6 bonbons restent. C'est exact ?", "type": "qcm", "choix": [{"id": "a", "texte": "Oui"}, {"id": "b", "texte": "Non"}], "reponse_correcte": "a"}
+        ]
+      }
+    },
+    {
+      "id": "j11-e28",
+      "ordre_jour": 28,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_redige_2_etapes",
+      "scene_hp": "grande_salle_lendemain",
+      "narration": "Le lendemain du banquet, le professeur Flitwick organise un concours de calcul.",
+      "type": "redige_libre",
+      "competence": "Problème à 2 étapes avec interprétation",
+      "difficulte_relative": 28,
+      "duree_estimee_sec": 260,
+      "points_maison": 8,
+      "enonce": "À Poudlard, 168 élèves vont en sortie. On les répartit dans des calèches de 5 élèves maximum. Le directeur a déjà réservé 30 calèches. Y aura-t-il assez de calèches ? Si non, combien en manque-t-il ? (Réponds : 'Oui, il y a assez' OU 'Non, il en manque X'.)",
+      "reponse_attendue_redige": "Non, il en manque 4",
+      "regex_validation": "^[Nn]on,?\\s*il\\s*en\\s*manque\\s*4$",
+      "explication_correcte": "Bravo ! 168 ÷ 5 = 33 reste 3, donc il faut 34 calèches (les 3 derniers élèves ont besoin d'une calèche en plus). 34 - 30 = 4 calèches manquantes.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule combien de calèches il FAUT au minimum (attention au reste !).", "cout_points": 1},
+        {"niveau": 2, "texte": "168 ÷ 5 = 33 reste 3. Comme il reste 3 élèves, il faut 33 + 1 = 34 calèches. Compare avec 30.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j11-e28-d1", "enonce": "168 ÷ 5 = ? reste ?", "type": "qcm", "choix": [{"id": "a", "texte": "33 reste 3"}, {"id": "b", "texte": "34 reste 0"}, {"id": "c", "texte": "33 reste 0"}], "reponse_correcte": "a"},
+          {"id": "j11-e28-d2", "enonce": "Il reste 3 élèves : faut-il une calèche supplémentaire ?", "type": "qcm", "choix": [{"id": "a", "texte": "Oui"}, {"id": "b", "texte": "Non"}], "reponse_correcte": "a"},
+          {"id": "j11-e28-d3", "enonce": "Combien de calèches faut-il au total ?", "type": "numerique", "reponse": 34},
+          {"id": "j11-e28-d4", "enonce": "Combien en manque-t-il (34 - 30) ?", "type": "numerique", "reponse": 4}
+        ]
+      }
+    },
+    {
+      "id": "j11-e29",
+      "ordre_jour": 29,
+      "theme": "probleme_synthese_libermann",
+      "sous_theme": "mini_probleme_concours",
+      "scene_hp": "epreuve_libermann_simulation",
+      "narration": "Simulation d'épreuve Libermann ! Concentre-toi, c'est un problème long.",
+      "type": "redige_libre",
+      "competence": "Résoudre un problème à 3 étapes (Libermann)",
+      "difficulte_relative": 29,
+      "duree_estimee_sec": 360,
+      "points_maison": 10,
+      "enonce": "Le directeur Dumbledore veut offrir un cadeau à chacun des 245 élèves de Poudlard. Il a déjà 12 boîtes de 18 bonbons et 3 boîtes de 24 Chocogrenouilles. Combien de friandises a-t-il en tout ? Y en a-t-il assez pour donner 1 friandise à chaque élève ? Si oui, combien en restera-t-il ?",
+      "reponse_attendue_redige": "288 friandises, oui, 43 restent",
+      "regex_validation": "^288\\s*friandises?,?\\s*oui,?\\s*43\\s*reste(nt)?$",
+      "explication_correcte": "Magnifique ! Étape 1 : 12 × 18 = 216 bonbons. Étape 2 : 3 × 24 = 72 Chocogrenouilles. Étape 3 : 216 + 72 = 288 friandises. Comparaison : 288 > 245, donc OUI. Reste : 288 - 245 = 43.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule séparément le nombre de bonbons (12 × 18) et le nombre de Chocogrenouilles (3 × 24), puis additionne.", "cout_points": 1},
+        {"niveau": 2, "texte": "12 × 18 = 216 ; 3 × 24 = 72 ; total = 288. Compare à 245.", "cout_points": 2},
+        {"niveau": 3, "texte": "288 - 245 = 43. Le reste est 43.", "cout_points": 3}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_420s",
+        "micro_etapes": [
+          {"id": "j11-e29-d1", "enonce": "Étape 1 : combien font 12 × 18 ?", "type": "numerique", "reponse": 216},
+          {"id": "j11-e29-d2", "enonce": "Étape 2 : combien font 3 × 24 ?", "type": "numerique", "reponse": 72},
+          {"id": "j11-e29-d3", "enonce": "Étape 3 : total = 216 + 72 = ?", "type": "numerique", "reponse": 288},
+          {"id": "j11-e29-d4", "enonce": "288 - 245 = ? (le reste)", "type": "numerique", "reponse": 43}
+        ]
+      }
+    },
+    {
+      "id": "j11-e30",
+      "ordre_jour": 30,
+      "theme": "probleme_synthese_libermann",
+      "sous_theme": "mini_probleme_concours_avance",
+      "scene_hp": "epreuve_libermann_simulation",
+      "narration": "Épreuve finale du jour ! Le troll a tout cassé : reconstitue les bonbons.",
+      "type": "redige_libre",
+      "competence": "Problème complexe : partage avec contrainte et reste (Libermann)",
+      "difficulte_relative": 30,
+      "duree_estimee_sec": 420,
+      "points_maison": 12,
+      "enonce": "Après le passage du troll, les préfets ramassent 432 bonbons sur les 4 tables de maisons. Ils décident d'en donner d'abord 28 à chaque élève des 4 préfets-en-chef (4 élèves), puis de partager équitablement le reste entre les 16 préfets ordinaires. Combien chaque préfet ordinaire reçoit-il ? Reste-t-il des bonbons ?",
+      "reponse_attendue_redige": "20 chacun, 0 reste",
+      "regex_validation": "^20\\s*chacun,?\\s*0\\s*reste$",
+      "explication_correcte": "Bravo, niveau Libermann ! Étape 1 : 4 × 28 = 112 bonbons pour les préfets-en-chef. Étape 2 : 432 - 112 = 320 bonbons restants. Étape 3 : 320 ÷ 16 = 20. Chaque préfet ordinaire reçoit 20 bonbons et il ne reste rien (reste 0).",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : combien de bonbons pour les 4 préfets-en-chef ? Étape 2 : combien reste-t-il après ? Étape 3 : partage par 16.", "cout_points": 1},
+        {"niveau": 2, "texte": "4 × 28 = 112. 432 - 112 = 320. Maintenant 320 ÷ 16.", "cout_points": 2},
+        {"niveau": 3, "texte": "320 ÷ 16 : pense à 16 × 20 = 320. Donc le quotient est 20 exactement, reste 0.", "cout_points": 3}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_480s",
+        "micro_etapes": [
+          {"id": "j11-e30-d1", "enonce": "Étape 1 : combien font 4 × 28 ?", "type": "numerique", "reponse": 112},
+          {"id": "j11-e30-d2", "enonce": "Étape 2 : 432 - 112 = ?", "type": "numerique", "reponse": 320},
+          {"id": "j11-e30-d3", "enonce": "Étape 3 : combien font 16 × 20 ?", "type": "numerique", "reponse": 320},
+          {"id": "j11-e30-d4", "enonce": "Donc 320 ÷ 16 = ? reste ?", "type": "qcm", "choix": [{"id": "a", "texte": "20 reste 0"}, {"id": "b", "texte": "19 reste 16"}, {"id": "c", "texte": "21 reste 4"}], "reponse_correcte": "a"}
+        ]
+      },
+      "tags": ["division", "probleme_complexe", "libermann"],
+      "source_inspiration_libermann": "Épreuve type - problème à 3 étapes avec partage et reste"
+    }
+  ]
+}

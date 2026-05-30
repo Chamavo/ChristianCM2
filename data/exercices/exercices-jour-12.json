@@ -1,0 +1,876 @@
+{
+  "jour": 12,
+  "titre": "Héritage des Potter à Gringotts",
+  "theme_principal": "partages_inegaux_interets_pourcentages",
+  "scene_globale": "Harry retourne à Gringotts pour mieux comprendre la fortune de ses parents. Le gobelin Gripsec lui explique comment l'argent du coffre des Potter rapporte des intérêts chaque année, comment certaines sommes ont été partagées inégalement entre James, Lily et leur ami Sirius Black, et comment les boutiques du Chemin de Traverse appliquent des remises et des augmentations en pourcentage. Pendant ce temps, Dudley, jaloux, calcule combien d'argent de poche il a comparé à Harry. Une journée pour devenir un expert en mathématiques financières !",
+  "mix_qcm_redige": "40/60",
+  "duree_estimee_min": 200,
+  "exercices": [
+    {
+      "id": "j12-e01",
+      "ordre_jour": 1,
+      "theme": "pourcentages",
+      "sous_theme": "pourcentage_simple",
+      "scene_hp": "chemin_de_traverse_remise",
+      "narration": "Madame Guipure, la couturière, fait une remise de 10 % sur la robe de sorcier de Harry.",
+      "type": "qcm",
+      "competence": "Calculer 10 % d'un nombre",
+      "difficulte_relative": 1,
+      "duree_estimee_sec": 40,
+      "points_maison": 2,
+      "enonce": "La robe coûte 200 Gallions. Madame Guipure fait 10 % de remise. À combien s'élève la remise ?",
+      "choix": [
+        {"id": "a", "texte": "10 Gallions"},
+        {"id": "b", "texte": "20 Gallions"},
+        {"id": "c", "texte": "200 Gallions"},
+        {"id": "d", "texte": "100 Gallions"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 10 % de 200, c'est 200 ÷ 10 = 20 Gallions de remise.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour calculer 10 % d'un nombre, on divise par 10.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j12-e02",
+      "ordre_jour": 2,
+      "theme": "pourcentages",
+      "sous_theme": "pourcentage_simple",
+      "scene_hp": "chemin_de_traverse_remise",
+      "narration": "Chez Fleury et Bott, le grimoire de potions est en promotion de 50 %.",
+      "type": "qcm",
+      "competence": "Calculer 50 % d'un nombre",
+      "difficulte_relative": 2,
+      "duree_estimee_sec": 40,
+      "points_maison": 2,
+      "enonce": "Le grimoire coûte 80 Gallions, avec 50 % de remise. Combien Harry paie-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "20 Gallions"},
+        {"id": "b", "texte": "30 Gallions"},
+        {"id": "c", "texte": "40 Gallions"},
+        {"id": "d", "texte": "50 Gallions"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Parfait ! 50 % de 80 = 40 (la moitié). Harry paie 80 - 40 = 40 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "50 %, c'est la moitié. La moitié de 80 c'est combien ?", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j12-e03",
+      "ordre_jour": 3,
+      "theme": "pourcentages",
+      "sous_theme": "pourcentage_simple",
+      "scene_hp": "chemin_de_traverse_remise",
+      "narration": "Le marchand de hiboux applique 25 % de réduction.",
+      "type": "qcm",
+      "competence": "Calculer 25 % d'un nombre",
+      "difficulte_relative": 3,
+      "duree_estimee_sec": 45,
+      "points_maison": 3,
+      "enonce": "Un hibou grand-duc coûte 120 Gallions. Avec 25 % de remise, combien est la réduction ?",
+      "choix": [
+        {"id": "a", "texte": "25 Gallions"},
+        {"id": "b", "texte": "30 Gallions"},
+        {"id": "c", "texte": "12 Gallions"},
+        {"id": "d", "texte": "40 Gallions"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! 25 %, c'est un quart. 120 ÷ 4 = 30 Gallions de remise.",
+      "indices": [
+        {"niveau": 1, "texte": "25 %, c'est le quart. Divise par 4.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j12-e04",
+      "ordre_jour": 4,
+      "theme": "partages_inegaux",
+      "sous_theme": "comprendre_situation",
+      "scene_hp": "dudley_jaloux",
+      "narration": "Dudley se plaint à Tante Pétunia : il veut savoir combien d'argent de poche il reçoit comparé à Harry.",
+      "type": "qcm",
+      "competence": "Modéliser un partage inégal simple",
+      "difficulte_relative": 4,
+      "duree_estimee_sec": 50,
+      "points_maison": 3,
+      "enonce": "Dudley dit : 'J'ai 50 livres de plus que Harry.' Si Harry a 20 livres, combien Dudley a-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "30 livres"},
+        {"id": "b", "texte": "50 livres"},
+        {"id": "c", "texte": "70 livres"},
+        {"id": "d", "texte": "100 livres"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Exact ! Dudley a Harry + 50 = 20 + 50 = 70 livres.",
+      "indices": [
+        {"niveau": 1, "texte": "'X de plus que Y' signifie qu'on ajoute. Dudley = Harry + 50.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j12-e05",
+      "ordre_jour": 5,
+      "theme": "interets_simples",
+      "sous_theme": "interet_simple_intro",
+      "scene_hp": "gringotts_gobelin",
+      "narration": "Gripsec, le gobelin, explique à Harry : 'Votre coffre rapporte des intérêts chaque année.'",
+      "type": "qcm",
+      "competence": "Calculer 5 % d'un nombre",
+      "difficulte_relative": 5,
+      "duree_estimee_sec": 45,
+      "points_maison": 3,
+      "enonce": "Le coffre contient 1 000 Gallions et rapporte 5 % d'intérêts par an. Combien d'intérêts rapporte-t-il en 1 an ?",
+      "choix": [
+        {"id": "a", "texte": "5 Gallions"},
+        {"id": "b", "texte": "50 Gallions"},
+        {"id": "c", "texte": "100 Gallions"},
+        {"id": "d", "texte": "500 Gallions"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! 5 % de 1 000 = 1 000 ÷ 100 × 5 = 50 Gallions par an.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour calculer 5 %, on divise par 100 (donne 1 %), puis on multiplie par 5.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j12-e06",
+      "ordre_jour": 6,
+      "theme": "pourcentages",
+      "sous_theme": "calcul_pourcentage_quelconque",
+      "scene_hp": "chemin_de_traverse_remise",
+      "narration": "Chez Ollivander, une remise de 15 % sur la deuxième baguette.",
+      "type": "qcm",
+      "competence": "Calculer 15 % d'un nombre (10 % + 5 %)",
+      "difficulte_relative": 6,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Une baguette coûte 80 Gallions. Avec 15 % de remise, à combien s'élève la remise ?",
+      "choix": [
+        {"id": "a", "texte": "8 Gallions"},
+        {"id": "b", "texte": "12 Gallions"},
+        {"id": "c", "texte": "15 Gallions"},
+        {"id": "d", "texte": "16 Gallions"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Excellent ! 10 % de 80 = 8, et 5 % de 80 = 4. Total : 8 + 4 = 12 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Décompose : 15 % = 10 % + 5 %. Calcule chacun puis additionne.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j12-e07",
+      "ordre_jour": 7,
+      "theme": "partages_inegaux",
+      "sous_theme": "deux_inconnues_somme_difference",
+      "scene_hp": "potter_souvenirs",
+      "narration": "Gripsec montre à Harry un vieux livre de comptes : James et Lily se partageaient l'argent du ménage.",
+      "type": "qcm",
+      "competence": "Trouver deux nombres connaissant leur somme et leur différence",
+      "difficulte_relative": 7,
+      "duree_estimee_sec": 75,
+      "points_maison": 4,
+      "enonce": "James et Lily ont 100 Gallions en tout. James en a 20 de plus que Lily. Combien Lily a-t-elle ?",
+      "choix": [
+        {"id": "a", "texte": "30 Gallions"},
+        {"id": "b", "texte": "40 Gallions"},
+        {"id": "c", "texte": "50 Gallions"},
+        {"id": "d", "texte": "60 Gallions"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! On enlève la différence : 100 - 20 = 80. Puis on partage en 2 : 80 ÷ 2 = 40. Lily a 40, James a 60. Vérification : 40 + 60 = 100 et 60 - 40 = 20.",
+      "indices": [
+        {"niveau": 1, "texte": "Méthode : (somme - différence) ÷ 2 = part du plus petit. Donc (100 - 20) ÷ 2 = ?", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j12-e08",
+      "ordre_jour": 8,
+      "theme": "interets_simples",
+      "sous_theme": "interet_simple_1_an",
+      "scene_hp": "gringotts_calcul",
+      "narration": "Gripsec poursuit : 'Calculons les intérêts sur un coffre plus important.'",
+      "type": "qcm",
+      "competence": "Calculer 6 % d'intérêts simples sur 1 an",
+      "difficulte_relative": 8,
+      "duree_estimee_sec": 70,
+      "points_maison": 4,
+      "enonce": "Un coffre contient 2 500 Gallions et rapporte 6 % par an. Combien d'intérêts en 1 an ?",
+      "choix": [
+        {"id": "a", "texte": "60 Gallions"},
+        {"id": "b", "texte": "150 Gallions"},
+        {"id": "c", "texte": "250 Gallions"},
+        {"id": "d", "texte": "600 Gallions"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Parfait ! 1 % de 2 500 = 25. Donc 6 % = 25 × 6 = 150 Gallions d'intérêts.",
+      "indices": [
+        {"niveau": 1, "texte": "1 % = diviser par 100. 2 500 ÷ 100 = 25. Puis × 6.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j12-e09",
+      "ordre_jour": 9,
+      "theme": "partages_inegaux",
+      "sous_theme": "ecart_donne",
+      "scene_hp": "ron_harry_mornilles",
+      "narration": "Ron et Harry comptent leurs mornilles dans le Poudlard Express.",
+      "type": "qcm",
+      "competence": "Partage inégal : somme et différence (entiers)",
+      "difficulte_relative": 9,
+      "duree_estimee_sec": 80,
+      "points_maison": 4,
+      "enonce": "Ron et Harry ont 250 mornilles en tout. Harry en a 50 de plus que Ron. Combien Ron a-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "100 mornilles"},
+        {"id": "b", "texte": "125 mornilles"},
+        {"id": "c", "texte": "150 mornilles"},
+        {"id": "d", "texte": "75 mornilles"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Exact ! (250 - 50) ÷ 2 = 200 ÷ 2 = 100. Ron a 100, Harry a 150. Vérif : 100 + 150 = 250.",
+      "indices": [
+        {"niveau": 1, "texte": "Ron est le plus petit. Méthode : (somme - différence) ÷ 2 = part de Ron.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j12-e10",
+      "ordre_jour": 10,
+      "theme": "pourcentages",
+      "sous_theme": "augmentation_simple",
+      "scene_hp": "chemin_de_traverse_inflation",
+      "narration": "Le prix de l'Éclair de Feu augmente de 20 % cette année.",
+      "type": "qcm",
+      "competence": "Calculer un prix après une augmentation",
+      "difficulte_relative": 10,
+      "duree_estimee_sec": 70,
+      "points_maison": 4,
+      "enonce": "Le Nimbus 2000 coûtait 200 Gallions. Le prix augmente de 20 %. Quel est le nouveau prix ?",
+      "choix": [
+        {"id": "a", "texte": "220 Gallions"},
+        {"id": "b", "texte": "240 Gallions"},
+        {"id": "c", "texte": "250 Gallions"},
+        {"id": "d", "texte": "400 Gallions"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! 20 % de 200 = 40. Nouveau prix = 200 + 40 = 240 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule d'abord l'augmentation (20 % de 200), puis ajoute au prix initial.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j12-e11",
+      "ordre_jour": 11,
+      "theme": "pourcentages",
+      "sous_theme": "remise_simple",
+      "scene_hp": "chemin_de_traverse_remise",
+      "narration": "Chez Florian Fortarôme, soldes !",
+      "type": "qcm",
+      "competence": "Calculer un prix après une remise de 30 %",
+      "difficulte_relative": 11,
+      "duree_estimee_sec": 80,
+      "points_maison": 4,
+      "enonce": "Une glace coûte 50 mornilles. Florian fait 30 % de remise. Combien Harry paie-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "20 mornilles"},
+        {"id": "b", "texte": "30 mornilles"},
+        {"id": "c", "texte": "35 mornilles"},
+        {"id": "d", "texte": "40 mornilles"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bien ! 30 % de 50 = 15 (car 10 % = 5, donc 30 % = 15). Harry paie 50 - 15 = 35 mornilles.",
+      "indices": [
+        {"niveau": 1, "texte": "10 % de 50 = 5. Donc 30 % = 15. Soustrais au prix initial.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j12-e12",
+      "ordre_jour": 12,
+      "theme": "interets_simples",
+      "sous_theme": "interet_simple_2_ans",
+      "scene_hp": "gringotts_interets",
+      "narration": "Gripsec calcule les intérêts sur 2 ans pour un client.",
+      "type": "numerique",
+      "competence": "Intérêts simples sur 2 ans (5 % par an)",
+      "difficulte_relative": 12,
+      "duree_estimee_sec": 100,
+      "points_maison": 5,
+      "enonce": "Un coffre contient 2 000 Gallions et rapporte 5 % par an (intérêts simples). Combien d'intérêts au total après 2 ans ? (Donne juste le nombre de Gallions.)",
+      "reponse_attendue_redige": "200",
+      "tolerance_numerique": 0,
+      "regex_validation": "^200$",
+      "explication_correcte": "Excellent ! Intérêts par an : 5 % de 2 000 = 100. Sur 2 ans : 100 × 2 = 200 Gallions. (En intérêts SIMPLES, on calcule chaque année sur le capital de départ.)",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule d'abord les intérêts pour 1 an, puis multiplie par 2.", "cout_points": 1},
+        {"niveau": 2, "texte": "5 % de 2 000 = 100. Sur 2 ans, c'est 100 + 100 = 200.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j12-e12-d1", "enonce": "1 % de 2 000 = ?", "type": "numerique", "reponse": 20},
+          {"id": "j12-e12-d2", "enonce": "5 % de 2 000 = ?", "type": "numerique", "reponse": 100},
+          {"id": "j12-e12-d3", "enonce": "Sur 2 ans, intérêts simples = 100 × 2 = ?", "type": "numerique", "reponse": 200}
+        ]
+      }
+    },
+    {
+      "id": "j12-e13",
+      "ordre_jour": 13,
+      "theme": "partages_inegaux",
+      "sous_theme": "ecart_double",
+      "scene_hp": "dudley_harry_argent",
+      "narration": "Dudley se vante : 'J'ai le double de l'argent de Harry !'",
+      "type": "qcm",
+      "competence": "Partage inégal : un est le double de l'autre",
+      "difficulte_relative": 13,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Dudley et Harry ont 60 livres en tout. Dudley a le double de Harry. Combien Harry a-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "15 livres"},
+        {"id": "b", "texte": "20 livres"},
+        {"id": "c", "texte": "30 livres"},
+        {"id": "d", "texte": "40 livres"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! Si Harry a X, Dudley a 2X. Donc X + 2X = 60, soit 3X = 60, donc X = 20. Harry a 20 et Dudley a 40.",
+      "indices": [
+        {"niveau": 1, "texte": "Harry = 1 part, Dudley = 2 parts. Total = 3 parts = 60. Donc 1 part = ?", "cout_points": 1}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j12-e13-d1", "enonce": "Si Harry = 1 part et Dudley = 2 parts, le total fait combien de parts ?", "type": "numerique", "reponse": 3},
+          {"id": "j12-e13-d2", "enonce": "3 parts = 60. Combien vaut 1 part ?", "type": "numerique", "reponse": 20},
+          {"id": "j12-e13-d3", "enonce": "Donc Harry a combien ?", "type": "numerique", "reponse": 20}
+        ]
+      }
+    },
+    {
+      "id": "j12-e14",
+      "ordre_jour": 14,
+      "theme": "interets_simples",
+      "sous_theme": "interet_simple_3_ans",
+      "scene_hp": "gringotts_interets",
+      "narration": "Gripsec montre à Harry le rapport sur 3 ans du coffre de ses parents.",
+      "type": "numerique",
+      "competence": "Calculer les intérêts simples sur 3 ans (6 % par an)",
+      "difficulte_relative": 14,
+      "duree_estimee_sec": 120,
+      "points_maison": 5,
+      "enonce": "Le coffre Potter contenait 5 000 Gallions et rapporte 6 % par an (intérêts simples). Combien d'intérêts en 3 ans ? (Donne juste le nombre.)",
+      "reponse_attendue_redige": "900",
+      "tolerance_numerique": 0,
+      "regex_validation": "^900$",
+      "explication_correcte": "Magnifique ! 6 % de 5 000 = 300 par an. Sur 3 ans : 300 × 3 = 900 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule d'abord 6 % de 5 000 (intérêts d'1 an), puis × 3.", "cout_points": 1},
+        {"niveau": 2, "texte": "1 % de 5 000 = 50. Donc 6 % = 300. Sur 3 ans : 900.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j12-e14-d1", "enonce": "1 % de 5 000 = ?", "type": "numerique", "reponse": 50},
+          {"id": "j12-e14-d2", "enonce": "6 % de 5 000 = 50 × 6 = ?", "type": "numerique", "reponse": 300},
+          {"id": "j12-e14-d3", "enonce": "Sur 3 ans, intérêts simples = 300 × 3 = ?", "type": "numerique", "reponse": 900}
+        ]
+      }
+    },
+    {
+      "id": "j12-e15",
+      "ordre_jour": 15,
+      "theme": "pourcentages",
+      "sous_theme": "pourcentage_compose_remise_puis_augmentation",
+      "scene_hp": "florian_fortarome",
+      "narration": "Florian Fortarôme augmente puis solde son menu. Attention, ce n'est pas la même chose qu'une seule opération !",
+      "type": "qcm",
+      "competence": "Comprendre que pourcentages successifs ne s'additionnent pas",
+      "difficulte_relative": 15,
+      "duree_estimee_sec": 120,
+      "points_maison": 5,
+      "enonce": "Une glace coûte 100 mornilles. Le prix augmente de 10 % en mai, puis baisse de 10 % en juin. Quel est le prix final ?",
+      "choix": [
+        {"id": "a", "texte": "100 mornilles (on revient au même prix)"},
+        {"id": "b", "texte": "99 mornilles"},
+        {"id": "c", "texte": "110 mornilles"},
+        {"id": "d", "texte": "90 mornilles"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Surprise ! Après augmentation : 100 + 10 = 110. Puis 10 % de 110 = 11. Prix final : 110 - 11 = 99 mornilles. Les pourcentages s'appliquent à des nombres différents !",
+      "explications_erreurs": {
+        "a": "Erreur classique ! Les 10 % de baisse s'appliquent à 110, pas à 100. Recalcule.",
+        "c": "110 c'est juste après l'augmentation, mais il faut aussi appliquer la baisse.",
+        "d": "Tu as soustrait 10 au lieu de calculer 10 % de 110."
+      },
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : calcule le prix après augmentation. Étape 2 : applique la baisse de 10 % à CE nouveau prix.", "cout_points": 1},
+        {"niveau": 2, "texte": "Après +10 % : 110. 10 % de 110 = 11. Donc 110 - 11 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j12-e15-d1", "enonce": "Prix après augmentation de 10 % : 100 + 10 = ?", "type": "numerique", "reponse": 110},
+          {"id": "j12-e15-d2", "enonce": "10 % de 110 = ?", "type": "numerique", "reponse": 11},
+          {"id": "j12-e15-d3", "enonce": "Prix final : 110 - 11 = ?", "type": "numerique", "reponse": 99}
+        ]
+      }
+    },
+    {
+      "id": "j12-e16",
+      "ordre_jour": 16,
+      "theme": "partages_inegaux",
+      "sous_theme": "trois_parts_difference",
+      "scene_hp": "weasley_fratrie",
+      "narration": "Molly Weasley partage 90 mornilles entre Ron, Ginny et Fred.",
+      "type": "redige_court",
+      "competence": "Partage inégal entre 3 enfants (différences données)",
+      "difficulte_relative": 16,
+      "duree_estimee_sec": 150,
+      "points_maison": 6,
+      "enonce": "Molly partage 90 mornilles. Fred (l'aîné) reçoit 20 mornilles de plus que Ron, et Ginny (la plus jeune) reçoit 20 mornilles de moins que Ron. Combien Ron reçoit-il ? (Donne juste le nombre.)",
+      "reponse_attendue_redige": "30",
+      "tolerance_numerique": 0,
+      "regex_validation": "^30$",
+      "explication_correcte": "Bravo ! Si Ron a R, alors Fred = R+20 et Ginny = R-20. Donc R + (R+20) + (R-20) = 3R = 90, soit R = 30. Vérification : Ron 30, Fred 50, Ginny 10. Total : 30 + 50 + 10 = 90.",
+      "indices": [
+        {"niveau": 1, "texte": "Note R la part de Ron. Fred = R + 20, Ginny = R - 20. La somme se simplifie en 3R = 90.", "cout_points": 1},
+        {"niveau": 2, "texte": "Les +20 et -20 s'annulent. Il reste 3R = 90, donc R = 30.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j12-e17",
+      "ordre_jour": 17,
+      "theme": "partages_inegaux",
+      "sous_theme": "trois_parts_difference",
+      "scene_hp": "weasley_fratrie",
+      "narration": "Reformulons proprement : Molly partage 84 mornilles.",
+      "type": "redige_court",
+      "competence": "Partage inégal entre 3 enfants",
+      "difficulte_relative": 17,
+      "duree_estimee_sec": 180,
+      "points_maison": 6,
+      "enonce": "Molly partage 84 mornilles entre ses trois enfants. Fred reçoit 12 mornilles de plus que Ron. Ginny reçoit 6 mornilles de moins que Ron. Combien Ron reçoit-il ?",
+      "reponse_attendue_redige": "26",
+      "tolerance_numerique": 0,
+      "regex_validation": "^26$",
+      "explication_correcte": "Excellent ! Si Ron = R, alors Fred = R+12, Ginny = R-6. Somme : R + (R+12) + (R-6) = 3R + 6 = 84, donc 3R = 78, donc R = 26. Vérification : Ron 26, Fred 38, Ginny 20. Total : 26+38+20 = 84.",
+      "indices": [
+        {"niveau": 1, "texte": "Pose R la part de Ron. Écris Fred et Ginny en fonction de R. Additionne et résous.", "cout_points": 1},
+        {"niveau": 2, "texte": "3R + 12 - 6 = 84, donc 3R + 6 = 84, donc 3R = 78, R = 26.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j12-e17-d1", "enonce": "Note R la part de Ron. Quelle est la part de Fred ?", "type": "qcm", "choix": [{"id": "a", "texte": "R + 12"}, {"id": "b", "texte": "R - 12"}, {"id": "c", "texte": "R × 12"}], "reponse_correcte": "a"},
+          {"id": "j12-e17-d2", "enonce": "Quelle est la part de Ginny ?", "type": "qcm", "choix": [{"id": "a", "texte": "R + 6"}, {"id": "b", "texte": "R - 6"}, {"id": "c", "texte": "R × 6"}], "reponse_correcte": "b"},
+          {"id": "j12-e17-d3", "enonce": "La somme R + (R+12) + (R-6) se simplifie en 3R + ?", "type": "numerique", "reponse": 6},
+          {"id": "j12-e17-d4", "enonce": "On a 3R + 6 = 84. Combien vaut R ?", "type": "numerique", "reponse": 26}
+        ]
+      }
+    },
+    {
+      "id": "j12-e18",
+      "ordre_jour": 18,
+      "theme": "interets_simples",
+      "sous_theme": "calcul_total_avec_capital",
+      "scene_hp": "gringotts_total",
+      "narration": "Gripsec : 'Maintenant calculons le total dans le coffre après plusieurs années.'",
+      "type": "redige_court",
+      "competence": "Calculer capital + intérêts simples après plusieurs années",
+      "difficulte_relative": 18,
+      "duree_estimee_sec": 180,
+      "points_maison": 6,
+      "enonce": "Un coffre contient 4 000 Gallions à 5 % par an (intérêts simples). Combien y aura-t-il dans le coffre après 3 ans ? (Donne le total final.)",
+      "reponse_attendue_redige": "4600",
+      "tolerance_numerique": 0,
+      "regex_validation": "^4\\s*600$",
+      "explication_correcte": "Parfait ! Intérêts par an : 5 % de 4 000 = 200. Sur 3 ans : 200 × 3 = 600 d'intérêts. Total : 4 000 + 600 = 4 600 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : intérêts d'1 an. Étape 2 : × 3 ans. Étape 3 : ajoute au capital.", "cout_points": 1},
+        {"niveau": 2, "texte": "5 % de 4 000 = 200/an. Sur 3 ans : 600. Total : 4 000 + 600.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j12-e18-d1", "enonce": "1 % de 4 000 = ?", "type": "numerique", "reponse": 40},
+          {"id": "j12-e18-d2", "enonce": "5 % de 4 000 = ?", "type": "numerique", "reponse": 200},
+          {"id": "j12-e18-d3", "enonce": "Sur 3 ans, intérêts totaux = ?", "type": "numerique", "reponse": 600},
+          {"id": "j12-e18-d4", "enonce": "Capital + intérêts = 4 000 + 600 = ?", "type": "numerique", "reponse": 4600}
+        ]
+      }
+    },
+    {
+      "id": "j12-e19",
+      "ordre_jour": 19,
+      "theme": "pourcentages",
+      "sous_theme": "pourcentage_compose_augmentation_puis_remise",
+      "scene_hp": "fleury_et_bott",
+      "narration": "Fleury et Bott augmente puis brade ses grimoires de potions.",
+      "type": "redige_court",
+      "competence": "Pourcentage composé : augmentation puis remise",
+      "difficulte_relative": 19,
+      "duree_estimee_sec": 200,
+      "points_maison": 6,
+      "enonce": "Un grimoire coûte 200 Gallions. Le prix augmente d'abord de 20 %, puis baisse de 25 %. Quel est le prix final ? (Donne juste le nombre.)",
+      "reponse_attendue_redige": "180",
+      "tolerance_numerique": 0,
+      "regex_validation": "^180$",
+      "explication_correcte": "Excellent ! Étape 1 : +20 % → 200 + 40 = 240. Étape 2 : -25 % de 240 → 240 × 25/100 = 60. Prix final : 240 - 60 = 180 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : applique +20 % à 200. Étape 2 : applique -25 % au résultat (PAS à 200 !).", "cout_points": 1},
+        {"niveau": 2, "texte": "Étape 1 : 200 + 40 = 240. Étape 2 : 25 % de 240 = 60. Donc 240 - 60.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j12-e19-d1", "enonce": "20 % de 200 = ?", "type": "numerique", "reponse": 40},
+          {"id": "j12-e19-d2", "enonce": "Prix après augmentation : 200 + 40 = ?", "type": "numerique", "reponse": 240},
+          {"id": "j12-e19-d3", "enonce": "25 % de 240 = ?", "type": "numerique", "reponse": 60},
+          {"id": "j12-e19-d4", "enonce": "Prix final : 240 - 60 = ?", "type": "numerique", "reponse": 180}
+        ]
+      }
+    },
+    {
+      "id": "j12-e20",
+      "ordre_jour": 20,
+      "theme": "partages_inegaux",
+      "sous_theme": "partage_avec_ratio",
+      "scene_hp": "potter_heritage",
+      "narration": "James, Lily et Sirius mettent leur argent en commun pour acheter une maison à Godric's Hollow.",
+      "type": "redige_court",
+      "competence": "Partage avec proportions multiples",
+      "difficulte_relative": 20,
+      "duree_estimee_sec": 180,
+      "points_maison": 6,
+      "enonce": "James, Lily et Sirius mettent 900 Gallions en commun. James met le double de Lily, et Sirius met autant que Lily. Combien Lily met-elle ?",
+      "reponse_attendue_redige": "225",
+      "tolerance_numerique": 0,
+      "regex_validation": "^225$",
+      "explication_correcte": "Bravo ! Lily = 1 part, James = 2 parts, Sirius = 1 part. Total = 4 parts = 900, donc 1 part = 225. Lily met 225, James 450, Sirius 225. Vérif : 225+450+225 = 900.",
+      "indices": [
+        {"niveau": 1, "texte": "Compte les parts : Lily 1, James 2, Sirius 1. Total = ? parts.", "cout_points": 1},
+        {"niveau": 2, "texte": "4 parts = 900 Gallions. Donc 1 part = 900 ÷ 4 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j12-e20-d1", "enonce": "Si Lily = 1 part, combien de parts pour James ?", "type": "numerique", "reponse": 2},
+          {"id": "j12-e20-d2", "enonce": "Combien de parts au total (Lily + James + Sirius) ?", "type": "numerique", "reponse": 4},
+          {"id": "j12-e20-d3", "enonce": "4 parts = 900. Donc 1 part = ?", "type": "numerique", "reponse": 225}
+        ]
+      }
+    },
+    {
+      "id": "j12-e21",
+      "ordre_jour": 21,
+      "theme": "interets_simples",
+      "sous_theme": "trouver_capital",
+      "scene_hp": "gringotts_calcul_inverse",
+      "narration": "Problème inverse à Gringotts : on connaît les intérêts, trouver le capital.",
+      "type": "redige_court",
+      "competence": "Trouver le capital connaissant les intérêts annuels",
+      "difficulte_relative": 21,
+      "duree_estimee_sec": 200,
+      "points_maison": 7,
+      "enonce": "Un coffre rapporte 150 Gallions d'intérêts en 1 an, au taux de 5 %. Quel est le capital dans le coffre ? (Donne juste le nombre.)",
+      "reponse_attendue_redige": "3000",
+      "tolerance_numerique": 0,
+      "regex_validation": "^3\\s*000$",
+      "explication_correcte": "Excellent ! Si 5 % = 150, alors 1 % = 150 ÷ 5 = 30. Donc 100 % = 30 × 100 = 3 000 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Si 5 % rapportent 150, combien rapporte 1 % ?", "cout_points": 1},
+        {"niveau": 2, "texte": "1 % = 30 Gallions. Donc 100 % = capital = 30 × 100.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j12-e21-d1", "enonce": "Si 5 % = 150, combien font 1 % ?", "type": "numerique", "reponse": 30},
+          {"id": "j12-e21-d2", "enonce": "Si 1 % = 30, combien font 100 % (= capital) ?", "type": "numerique", "reponse": 3000}
+        ]
+      }
+    },
+    {
+      "id": "j12-e22",
+      "ordre_jour": 22,
+      "theme": "pourcentages",
+      "sous_theme": "pourcentage_compose_double_remise",
+      "scene_hp": "ollivander_promotion",
+      "narration": "Ollivander fait deux remises successives : grande promotion !",
+      "type": "redige_court",
+      "competence": "Pourcentage composé : remise puis remise",
+      "difficulte_relative": 22,
+      "duree_estimee_sec": 220,
+      "points_maison": 7,
+      "enonce": "Une baguette coûte 100 Gallions. Ollivander fait 20 % de remise, puis 10 % de remise supplémentaire sur le prix déjà réduit. Quel est le prix final ?",
+      "reponse_attendue_redige": "72",
+      "tolerance_numerique": 0,
+      "regex_validation": "^72$",
+      "explication_correcte": "Magnifique ! Étape 1 : -20 % de 100 → 100 - 20 = 80. Étape 2 : -10 % de 80 → 80 - 8 = 72 Gallions. (Ce n'est PAS 30 % de remise au total : c'est 28 % !)",
+      "indices": [
+        {"niveau": 1, "texte": "Première remise : prix après ? Deuxième remise : applique 10 % à CE prix.", "cout_points": 1},
+        {"niveau": 2, "texte": "Étape 1 : 100 - 20 = 80. Étape 2 : 10 % de 80 = 8. Donc 80 - 8.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j12-e22-d1", "enonce": "20 % de 100 = ?", "type": "numerique", "reponse": 20},
+          {"id": "j12-e22-d2", "enonce": "Prix après 1re remise : 100 - 20 = ?", "type": "numerique", "reponse": 80},
+          {"id": "j12-e22-d3", "enonce": "10 % de 80 = ?", "type": "numerique", "reponse": 8},
+          {"id": "j12-e22-d4", "enonce": "Prix final : 80 - 8 = ?", "type": "numerique", "reponse": 72}
+        ]
+      }
+    },
+    {
+      "id": "j12-e23",
+      "ordre_jour": 23,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_partage_inegal_complet",
+      "scene_hp": "weasley_partage",
+      "narration": "Molly partage l'argent reçu de Bill (qui travaille à Gringotts).",
+      "type": "redige_libre",
+      "competence": "Partage inégal entre 3 enfants avec une condition multiple",
+      "difficulte_relative": 23,
+      "duree_estimee_sec": 280,
+      "points_maison": 8,
+      "enonce": "Bill envoie 390 Gallions à Molly pour ses trois plus jeunes enfants. Fred reçoit le double de Ron, et Ginny reçoit 30 Gallions de moins que Ron. Combien chacun reçoit-il ? (Réponds : 'Ron X, Fred Y, Ginny Z'.)",
+      "reponse_attendue_redige": "Ron 105 Fred 210 Ginny 75",
+      "regex_validation": "^Ron\\s*105[,\\s]+Fred\\s*210[,\\s]+Ginny\\s*75$",
+      "explication_correcte": "Excellent ! Posons R la part de Ron. Fred = 2R, Ginny = R - 30. Total : R + 2R + (R - 30) = 4R - 30 = 390, donc 4R = 420, R = 105. Fred = 210, Ginny = 75. Vérification : 105 + 210 + 75 = 390.",
+      "indices": [
+        {"niveau": 1, "texte": "Note R la part de Ron. Fred = 2R, Ginny = R - 30. Somme = 4R - 30 = 390.", "cout_points": 1},
+        {"niveau": 2, "texte": "4R = 420. Donc R = 105. Fred = 2 × 105 = 210, Ginny = 105 - 30 = 75.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j12-e23-d1", "enonce": "Note R la part de Ron. Combien de parts pour Fred ?", "type": "numerique", "reponse": 2},
+          {"id": "j12-e23-d2", "enonce": "La somme R + 2R + (R - 30) se simplifie en : 4R - ?", "type": "numerique", "reponse": 30},
+          {"id": "j12-e23-d3", "enonce": "4R - 30 = 390, donc 4R = ?", "type": "numerique", "reponse": 420},
+          {"id": "j12-e23-d4", "enonce": "R = 420 ÷ 4 = ?", "type": "numerique", "reponse": 105}
+        ]
+      }
+    },
+    {
+      "id": "j12-e24",
+      "ordre_jour": 24,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_partage_inegal_propre",
+      "scene_hp": "weasley_partage_correct",
+      "narration": "Réessayons avec des nombres bien choisis ! Molly partage 400 Gallions.",
+      "type": "redige_libre",
+      "competence": "Partage inégal entre 3 enfants (réponses entières)",
+      "difficulte_relative": 24,
+      "duree_estimee_sec": 260,
+      "points_maison": 8,
+      "enonce": "Molly partage 400 Gallions entre Ron, Fred et Ginny. Fred reçoit le double de Ron, et Ginny reçoit 40 Gallions de plus que Ron. Combien Ron reçoit-il ?",
+      "reponse_attendue_redige": "90",
+      "tolerance_numerique": 0,
+      "regex_validation": "^90$",
+      "explication_correcte": "Très bien ! Note R la part de Ron. Fred = 2R, Ginny = R + 40. Somme : R + 2R + (R + 40) = 4R + 40 = 400. Donc 4R = 360, R = 90 Gallions. Vérification : Ron 90, Fred 180, Ginny 130. Total : 90 + 180 + 130 = 400.",
+      "indices": [
+        {"niveau": 1, "texte": "Pose R la part de Ron. Écris Fred et Ginny en fonction de R, puis la somme.", "cout_points": 1},
+        {"niveau": 2, "texte": "4R + 40 = 400, donc 4R = 360, R = 90.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j12-e24-d1", "enonce": "Note R = part de Ron. Fred = 2R, Ginny = R + 40. Combien de R dans la somme ?", "type": "numerique", "reponse": 4},
+          {"id": "j12-e24-d2", "enonce": "La somme est 4R + 40 = 400. Donc 4R = ?", "type": "numerique", "reponse": 360},
+          {"id": "j12-e24-d3", "enonce": "R = 360 ÷ 4 = ?", "type": "numerique", "reponse": 90}
+        ]
+      }
+    },
+    {
+      "id": "j12-e25",
+      "ordre_jour": 25,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_partage_inegal_entier",
+      "scene_hp": "gringotts_3_freres",
+      "narration": "Les trois frères Weasley aînés (Bill, Charlie, Percy) reçoivent une prime de Gringotts.",
+      "type": "redige_libre",
+      "competence": "Partage inégal entre 3 personnes (réponse entière)",
+      "difficulte_relative": 25,
+      "duree_estimee_sec": 280,
+      "points_maison": 8,
+      "enonce": "Bill, Charlie et Percy reçoivent 720 Gallions. Bill (l'aîné) reçoit 30 Gallions de plus que Charlie. Percy reçoit 30 Gallions de moins que Charlie. Combien Charlie reçoit-il ?",
+      "reponse_attendue_redige": "240",
+      "tolerance_numerique": 0,
+      "regex_validation": "^240$",
+      "explication_correcte": "Bravo ! Note C = part de Charlie. Bill = C + 30, Percy = C - 30. Somme : (C+30) + C + (C-30) = 3C = 720. Donc C = 240. Vérification : Bill 270, Charlie 240, Percy 210. Total : 270 + 240 + 210 = 720.",
+      "indices": [
+        {"niveau": 1, "texte": "Note C la part de Charlie. Bill = C + 30, Percy = C - 30. Les +30 et -30 s'annulent.", "cout_points": 1},
+        {"niveau": 2, "texte": "Somme = 3C = 720. Donc C = 240.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j12-e25-d1", "enonce": "C = Charlie. Bill = C + ?", "type": "numerique", "reponse": 30},
+          {"id": "j12-e25-d2", "enonce": "Percy = C - ?", "type": "numerique", "reponse": 30},
+          {"id": "j12-e25-d3", "enonce": "La somme se simplifie en 3C = 720. Donc C = ?", "type": "numerique", "reponse": 240}
+        ]
+      }
+    },
+    {
+      "id": "j12-e26",
+      "ordre_jour": 26,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_interet_compose_simple",
+      "scene_hp": "gringotts_total_3ans",
+      "narration": "Le coffre des Potter rapporte des intérêts simples pendant 3 ans.",
+      "type": "redige_libre",
+      "competence": "Calculer capital + intérêts simples sur 3 ans",
+      "difficulte_relative": 26,
+      "duree_estimee_sec": 300,
+      "points_maison": 9,
+      "enonce": "Le coffre Potter contient 8 000 Gallions placés à 6 % par an (intérêts simples). Combien y aura-t-il dans le coffre après 3 ans ?",
+      "reponse_attendue_redige": "9440",
+      "tolerance_numerique": 0,
+      "regex_validation": "^9\\s*440$",
+      "explication_correcte": "Excellent ! Étape 1 : 6 % de 8 000 = 480 Gallions/an. Étape 2 : Sur 3 ans : 480 × 3 = 1 440. Étape 3 : Total = 8 000 + 1 440 = 9 440 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : intérêts annuels (6 % de 8 000). Étape 2 : multiplie par 3. Étape 3 : ajoute au capital.", "cout_points": 1},
+        {"niveau": 2, "texte": "1 % de 8 000 = 80. 6 % = 480. Sur 3 ans : 1 440. Total : 9 440.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_360s",
+        "micro_etapes": [
+          {"id": "j12-e26-d1", "enonce": "1 % de 8 000 = ?", "type": "numerique", "reponse": 80},
+          {"id": "j12-e26-d2", "enonce": "6 % de 8 000 = 80 × 6 = ?", "type": "numerique", "reponse": 480},
+          {"id": "j12-e26-d3", "enonce": "Intérêts sur 3 ans = 480 × 3 = ?", "type": "numerique", "reponse": 1440},
+          {"id": "j12-e26-d4", "enonce": "Total final = 8 000 + 1 440 = ?", "type": "numerique", "reponse": 9440}
+        ]
+      }
+    },
+    {
+      "id": "j12-e27",
+      "ordre_jour": 27,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_compose_complet",
+      "scene_hp": "fleury_et_bott_2_remises",
+      "narration": "Chez Fleury et Bott, double promotion sur les manuels !",
+      "type": "redige_libre",
+      "competence": "Pourcentage composé : augmentation puis remise (calcul complet)",
+      "difficulte_relative": 27,
+      "duree_estimee_sec": 320,
+      "points_maison": 9,
+      "enonce": "Un grimoire coûte 400 Gallions. En janvier, le prix augmente de 25 %. En juin, une remise de 20 % est appliquée sur le nouveau prix. Quel est le prix de juin ?",
+      "reponse_attendue_redige": "400",
+      "tolerance_numerique": 0,
+      "regex_validation": "^400$",
+      "explication_correcte": "Bravo, c'est subtil ! Étape 1 : +25 % de 400 → 400 + 100 = 500. Étape 2 : -20 % de 500 → 500 - 100 = 400. Curieusement, on revient au prix de départ ! (Mais ce n'est pas toujours le cas : +25 % puis -20 % ne sont équivalents que parce que 25/100 = 20/80.)",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : +25 % de 400. Étape 2 : -20 % du nouveau prix.", "cout_points": 1},
+        {"niveau": 2, "texte": "Étape 1 : 400 + 100 = 500. Étape 2 : 20 % de 500 = 100. Donc 500 - 100 = 400.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_360s",
+        "micro_etapes": [
+          {"id": "j12-e27-d1", "enonce": "25 % de 400 = ?", "type": "numerique", "reponse": 100},
+          {"id": "j12-e27-d2", "enonce": "Prix après augmentation : 400 + 100 = ?", "type": "numerique", "reponse": 500},
+          {"id": "j12-e27-d3", "enonce": "20 % de 500 = ?", "type": "numerique", "reponse": 100},
+          {"id": "j12-e27-d4", "enonce": "Prix final : 500 - 100 = ?", "type": "numerique", "reponse": 400}
+        ]
+      }
+    },
+    {
+      "id": "j12-e28",
+      "ordre_jour": 28,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_partage_4_personnes",
+      "scene_hp": "potter_heritage_4parts",
+      "narration": "L'héritage Potter doit être partagé entre 4 bénéficiaires selon le testament.",
+      "type": "redige_libre",
+      "competence": "Partage inégal entre 4 personnes (parts proportionnelles)",
+      "difficulte_relative": 28,
+      "duree_estimee_sec": 340,
+      "points_maison": 10,
+      "enonce": "L'héritage Potter de 1 320 Gallions est partagé : Harry reçoit le double de Sirius, Sirius reçoit le triple de Pétunia, et Pétunia reçoit autant que Dudley. Combien Pétunia reçoit-elle ?",
+      "reponse_attendue_redige": "120",
+      "tolerance_numerique": 0,
+      "regex_validation": "^120$",
+      "explication_correcte": "Magnifique ! Soit P = part de Pétunia. Dudley = P. Sirius = 3P. Harry = 2 × Sirius = 6P. Somme = P + P + 3P + 6P = 11P = 1 320. Donc P = 120. Vérification : Pétunia 120, Dudley 120, Sirius 360, Harry 720. Total : 120 + 120 + 360 + 720 = 1 320.",
+      "indices": [
+        {"niveau": 1, "texte": "Exprime tout en parts de Pétunia. Dudley = P. Sirius = 3P. Harry = 6P. Somme = 11P.", "cout_points": 1},
+        {"niveau": 2, "texte": "11P = 1 320. Donc P = 1 320 ÷ 11 = 120.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_360s",
+        "micro_etapes": [
+          {"id": "j12-e28-d1", "enonce": "Soit P = Pétunia. Sirius = ? × P", "type": "numerique", "reponse": 3},
+          {"id": "j12-e28-d2", "enonce": "Harry = 2 × Sirius = ? × P", "type": "numerique", "reponse": 6},
+          {"id": "j12-e28-d3", "enonce": "Somme totale en parts de P : 1+1+3+6 = ?", "type": "numerique", "reponse": 11},
+          {"id": "j12-e28-d4", "enonce": "Si 11P = 1320, alors P = ?", "type": "numerique", "reponse": 120}
+        ]
+      }
+    },
+    {
+      "id": "j12-e29",
+      "ordre_jour": 29,
+      "theme": "probleme_synthese_libermann",
+      "sous_theme": "mini_probleme_interets_pourcentages",
+      "scene_hp": "epreuve_libermann_simulation",
+      "narration": "Simulation Libermann : problème combinant intérêts et pourcentages.",
+      "type": "redige_libre",
+      "competence": "Problème à 3 étapes : intérêts + pourcentage composé",
+      "difficulte_relative": 29,
+      "duree_estimee_sec": 420,
+      "points_maison": 12,
+      "enonce": "Harry place 5 000 Gallions à Gringotts à 4 % par an (intérêts simples) pendant 2 ans. Avec le montant total (capital + intérêts), il achète une boutique au Chemin de Traverse. Le vendeur fait d'abord une remise de 10 %, puis ajoute 5 % de taxes. Combien Harry paie-t-il en final ? (Donne juste le nombre de Gallions.)",
+      "reponse_attendue_redige": "5103",
+      "tolerance_numerique": 0,
+      "regex_validation": "^5\\s*103$",
+      "explication_correcte": "Magnifique calcul Libermann ! Étape 1 : Intérêts annuels = 4 % de 5 000 = 200. Sur 2 ans : 400. Total après 2 ans : 5 400. Étape 2 : Remise 10 % de 5 400 = 540. Prix après remise : 4 860. Étape 3 : Taxes 5 % de 4 860 = 243. Prix final : 4 860 + 243 = 5 103 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : capital + intérêts après 2 ans. Étape 2 : applique -10 %. Étape 3 : applique +5 %.", "cout_points": 1},
+        {"niveau": 2, "texte": "Étape 1 : 5 000 + 400 = 5 400. Étape 2 : 5 400 - 540 = 4 860. Étape 3 : 4 860 + 243 = ?", "cout_points": 2},
+        {"niveau": 3, "texte": "5 % de 4 860 = 4 860 ÷ 100 × 5 = 243. Donc 4 860 + 243 = 5 103.", "cout_points": 3}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_480s",
+        "micro_etapes": [
+          {"id": "j12-e29-d1", "enonce": "4 % de 5 000 = ?", "type": "numerique", "reponse": 200},
+          {"id": "j12-e29-d2", "enonce": "Intérêts sur 2 ans = 200 × 2 = ?", "type": "numerique", "reponse": 400},
+          {"id": "j12-e29-d3", "enonce": "Total après 2 ans : 5 000 + 400 = ?", "type": "numerique", "reponse": 5400},
+          {"id": "j12-e29-d4", "enonce": "10 % de 5 400 = ?", "type": "numerique", "reponse": 540},
+          {"id": "j12-e29-d5", "enonce": "Prix après remise : 5 400 - 540 = ?", "type": "numerique", "reponse": 4860},
+          {"id": "j12-e29-d6", "enonce": "5 % de 4 860 = ?", "type": "numerique", "reponse": 243},
+          {"id": "j12-e29-d7", "enonce": "Prix final : 4 860 + 243 = ?", "type": "numerique", "reponse": 5103}
+        ]
+      }
+    },
+    {
+      "id": "j12-e30",
+      "ordre_jour": 30,
+      "theme": "probleme_synthese_libermann",
+      "sous_theme": "mini_probleme_partage_complet",
+      "scene_hp": "epreuve_libermann_finale",
+      "narration": "ÉPREUVE FINALE NIVEAU LIBERMANN ! Tout y est : partage inégal, intérêts et pourcentages.",
+      "type": "redige_libre",
+      "competence": "Problème complet à 4 étapes (Libermann avancé)",
+      "difficulte_relative": 30,
+      "duree_estimee_sec": 480,
+      "points_maison": 15,
+      "enonce": "L'héritage Potter de 6 000 Gallions doit être partagé entre Harry et Sirius. Harry reçoit le double de Sirius. Sirius place sa part à Gringotts à 5 % par an (intérêts simples) pendant 4 ans. Avec son montant final, Sirius achète un balai dont le prix initial était de 2 500 Gallions, mais il y a une remise de 4 %. Sirius peut-il payer le balai ? Si oui, combien lui reste-t-il ?",
+      "reponse_attendue_redige": "Oui, il lui reste 0 Gallion",
+      "regex_validation": "^[Oo]ui,?\\s*il\\s*(lui\\s*)?reste\\s*0\\s*[Gg]allions?$",
+      "explication_correcte": "Niveau Libermann atteint ! Étape 1 : Sirius = 1 part, Harry = 2 parts. Total = 3 parts = 6 000, donc Sirius = 2 000 Gallions. Étape 2 : Intérêts simples 5 % × 2 000 = 100/an, sur 4 ans = 400. Total Sirius : 2 000 + 400 = 2 400. Étape 3 : Remise sur le balai : 4 % de 2 500 = 100. Prix final du balai : 2 500 - 100 = 2 400. Étape 4 : Sirius a 2 400, le balai coûte 2 400. OUI il peut payer, et il lui reste 0 Gallion exactement !",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : trouve la part de Sirius (partage inégal). Étape 2 : ajoute les intérêts. Étape 3 : calcule le prix après remise. Étape 4 : compare.", "cout_points": 1},
+        {"niveau": 2, "texte": "Sirius = 2 000, intérêts sur 4 ans = 400, donc 2 400. Balai après -4 % de 2 500 = 2 400.", "cout_points": 2},
+        {"niveau": 3, "texte": "Exactement la même somme : il peut payer pile, reste = 0.", "cout_points": 3}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_540s",
+        "micro_etapes": [
+          {"id": "j12-e30-d1", "enonce": "Sirius = 1 part, Harry = 2 parts. Total = 3 parts. 1 part = 6 000 ÷ 3 = ?", "type": "numerique", "reponse": 2000},
+          {"id": "j12-e30-d2", "enonce": "5 % de 2 000 = ?", "type": "numerique", "reponse": 100},
+          {"id": "j12-e30-d3", "enonce": "Sur 4 ans : 100 × 4 = ?", "type": "numerique", "reponse": 400},
+          {"id": "j12-e30-d4", "enonce": "Total Sirius : 2 000 + 400 = ?", "type": "numerique", "reponse": 2400},
+          {"id": "j12-e30-d5", "enonce": "4 % de 2 500 = ?", "type": "numerique", "reponse": 100},
+          {"id": "j12-e30-d6", "enonce": "Prix du balai après remise : 2 500 - 100 = ?", "type": "numerique", "reponse": 2400},
+          {"id": "j12-e30-d7", "enonce": "Sirius a 2 400, balai coûte 2 400. Reste = ?", "type": "numerique", "reponse": 0}
+        ]
+      },
+      "tags": ["partage_inegal", "interets_simples", "pourcentage_compose", "libermann_avance"],
+      "source_inspiration_libermann": "Épreuve type finale - problème combinatoire 4 étapes"
+    }
+  ]
+}

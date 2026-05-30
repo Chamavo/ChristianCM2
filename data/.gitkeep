@@ -1,0 +1,3 @@
+# Placeholder pour le dossier `data/`.
+# Les JSON d'exercices (exercices-jour-XX.json) et de quiz (quiz-jXX.json)
+# sont copiés ici par `npm run copy-data` afin d'être inclus dans le bundle Vercel.

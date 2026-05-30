@@ -1,0 +1,835 @@
+{
+  "jour": 7,
+  "titre": "Cours de vol avec Mme Bibine — Masses et capacités",
+  "theme_principal": "masses_capacites_conversions",
+  "scene_globale": "Madame Bibine annonce le premier cours de vol sur balais. Avant de décoller, il faut peser les ingrédients des potions du dîner, mesurer le liquide des fioles, et préparer les chaudrons. Tonnes, kilogrammes, grammes, litres, centilitres, millilitres : tout se convertit !",
+  "mix_qcm_redige": "55/45",
+  "duree_estimee_min": 150,
+  "exercices": [
+    {
+      "id": "j07-e01",
+      "ordre_jour": 1,
+      "theme": "mesures",
+      "sous_theme": "conversion_kg_g",
+      "scene_hp": "terrain_vol",
+      "narration": "Mme Bibine vérifie le poids du sac de Harry avant le décollage.",
+      "type": "qcm",
+      "competence": "Convertir des kilogrammes en grammes",
+      "difficulte_relative": 1,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Le sac de Harry pèse 3 kg. Combien cela fait-il en grammes ?",
+      "choix": [
+        {"id": "a", "texte": "30 g"},
+        {"id": "b", "texte": "300 g"},
+        {"id": "c", "texte": "3 000 g"},
+        {"id": "d", "texte": "30 000 g"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bravo ! 1 kg = 1 000 g. Donc 3 kg = 3 × 1 000 = 3 000 g.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour passer des kilogrammes aux grammes, on multiplie par 1 000.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j07-e02",
+      "ordre_jour": 2,
+      "theme": "mesures",
+      "sous_theme": "conversion_g_kg",
+      "scene_hp": "terrain_vol",
+      "narration": "Hermione apporte un livre de sorts qu'elle souhaite peser.",
+      "type": "qcm",
+      "competence": "Convertir des grammes en kilogrammes",
+      "difficulte_relative": 2,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Le grimoire d'Hermione pèse 2 000 g. Combien cela fait-il en kilogrammes ?",
+      "choix": [
+        {"id": "a", "texte": "0,2 kg"},
+        {"id": "b", "texte": "2 kg"},
+        {"id": "c", "texte": "20 kg"},
+        {"id": "d", "texte": "200 kg"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 1 000 g = 1 kg, donc 2 000 g = 2 kg.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour passer des grammes aux kilogrammes, on divise par 1 000.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j07-e03",
+      "ordre_jour": 3,
+      "theme": "mesures",
+      "sous_theme": "conversion_L_mL",
+      "scene_hp": "cours_potions",
+      "narration": "Le professeur Rogue verse une fiole avant le dîner.",
+      "type": "qcm",
+      "competence": "Convertir des litres en millilitres",
+      "difficulte_relative": 3,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Une fiole de potion contient 1 L. Combien cela fait-il en millilitres (mL) ?",
+      "choix": [
+        {"id": "a", "texte": "10 mL"},
+        {"id": "b", "texte": "100 mL"},
+        {"id": "c", "texte": "1 000 mL"},
+        {"id": "d", "texte": "10 000 mL"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bravo ! 1 L = 1 000 mL.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour passer des litres aux millilitres, on multiplie par 1 000.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j07-e04",
+      "ordre_jour": 4,
+      "theme": "mesures",
+      "sous_theme": "conversion_mL_L",
+      "scene_hp": "cours_potions",
+      "narration": "Hermione mesure le contenu d'une petite fiole.",
+      "type": "qcm",
+      "competence": "Convertir des millilitres en litres",
+      "difficulte_relative": 4,
+      "duree_estimee_sec": 35,
+      "points_maison": 3,
+      "enonce": "Une fiole contient 500 mL. Combien cela fait-il en litres ?",
+      "choix": [
+        {"id": "a", "texte": "5 L"},
+        {"id": "b", "texte": "50 L"},
+        {"id": "c", "texte": "0,5 L"},
+        {"id": "d", "texte": "0,05 L"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bien ! 1 000 mL = 1 L, donc 500 mL = 0,5 L (un demi-litre).",
+      "indices": [
+        {"niveau": 1, "texte": "Pour passer des millilitres aux litres, on divise par 1 000.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j07-e05",
+      "ordre_jour": 5,
+      "theme": "mesures",
+      "sous_theme": "conversion_t_kg",
+      "scene_hp": "parc_poudlard",
+      "narration": "Hagrid amène Norbert, son petit dragon, sur la balance.",
+      "type": "qcm",
+      "competence": "Convertir des tonnes en kilogrammes",
+      "difficulte_relative": 5,
+      "duree_estimee_sec": 35,
+      "points_maison": 3,
+      "enonce": "Norbert le bébé dragon pèse 1 tonne (t). Combien cela fait-il en kilogrammes ?",
+      "choix": [
+        {"id": "a", "texte": "100 kg"},
+        {"id": "b", "texte": "1 000 kg"},
+        {"id": "c", "texte": "10 000 kg"},
+        {"id": "d", "texte": "10 kg"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 1 t = 1 000 kg.",
+      "indices": [
+        {"niveau": 1, "texte": "1 tonne = 1 000 kilogrammes. C'est le même rapport que km → m ou L → mL.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j07-e06",
+      "ordre_jour": 6,
+      "theme": "mesures",
+      "sous_theme": "conversion_cL_L",
+      "scene_hp": "cours_potions",
+      "narration": "Le professeur Rogue verse des centilitres dans son chaudron.",
+      "type": "qcm",
+      "competence": "Convertir des centilitres en litres",
+      "difficulte_relative": 6,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "Combien font 200 cL en litres ?",
+      "choix": [
+        {"id": "a", "texte": "0,2 L"},
+        {"id": "b", "texte": "2 L"},
+        {"id": "c", "texte": "20 L"},
+        {"id": "d", "texte": "0,02 L"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! 1 L = 100 cL, donc 200 cL = 2 L.",
+      "indices": [
+        {"niveau": 1, "texte": "1 L = 100 cL. Pour passer des cL aux L, on divise par 100.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j07-e07",
+      "ordre_jour": 7,
+      "theme": "mesures",
+      "sous_theme": "conversion_dL_L",
+      "scene_hp": "cours_potions",
+      "narration": "Hedwige se pose près du chaudron d'Hermione. 3 dL de jus de Mandragore sont prêts.",
+      "type": "qcm",
+      "competence": "Convertir des décilitres en litres",
+      "difficulte_relative": 7,
+      "duree_estimee_sec": 45,
+      "points_maison": 3,
+      "enonce": "3 dL de jus de Mandragore = combien en litres ?",
+      "choix": [
+        {"id": "a", "texte": "30 L"},
+        {"id": "b", "texte": "3 L"},
+        {"id": "c", "texte": "0,3 L"},
+        {"id": "d", "texte": "0,03 L"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Très bien ! 1 L = 10 dL, donc 3 dL = 3 ÷ 10 = 0,3 L.",
+      "indices": [
+        {"niveau": 1, "texte": "Le décilitre (dL) vaut 1/10 de litre. 10 dL = 1 L.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j07-e08",
+      "ordre_jour": 8,
+      "theme": "mesures",
+      "sous_theme": "tableau_capacites",
+      "scene_hp": "cours_potions",
+      "narration": "Hermione complète le tableau des unités de capacité.",
+      "type": "qcm",
+      "competence": "Convertir des litres en centilitres",
+      "difficulte_relative": 8,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Combien font 4 L en centilitres (cL) ?",
+      "choix": [
+        {"id": "a", "texte": "40 cL"},
+        {"id": "b", "texte": "400 cL"},
+        {"id": "c", "texte": "4 000 cL"},
+        {"id": "d", "texte": "0,04 cL"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien joué ! 1 L = 100 cL, donc 4 L = 400 cL.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour passer des L aux cL, on multiplie par 100.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j07-e09",
+      "ordre_jour": 9,
+      "theme": "mesures",
+      "sous_theme": "conversion_t_g",
+      "scene_hp": "parc_poudlard",
+      "narration": "Hagrid veut connaître le poids de Norbert en grammes.",
+      "type": "qcm",
+      "competence": "Convertir des tonnes en grammes",
+      "difficulte_relative": 9,
+      "duree_estimee_sec": 55,
+      "points_maison": 4,
+      "enonce": "Norbert pèse 2 tonnes. Combien cela fait-il en grammes ?",
+      "choix": [
+        {"id": "a", "texte": "2 000 g"},
+        {"id": "b", "texte": "20 000 g"},
+        {"id": "c", "texte": "200 000 g"},
+        {"id": "d", "texte": "2 000 000 g"}
+      ],
+      "reponse_correcte": "d",
+      "explication_correcte": "Excellent ! 1 t = 1 000 kg = 1 000 000 g. Donc 2 t = 2 000 000 g.",
+      "indices": [
+        {"niveau": 1, "texte": "Passe d'abord par kg : 2 t = 2 000 kg. Puis multiplie par 1 000 pour les g.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j07-e10",
+      "ordre_jour": 10,
+      "theme": "mesures",
+      "sous_theme": "comparaison_capacites",
+      "scene_hp": "cours_potions",
+      "narration": "Le professeur Rogue compare deux chaudrons.",
+      "type": "qcm",
+      "competence": "Comparer des capacités en unités différentes",
+      "difficulte_relative": 10,
+      "duree_estimee_sec": 55,
+      "points_maison": 4,
+      "enonce": "Quel chaudron contient le plus : 2 L ou 250 cL ?",
+      "choix": [
+        {"id": "a", "texte": "2 L (car 2 > 250 cL converti)"},
+        {"id": "b", "texte": "250 cL (car 250 cL = 2,5 L)"},
+        {"id": "c", "texte": "Ils contiennent la même chose"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! 250 cL = 2,5 L. Donc 250 cL > 2 L.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis 250 cL en L avant de comparer.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j07-e11",
+      "ordre_jour": 11,
+      "theme": "mesures",
+      "sous_theme": "addition_masses",
+      "scene_hp": "cours_potions",
+      "narration": "Hermione prépare une potion : elle pèse plusieurs ingrédients.",
+      "type": "qcm",
+      "competence": "Additionner des masses en unités identiques",
+      "difficulte_relative": 11,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Hermione pèse 250 g de queues de rat, 180 g de poudre de mandragore et 120 g d'écailles de serpent. Quelle est la masse totale ?",
+      "choix": [
+        {"id": "a", "texte": "550 g"},
+        {"id": "b", "texte": "450 g"},
+        {"id": "c", "texte": "650 g"},
+        {"id": "d", "texte": "560 g"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bravo ! 250 + 180 + 120 = 550 g.",
+      "indices": [
+        {"niveau": 1, "texte": "Additionne les trois masses : 250 + 180 + 120.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j07-e12",
+      "ordre_jour": 12,
+      "theme": "mesures",
+      "sous_theme": "addition_capacites_mixtes",
+      "scene_hp": "cours_potions",
+      "narration": "Trois fioles à mélanger dans le grand chaudron.",
+      "type": "qcm",
+      "competence": "Additionner des capacités en unités identiques",
+      "difficulte_relative": 12,
+      "duree_estimee_sec": 65,
+      "points_maison": 5,
+      "enonce": "Le chaudron reçoit 350 mL de jus de Mandragore, 425 mL de bave de Crapaud et 225 mL d'eau de source. Combien y a-t-il de liquide en tout (en mL) ?",
+      "choix": [
+        {"id": "a", "texte": "900 mL"},
+        {"id": "b", "texte": "1 000 mL"},
+        {"id": "c", "texte": "1 050 mL"},
+        {"id": "d", "texte": "950 mL"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Excellent ! 350 + 425 + 225 = 1 000 mL (soit 1 L).",
+      "indices": [
+        {"niveau": 1, "texte": "Pose l'addition des trois capacités.", "cout_points": 1},
+        {"niveau": 2, "texte": "350 + 425 = 775. Puis 775 + 225 = 1 000.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j07-e12-d1", "enonce": "Combien font 350 + 425 ?", "type": "numerique", "reponse": 775},
+          {"id": "j07-e12-d2", "enonce": "Maintenant ajoute 225 : 775 + 225 = ?", "type": "numerique", "reponse": 1000}
+        ]
+      }
+    },
+    {
+      "id": "j07-e13",
+      "ordre_jour": 13,
+      "theme": "mesures",
+      "sous_theme": "soustraction_capacites",
+      "scene_hp": "cours_potions",
+      "narration": "Le chaudron contenait 2 L. Le professeur Rogue vient d'en utiliser une partie.",
+      "type": "qcm",
+      "competence": "Soustraire des capacités",
+      "difficulte_relative": 13,
+      "duree_estimee_sec": 65,
+      "points_maison": 5,
+      "enonce": "Un chaudron contenait 2 L de potion. Le professeur en a versé 750 mL dans des fioles. Combien reste-t-il (en mL) ?",
+      "choix": [
+        {"id": "a", "texte": "1 250 mL"},
+        {"id": "b", "texte": "1 350 mL"},
+        {"id": "c", "texte": "750 mL"},
+        {"id": "d", "texte": "1 500 mL"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bien ! 2 L = 2 000 mL. 2 000 - 750 = 1 250 mL.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis d'abord 2 L en mL, puis soustrais 750.", "cout_points": 1},
+        {"niveau": 2, "texte": "2 L = 2 000 mL. 2 000 - 750 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j07-e13-d1", "enonce": "Combien font 2 L en mL ?", "type": "numerique", "reponse": 2000},
+          {"id": "j07-e13-d2", "enonce": "Maintenant fais 2 000 - 750 = ?", "type": "numerique", "reponse": 1250}
+        ]
+      }
+    },
+    {
+      "id": "j07-e14",
+      "ordre_jour": 14,
+      "theme": "mesures",
+      "sous_theme": "conversion_kg_g_decimaux",
+      "scene_hp": "cuisines_poudlard",
+      "narration": "Les elfes de maison pèsent un sac de farine.",
+      "type": "qcm",
+      "competence": "Convertir des kg décimaux en grammes",
+      "difficulte_relative": 14,
+      "duree_estimee_sec": 70,
+      "points_maison": 5,
+      "enonce": "Le sac de farine pèse 2,5 kg. Combien cela fait-il en grammes ?",
+      "choix": [
+        {"id": "a", "texte": "250 g"},
+        {"id": "b", "texte": "2 500 g"},
+        {"id": "c", "texte": "25 g"},
+        {"id": "d", "texte": "25 000 g"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Parfait ! 2,5 kg = 2,5 × 1 000 = 2 500 g.",
+      "indices": [
+        {"niveau": 1, "texte": "Multiplie 2,5 par 1 000. Astuce : déplace la virgule de 3 rangs vers la droite.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j07-e15",
+      "ordre_jour": 15,
+      "theme": "mesures",
+      "sous_theme": "comparaison_masses_unites_mixtes",
+      "scene_hp": "parc_poudlard",
+      "narration": "Hagrid compare le poids d'un hippogriffe et d'un dragon.",
+      "type": "qcm",
+      "competence": "Comparer des masses en unités différentes",
+      "difficulte_relative": 15,
+      "duree_estimee_sec": 75,
+      "points_maison": 5,
+      "enonce": "Buck l'hippogriffe pèse 450 kg. Norbert le dragon pèse 0,8 tonne. Lequel est le plus lourd ?",
+      "choix": [
+        {"id": "a", "texte": "Buck (450 kg)"},
+        {"id": "b", "texte": "Norbert (0,8 t)"},
+        {"id": "c", "texte": "Ils pèsent pareil"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Excellent ! 0,8 t = 800 kg, donc Norbert (800 kg) est plus lourd que Buck (450 kg).",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis 0,8 t en kg avant de comparer.", "cout_points": 1},
+        {"niveau": 2, "texte": "0,8 t = 0,8 × 1 000 = 800 kg. Compare avec 450 kg.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j07-e15-d1", "enonce": "Combien font 0,8 t en kg ?", "type": "numerique", "reponse": 800},
+          {"id": "j07-e15-d2", "enonce": "Compare 800 kg et 450 kg. Lequel est le plus grand ?", "type": "qcm", "choix": [{"id": "a", "texte": "800"}, {"id": "b", "texte": "450"}], "reponse_correcte": "a"}
+        ]
+      }
+    },
+    {
+      "id": "j07-e16",
+      "ordre_jour": 16,
+      "theme": "mesures",
+      "sous_theme": "conversion_complete_g",
+      "scene_hp": "cuisines_poudlard",
+      "narration": "Les elfes pèsent une commande géante pour le banquet.",
+      "type": "numerique",
+      "competence": "Convertir des tonnes en grammes (cas avec décimaux)",
+      "difficulte_relative": 16,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Le banquet nécessite 0,5 tonne de pommes de terre. Combien cela fait-il en grammes ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "500000",
+      "tolerance_numerique": 0,
+      "regex_validation": "^500\\s*000$",
+      "explication_correcte": "Bravo ! 0,5 t = 500 kg = 500 × 1 000 = 500 000 g.",
+      "indices": [
+        {"niveau": 1, "texte": "Passe d'abord en kg, puis en g.", "cout_points": 1},
+        {"niveau": 2, "texte": "0,5 t = 500 kg. 500 kg × 1 000 = ? g", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j07-e17",
+      "ordre_jour": 17,
+      "theme": "mesures",
+      "sous_theme": "probleme_capacite_simple",
+      "scene_hp": "cours_potions",
+      "narration": "Le professeur Rogue prépare un grand chaudron pour toute la classe.",
+      "type": "redige_court",
+      "competence": "Problème 1 étape : capacité",
+      "difficulte_relative": 17,
+      "duree_estimee_sec": 100,
+      "points_maison": 5,
+      "enonce": "Un grand chaudron contient 5 L de potion. Le professeur Rogue remplit des fioles de 250 mL. Combien de fioles peut-il remplir ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "20",
+      "tolerance_numerique": 0,
+      "regex_validation": "^20$",
+      "explication_correcte": "Excellent ! 5 L = 5 000 mL. 5 000 ÷ 250 = 20 fioles.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis 5 L en mL, puis divise par 250.", "cout_points": 1},
+        {"niveau": 2, "texte": "5 L = 5 000 mL. 5 000 ÷ 250 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j07-e17-d1", "enonce": "Combien font 5 L en mL ?", "type": "numerique", "reponse": 5000},
+          {"id": "j07-e17-d2", "enonce": "Maintenant divise par 250 : 5 000 ÷ 250 = ?", "type": "numerique", "reponse": 20}
+        ]
+      }
+    },
+    {
+      "id": "j07-e18",
+      "ordre_jour": 18,
+      "theme": "mesures",
+      "sous_theme": "probleme_masse_simple",
+      "scene_hp": "cuisines_poudlard",
+      "narration": "Les elfes préparent des paquets identiques de sucre.",
+      "type": "redige_court",
+      "competence": "Problème 1 étape : masse (division)",
+      "difficulte_relative": 18,
+      "duree_estimee_sec": 110,
+      "points_maison": 5,
+      "enonce": "Un grand sac contient 3 kg de sucre. Les elfes le répartissent en paquets de 150 g. Combien de paquets obtiennent-ils ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "20",
+      "tolerance_numerique": 0,
+      "regex_validation": "^20$",
+      "explication_correcte": "Bien joué ! 3 kg = 3 000 g. 3 000 ÷ 150 = 20 paquets.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis 3 kg en g, puis divise par 150.", "cout_points": 1},
+        {"niveau": 2, "texte": "3 kg = 3 000 g. 3 000 ÷ 150 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j07-e18-d1", "enonce": "Combien font 3 kg en g ?", "type": "numerique", "reponse": 3000},
+          {"id": "j07-e18-d2", "enonce": "3 000 ÷ 150 = ?", "type": "numerique", "reponse": 20}
+        ]
+      }
+    },
+    {
+      "id": "j07-e19",
+      "ordre_jour": 19,
+      "theme": "mesures",
+      "sous_theme": "probleme_masse_multiplication",
+      "scene_hp": "cuisines_poudlard",
+      "narration": "Le banquet de Halloween nécessite plusieurs gâteaux.",
+      "type": "numerique",
+      "competence": "Problème 1 étape : masse (multiplication)",
+      "difficulte_relative": 19,
+      "duree_estimee_sec": 120,
+      "points_maison": 6,
+      "enonce": "Chaque gâteau pèse 850 g. Les elfes préparent 12 gâteaux. Quelle est la masse totale en grammes ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "10200",
+      "tolerance_numerique": 0,
+      "regex_validation": "^10\\s*200$",
+      "explication_correcte": "Bravo ! 850 × 12 = 10 200 g (soit 10,2 kg).",
+      "indices": [
+        {"niveau": 1, "texte": "Pose la multiplication 850 × 12.", "cout_points": 1},
+        {"niveau": 2, "texte": "850 × 10 = 8 500, et 850 × 2 = 1 700. Total : 8 500 + 1 700.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j07-e20",
+      "ordre_jour": 20,
+      "theme": "mesures",
+      "sous_theme": "probleme_capacite_addition",
+      "scene_hp": "cours_potions",
+      "narration": "Hermione mélange trois fioles dans son chaudron.",
+      "type": "numerique",
+      "competence": "Problème 1 étape : somme de capacités en unités mixtes",
+      "difficulte_relative": 20,
+      "duree_estimee_sec": 130,
+      "points_maison": 6,
+      "enonce": "Hermione ajoute dans son chaudron : 0,5 L de jus de Mandragore, 250 mL de bave de crapaud, et 1 dL d'eau. Quel est le total en mL ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "850",
+      "tolerance_numerique": 0,
+      "regex_validation": "^850$",
+      "explication_correcte": "Excellent ! 0,5 L = 500 mL ; 1 dL = 100 mL. Total : 500 + 250 + 100 = 850 mL.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis tout en mL avant d'additionner.", "cout_points": 1},
+        {"niveau": 2, "texte": "0,5 L = 500 mL ; 1 dL = 100 mL. Maintenant additionne 500 + 250 + 100.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j07-e20-d1", "enonce": "0,5 L = ? mL", "type": "numerique", "reponse": 500},
+          {"id": "j07-e20-d2", "enonce": "1 dL = ? mL", "type": "numerique", "reponse": 100},
+          {"id": "j07-e20-d3", "enonce": "500 + 250 + 100 = ?", "type": "numerique", "reponse": 850}
+        ]
+      }
+    },
+    {
+      "id": "j07-e21",
+      "ordre_jour": 21,
+      "theme": "mesures",
+      "sous_theme": "probleme_chaudron_repartition",
+      "scene_hp": "cours_potions",
+      "narration": "Mme Pomfresh distribue la potion de Pousse-Os.",
+      "type": "numerique",
+      "competence": "Problème 1 étape : division de capacités",
+      "difficulte_relative": 21,
+      "duree_estimee_sec": 140,
+      "points_maison": 6,
+      "enonce": "Mme Pomfresh a 1,2 L de potion. Elle remplit des fioles de 30 mL pour ses élèves blessés. Combien de fioles peut-elle remplir ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "40",
+      "tolerance_numerique": 0,
+      "regex_validation": "^40$",
+      "explication_correcte": "Parfait ! 1,2 L = 1 200 mL. 1 200 ÷ 30 = 40 fioles.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis 1,2 L en mL, puis divise par 30.", "cout_points": 1},
+        {"niveau": 2, "texte": "1,2 L = 1 200 mL. 1 200 ÷ 30 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j07-e21-d1", "enonce": "1,2 L = ? mL", "type": "numerique", "reponse": 1200},
+          {"id": "j07-e21-d2", "enonce": "1 200 ÷ 30 = ?", "type": "numerique", "reponse": 40}
+        ]
+      }
+    },
+    {
+      "id": "j07-e22",
+      "ordre_jour": 22,
+      "theme": "mesures",
+      "sous_theme": "probleme_tonne",
+      "scene_hp": "parc_poudlard",
+      "narration": "Hagrid pèse la nourriture des dragons.",
+      "type": "numerique",
+      "competence": "Problème 1 étape : tonnes et kg",
+      "difficulte_relative": 22,
+      "duree_estimee_sec": 140,
+      "points_maison": 6,
+      "enonce": "Chaque dragon mange 75 kg de viande par jour. Hagrid s'occupe de 4 dragons. Combien de kg de viande faut-il par jour ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "300",
+      "tolerance_numerique": 0,
+      "regex_validation": "^300$",
+      "explication_correcte": "Bien joué ! 75 × 4 = 300 kg de viande par jour.",
+      "indices": [
+        {"niveau": 1, "texte": "Multiplie la ration d'un dragon par le nombre de dragons.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j07-e23",
+      "ordre_jour": 23,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_masse_reste",
+      "scene_hp": "cuisines_poudlard",
+      "narration": "Les elfes utilisent un sac de farine pour faire des pains.",
+      "type": "redige_court",
+      "competence": "Problème 2 étapes : masse + différence",
+      "difficulte_relative": 23,
+      "duree_estimee_sec": 180,
+      "points_maison": 7,
+      "enonce": "Un sac contient 5 kg de farine. Les elfes font 8 pains, chacun utilisant 450 g de farine. Combien de farine reste-t-il dans le sac (en grammes) ?",
+      "reponse_attendue_redige": "1400",
+      "tolerance_numerique": 0,
+      "regex_validation": "^1\\s*400$",
+      "explication_correcte": "Bravo ! 8 × 450 = 3 600 g de farine utilisée. 5 kg = 5 000 g. Reste : 5 000 - 3 600 = 1 400 g.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : calcule la farine utilisée. Étape 2 : soustrais du total (en g).", "cout_points": 1},
+        {"niveau": 2, "texte": "Utilisée : 8 × 450 = 3 600 g. Total : 5 kg = 5 000 g. Reste : 5 000 - 3 600.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j07-e23-d1", "enonce": "Combien font 8 × 450 g ?", "type": "numerique", "reponse": 3600},
+          {"id": "j07-e23-d2", "enonce": "Combien font 5 kg en g ?", "type": "numerique", "reponse": 5000},
+          {"id": "j07-e23-d3", "enonce": "Maintenant : 5 000 - 3 600 = ?", "type": "numerique", "reponse": 1400}
+        ]
+      }
+    },
+    {
+      "id": "j07-e24",
+      "ordre_jour": 24,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_capacite_reste",
+      "scene_hp": "cours_potions",
+      "narration": "Le professeur Rogue distribue de la potion à ses élèves.",
+      "type": "redige_court",
+      "competence": "Problème 2 étapes : capacité + différence",
+      "difficulte_relative": 24,
+      "duree_estimee_sec": 190,
+      "points_maison": 7,
+      "enonce": "Le grand chaudron contient 3 L de potion. Le professeur remplit 15 fioles de 80 mL. Combien de mL de potion reste-t-il dans le chaudron ?",
+      "reponse_attendue_redige": "1800",
+      "tolerance_numerique": 0,
+      "regex_validation": "^1\\s*800$",
+      "explication_correcte": "Excellent ! 15 × 80 = 1 200 mL versés. 3 L = 3 000 mL. Reste : 3 000 - 1 200 = 1 800 mL.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : calcule la potion versée. Étape 2 : soustrais du total (en mL).", "cout_points": 1},
+        {"niveau": 2, "texte": "Versé : 15 × 80 = 1 200 mL. Total : 3 L = 3 000 mL. Reste : 3 000 - 1 200.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j07-e24-d1", "enonce": "Combien font 15 × 80 ?", "type": "numerique", "reponse": 1200},
+          {"id": "j07-e24-d2", "enonce": "Combien font 3 L en mL ?", "type": "numerique", "reponse": 3000},
+          {"id": "j07-e24-d3", "enonce": "Maintenant : 3 000 - 1 200 = ?", "type": "numerique", "reponse": 1800}
+        ]
+      }
+    },
+    {
+      "id": "j07-e25",
+      "ordre_jour": 25,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_recette",
+      "scene_hp": "cuisines_poudlard",
+      "narration": "Un elfe prépare des biscuits en multipliant une recette.",
+      "type": "redige_court",
+      "competence": "Problème 2 étapes : recette × facteur + conversion",
+      "difficulte_relative": 25,
+      "duree_estimee_sec": 200,
+      "points_maison": 7,
+      "enonce": "Une recette pour 6 biscuits demande 240 g de beurre. L'elfe veut faire 24 biscuits. Combien de kg de beurre lui faut-il ?",
+      "reponse_attendue_redige": "0,96",
+      "tolerance_numerique": 0.001,
+      "regex_validation": "^0[,.]96$",
+      "explication_correcte": "Bravo ! 24 ÷ 6 = 4 fois la recette. Donc 4 × 240 = 960 g = 0,96 kg.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : combien de fois la recette doit-il faire ? Étape 2 : multiplie, puis convertis en kg.", "cout_points": 1},
+        {"niveau": 2, "texte": "24 ÷ 6 = 4. 4 × 240 = 960 g. 960 g = 0,96 kg.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j07-e25-d1", "enonce": "Combien de fois la recette ? 24 ÷ 6 = ?", "type": "numerique", "reponse": 4},
+          {"id": "j07-e25-d2", "enonce": "Beurre total : 4 × 240 = ? g", "type": "numerique", "reponse": 960},
+          {"id": "j07-e25-d3", "enonce": "Convertis 960 g en kg.", "type": "numerique", "reponse": 0.96, "tolerance_numerique": 0.001}
+        ]
+      }
+    },
+    {
+      "id": "j07-e26",
+      "ordre_jour": 26,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_remplissage",
+      "scene_hp": "cours_potions",
+      "narration": "Le professeur Rogue prépare exactement le bon nombre de fioles.",
+      "type": "redige_court",
+      "competence": "Problème 2 étapes : multiplication + total en L",
+      "difficulte_relative": 26,
+      "duree_estimee_sec": 210,
+      "points_maison": 7,
+      "enonce": "Pour la classe de 25 élèves, le professeur Rogue remplit 25 fioles. Chaque fiole contient 60 mL. Combien de litres de potion utilise-t-il en tout ?",
+      "reponse_attendue_redige": "1,5",
+      "tolerance_numerique": 0.01,
+      "regex_validation": "^1[,.]5$",
+      "explication_correcte": "Bien joué ! 25 × 60 = 1 500 mL = 1,5 L.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : multiplie pour avoir le total en mL. Étape 2 : convertis en L.", "cout_points": 1},
+        {"niveau": 2, "texte": "25 × 60 = 1 500 mL. Divise par 1 000 pour avoir des L.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j07-e26-d1", "enonce": "Combien font 25 × 60 ?", "type": "numerique", "reponse": 1500},
+          {"id": "j07-e26-d2", "enonce": "Convertis 1 500 mL en L.", "type": "numerique", "reponse": 1.5, "tolerance_numerique": 0.01}
+        ]
+      }
+    },
+    {
+      "id": "j07-e27",
+      "ordre_jour": 27,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_dragon_nourriture",
+      "scene_hp": "parc_poudlard",
+      "narration": "Hagrid calcule la nourriture de Norbert sur une semaine.",
+      "type": "redige_court",
+      "competence": "Problème 2 étapes : masse hebdomadaire + conversion tonne",
+      "difficulte_relative": 27,
+      "duree_estimee_sec": 220,
+      "points_maison": 8,
+      "enonce": "Norbert le dragon mange 95 kg de viande par jour. Combien de tonnes de viande mange-t-il en 2 semaines (14 jours) ?",
+      "reponse_attendue_redige": "1,33",
+      "tolerance_numerique": 0.005,
+      "regex_validation": "^1[,.]33$",
+      "explication_correcte": "Excellent ! 95 × 14 = 1 330 kg. 1 330 kg = 1,33 t (en arrondissant au centième).",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : multiplie la ration journalière par 14. Étape 2 : convertis en tonnes.", "cout_points": 1},
+        {"niveau": 2, "texte": "95 × 14 = 1 330 kg. Divise par 1 000 pour avoir des tonnes.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j07-e27-d1", "enonce": "Combien font 95 × 14 ?", "type": "numerique", "reponse": 1330},
+          {"id": "j07-e27-d2", "enonce": "Convertis 1 330 kg en tonnes (donne 2 décimales).", "type": "numerique", "reponse": 1.33, "tolerance_numerique": 0.005}
+        ]
+      }
+    },
+    {
+      "id": "j07-e28",
+      "ordre_jour": 28,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_recette_inverse",
+      "scene_hp": "cuisines_poudlard",
+      "narration": "Les elfes adaptent une recette pour un petit groupe.",
+      "type": "redige_court",
+      "competence": "Problème 2 étapes : proportionnalité de masse",
+      "difficulte_relative": 28,
+      "duree_estimee_sec": 230,
+      "points_maison": 8,
+      "enonce": "Une recette pour 20 gâteaux demande 1,5 kg de chocolat. L'elfe veut faire seulement 8 gâteaux. Combien de grammes de chocolat lui faut-il ?",
+      "reponse_attendue_redige": "600",
+      "tolerance_numerique": 0,
+      "regex_validation": "^600$",
+      "explication_correcte": "Bravo ! 1,5 kg = 1 500 g. Pour 1 gâteau : 1 500 ÷ 20 = 75 g. Pour 8 gâteaux : 75 × 8 = 600 g.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : trouve la quantité pour 1 gâteau (divise par 20). Étape 2 : multiplie par 8.", "cout_points": 1},
+        {"niveau": 2, "texte": "1,5 kg = 1 500 g. Par gâteau : 1 500 ÷ 20 = 75 g. Pour 8 : 75 × 8 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j07-e28-d1", "enonce": "Convertis 1,5 kg en grammes.", "type": "numerique", "reponse": 1500},
+          {"id": "j07-e28-d2", "enonce": "Chocolat pour 1 gâteau : 1 500 ÷ 20 = ? g", "type": "numerique", "reponse": 75},
+          {"id": "j07-e28-d3", "enonce": "Chocolat pour 8 gâteaux : 75 × 8 = ? g", "type": "numerique", "reponse": 600}
+        ]
+      }
+    },
+    {
+      "id": "j07-e29",
+      "ordre_jour": 29,
+      "theme": "probleme_libermann",
+      "sous_theme": "mini_probleme_synthese",
+      "scene_hp": "cours_potions",
+      "narration": "Mme Bibine quitte le terrain de vol. C'est l'heure du cours du professeur Rogue. Hermione veut tout réussir : 'Concentre-toi, Harry !'",
+      "type": "redige_libre",
+      "competence": "Mini-problème Libermann : capacité + division + conversion",
+      "difficulte_relative": 29,
+      "duree_estimee_sec": 300,
+      "points_maison": 10,
+      "enonce": "Le professeur Rogue prépare 4,5 L de potion de Sommeil. Il en verse d'abord 750 mL dans un grand bocal, puis il répartit le reste dans des fioles de 125 mL.\na) Combien de mL de potion reste-t-il après avoir rempli le grand bocal ?\nb) Combien de fioles de 125 mL peut-il remplir avec le reste ?\nc) Quelle masse pèsent ces fioles si chacune (vide + potion) pèse 180 g ?",
+      "reponse_attendue_redige": "a) 3 750 mL ; b) 30 fioles ; c) 5 400 g (ou 5,4 kg)",
+      "validation_par_claude": true,
+      "explication_correcte": "Bravo ! a) 4,5 L = 4 500 mL. 4 500 - 750 = 3 750 mL. b) 3 750 ÷ 125 = 30 fioles. c) 30 × 180 = 5 400 g = 5,4 kg.",
+      "indices": [
+        {"niveau": 1, "texte": "a) Convertis 4,5 L en mL, puis soustrais 750. b) Divise le reste par 125. c) Multiplie par 180 g.", "cout_points": 2},
+        {"niveau": 2, "texte": "a) 4 500 - 750 = 3 750 mL. b) 3 750 ÷ 125 = ? c) Résultat × 180 g.", "cout_points": 3}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j07-e29-d1", "enonce": "Convertis 4,5 L en mL.", "type": "numerique", "reponse": 4500},
+          {"id": "j07-e29-d2", "enonce": "Reste après le grand bocal : 4 500 - 750 = ? mL", "type": "numerique", "reponse": 3750},
+          {"id": "j07-e29-d3", "enonce": "Nombre de fioles : 3 750 ÷ 125 = ?", "type": "numerique", "reponse": 30},
+          {"id": "j07-e29-d4", "enonce": "Masse totale des fioles : 30 × 180 = ? g", "type": "numerique", "reponse": 5400},
+          {"id": "j07-e29-d5", "enonce": "Convertis 5 400 g en kg.", "type": "numerique", "reponse": 5.4, "tolerance_numerique": 0.01}
+        ]
+      },
+      "tags": ["capacite", "masse", "conversion", "probleme_multi_etapes", "libermann"],
+      "source_inspiration_libermann": "Épreuve type - problème de mesures avec capacités, masses et conversion d'unités"
+    },
+    {
+      "id": "j07-e30",
+      "ordre_jour": 30,
+      "theme": "probleme_libermann",
+      "sous_theme": "mini_probleme_synthese_avance",
+      "scene_hp": "cours_potions",
+      "narration": "Le professeur Rogue lance le défi ultime de la semaine. Si Harry réussit, Gryffondor gagne 20 points : 'Un vrai problème de concours, Potter !'",
+      "type": "redige_libre",
+      "competence": "Mini-problème Libermann : tonnes + division + capacité",
+      "difficulte_relative": 30,
+      "duree_estimee_sec": 330,
+      "points_maison": 12,
+      "enonce": "Hagrid commande 1,8 tonne de viande pour ses créatures du parc. Il la répartit ainsi : 60 % pour les sombrals, et le reste équitablement entre 3 hippogriffes.\na) Combien de kg de viande vont aux sombrals ?\nb) Combien de kg reçoit chaque hippogriffe ?\nc) Si chaque hippogriffe boit en plus 4,5 L d'eau par jour, combien de mL d'eau boivent les 3 hippogriffes ensemble en une semaine (7 jours) ?",
+      "reponse_attendue_redige": "a) 1 080 kg ; b) 240 kg ; c) 94 500 mL",
+      "validation_par_claude": true,
+      "explication_correcte": "Bravo Harry ! a) 1,8 t = 1 800 kg. 60 % de 1 800 = 1 080 kg pour les sombrals. b) Reste = 1 800 - 1 080 = 720 kg. 720 ÷ 3 = 240 kg par hippogriffe. c) 4,5 L × 3 hippogriffes × 7 jours = 94,5 L = 94 500 mL.",
+      "indices": [
+        {"niveau": 1, "texte": "a) Convertis 1,8 t en kg, puis calcule 60 %. b) Soustrais et divise par 3. c) Multiplie la ration par 3 hippogriffes et 7 jours, puis convertis en mL.", "cout_points": 2},
+        {"niveau": 2, "texte": "a) 1 800 × 60 ÷ 100 = 1 080. b) (1 800 - 1 080) ÷ 3 = ? c) 4,5 × 3 × 7 = 94,5 L = ? mL", "cout_points": 3}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_330s",
+        "micro_etapes": [
+          {"id": "j07-e30-d1", "enonce": "Convertis 1,8 t en kg.", "type": "numerique", "reponse": 1800},
+          {"id": "j07-e30-d2", "enonce": "60 % de 1 800 kg = ? kg (sombrals)", "type": "numerique", "reponse": 1080},
+          {"id": "j07-e30-d3", "enonce": "Reste pour les hippogriffes : 1 800 - 1 080 = ? kg", "type": "numerique", "reponse": 720},
+          {"id": "j07-e30-d4", "enonce": "Par hippogriffe : 720 ÷ 3 = ? kg", "type": "numerique", "reponse": 240},
+          {"id": "j07-e30-d5", "enonce": "Eau pour 3 hippogriffes en un jour : 4,5 × 3 = ? L", "type": "numerique", "reponse": 13.5, "tolerance_numerique": 0.01},
+          {"id": "j07-e30-d6", "enonce": "Eau pour 3 hippogriffes en 7 jours : 13,5 × 7 = ? L", "type": "numerique", "reponse": 94.5, "tolerance_numerique": 0.01},
+          {"id": "j07-e30-d7", "enonce": "Convertis 94,5 L en mL.", "type": "numerique", "reponse": 94500}
+        ]
+      },
+      "tags": ["tonnes", "kg", "capacite", "pourcentage", "probleme_multi_etapes", "libermann"],
+      "source_inspiration_libermann": "Épreuve type - problème complexe masses, capacités, pourcentage et durée"
+    }
+  ]
+}

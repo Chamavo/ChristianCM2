@@ -1,0 +1,76 @@
+{
+  "id": "quiz-j06",
+  "jour": 6,
+  "titre": "Quiz Libermann J6 — La Carte du Maraudeur",
+  "duree_min": 45,
+  "note_max": 20,
+  "themes_couverts": [
+    "pourcentages",
+    "nombres decimaux",
+    "echelles",
+    "conversions de longueurs"
+  ],
+  "scene_hp": "carte_maraudeur",
+  "narration": "Les jumeaux Weasley t'ont confie la Carte du Maraudeur. Pour la maitriser, il faut savoir lire les echelles et calculer avec precision. Fred et George t'observent en souriant : 'Si tu reussis ce quiz, mon vieux, on te montre tous les passages secrets du chateau.'",
+  "exercices": [
+    {
+      "id": "q-j06-1",
+      "titre_exercice": "EXERCICE 1 (6 points) - Pourcentages et decimaux",
+      "enonce": "Chez Honeydukes, un paquet de fizwizbiz coute 7,50 gallions. Harry achete 25 paquets pour offrir a toute la maison Gryffondor. Le vendeur lui accorde une remise de 20% sur le total. a) Quel est le prix total des 25 paquets sans la remise ? b) Quel est le montant de la remise (20% du total) ? c) Combien Harry paie-t-il en realite ? d) Harry avait 200 gallions dans sa bourse : combien lui reste-t-il apres l'achat ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Prix total sans remise ?", "reponse": "187,50 gallions", "points": 2},
+        {"id": "b", "enonce": "Montant de la remise (20%) ?", "reponse": "37,50 gallions", "points": 2},
+        {"id": "c", "enonce": "Prix paye reellement ?", "reponse": "150 gallions", "points": 1},
+        {"id": "d", "enonce": "Reste a Harry sur 200 gallions ?", "reponse": "50 gallions", "points": 1}
+      ],
+      "points_total": 6,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 25 x 7,50 = 187,50 gallions",
+        "b) 20% de 187,50 = 187,50 x 20/100 = 37,50 gallions",
+        "c) 187,50 - 37,50 = 150 gallions",
+        "d) 200 - 150 = 50 gallions"
+      ]
+    },
+    {
+      "id": "q-j06-2",
+      "titre_exercice": "EXERCICE 2 (7 points) - Echelle cadastrale",
+      "enonce": "Le terrain de Quidditch est represente sur la Carte du Maraudeur a l'echelle 1/500. Sur la carte, le terrain a la forme d'un rectangle de 12 cm de long et 8 cm de large. a) Quelle est la longueur reelle du terrain en metres ? b) Quelle est la largeur reelle du terrain en metres ? c) Quelle est l'aire reelle du terrain en metres carres ? d) Quelle est l'aire mesuree sur la carte en centimetres carres ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Longueur reelle ?", "reponse": "60 m", "points": 2},
+        {"id": "b", "enonce": "Largeur reelle ?", "reponse": "40 m", "points": 2},
+        {"id": "c", "enonce": "Aire reelle ?", "reponse": "2 400 m2", "points": 2},
+        {"id": "d", "enonce": "Aire sur la carte ?", "reponse": "96 cm2", "points": 1}
+      ],
+      "points_total": 7,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "Echelle 1/500 : 1 cm sur plan = 500 cm reels = 5 m",
+        "a) 12 cm x 500 = 6 000 cm = 60 m",
+        "b) 8 cm x 500 = 4 000 cm = 40 m",
+        "c) 60 x 40 = 2 400 m2",
+        "d) 12 x 8 = 96 cm2"
+      ]
+    },
+    {
+      "id": "q-j06-3",
+      "titre_exercice": "EXERCICE 3 (7 points) - Decimaux avec contexte",
+      "enonce": "Au Trois Balais, Madame Rosmerta vend la bieraubeurre a 3,25 gallions le lot et les patacitrouilles a 2,80 gallions le lot. Ron achete 5 lots de bieraubeurre et 7 lots de patacitrouilles. Il paie avec un billet de 50 gallions. a) Combien coutent les 5 lots de bieraubeurre ? b) Combien coutent les 7 lots de patacitrouilles ? c) Quel est le prix total de l'achat ? d) Combien Madame Rosmerta lui rend-elle ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Cout des 5 lots de bieraubeurre ?", "reponse": "16,25 gallions", "points": 2},
+        {"id": "b", "enonce": "Cout des 7 lots de patacitrouilles ?", "reponse": "19,60 gallions", "points": 2},
+        {"id": "c", "enonce": "Prix total ?", "reponse": "35,85 gallions", "points": 2},
+        {"id": "d", "enonce": "Rendu sur 50 gallions ?", "reponse": "14,15 gallions", "points": 1}
+      ],
+      "points_total": 7,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 5 x 3,25 = 16,25 gallions",
+        "b) 7 x 2,80 = 19,60 gallions",
+        "c) 16,25 + 19,60 = 35,85 gallions",
+        "d) 50 - 35,85 = 14,15 gallions"
+      ]
+    }
+  ],
+  "ponderation_finale": {"q-j06-1": 6, "q-j06-2": 7, "q-j06-3": 7}
+}

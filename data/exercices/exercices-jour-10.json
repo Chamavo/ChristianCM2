@@ -1,0 +1,829 @@
+{
+  "jour": 10,
+  "titre": "Le parc et le lac de Poudlard — Aires composées, trapèzes et volumes",
+  "theme_principal": "geometrie_aires_composees_volumes",
+  "scene_globale": "Harry et ses amis sortent du château et explorent le parc de Poudlard : la grande pelouse, le lac noir avec ses formes irrégulières, la cabane de Hagrid, la serre rectangulaire, la cuve à potion d'Hagrid. Tout devient l'occasion de calculer aires composées, trapèzes et volumes.",
+  "mix_qcm_redige": "45/55",
+  "duree_estimee_min": 170,
+  "exercices": [
+    {
+      "id": "j10-e01",
+      "ordre_jour": 1,
+      "theme": "geometrie",
+      "sous_theme": "aire_trapeze_formule",
+      "scene_hp": "parc_poudlard",
+      "narration": "Hermione lit dans son grimoire la formule pour calculer l'aire d'un trapèze.",
+      "type": "qcm",
+      "competence": "Connaître la formule de l'aire d'un trapèze",
+      "difficulte_relative": 1,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Quelle est la formule de l'aire d'un trapèze ?",
+      "choix": [
+        {"id": "a", "texte": "(B + b) × h"},
+        {"id": "b", "texte": "(B + b) × h ÷ 2"},
+        {"id": "c", "texte": "B × b × h"},
+        {"id": "d", "texte": "B × h ÷ 2"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! Aire du trapèze = (grande base + petite base) × hauteur ÷ 2.",
+      "indices": [
+        {"niveau": 1, "texte": "On additionne les deux bases (la grande B et la petite b), on multiplie par la hauteur, puis on divise par 2.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j10-e02",
+      "ordre_jour": 2,
+      "theme": "geometrie",
+      "sous_theme": "volume_definition",
+      "scene_hp": "cabane_hagrid",
+      "narration": "Hagrid montre une caisse cubique à Harry et explique la différence entre aire et volume.",
+      "type": "qcm",
+      "competence": "Différencier aire et volume",
+      "difficulte_relative": 2,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Le volume sert à mesurer :",
+      "choix": [
+        {"id": "a", "texte": "La longueur d'un objet"},
+        {"id": "b", "texte": "La surface couverte par un objet"},
+        {"id": "c", "texte": "L'espace occupé par un objet (en 3D)"},
+        {"id": "d", "texte": "Le poids d'un objet"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bravo ! Le volume mesure l'espace occupé en 3D. Unité : m³, dm³, cm³.",
+      "indices": [
+        {"niveau": 1, "texte": "Aire = 2D (surface). Volume = 3D (espace).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j10-e03",
+      "ordre_jour": 3,
+      "theme": "geometrie",
+      "sous_theme": "volume_parallelepipede_formule",
+      "scene_hp": "cabane_hagrid",
+      "narration": "Hagrid pose la caisse parallélépipédique devant Harry.",
+      "type": "qcm",
+      "competence": "Connaître la formule du volume d'un parallélépipède",
+      "difficulte_relative": 3,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Quelle est la formule du volume d'un parallélépipède rectangle (un pavé) ?",
+      "choix": [
+        {"id": "a", "texte": "L + l + h"},
+        {"id": "b", "texte": "L × l"},
+        {"id": "c", "texte": "L × l × h"},
+        {"id": "d", "texte": "(L + l) × 2"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Exact ! Volume du pavé = Longueur × largeur × hauteur.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour le volume, on multiplie les 3 dimensions : L × l × h.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j10-e04",
+      "ordre_jour": 4,
+      "theme": "geometrie",
+      "sous_theme": "conversion_volume",
+      "scene_hp": "cabane_hagrid",
+      "narration": "Hagrid remplit un seau et explique les unités.",
+      "type": "qcm",
+      "competence": "Convertir m³ en dm³",
+      "difficulte_relative": 4,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "Combien font 1 m³ en dm³ ?",
+      "choix": [
+        {"id": "a", "texte": "10 dm³"},
+        {"id": "b", "texte": "100 dm³"},
+        {"id": "c", "texte": "1 000 dm³"},
+        {"id": "d", "texte": "10 000 dm³"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bravo ! 1 m³ = 1 000 dm³ (parce qu'on multiplie 3 fois par 10).",
+      "indices": [
+        {"niveau": 1, "texte": "Pour les volumes, chaque saut d'unité multiplie ou divise par 1 000 (et pas par 10 comme pour les longueurs).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j10-e05",
+      "ordre_jour": 5,
+      "theme": "geometrie",
+      "sous_theme": "conversion_volume_litre",
+      "scene_hp": "cabane_hagrid",
+      "narration": "Hagrid remplit sa grande tasse à thé en dm³ et la verse dans une bouteille en litres.",
+      "type": "qcm",
+      "competence": "Connaître l'équivalence dm³ ↔ L",
+      "difficulte_relative": 5,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "Combien font 1 dm³ en litres ?",
+      "choix": [
+        {"id": "a", "texte": "10 L"},
+        {"id": "b", "texte": "1 L"},
+        {"id": "c", "texte": "0,1 L"},
+        {"id": "d", "texte": "1 000 L"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! 1 dm³ = 1 L exactement. C'est une équivalence magique très utile !",
+      "indices": [
+        {"niveau": 1, "texte": "1 dm³ est exactement égal à 1 litre. À retenir absolument.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j10-e06",
+      "ordre_jour": 6,
+      "theme": "geometrie",
+      "sous_theme": "aire_trapeze",
+      "scene_hp": "parc_poudlard",
+      "narration": "Hermione dessine un parterre de fleurs en forme de trapèze dans le parc.",
+      "type": "qcm",
+      "competence": "Calculer l'aire d'un trapèze (cas simple)",
+      "difficulte_relative": 6,
+      "duree_estimee_sec": 70,
+      "points_maison": 4,
+      "enonce": "Un trapèze a une grande base de 10 m, une petite base de 6 m et une hauteur de 4 m. Quelle est son aire ?",
+      "choix": [
+        {"id": "a", "texte": "32 m²"},
+        {"id": "b", "texte": "64 m²"},
+        {"id": "c", "texte": "20 m²"},
+        {"id": "d", "texte": "240 m²"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Excellent ! Aire = (B+b)×h÷2 = (10+6)×4÷2 = 16×4÷2 = 64÷2 = 32 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Formule : (B+b)×h÷2.", "cout_points": 1},
+        {"niveau": 2, "texte": "(10+6) = 16. Multiplie par 4 = 64. Divise par 2 = 32.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j10-e07",
+      "ordre_jour": 7,
+      "theme": "geometrie",
+      "sous_theme": "volume_parallelepipede",
+      "scene_hp": "cabane_hagrid",
+      "narration": "Hagrid stocke ses outils dans une caisse en bois en forme de pavé.",
+      "type": "qcm",
+      "competence": "Calculer le volume d'un parallélépipède rectangle",
+      "difficulte_relative": 7,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "La caisse d'Hagrid mesure 2 m de long, 1 m de large et 1 m de haut. Quel est son volume ?",
+      "choix": [
+        {"id": "a", "texte": "4 m³"},
+        {"id": "b", "texte": "2 m³"},
+        {"id": "c", "texte": "3 m³"},
+        {"id": "d", "texte": "1 m³"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! Volume = L × l × h = 2 × 1 × 1 = 2 m³.",
+      "indices": [
+        {"niveau": 1, "texte": "Volume du pavé = L × l × h. Multiplie les 3 dimensions.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j10-e08",
+      "ordre_jour": 8,
+      "theme": "geometrie",
+      "sous_theme": "aire_composee_l_shape",
+      "scene_hp": "cabane_hagrid",
+      "narration": "La cabane d'Hagrid a un sol en forme de L : une grande pièce rectangulaire (6 m × 4 m) avec une petite extension (2 m × 2 m) rattachée à un coin.",
+      "type": "qcm",
+      "competence": "Calculer l'aire d'une figure composée (L-shape)",
+      "difficulte_relative": 8,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "La cabane est un L : grand rectangle 6 m × 4 m, plus petit rectangle 2 m × 2 m collé au coin. Quelle est l'aire totale ?",
+      "choix": [
+        {"id": "a", "texte": "24 m²"},
+        {"id": "b", "texte": "28 m²"},
+        {"id": "c", "texte": "20 m²"},
+        {"id": "d", "texte": "30 m²"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! Décompose en 2 rectangles. Grand = 6×4 = 24. Petit = 2×2 = 4. Total = 24 + 4 = 28 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Décompose la figure en 2 rectangles. Calcule l'aire de chacun et additionne.", "cout_points": 1},
+        {"niveau": 2, "texte": "Grand rectangle : 6×4 = 24 m². Petit rectangle : 2×2 = 4 m². Somme = ?", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j10-e09",
+      "ordre_jour": 9,
+      "theme": "geometrie",
+      "sous_theme": "conversion_volume",
+      "scene_hp": "cabane_hagrid",
+      "narration": "Hagrid veut remplir d'eau sa cuve cubique.",
+      "type": "qcm",
+      "competence": "Convertir dm³ en litres (et vice versa)",
+      "difficulte_relative": 9,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Une cuve a un volume de 50 dm³. Combien de litres d'eau contient-elle ?",
+      "choix": [
+        {"id": "a", "texte": "5 L"},
+        {"id": "b", "texte": "50 L"},
+        {"id": "c", "texte": "500 L"},
+        {"id": "d", "texte": "0,5 L"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 1 dm³ = 1 L, donc 50 dm³ = 50 L.",
+      "indices": [
+        {"niveau": 1, "texte": "1 dm³ = 1 L. La conversion est directe.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j10-e10",
+      "ordre_jour": 10,
+      "theme": "geometrie",
+      "sous_theme": "conversion_m3_litres",
+      "scene_hp": "lac_poudlard",
+      "narration": "Hermione veut savoir combien de litres d'eau contient une caisse de 1 m³ jetée dans le lac.",
+      "type": "qcm",
+      "competence": "Convertir m³ en litres",
+      "difficulte_relative": 10,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Combien de litres dans 1 m³ ?",
+      "choix": [
+        {"id": "a", "texte": "10 L"},
+        {"id": "b", "texte": "100 L"},
+        {"id": "c", "texte": "1 000 L"},
+        {"id": "d", "texte": "10 000 L"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bravo ! 1 m³ = 1 000 dm³ = 1 000 L. À mémoriser !",
+      "indices": [
+        {"niveau": 1, "texte": "1 m³ = 1 000 dm³, et 1 dm³ = 1 L. Donc 1 m³ = 1 000 L.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j10-e11",
+      "ordre_jour": 11,
+      "theme": "geometrie",
+      "sous_theme": "volume_parallelepipede",
+      "scene_hp": "serre_chourave",
+      "narration": "La serre du professeur Chourave est un grand parallélépipède.",
+      "type": "qcm",
+      "competence": "Calculer le volume d'un pavé (dimensions moyennes)",
+      "difficulte_relative": 11,
+      "duree_estimee_sec": 70,
+      "points_maison": 4,
+      "enonce": "La serre mesure 10 m de long, 4 m de large et 3 m de haut. Quel est son volume ?",
+      "choix": [
+        {"id": "a", "texte": "120 m³"},
+        {"id": "b", "texte": "60 m³"},
+        {"id": "c", "texte": "40 m³"},
+        {"id": "d", "texte": "17 m³"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Excellent ! V = L × l × h = 10 × 4 × 3 = 120 m³.",
+      "indices": [
+        {"niveau": 1, "texte": "Multiplie 10 × 4 × 3. Tu peux faire 10×4 = 40, puis 40×3.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j10-e12",
+      "ordre_jour": 12,
+      "theme": "geometrie",
+      "sous_theme": "aire_composee_rectangle_demi_cercle",
+      "scene_hp": "lac_poudlard",
+      "narration": "Hermione dessine une petite plage en forme de rectangle prolongé par un demi-cercle. (On utilise π ≈ 3 pour simplifier.)",
+      "type": "qcm",
+      "competence": "Aire composée rectangle + demi-cercle",
+      "difficulte_relative": 12,
+      "duree_estimee_sec": 100,
+      "points_maison": 5,
+      "enonce": "La plage est un rectangle de 6 m × 4 m collé à un demi-cercle de rayon 2 m sur l'un des petits côtés. En prenant π ≈ 3, quelle est l'aire totale ?",
+      "choix": [
+        {"id": "a", "texte": "24 m²"},
+        {"id": "b", "texte": "30 m²"},
+        {"id": "c", "texte": "36 m²"},
+        {"id": "d", "texte": "48 m²"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! Aire rectangle = 6×4 = 24 m². Aire demi-cercle (π=3, r=2) = (3×2×2)÷2 = 12÷2 = 6 m². Total = 24 + 6 = 30 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Décompose en 2 figures : rectangle + demi-cercle. Aire demi-cercle = (π × r × r) ÷ 2.", "cout_points": 1},
+        {"niveau": 2, "texte": "Rectangle = 6×4 = 24. Demi-cercle avec π=3, r=2 : (3×2×2)÷2 = 6. Somme = ?", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j10-e13",
+      "ordre_jour": 13,
+      "theme": "geometrie",
+      "sous_theme": "aire_trapeze",
+      "scene_hp": "parc_poudlard",
+      "narration": "Le terrain de jeu des hippogriffes est un trapèze.",
+      "type": "qcm",
+      "competence": "Aire d'un trapèze (cas plus grand)",
+      "difficulte_relative": 13,
+      "duree_estimee_sec": 80,
+      "points_maison": 5,
+      "enonce": "Le trapèze a une grande base de 12 m, une petite base de 8 m et une hauteur de 5 m. Quelle est son aire ?",
+      "choix": [
+        {"id": "a", "texte": "50 m²"},
+        {"id": "b", "texte": "100 m²"},
+        {"id": "c", "texte": "60 m²"},
+        {"id": "d", "texte": "20 m²"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bravo ! (B+b)×h÷2 = (12+8)×5÷2 = 20×5÷2 = 100÷2 = 50 m².",
+      "indices": [
+        {"niveau": 1, "texte": "(B+b)×h÷2.", "cout_points": 1},
+        {"niveau": 2, "texte": "12+8 = 20. 20×5 = 100. 100÷2 = ?", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j10-e14",
+      "ordre_jour": 14,
+      "theme": "geometrie",
+      "sous_theme": "volume_petites_dimensions",
+      "scene_hp": "cabane_hagrid",
+      "narration": "Hagrid prépare une potion dans un récipient en forme de pavé.",
+      "type": "qcm",
+      "competence": "Volume d'un pavé en dm",
+      "difficulte_relative": 14,
+      "duree_estimee_sec": 70,
+      "points_maison": 5,
+      "enonce": "Un récipient mesure 5 dm × 4 dm × 2 dm. Quel est son volume ?",
+      "choix": [
+        {"id": "a", "texte": "11 dm³"},
+        {"id": "b", "texte": "20 dm³"},
+        {"id": "c", "texte": "40 dm³"},
+        {"id": "d", "texte": "80 dm³"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bien ! V = 5 × 4 × 2 = 20 × 2 = 40 dm³.",
+      "indices": [
+        {"niveau": 1, "texte": "V = L × l × h. Multiplie 5 × 4 × 2.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j10-e15",
+      "ordre_jour": 15,
+      "theme": "geometrie",
+      "sous_theme": "aire_trapeze",
+      "scene_hp": "parc_poudlard",
+      "narration": "Une serre supplémentaire a un toit en forme de trapèze vu de face.",
+      "type": "redige_court",
+      "competence": "Calculer l'aire d'un trapèze",
+      "difficulte_relative": 15,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Un trapèze a B = 14 m, b = 6 m et h = 4 m. Calcule son aire en m² (donne juste le nombre).",
+      "reponse_attendue_redige": "40",
+      "tolerance_numerique": 0,
+      "regex_validation": "^40$",
+      "explication_correcte": "Excellent ! (14+6)×4÷2 = 20×4÷2 = 80÷2 = 40 m².",
+      "indices": [
+        {"niveau": 1, "texte": "(B+b)×h÷2. Calcule étape par étape.", "cout_points": 1},
+        {"niveau": 2, "texte": "14+6 = 20. 20×4 = 80. 80÷2 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j10-e15-d1", "enonce": "Combien font B + b (14 + 6) ?", "type": "numerique", "reponse": 20},
+          {"id": "j10-e15-d2", "enonce": "Multiplie par h : 20 × 4 = ?", "type": "numerique", "reponse": 80},
+          {"id": "j10-e15-d3", "enonce": "Divise par 2 : 80 ÷ 2 = ?", "type": "numerique", "reponse": 40}
+        ]
+      }
+    },
+    {
+      "id": "j10-e16",
+      "ordre_jour": 16,
+      "theme": "geometrie",
+      "sous_theme": "volume_parallelepipede",
+      "scene_hp": "serre_chourave",
+      "narration": "La serre des plantes carnivores est un parallélépipède.",
+      "type": "redige_court",
+      "competence": "Calculer le volume d'un parallélépipède",
+      "difficulte_relative": 16,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "La serre mesure 8 m × 5 m × 3 m. Calcule son volume en m³ (donne juste le nombre).",
+      "reponse_attendue_redige": "120",
+      "tolerance_numerique": 0,
+      "regex_validation": "^120$",
+      "explication_correcte": "Parfait ! V = 8 × 5 × 3 = 40 × 3 = 120 m³.",
+      "indices": [
+        {"niveau": 1, "texte": "V = L × l × h. Multiplie 8 × 5 = 40, puis × 3.", "cout_points": 1}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j10-e16-d1", "enonce": "Combien font 8 × 5 ?", "type": "numerique", "reponse": 40},
+          {"id": "j10-e16-d2", "enonce": "Maintenant 40 × 3 ?", "type": "numerique", "reponse": 120}
+        ]
+      }
+    },
+    {
+      "id": "j10-e17",
+      "ordre_jour": 17,
+      "theme": "geometrie",
+      "sous_theme": "aire_composee_l_shape",
+      "scene_hp": "cabane_hagrid",
+      "narration": "Le sol de la cabane d'Hagrid forme un L : un grand rectangle 8 m × 5 m auquel on a ajouté une extension 3 m × 2 m.",
+      "type": "redige_court",
+      "competence": "Aire d'une figure composée (L-shape)",
+      "difficulte_relative": 17,
+      "duree_estimee_sec": 120,
+      "points_maison": 6,
+      "enonce": "Le sol est en L : grand rectangle 8 m × 5 m + petit rectangle 3 m × 2 m collé à un coin. Calcule l'aire totale en m² (donne juste le nombre).",
+      "reponse_attendue_redige": "46",
+      "tolerance_numerique": 0,
+      "regex_validation": "^46$",
+      "explication_correcte": "Bravo ! Grand = 8×5 = 40. Petit = 3×2 = 6. Total = 40 + 6 = 46 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Décompose la figure en 2 rectangles, calcule chaque aire et additionne.", "cout_points": 1},
+        {"niveau": 2, "texte": "Aire grand rectangle = 8 × 5. Aire petit = 3 × 2. Somme = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j10-e17-d1", "enonce": "Aire du grand rectangle (8 m × 5 m) ?", "type": "numerique", "reponse": 40},
+          {"id": "j10-e17-d2", "enonce": "Aire du petit rectangle (3 m × 2 m) ?", "type": "numerique", "reponse": 6},
+          {"id": "j10-e17-d3", "enonce": "Aire totale (40 + 6) ?", "type": "numerique", "reponse": 46}
+        ]
+      }
+    },
+    {
+      "id": "j10-e18",
+      "ordre_jour": 18,
+      "theme": "geometrie",
+      "sous_theme": "conversion_volume",
+      "scene_hp": "lac_poudlard",
+      "narration": "Hagrid jette une grosse caisse dans le lac et veut savoir combien de litres d'eau elle déplacerait si elle était vide.",
+      "type": "redige_court",
+      "competence": "Convertir m³ en litres",
+      "difficulte_relative": 18,
+      "duree_estimee_sec": 100,
+      "points_maison": 5,
+      "enonce": "Une caisse a un volume de 3 m³. Combien de litres cela représente-t-il ? (donne juste le nombre)",
+      "reponse_attendue_redige": "3000",
+      "tolerance_numerique": 0,
+      "regex_validation": "^3\\s*000$|^3000$",
+      "explication_correcte": "Bien ! 1 m³ = 1 000 L, donc 3 m³ = 3 × 1 000 = 3 000 L.",
+      "indices": [
+        {"niveau": 1, "texte": "1 m³ = 1 000 L. Multiplie par 3.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j10-e19",
+      "ordre_jour": 19,
+      "theme": "geometrie",
+      "sous_theme": "volume_pratique",
+      "scene_hp": "cabane_hagrid",
+      "narration": "Hagrid veut remplir d'eau sa cuve parallélépipédique de 2 m × 1 m × 1 m.",
+      "type": "redige_court",
+      "competence": "Volume puis conversion en litres",
+      "difficulte_relative": 19,
+      "duree_estimee_sec": 150,
+      "points_maison": 6,
+      "enonce": "La cuve mesure 2 m × 1 m × 1 m. Quel volume d'eau peut-elle contenir en litres ? (donne juste le nombre)",
+      "reponse_attendue_redige": "2000",
+      "tolerance_numerique": 0,
+      "regex_validation": "^2\\s*000$|^2000$",
+      "explication_correcte": "Bravo ! V = 2 × 1 × 1 = 2 m³ = 2 × 1 000 = 2 000 L.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : calcule le volume en m³. Étape 2 : convertis en litres (×1000).", "cout_points": 1},
+        {"niveau": 2, "texte": "V = 2 × 1 × 1 = 2 m³. Or 1 m³ = 1 000 L.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j10-e19-d1", "enonce": "Quel est le volume en m³ (2 × 1 × 1) ?", "type": "numerique", "reponse": 2},
+          {"id": "j10-e19-d2", "enonce": "Convertis 2 m³ en litres.", "type": "numerique", "reponse": 2000}
+        ]
+      }
+    },
+    {
+      "id": "j10-e20",
+      "ordre_jour": 20,
+      "theme": "geometrie",
+      "sous_theme": "aire_trapeze_pratique",
+      "scene_hp": "parc_poudlard",
+      "narration": "Le toit de la serre a la forme d'un trapèze vu de profil.",
+      "type": "redige_court",
+      "competence": "Aire d'un trapèze (chiffres plus grands)",
+      "difficulte_relative": 20,
+      "duree_estimee_sec": 150,
+      "points_maison": 6,
+      "enonce": "Le toit trapézoïdal a B = 20 m, b = 14 m, h = 8 m. Calcule son aire en m² (donne juste le nombre).",
+      "reponse_attendue_redige": "136",
+      "tolerance_numerique": 0,
+      "regex_validation": "^136$",
+      "explication_correcte": "Excellent ! (20+14)×8÷2 = 34×8÷2 = 272÷2 = 136 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Formule : (B+b)×h÷2.", "cout_points": 1},
+        {"niveau": 2, "texte": "20+14 = 34. 34×8 = 272. 272÷2 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j10-e20-d1", "enonce": "B + b = 20 + 14 = ?", "type": "numerique", "reponse": 34},
+          {"id": "j10-e20-d2", "enonce": "Multiplie par 8 : 34 × 8 = ?", "type": "numerique", "reponse": 272},
+          {"id": "j10-e20-d3", "enonce": "Divise par 2 : 272 ÷ 2 = ?", "type": "numerique", "reponse": 136}
+        ]
+      }
+    },
+    {
+      "id": "j10-e21",
+      "ordre_jour": 21,
+      "theme": "geometrie",
+      "sous_theme": "aire_composee_rectangle_demi_cercle",
+      "scene_hp": "lac_poudlard",
+      "narration": "Une petite jetée s'avance dans le lac : rectangle 10 m × 4 m, terminé par un demi-cercle de rayon 2 m. (On prend π ≈ 3.)",
+      "type": "redige_court",
+      "competence": "Aire composée rectangle + demi-cercle",
+      "difficulte_relative": 21,
+      "duree_estimee_sec": 200,
+      "points_maison": 7,
+      "enonce": "La jetée : rectangle 10 m × 4 m + demi-cercle de rayon 2 m. Avec π = 3, calcule l'aire totale en m². (donne juste le nombre)",
+      "reponse_attendue_redige": "46",
+      "tolerance_numerique": 0,
+      "regex_validation": "^46$",
+      "explication_correcte": "Bravo ! Rectangle = 10 × 4 = 40 m². Demi-cercle = (π × r²)÷2 = (3×2×2)÷2 = 12÷2 = 6 m². Total = 40 + 6 = 46 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Décompose : rectangle + demi-cercle. Demi-cercle = (π × r × r) ÷ 2.", "cout_points": 1},
+        {"niveau": 2, "texte": "Aire rectangle = 10×4 = 40. Demi-cercle avec π=3, r=2 : (3×2×2)÷2 = 6.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j10-e21-d1", "enonce": "Aire du rectangle (10 × 4) ?", "type": "numerique", "reponse": 40},
+          {"id": "j10-e21-d2", "enonce": "Aire d'un cercle complet : π × r × r avec π=3, r=2 ?", "type": "numerique", "reponse": 12},
+          {"id": "j10-e21-d3", "enonce": "Aire d'un demi-cercle (la moitié) ?", "type": "numerique", "reponse": 6},
+          {"id": "j10-e21-d4", "enonce": "Aire totale (40 + 6) ?", "type": "numerique", "reponse": 46}
+        ]
+      }
+    },
+    {
+      "id": "j10-e22",
+      "ordre_jour": 22,
+      "theme": "geometrie",
+      "sous_theme": "volume_conversion_litres",
+      "scene_hp": "cabane_hagrid",
+      "narration": "Hagrid possède une cuve qui contient 500 litres d'eau bouillante pour ses chaudières.",
+      "type": "redige_court",
+      "competence": "Convertir L en dm³",
+      "difficulte_relative": 22,
+      "duree_estimee_sec": 80,
+      "points_maison": 5,
+      "enonce": "500 litres représentent combien de dm³ ? (donne juste le nombre)",
+      "reponse_attendue_redige": "500",
+      "tolerance_numerique": 0,
+      "regex_validation": "^500$",
+      "explication_correcte": "Exact ! 1 L = 1 dm³, donc 500 L = 500 dm³.",
+      "indices": [
+        {"niveau": 1, "texte": "L et dm³ sont exactement égaux. Pas besoin de calcul, juste recopier.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j10-e23",
+      "ordre_jour": 23,
+      "theme": "probleme_synthese",
+      "sous_theme": "aire_composee_l_shape_pratique",
+      "scene_hp": "parc_poudlard",
+      "narration": "Le jardin du professeur Chourave a une forme en L : grand rectangle 10 m × 6 m + extension 4 m × 3 m. Elle veut le couvrir de paillis. Le paillis coûte 2 Gallions le m².",
+      "type": "redige_court",
+      "competence": "Aire composée + coût (problème à 3 étapes)",
+      "difficulte_relative": 23,
+      "duree_estimee_sec": 240,
+      "points_maison": 8,
+      "enonce": "Jardin en L : 10×6 + 4×3. Paillis à 2 G/m². Combien Chourave va-t-elle dépenser en Gallions ? (donne juste le nombre)",
+      "reponse_attendue_redige": "144",
+      "tolerance_numerique": 0,
+      "regex_validation": "^144$",
+      "explication_correcte": "Bravo ! Aire totale = 10×6 + 4×3 = 60 + 12 = 72 m². Coût = 72 × 2 = 144 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : aires des 2 rectangles. Étape 2 : somme. Étape 3 : multiplie par 2 G.", "cout_points": 1},
+        {"niveau": 2, "texte": "10×6 = 60. 4×3 = 12. Aire = 60+12 = 72. Coût = 72 × 2.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j10-e23-d1", "enonce": "Aire du grand rectangle (10 × 6) ?", "type": "numerique", "reponse": 60},
+          {"id": "j10-e23-d2", "enonce": "Aire de la petite extension (4 × 3) ?", "type": "numerique", "reponse": 12},
+          {"id": "j10-e23-d3", "enonce": "Aire totale (60 + 12) ?", "type": "numerique", "reponse": 72},
+          {"id": "j10-e23-d4", "enonce": "Coût total (72 × 2) ?", "type": "numerique", "reponse": 144}
+        ]
+      }
+    },
+    {
+      "id": "j10-e24",
+      "ordre_jour": 24,
+      "theme": "probleme_synthese",
+      "sous_theme": "volume_remplissage",
+      "scene_hp": "cabane_hagrid",
+      "narration": "Hagrid remplit son aquarium parallélépipédique pour son nouveau Strangulot. Il utilise un seau de 10 L.",
+      "type": "redige_court",
+      "competence": "Volume + conversion + division (combien de seaux)",
+      "difficulte_relative": 24,
+      "duree_estimee_sec": 240,
+      "points_maison": 8,
+      "enonce": "L'aquarium mesure 1 m × 0,5 m × 0,4 m. Le seau d'Hagrid fait 10 L. Combien de seaux pour remplir l'aquarium ? (donne juste le nombre)",
+      "reponse_attendue_redige": "20",
+      "tolerance_numerique": 0,
+      "regex_validation": "^20$",
+      "explication_correcte": "Excellent ! V = 1 × 0,5 × 0,4 = 0,2 m³ = 200 L. Seaux = 200 ÷ 10 = 20 seaux.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : volume en m³. Étape 2 : convertis en L. Étape 3 : divise par 10.", "cout_points": 1},
+        {"niveau": 2, "texte": "1 × 0,5 = 0,5. 0,5 × 0,4 = 0,2 m³ = 200 L. 200 ÷ 10 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j10-e24-d1", "enonce": "Combien font 1 × 0,5 × 0,4 (volume en m³ ; réponse en dixièmes : 0,2 → écris 2 pour 0,2... non, donne 200 en litres directement).", "type": "numerique", "reponse": 200, "regex_validation": "^200$"},
+          {"id": "j10-e24-d2", "enonce": "Si le volume est 200 L et qu'un seau fait 10 L, combien de seaux ?", "type": "numerique", "reponse": 20}
+        ]
+      }
+    },
+    {
+      "id": "j10-e25",
+      "ordre_jour": 25,
+      "theme": "probleme_synthese",
+      "sous_theme": "aire_trapeze_pratique",
+      "scene_hp": "parc_poudlard",
+      "narration": "Le parterre de fleurs du parc est un trapèze. Hermione veut acheter des graines : 1 sachet couvre 5 m².",
+      "type": "redige_court",
+      "competence": "Aire trapèze + division (combien de sachets)",
+      "difficulte_relative": 25,
+      "duree_estimee_sec": 260,
+      "points_maison": 8,
+      "enonce": "Trapèze : B = 12 m, b = 8 m, h = 5 m. 1 sachet de graines couvre 5 m². Combien de sachets faut-il ? (donne juste le nombre)",
+      "reponse_attendue_redige": "10",
+      "tolerance_numerique": 0,
+      "regex_validation": "^10$",
+      "explication_correcte": "Bravo ! Aire trapèze = (12+8)×5÷2 = 20×5÷2 = 100÷2 = 50 m². Sachets = 50÷5 = 10.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : aire du trapèze. Étape 2 : divise par 5.", "cout_points": 1},
+        {"niveau": 2, "texte": "(12+8)×5÷2 = 50 m². 50 ÷ 5 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j10-e25-d1", "enonce": "B + b = 12 + 8 = ?", "type": "numerique", "reponse": 20},
+          {"id": "j10-e25-d2", "enonce": "(B+b) × h = 20 × 5 = ?", "type": "numerique", "reponse": 100},
+          {"id": "j10-e25-d3", "enonce": "Divise par 2 : 100 ÷ 2 = ?", "type": "numerique", "reponse": 50},
+          {"id": "j10-e25-d4", "enonce": "Combien de sachets (50 ÷ 5) ?", "type": "numerique", "reponse": 10}
+        ]
+      }
+    },
+    {
+      "id": "j10-e26",
+      "ordre_jour": 26,
+      "theme": "probleme_synthese",
+      "sous_theme": "volume_cout_eau",
+      "scene_hp": "serre_chourave",
+      "narration": "Chourave remplit un bassin parallélépipédique d'eau pour ses Mandragores. L'eau coûte 1 Gallion les 50 litres.",
+      "type": "redige_court",
+      "competence": "Volume + conversion en L + coût",
+      "difficulte_relative": 26,
+      "duree_estimee_sec": 280,
+      "points_maison": 9,
+      "enonce": "Le bassin mesure 5 m × 2 m × 0,5 m. L'eau coûte 1 G pour 50 L. Combien Chourave va-t-elle payer ? (donne juste le nombre de Gallions)",
+      "reponse_attendue_redige": "100",
+      "tolerance_numerique": 0,
+      "regex_validation": "^100$",
+      "explication_correcte": "Excellent ! V = 5 × 2 × 0,5 = 5 m³ = 5 000 L. Coût = 5 000 ÷ 50 = 100 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : volume en m³. Étape 2 : convertis en L. Étape 3 : divise par 50.", "cout_points": 1},
+        {"niveau": 2, "texte": "5 × 2 × 0,5 = 5 m³. 5 m³ = 5 000 L. 5 000 ÷ 50 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j10-e26-d1", "enonce": "Volume en m³ (5 × 2 × 0,5) ?", "type": "numerique", "reponse": 5},
+          {"id": "j10-e26-d2", "enonce": "Convertis 5 m³ en L.", "type": "numerique", "reponse": 5000},
+          {"id": "j10-e26-d3", "enonce": "Combien de Gallions (5 000 ÷ 50) ?", "type": "numerique", "reponse": 100}
+        ]
+      }
+    },
+    {
+      "id": "j10-e27",
+      "ordre_jour": 27,
+      "theme": "probleme_synthese",
+      "sous_theme": "aire_composee_complexe",
+      "scene_hp": "parc_poudlard",
+      "narration": "Le verger des hippogriffes est composé de 2 figures : un rectangle 15 m × 8 m et un trapèze accolé (B = 8 m, b = 4 m, h = 6 m).",
+      "type": "redige_court",
+      "competence": "Aire composée rectangle + trapèze",
+      "difficulte_relative": 27,
+      "duree_estimee_sec": 280,
+      "points_maison": 9,
+      "enonce": "Verger : rectangle 15 m × 8 m + trapèze (B=8, b=4, h=6). Quelle est l'aire totale en m² ? (donne juste le nombre)",
+      "reponse_attendue_redige": "156",
+      "tolerance_numerique": 0,
+      "regex_validation": "^156$",
+      "explication_correcte": "Bravo ! Rectangle = 15×8 = 120 m². Trapèze = (8+4)×6÷2 = 12×6÷2 = 72÷2 = 36 m². Total = 120 + 36 = 156 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Décompose : aire rectangle + aire trapèze. Calcule chacune puis additionne.", "cout_points": 1},
+        {"niveau": 2, "texte": "Rectangle : 15×8 = 120. Trapèze : (8+4)×6÷2 = 36. Somme = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j10-e27-d1", "enonce": "Aire du rectangle (15 × 8) ?", "type": "numerique", "reponse": 120},
+          {"id": "j10-e27-d2", "enonce": "(B+b) du trapèze (8 + 4) ?", "type": "numerique", "reponse": 12},
+          {"id": "j10-e27-d3", "enonce": "Aire du trapèze : 12 × 6 ÷ 2 = ?", "type": "numerique", "reponse": 36},
+          {"id": "j10-e27-d4", "enonce": "Aire totale (120 + 36) ?", "type": "numerique", "reponse": 156}
+        ]
+      }
+    },
+    {
+      "id": "j10-e28",
+      "ordre_jour": 28,
+      "theme": "probleme_synthese",
+      "sous_theme": "volume_pratique_complexe",
+      "scene_hp": "cabane_hagrid",
+      "narration": "Hagrid possède 3 cuves identiques en forme de pavé (1,5 m × 1 m × 0,8 m). Il veut savoir combien de litres au total elles peuvent contenir.",
+      "type": "redige_court",
+      "competence": "Volume × n + conversion en litres",
+      "difficulte_relative": 28,
+      "duree_estimee_sec": 300,
+      "points_maison": 10,
+      "enonce": "3 cuves identiques de 1,5 m × 1 m × 0,8 m. Quel volume total en litres peuvent-elles contenir ? (donne juste le nombre)",
+      "reponse_attendue_redige": "3600",
+      "tolerance_numerique": 0,
+      "regex_validation": "^3\\s*600$|^3600$",
+      "explication_correcte": "Excellent ! Une cuve : V = 1,5 × 1 × 0,8 = 1,2 m³ = 1 200 L. 3 cuves : 3 × 1 200 = 3 600 L.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : volume d'1 cuve en m³. Étape 2 : convertis en L. Étape 3 : multiplie par 3.", "cout_points": 1},
+        {"niveau": 2, "texte": "1,5 × 1 × 0,8 = 1,2 m³ = 1 200 L. Pour 3 cuves : 3 × 1 200.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j10-e28-d1", "enonce": "Calcule 1,5 × 1 × 0,8 ; donne le résultat directement en litres (volume × 1000).", "type": "numerique", "reponse": 1200},
+          {"id": "j10-e28-d2", "enonce": "Pour 3 cuves : 3 × 1 200 = ?", "type": "numerique", "reponse": 3600}
+        ]
+      }
+    },
+    {
+      "id": "j10-e29",
+      "ordre_jour": 29,
+      "theme": "probleme_libermann",
+      "sous_theme": "aire_composee_difference",
+      "scene_hp": "lac_poudlard",
+      "narration": "Mini-épreuve Libermann. Le lac de Poudlard, vu d'en haut, peut être approché par un grand rectangle 100 m × 60 m. Au milieu, une île carrée de 10 m de côté. Sur l'eau (le lac sans l'île), il y a aussi une jetée (rectangle 20 m × 4 m) qu'on enlève aussi de la surface d'eau visible.",
+      "type": "redige_libre",
+      "competence": "Aire d'un rectangle moins 2 figures (problème Libermann)",
+      "difficulte_relative": 29,
+      "duree_estimee_sec": 400,
+      "points_maison": 13,
+      "enonce": "Lac approximé : rectangle 100 m × 60 m. On enlève une île carrée de 10 m de côté ET une jetée de 20 m × 4 m. Quelle est l'aire d'eau visible en m² ?",
+      "reponse_attendue_redige": "5820",
+      "tolerance_numerique": 0,
+      "regex_validation": "^5\\s*820$|^5820$",
+      "explication_correcte": "Brillant ! Aire lac = 100×60 = 6 000 m². Aire île = 10×10 = 100 m². Aire jetée = 20×4 = 80 m². Aire eau = 6 000 - 100 - 80 = 5 820 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule l'aire totale, puis soustrais les 2 zones non visibles (île + jetée).", "cout_points": 2},
+        {"niveau": 2, "texte": "Lac = 100×60 = 6 000. Île = 10×10 = 100. Jetée = 20×4 = 80. Eau = 6000 - 100 - 80.", "cout_points": 3}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_360s",
+        "micro_etapes": [
+          {"id": "j10-e29-d1", "enonce": "Aire du lac (100 × 60) ?", "type": "numerique", "reponse": 6000},
+          {"id": "j10-e29-d2", "enonce": "Aire de l'île (10 × 10) ?", "type": "numerique", "reponse": 100},
+          {"id": "j10-e29-d3", "enonce": "Aire de la jetée (20 × 4) ?", "type": "numerique", "reponse": 80},
+          {"id": "j10-e29-d4", "enonce": "Aire totale - île - jetée : 6 000 - 100 - 80 = ?", "type": "numerique", "reponse": 5820}
+        ]
+      },
+      "source_inspiration_libermann": "Problème de différence d'aires composées"
+    },
+    {
+      "id": "j10-e30",
+      "ordre_jour": 30,
+      "theme": "probleme_libermann",
+      "sous_theme": "synthese_aire_volume",
+      "scene_hp": "serre_chourave",
+      "narration": "Épreuve finale du jour, type Concours Libermann. Chourave possède une grande serre en forme de pavé (15 m × 8 m × 4 m). Au sol, le jardin a la forme d'un L : grand rectangle 15 m × 8 m, moins une zone carrée de 3 m de côté laissée libre pour les allées. Elle veut : 1) connaître le volume d'air dans la serre, et 2) recouvrir de terre la zone du jardin (sauf l'allée carrée), à 5 Gallions le m². Combien va-t-elle payer pour la terre ?",
+      "type": "redige_libre",
+      "competence": "Problème Libermann : aire composée (différence) + multiplication coût",
+      "difficulte_relative": 30,
+      "duree_estimee_sec": 500,
+      "points_maison": 15,
+      "enonce": "Le jardin au sol = rectangle 15 m × 8 m, MOINS une zone carrée de 3 m de côté (allée). Terre à 5 G/m². Combien paye Chourave en Gallions pour la terre ? (donne juste le nombre de Gallions ; ne calcule pas le volume d'air, juste le coût de la terre)",
+      "reponse_attendue_redige": "555",
+      "tolerance_numerique": 0,
+      "regex_validation": "^555$",
+      "explication_correcte": "Bravo, futur élève de Libermann ! Aire rectangle = 15×8 = 120 m². Allée carrée = 3×3 = 9 m². Aire à recouvrir = 120 - 9 = 111 m². Coût = 111 × 5 = 555 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : aire du grand rectangle. Étape 2 : aire de l'allée (carré). Étape 3 : soustrais. Étape 4 : multiplie par 5 G.", "cout_points": 2},
+        {"niveau": 2, "texte": "Aire rect = 15×8 = 120. Allée = 3×3 = 9. À recouvrir = 120-9 = 111. Coût = 111 × 5.", "cout_points": 4}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_480s",
+        "micro_etapes": [
+          {"id": "j10-e30-d1", "enonce": "Aire du grand rectangle (15 × 8) ?", "type": "numerique", "reponse": 120},
+          {"id": "j10-e30-d2", "enonce": "Aire de l'allée carrée (3 × 3) ?", "type": "numerique", "reponse": 9},
+          {"id": "j10-e30-d3", "enonce": "Aire à recouvrir (120 - 9) ?", "type": "numerique", "reponse": 111},
+          {"id": "j10-e30-d4", "enonce": "Coût total (111 × 5) ?", "type": "numerique", "reponse": 555}
+        ]
+      },
+      "source_inspiration_libermann": "Problème complexe : aire composée par différence + coût unitaire"
+    }
+  ]
+}

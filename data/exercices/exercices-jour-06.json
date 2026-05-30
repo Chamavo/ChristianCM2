@@ -1,0 +1,839 @@
+{
+  "jour": 6,
+  "titre": "La carte du Maraudeur — Échelles et conversions de longueurs",
+  "theme_principal": "echelles_conversions_longueurs",
+  "scene_globale": "Fred et George Weasley confient à Harry leur trésor : la Carte du Maraudeur. Pour s'en servir, il faut maîtriser les échelles de plans et savoir convertir les longueurs (km, m, dm, cm, mm). Du dortoir aux cachots, chaque pas se calcule.",
+  "mix_qcm_redige": "55/45",
+  "duree_estimee_min": 150,
+  "exercices": [
+    {
+      "id": "j06-e01",
+      "ordre_jour": 1,
+      "theme": "mesures",
+      "sous_theme": "conversion_m_cm",
+      "scene_hp": "dortoir_gryffondor",
+      "narration": "Fred sort la Carte du Maraudeur de sous son lit. 'Avant de te la prêter, Harry, il faut vérifier que tu sais convertir les longueurs !'",
+      "type": "qcm",
+      "competence": "Convertir des mètres en centimètres",
+      "difficulte_relative": 1,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Le lit de Harry au dortoir mesure 2 m de long. Combien cela fait-il en centimètres ?",
+      "choix": [
+        {"id": "a", "texte": "20 cm"},
+        {"id": "b", "texte": "200 cm"},
+        {"id": "c", "texte": "2 000 cm"},
+        {"id": "d", "texte": "20 000 cm"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! 1 m = 100 cm, donc 2 m = 2 × 100 = 200 cm.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour passer des mètres aux centimètres, on multiplie par 100.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j06-e02",
+      "ordre_jour": 2,
+      "theme": "mesures",
+      "sous_theme": "conversion_cm_m",
+      "scene_hp": "dortoir_gryffondor",
+      "narration": "George prend une règle et mesure la baguette de Harry.",
+      "type": "qcm",
+      "competence": "Convertir des centimètres en mètres",
+      "difficulte_relative": 2,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "La baguette de Harry mesure 28 cm. Combien cela fait-il en mètres ?",
+      "choix": [
+        {"id": "a", "texte": "2,8 m"},
+        {"id": "b", "texte": "0,28 m"},
+        {"id": "c", "texte": "28 m"},
+        {"id": "d", "texte": "0,028 m"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 1 cm = 0,01 m. 28 cm = 28 ÷ 100 = 0,28 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour passer des centimètres aux mètres, on divise par 100 (on déplace la virgule de 2 rangs vers la gauche).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j06-e03",
+      "ordre_jour": 3,
+      "theme": "mesures",
+      "sous_theme": "conversion_km_m",
+      "scene_hp": "parc_poudlard",
+      "narration": "Fred montre du doigt la Forêt Interdite depuis la fenêtre du dortoir.",
+      "type": "qcm",
+      "competence": "Convertir des kilomètres en mètres",
+      "difficulte_relative": 3,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Le sentier qui mène à la cabane de Hagrid fait 1 km de long. Combien cela fait-il en mètres ?",
+      "choix": [
+        {"id": "a", "texte": "100 m"},
+        {"id": "b", "texte": "10 000 m"},
+        {"id": "c", "texte": "1 000 m"},
+        {"id": "d", "texte": "10 m"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Très bien ! 1 km = 1 000 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Le préfixe 'kilo-' signifie 'mille'. Donc 1 km = 1 000 m.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j06-e04",
+      "ordre_jour": 4,
+      "theme": "mesures",
+      "sous_theme": "conversion_m_km",
+      "scene_hp": "parc_poudlard",
+      "narration": "George estime la distance entre le château et le lac noir.",
+      "type": "qcm",
+      "competence": "Convertir des mètres en kilomètres",
+      "difficulte_relative": 4,
+      "duree_estimee_sec": 35,
+      "points_maison": 3,
+      "enonce": "Le château est à 500 m du lac. Combien cela fait-il en kilomètres ?",
+      "choix": [
+        {"id": "a", "texte": "5 km"},
+        {"id": "b", "texte": "50 km"},
+        {"id": "c", "texte": "0,5 km"},
+        {"id": "d", "texte": "0,05 km"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bien joué ! 1 000 m = 1 km, donc 500 m = 0,5 km (un demi-kilomètre).",
+      "indices": [
+        {"niveau": 1, "texte": "Pour passer des mètres aux kilomètres, on divise par 1 000.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j06-e05",
+      "ordre_jour": 5,
+      "theme": "mesures",
+      "sous_theme": "conversion_mm_cm",
+      "scene_hp": "dortoir_gryffondor",
+      "narration": "Fred tend une plume à Harry. 'Mesure la pointe en millimètres !'",
+      "type": "qcm",
+      "competence": "Convertir des millimètres en centimètres",
+      "difficulte_relative": 5,
+      "duree_estimee_sec": 35,
+      "points_maison": 3,
+      "enonce": "La pointe de la plume mesure 40 mm. Combien cela fait-il en centimètres ?",
+      "choix": [
+        {"id": "a", "texte": "0,4 cm"},
+        {"id": "b", "texte": "4 cm"},
+        {"id": "c", "texte": "40 cm"},
+        {"id": "d", "texte": "400 cm"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 1 cm = 10 mm, donc 40 mm = 40 ÷ 10 = 4 cm.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour passer des millimètres aux centimètres, on divise par 10.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j06-e06",
+      "ordre_jour": 6,
+      "theme": "mesures",
+      "sous_theme": "conversion_dm",
+      "scene_hp": "salle_commune",
+      "narration": "Hermione prend un livre épais et veut le mesurer en décimètres.",
+      "type": "qcm",
+      "competence": "Convertir cm vers dm",
+      "difficulte_relative": 6,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "Le grimoire d'Hermione mesure 30 cm de haut. Combien cela fait-il en décimètres (dm) ?",
+      "choix": [
+        {"id": "a", "texte": "0,3 dm"},
+        {"id": "b", "texte": "3 dm"},
+        {"id": "c", "texte": "30 dm"},
+        {"id": "d", "texte": "300 dm"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Très bien ! 1 dm = 10 cm, donc 30 cm = 30 ÷ 10 = 3 dm.",
+      "indices": [
+        {"niveau": 1, "texte": "Le décimètre (dm) est entre le cm et le m. 1 dm = 10 cm = 0,1 m.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j06-e07",
+      "ordre_jour": 7,
+      "theme": "mesures",
+      "sous_theme": "tableau_conversion",
+      "scene_hp": "salle_commune",
+      "narration": "Hedwige se pose sur le tableau de conversion de Hermione.",
+      "type": "qcm",
+      "competence": "Lire un tableau de conversion",
+      "difficulte_relative": 7,
+      "duree_estimee_sec": 45,
+      "points_maison": 3,
+      "enonce": "Combien font 7 m en mm (millimètres) ?",
+      "choix": [
+        {"id": "a", "texte": "70 mm"},
+        {"id": "b", "texte": "700 mm"},
+        {"id": "c", "texte": "7 000 mm"},
+        {"id": "d", "texte": "70 000 mm"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Parfait ! 1 m = 1 000 mm, donc 7 m = 7 × 1 000 = 7 000 mm.",
+      "indices": [
+        {"niveau": 1, "texte": "Du m au mm, on descend de 3 rangs : ×10, ×10, ×10 = ×1 000.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j06-e08",
+      "ordre_jour": 8,
+      "theme": "mesures",
+      "sous_theme": "conversion_km_cm",
+      "scene_hp": "couloir_chateau",
+      "narration": "Fred défie Harry : 'Convertis cette distance en centimètres !'",
+      "type": "qcm",
+      "competence": "Convertir km en cm",
+      "difficulte_relative": 8,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Le long couloir du 3e étage fait 0,2 km. Combien cela fait-il en centimètres ?",
+      "choix": [
+        {"id": "a", "texte": "2 000 cm"},
+        {"id": "b", "texte": "20 000 cm"},
+        {"id": "c", "texte": "200 000 cm"},
+        {"id": "d", "texte": "200 cm"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! 0,2 km = 200 m, et 200 m = 200 × 100 = 20 000 cm.",
+      "indices": [
+        {"niveau": 1, "texte": "Passe d'abord par les mètres : 0,2 km = 200 m. Puis 1 m = 100 cm.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j06-e09",
+      "ordre_jour": 9,
+      "theme": "echelles",
+      "sous_theme": "comprendre_echelle",
+      "scene_hp": "salle_commune",
+      "narration": "George déplie enfin la Carte du Maraudeur. 'Regarde : en haut, il y a écrit échelle 1/100.'",
+      "type": "qcm",
+      "competence": "Comprendre la signification d'une échelle",
+      "difficulte_relative": 9,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Sur la Carte du Maraudeur, l'échelle est 1/100. Que signifie 1/100 ?",
+      "choix": [
+        {"id": "a", "texte": "1 cm sur la carte = 100 cm en réalité"},
+        {"id": "b", "texte": "1 cm sur la carte = 100 m en réalité"},
+        {"id": "c", "texte": "1 cm sur la carte = 100 km en réalité"},
+        {"id": "d", "texte": "100 cm sur la carte = 1 cm en réalité"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Excellent ! Une échelle 1/100 signifie que 1 unité sur la carte vaut 100 unités en vrai. Donc 1 cm sur la carte = 100 cm = 1 m en réalité.",
+      "indices": [
+        {"niveau": 1, "texte": "L'échelle 1/100 = '1 sur 100' : la carte est 100 fois plus petite que la réalité.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j06-e10",
+      "ordre_jour": 10,
+      "theme": "echelles",
+      "sous_theme": "echelle_1_100",
+      "scene_hp": "salle_commune",
+      "narration": "Harry pointe le doigt sur le dortoir de Gryffondor sur la carte.",
+      "type": "qcm",
+      "competence": "Appliquer une échelle 1/100",
+      "difficulte_relative": 10,
+      "duree_estimee_sec": 55,
+      "points_maison": 4,
+      "enonce": "Sur la carte (échelle 1/100), le dortoir mesure 5 cm de long. Quelle est sa longueur réelle ?",
+      "choix": [
+        {"id": "a", "texte": "5 cm"},
+        {"id": "b", "texte": "50 cm"},
+        {"id": "c", "texte": "500 cm = 5 m"},
+        {"id": "d", "texte": "5 000 cm = 50 m"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Parfait ! Échelle 1/100 : on multiplie par 100. 5 × 100 = 500 cm = 5 m. Le dortoir fait bien 5 m de long.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour trouver la longueur réelle, multiplie la longueur sur la carte par le nombre du bas de l'échelle (100).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j06-e11",
+      "ordre_jour": 11,
+      "theme": "echelles",
+      "sous_theme": "echelle_1_500",
+      "scene_hp": "couloir_chateau",
+      "narration": "George tourne la carte vers le grand couloir des armures.",
+      "type": "qcm",
+      "competence": "Appliquer une échelle 1/500",
+      "difficulte_relative": 11,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Sur la carte (échelle 1/500), le couloir des armures mesure 4 cm. Quelle est sa longueur réelle ?",
+      "choix": [
+        {"id": "a", "texte": "20 m"},
+        {"id": "b", "texte": "2 m"},
+        {"id": "c", "texte": "200 m"},
+        {"id": "d", "texte": "5 m"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bravo ! Échelle 1/500 : 1 cm sur la carte = 500 cm = 5 m. Donc 4 cm × 5 m = 20 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Échelle 1/500 : 1 cm sur la carte = 500 cm en vrai = 5 m. Multiplie 4 cm par 5 m.", "cout_points": 1},
+        {"niveau": 2, "texte": "Calcul direct : 4 cm × 500 = 2 000 cm = 20 m.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j06-e12",
+      "ordre_jour": 12,
+      "theme": "echelles",
+      "sous_theme": "echelle_1_1000",
+      "scene_hp": "parc_poudlard",
+      "narration": "Harry observe le parc de Poudlard sur la carte. L'échelle 1/1000 est notée à côté.",
+      "type": "qcm",
+      "competence": "Appliquer une échelle 1/1000",
+      "difficulte_relative": 12,
+      "duree_estimee_sec": 65,
+      "points_maison": 5,
+      "enonce": "Sur la carte (échelle 1/1000), le chemin du château à la cabane de Hagrid mesure 8 cm. Quelle est sa longueur réelle ?",
+      "choix": [
+        {"id": "a", "texte": "8 m"},
+        {"id": "b", "texte": "80 m"},
+        {"id": "c", "texte": "800 m"},
+        {"id": "d", "texte": "8 km"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Excellent ! Échelle 1/1000 : 1 cm = 1 000 cm = 10 m. Donc 8 cm × 10 m = 80 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Échelle 1/1000 : 1 cm sur la carte = 1 000 cm en vrai = 10 m.", "cout_points": 1},
+        {"niveau": 2, "texte": "Multiplie la longueur sur la carte (8 cm) par 10 m. Résultat en mètres.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j06-e12-d1", "enonce": "Échelle 1/1000 : à combien de cm en vrai correspond 1 cm sur la carte ?", "type": "qcm", "choix": [{"id": "a", "texte": "100 cm"}, {"id": "b", "texte": "1 000 cm"}, {"id": "c", "texte": "10 cm"}], "reponse_correcte": "b"},
+          {"id": "j06-e12-d2", "enonce": "1 000 cm = combien de m ?", "type": "numerique", "reponse": 10},
+          {"id": "j06-e12-d3", "enonce": "Donc 8 cm sur la carte = 8 × 10 m = ? m", "type": "numerique", "reponse": 80}
+        ]
+      }
+    },
+    {
+      "id": "j06-e13",
+      "ordre_jour": 13,
+      "theme": "echelles",
+      "sous_theme": "echelle_1_2500",
+      "scene_hp": "parc_poudlard",
+      "narration": "Sur la grande carte du domaine, l'échelle est 1/2500.",
+      "type": "qcm",
+      "competence": "Appliquer une échelle 1/2500",
+      "difficulte_relative": 13,
+      "duree_estimee_sec": 70,
+      "points_maison": 5,
+      "enonce": "Sur la carte (échelle 1/2500), la distance du château au village de Pré-au-Lard est de 6 cm. Quelle est la distance réelle ?",
+      "choix": [
+        {"id": "a", "texte": "15 m"},
+        {"id": "b", "texte": "150 m"},
+        {"id": "c", "texte": "1 500 m"},
+        {"id": "d", "texte": "15 km"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien joué ! Échelle 1/2500 : 1 cm = 2 500 cm = 25 m. Donc 6 cm × 25 m = 150 m.",
+      "indices": [
+        {"niveau": 1, "texte": "1 cm sur la carte vaut 2 500 cm en vrai. Convertis 2 500 cm en m.", "cout_points": 1},
+        {"niveau": 2, "texte": "2 500 cm = 25 m. Donc 6 cm × 25 m = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j06-e13-d1", "enonce": "Échelle 1/2500 : 1 cm sur la carte = combien de cm en vrai ?", "type": "numerique", "reponse": 2500},
+          {"id": "j06-e13-d2", "enonce": "2 500 cm = combien de m ?", "type": "numerique", "reponse": 25},
+          {"id": "j06-e13-d3", "enonce": "Donc 6 cm sur la carte = 6 × 25 = ? m", "type": "numerique", "reponse": 150}
+        ]
+      }
+    },
+    {
+      "id": "j06-e14",
+      "ordre_jour": 14,
+      "theme": "echelles",
+      "sous_theme": "comparaison_echelles",
+      "scene_hp": "salle_commune",
+      "narration": "Hermione s'invite : 'Quelle carte est la plus précise ?'",
+      "type": "qcm",
+      "competence": "Comparer des échelles",
+      "difficulte_relative": 14,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Quelle carte est la plus détaillée (montre les plus petits détails) ?",
+      "choix": [
+        {"id": "a", "texte": "Échelle 1/100"},
+        {"id": "b", "texte": "Échelle 1/500"},
+        {"id": "c", "texte": "Échelle 1/1000"},
+        {"id": "d", "texte": "Échelle 1/2500"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Exact ! Plus le nombre du bas est petit, plus la carte est précise. 1/100 montre les plus petits détails (1 cm sur la carte = seulement 1 m en vrai).",
+      "indices": [
+        {"niveau": 1, "texte": "Compare ce que représente 1 cm sur la carte en réalité. Plus c'est petit, plus c'est précis.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j06-e15",
+      "ordre_jour": 15,
+      "theme": "echelles",
+      "sous_theme": "echelle_vers_carte",
+      "scene_hp": "couloir_chateau",
+      "narration": "Fred pose une devinette : 'Si je connais la longueur réelle, comment je trouve la longueur sur la carte ?'",
+      "type": "qcm",
+      "competence": "Calculer la longueur sur la carte à partir du réel",
+      "difficulte_relative": 15,
+      "duree_estimee_sec": 75,
+      "points_maison": 5,
+      "enonce": "Le couloir mesure 30 m en vrai. Sur une carte à l'échelle 1/500, combien mesure-t-il ?",
+      "choix": [
+        {"id": "a", "texte": "0,6 cm"},
+        {"id": "b", "texte": "6 cm"},
+        {"id": "c", "texte": "60 cm"},
+        {"id": "d", "texte": "600 cm"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Excellent ! 30 m = 3 000 cm. Échelle 1/500 : on divise par 500. 3 000 ÷ 500 = 6 cm.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis d'abord 30 m en cm, puis divise par 500 (le nombre du bas de l'échelle).", "cout_points": 1},
+        {"niveau": 2, "texte": "30 m = 3 000 cm. Puis 3 000 ÷ 500 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j06-e15-d1", "enonce": "Combien font 30 m en cm ?", "type": "numerique", "reponse": 3000},
+          {"id": "j06-e15-d2", "enonce": "Pour passer du réel à la carte (1/500), on divise par 500. 3 000 ÷ 500 = ?", "type": "numerique", "reponse": 6}
+        ]
+      }
+    },
+    {
+      "id": "j06-e16",
+      "ordre_jour": 16,
+      "theme": "mesures",
+      "sous_theme": "conversion_complete",
+      "scene_hp": "salle_commune",
+      "narration": "George griffonne une suite de conversions sur un parchemin.",
+      "type": "numerique",
+      "competence": "Convertir des km en mm",
+      "difficulte_relative": 16,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Combien font 3 km en mm ? (Donne le nombre sans unité)",
+      "reponse_attendue_redige": "3000000",
+      "tolerance_numerique": 0,
+      "regex_validation": "^3\\s*000\\s*000$",
+      "explication_correcte": "Parfait ! 3 km = 3 000 m = 300 000 cm = 3 000 000 mm.",
+      "indices": [
+        {"niveau": 1, "texte": "Du km au mm, on descend de 6 rangs : ×1 000 000.", "cout_points": 1},
+        {"niveau": 2, "texte": "Passe étape par étape : km → m (×1 000) → cm (×100) → mm (×10). Au total ×1 000 000.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j06-e17",
+      "ordre_jour": 17,
+      "theme": "echelles",
+      "sous_theme": "lecture_carte_simple",
+      "scene_hp": "carte_maraudeur",
+      "narration": "Harry repère son couloir préféré sur la carte. L'échelle est 1/100.",
+      "type": "redige_court",
+      "competence": "Lecture de carte avec échelle 1/100",
+      "difficulte_relative": 17,
+      "duree_estimee_sec": 100,
+      "points_maison": 5,
+      "enonce": "Sur la Carte du Maraudeur (échelle 1/100), un escalier mesure 7 cm. Quelle est sa longueur réelle en mètres ? (Réponds avec un nombre suivi de 'm', ex: 12 m)",
+      "reponse_attendue_redige": "7 m",
+      "regex_validation": "^7\\s*m$",
+      "explication_correcte": "Bien ! Échelle 1/100 : 1 cm = 100 cm = 1 m. Donc 7 cm = 7 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Échelle 1/100 : 1 cm sur la carte = 1 m en réalité.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j06-e18",
+      "ordre_jour": 18,
+      "theme": "echelles",
+      "sous_theme": "lecture_carte_simple",
+      "scene_hp": "carte_maraudeur",
+      "narration": "Hedwige se pose près de la tour d'Astronomie sur la carte.",
+      "type": "numerique",
+      "competence": "Lecture de carte avec échelle 1/500",
+      "difficulte_relative": 18,
+      "duree_estimee_sec": 110,
+      "points_maison": 5,
+      "enonce": "Sur la carte (échelle 1/500), la tour d'Astronomie mesure 9 cm de haut. Quelle est sa hauteur réelle en mètres ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "45",
+      "tolerance_numerique": 0,
+      "regex_validation": "^45$",
+      "explication_correcte": "Excellent ! Échelle 1/500 : 1 cm = 500 cm = 5 m. Donc 9 × 5 = 45 m.",
+      "indices": [
+        {"niveau": 1, "texte": "1 cm sur la carte = 5 m en vrai. Multiplie 9 par 5.", "cout_points": 1}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j06-e18-d1", "enonce": "Échelle 1/500 : 1 cm sur la carte = combien de m en vrai ?", "type": "numerique", "reponse": 5},
+          {"id": "j06-e18-d2", "enonce": "Donc 9 cm sur la carte = 9 × 5 = ? m", "type": "numerique", "reponse": 45}
+        ]
+      }
+    },
+    {
+      "id": "j06-e19",
+      "ordre_jour": 19,
+      "theme": "mesures",
+      "sous_theme": "addition_longueurs",
+      "scene_hp": "couloir_chateau",
+      "narration": "Fred et George planifient un parcours d'évasion en trois étapes.",
+      "type": "redige_court",
+      "competence": "Additionner des longueurs en différentes unités",
+      "difficulte_relative": 19,
+      "duree_estimee_sec": 120,
+      "points_maison": 6,
+      "enonce": "Étape 1 : 2 m. Étape 2 : 150 cm. Étape 3 : 0,5 m. Quelle est la distance totale en mètres ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "4",
+      "tolerance_numerique": 0,
+      "regex_validation": "^4(,0+)?$",
+      "explication_correcte": "Bien joué ! 150 cm = 1,5 m. Donc 2 m + 1,5 m + 0,5 m = 4 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis d'abord toutes les distances dans la même unité (mètres).", "cout_points": 1},
+        {"niveau": 2, "texte": "150 cm = 1,5 m. Maintenant additionne : 2 + 1,5 + 0,5.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j06-e19-d1", "enonce": "Combien font 150 cm en mètres ?", "type": "numerique", "reponse": 1.5, "tolerance_numerique": 0.01},
+          {"id": "j06-e19-d2", "enonce": "Maintenant fais : 2 + 1,5 + 0,5 = ?", "type": "numerique", "reponse": 4}
+        ]
+      }
+    },
+    {
+      "id": "j06-e20",
+      "ordre_jour": 20,
+      "theme": "echelles",
+      "sous_theme": "echelle_inverse",
+      "scene_hp": "carte_maraudeur",
+      "narration": "Harry veut dessiner un mini-plan de la salle commune sur un parchemin.",
+      "type": "numerique",
+      "competence": "Du réel vers la carte (échelle 1/100)",
+      "difficulte_relative": 20,
+      "duree_estimee_sec": 120,
+      "points_maison": 6,
+      "enonce": "La salle commune mesure 12 m de long. Sur un plan à l'échelle 1/100, combien va-t-elle mesurer en cm ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "12",
+      "tolerance_numerique": 0,
+      "regex_validation": "^12$",
+      "explication_correcte": "Bravo ! 12 m = 1 200 cm. À l'échelle 1/100, on divise par 100 : 1 200 ÷ 100 = 12 cm.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis 12 m en cm, puis divise par 100.", "cout_points": 1},
+        {"niveau": 2, "texte": "12 m = 1 200 cm. 1 200 ÷ 100 = ?", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j06-e21",
+      "ordre_jour": 21,
+      "theme": "echelles",
+      "sous_theme": "echelle_inverse_1000",
+      "scene_hp": "parc_poudlard",
+      "narration": "George trace le sentier qui mène à la Forêt Interdite sur la carte du parc (échelle 1/1000).",
+      "type": "numerique",
+      "competence": "Du réel vers la carte (échelle 1/1000)",
+      "difficulte_relative": 21,
+      "duree_estimee_sec": 130,
+      "points_maison": 6,
+      "enonce": "Le sentier fait 250 m dans la réalité. Sur la carte (échelle 1/1000), combien va-t-il mesurer en cm ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "25",
+      "tolerance_numerique": 0,
+      "regex_validation": "^25$",
+      "explication_correcte": "Excellent ! 250 m = 25 000 cm. Échelle 1/1000 : 25 000 ÷ 1 000 = 25 cm.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis 250 m en cm, puis divise par 1 000.", "cout_points": 1},
+        {"niveau": 2, "texte": "250 m = 25 000 cm. 25 000 ÷ 1 000 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j06-e21-d1", "enonce": "Combien font 250 m en cm ?", "type": "numerique", "reponse": 25000},
+          {"id": "j06-e21-d2", "enonce": "Maintenant divise par 1 000 (échelle 1/1000) : 25 000 ÷ 1 000 = ?", "type": "numerique", "reponse": 25}
+        ]
+      }
+    },
+    {
+      "id": "j06-e22",
+      "ordre_jour": 22,
+      "theme": "echelles",
+      "sous_theme": "echelle_2500_complete",
+      "scene_hp": "carte_maraudeur",
+      "narration": "Hermione vérifie une distance sur la grande carte de Poudlard (échelle 1/2500).",
+      "type": "numerique",
+      "competence": "Du réel vers la carte (échelle 1/2500)",
+      "difficulte_relative": 22,
+      "duree_estimee_sec": 140,
+      "points_maison": 6,
+      "enonce": "La distance réelle entre le château et la cabane de Hagrid est de 500 m. Sur la carte (échelle 1/2500), combien va-t-elle mesurer en cm ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "20",
+      "tolerance_numerique": 0,
+      "regex_validation": "^20$",
+      "explication_correcte": "Bien joué ! 500 m = 50 000 cm. Échelle 1/2500 : 50 000 ÷ 2 500 = 20 cm.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis 500 m en cm, puis divise par 2 500.", "cout_points": 1},
+        {"niveau": 2, "texte": "500 m = 50 000 cm. 50 000 ÷ 2 500 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j06-e22-d1", "enonce": "Combien font 500 m en cm ?", "type": "numerique", "reponse": 50000},
+          {"id": "j06-e22-d2", "enonce": "Divise par 2 500 : 50 000 ÷ 2 500 = ?", "type": "numerique", "reponse": 20}
+        ]
+      }
+    },
+    {
+      "id": "j06-e23",
+      "ordre_jour": 23,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_echelle",
+      "scene_hp": "carte_maraudeur",
+      "narration": "Harry veut savoir combien de temps il mettra à parcourir un couloir s'il marche à 1 m/s.",
+      "type": "redige_court",
+      "competence": "Problème 2 étapes : échelle + conversion",
+      "difficulte_relative": 23,
+      "duree_estimee_sec": 180,
+      "points_maison": 7,
+      "enonce": "Sur la carte (échelle 1/500), un couloir mesure 14 cm. Quelle est sa longueur réelle en mètres ? (Donne juste le nombre)",
+      "reponse_attendue_redige": "70",
+      "tolerance_numerique": 0,
+      "regex_validation": "^70$",
+      "explication_correcte": "Bravo ! Échelle 1/500 : 1 cm = 5 m. Donc 14 × 5 = 70 m.",
+      "indices": [
+        {"niveau": 1, "texte": "1 cm sur la carte (1/500) = 5 m en réalité.", "cout_points": 1},
+        {"niveau": 2, "texte": "14 cm × 5 m = ? m", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j06-e23-d1", "enonce": "Échelle 1/500 : 1 cm = combien de cm en vrai ?", "type": "numerique", "reponse": 500},
+          {"id": "j06-e23-d2", "enonce": "500 cm = combien de m ?", "type": "numerique", "reponse": 5},
+          {"id": "j06-e23-d3", "enonce": "Donc 14 cm sur la carte = 14 × 5 = ? m", "type": "numerique", "reponse": 70}
+        ]
+      }
+    },
+    {
+      "id": "j06-e24",
+      "ordre_jour": 24,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_chemin",
+      "scene_hp": "carte_maraudeur",
+      "narration": "Fred trace deux trajets sur la carte (échelle 1/1000) : du dortoir aux cuisines (12 cm), puis des cuisines aux cachots (8 cm).",
+      "type": "redige_court",
+      "competence": "Problème 2 étapes : somme + conversion d'échelle",
+      "difficulte_relative": 24,
+      "duree_estimee_sec": 200,
+      "points_maison": 7,
+      "enonce": "Quelle distance totale (en mètres) Harry doit-il parcourir pour faire le trajet complet (dortoir → cuisines → cachots) ?",
+      "reponse_attendue_redige": "200",
+      "tolerance_numerique": 0,
+      "regex_validation": "^200$",
+      "explication_correcte": "Excellent ! Total sur la carte : 12 + 8 = 20 cm. Échelle 1/1000 : 1 cm = 10 m. Donc 20 × 10 = 200 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : additionne les deux longueurs sur la carte. Étape 2 : applique l'échelle.", "cout_points": 1},
+        {"niveau": 2, "texte": "12 + 8 = 20 cm. Échelle 1/1000 : multiplie par 10 (en mètres).", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j06-e24-d1", "enonce": "Distance totale sur la carte : 12 + 8 = ? cm", "type": "numerique", "reponse": 20},
+          {"id": "j06-e24-d2", "enonce": "Échelle 1/1000 : 1 cm = combien de m ?", "type": "numerique", "reponse": 10},
+          {"id": "j06-e24-d3", "enonce": "Donc 20 cm × 10 m = ? m", "type": "numerique", "reponse": 200}
+        ]
+      }
+    },
+    {
+      "id": "j06-e25",
+      "ordre_jour": 25,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_difference",
+      "scene_hp": "carte_maraudeur",
+      "narration": "Hermione compare deux chemins sur la carte (échelle 1/500) : le passage secret (6 cm) et le couloir normal (15 cm).",
+      "type": "redige_court",
+      "competence": "Problème 2 étapes : différence + conversion d'échelle",
+      "difficulte_relative": 25,
+      "duree_estimee_sec": 210,
+      "points_maison": 7,
+      "enonce": "Combien de mètres Harry économise-t-il en prenant le passage secret au lieu du couloir normal ?",
+      "reponse_attendue_redige": "45",
+      "tolerance_numerique": 0,
+      "regex_validation": "^45$",
+      "explication_correcte": "Bien joué ! Différence sur la carte : 15 - 6 = 9 cm. Échelle 1/500 : 1 cm = 5 m. Donc 9 × 5 = 45 m économisés.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : différence sur la carte (15 - 6). Étape 2 : convertis avec l'échelle.", "cout_points": 1},
+        {"niveau": 2, "texte": "15 - 6 = 9 cm. Échelle 1/500 : 1 cm = 5 m. Donc 9 × 5 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j06-e25-d1", "enonce": "Différence sur la carte : 15 - 6 = ? cm", "type": "numerique", "reponse": 9},
+          {"id": "j06-e25-d2", "enonce": "Échelle 1/500 : 1 cm = combien de m ?", "type": "numerique", "reponse": 5},
+          {"id": "j06-e25-d3", "enonce": "Donc 9 cm × 5 m = ? m", "type": "numerique", "reponse": 45}
+        ]
+      }
+    },
+    {
+      "id": "j06-e26",
+      "ordre_jour": 26,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_perimetre",
+      "scene_hp": "carte_maraudeur",
+      "narration": "George veut savoir le périmètre du terrain de Quidditch dessiné sur la carte (échelle 1/1000). Le terrain rectangulaire mesure 18 cm de long et 11 cm de large.",
+      "type": "redige_court",
+      "competence": "Problème 2 étapes : périmètre + conversion d'échelle",
+      "difficulte_relative": 26,
+      "duree_estimee_sec": 220,
+      "points_maison": 7,
+      "enonce": "Quel est le périmètre réel du terrain de Quidditch en mètres ?",
+      "reponse_attendue_redige": "580",
+      "tolerance_numerique": 0,
+      "regex_validation": "^580$",
+      "explication_correcte": "Excellent ! Périmètre sur la carte : 2 × (18 + 11) = 2 × 29 = 58 cm. Échelle 1/1000 : 1 cm = 10 m. Donc 58 × 10 = 580 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : calcule le périmètre sur la carte avec la formule 2 × (Long + larg). Étape 2 : applique l'échelle.", "cout_points": 1},
+        {"niveau": 2, "texte": "Périmètre carte = 2 × (18 + 11) = 58 cm. Échelle 1/1000 : multiplie par 10 (en m).", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j06-e26-d1", "enonce": "Combien font 18 + 11 ?", "type": "numerique", "reponse": 29},
+          {"id": "j06-e26-d2", "enonce": "Périmètre = 2 × 29 = ? cm", "type": "numerique", "reponse": 58},
+          {"id": "j06-e26-d3", "enonce": "Échelle 1/1000 : 58 cm × 10 m = ? m", "type": "numerique", "reponse": 580}
+        ]
+      }
+    },
+    {
+      "id": "j06-e27",
+      "ordre_jour": 27,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_temps",
+      "scene_hp": "carte_maraudeur",
+      "narration": "Harry doit traverser le couloir des armures en marchant 1 m par seconde, sans se faire prendre par Rusard.",
+      "type": "redige_court",
+      "competence": "Problème 2 étapes : échelle + durée",
+      "difficulte_relative": 27,
+      "duree_estimee_sec": 230,
+      "points_maison": 8,
+      "enonce": "Sur la carte (échelle 1/500), le couloir mesure 24 cm. Harry marche à 1 m par seconde. Combien de secondes lui faudra-t-il pour le traverser ?",
+      "reponse_attendue_redige": "120",
+      "tolerance_numerique": 0,
+      "regex_validation": "^120$",
+      "explication_correcte": "Bravo ! Étape 1 : 24 cm × 5 m = 120 m en réalité. Étape 2 : à 1 m/s, il faut 120 s.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : trouve la longueur réelle. Étape 2 : à 1 m par seconde, la durée en secondes = la longueur en mètres.", "cout_points": 1},
+        {"niveau": 2, "texte": "Longueur réelle : 24 × 5 = 120 m. Durée : 120 m ÷ 1 m/s = 120 s.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j06-e27-d1", "enonce": "Échelle 1/500 : 1 cm sur la carte = ? m", "type": "numerique", "reponse": 5},
+          {"id": "j06-e27-d2", "enonce": "Longueur réelle : 24 × 5 = ? m", "type": "numerique", "reponse": 120},
+          {"id": "j06-e27-d3", "enonce": "À 1 m/s, combien de secondes pour 120 m ?", "type": "numerique", "reponse": 120}
+        ]
+      }
+    },
+    {
+      "id": "j06-e28",
+      "ordre_jour": 28,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_changement_echelle",
+      "scene_hp": "carte_maraudeur",
+      "narration": "Fred a deux cartes du même château : une à l'échelle 1/100, l'autre à 1/500. Sur la grande carte (1/100), un escalier mesure 30 cm.",
+      "type": "redige_court",
+      "competence": "Problème 2 étapes : changement d'échelle",
+      "difficulte_relative": 28,
+      "duree_estimee_sec": 240,
+      "points_maison": 8,
+      "enonce": "Combien va-t-il mesurer sur la petite carte (échelle 1/500), en cm ?",
+      "reponse_attendue_redige": "6",
+      "tolerance_numerique": 0,
+      "regex_validation": "^6$",
+      "explication_correcte": "Excellent ! Étape 1 : sur 1/100, 30 cm = 30 × 100 = 3 000 cm = 30 m en vrai. Étape 2 : sur 1/500, 30 m = 3 000 cm ÷ 500 = 6 cm.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : trouve la longueur réelle (avec l'échelle 1/100). Étape 2 : applique l'échelle 1/500 pour la nouvelle carte.", "cout_points": 1},
+        {"niveau": 2, "texte": "Réel = 30 cm × 100 = 3 000 cm = 30 m. Sur 1/500 : 30 m ÷ 5 m par cm = 6 cm.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j06-e28-d1", "enonce": "Sur la carte 1/100, 30 cm représente combien de m en vrai ?", "type": "numerique", "reponse": 30},
+          {"id": "j06-e28-d2", "enonce": "Échelle 1/500 : 1 cm sur la carte = ? m", "type": "numerique", "reponse": 5},
+          {"id": "j06-e28-d3", "enonce": "Donc 30 m en réalité = ? cm sur la carte 1/500", "type": "numerique", "reponse": 6}
+        ]
+      }
+    },
+    {
+      "id": "j06-e29",
+      "ordre_jour": 29,
+      "theme": "probleme_libermann",
+      "sous_theme": "mini_probleme_synthese",
+      "scene_hp": "carte_maraudeur",
+      "narration": "Hermione invente un problème digne du concours Libermann : 'Harry, prends ta plume !'",
+      "type": "redige_libre",
+      "competence": "Mini-problème Libermann : carte + conversions multiples",
+      "difficulte_relative": 29,
+      "duree_estimee_sec": 300,
+      "points_maison": 10,
+      "enonce": "Sur la Carte du Maraudeur (échelle 1/1000), le trajet du dortoir de Gryffondor à la Grande Salle mesure 15 cm. Harry décide ensuite de revenir au dortoir par un détour de 35 m supplémentaires.\na) Quelle est la longueur réelle du trajet aller (en mètres) ?\nb) Quelle distance totale Harry parcourt-il (aller + retour avec détour), en mètres ?\nc) Convertis cette distance totale en kilomètres.",
+      "reponse_attendue_redige": "a) 150 m ; b) 335 m ; c) 0,335 km",
+      "validation_par_claude": true,
+      "explication_correcte": "Bravo Harry ! a) 15 cm × 10 m = 150 m (aller). b) 150 m (aller) + 150 m (retour) + 35 m (détour) = 335 m. c) 335 m = 0,335 km.",
+      "indices": [
+        {"niveau": 1, "texte": "a) Échelle 1/1000 : 1 cm = 10 m. b) N'oublie pas l'aller ET le retour, plus le détour. c) Divise par 1 000 pour passer en km.", "cout_points": 2},
+        {"niveau": 2, "texte": "a) 15 × 10 = 150 m. b) 150 + 150 + 35 = ? c) Divise par 1 000.", "cout_points": 3}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j06-e29-d1", "enonce": "Échelle 1/1000 : 1 cm = ? m", "type": "numerique", "reponse": 10},
+          {"id": "j06-e29-d2", "enonce": "Longueur du trajet aller : 15 × 10 = ? m", "type": "numerique", "reponse": 150},
+          {"id": "j06-e29-d3", "enonce": "Aller + retour : 150 + 150 = ? m", "type": "numerique", "reponse": 300},
+          {"id": "j06-e29-d4", "enonce": "Ajoute le détour : 300 + 35 = ? m", "type": "numerique", "reponse": 335},
+          {"id": "j06-e29-d5", "enonce": "Convertis 335 m en km. (Donne le nombre, ex: 0,335)", "type": "numerique", "reponse": 0.335, "tolerance_numerique": 0.001}
+        ]
+      },
+      "tags": ["echelle", "conversion", "probleme_multi_etapes", "libermann"],
+      "source_inspiration_libermann": "Épreuve type - problème géométrique multi-étapes"
+    },
+    {
+      "id": "j06-e30",
+      "ordre_jour": 30,
+      "theme": "probleme_libermann",
+      "sous_theme": "mini_probleme_synthese_avance",
+      "scene_hp": "carte_maraudeur",
+      "narration": "George pose le défi final, digne d'un examinateur du concours Libermann : 'Réussis celui-là, et la Carte du Maraudeur est à toi !'",
+      "type": "redige_libre",
+      "competence": "Mini-problème Libermann : périmètre + échelle + conversion km",
+      "difficulte_relative": 30,
+      "duree_estimee_sec": 330,
+      "points_maison": 12,
+      "enonce": "Sur une carte à l'échelle 1/2500, le parc rectangulaire de Poudlard mesure 32 cm de long et 18 cm de large. Harry fait le tour du parc en courant à 4 m par seconde.\na) Quelles sont les dimensions réelles du parc (en mètres) ?\nb) Quel est le périmètre réel du parc (en mètres et en kilomètres) ?\nc) Combien de temps (en secondes, puis en minutes) Harry met-il à faire le tour complet ?",
+      "reponse_attendue_redige": "a) 800 m × 450 m ; b) 2 500 m = 2,5 km ; c) 625 s = 10 min 25 s",
+      "validation_par_claude": true,
+      "explication_correcte": "Bravo Harry ! a) 1 cm = 25 m (échelle 1/2500), donc 32 × 25 = 800 m de long et 18 × 25 = 450 m de large. b) Périmètre = 2 × (800 + 450) = 2 × 1 250 = 2 500 m = 2,5 km. c) 2 500 ÷ 4 = 625 s = 10 min 25 s.",
+      "indices": [
+        {"niveau": 1, "texte": "a) Échelle 1/2500 : 1 cm sur la carte = 25 m en réalité. b) Périmètre = 2 × (L + l). c) Durée = distance ÷ vitesse.", "cout_points": 2},
+        {"niveau": 2, "texte": "a) Long = 32 × 25 m ; larg = 18 × 25 m. b) P = 2 × (long + larg). c) t = P ÷ 4.", "cout_points": 3}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_330s",
+        "micro_etapes": [
+          {"id": "j06-e30-d1", "enonce": "Échelle 1/2500 : 1 cm sur la carte = ? m en vrai", "type": "numerique", "reponse": 25},
+          {"id": "j06-e30-d2", "enonce": "Longueur réelle : 32 × 25 = ? m", "type": "numerique", "reponse": 800},
+          {"id": "j06-e30-d3", "enonce": "Largeur réelle : 18 × 25 = ? m", "type": "numerique", "reponse": 450},
+          {"id": "j06-e30-d4", "enonce": "Périmètre : 2 × (800 + 450) = ? m", "type": "numerique", "reponse": 2500},
+          {"id": "j06-e30-d5", "enonce": "Convertis 2 500 m en km. (Donne le nombre, ex: 2,5)", "type": "numerique", "reponse": 2.5, "tolerance_numerique": 0.01},
+          {"id": "j06-e30-d6", "enonce": "Durée en secondes : 2 500 ÷ 4 = ? s", "type": "numerique", "reponse": 625},
+          {"id": "j06-e30-d7", "enonce": "Convertis 625 s en minutes et secondes. Combien de minutes complètes ?", "type": "numerique", "reponse": 10}
+        ]
+      },
+      "tags": ["echelle", "perimetre", "conversion", "vitesse", "probleme_multi_etapes", "libermann"],
+      "source_inspiration_libermann": "Épreuve type - problème géométrique et mesures avec conversion d'unités"
+    }
+  ]
+}

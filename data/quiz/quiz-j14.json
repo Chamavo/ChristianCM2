@@ -1,0 +1,99 @@
+{
+  "id": "quiz-j14",
+  "jour": 14,
+  "titre": "Quiz Libermann J14 — Le Miroir du Rised (Epreuve Blanche)",
+  "duree_min": 45,
+  "note_max": 20,
+  "themes_couverts": [
+    "operations posees",
+    "grands nombres",
+    "geometrie (aires et volumes)",
+    "vitesses et durees",
+    "conversions",
+    "partages proportionnels",
+    "interets simples"
+  ],
+  "scene_hp": "miroir_rised",
+  "narration": "Devant toi se dresse le Miroir du Rised. Pour qu'il te montre ton avenir de sorcier mathematicien, il faut reussir l'epreuve blanche complete : 4 problemes, tous les themes. Albus Dumbledore te chuchote : 'Ne te perds pas dans tes reves. Calcule juste.' Tu as 45 minutes.",
+  "exercices": [
+    {
+      "id": "q-j14-1",
+      "titre_exercice": "EXERCICE 1 (5 points) - Operations + masses",
+      "enonce": "Un wagon du Poudlard Express transporte 248 valises pesant 12,5 kg chacune, et 36 cages d'animaux pesant 8,75 kg chacune. a) Quelle est la masse totale des 248 valises ? b) Quelle est la masse totale des 36 cages ? c) Quelle est la masse totale du chargement ? d) Le wagon ne supporte pas plus de 4 tonnes. Quelle est la marge de securite (en kg) ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Masse des valises ?", "reponse": "3 100 kg", "points": 1},
+        {"id": "b", "enonce": "Masse des cages ?", "reponse": "315 kg", "points": 1},
+        {"id": "c", "enonce": "Masse totale ?", "reponse": "3 415 kg", "points": 1},
+        {"id": "d", "enonce": "Marge de securite ?", "reponse": "585 kg", "points": 2}
+      ],
+      "points_total": 5,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 248 x 12,5 = 3 100 kg",
+        "b) 36 x 8,75 = 315 kg",
+        "c) 3 100 + 315 = 3 415 kg",
+        "d) 4 tonnes = 4 000 kg ; 4 000 - 3 415 = 585 kg"
+      ]
+    },
+    {
+      "id": "q-j14-2",
+      "titre_exercice": "EXERCICE 2 (5 points) - Geometrie : aires et volume",
+      "enonce": "La salle commune de Gryffondor a la forme d'un parallelepipede rectangle. Elle mesure 12 m de long, 8 m de large et 3 m de hauteur. a) Calcule l'aire du sol (en m2). b) Calcule le perimetre du sol (en m). c) Calcule le volume de la salle (en m3). d) On veut tapisser les 4 murs de la salle. L'aire totale des murs a tapisser est de 120 m2. A 5,50 gallions le m2, combien coute la tapisserie ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Aire du sol ?", "reponse": "96 m2", "points": 1},
+        {"id": "b", "enonce": "Perimetre du sol ?", "reponse": "40 m", "points": 1},
+        {"id": "c", "enonce": "Volume de la salle ?", "reponse": "288 m3", "points": 1},
+        {"id": "d", "enonce": "Cout de la tapisserie ?", "reponse": "660 gallions", "points": 2}
+      ],
+      "points_total": 5,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) A = 12 x 8 = 96 m2",
+        "b) P = 2 x (12 + 8) = 40 m",
+        "c) V = 12 x 8 x 3 = 288 m3",
+        "d) 120 x 5,50 = 660 gallions"
+      ]
+    },
+    {
+      "id": "q-j14-3",
+      "titre_exercice": "EXERCICE 3 (5 points) - Vitesses + durees",
+      "enonce": "Le Poudlard Express doit parcourir 540 km a la vitesse moyenne de 90 km/h pour relier Londres a Pre-au-Lard. a) Quelle est la duree du trajet (en heures) ? b) Le train part de Londres a 11 h. A quelle heure arrive-t-il a Pre-au-Lard ? c) Quelle est la vitesse du train en metres par seconde ? d) Quelle distance le train parcourt-il en 30 minutes ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Duree du trajet ?", "reponse": "6 h", "points": 1},
+        {"id": "b", "enonce": "Heure d'arrivee ?", "reponse": "17 h", "points": 1},
+        {"id": "c", "enonce": "Vitesse en m/s ?", "reponse": "25 m/s", "points": 2},
+        {"id": "d", "enonce": "Distance en 30 min ?", "reponse": "45 km", "points": 1}
+      ],
+      "points_total": 5,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) t = d/v = 540 / 90 = 6 h",
+        "b) 11 h + 6 h = 17 h",
+        "c) 90 km/h = 90 000 m / 3 600 s = 25 m/s",
+        "d) 90 x 0,5 = 45 km"
+      ]
+    },
+    {
+      "id": "q-j14-4",
+      "titre_exercice": "EXERCICE 4 (5 points) - Partage + interets",
+      "enonce": "Apres la victoire de Gryffondor, le directeur remet une prime de 5 000 gallions a partager entre Harry, Ron et Hermione, proportionnellement aux points marques pendant l'annee : Harry 250 points, Ron 150 points, Hermione 100 points. a) Quelle est la valeur d'un point (en gallions) ? b) Combien recoit Harry ? c) Hermione decide de placer la totalite de sa prime a la banque Gringotts a un taux d'interet simple de 6% par an. Quel est le montant des interets au bout de 2 ans ? d) Quel est le capital total d'Hermione apres 2 ans ?",
+      "sous_questions": [
+        {"id": "a", "enonce": "Valeur d'un point ?", "reponse": "10 gallions", "points": 1},
+        {"id": "b", "enonce": "Part de Harry ?", "reponse": "2 500 gallions", "points": 1},
+        {"id": "c", "enonce": "Interets d'Hermione sur 2 ans a 6% ?", "reponse": "120 gallions", "points": 2},
+        {"id": "d", "enonce": "Capital final d'Hermione ?", "reponse": "1 120 gallions", "points": 1}
+      ],
+      "points_total": 5,
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "Somme des parts : 250 + 150 + 100 = 500 points",
+        "a) 5 000 / 500 = 10 gallions par point",
+        "b) Harry : 250 x 10 = 2 500 gallions",
+        "Hermione recoit : 100 x 10 = 1 000 gallions",
+        "c) Interets annuels : 1 000 x 6 / 100 = 60 ; sur 2 ans : 120 gallions",
+        "d) 1 000 + 120 = 1 120 gallions"
+      ]
+    }
+  ],
+  "ponderation_finale": {"q-j14-1": 5, "q-j14-2": 5, "q-j14-3": 5, "q-j14-4": 5}
+}

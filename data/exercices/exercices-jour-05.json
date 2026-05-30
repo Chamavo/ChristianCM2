@@ -1,0 +1,800 @@
+{
+  "jour": 5,
+  "titre": "Métamorphose avec McGonagall — Pourcentages & nombres décimaux",
+  "theme_principal": "pourcentages_decimaux",
+  "scene_globale": "Cours de métamorphose. Le professeur McGonagall, droite comme un I, transforme une boîte d'allumettes en aiguille. Aujourd'hui, on apprend à mesurer les réussites en pourcentages, à comparer des longueurs en décimales, et à calculer des remises sur les fournitures de Madame Guipure.",
+  "mix_qcm_redige": "55/45",
+  "duree_estimee_min": 165,
+  "exercices": [
+    {
+      "id": "j05-e01",
+      "ordre_jour": 1,
+      "theme": "decimaux",
+      "sous_theme": "lecture_decimaux",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall mesure l'aiguille obtenue par Hermione : 2,5 cm.",
+      "type": "qcm",
+      "competence": "Lire un nombre décimal simple",
+      "difficulte_relative": 1,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Comment se lit le nombre 2,5 ?",
+      "choix": [
+        {"id": "a", "texte": "Vingt-cinq"},
+        {"id": "b", "texte": "Deux virgule cinq"},
+        {"id": "c", "texte": "Deux et cinquante"},
+        {"id": "d", "texte": "Deux et cinq cents"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 2,5 se lit 'deux virgule cinq'. Le 5 est à la place des dixièmes.",
+      "indices": [
+        {"niveau": 1, "texte": "La virgule sépare la partie entière (2) de la partie décimale (5).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j05-e02",
+      "ordre_jour": 2,
+      "theme": "decimaux",
+      "sous_theme": "fraction_vers_decimal",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall écrit au tableau : '1/2 = ?'",
+      "type": "qcm",
+      "competence": "Convertir une fraction simple en décimal",
+      "difficulte_relative": 2,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "À quel nombre décimal correspond la fraction 1/2 ?",
+      "choix": [
+        {"id": "a", "texte": "0,2"},
+        {"id": "b", "texte": "0,5"},
+        {"id": "c", "texte": "1,2"},
+        {"id": "d", "texte": "2,0"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! 1/2 = la moitié = 0,5.",
+      "indices": [
+        {"niveau": 1, "texte": "1/2, c'est la moitié de 1.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j05-e03",
+      "ordre_jour": 3,
+      "theme": "decimaux",
+      "sous_theme": "fraction_vers_decimal",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall demande à Neville : '1/4 = ?'",
+      "type": "qcm",
+      "competence": "Convertir 1/4 en décimal",
+      "difficulte_relative": 3,
+      "duree_estimee_sec": 35,
+      "points_maison": 2,
+      "enonce": "À quel nombre décimal correspond la fraction 1/4 ?",
+      "choix": [
+        {"id": "a", "texte": "0,14"},
+        {"id": "b", "texte": "0,4"},
+        {"id": "c", "texte": "0,25"},
+        {"id": "d", "texte": "0,5"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Parfait ! 1/4 = 0,25. (1 ÷ 4 = 0,25). C'est aussi la moitié de la moitié.",
+      "indices": [
+        {"niveau": 1, "texte": "1/4 = la moitié de 1/2. Et 1/2 = 0,5. Donc ?", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j05-e04",
+      "ordre_jour": 4,
+      "theme": "pourcentages",
+      "sous_theme": "intro_pourcentage",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall annonce : 'Hermione a réussi 100 % de sa métamorphose !'",
+      "type": "qcm",
+      "competence": "Comprendre 100 %",
+      "difficulte_relative": 4,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Que veut dire 100 % d'un nombre ?",
+      "choix": [
+        {"id": "a", "texte": "La moitié"},
+        {"id": "b", "texte": "Le tout"},
+        {"id": "c", "texte": "Le double"},
+        {"id": "d", "texte": "Rien"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! 100 % = 100/100 = le tout. Hermione a tout réussi.",
+      "indices": [
+        {"niveau": 1, "texte": "100 % signifie '100 sur 100', c'est-à-dire l'entièreté.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j05-e05",
+      "ordre_jour": 5,
+      "theme": "pourcentages",
+      "sous_theme": "intro_pourcentage",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall : 'Et 50 % alors ?'",
+      "type": "qcm",
+      "competence": "Comprendre 50 %",
+      "difficulte_relative": 5,
+      "duree_estimee_sec": 30,
+      "points_maison": 3,
+      "enonce": "50 % d'un nombre, c'est combien ?",
+      "choix": [
+        {"id": "a", "texte": "Le quart"},
+        {"id": "b", "texte": "La moitié"},
+        {"id": "c", "texte": "Les trois quarts"},
+        {"id": "d", "texte": "Le tout"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! 50 % = 50/100 = 1/2 = la moitié.",
+      "indices": [
+        {"niveau": 1, "texte": "50/100, simplifie : ça fait 1/2.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j05-e06",
+      "ordre_jour": 6,
+      "theme": "decimaux",
+      "sous_theme": "comparaison_decimaux",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall compare deux aiguilles : 3,4 cm et 3,7 cm.",
+      "type": "qcm",
+      "competence": "Comparer deux décimaux à 1 chiffre après la virgule",
+      "difficulte_relative": 6,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "Quel nombre est le plus grand : 3,4 ou 3,7 ?",
+      "choix": [
+        {"id": "a", "texte": "3,4"},
+        {"id": "b", "texte": "3,7"},
+        {"id": "c", "texte": "Ils sont égaux"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! Partie entière égale (3 = 3), on compare les dixièmes : 7 > 4. Donc 3,7 > 3,4.",
+      "indices": [
+        {"niveau": 1, "texte": "Compare d'abord la partie entière, puis les dixièmes.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j05-e07",
+      "ordre_jour": 7,
+      "theme": "pourcentages",
+      "sous_theme": "calcul_pourcentage_simple",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall : '50 % de 20, c'est combien ?'",
+      "type": "qcm",
+      "competence": "Calculer 50 % d'un nombre",
+      "difficulte_relative": 7,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "Combien font 50 % de 20 ?",
+      "choix": [
+        {"id": "a", "texte": "5"},
+        {"id": "b", "texte": "10"},
+        {"id": "c", "texte": "15"},
+        {"id": "d", "texte": "20"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Excellent ! 50 % de 20 = la moitié de 20 = 10.",
+      "indices": [
+        {"niveau": 1, "texte": "50 % = la moitié. La moitié de 20 ?", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j05-e08",
+      "ordre_jour": 8,
+      "theme": "pourcentages",
+      "sous_theme": "calcul_pourcentage_simple",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall : 'Et 25 % de 40 ?'",
+      "type": "qcm",
+      "competence": "Calculer 25 % d'un nombre",
+      "difficulte_relative": 8,
+      "duree_estimee_sec": 45,
+      "points_maison": 3,
+      "enonce": "Combien font 25 % de 40 ?",
+      "choix": [
+        {"id": "a", "texte": "4"},
+        {"id": "b", "texte": "8"},
+        {"id": "c", "texte": "10"},
+        {"id": "d", "texte": "20"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Parfait ! 25 % = 1/4. Donc 1/4 de 40 = 10.",
+      "indices": [
+        {"niveau": 1, "texte": "25 % = 25/100 = 1/4. Calcule 1/4 de 40.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j05-e09",
+      "ordre_jour": 9,
+      "theme": "decimaux",
+      "sous_theme": "addition_decimaux",
+      "scene_hp": "salle_metamorphose",
+      "narration": "Harry mesure deux aiguilles : 2,3 cm + 1,5 cm.",
+      "type": "qcm",
+      "competence": "Additionner deux décimaux simples",
+      "difficulte_relative": 9,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Combien font 2,3 + 1,5 ?",
+      "choix": [
+        {"id": "a", "texte": "3,8"},
+        {"id": "b", "texte": "4,8"},
+        {"id": "c", "texte": "3,5"},
+        {"id": "d", "texte": "2,8"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bravo ! Aligne les virgules : 2,3 + 1,5 = 3,8.",
+      "indices": [
+        {"niveau": 1, "texte": "Pose l'opération en alignant les virgules l'une sous l'autre.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j05-e10",
+      "ordre_jour": 10,
+      "theme": "decimaux",
+      "sous_theme": "soustraction_decimaux",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall demande la différence entre 5,8 cm et 2,3 cm.",
+      "type": "qcm",
+      "competence": "Soustraire deux décimaux simples",
+      "difficulte_relative": 10,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Combien font 5,8 - 2,3 ?",
+      "choix": [
+        {"id": "a", "texte": "2,5"},
+        {"id": "b", "texte": "3,1"},
+        {"id": "c", "texte": "3,5"},
+        {"id": "d", "texte": "4,5"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Excellent ! 5,8 - 2,3 = 3,5. Aligne les virgules pour poser l'opération.",
+      "indices": [
+        {"niveau": 1, "texte": "Pose la soustraction en alignant les virgules.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j05-e11",
+      "ordre_jour": 11,
+      "theme": "pourcentages",
+      "sous_theme": "calcul_pourcentage_10",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall écrit : '10 % de 50 ?'",
+      "type": "qcm",
+      "competence": "Calculer 10 % d'un nombre",
+      "difficulte_relative": 11,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Combien font 10 % de 50 ?",
+      "choix": [
+        {"id": "a", "texte": "5"},
+        {"id": "b", "texte": "10"},
+        {"id": "c", "texte": "15"},
+        {"id": "d", "texte": "50"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bien ! 10 % = 10/100 = 1/10. Donc 50 ÷ 10 = 5.",
+      "indices": [
+        {"niveau": 1, "texte": "10 % = 1/10 = diviser par 10.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j05-e12",
+      "ordre_jour": 12,
+      "theme": "decimaux",
+      "sous_theme": "comparaison_decimaux",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall écrit deux nombres au tableau : 4,25 et 4,3.",
+      "type": "qcm",
+      "competence": "Comparer deux décimaux à nombres de chiffres différents",
+      "difficulte_relative": 12,
+      "duree_estimee_sec": 70,
+      "points_maison": 5,
+      "enonce": "Quel nombre est le plus grand : 4,25 ou 4,3 ?",
+      "choix": [
+        {"id": "a", "texte": "4,25"},
+        {"id": "b", "texte": "4,3"},
+        {"id": "c", "texte": "Ils sont égaux"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! Astuce : 4,3 = 4,30. On compare 4,30 et 4,25. Comme 30 > 25, on a 4,3 > 4,25.",
+      "indices": [
+        {"niveau": 1, "texte": "Ajoute un 0 à droite : 4,3 = 4,30. Compare avec 4,25.", "cout_points": 1},
+        {"niveau": 2, "texte": "4,30 a 30 centièmes ; 4,25 a 25 centièmes. 30 > 25.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j05-e12-d1", "enonce": "Que devient 4,3 si on ajoute un zéro à droite ?", "type": "qcm", "choix": [{"id": "a", "texte": "4,30"}, {"id": "b", "texte": "4,03"}, {"id": "c", "texte": "43,0"}], "reponse_correcte": "a"},
+          {"id": "j05-e12-d2", "enonce": "Maintenant compare 4,30 et 4,25. Lequel est plus grand ?", "type": "qcm", "choix": [{"id": "a", "texte": "4,30"}, {"id": "b", "texte": "4,25"}], "reponse_correcte": "a"}
+        ]
+      }
+    },
+    {
+      "id": "j05-e13",
+      "ordre_jour": 13,
+      "theme": "pourcentages",
+      "sous_theme": "calcul_pourcentage_simple",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall : 'Calcule 25 % de 80.'",
+      "type": "redige_court",
+      "competence": "Calculer 25 % d'un nombre (numérique)",
+      "difficulte_relative": 13,
+      "duree_estimee_sec": 80,
+      "points_maison": 5,
+      "enonce": "Combien font 25 % de 80 ? (donne juste le nombre)",
+      "reponse_attendue_redige": "20",
+      "tolerance_numerique": 0,
+      "regex_validation": "^20$",
+      "explication_correcte": "Parfait ! 25 % = 1/4. Donc 80 ÷ 4 = 20.",
+      "indices": [
+        {"niveau": 1, "texte": "25 % = 1/4. Divise par 4.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j05-e14",
+      "ordre_jour": 14,
+      "theme": "decimaux",
+      "sous_theme": "addition_decimaux",
+      "scene_hp": "salle_metamorphose",
+      "narration": "Harry pose son aiguille à côté de celle de Ron : 3,75 cm + 2,4 cm.",
+      "type": "redige_court",
+      "competence": "Additionner deux décimaux à nombre de chiffres différents",
+      "difficulte_relative": 14,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Calcule 3,75 + 2,4. (Donne le résultat avec une virgule, ex : 6,15)",
+      "reponse_attendue_redige": "6,15",
+      "regex_validation": "^6[,.]15$",
+      "explication_correcte": "Bien ! Aligne les virgules. 3,75 + 2,40 = 6,15.",
+      "indices": [
+        {"niveau": 1, "texte": "Astuce : écris 2,4 = 2,40 pour avoir le même nombre de chiffres après la virgule.", "cout_points": 1},
+        {"niveau": 2, "texte": "3,75 + 2,40 → aligne les virgules, ajoute colonne par colonne.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j05-e14-d1", "enonce": "Réécris 2,4 avec deux chiffres après la virgule.", "type": "qcm", "choix": [{"id": "a", "texte": "2,40"}, {"id": "b", "texte": "2,04"}, {"id": "c", "texte": "24,0"}], "reponse_correcte": "a"},
+          {"id": "j05-e14-d2", "enonce": "Maintenant additionne 3,75 + 2,40.", "type": "redige_court", "reponse_attendue": "6,15", "regex_validation": "^6[,.]15$"}
+        ]
+      }
+    },
+    {
+      "id": "j05-e15",
+      "ordre_jour": 15,
+      "theme": "pourcentages",
+      "sous_theme": "remise",
+      "scene_hp": "boutique_madame_guipure",
+      "narration": "Madame Guipure offre 50 % de remise sur une robe de sorcier à 40 Gallions.",
+      "type": "redige_court",
+      "competence": "Calculer un montant après remise simple",
+      "difficulte_relative": 15,
+      "duree_estimee_sec": 100,
+      "points_maison": 6,
+      "enonce": "Une robe coûte 40 Gallions. Avec 50 % de remise, combien coûte-t-elle ? (juste le nombre de Gallions)",
+      "reponse_attendue_redige": "20",
+      "tolerance_numerique": 0,
+      "regex_validation": "^20$",
+      "explication_correcte": "Parfait ! 50 % de 40 = 20 Gallions de remise. Prix final = 40 - 20 = 20 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule la remise (50 % de 40), puis soustrais du prix.", "cout_points": 1},
+        {"niveau": 2, "texte": "Remise = 20. Prix = 40 - 20.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j05-e16",
+      "ordre_jour": 16,
+      "theme": "pourcentages",
+      "sous_theme": "remise",
+      "scene_hp": "boutique_madame_guipure",
+      "narration": "Sur un chapeau pointu à 20 Gallions, remise de 25 %.",
+      "type": "redige_court",
+      "competence": "Calculer un prix après remise de 25 %",
+      "difficulte_relative": 16,
+      "duree_estimee_sec": 120,
+      "points_maison": 6,
+      "enonce": "Un chapeau coûte 20 Gallions. Remise de 25 %. Quel est le prix final ? (juste le nombre)",
+      "reponse_attendue_redige": "15",
+      "tolerance_numerique": 0,
+      "regex_validation": "^15$",
+      "explication_correcte": "Excellent ! 25 % de 20 = 5 Gallions de remise. Prix = 20 - 5 = 15 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : calcule la remise (25 % = 1/4 de 20).", "cout_points": 1},
+        {"niveau": 2, "texte": "Remise = 5. Prix final = 20 - 5.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j05-e16-d1", "enonce": "Calcule 25 % de 20.", "type": "numerique", "reponse": 5},
+          {"id": "j05-e16-d2", "enonce": "Prix final : 20 - 5 = ?", "type": "numerique", "reponse": 15}
+        ]
+      }
+    },
+    {
+      "id": "j05-e17",
+      "ordre_jour": 17,
+      "theme": "decimaux",
+      "sous_theme": "fraction_vers_decimal",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall demande à Harry : '3/4 = ?'",
+      "type": "redige_court",
+      "competence": "Convertir 3/4 en décimal",
+      "difficulte_relative": 17,
+      "duree_estimee_sec": 80,
+      "points_maison": 5,
+      "enonce": "Convertis la fraction 3/4 en nombre décimal. (Donne avec une virgule, ex : 0,5)",
+      "reponse_attendue_redige": "0,75",
+      "regex_validation": "^0[,.]75$",
+      "explication_correcte": "Bravo ! 1/4 = 0,25, donc 3/4 = 3 × 0,25 = 0,75.",
+      "indices": [
+        {"niveau": 1, "texte": "1/4 = 0,25. Multiplie par 3.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j05-e18",
+      "ordre_jour": 18,
+      "theme": "pourcentages",
+      "sous_theme": "augmentation",
+      "scene_hp": "boutique_madame_guipure",
+      "narration": "Madame Guipure annonce : '+10 % sur les baguettes à cause de la pénurie.'",
+      "type": "redige_court",
+      "competence": "Calculer un prix après augmentation de 10 %",
+      "difficulte_relative": 18,
+      "duree_estimee_sec": 140,
+      "points_maison": 7,
+      "enonce": "Une baguette coûtait 50 Gallions. Le prix augmente de 10 %. Quel est le nouveau prix ? (juste le nombre)",
+      "reponse_attendue_redige": "55",
+      "tolerance_numerique": 0,
+      "regex_validation": "^55$",
+      "explication_correcte": "Excellent ! 10 % de 50 = 5 Gallions d'augmentation. Nouveau prix = 50 + 5 = 55 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : calcule 10 % de 50.", "cout_points": 1},
+        {"niveau": 2, "texte": "Augmentation = 5. Nouveau prix = 50 + 5.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j05-e18-d1", "enonce": "Calcule 10 % de 50.", "type": "numerique", "reponse": 5},
+          {"id": "j05-e18-d2", "enonce": "Nouveau prix : 50 + 5 = ?", "type": "numerique", "reponse": 55}
+        ]
+      }
+    },
+    {
+      "id": "j05-e19",
+      "ordre_jour": 19,
+      "theme": "decimaux",
+      "sous_theme": "soustraction_decimaux",
+      "scene_hp": "salle_metamorphose",
+      "narration": "Hermione mesure deux aiguilles : 7,5 cm et 3,8 cm.",
+      "type": "redige_court",
+      "competence": "Soustraction de décimaux avec retenue",
+      "difficulte_relative": 19,
+      "duree_estimee_sec": 130,
+      "points_maison": 6,
+      "enonce": "Calcule 7,5 - 3,8. (Donne avec une virgule)",
+      "reponse_attendue_redige": "3,7",
+      "regex_validation": "^3[,.]7$",
+      "explication_correcte": "Bien joué ! 7,5 - 3,8 = 3,7. Tu as bien géré la retenue.",
+      "indices": [
+        {"niveau": 1, "texte": "Pose l'opération en colonne. Aux dixièmes : 5 - 8 → emprunte aux unités.", "cout_points": 1},
+        {"niveau": 2, "texte": "5 devient 15 (en empruntant 1 aux unités), 15 - 8 = 7. Puis 6 - 3 = 3.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j05-e20",
+      "ordre_jour": 20,
+      "theme": "pourcentages",
+      "sous_theme": "calcul_pourcentage_75",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall : 'Si Hermione a réussi 75 % de ses 20 métamorphoses, combien en a-t-elle réussi ?'",
+      "type": "redige_court",
+      "competence": "Calculer 75 % d'un nombre",
+      "difficulte_relative": 20,
+      "duree_estimee_sec": 130,
+      "points_maison": 6,
+      "enonce": "Hermione a tenté 20 métamorphoses. Elle en a réussi 75 %. Combien en a-t-elle réussi ? (juste le nombre)",
+      "reponse_attendue_redige": "15",
+      "tolerance_numerique": 0,
+      "regex_validation": "^15$",
+      "explication_correcte": "Parfait ! 75 % = 3/4. Donc 3/4 de 20 = 15 réussites.",
+      "indices": [
+        {"niveau": 1, "texte": "75 % = 3/4. Calcule 3/4 de 20.", "cout_points": 1},
+        {"niveau": 2, "texte": "1/4 de 20 = 5. Donc 3/4 = 3 × 5.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j05-e21",
+      "ordre_jour": 21,
+      "theme": "decimaux",
+      "sous_theme": "fraction_decimal_equivalences",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall fait un test rapide : '0,5 = quelle fraction ?'",
+      "type": "qcm",
+      "competence": "Reconnaître la fraction équivalente d'un décimal",
+      "difficulte_relative": 21,
+      "duree_estimee_sec": 60,
+      "points_maison": 5,
+      "enonce": "À quelle fraction correspond le nombre décimal 0,25 ?",
+      "choix": [
+        {"id": "a", "texte": "1/2"},
+        {"id": "b", "texte": "1/3"},
+        {"id": "c", "texte": "1/4"},
+        {"id": "d", "texte": "1/5"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Excellent ! 0,25 = 25/100 = 1/4.",
+      "indices": [
+        {"niveau": 1, "texte": "0,25 = 25 centièmes = 25/100. Simplifie en divisant haut et bas par 25.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j05-e22",
+      "ordre_jour": 22,
+      "theme": "pourcentages",
+      "sous_theme": "remise",
+      "scene_hp": "boutique_madame_guipure",
+      "narration": "Madame Guipure offre 10 % sur la cape à 80 Gallions.",
+      "type": "redige_court",
+      "competence": "Calculer un prix après remise de 10 %",
+      "difficulte_relative": 22,
+      "duree_estimee_sec": 150,
+      "points_maison": 7,
+      "enonce": "Une cape coûte 80 Gallions. Remise de 10 %. Quel est le prix après remise ? (juste le nombre)",
+      "reponse_attendue_redige": "72",
+      "tolerance_numerique": 0,
+      "regex_validation": "^72$",
+      "explication_correcte": "Bravo ! 10 % de 80 = 8 Gallions de remise. Prix = 80 - 8 = 72 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "10 % = 1/10 = divise par 10. Puis soustrais.", "cout_points": 1},
+        {"niveau": 2, "texte": "Remise = 80 ÷ 10 = 8. Prix = 80 - 8.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j05-e22-d1", "enonce": "Calcule 10 % de 80.", "type": "numerique", "reponse": 8},
+          {"id": "j05-e22-d2", "enonce": "Prix après remise : 80 - 8 = ?", "type": "numerique", "reponse": 72}
+        ]
+      }
+    },
+    {
+      "id": "j05-e23",
+      "ordre_jour": 23,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "boutique_madame_guipure",
+      "narration": "Harry achète une robe à 60 Gallions et un chapeau à 20 Gallions. Madame Guipure offre 25 % de remise sur le total.",
+      "type": "redige_court",
+      "competence": "Problème — addition puis pourcentage",
+      "difficulte_relative": 23,
+      "duree_estimee_sec": 200,
+      "points_maison": 8,
+      "enonce": "Robe : 60 Gallions, chapeau : 20 Gallions. Avec 25 % de remise sur le total, combien Harry doit-il payer ? (juste le nombre)",
+      "reponse_attendue_redige": "60",
+      "tolerance_numerique": 0,
+      "regex_validation": "^60$",
+      "explication_correcte": "Excellent ! Total = 60 + 20 = 80 Gallions. Remise = 25 % de 80 = 20. Prix final = 80 - 20 = 60 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : trouve le prix total. Étape 2 : calcule la remise. Étape 3 : soustrais.", "cout_points": 1},
+        {"niveau": 2, "texte": "Total = 80. Remise = 25 % de 80 = 20. Prix = 80 - 20.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j05-e23-d1", "enonce": "Total avant remise : 60 + 20 = ?", "type": "numerique", "reponse": 80},
+          {"id": "j05-e23-d2", "enonce": "Remise : 25 % de 80 = ?", "type": "numerique", "reponse": 20},
+          {"id": "j05-e23-d3", "enonce": "Prix final : 80 - 20 = ?", "type": "numerique", "reponse": 60}
+        ]
+      }
+    },
+    {
+      "id": "j05-e24",
+      "ordre_jour": 24,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall : 'Sur 40 élèves, 25 % ont réussi parfaitement. Combien ont échoué ?'",
+      "type": "redige_court",
+      "competence": "Problème — pourcentage puis complément",
+      "difficulte_relative": 24,
+      "duree_estimee_sec": 200,
+      "points_maison": 8,
+      "enonce": "Il y a 40 élèves. 25 % ont parfaitement réussi. Combien d'élèves n'ont PAS parfaitement réussi ? (juste le nombre)",
+      "reponse_attendue_redige": "30",
+      "tolerance_numerique": 0,
+      "regex_validation": "^30$",
+      "explication_correcte": "Parfait ! 25 % de 40 = 10 réussites. Donc 40 - 10 = 30 élèves n'ont pas parfaitement réussi.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule combien ont réussi, puis combien n'ont pas réussi.", "cout_points": 1},
+        {"niveau": 2, "texte": "Réussites = 10. Total = 40. 40 - 10.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j05-e24-d1", "enonce": "Combien d'élèves ont réussi ? (25 % de 40)", "type": "numerique", "reponse": 10},
+          {"id": "j05-e24-d2", "enonce": "Combien n'ont pas réussi ? (40 - 10)", "type": "numerique", "reponse": 30}
+        ]
+      }
+    },
+    {
+      "id": "j05-e25",
+      "ordre_jour": 25,
+      "theme": "probleme_synthese",
+      "sous_theme": "addition_decimaux",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall fait additionner trois mesures : 2,5 + 3,75 + 1,25 cm.",
+      "type": "redige_court",
+      "competence": "Additionner trois décimaux",
+      "difficulte_relative": 25,
+      "duree_estimee_sec": 210,
+      "points_maison": 8,
+      "enonce": "Calcule 2,5 + 3,75 + 1,25. (Donne avec une virgule)",
+      "reponse_attendue_redige": "7,5",
+      "regex_validation": "^7[,.]50?$",
+      "explication_correcte": "Bravo ! Astuce : 3,75 + 1,25 = 5 (joli !). Puis 5 + 2,5 = 7,5.",
+      "indices": [
+        {"niveau": 1, "texte": "Astuce : commence par 3,75 + 1,25 qui donne un nombre rond.", "cout_points": 1},
+        {"niveau": 2, "texte": "3,75 + 1,25 = 5. Puis 5 + 2,5 = ?", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j05-e25-d1", "enonce": "Combien font 3,75 + 1,25 ?", "type": "redige_court", "reponse_attendue": "5", "regex_validation": "^5([,.]0+)?$"},
+          {"id": "j05-e25-d2", "enonce": "Maintenant 5 + 2,5 = ?", "type": "redige_court", "reponse_attendue": "7,5", "regex_validation": "^7[,.]5$"}
+        ]
+      }
+    },
+    {
+      "id": "j05-e26",
+      "ordre_jour": 26,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "boutique_madame_guipure",
+      "narration": "Ron achète 3 paires de chaussettes magiques à 4,50 Gallions chacune. Madame Guipure lui offre 10 % de remise.",
+      "type": "redige_court",
+      "competence": "Problème — multiplication décimale puis pourcentage",
+      "difficulte_relative": 26,
+      "duree_estimee_sec": 240,
+      "points_maison": 9,
+      "enonce": "3 paires à 4,50 Gallions chacune, remise de 10 % sur le total. Combien Ron paie-t-il ? (donne avec une virgule, ex : 12,15)",
+      "reponse_attendue_redige": "12,15",
+      "regex_validation": "^12[,.]15$",
+      "explication_correcte": "Excellent ! Total = 3 × 4,50 = 13,50. Remise = 10 % de 13,50 = 1,35. Prix = 13,50 - 1,35 = 12,15 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : prix total avant remise. Étape 2 : calcule la remise. Étape 3 : soustrais.", "cout_points": 1},
+        {"niveau": 2, "texte": "Total = 13,50. Remise = 1,35. Prix = 13,50 - 1,35.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j05-e26-d1", "enonce": "Prix total avant remise : 3 × 4,50 = ?", "type": "redige_court", "reponse_attendue": "13,50", "regex_validation": "^13[,.]50?$"},
+          {"id": "j05-e26-d2", "enonce": "Remise (10 % de 13,50) : divise par 10.", "type": "redige_court", "reponse_attendue": "1,35", "regex_validation": "^1[,.]35$"},
+          {"id": "j05-e26-d3", "enonce": "Prix final : 13,50 - 1,35 = ?", "type": "redige_court", "reponse_attendue": "12,15", "regex_validation": "^12[,.]15$"}
+        ]
+      }
+    },
+    {
+      "id": "j05-e27",
+      "ordre_jour": 27,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall : 'Sur 60 élèves, 50 % sont à Gryffondor et 25 % à Serpentard. Combien à Poufsouffle ou Serdaigle ?'",
+      "type": "redige_court",
+      "competence": "Problème — additionner deux pourcentages puis complément",
+      "difficulte_relative": 27,
+      "duree_estimee_sec": 240,
+      "points_maison": 9,
+      "enonce": "60 élèves. 50 % à Gryffondor, 25 % à Serpentard. Combien sont à Poufsouffle ou Serdaigle ? (juste le nombre)",
+      "reponse_attendue_redige": "15",
+      "tolerance_numerique": 0,
+      "regex_validation": "^15$",
+      "explication_correcte": "Parfait ! Gryffondor : 50 % de 60 = 30. Serpentard : 25 % de 60 = 15. Total comptés = 45. Reste = 60 - 45 = 15.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule séparément les deux groupes, puis soustrais.", "cout_points": 1},
+        {"niveau": 2, "texte": "Gryffondor = 30, Serpentard = 15. Reste = 60 - (30+15).", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j05-e27-d1", "enonce": "Combien à Gryffondor ? (50 % de 60)", "type": "numerique", "reponse": 30},
+          {"id": "j05-e27-d2", "enonce": "Combien à Serpentard ? (25 % de 60)", "type": "numerique", "reponse": 15},
+          {"id": "j05-e27-d3", "enonce": "Reste : 60 - 30 - 15 = ?", "type": "numerique", "reponse": 15}
+        ]
+      }
+    },
+    {
+      "id": "j05-e28",
+      "ordre_jour": 28,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "boutique_madame_guipure",
+      "narration": "Harry compare deux offres pour une cape de 100 Gallions.",
+      "type": "redige_court",
+      "competence": "Comparer deux pourcentages de remise",
+      "difficulte_relative": 28,
+      "duree_estimee_sec": 260,
+      "points_maison": 9,
+      "enonce": "Cape à 100 Gallions. Offre A : 25 % de remise. Offre B : 30 Gallions de remise. Quelle est la remise la plus avantageuse (en Gallions) ? (juste le nombre)",
+      "reponse_attendue_redige": "30",
+      "tolerance_numerique": 0,
+      "regex_validation": "^30$",
+      "explication_correcte": "Bravo ! Offre A = 25 % de 100 = 25 Gallions. Offre B = 30 Gallions. 30 > 25, donc l'offre B est meilleure : 30 Gallions de remise.",
+      "indices": [
+        {"niveau": 1, "texte": "Convertis la remise A en Gallions, puis compare les deux.", "cout_points": 1},
+        {"niveau": 2, "texte": "A = 25 % de 100 = 25 Gallions. Compare 25 et 30.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j05-e28-d1", "enonce": "Calcule la remise A : 25 % de 100.", "type": "numerique", "reponse": 25},
+          {"id": "j05-e28-d2", "enonce": "Laquelle est la plus grande, 25 ou 30 ?", "type": "qcm", "choix": [{"id": "a", "texte": "25"}, {"id": "b", "texte": "30"}], "reponse_correcte": "b"}
+        ]
+      }
+    },
+    {
+      "id": "j05-e29",
+      "ordre_jour": 29,
+      "theme": "probleme_synthese",
+      "sous_theme": "mini_libermann",
+      "scene_hp": "boutique_madame_guipure",
+      "narration": "Mini-épreuve type Libermann : Hermione fait ses achats de rentrée.",
+      "type": "redige_court",
+      "competence": "Problème complet — multiplication décimale + pourcentage + addition",
+      "difficulte_relative": 29,
+      "duree_estimee_sec": 320,
+      "points_maison": 10,
+      "enonce": "Hermione achète : 2 robes à 30 Gallions, 1 chapeau à 15 Gallions. Madame Guipure offre 20 % de remise sur le total. Quel est le prix final ? (juste le nombre de Gallions)",
+      "reponse_attendue_redige": "60",
+      "tolerance_numerique": 0,
+      "regex_validation": "^60$",
+      "explication_correcte": "Excellent ! Étape 1 : 2 × 30 = 60 Gallions de robes. Étape 2 : 60 + 15 = 75 total. Étape 3 : 20 % de 75 = 15 de remise. Étape 4 : 75 - 15 = 60 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "4 étapes : prix des robes, total, remise, prix final.", "cout_points": 1},
+        {"niveau": 2, "texte": "Total = 75. Remise = 20 % de 75 = 15. Prix = 75 - 15.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j05-e29-d1", "enonce": "Prix des robes : 2 × 30 = ?", "type": "numerique", "reponse": 60},
+          {"id": "j05-e29-d2", "enonce": "Total avant remise : 60 + 15 = ?", "type": "numerique", "reponse": 75},
+          {"id": "j05-e29-d3", "enonce": "Remise (20 % de 75) : 75 ÷ 5 = ?", "type": "numerique", "reponse": 15},
+          {"id": "j05-e29-d4", "enonce": "Prix final : 75 - 15 = ?", "type": "numerique", "reponse": 60}
+        ]
+      },
+      "tags": ["pourcentages", "addition", "probleme_libermann"],
+      "source_inspiration_libermann": "Problème multi-étapes prix + pourcentage de remise"
+    },
+    {
+      "id": "j05-e30",
+      "ordre_jour": 30,
+      "theme": "probleme_synthese",
+      "sous_theme": "mini_libermann",
+      "scene_hp": "salle_metamorphose",
+      "narration": "Épreuve finale : McGonagall combine tout — décimaux, pourcentages, fractions.",
+      "type": "redige_court",
+      "competence": "Problème complet — décimaux + pourcentage + comparaison",
+      "difficulte_relative": 30,
+      "duree_estimee_sec": 360,
+      "points_maison": 12,
+      "enonce": "Une aiguille mesure 8,4 cm. Après un sortilège, elle s'allonge de 25 %. Quelle est sa nouvelle longueur en cm ? (donne avec une virgule, ex : 10,5)",
+      "reponse_attendue_redige": "10,5",
+      "regex_validation": "^10[,.]50?$",
+      "explication_correcte": "Bravo Métamorphomage ! Étape 1 : 25 % de 8,4 = 8,4 ÷ 4 = 2,1 cm d'allongement. Étape 2 : 8,4 + 2,1 = 10,5 cm. McGonagall hoche la tête, satisfaite.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : calcule 25 % de 8,4 (c'est-à-dire 8,4 ÷ 4). Étape 2 : additionne au prix de départ.", "cout_points": 1},
+        {"niveau": 2, "texte": "8,4 ÷ 4 = 2,1. Puis 8,4 + 2,1.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j05-e30-d1", "enonce": "Calcule 25 % de 8,4 (= 8,4 ÷ 4).", "type": "redige_court", "reponse_attendue": "2,1", "regex_validation": "^2[,.]10?$"},
+          {"id": "j05-e30-d2", "enonce": "Maintenant additionne : 8,4 + 2,1 = ?", "type": "redige_court", "reponse_attendue": "10,5", "regex_validation": "^10[,.]50?$"}
+        ]
+      },
+      "tags": ["pourcentages", "decimaux", "probleme_libermann"],
+      "source_inspiration_libermann": "Problème combinant décimaux et pourcentages d'augmentation"
+    }
+  ]
+}

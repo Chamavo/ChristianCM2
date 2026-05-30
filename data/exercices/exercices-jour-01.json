@@ -1,0 +1,1469 @@
+{
+  "jour": 1,
+  "titre": "L'arrivée à Poudlard — Privet Drive & Chemin de Traverse",
+  "theme_principal": "grands_nombres",
+  "scene_globale": "Harry découvre qu'il est sorcier. Hagrid l'emmène au Chemin de Traverse acheter ses fournitures. À Gringotts, il découvre la richesse de ses parents. Puis le Poudlard Express, et la cérémonie du Choixpeau.",
+  "mix_qcm_redige": "60/40",
+  "duree_estimee_min": 240,
+  "exercices": [
+    {
+      "id": "j01-e01",
+      "ordre_jour": 1,
+      "theme": "grands_nombres",
+      "sous_theme": "lecture_3_chiffres",
+      "scene_hp": "privet_drive",
+      "narration": "Harry vit au 4, Privet Drive. Tante Pétunia compte les enveloppes qui arrivent par la cheminée.",
+      "type": "qcm",
+      "competence": "Lire un nombre à 3 chiffres",
+      "difficulte_relative": 1,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Aujourd'hui, 234 enveloppes sont tombées dans la cheminée. Comment se lit ce nombre ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "Deux cent trente-quatre"
+        },
+        {
+          "id": "b",
+          "texte": "Vingt-trois quatre"
+        },
+        {
+          "id": "c",
+          "texte": "Deux mille trente-quatre"
+        },
+        {
+          "id": "d",
+          "texte": "Deux cent quatre-trois"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bien joué ! 234 = 2 centaines + 3 dizaines + 4 unités = deux cent trente-quatre.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Le 2 est à la place des centaines, le 3 à la place des dizaines, le 4 à la place des unités.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j01-e02",
+      "ordre_jour": 2,
+      "theme": "grands_nombres",
+      "sous_theme": "lecture_3_chiffres",
+      "scene_hp": "privet_drive",
+      "narration": "Le lendemain, encore plus d'enveloppes !",
+      "type": "qcm",
+      "competence": "Lire un nombre à 3 chiffres",
+      "difficulte_relative": 2,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Cette fois, 507 enveloppes sont arrivées. Comment se lit ce nombre ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "Cinquante-sept"
+        },
+        {
+          "id": "b",
+          "texte": "Cinq cent sept"
+        },
+        {
+          "id": "c",
+          "texte": "Cinq cent soixante-dix"
+        },
+        {
+          "id": "d",
+          "texte": "Cinq mille sept"
+        }
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! Le 0 au milieu = 0 dizaine. On lit 'cinq cent sept'.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Attention : le 0 au milieu signifie qu'il y a 0 dizaine, mais il faut bien le compter pour lire les centaines.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j01-e03",
+      "ordre_jour": 3,
+      "theme": "grands_nombres",
+      "sous_theme": "lecture_4_chiffres",
+      "scene_hp": "chemin_de_traverse",
+      "narration": "Hagrid emmène Harry sur le Chemin de Traverse. Devant la vitrine du marchand de balais, le Nimbus 2000 brille.",
+      "type": "qcm",
+      "competence": "Lire un nombre à 4 chiffres",
+      "difficulte_relative": 3,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "Le Nimbus 2000 coûte 2 000 Gallions. Comment se lit ce nombre ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "Deux cents"
+        },
+        {
+          "id": "b",
+          "texte": "Deux mille"
+        },
+        {
+          "id": "c",
+          "texte": "Vingt mille"
+        },
+        {
+          "id": "d",
+          "texte": "Deux millions"
+        }
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Parfait ! 2 000 = 2 milliers = deux mille Gallions. C'est cher pour un balai !",
+      "indices": []
+    },
+    {
+      "id": "j01-e04",
+      "ordre_jour": 4,
+      "theme": "grands_nombres",
+      "sous_theme": "lecture_4_chiffres",
+      "scene_hp": "chemin_de_traverse",
+      "narration": "À côté du Nimbus, l'Éclair de Feu, encore plus rapide.",
+      "type": "qcm",
+      "competence": "Lire un nombre à 4 chiffres avec dizaines",
+      "difficulte_relative": 4,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "L'Éclair de Feu coûte 2 350 Gallions. Comment se lit ce nombre ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "Deux mille trois cent cinquante"
+        },
+        {
+          "id": "b",
+          "texte": "Deux cent trente-cinq"
+        },
+        {
+          "id": "c",
+          "texte": "Vingt-trois mille cinquante"
+        },
+        {
+          "id": "d",
+          "texte": "Deux mille trente-cinq"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Excellent ! 2 350 = 2 mille + 350 = deux mille trois cent cinquante.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Coupe le nombre en 2 : '2' / '350'. Tu lis 'deux mille' puis 'trois cent cinquante'.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j01-e05",
+      "ordre_jour": 5,
+      "theme": "grands_nombres",
+      "sous_theme": "lecture_5_chiffres",
+      "scene_hp": "gringotts",
+      "narration": "Hagrid et Harry descendent dans les coffres de Gringotts à dos de wagonnet.",
+      "type": "qcm",
+      "competence": "Lire un nombre à 5 chiffres",
+      "difficulte_relative": 5,
+      "duree_estimee_sec": 45,
+      "points_maison": 3,
+      "enonce": "Le coffre 687 contient 12 500 Gallions. Comment se lit ce nombre ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "Cent vingt-cinq mille"
+        },
+        {
+          "id": "b",
+          "texte": "Douze mille cinq cents"
+        },
+        {
+          "id": "c",
+          "texte": "Mille deux cent cinquante"
+        },
+        {
+          "id": "d",
+          "texte": "Douze mille cinquante"
+        }
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien vu ! 12 500 = 12 mille + 500 = douze mille cinq cents.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Tranches de 3 à droite : 12 / 500. Lis : 'douze mille' + 'cinq cents'.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j01-e06",
+      "ordre_jour": 6,
+      "theme": "grands_nombres",
+      "sous_theme": "lecture_6_chiffres",
+      "scene_hp": "gringotts",
+      "narration": "Plus profond dans les souterrains, un autre coffre.",
+      "type": "qcm",
+      "competence": "Lire un nombre à 6 chiffres",
+      "difficulte_relative": 6,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Le coffre 713 contient 125 460 Gallions. Comment se lit ce nombre ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "Cent vingt-cinq mille quatre cent soixante"
+        },
+        {
+          "id": "b",
+          "texte": "Un million deux cent cinquante-quatre mille soixante"
+        },
+        {
+          "id": "c",
+          "texte": "Douze mille cinq cent quarante-six"
+        },
+        {
+          "id": "d",
+          "texte": "Cent vingt-cinq quatre cent soixante"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Parfait ! 125 460 se lit en deux tranches : 125 mille / 460. Donc cent vingt-cinq mille quatre cent soixante.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Sépare en tranches de 3 : 125 / 460. La tranche de gauche = milliers, la tranche de droite = unités.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Première tranche '125' se lit 'cent vingt-cinq', deuxième '460' se lit 'quatre cent soixante'. Entre les deux : 'mille'.",
+          "cout_points": 2
+        }
+      ]
+    },
+    {
+      "id": "j01-e07",
+      "ordre_jour": 7,
+      "theme": "grands_nombres",
+      "sous_theme": "lecture_7_chiffres",
+      "scene_hp": "gringotts",
+      "narration": "Le gobelin Gripsec ouvre le coffre des parents de Harry. Une montagne de pièces d'or scintille.",
+      "type": "qcm",
+      "competence": "Lire un nombre à 7 chiffres (millions)",
+      "competences_prerequises": [
+        "j01-e05",
+        "j01-e06"
+      ],
+      "difficulte_relative": 7,
+      "duree_estimee_sec": 60,
+      "points_maison": 5,
+      "enonce": "Le coffre de Harry contient 1 250 460 Gallions. Comment se lit ce nombre ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "Un million deux cent cinquante mille quatre cent soixante"
+        },
+        {
+          "id": "b",
+          "texte": "Un million deux cent cinq mille quatre cent soixante"
+        },
+        {
+          "id": "c",
+          "texte": "Douze millions cinquante mille quatre cent soixante"
+        },
+        {
+          "id": "d",
+          "texte": "Un million deux cent cinquante mille quarante-six"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bravo Harry ! 1 250 460 = 1 million + 250 mille + 460. Tu es riche !",
+      "explications_erreurs": {
+        "b": "Attention au chiffre des dizaines de mille : c'est 5, pas 0.",
+        "c": "12 millions aurait 8 chiffres. Recompte les chiffres.",
+        "d": "Les 3 derniers chiffres se lisent 'quatre cent soixante', pas 'quarante-six'."
+      },
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Sépare en 3 tranches de 3 : 1 / 250 / 460.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "De gauche à droite : 'un million', puis 'deux cent cinquante mille', puis 'quatre cent soixante'.",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {
+            "id": "j01-e07-d1",
+            "enonce": "Combien y a-t-il de chiffres dans 1 250 460 ?",
+            "type": "numerique",
+            "reponse": 7
+          },
+          {
+            "id": "j01-e07-d2",
+            "enonce": "La tranche de gauche (1) se lit comment ?",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Un million"
+              },
+              {
+                "id": "b",
+                "texte": "Un milliard"
+              },
+              {
+                "id": "c",
+                "texte": "Mille"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j01-e07-d3",
+            "enonce": "La tranche du milieu (250) se lit comment ?",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Deux cent cinquante mille"
+              },
+              {
+                "id": "b",
+                "texte": "Vingt-cinq mille"
+              },
+              {
+                "id": "c",
+                "texte": "Deux mille cinquante"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j01-e07-d4",
+            "enonce": "Maintenant assemble : un million + deux cent cinquante mille + ?",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Quatre cent soixante"
+              },
+              {
+                "id": "b",
+                "texte": "Quarante-six"
+              }
+            ],
+            "reponse_correcte": "a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "j01-e08",
+      "ordre_jour": 8,
+      "theme": "grands_nombres",
+      "sous_theme": "ecriture_chiffres",
+      "scene_hp": "gringotts",
+      "narration": "Gripsec note le solde du coffre dans son grand registre.",
+      "type": "redige_court",
+      "competence": "Écrire un nombre en chiffres à partir de sa lecture",
+      "difficulte_relative": 8,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Écris en chiffres : 'trois cent quatre-vingt-cinq mille deux cent dix'. (Utilise des espaces pour les milliers, ex: 1 234)",
+      "reponse_attendue_redige": "385 210",
+      "regex_validation": "^385\\s*210$",
+      "explication_correcte": "Bien ! 385 mille + 210 = 385 210.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Découpe ce que tu entends : 'trois cent quatre-vingt-cinq' = 385, 'mille' = milliers, 'deux cent dix' = 210.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j01-e09",
+      "ordre_jour": 9,
+      "theme": "grands_nombres",
+      "sous_theme": "valeur_position",
+      "scene_hp": "gringotts",
+      "narration": "Gripsec interroge Harry pour vérifier qu'il comprend la valeur de l'argent.",
+      "type": "qcm",
+      "competence": "Identifier le chiffre des dizaines de mille",
+      "difficulte_relative": 9,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Dans le nombre 4 567 890, quel est le chiffre des dizaines de mille ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "6"
+        },
+        {
+          "id": "b",
+          "texte": "7"
+        },
+        {
+          "id": "c",
+          "texte": "5"
+        },
+        {
+          "id": "d",
+          "texte": "8"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Exact ! En partant de la droite : unités (0), dizaines (9), centaines (8), milliers (7), dizaines de mille (6).",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Compte les positions à partir de la droite : 0 (unités), 9 (dizaines), 8 (centaines), 7 (milliers), puis dizaines de mille.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j01-e10",
+      "ordre_jour": 10,
+      "theme": "grands_nombres",
+      "sous_theme": "comparaison",
+      "scene_hp": "gringotts",
+      "narration": "Harry compare son coffre à celui d'un autre sorcier qu'il vient de croiser.",
+      "type": "qcm",
+      "competence": "Comparer deux grands nombres",
+      "difficulte_relative": 10,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Quel signe va entre ces deux nombres : 1 250 460 ___ 1 205 460 ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": ">"
+        },
+        {
+          "id": "b",
+          "texte": "<"
+        },
+        {
+          "id": "c",
+          "texte": "="
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bien ! 1 250 460 > 1 205 460. Le chiffre des dizaines de mille (5 contre 0) décide.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Les deux nombres ont 7 chiffres. Compare-les chiffre par chiffre de gauche à droite jusqu'à trouver une différence.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j01-e11",
+      "ordre_jour": 11,
+      "theme": "operations_posees",
+      "sous_theme": "addition_avec_retenue",
+      "scene_hp": "ollivander",
+      "narration": "Ollivander, le fabricant de baguettes, calcule le prix total des fournitures de Harry.",
+      "type": "qcm",
+      "competence": "Addition de deux nombres à 3 chiffres avec retenue",
+      "difficulte_relative": 11,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "La baguette coûte 358 mornilles et le grimoire 247 mornilles. Combien Harry doit-il payer en tout ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "605 mornilles"
+        },
+        {
+          "id": "b",
+          "texte": "595 mornilles"
+        },
+        {
+          "id": "c",
+          "texte": "515 mornilles"
+        },
+        {
+          "id": "d",
+          "texte": "615 mornilles"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Parfait ! 358 + 247 = 605. 8+7=15 (5, retiens 1), 5+4+1=10 (0, retiens 1), 3+2+1=6.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Pose l'addition en colonnes. Aligne les unités, dizaines, centaines.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j01-e12",
+      "ordre_jour": 12,
+      "theme": "operations_posees",
+      "sous_theme": "addition_avec_retenue",
+      "scene_hp": "ollivander",
+      "narration": "Hagrid ajoute une cage et un hibou : Hedwige !",
+      "type": "redige_court",
+      "competence": "Addition de trois nombres avec retenues",
+      "difficulte_relative": 12,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Pose et calcule : 358 + 247 + 189 = ? (Donne juste le résultat)",
+      "reponse_attendue_redige": "794",
+      "tolerance_numerique": 0,
+      "regex_validation": "^794$",
+      "explication_correcte": "Bien joué ! 358 + 247 = 605, puis 605 + 189 = 794.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Commence par additionner les deux premiers, puis ajoute le troisième.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "358 + 247 = 605. Maintenant 605 + 189 = ?",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {
+            "id": "j01-e12-d1",
+            "enonce": "Combien font 358 + 247 ?",
+            "type": "numerique",
+            "reponse": 605
+          },
+          {
+            "id": "j01-e12-d2",
+            "enonce": "Maintenant, combien font 605 + 189 ?",
+            "type": "numerique",
+            "reponse": 794
+          }
+        ]
+      }
+    },
+    {
+      "id": "j01-e13",
+      "ordre_jour": 13,
+      "theme": "operations_posees",
+      "sous_theme": "soustraction_avec_retenue",
+      "scene_hp": "gringotts_retour",
+      "narration": "Hagrid retire de l'argent du coffre de Harry pour payer les fournitures.",
+      "type": "qcm",
+      "competence": "Soustraction avec retenue",
+      "difficulte_relative": 13,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Harry avait 1 200 Gallions dans son sac. Il dépense 547 Gallions. Combien lui reste-t-il ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "653 Gallions"
+        },
+        {
+          "id": "b",
+          "texte": "747 Gallions"
+        },
+        {
+          "id": "c",
+          "texte": "663 Gallions"
+        },
+        {
+          "id": "d",
+          "texte": "743 Gallions"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bien ! 1 200 - 547 = 653. La technique des emprunts est maîtrisée !",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Pose la soustraction. Tu auras besoin d'emprunter aux dizaines puis aux centaines.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j01-e14",
+      "ordre_jour": 14,
+      "theme": "operations_posees",
+      "sous_theme": "multiplication_x1chiffre",
+      "scene_hp": "poudlard_express",
+      "narration": "Dans le Poudlard Express, la dame au chariot vend des Chocogrenouilles. 3 boîtes par compartiment.",
+      "type": "qcm",
+      "competence": "Multiplication d'un nombre à 3 chiffres par 1 chiffre",
+      "difficulte_relative": 14,
+      "duree_estimee_sec": 70,
+      "points_maison": 5,
+      "enonce": "Chaque boîte de Chocogrenouilles contient 124 chocolats. Combien y a-t-il de chocolats dans 6 boîtes ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "744"
+        },
+        {
+          "id": "b",
+          "texte": "624"
+        },
+        {
+          "id": "c",
+          "texte": "844"
+        },
+        {
+          "id": "d",
+          "texte": "714"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Excellent ! 124 × 6 = 744. (4×6=24, retiens 2 ; 2×6=12 +2=14, retiens 1 ; 1×6=6 +1=7)",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Multiplie chaque chiffre de 124 par 6, en commençant par les unités, avec les retenues.",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j01-e15",
+      "ordre_jour": 15,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "poudlard_express",
+      "narration": "Harry, Ron et Hermione partagent leurs friandises. Mini-épreuve : tu utilises l'addition ET la multiplication.",
+      "type": "redige_court",
+      "competence": "Résoudre un problème à 2 étapes (multiplication puis addition)",
+      "difficulte_relative": 15,
+      "duree_estimee_sec": 180,
+      "points_maison": 8,
+      "enonce": "Harry achète 4 boîtes de Chocogrenouilles à 124 chocolats chacune. Ron ajoute 89 Dragées surprises de Bertie Crochue. Combien de friandises Harry et Ron ont-ils en tout ?",
+      "reponse_attendue_redige": "585",
+      "tolerance_numerique": 0,
+      "regex_validation": "^585$",
+      "explication_correcte": "Bravo ! D'abord 124 × 4 = 496 chocolats, puis 496 + 89 = 585 friandises en tout.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Étape 1 : combien Harry a-t-il de chocolats au total ? (multiplication)",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Étape 1 : 124 × 4 = 496. Étape 2 : ajoute les 89 dragées de Ron.",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {
+            "id": "j01-e15-d1",
+            "enonce": "Combien de chocolats dans 4 boîtes de 124 ?",
+            "type": "numerique",
+            "reponse": 496
+          },
+          {
+            "id": "j01-e15-d2",
+            "enonce": "Maintenant ajoute les 89 dragées : 496 + 89 = ?",
+            "type": "numerique",
+            "reponse": 585
+          }
+        ]
+      }
+    },
+    {
+      "id": "j01-e16",
+      "ordre_jour": 16,
+      "theme": "operations_posees",
+      "sous_theme": "multiplication_x1chiffre",
+      "scene_hp": "poudlard_express",
+      "narration": "La dame au chariot prépare ses paquets de Patacitrouilles : 248 par sachet. Elle a 7 sachets sur son chariot.",
+      "type": "redige_court",
+      "competence": "Multiplication d'un nombre à 3 chiffres par 1 chiffre avec plusieurs retenues",
+      "difficulte_relative": 16,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Combien y a-t-il de Patacitrouilles en tout sur le chariot ? Calcule 248 × 7. (Donne juste le résultat)",
+      "reponse_attendue_redige": "1736",
+      "tolerance_numerique": 0,
+      "regex_validation": "^1\\s*736$|^1736$",
+      "explication_correcte": "Bien joué ! 248 × 7 = 1 736. (8×7=56, retiens 5 ; 4×7=28 +5=33, retiens 3 ; 2×7=14 +3=17)",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Pose la multiplication en colonnes. Commence par les unités : 8 × 7.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Unités : 8×7=56 (pose 6, retiens 5). Dizaines : 4×7=28 +5=33 (pose 3, retiens 3). Centaines : 2×7=14 +3=17.",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {
+            "id": "j01-e16-d1",
+            "enonce": "Calcule 8 × 7. Quelle retenue gardes-tu ?",
+            "type": "qcm",
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Je pose 6, je retiens 5"
+              },
+              {
+                "id": "b",
+                "texte": "Je pose 5, je retiens 6"
+              },
+              {
+                "id": "c",
+                "texte": "Je pose 56"
+              }
+            ],
+            "reponse_correcte": "a"
+          },
+          {
+            "id": "j01-e16-d2",
+            "enonce": "Calcule 4 × 7 + 5 (la retenue).",
+            "type": "numerique",
+            "reponse": 33
+          },
+          {
+            "id": "j01-e16-d3",
+            "enonce": "Calcule 2 × 7 + 3 (la retenue).",
+            "type": "numerique",
+            "reponse": 17
+          },
+          {
+            "id": "j01-e16-d4",
+            "enonce": "Quel est le résultat final de 248 × 7 ?",
+            "type": "numerique",
+            "reponse": 1736
+          }
+        ]
+      }
+    },
+    {
+      "id": "j01-e17",
+      "ordre_jour": 17,
+      "theme": "operations_posees",
+      "sous_theme": "soustraction_avec_retenues",
+      "scene_hp": "poudlard_express",
+      "narration": "Le contrôleur du train vérifie les billets. 8 045 places ont été vendues en tout cette année ; 2 367 voyageurs sont déjà montés à King's Cross.",
+      "type": "qcm",
+      "competence": "Soustraction à 4 chiffres avec plusieurs retenues",
+      "difficulte_relative": 17,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Combien de places sont encore disponibles dans le train ? Calcule 8 045 − 2 367.",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "5 678 places"
+        },
+        {
+          "id": "b",
+          "texte": "6 678 places"
+        },
+        {
+          "id": "c",
+          "texte": "5 778 places"
+        },
+        {
+          "id": "d",
+          "texte": "5 688 places"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bravo ! 8 045 − 2 367 = 5 678. Les emprunts s'enchaînent à cause du 0 aux centaines.",
+      "explications_erreurs": {
+        "b": "Tu as oublié une retenue. Recompte les emprunts colonne par colonne.",
+        "c": "Erreur sur les dizaines : 4 devient 3 après emprunt, et tu dois faire 13−6.",
+        "d": "Erreur sur les unités : 15−7 = 8, et n'oublie pas l'emprunt."
+      },
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Pose la soustraction. Aux unités, 5−7 est impossible, donc tu empruntes 1 dizaine.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Quand on emprunte sur un 0, on emprunte d'abord à la colonne suivante. Ici, les dizaines deviennent 3 puis les centaines 9.",
+          "cout_points": 2
+        }
+      ]
+    },
+    {
+      "id": "j01-e18",
+      "ordre_jour": 18,
+      "theme": "operations_posees",
+      "sous_theme": "division_simple",
+      "scene_hp": "poudlard_express",
+      "narration": "Hermione organise un partage équitable des Patacitrouilles entre les 6 amis du compartiment.",
+      "type": "qcm",
+      "competence": "Division d'un nombre à 3 chiffres par 1 chiffre (sans reste)",
+      "difficulte_relative": 18,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Il y a 156 Patacitrouilles à partager équitablement entre 6 amis. Combien chacun reçoit-il ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "26 Patacitrouilles"
+        },
+        {
+          "id": "b",
+          "texte": "25 Patacitrouilles"
+        },
+        {
+          "id": "c",
+          "texte": "30 Patacitrouilles"
+        },
+        {
+          "id": "d",
+          "texte": "16 Patacitrouilles"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Parfait ! 156 ÷ 6 = 26. (15 ÷ 6 = 2 reste 3, abaisse le 6 : 36 ÷ 6 = 6, donc 26.)",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Pose la division. Combien de fois 6 entre dans 15 ? Puis abaisse le chiffre suivant.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "15 ÷ 6 = 2 (reste 3). Abaisse le 6 : 36 ÷ 6 = 6. Résultat : 26.",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {
+            "id": "j01-e18-d1",
+            "enonce": "Combien de fois 6 entre dans 15 ?",
+            "type": "numerique",
+            "reponse": 2
+          },
+          {
+            "id": "j01-e18-d2",
+            "enonce": "Quel est le reste ? (15 − 12)",
+            "type": "numerique",
+            "reponse": 3
+          },
+          {
+            "id": "j01-e18-d3",
+            "enonce": "On abaisse le 6 : ça fait 36. Combien de fois 6 entre dans 36 ?",
+            "type": "numerique",
+            "reponse": 6
+          },
+          {
+            "id": "j01-e18-d4",
+            "enonce": "Donc 156 ÷ 6 = ?",
+            "type": "numerique",
+            "reponse": 26
+          }
+        ]
+      }
+    },
+    {
+      "id": "j01-e19",
+      "ordre_jour": 19,
+      "theme": "operations_posees",
+      "sous_theme": "soustraction_avec_retenues",
+      "scene_hp": "poudlard_express",
+      "narration": "Le Poudlard Express a fait 9 876 kilomètres depuis la première rentrée de l'année. L'année précédente, il avait fait 4 598 km à la même date.",
+      "type": "redige_court",
+      "competence": "Soustraction à 4 chiffres avec plusieurs retenues",
+      "difficulte_relative": 19,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Combien de kilomètres en plus le train a-t-il parcourus cette année par rapport à l'année dernière ? Calcule 9 876 − 4 598. (Donne juste le résultat)",
+      "reponse_attendue_redige": "5278",
+      "tolerance_numerique": 0,
+      "regex_validation": "^5\\s*278$|^5278$",
+      "explication_correcte": "Excellent ! 9 876 − 4 598 = 5 278.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Pose la soustraction. Tu auras 2 emprunts à gérer.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Unités : 6−8 impossible, emprunte → 16−8=8. Dizaines : 6 devenu 5, 5−9 impossible, emprunte → 15−9=6.",
+          "cout_points": 2
+        }
+      ]
+    },
+    {
+      "id": "j01-e20",
+      "ordre_jour": 20,
+      "theme": "operations_posees",
+      "sous_theme": "multiplication_x1chiffre",
+      "scene_hp": "poudlard_arrivee",
+      "narration": "À la gare de Pré-au-Lard, 8 calèches tirées par des Sombrals attendent les élèves. Chaque calèche peut transporter 327 livres de bagages.",
+      "type": "redige_court",
+      "competence": "Multiplication d'un nombre à 3 chiffres par 1 chiffre",
+      "difficulte_relative": 20,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "Combien de livres de bagages les 8 calèches peuvent-elles transporter au maximum en tout ? Calcule 327 × 8. (Juste le résultat)",
+      "reponse_attendue_redige": "2616",
+      "tolerance_numerique": 0,
+      "regex_validation": "^2\\s*616$|^2616$",
+      "explication_correcte": "Bravo ! 327 × 8 = 2 616. (7×8=56 retiens 5 ; 2×8=16 +5=21 retiens 2 ; 3×8=24 +2=26)",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Pose la multiplication. Pense bien à ajouter la retenue à chaque étape.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Unités : 7×8=56 (pose 6 retiens 5). Dizaines : 2×8=16, +5=21 (pose 1 retiens 2). Centaines : 3×8=24, +2=26.",
+          "cout_points": 2
+        }
+      ]
+    },
+    {
+      "id": "j01-e21",
+      "ordre_jour": 21,
+      "theme": "operations_posees",
+      "sous_theme": "division_simple",
+      "scene_hp": "poudlard_arrivee",
+      "narration": "Madame Bibine veut répartir 540 baguettes d'entraînement entre 9 salles de classe.",
+      "type": "qcm",
+      "competence": "Division d'un nombre à 3 chiffres par 1 chiffre",
+      "difficulte_relative": 21,
+      "duree_estimee_sec": 75,
+      "points_maison": 5,
+      "enonce": "Combien de baguettes chaque salle reçoit-elle ? Calcule 540 ÷ 9.",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "60 baguettes"
+        },
+        {
+          "id": "b",
+          "texte": "54 baguettes"
+        },
+        {
+          "id": "c",
+          "texte": "50 baguettes"
+        },
+        {
+          "id": "d",
+          "texte": "65 baguettes"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bien ! 540 ÷ 9 = 60. (9 × 6 = 54, donc 9 × 60 = 540.)",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Combien de fois 9 entre dans 54 ?",
+          "cout_points": 1
+        }
+      ]
+    },
+    {
+      "id": "j01-e22",
+      "ordre_jour": 22,
+      "theme": "operations_posees",
+      "sous_theme": "addition_4_nombres",
+      "scene_hp": "grande_salle_choixpeau",
+      "narration": "Dans la Grande Salle, le professeur McGonagall annonce les effectifs des 4 maisons cette année : Gryffondor 1 247 élèves, Serpentard 1 356, Serdaigle 1 189, Poufsouffle 1 098.",
+      "type": "redige_court",
+      "competence": "Addition de 4 nombres à 4 chiffres",
+      "difficulte_relative": 22,
+      "duree_estimee_sec": 120,
+      "points_maison": 6,
+      "enonce": "Combien y a-t-il d'élèves au total à Poudlard cette année ? Calcule 1 247 + 1 356 + 1 189 + 1 098. (Juste le résultat)",
+      "reponse_attendue_redige": "4890",
+      "tolerance_numerique": 0,
+      "regex_validation": "^4\\s*890$|^4890$",
+      "explication_correcte": "Excellent ! 1 247 + 1 356 + 1 189 + 1 098 = 4 890 élèves à Poudlard.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Pose l'addition en colonnes avec les 4 nombres bien alignés.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Tu peux additionner deux à deux : 1247+1356=2603 ; 1189+1098=2287 ; puis 2603+2287.",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {
+            "id": "j01-e22-d1",
+            "enonce": "Calcule 1 247 + 1 356.",
+            "type": "numerique",
+            "reponse": 2603
+          },
+          {
+            "id": "j01-e22-d2",
+            "enonce": "Calcule 1 189 + 1 098.",
+            "type": "numerique",
+            "reponse": 2287
+          },
+          {
+            "id": "j01-e22-d3",
+            "enonce": "Maintenant additionne les deux résultats : 2 603 + 2 287 = ?",
+            "type": "numerique",
+            "reponse": 4890
+          }
+        ]
+      }
+    },
+    {
+      "id": "j01-e23",
+      "ordre_jour": 23,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_argent",
+      "scene_hp": "chemin_de_traverse",
+      "narration": "Avant de monter dans le train, Harry repense au moment où il a acheté ses robes chez Madame Guipure : 3 robes à 245 mornilles chacune, payées avec un billet de 1 000 mornilles.",
+      "type": "redige_court",
+      "competence": "Problème à 2 étapes : multiplication puis soustraction (rendu de monnaie)",
+      "difficulte_relative": 23,
+      "duree_estimee_sec": 180,
+      "points_maison": 7,
+      "enonce": "Combien de mornilles Madame Guipure a-t-elle rendues à Harry ? (Juste le nombre)",
+      "reponse_attendue_redige": "265",
+      "tolerance_numerique": 0,
+      "regex_validation": "^265$",
+      "explication_correcte": "Parfait ! 3 robes × 245 = 735 mornilles dépensés. Rendu : 1 000 − 735 = 265 mornilles.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Étape 1 : calcule le prix total des 3 robes. Étape 2 : soustrais ce prix de 1 000.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Étape 1 : 245 × 3 = 735. Étape 2 : 1 000 − 735 = ?",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {
+            "id": "j01-e23-d1",
+            "enonce": "Quel est le prix total des 3 robes ? (245 × 3)",
+            "type": "numerique",
+            "reponse": 735
+          },
+          {
+            "id": "j01-e23-d2",
+            "enonce": "Combien Madame Guipure a-t-elle rendu ? (1 000 − 735)",
+            "type": "numerique",
+            "reponse": 265
+          }
+        ]
+      }
+    },
+    {
+      "id": "j01-e24",
+      "ordre_jour": 24,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_capacite",
+      "scene_hp": "poudlard_express",
+      "narration": "Le Poudlard Express a 12 wagons. Chaque wagon contient 24 places assises. Pour ce voyage, 198 places sont déjà occupées.",
+      "type": "redige_court",
+      "competence": "Problème à 2 étapes : multiplication puis soustraction",
+      "difficulte_relative": 24,
+      "duree_estimee_sec": 180,
+      "points_maison": 7,
+      "enonce": "Combien de places sont encore libres dans le train ? (Juste le nombre)",
+      "reponse_attendue_redige": "90",
+      "tolerance_numerique": 0,
+      "regex_validation": "^90$",
+      "explication_correcte": "Bravo ! Capacité totale : 12 × 24 = 288 places. Places libres : 288 − 198 = 90.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Étape 1 : combien de places en tout ? Étape 2 : combien restent libres ?",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Étape 1 : 12 × 24 = 288 places. Étape 2 : 288 − 198 = ?",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {
+            "id": "j01-e24-d1",
+            "enonce": "Combien de places en tout dans les 12 wagons ? (12 × 24)",
+            "type": "numerique",
+            "reponse": 288
+          },
+          {
+            "id": "j01-e24-d2",
+            "enonce": "Combien de places libres ? (288 − 198)",
+            "type": "numerique",
+            "reponse": 90
+          }
+        ]
+      }
+    },
+    {
+      "id": "j01-e25",
+      "ordre_jour": 25,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes",
+      "scene_hp": "poudlard_express",
+      "narration": "Ron sort les 6 boîtes de Chocogrenouilles de son sac. Chaque boîte contient 24 chocolats. Sur le trajet, il en mange 17.",
+      "type": "qcm",
+      "competence": "Problème à 2 étapes (multiplication puis soustraction)",
+      "difficulte_relative": 25,
+      "duree_estimee_sec": 150,
+      "points_maison": 6,
+      "enonce": "Combien de Chocogrenouilles reste-t-il à Ron à la fin du voyage ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "127 Chocogrenouilles"
+        },
+        {
+          "id": "b",
+          "texte": "117 Chocogrenouilles"
+        },
+        {
+          "id": "c",
+          "texte": "144 Chocogrenouilles"
+        },
+        {
+          "id": "d",
+          "texte": "131 Chocogrenouilles"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bien ! 6 × 24 = 144 chocolats au départ. 144 − 17 = 127 restants.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Étape 1 : combien Ron a-t-il de Chocogrenouilles au départ ? Étape 2 : enlève ce qu'il a mangé.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Étape 1 : 6 × 24 = 144. Étape 2 : 144 − 17 = ?",
+          "cout_points": 2
+        }
+      ]
+    },
+    {
+      "id": "j01-e26",
+      "ordre_jour": 26,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_conversion_monnaie",
+      "scene_hp": "gringotts",
+      "narration": "Astuce sorcière : 1 Gallion = 17 Mornilles. Ollivander a vendu 4 baguettes à 358 Mornilles chacune.",
+      "type": "redige_court",
+      "competence": "Problème à 2 étapes avec division (conversion d'unités)",
+      "difficulte_relative": 26,
+      "duree_estimee_sec": 240,
+      "points_maison": 8,
+      "enonce": "Combien de Gallions ENTIERS Ollivander peut-il échanger à Gringotts avec sa recette du jour ? (Juste le nombre de Gallions, sans le reste)",
+      "reponse_attendue_redige": "84",
+      "tolerance_numerique": 0,
+      "regex_validation": "^84$",
+      "explication_correcte": "Bravo ! Recette : 4 × 358 = 1 432 Mornilles. Conversion : 1 432 ÷ 17 = 84 Gallions et il reste 4 Mornilles.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Étape 1 : combien Ollivander a-t-il gagné en Mornilles ? Étape 2 : divise par 17 pour avoir les Gallions.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Étape 1 : 4 × 358 = 1 432 Mornilles. Étape 2 : 1 432 ÷ 17. Combien de fois 17 entre dans 1 432 ?",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {
+            "id": "j01-e26-d1",
+            "enonce": "Calcule la recette en Mornilles : 4 × 358 = ?",
+            "type": "numerique",
+            "reponse": 1432
+          },
+          {
+            "id": "j01-e26-d2",
+            "enonce": "Combien de fois 17 entre dans 143 ?",
+            "type": "numerique",
+            "reponse": 8
+          },
+          {
+            "id": "j01-e26-d3",
+            "enonce": "Donc 1 432 ÷ 17 = combien (quotient entier) ?",
+            "type": "numerique",
+            "reponse": 84
+          }
+        ]
+      }
+    },
+    {
+      "id": "j01-e27",
+      "ordre_jour": 27,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_distance",
+      "scene_hp": "poudlard_express",
+      "narration": "Le Poudlard Express roule à 75 km/h pendant 4 heures, puis ralentit à 50 km/h pendant les 2 dernières heures avant Pré-au-Lard.",
+      "type": "qcm",
+      "competence": "Problème à 2 étapes : 2 multiplications puis addition",
+      "difficulte_relative": 27,
+      "duree_estimee_sec": 180,
+      "points_maison": 7,
+      "enonce": "Quelle distance totale le train a-t-il parcourue ?",
+      "choix": [
+        {
+          "id": "a",
+          "texte": "400 km"
+        },
+        {
+          "id": "b",
+          "texte": "350 km"
+        },
+        {
+          "id": "c",
+          "texte": "450 km"
+        },
+        {
+          "id": "d",
+          "texte": "300 km"
+        }
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Excellent ! Phase 1 : 75 × 4 = 300 km. Phase 2 : 50 × 2 = 100 km. Total : 300 + 100 = 400 km.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Distance = vitesse × temps. Calcule séparément les deux phases du voyage, puis additionne.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Phase 1 : 75 × 4. Phase 2 : 50 × 2. Total : addition des deux.",
+          "cout_points": 2
+        }
+      ]
+    },
+    {
+      "id": "j01-e28",
+      "ordre_jour": 28,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_2_etapes_combinaisons",
+      "scene_hp": "poudlard_express",
+      "narration": "Hermione a 5 boîtes de friandises. 3 boîtes contiennent 124 chocolats chacune, et 2 boîtes contiennent 87 dragées chacune.",
+      "type": "redige_court",
+      "competence": "Problème à 2 étapes : 2 multiplications puis addition",
+      "difficulte_relative": 28,
+      "duree_estimee_sec": 210,
+      "points_maison": 7,
+      "enonce": "Combien Hermione a-t-elle de friandises au total ? (Juste le nombre)",
+      "reponse_attendue_redige": "546",
+      "tolerance_numerique": 0,
+      "regex_validation": "^546$",
+      "explication_correcte": "Bravo ! 3 × 124 = 372 chocolats. 2 × 87 = 174 dragées. Total : 372 + 174 = 546.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Calcule séparément le nombre de chocolats et le nombre de dragées, puis additionne.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "Chocolats : 124 × 3 = 372. Dragées : 87 × 2 = 174. Total : 372 + 174 = ?",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_270s",
+        "micro_etapes": [
+          {
+            "id": "j01-e28-d1",
+            "enonce": "Combien de chocolats ? (3 × 124)",
+            "type": "numerique",
+            "reponse": 372
+          },
+          {
+            "id": "j01-e28-d2",
+            "enonce": "Combien de dragées ? (2 × 87)",
+            "type": "numerique",
+            "reponse": 174
+          },
+          {
+            "id": "j01-e28-d3",
+            "enonce": "Total des friandises : 372 + 174 = ?",
+            "type": "numerique",
+            "reponse": 546
+          }
+        ]
+      }
+    },
+    {
+      "id": "j01-e29",
+      "ordre_jour": 29,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_libermann_3sousq",
+      "scene_hp": "gringotts_retour",
+      "narration": "Mini-épreuve type Libermann. Harry repart de Gringotts avec 1 250 Gallions. Il doit acheter ses fournitures (547 Gallions) et la cage à hibou (358 Gallions). Puis, Hagrid lui offre 12 Sicles pour son anniversaire (1 Gallion = 4 Sicles dans cette version simplifiée).",
+      "type": "redige_libre",
+      "competence": "Problème multi-étapes type concours Libermann (3 sous-questions)",
+      "difficulte_relative": 29,
+      "duree_estimee_sec": 360,
+      "points_maison": 12,
+      "enonce": "a) Combien reste-t-il à Harry après ses achats (1 250 − 547 − 358) ? b) Combien de Gallions valent les 12 Sicles offerts par Hagrid (12 ÷ 4) ? c) Quel est le montant final que Harry a dans sa bourse ?",
+      "reponse_attendue_redige": "a) 345 Gallions ; b) 3 Gallions ; c) 348 Gallions",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 1 250 − 547 − 358 = 345 Gallions",
+        "b) 12 Sicles ÷ 4 = 3 Gallions (car 1 Gallion = 4 Sicles ici)",
+        "c) 345 + 3 = 348 Gallions",
+        "Accepter les variations d'écriture : '345', '345 G', '345 Gallions'"
+      ],
+      "explication_correcte": "Bravo ! a) 1 250 − 547 = 703 ; 703 − 358 = 345. b) 12 ÷ 4 = 3 Gallions. c) 345 + 3 = 348 Gallions au total.",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "Traite les 3 sous-questions une par une. a) D'abord toutes les soustractions. b) Une division simple. c) Additionne le reste et le cadeau.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "a) 1250 − 547 = 703 ; 703 − 358 = ? b) 12 ÷ 4 = ? c) Résultat de a) + résultat de b).",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_360s",
+        "micro_etapes": [
+          {
+            "id": "j01-e29-d1",
+            "enonce": "Calcule 1 250 − 547.",
+            "type": "numerique",
+            "reponse": 703
+          },
+          {
+            "id": "j01-e29-d2",
+            "enonce": "Maintenant 703 − 358 = ?",
+            "type": "numerique",
+            "reponse": 345
+          },
+          {
+            "id": "j01-e29-d3",
+            "enonce": "12 Sicles ÷ 4 = ? Gallions.",
+            "type": "numerique",
+            "reponse": 3
+          },
+          {
+            "id": "j01-e29-d4",
+            "enonce": "Total final : 345 + 3 = ?",
+            "type": "numerique",
+            "reponse": 348
+          }
+        ]
+      }
+    },
+    {
+      "id": "j01-e30",
+      "ordre_jour": 30,
+      "theme": "probleme_synthese",
+      "sous_theme": "probleme_libermann_3sousq",
+      "scene_hp": "grande_salle_choixpeau",
+      "narration": "Cérémonie du Choixpeau. Cette année, 35 nouveaux élèves entrent en première année : 8 à Gryffondor, 9 à Serpentard, 7 à Serdaigle et le reste à Poufsouffle. Poudlard accueille traditionnellement 35 nouveaux élèves chaque année depuis 7 ans, en plus des 245 anciens élèves déjà présents avant ces 7 années.",
+      "type": "redige_libre",
+      "competence": "Problème multi-étapes type concours Libermann (3 sous-questions)",
+      "difficulte_relative": 30,
+      "duree_estimee_sec": 420,
+      "points_maison": 15,
+      "enonce": "a) Combien d'élèves entrent à Poufsouffle cette année ? b) Combien de nouveaux élèves Poudlard a-t-elle accueillis ces 7 dernières années en tout (35 par an pendant 7 ans) ? c) Combien d'élèves Poudlard compte-t-elle au total après ces 7 années (245 anciens + les nouveaux des 7 dernières années) ?",
+      "reponse_attendue_redige": "a) 11 ; b) 245 ; c) 490",
+      "validation_par_claude": true,
+      "criteres_validation_claude": [
+        "a) 35 − (8 + 9 + 7) = 35 − 24 = 11 élèves à Poufsouffle",
+        "b) 35 × 7 = 245 nouveaux élèves sur 7 ans",
+        "c) 245 (anciens) + 245 (nouveaux) = 490 élèves au total",
+        "Accepter les variations : '11', 'onze', '11 élèves'"
+      ],
+      "explication_correcte": "Excellent ! a) 8+9+7 = 24, donc 35−24 = 11 à Poufsouffle. b) 35 × 7 = 245 nouveaux élèves en 7 ans. c) 245 + 245 = 490 élèves au total. Bravo, tu es un vrai sorcier-mathématicien !",
+      "indices": [
+        {
+          "niveau": 1,
+          "texte": "a) Additionne les 3 autres maisons et soustrait de 35. b) Multiplication simple. c) Additionne les anciens et les nouveaux de la question b.",
+          "cout_points": 1
+        },
+        {
+          "niveau": 2,
+          "texte": "a) 8+9+7 = 24 ; 35−24 = ? b) 35 × 7 = ? c) 245 + résultat de b) = ?",
+          "cout_points": 2
+        }
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_420s",
+        "micro_etapes": [
+          {
+            "id": "j01-e30-d1",
+            "enonce": "Combien d'élèves entrent à Gryffondor + Serpentard + Serdaigle ? (8 + 9 + 7)",
+            "type": "numerique",
+            "reponse": 24
+          },
+          {
+            "id": "j01-e30-d2",
+            "enonce": "Donc combien à Poufsouffle ? (35 − 24)",
+            "type": "numerique",
+            "reponse": 11
+          },
+          {
+            "id": "j01-e30-d3",
+            "enonce": "Combien de nouveaux élèves en 7 ans ? (35 × 7)",
+            "type": "numerique",
+            "reponse": 245
+          },
+          {
+            "id": "j01-e30-d4",
+            "enonce": "Total final : 245 anciens + 245 nouveaux = ?",
+            "type": "numerique",
+            "reponse": 490
+          }
+        ]
+      }
+    }
+  ]
+}

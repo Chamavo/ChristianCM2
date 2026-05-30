@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 35 30% 95%;
+    --foreground: 28 30% 15%;
+  }
+  body {
+    @apply bg-stone-50 text-stone-900 font-serif antialiased;
+  }
+}
+
+@layer components {
+  .parchemin {
+    background: linear-gradient(135deg, #f4e4bc 0%, #e8d5a3 100%);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15), inset 0 0 40px rgba(139,69,19,0.08);
+  }
+  .btn-gryffondor {
+    @apply bg-gradient-to-r from-[#740001] to-[#ae0001] text-amber-100 font-bold py-3 px-6 rounded-lg shadow-md hover:from-[#ae0001] hover:to-[#D3A625] transition-all;
+  }
+}

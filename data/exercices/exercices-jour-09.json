@@ -1,0 +1,787 @@
+{
+  "jour": 9,
+  "titre": "L'intérieur du château — Périmètres, aires et figures planes",
+  "theme_principal": "geometrie_perimetres_aires",
+  "scene_globale": "Après le match de Quidditch, Harry explore l'intérieur du château de Poudlard avec Ron et Hermione : la salle commune de Gryffondor, les dortoirs, la Grande Salle, la salle de classe de métamorphose, les couloirs et les tapisseries. Le professeur McGonagall en profite pour leur faire mesurer toutes ces pièces magiques.",
+  "mix_qcm_redige": "50/50",
+  "duree_estimee_min": 160,
+  "exercices": [
+    {
+      "id": "j09-e01",
+      "ordre_jour": 1,
+      "theme": "geometrie",
+      "sous_theme": "identification_figures_planes",
+      "scene_hp": "salle_commune_gryffondor",
+      "narration": "Harry pousse le tableau de la Grosse Dame et découvre la salle commune de Gryffondor. Le tapis central a quatre côtés égaux et quatre angles droits.",
+      "type": "qcm",
+      "competence": "Identifier un carré",
+      "difficulte_relative": 1,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Une figure a 4 côtés de même longueur et 4 angles droits. C'est quel quadrilatère ?",
+      "choix": [
+        {"id": "a", "texte": "Un rectangle"},
+        {"id": "b", "texte": "Un carré"},
+        {"id": "c", "texte": "Un triangle"},
+        {"id": "d", "texte": "Un losange quelconque"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! 4 côtés égaux + 4 angles droits = un carré. Le tapis est carré.",
+      "indices": [
+        {"niveau": 1, "texte": "Le rectangle a 4 angles droits, mais pas tous les côtés égaux. Le carré a les deux propriétés.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e02",
+      "ordre_jour": 2,
+      "theme": "geometrie",
+      "sous_theme": "identification_figures_planes",
+      "scene_hp": "salle_commune_gryffondor",
+      "narration": "Devant la cheminée, un grand tapis a 4 côtés mais seulement les côtés opposés sont égaux deux à deux.",
+      "type": "qcm",
+      "competence": "Identifier un rectangle",
+      "difficulte_relative": 2,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Une figure a 4 angles droits, des côtés opposés égaux mais pas tous les côtés égaux. C'est :",
+      "choix": [
+        {"id": "a", "texte": "Un carré"},
+        {"id": "b", "texte": "Un rectangle"},
+        {"id": "c", "texte": "Un triangle équilatéral"},
+        {"id": "d", "texte": "Un cercle"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Exact ! Le rectangle a 4 angles droits, mais sa longueur diffère de sa largeur.",
+      "indices": [
+        {"niveau": 1, "texte": "Le rectangle a deux paires de côtés égaux : 2 grands (longueur) et 2 petits (largeur).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e03",
+      "ordre_jour": 3,
+      "theme": "geometrie",
+      "sous_theme": "angles",
+      "scene_hp": "salle_metamorphose",
+      "narration": "Le professeur McGonagall trace au tableau trois angles différents avec sa baguette.",
+      "type": "qcm",
+      "competence": "Reconnaître un angle droit",
+      "difficulte_relative": 3,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Un angle qui mesure exactement 90°, c'est un angle :",
+      "choix": [
+        {"id": "a", "texte": "Aigu"},
+        {"id": "b", "texte": "Droit"},
+        {"id": "c", "texte": "Obtus"},
+        {"id": "d", "texte": "Plat"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Parfait ! Un angle droit mesure 90°. On le repère avec l'équerre ou avec le petit carré dans le coin.",
+      "indices": [
+        {"niveau": 1, "texte": "Pense à l'angle d'un cahier ou d'une feuille : c'est un angle droit.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e04",
+      "ordre_jour": 4,
+      "theme": "geometrie",
+      "sous_theme": "angles",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall trace un angle plus petit que l'angle d'un livre.",
+      "type": "qcm",
+      "competence": "Reconnaître un angle aigu",
+      "difficulte_relative": 4,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Un angle plus petit qu'un angle droit s'appelle :",
+      "choix": [
+        {"id": "a", "texte": "Un angle aigu"},
+        {"id": "b", "texte": "Un angle obtus"},
+        {"id": "c", "texte": "Un angle plat"},
+        {"id": "d", "texte": "Un angle droit"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bien ! Aigu = plus petit que 90°. Comme la pointe d'une plume bien taillée.",
+      "indices": [
+        {"niveau": 1, "texte": "Aigu = pointu. Obtus = ouvert.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e05",
+      "ordre_jour": 5,
+      "theme": "geometrie",
+      "sous_theme": "angles",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall trace maintenant un angle bien plus ouvert, presque comme une porte entrouverte.",
+      "type": "qcm",
+      "competence": "Reconnaître un angle obtus",
+      "difficulte_relative": 5,
+      "duree_estimee_sec": 30,
+      "points_maison": 2,
+      "enonce": "Un angle plus grand qu'un angle droit (mais plus petit qu'un demi-tour) s'appelle :",
+      "choix": [
+        {"id": "a", "texte": "Un angle aigu"},
+        {"id": "b", "texte": "Un angle droit"},
+        {"id": "c", "texte": "Un angle obtus"},
+        {"id": "d", "texte": "Un angle nul"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Très bien ! L'angle obtus est plus grand qu'un angle droit : il est largement ouvert.",
+      "indices": [
+        {"niveau": 1, "texte": "Obtus = ouvert, comme une porte qui s'ouvre largement.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e06",
+      "ordre_jour": 6,
+      "theme": "geometrie",
+      "sous_theme": "perimetre_carre",
+      "scene_hp": "salle_commune_gryffondor",
+      "narration": "Hermione veut entourer le tapis carré de la salle commune avec un ruban d'or.",
+      "type": "qcm",
+      "competence": "Calculer le périmètre d'un carré",
+      "difficulte_relative": 6,
+      "duree_estimee_sec": 50,
+      "points_maison": 3,
+      "enonce": "Le tapis carré a un côté de 3 m. Quel est son périmètre ?",
+      "choix": [
+        {"id": "a", "texte": "9 m"},
+        {"id": "b", "texte": "12 m"},
+        {"id": "c", "texte": "6 m"},
+        {"id": "d", "texte": "15 m"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! Périmètre du carré = côté × 4 = 3 × 4 = 12 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Un carré a 4 côtés tous égaux. Périmètre = côté × 4.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e07",
+      "ordre_jour": 7,
+      "theme": "geometrie",
+      "sous_theme": "perimetre_rectangle",
+      "scene_hp": "dortoir_gryffondor",
+      "narration": "Harry mesure son dortoir, qui est un rectangle.",
+      "type": "qcm",
+      "competence": "Calculer le périmètre d'un rectangle",
+      "difficulte_relative": 7,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Le dortoir mesure 8 m de long et 5 m de large. Quel est son périmètre ?",
+      "choix": [
+        {"id": "a", "texte": "13 m"},
+        {"id": "b", "texte": "26 m"},
+        {"id": "c", "texte": "40 m"},
+        {"id": "d", "texte": "20 m"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Parfait ! Périmètre = (L + l) × 2 = (8 + 5) × 2 = 13 × 2 = 26 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Périmètre d'un rectangle = (Longueur + largeur) × 2.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e08",
+      "ordre_jour": 8,
+      "theme": "geometrie",
+      "sous_theme": "aire_carre",
+      "scene_hp": "salle_commune_gryffondor",
+      "narration": "Hermione veut savoir combien de coussins carrés peuvent tenir sur le tapis carré.",
+      "type": "qcm",
+      "competence": "Calculer l'aire d'un carré",
+      "difficulte_relative": 8,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Le tapis carré mesure 3 m de côté. Quelle est son aire ?",
+      "choix": [
+        {"id": "a", "texte": "9 m²"},
+        {"id": "b", "texte": "12 m²"},
+        {"id": "c", "texte": "6 m²"},
+        {"id": "d", "texte": "3 m²"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Excellent ! Aire du carré = côté × côté = 3 × 3 = 9 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Aire du carré = côté × côté.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e09",
+      "ordre_jour": 9,
+      "theme": "geometrie",
+      "sous_theme": "aire_rectangle",
+      "scene_hp": "dortoir_gryffondor",
+      "narration": "Harry veut savoir combien de carreaux de 1 m² il faut pour recouvrir le sol du dortoir.",
+      "type": "qcm",
+      "competence": "Calculer l'aire d'un rectangle",
+      "difficulte_relative": 9,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Le dortoir mesure 8 m sur 5 m. Quelle est son aire ?",
+      "choix": [
+        {"id": "a", "texte": "13 m²"},
+        {"id": "b", "texte": "26 m²"},
+        {"id": "c", "texte": "40 m²"},
+        {"id": "d", "texte": "45 m²"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bien ! Aire du rectangle = Longueur × largeur = 8 × 5 = 40 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Aire du rectangle = L × l (et pas L + l, attention !).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e10",
+      "ordre_jour": 10,
+      "theme": "geometrie",
+      "sous_theme": "identification_figures_planes",
+      "scene_hp": "couloir_chateau",
+      "narration": "Dans le couloir, une tapisserie représente trois triangles différents.",
+      "type": "qcm",
+      "competence": "Reconnaître un triangle équilatéral",
+      "difficulte_relative": 10,
+      "duree_estimee_sec": 40,
+      "points_maison": 3,
+      "enonce": "Un triangle qui a ses 3 côtés égaux s'appelle un triangle :",
+      "choix": [
+        {"id": "a", "texte": "Rectangle"},
+        {"id": "b", "texte": "Isocèle"},
+        {"id": "c", "texte": "Équilatéral"},
+        {"id": "d", "texte": "Quelconque"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Bravo ! Équi = égaux, latéral = côtés. Donc équilatéral = côtés égaux.",
+      "indices": [
+        {"niveau": 1, "texte": "Isocèle : 2 côtés égaux. Équilatéral : 3 côtés égaux. Rectangle : un angle droit.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e11",
+      "ordre_jour": 11,
+      "theme": "geometrie",
+      "sous_theme": "perimetre_triangle",
+      "scene_hp": "couloir_chateau",
+      "narration": "Hermione observe un triangle dessiné sur la tapisserie.",
+      "type": "qcm",
+      "competence": "Calculer le périmètre d'un triangle",
+      "difficulte_relative": 11,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Un triangle a pour côtés 7 cm, 9 cm et 12 cm. Quel est son périmètre ?",
+      "choix": [
+        {"id": "a", "texte": "28 cm"},
+        {"id": "b", "texte": "21 cm"},
+        {"id": "c", "texte": "756 cm"},
+        {"id": "d", "texte": "32 cm"}
+      ],
+      "reponse_correcte": "a",
+      "explication_correcte": "Bien ! Périmètre du triangle = somme des 3 côtés = 7 + 9 + 12 = 28 cm.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour le périmètre d'un triangle (ou de n'importe quelle figure), additionne tous les côtés.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e12",
+      "ordre_jour": 12,
+      "theme": "geometrie",
+      "sous_theme": "perimetre_triangle_equilateral",
+      "scene_hp": "couloir_chateau",
+      "narration": "Un triangle équilatéral est dessiné en or sur le mur.",
+      "type": "qcm",
+      "competence": "Calculer le périmètre d'un triangle équilatéral",
+      "difficulte_relative": 12,
+      "duree_estimee_sec": 50,
+      "points_maison": 4,
+      "enonce": "Un triangle équilatéral a un côté de 6 cm. Quel est son périmètre ?",
+      "choix": [
+        {"id": "a", "texte": "12 cm"},
+        {"id": "b", "texte": "18 cm"},
+        {"id": "c", "texte": "24 cm"},
+        {"id": "d", "texte": "36 cm"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Parfait ! Triangle équilatéral = 3 côtés égaux. Périmètre = 6 × 3 = 18 cm.",
+      "indices": [
+        {"niveau": 1, "texte": "Tous les côtés sont égaux. Donc périmètre = côté × 3.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e13",
+      "ordre_jour": 13,
+      "theme": "geometrie",
+      "sous_theme": "aire_triangle",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall trace un triangle rectangle au tableau, dont la base mesure 8 cm et la hauteur 5 cm.",
+      "type": "qcm",
+      "competence": "Calculer l'aire d'un triangle",
+      "difficulte_relative": 13,
+      "duree_estimee_sec": 70,
+      "points_maison": 5,
+      "enonce": "Quelle est l'aire d'un triangle dont la base mesure 8 cm et la hauteur 5 cm ?",
+      "choix": [
+        {"id": "a", "texte": "40 cm²"},
+        {"id": "b", "texte": "20 cm²"},
+        {"id": "c", "texte": "13 cm²"},
+        {"id": "d", "texte": "26 cm²"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bravo ! Aire du triangle = (base × hauteur) ÷ 2 = (8 × 5) ÷ 2 = 40 ÷ 2 = 20 cm².",
+      "indices": [
+        {"niveau": 1, "texte": "Formule : aire du triangle = (base × hauteur) ÷ 2.", "cout_points": 1},
+        {"niveau": 2, "texte": "D'abord 8 × 5 = 40. Ensuite divise par 2 : 40 ÷ 2 = ?", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j09-e14",
+      "ordre_jour": 14,
+      "theme": "geometrie",
+      "sous_theme": "aire_rectangle",
+      "scene_hp": "grande_salle",
+      "narration": "La Grande Salle est immense. Le sol forme un rectangle parfait.",
+      "type": "qcm",
+      "competence": "Calculer l'aire d'un rectangle (grandes dimensions)",
+      "difficulte_relative": 14,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "La Grande Salle de Poudlard mesure 30 m de long sur 12 m de large. Quelle est son aire ?",
+      "choix": [
+        {"id": "a", "texte": "42 m²"},
+        {"id": "b", "texte": "84 m²"},
+        {"id": "c", "texte": "360 m²"},
+        {"id": "d", "texte": "3 600 m²"}
+      ],
+      "reponse_correcte": "c",
+      "explication_correcte": "Exact ! Aire = 30 × 12 = 360 m². Plus de 51 terrains de classe !",
+      "indices": [
+        {"niveau": 1, "texte": "Aire d'un rectangle = Longueur × largeur. Calcule 30 × 12.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e15",
+      "ordre_jour": 15,
+      "theme": "geometrie",
+      "sous_theme": "perimetre_carre",
+      "scene_hp": "grande_salle",
+      "narration": "Au milieu de la Grande Salle, le sol est décoré d'un grand carré magique.",
+      "type": "redige_court",
+      "competence": "Calculer le périmètre d'un carré",
+      "difficulte_relative": 15,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Le carré magique mesure 7 m de côté. Calcule son périmètre en m (donne juste le nombre).",
+      "reponse_attendue_redige": "28",
+      "tolerance_numerique": 0,
+      "regex_validation": "^28$",
+      "explication_correcte": "Parfait ! Périmètre du carré = côté × 4 = 7 × 4 = 28 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Tous les côtés du carré sont égaux. Multiplie le côté par 4.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e16",
+      "ordre_jour": 16,
+      "theme": "geometrie",
+      "sous_theme": "aire_carre",
+      "scene_hp": "grande_salle",
+      "narration": "Hermione veut connaître l'aire du carré magique pour pouvoir y poser sa cape d'invisibilité.",
+      "type": "redige_court",
+      "competence": "Calculer l'aire d'un carré",
+      "difficulte_relative": 16,
+      "duree_estimee_sec": 70,
+      "points_maison": 5,
+      "enonce": "Le carré magique mesure 7 m de côté. Calcule son aire en m² (donne juste le nombre).",
+      "reponse_attendue_redige": "49",
+      "tolerance_numerique": 0,
+      "regex_validation": "^49$",
+      "explication_correcte": "Excellent ! Aire du carré = côté × côté = 7 × 7 = 49 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Aire du carré = côté × côté. Calcule 7 × 7.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e17",
+      "ordre_jour": 17,
+      "theme": "geometrie",
+      "sous_theme": "aire_rectangle",
+      "scene_hp": "dortoir_gryffondor",
+      "narration": "Harry veut connaître l'aire du tapis rectangulaire à côté de son lit.",
+      "type": "redige_court",
+      "competence": "Calculer l'aire d'un rectangle",
+      "difficulte_relative": 17,
+      "duree_estimee_sec": 80,
+      "points_maison": 5,
+      "enonce": "Le tapis mesure 4 m de long sur 3 m de large. Calcule son aire en m² (donne juste le nombre).",
+      "reponse_attendue_redige": "12",
+      "tolerance_numerique": 0,
+      "regex_validation": "^12$",
+      "explication_correcte": "Bien joué ! Aire = L × l = 4 × 3 = 12 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Aire du rectangle = Longueur × largeur.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e18",
+      "ordre_jour": 18,
+      "theme": "geometrie",
+      "sous_theme": "aire_triangle",
+      "scene_hp": "salle_metamorphose",
+      "narration": "Un grand triangle est dessiné au tableau, de base 14 cm et de hauteur 6 cm.",
+      "type": "redige_court",
+      "competence": "Calculer l'aire d'un triangle",
+      "difficulte_relative": 18,
+      "duree_estimee_sec": 90,
+      "points_maison": 6,
+      "enonce": "Un triangle a une base de 14 cm et une hauteur de 6 cm. Calcule son aire en cm² (donne juste le nombre).",
+      "reponse_attendue_redige": "42",
+      "tolerance_numerique": 0,
+      "regex_validation": "^42$",
+      "explication_correcte": "Parfait ! Aire = (b × h) ÷ 2 = (14 × 6) ÷ 2 = 84 ÷ 2 = 42 cm².",
+      "indices": [
+        {"niveau": 1, "texte": "Formule : aire du triangle = (base × hauteur) ÷ 2.", "cout_points": 1},
+        {"niveau": 2, "texte": "Calcule d'abord 14 × 6, puis divise par 2.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_180s",
+        "micro_etapes": [
+          {"id": "j09-e18-d1", "enonce": "Combien font 14 × 6 ?", "type": "numerique", "reponse": 84},
+          {"id": "j09-e18-d2", "enonce": "Maintenant divise par 2 : 84 ÷ 2 = ?", "type": "numerique", "reponse": 42}
+        ]
+      }
+    },
+    {
+      "id": "j09-e19",
+      "ordre_jour": 19,
+      "theme": "geometrie",
+      "sous_theme": "perimetre_rectangle",
+      "scene_hp": "grande_salle",
+      "narration": "Hagrid veut entourer une grande table rectangulaire avec une guirlande pour le banquet.",
+      "type": "redige_court",
+      "competence": "Calculer le périmètre d'un rectangle",
+      "difficulte_relative": 19,
+      "duree_estimee_sec": 90,
+      "points_maison": 5,
+      "enonce": "La table mesure 12 m de long sur 2 m de large. Calcule son périmètre en m (donne juste le nombre).",
+      "reponse_attendue_redige": "28",
+      "tolerance_numerique": 0,
+      "regex_validation": "^28$",
+      "explication_correcte": "Bravo ! Périmètre = (L + l) × 2 = (12 + 2) × 2 = 14 × 2 = 28 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Périmètre d'un rectangle = (L + l) × 2.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e20",
+      "ordre_jour": 20,
+      "theme": "geometrie",
+      "sous_theme": "calcul_cote_carre",
+      "scene_hp": "salle_commune_gryffondor",
+      "narration": "Hermione sait que le périmètre d'un coussin carré est de 36 cm.",
+      "type": "qcm",
+      "competence": "Trouver le côté d'un carré connaissant son périmètre",
+      "difficulte_relative": 20,
+      "duree_estimee_sec": 80,
+      "points_maison": 5,
+      "enonce": "Le périmètre d'un coussin carré est 36 cm. Quel est son côté ?",
+      "choix": [
+        {"id": "a", "texte": "6 cm"},
+        {"id": "b", "texte": "9 cm"},
+        {"id": "c", "texte": "12 cm"},
+        {"id": "d", "texte": "18 cm"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Excellent ! Le carré a 4 côtés égaux. Côté = périmètre ÷ 4 = 36 ÷ 4 = 9 cm.",
+      "indices": [
+        {"niveau": 1, "texte": "Le périmètre = côté × 4. Donc côté = périmètre ÷ 4.", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e21",
+      "ordre_jour": 21,
+      "theme": "geometrie",
+      "sous_theme": "calcul_dimension_rectangle",
+      "scene_hp": "dortoir_gryffondor",
+      "narration": "Harry sait que son tapis rectangulaire a une aire de 24 m² et une largeur de 4 m. Il veut trouver sa longueur.",
+      "type": "redige_court",
+      "competence": "Trouver une dimension d'un rectangle connaissant aire et autre dimension",
+      "difficulte_relative": 21,
+      "duree_estimee_sec": 100,
+      "points_maison": 6,
+      "enonce": "Le tapis a une aire de 24 m² et une largeur de 4 m. Quelle est sa longueur en m ? (donne juste le nombre)",
+      "reponse_attendue_redige": "6",
+      "tolerance_numerique": 0,
+      "regex_validation": "^6$",
+      "explication_correcte": "Très bien ! Aire = L × l, donc L = aire ÷ l = 24 ÷ 4 = 6 m.",
+      "indices": [
+        {"niveau": 1, "texte": "Aire = L × l. Donc L = aire ÷ l.", "cout_points": 1},
+        {"niveau": 2, "texte": "Calcule 24 ÷ 4.", "cout_points": 2}
+      ]
+    },
+    {
+      "id": "j09-e22",
+      "ordre_jour": 22,
+      "theme": "geometrie",
+      "sous_theme": "identification_figures_planes",
+      "scene_hp": "couloir_chateau",
+      "narration": "Sur la tapisserie, Hermione observe un quadrilatère qui a deux côtés parallèles mais pas les autres.",
+      "type": "qcm",
+      "competence": "Identifier un trapèze",
+      "difficulte_relative": 22,
+      "duree_estimee_sec": 60,
+      "points_maison": 4,
+      "enonce": "Un quadrilatère qui a seulement deux côtés parallèles s'appelle :",
+      "choix": [
+        {"id": "a", "texte": "Un rectangle"},
+        {"id": "b", "texte": "Un trapèze"},
+        {"id": "c", "texte": "Un parallélogramme"},
+        {"id": "d", "texte": "Un losange"}
+      ],
+      "reponse_correcte": "b",
+      "explication_correcte": "Bien ! Le trapèze a exactement deux côtés parallèles (les bases). Tu utiliseras sa formule demain !",
+      "indices": [
+        {"niveau": 1, "texte": "Trapèze : deux côtés parallèles (de longueurs différentes en général).", "cout_points": 1}
+      ]
+    },
+    {
+      "id": "j09-e23",
+      "ordre_jour": 23,
+      "theme": "probleme_synthese",
+      "sous_theme": "perimetre_aire_rectangle",
+      "scene_hp": "dortoir_gryffondor",
+      "narration": "Harry veut acheter une frise pour le tour de son lit ET une couverture pour le couvrir. Le lit fait 2 m de long sur 1 m de large.",
+      "type": "redige_court",
+      "competence": "Résoudre un problème à 2 étapes (périmètre + aire)",
+      "difficulte_relative": 23,
+      "duree_estimee_sec": 180,
+      "points_maison": 8,
+      "enonce": "Le lit de Harry mesure 2 m sur 1 m. Calcule le périmètre + l'aire (en additionnant les deux résultats numériquement). Donne juste le nombre final.",
+      "reponse_attendue_redige": "8",
+      "tolerance_numerique": 0,
+      "regex_validation": "^8$",
+      "explication_correcte": "Bravo ! Périmètre = (2+1)×2 = 6 m. Aire = 2×1 = 2 m². Total = 6 + 2 = 8.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : calcule le périmètre. Étape 2 : calcule l'aire. Étape 3 : additionne les deux.", "cout_points": 1},
+        {"niveau": 2, "texte": "Périmètre = (L+l)×2 = (2+1)×2 = 6. Aire = L×l = 2×1 = 2. Total = 6 + 2.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j09-e23-d1", "enonce": "Quel est le périmètre du lit (2 m × 1 m) ?", "type": "numerique", "reponse": 6},
+          {"id": "j09-e23-d2", "enonce": "Quelle est l'aire du lit (2 m × 1 m) ?", "type": "numerique", "reponse": 2},
+          {"id": "j09-e23-d3", "enonce": "Additionne périmètre + aire : 6 + 2 = ?", "type": "numerique", "reponse": 8}
+        ]
+      }
+    },
+    {
+      "id": "j09-e24",
+      "ordre_jour": 24,
+      "theme": "probleme_synthese",
+      "sous_theme": "aire_carrelage",
+      "scene_hp": "salle_commune_gryffondor",
+      "narration": "Le concierge Rusard veut carreler la salle commune carrée avec des dalles carrées de 1 m de côté.",
+      "type": "redige_court",
+      "competence": "Calculer le nombre de dalles nécessaires",
+      "difficulte_relative": 24,
+      "duree_estimee_sec": 200,
+      "points_maison": 8,
+      "enonce": "La salle commune est un carré de 9 m de côté. Combien faut-il de dalles carrées de 1 m sur 1 m pour la recouvrir ? (donne juste le nombre)",
+      "reponse_attendue_redige": "81",
+      "tolerance_numerique": 0,
+      "regex_validation": "^81$",
+      "explication_correcte": "Excellent ! Aire de la salle = 9 × 9 = 81 m². Chaque dalle fait 1 m². Il faut donc 81 dalles.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule d'abord l'aire de la salle en m². Comme chaque dalle fait 1 m², ça donne directement le nombre.", "cout_points": 1},
+        {"niveau": 2, "texte": "Aire d'un carré = côté × côté = 9 × 9.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j09-e24-d1", "enonce": "Quelle est l'aire d'un carré de 9 m de côté ?", "type": "numerique", "reponse": 81},
+          {"id": "j09-e24-d2", "enonce": "Si chaque dalle fait 1 m², combien faut-il de dalles ?", "type": "numerique", "reponse": 81}
+        ]
+      }
+    },
+    {
+      "id": "j09-e25",
+      "ordre_jour": 25,
+      "theme": "probleme_synthese",
+      "sous_theme": "aire_triangle_pratique",
+      "scene_hp": "salle_metamorphose",
+      "narration": "McGonagall donne un défi : un fanion triangulaire est cousu sur la cape de Gryffondor.",
+      "type": "redige_court",
+      "competence": "Aire d'un triangle (application)",
+      "difficulte_relative": 25,
+      "duree_estimee_sec": 180,
+      "points_maison": 7,
+      "enonce": "Le fanion triangulaire a une base de 20 cm et une hauteur de 15 cm. Quelle est son aire en cm² ? (donne juste le nombre)",
+      "reponse_attendue_redige": "150",
+      "tolerance_numerique": 0,
+      "regex_validation": "^150$",
+      "explication_correcte": "Bravo ! Aire = (b × h) ÷ 2 = (20 × 15) ÷ 2 = 300 ÷ 2 = 150 cm².",
+      "indices": [
+        {"niveau": 1, "texte": "Aire du triangle = (base × hauteur) ÷ 2.", "cout_points": 1},
+        {"niveau": 2, "texte": "20 × 15 = 300. Maintenant divise par 2.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j09-e25-d1", "enonce": "Combien font 20 × 15 ?", "type": "numerique", "reponse": 300},
+          {"id": "j09-e25-d2", "enonce": "Divise 300 par 2.", "type": "numerique", "reponse": 150}
+        ]
+      }
+    },
+    {
+      "id": "j09-e26",
+      "ordre_jour": 26,
+      "theme": "probleme_synthese",
+      "sous_theme": "perimetre_cloture",
+      "scene_hp": "grande_salle",
+      "narration": "Hagrid pose une corde dorée autour d'une scène rectangulaire pour la cérémonie de répartition.",
+      "type": "redige_court",
+      "competence": "Périmètre rectangle + coût total",
+      "difficulte_relative": 26,
+      "duree_estimee_sec": 220,
+      "points_maison": 8,
+      "enonce": "La scène est un rectangle de 6 m sur 4 m. La corde coûte 3 Gallions le mètre. Combien Hagrid va-t-il payer au total ? (donne juste le nombre de Gallions)",
+      "reponse_attendue_redige": "60",
+      "tolerance_numerique": 0,
+      "regex_validation": "^60$",
+      "explication_correcte": "Parfait ! Périmètre = (6+4)×2 = 20 m. Coût = 20 × 3 = 60 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : périmètre de la scène. Étape 2 : multiplie par 3 Gallions/m.", "cout_points": 1},
+        {"niveau": 2, "texte": "Périmètre = (6+4)×2 = 20 m. Coût total = 20 × 3.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_240s",
+        "micro_etapes": [
+          {"id": "j09-e26-d1", "enonce": "Quel est le périmètre d'un rectangle de 6 m sur 4 m ?", "type": "numerique", "reponse": 20},
+          {"id": "j09-e26-d2", "enonce": "À 3 Gallions le mètre, combien coûtent 20 m ?", "type": "numerique", "reponse": 60}
+        ]
+      }
+    },
+    {
+      "id": "j09-e27",
+      "ordre_jour": 27,
+      "theme": "probleme_synthese",
+      "sous_theme": "aire_peinture",
+      "scene_hp": "salle_metamorphose",
+      "narration": "Rusard veut repeindre le sol carré de la salle de métamorphose. Un pot de peinture couvre 6 m².",
+      "type": "redige_court",
+      "competence": "Aire carré + division (nombre de pots)",
+      "difficulte_relative": 27,
+      "duree_estimee_sec": 240,
+      "points_maison": 9,
+      "enonce": "La salle est un carré de 12 m de côté. Un pot de peinture couvre 6 m². Combien de pots faut-il pour tout peindre ? (donne juste le nombre)",
+      "reponse_attendue_redige": "24",
+      "tolerance_numerique": 0,
+      "regex_validation": "^24$",
+      "explication_correcte": "Bravo ! Aire = 12 × 12 = 144 m². Pots = 144 ÷ 6 = 24 pots.",
+      "indices": [
+        {"niveau": 1, "texte": "Étape 1 : aire de la salle. Étape 2 : divise par 6 (surface couverte par un pot).", "cout_points": 1},
+        {"niveau": 2, "texte": "Aire = 12 × 12 = 144 m². Pots = 144 ÷ 6.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j09-e27-d1", "enonce": "Quelle est l'aire d'un carré de 12 m de côté ?", "type": "numerique", "reponse": 144},
+          {"id": "j09-e27-d2", "enonce": "Si un pot couvre 6 m², combien de pots pour 144 m² ?", "type": "numerique", "reponse": 24}
+        ]
+      }
+    },
+    {
+      "id": "j09-e28",
+      "ordre_jour": 28,
+      "theme": "probleme_synthese",
+      "sous_theme": "perimetre_aire_combine",
+      "scene_hp": "dortoir_gryffondor",
+      "narration": "Harry veut entourer son lit (rectangle 2 m × 1 m) avec une corde lumineuse ET recouvrir le sol du dortoir (rectangle 8 m × 5 m) avec un tapis.",
+      "type": "redige_court",
+      "competence": "Combiner périmètre et aire de deux rectangles",
+      "difficulte_relative": 28,
+      "duree_estimee_sec": 280,
+      "points_maison": 10,
+      "enonce": "Calcule : (périmètre du lit 2 m × 1 m) + (aire du dortoir 8 m × 5 m). Donne juste le nombre final.",
+      "reponse_attendue_redige": "46",
+      "tolerance_numerique": 0,
+      "regex_validation": "^46$",
+      "explication_correcte": "Excellent ! Périmètre lit = (2+1)×2 = 6 m. Aire dortoir = 8×5 = 40 m². Total = 6 + 40 = 46.",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule séparément : périmètre du lit puis aire du dortoir, et additionne.", "cout_points": 1},
+        {"niveau": 2, "texte": "Périmètre du lit = (2+1)×2 = 6. Aire dortoir = 8×5 = 40. Somme = 6 + 40.", "cout_points": 2}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_300s",
+        "micro_etapes": [
+          {"id": "j09-e28-d1", "enonce": "Quel est le périmètre du lit (2 m × 1 m) ?", "type": "numerique", "reponse": 6},
+          {"id": "j09-e28-d2", "enonce": "Quelle est l'aire du dortoir (8 m × 5 m) ?", "type": "numerique", "reponse": 40},
+          {"id": "j09-e28-d3", "enonce": "Additionne 6 + 40.", "type": "numerique", "reponse": 46}
+        ]
+      }
+    },
+    {
+      "id": "j09-e29",
+      "ordre_jour": 29,
+      "theme": "probleme_libermann",
+      "sous_theme": "probleme_3_etapes",
+      "scene_hp": "grande_salle",
+      "narration": "Mini-épreuve type Concours Libermann. McGonagall te défie : la Grande Salle est un rectangle de 30 m sur 12 m. Au milieu, un grand tapis carré de 4 m de côté est posé. Le concierge Rusard veut cirer le sol qui RESTE visible (le sol moins le tapis).",
+      "type": "redige_libre",
+      "competence": "Problème Libermann : différence d'aires (rectangle moins carré)",
+      "difficulte_relative": 29,
+      "duree_estimee_sec": 360,
+      "points_maison": 12,
+      "enonce": "La Grande Salle (rectangle 30 m × 12 m) contient un tapis carré de 4 m de côté. Quelle est l'aire du sol restant à cirer en m² ?",
+      "reponse_attendue_redige": "344",
+      "tolerance_numerique": 0,
+      "regex_validation": "^344$",
+      "explication_correcte": "Brillant ! Aire totale = 30 × 12 = 360 m². Aire du tapis = 4 × 4 = 16 m². Aire à cirer = 360 - 16 = 344 m².",
+      "indices": [
+        {"niveau": 1, "texte": "Calcule l'aire totale de la salle, puis l'aire du tapis. Soustrais.", "cout_points": 2},
+        {"niveau": 2, "texte": "Aire salle = L × l = 30 × 12. Aire tapis = côté × côté = 4 × 4. Différence = aire salle - aire tapis.", "cout_points": 3}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_360s",
+        "micro_etapes": [
+          {"id": "j09-e29-d1", "enonce": "Quelle est l'aire de la Grande Salle (30 m × 12 m) ?", "type": "numerique", "reponse": 360},
+          {"id": "j09-e29-d2", "enonce": "Quelle est l'aire du tapis carré (4 m de côté) ?", "type": "numerique", "reponse": 16},
+          {"id": "j09-e29-d3", "enonce": "Soustrais : 360 - 16 = ?", "type": "numerique", "reponse": 344}
+        ]
+      },
+      "source_inspiration_libermann": "Problème type différence d'aires"
+    },
+    {
+      "id": "j09-e30",
+      "ordre_jour": 30,
+      "theme": "probleme_libermann",
+      "sous_theme": "synthese_geometrie",
+      "scene_hp": "grande_salle",
+      "narration": "Épreuve finale du jour. Dumbledore veut décorer la Grande Salle pour la fête : entourer chaque table rectangulaire avec une guirlande ET recouvrir chaque table d'une nappe. Il y a 4 tables identiques de 12 m × 2 m. La guirlande coûte 2 Gallions/m, la nappe coûte 3 Gallions/m².",
+      "type": "redige_libre",
+      "competence": "Problème Libermann : périmètre + aire + multiplication + addition (3 étapes)",
+      "difficulte_relative": 30,
+      "duree_estimee_sec": 480,
+      "points_maison": 15,
+      "enonce": "Il y a 4 tables identiques de 12 m × 2 m. Guirlande : 2 Gallions/m. Nappe : 3 Gallions/m². Combien coûte la décoration totale (les 4 tables) ? (donne juste le nombre de Gallions)",
+      "reponse_attendue_redige": "512",
+      "tolerance_numerique": 0,
+      "regex_validation": "^512$",
+      "explication_correcte": "Bravo, futur élève de Libermann ! Une table : périmètre = (12+2)×2 = 28 m → guirlande = 28 × 2 = 56 G. Aire = 12 × 2 = 24 m² → nappe = 24 × 3 = 72 G. Total une table = 56 + 72 = 128 G. Pour 4 tables : 128 × 4 = 512 Gallions.",
+      "indices": [
+        {"niveau": 1, "texte": "Pour UNE table : calcule son périmètre × 2 G (guirlande), puis son aire × 3 G (nappe), puis additionne. Ensuite multiplie par 4.", "cout_points": 2},
+        {"niveau": 2, "texte": "1 table → périmètre = 28 m, aire = 24 m². Guirlande = 56 G, nappe = 72 G. Total 1 table = 128 G. 4 tables = ?", "cout_points": 4}
+      ],
+      "decomposition": {
+        "declenchee_si": "2_erreurs_OU_temps_sup_480s",
+        "micro_etapes": [
+          {"id": "j09-e30-d1", "enonce": "Quel est le périmètre d'une table (12 m × 2 m) ?", "type": "numerique", "reponse": 28},
+          {"id": "j09-e30-d2", "enonce": "Coût de la guirlande pour une table (28 m × 2 G/m) ?", "type": "numerique", "reponse": 56},
+          {"id": "j09-e30-d3", "enonce": "Quelle est l'aire d'une table (12 m × 2 m) ?", "type": "numerique", "reponse": 24},
+          {"id": "j09-e30-d4", "enonce": "Coût de la nappe pour une table (24 m² × 3 G/m²) ?", "type": "numerique", "reponse": 72},
+          {"id": "j09-e30-d5", "enonce": "Coût total pour 1 table (56 + 72) ?", "type": "numerique", "reponse": 128},
+          {"id": "j09-e30-d6", "enonce": "Coût total pour 4 tables (128 × 4) ?", "type": "numerique", "reponse": 512}
+        ]
+      },
+      "source_inspiration_libermann": "Problème complexe multi-étapes : périmètre + aire + coût + multiplication"
+    }
+  ]
+}
