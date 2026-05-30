@@ -40,7 +40,7 @@ export function SidebarParent({ enfants, alertesNonLues }: SidebarParentProps) {
 
   return (
     <aside
-      className="w-60 shrink-0 bg-stone-100 border-r border-stone-200 min-h-[calc(100vh-4rem)] p-4 space-y-2 text-sm hidden md:block"
+      className="w-64 shrink-0 bg-stone-100 border-r border-stone-200 min-h-[calc(100vh-4rem)] p-4 space-y-2.5 text-base hidden md:block"
       aria-label="Navigation principale"
     >
       <div className="text-xs uppercase tracking-wider text-stone-500 mb-2 font-bold">
@@ -50,30 +50,30 @@ export function SidebarParent({ enfants, alertesNonLues }: SidebarParentProps) {
       <Link
         href="/dashboard"
         className={cn(
-          'flex items-center gap-2 px-3 py-2 rounded transition-colors',
+          'flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium transition-colors',
           isActive('/dashboard')
-            ? 'bg-amber-100 text-amber-900 font-semibold'
+            ? 'bg-amber-200 text-amber-900 font-bold'
             : 'hover:bg-stone-200 text-stone-700'
         )}
       >
-        <LayoutDashboard className="w-4 h-4" /> Dashboard
+        <LayoutDashboard className="w-6 h-6" /> Dashboard
       </Link>
 
       <Link
         href="/alertes"
         className={cn(
-          'flex items-center justify-between px-3 py-2 rounded transition-colors',
+          'flex items-center justify-between px-4 py-3 rounded-lg text-base font-medium transition-colors',
           isActive('/alertes')
-            ? 'bg-amber-100 text-amber-900 font-semibold'
+            ? 'bg-amber-200 text-amber-900 font-bold'
             : 'hover:bg-stone-200 text-stone-700'
         )}
       >
-        <span className="flex items-center gap-2">
-          <Bell className="w-4 h-4" /> Alertes
+        <span className="flex items-center gap-3">
+          <Bell className="w-6 h-6" /> Alertes
         </span>
         {alertesNonLues > 0 && (
           <span
-            className="bg-red-600 text-white text-xs px-2 py-0.5 rounded-full font-bold"
+            className="bg-red-600 text-white text-sm px-2.5 py-0.5 rounded-full font-bold"
             aria-label={`${alertesNonLues} alertes non lues`}
           >
             {alertesNonLues}
@@ -84,13 +84,13 @@ export function SidebarParent({ enfants, alertesNonLues }: SidebarParentProps) {
       <Link
         href="/reglages"
         className={cn(
-          'flex items-center gap-2 px-3 py-2 rounded transition-colors',
+          'flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium transition-colors',
           isActive('/reglages')
-            ? 'bg-amber-100 text-amber-900 font-semibold'
+            ? 'bg-amber-200 text-amber-900 font-bold'
             : 'hover:bg-stone-200 text-stone-700'
         )}
       >
-        <Settings className="w-4 h-4" /> Réglages
+        <Settings className="w-6 h-6" /> Réglages
       </Link>
 
       <div className="text-xs uppercase tracking-wider text-stone-500 mb-2 mt-6 font-bold">
@@ -98,7 +98,7 @@ export function SidebarParent({ enfants, alertesNonLues }: SidebarParentProps) {
       </div>
 
       {enfants.length === 0 && (
-        <p className="text-xs text-stone-400 px-3 py-2">
+        <p className="text-sm text-stone-400 px-4 py-2">
           Aucun enfant pour le moment.
         </p>
       )}
@@ -108,13 +108,13 @@ export function SidebarParent({ enfants, alertesNonLues }: SidebarParentProps) {
           key={e.id}
           href={`/enfants/${e.id}`}
           className={cn(
-            'flex items-center gap-2 px-3 py-2 rounded transition-colors',
+            'flex items-center gap-3 px-4 py-3 rounded-lg text-base transition-colors',
             pathname?.startsWith(`/enfants/${e.id}`)
-              ? 'bg-stone-200 font-semibold text-stone-900'
+              ? 'bg-stone-200 font-bold text-stone-900'
               : 'hover:bg-stone-200 text-stone-700'
           )}
         >
-          <span aria-hidden="true">
+          <span className="text-xl" aria-hidden="true">
             {e.maison_choisie ? EMOJI_MAISON[e.maison_choisie] : '👤'}
           </span>
           <span className="truncate">
@@ -125,12 +125,12 @@ export function SidebarParent({ enfants, alertesNonLues }: SidebarParentProps) {
 
       <Link
         href="/enfants/nouveau"
-        className="flex items-center gap-2 px-3 py-2 rounded hover:bg-stone-200 text-stone-500 italic"
+        className="flex items-center gap-3 px-4 py-3 rounded-lg text-base hover:bg-stone-200 text-stone-600 font-medium"
       >
-        <UserPlus className="w-4 h-4" /> Ajouter un enfant
+        <UserPlus className="w-6 h-6" /> Ajouter un enfant
       </Link>
 
-      <div className="pt-6 mt-6 border-t border-stone-200 text-xs text-stone-400 px-3">
+      <div className="pt-6 mt-6 border-t border-stone-200 text-sm text-stone-400 px-3">
         <GraduationCap className="w-4 h-4 inline mr-1" /> Maths à l&apos;école des sorciers · CM2
       </div>
     </aside>

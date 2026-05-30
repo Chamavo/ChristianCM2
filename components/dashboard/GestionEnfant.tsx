@@ -54,27 +54,27 @@ export function GestionEnfant({ childId, childName }: GestionEnfantProps) {
         </div>
       )}
       {msg && <p className="mb-2 text-xs text-stone-600">{msg}</p>}
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2.5">
         <button
           onClick={handleResetPin}
           disabled={isPending}
-          className="inline-flex items-center gap-1 rounded-md bg-stone-50 px-2.5 py-1.5 text-xs font-medium text-stone-700 border border-stone-200 hover:bg-stone-100 disabled:opacity-50"
+          className="inline-flex items-center gap-2 rounded-lg bg-stone-100 px-4 py-2.5 text-sm font-semibold text-stone-800 border border-stone-300 hover:bg-stone-200 shadow-sm disabled:opacity-50"
         >
-          <KeyRound className="w-3.5 h-3.5" /> Nouveau PIN
+          <KeyRound className="w-5 h-5" /> Nouveau PIN
         </button>
         <button
           onClick={handleResetProgress}
           disabled={isPending}
-          className="inline-flex items-center gap-1 rounded-md bg-amber-50 px-2.5 py-1.5 text-xs font-medium text-amber-700 border border-amber-200 hover:bg-amber-100 disabled:opacity-50"
+          className="inline-flex items-center gap-2 rounded-lg bg-amber-100 px-4 py-2.5 text-sm font-semibold text-amber-800 border border-amber-300 hover:bg-amber-200 shadow-sm disabled:opacity-50"
         >
-          <RotateCcw className="w-3.5 h-3.5" /> Réinitialiser
+          <RotateCcw className="w-5 h-5" /> Réinitialiser
         </button>
         <button
           onClick={handleDelete}
           disabled={isPending}
-          className="inline-flex items-center gap-1 rounded-md bg-red-50 px-2.5 py-1.5 text-xs font-medium text-red-700 border border-red-200 hover:bg-red-100 disabled:opacity-50"
+          className="inline-flex items-center gap-2 rounded-lg bg-red-100 px-4 py-2.5 text-sm font-semibold text-red-800 border border-red-300 hover:bg-red-200 shadow-sm disabled:opacity-50"
         >
-          <Trash2 className="w-3.5 h-3.5" /> Supprimer
+          <Trash2 className="w-5 h-5" /> Supprimer
         </button>
       </div>
     </div>
