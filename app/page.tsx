@@ -6,7 +6,7 @@ export default function Landing() {
     <main className="relative min-h-screen w-full overflow-hidden bg-stone-950">
       {/* Image HERO plein écran */}
       <Image
-        src="/HERO_Potter.png"
+        src="https://olnlkvoldpdlkowlejos.supabase.co/storage/v1/object/public/public-assets/HERO_Potter.png"
         alt="Élèves sorciers travaillant les maths dans une salle de Poudlard"
         fill
         priority
