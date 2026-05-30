@@ -110,24 +110,24 @@ export default async function ParentLayout({
 
         {/* Navigation mobile compacte (visible sous le header) */}
         <nav
-          className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-stone-200 z-30 flex justify-around py-2 text-xs"
+          className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t-2 border-stone-200 z-30 flex justify-around py-3 text-sm font-semibold shadow-[0_-2px_8px_rgba(0,0,0,0.06)]"
           aria-label="Navigation mobile"
         >
-          <Link href="/dashboard" className="text-stone-700 px-3 py-1">
+          <Link href="/dashboard" className="text-stone-700 px-4 py-2 rounded-lg active:bg-stone-100">
             Dashboard
           </Link>
           <Link
             href="/alertes"
-            className="text-stone-700 px-3 py-1 inline-flex items-center gap-1"
+            className="text-stone-700 px-4 py-2 rounded-lg active:bg-stone-100 inline-flex items-center gap-1.5"
           >
             Alertes
             {(alertesNonLues ?? 0) > 0 && (
-              <span className="bg-red-600 text-white px-1.5 py-0.5 rounded-full text-[10px]">
+              <span className="bg-red-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">
                 {alertesNonLues}
               </span>
             )}
           </Link>
-          <Link href="/reglages" className="text-stone-700 px-3 py-1">
+          <Link href="/reglages" className="text-stone-700 px-4 py-2 rounded-lg active:bg-stone-100">
             Réglages
           </Link>
         </nav>
