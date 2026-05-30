@@ -44,3 +44,8 @@ yarn-error.log*
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Secrets / notes locales (NE JAMAIS commit)
+supabase/Supabase psswd.txt
+*psswd*
+build.log

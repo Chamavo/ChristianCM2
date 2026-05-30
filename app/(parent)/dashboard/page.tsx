@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { AlertesPanel } from '@/components/dashboard/AlertesPanel';
 import { AjouterEnfantDialog } from '@/components/dashboard/AjouterEnfantDialog';
+import { GestionEnfant } from '@/components/dashboard/GestionEnfant';
 import type { Alert, Maison } from '@/lib/types';
 import type { KpiEnfant } from '@/lib/types-dashboard';
 import { Clock, Target, Award, ChevronRight } from 'lucide-react';
@@ -127,11 +128,11 @@ export default async function DashboardPage() {
         {enfants.map((e) => {
           const kpi = kpiByChild.get(e.id);
           return (
-            <Link
+            <div
               key={e.id}
-              href={`/enfants/${e.id}`}
-              className="group bg-white rounded-lg p-5 border border-stone-200 shadow-sm hover:shadow-md hover:border-amber-400 transition-all"
+              className="bg-white rounded-lg p-5 border border-stone-200 shadow-sm hover:shadow-md hover:border-amber-400 transition-all"
             >
+            <Link href={`/enfants/${e.id}`} className="group block">
               <div className="flex items-start justify-between">
                 <div>
                   <h3 className="text-lg font-bold text-stone-900 flex items-center gap-2">
@@ -184,6 +185,8 @@ export default async function DashboardPage() {
                 </p>
               )}
             </Link>
+              <GestionEnfant childId={e.id} childName={e.display_name ?? 'Enfant'} />
+            </div>
           );
         })}
       </div>

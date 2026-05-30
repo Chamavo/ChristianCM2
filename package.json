@@ -9,6 +9,7 @@
     "lint": "next lint",
     "seed": "tsx scripts/seed-exercices.ts",
     "create-admin": "tsx scripts/creer-admin.ts",
+    "migrate-pin": "tsx scripts/migrer-admin-pin.ts",
     "copy-data": "tsx scripts/copier-data.ts"
   },
   "dependencies": {

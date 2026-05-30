@@ -4,8 +4,8 @@ import * as React from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
 import { UserPlus, X } from 'lucide-react';
 import { useFormState, useFormStatus } from 'react-dom';
-import { creerEnfant, type NouvelEnfantState } from '@/app/(parent)/enfants/nouveau/actions';
 import { useRouter } from 'next/navigation';
+import { createChild, type CreateChildState } from '@/app/(parent)/enfants/actions';
 
 const MAISONS = [
   { value: 'gryffondor', label: 'Gryffondor 🦁' },
@@ -28,25 +28,23 @@ function SubmitButton() {
 }
 
 interface AjouterEnfantDialogProps {
-  /** Variant pour bouton trigger : "primary" amber ou "ghost" texte simple */
   variant?: 'primary' | 'ghost';
   label?: string;
 }
 
 export function AjouterEnfantDialog({
   variant = 'primary',
-  label = 'Ajouter un enfant',
+  label = 'Ajouter un apprenant',
 }: AjouterEnfantDialogProps) {
   const [open, setOpen] = React.useState(false);
   const router = useRouter();
 
-  const [state, formAction] = useFormState<NouvelEnfantState, FormData>(
-    creerEnfant,
+  const [state, formAction] = useFormState<CreateChildState, FormData>(
+    createChild,
     {}
   );
 
-  // Si succès, on garde le dialog ouvert pour montrer les credentials
-  const success = state?.success;
+  const success = state?.ok && state?.pin;
 
   const triggerClass =
     variant === 'primary'
@@ -69,34 +67,28 @@ export function AjouterEnfantDialog({
         <Dialog.Content className="fixed left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-md bg-white rounded-lg shadow-xl p-6 max-h-[90vh] overflow-y-auto">
           <div className="flex items-center justify-between mb-4">
             <Dialog.Title className="text-lg font-bold text-stone-900">
-              Ajouter un enfant
+              Nouvel apprenant
             </Dialog.Title>
             <Dialog.Close className="text-stone-400 hover:text-stone-700">
               <X className="w-5 h-5" />
             </Dialog.Close>
           </div>
 
-          {!success && (
-            <Dialog.Description className="text-sm text-stone-500 mb-4">
-              Crée un compte pour ton enfant et choisis sa maison de départ.
-            </Dialog.Description>
-          )}
-
           {success ? (
             <div className="space-y-3">
               <p className="text-sm text-green-700 font-semibold">
-                Compte créé pour {success.display_name} !
+                Compte créé pour {state.prenom} !
               </p>
-              <div className="bg-stone-100 rounded p-3 text-sm font-mono break-all">
-                <p>
-                  <strong>E-mail :</strong> {success.email}
-                </p>
-                <p>
-                  <strong>Mot de passe :</strong> {success.password}
+              <div className="rounded-md bg-stone-100 p-4 text-center">
+                <p className="text-stone-500 text-sm mb-1">Code PIN de connexion</p>
+                <p className="text-4xl font-black tracking-[0.4em] text-stone-900 tabular-nums">
+                  {state.pin}
                 </p>
               </div>
               <p className="text-xs text-stone-500">
-                Note ces informations — elles ne seront plus affichées.
+                L&apos;apprenant se connecte avec son <strong>prénom</strong> et ce{' '}
+                <strong>code PIN</strong>. Note-le : il ne sera plus affiché (tu pourras en
+                régénérer un depuis le tableau de bord).
               </p>
               <button
                 onClick={() => setOpen(false)}
@@ -106,65 +98,54 @@ export function AjouterEnfantDialog({
               </button>
             </div>
           ) : (
-            <form action={formAction} className="space-y-4">
-              <div>
-                <label
-                  htmlFor="dlg-name"
-                  className="block text-sm font-medium text-stone-700 mb-1"
-                >
-                  Prénom de l&apos;enfant
-                </label>
-                <input
-                  id="dlg-name"
-                  name="display_name"
-                  required
-                  className="w-full border border-stone-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
-                  placeholder="Ex : Léo"
-                />
-                {state?.fieldErrors?.display_name && (
-                  <p className="text-xs text-red-600 mt-1">
-                    {state.fieldErrors.display_name}
-                  </p>
-                )}
-              </div>
+            <>
+              <Dialog.Description className="text-sm text-stone-500 mb-4">
+                Saisis le prénom de l&apos;apprenant. Un code PIN à 4 chiffres sera généré
+                automatiquement.
+              </Dialog.Description>
+              <form action={formAction} className="space-y-4">
+                <div>
+                  <label htmlFor="dlg-name" className="block text-sm font-medium text-stone-700 mb-1">
+                    Prénom de l&apos;apprenant
+                  </label>
+                  <input
+                    id="dlg-name"
+                    name="prenom"
+                    required
+                    maxLength={40}
+                    className="w-full border border-stone-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
+                    placeholder="Ex : Christian"
+                  />
+                </div>
 
-              <div>
-                <label
-                  htmlFor="dlg-maison"
-                  className="block text-sm font-medium text-stone-700 mb-1"
-                >
-                  Maison de départ
-                </label>
-                <select
-                  id="dlg-maison"
-                  name="maison_choisie"
-                  defaultValue="gryffondor"
-                  className="w-full border border-stone-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
-                >
-                  {MAISONS.map((m) => (
-                    <option key={m.value} value={m.value}>
-                      {m.label}
-                    </option>
-                  ))}
-                </select>
-                {state?.fieldErrors?.maison_choisie && (
-                  <p className="text-xs text-red-600 mt-1">
-                    {state.fieldErrors.maison_choisie}
-                  </p>
-                )}
-              </div>
+                <div>
+                  <label htmlFor="dlg-maison" className="block text-sm font-medium text-stone-700 mb-1">
+                    Maison de départ (optionnel)
+                  </label>
+                  <select
+                    id="dlg-maison"
+                    name="maison_choisie"
+                    defaultValue="gryffondor"
+                    className="w-full border border-stone-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
+                  >
+                    {MAISONS.map((m) => (
+                      <option key={m.value} value={m.value}>
+                        {m.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
 
-              {state?.error && (
-                <p className="text-sm text-red-600">{state.error}</p>
-              )}
+                {state?.error && <p className="text-sm text-red-600">{state.error}</p>}
 
-              <div className="flex justify-end gap-2 pt-2">
-                <Dialog.Close className="text-stone-500 hover:text-stone-800 px-4 py-2 text-sm">
-                  Annuler
-                </Dialog.Close>
-                <SubmitButton />
-              </div>
-            </form>
+                <div className="flex justify-end gap-2 pt-2">
+                  <Dialog.Close className="text-stone-500 hover:text-stone-800 px-4 py-2 text-sm">
+                    Annuler
+                  </Dialog.Close>
+                  <SubmitButton />
+                </div>
+              </form>
+            </>
           )}
         </Dialog.Content>
       </Dialog.Portal>
