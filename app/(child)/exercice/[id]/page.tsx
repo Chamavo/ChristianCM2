@@ -9,7 +9,7 @@ interface PageProps {
   params: { id: string };
 }
 
-const NB_EXOS_PAR_JOUR = 15;
+const NB_EXOS_PAR_JOUR = 30;
 
 export default async function ExercicePage({ params }: PageProps) {
   const supabase = createClient();

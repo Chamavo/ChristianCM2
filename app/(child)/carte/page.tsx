@@ -6,7 +6,7 @@ import type { Progress } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
 
-const NB_EXOS_PAR_JOUR = 15;
+const NB_EXOS_PAR_JOUR = 30;
 const NB_JOURS_TOTAL = 15;
 
 const SCENES: Record<

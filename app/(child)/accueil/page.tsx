@@ -31,7 +31,7 @@ const SCENES_PAR_JOUR: Record<number, string> = {
   15: '⭐',
 };
 
-const NB_EXOS_PAR_JOUR = 15;
+const NB_EXOS_PAR_JOUR = 30;
 const NB_JOURS_TOTAL = 15;
 
 export default async function AccueilEnfantPage() {
