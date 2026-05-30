@@ -12,6 +12,7 @@ import { IndiceModal } from './IndiceModal';
 import { DecompositionWizard } from './DecompositionWizard';
 import { FeedbackPanel } from './FeedbackPanel';
 import { PointsMaisonBadge } from '@/components/gamification/PointsMaisonBadge';
+import { BoutonQuitter } from '@/components/layout/BoutonQuitter';
 import { cn } from '@/lib/utils';
 
 interface ExerciceClientProps {
@@ -243,14 +244,7 @@ export function ExerciceClient({
     <div className="relative">
       {/* HEADER spécifique exercice */}
       <div className="bg-stone-900/90 backdrop-blur text-amber-100 px-4 py-3 flex items-center justify-between border-b-2 border-amber-700 sticky top-0 z-30">
-        <button
-          type="button"
-          onClick={() => router.push(retourHref)}
-          aria-label="Retour à l'accueil"
-          className="text-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
-        >
-          ←
-        </button>
+        <BoutonQuitter href={retourHref} />
         <span className="text-xs uppercase tracking-wider opacity-80">
           Jour {jourActuel} — Exercice {ordreAffiche}/{totalExosJour}
         </span>
