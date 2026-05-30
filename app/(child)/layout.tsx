@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { BottomNav } from '@/components/layout/BottomNav';
+import { BoutonQuitterSession } from '@/components/layout/BoutonQuitterSession';
 import type { Profile, Maison, ScoreMaison } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
@@ -66,13 +67,16 @@ export default async function ChildLayout({
             <span aria-hidden="true">{EMOJI_MAISON[maison]}</span>
           </h1>
         </div>
-        <div className="text-right">
-          <p className="text-xs uppercase opacity-60">
-            Points {maison.charAt(0).toUpperCase() + maison.slice(1)}
-          </p>
-          <p className="text-amber-300 font-bold text-xl">
-            {pointsMaison} <span aria-hidden="true">⚡</span>
-          </p>
+        <div className="flex items-center gap-3 sm:gap-4">
+          <div className="text-right">
+            <p className="text-xs uppercase opacity-60">
+              Points {maison.charAt(0).toUpperCase() + maison.slice(1)}
+            </p>
+            <p className="text-amber-300 font-bold text-xl">
+              {pointsMaison} <span aria-hidden="true">⚡</span>
+            </p>
+          </div>
+          <BoutonQuitterSession />
         </div>
       </header>
 
