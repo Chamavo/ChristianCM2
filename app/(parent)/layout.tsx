@@ -82,21 +82,21 @@ export default async function ParentLayout({
             <span className="text-amber-300 font-normal">· Espace Parent</span>
           </h1>
         </div>
-        <div className="flex items-center gap-2 sm:gap-4 text-sm">
-          <span className="hidden sm:inline truncate max-w-[200px]">
+        <div className="flex items-center gap-3 sm:gap-5 text-base">
+          <span className="hidden sm:inline truncate max-w-[200px] font-medium">
             {profile.display_name ?? profile.email}
             {profile.role === 'admin' && (
-              <span className="ml-1 text-amber-300 text-xs">(admin)</span>
+              <span className="ml-1 text-amber-300 text-sm">(admin)</span>
             )}
           </span>
           <form action={signOutAction}>
             <button
               type="submit"
-              className="bg-amber-700 hover:bg-amber-600 px-3 py-1 rounded text-xs inline-flex items-center gap-1"
+              className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-500 text-white px-5 py-3 rounded-lg text-base font-bold shadow-lg ring-2 ring-red-400/40 transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-300"
               aria-label="Se déconnecter"
             >
-              <LogOut className="w-3 h-3" />
-              <span className="hidden sm:inline">Déconnexion</span>
+              <LogOut className="w-6 h-6" />
+              <span>Déconnexion</span>
             </button>
           </form>
         </div>
