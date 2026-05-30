@@ -8,6 +8,7 @@ import { ChronoExercice } from '@/components/exercice/ChronoExercice';
 import { ExerciceQcm } from '@/components/exercice/ExerciceQcm';
 import { ExerciceNumerique } from '@/components/exercice/ExerciceNumerique';
 import { ExerciceRedige } from '@/components/exercice/ExerciceRedige';
+import { BoutonQuitter } from '@/components/layout/BoutonQuitter';
 import { cn } from '@/lib/utils';
 
 interface QuizClientProps {
@@ -185,22 +186,9 @@ export function QuizClient({ quiz, exercises }: QuizClientProps) {
   return (
     <div>
       <div className="bg-purple-900/80 text-amber-100 px-4 py-3 flex items-center justify-between border-b-2 border-purple-500 sticky top-0 z-30">
-        <button
-          type="button"
-          onClick={() => {
-            if (
-              confirm(
-                'Quitter le quiz ? Tes réponses ne seront pas enregistrées.'
-              )
-            ) {
-              router.push('/accueil');
-            }
-          }}
-          aria-label="Quitter le quiz"
-          className="text-2xl"
-        >
-          ←
-        </button>
+        <BoutonQuitter
+          confirmMessage="Quitter le quiz ? Tes réponses non envoyées ne seront pas enregistrées."
+        />
         <span className="text-xs uppercase tracking-wider">
           Quiz J{quiz.jour} · Question {index + 1}/{total}
         </span>
