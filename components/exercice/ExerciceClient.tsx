@@ -167,10 +167,17 @@ export function ExerciceClient({
         router.push(retourHref);
         return;
       }
-      const data = (await res.json()) as { exercise_id?: string | null };
-      if (data.exercise_id) {
-        router.push(`/exercice/${data.exercise_id}`);
+      const data = (await res.json()) as
+        | { kind: 'exercise'; data: { id: string } }
+        | { kind: 'quiz'; data: { quiz_id: string; jour: number } }
+        | { kind: 'completed'; data: unknown };
+
+      if (data.kind === 'exercise' && data.data?.id) {
+        router.push(`/exercice/${data.data.id}`);
+      } else if (data.kind === 'quiz' && data.data?.jour) {
+        router.push(`/quiz/J${data.data.jour}`);
       } else {
+        // 'completed' ou réponse inattendue → retour à l'accueil
         router.push(retourHref);
       }
     } catch {
@@ -427,6 +434,7 @@ export function ExerciceClient({
         {etape === 'feedback' && resultat && (
           <FeedbackPanel
             estCorrecte={resultat.correct}
+            indetermine={resultat.indetermine}
             pointsGagnes={resultat.points_gagnes}
             maitrise={resultat.maitrise}
             explication={exercise.explication_correcte}

@@ -1,6 +1,7 @@
 import { redirect, notFound } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { ExerciceClient } from '@/components/exercice/ExerciceClient';
+import { nextExercise } from '@/lib/moteur/selecteur-prochain-exo';
 import type { Exercise, Progress } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
@@ -21,14 +22,11 @@ export default async function ExercicePage({ params }: PageProps) {
 
   let exerciseId = params.id;
 
-  // Cas spécial : `next` → redirige vers le prochain exo recommandé
+  // Cas spécial : `next` → redirige vers le prochain exo recommandé (moteur adaptatif)
   if (exerciseId === 'next') {
-    const { data: nextExo } = await supabase
-      .rpc('moteur_next_exercice', { p_child_id: user.id })
-      .single<{ exercise_id: string }>();
-    if (nextExo?.exercise_id) {
-      redirect(`/exercice/${nextExo.exercise_id}`);
-    }
+    const r = await nextExercise(user.id, supabase);
+    if (r.kind === 'exercise') redirect(`/exercice/${r.data.id}`);
+    if (r.kind === 'quiz') redirect(`/quiz/J${r.data.jour}`);
     redirect('/accueil');
   }
 

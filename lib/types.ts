@@ -221,6 +221,8 @@ export interface Alert {
 // Réponse de validation (côté API)
 export interface ValidationResult {
   correct: boolean;
+  /** Vrai si la correction IA n'a pas pu aboutir (panne, réponse illisible) : on ne bloque pas l'élève. */
+  indetermine?: boolean;
   score_partiel?: number; // 0-1 pour réponses rédigées
   feedback?: string;
   points_gagnes: number;

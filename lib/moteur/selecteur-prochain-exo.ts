@@ -1,87 +1,81 @@
 import 'server-only';
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { Exercise } from '@/lib/types';
-import { tauxMaitriseJour } from '@/lib/moteur/calcul-maitrise';
-import { calculerRattrapage } from '@/lib/moteur/rattrapage';
 import { pad } from '@/lib/utils';
 
 export type NextExerciseResult =
-  | { kind: 'exercise'; data: Exercise; raison: 'revision' | 'en_cours' | 'progression' | 'rattrapage' }
+  | { kind: 'exercise'; data: Exercise; raison: 'revision' | 'progression' | 'revisite' }
   | { kind: 'quiz'; data: { quiz_id: string; jour: number } }
   | { kind: 'completed'; data: { jour: number; message: string } };
 
-const SEUIL_MAITRISE_JOUR = 0.8;
-
 /**
- * Sélection du prochain exercice selon le moteur adaptatif.
- * Voir architecture-nextjs.md → section "Sélecteur du prochain exercice".
+ * Sélection du prochain exercice — marche LINÉAIRE dans la journée.
  *
- * Ordre de priorité :
- *   1. Quiz à passer aujourd'hui (jour pair + pas encore passé)
- *   2. Exercice de révision dû (spaced repetition)
- *   3. Exercice en cours non maîtrisé
- *   4. Prochain exo dans l'ordre du jour
- *   5. Jour terminé à 80%+ → passer au jour suivant
+ * Règle métier (validée) :
+ *   - Dans une journée, on parcourt les 30 exercices DANS L'ORDRE.
+ *   - On peut avancer même si un exercice rédigé n'a pas pu être corrigé
+ *     (il reste "non maîtrisé" et sera repris en fin de journée).
+ *   - La journée ne se termine (et ne débloque la suivante) que lorsque
+ *     TOUS ses exercices sont maîtrisés.
+ *
+ * Ordre de service à l'intérieur d'un jour :
+ *   1. Premier exercice jamais tenté (ordre croissant).
+ *   2. Sinon, premier exercice tenté mais non maîtrisé (phase de révision du jour).
+ * Quand tout le jour est maîtrisé :
+ *   3. Révision due (spaced repetition) éventuelle.
+ *   4. Quiz du jour si jour pair et pas encore passé.
+ *   5. Premier exercice du jour suivant.
+ *   6. Sinon : parcours terminé.
  */
 export async function nextExercise(
   childId: string,
   supabase: SupabaseClient
 ): Promise<NextExerciseResult> {
-  // Déterminer le jour courant (basé sur max(jour) parmi attempts ; défaut 1)
   const today = await currentJour(childId, supabase);
 
-  // 1. QUIZ DU JOUR (jour pair + pas encore passé)
-  if (today % 2 === 0) {
-    const quizId = `quiz-j${pad(today)}`;
-    const dejaPasse = await quizPasseAujourdhui(childId, today, supabase);
-    if (!dejaPasse) {
-      // On s'assure aussi que le jour courant est terminé à 80%+
-      const taux = await tauxMaitriseJour(childId, today, supabase);
-      if (taux >= SEUIL_MAITRISE_JOUR) {
-        return { kind: 'quiz', data: { quiz_id: quizId, jour: today } };
-      }
-    }
+  // 1-2. Marche dans le jour courant (non tenté, puis non maîtrisé)
+  const marche = await prochainDansJour(childId, today, supabase);
+  if (marche) {
+    return {
+      kind: 'exercise',
+      data: marche.exo,
+      raison: marche.revisite ? 'revisite' : 'progression',
+    };
   }
 
-  // 2. RÉVISION DUE
+  // --- Le jour courant est entièrement maîtrisé ---
+
+  // 3. Révision due (exos d'anciens jours qui ressortent)
   const revision = await getRevisionDue(childId, supabase);
   if (revision) {
     return { kind: 'exercise', data: revision, raison: 'revision' };
   }
 
-  // 3. EXERCICE EN COURS NON MAÎTRISÉ
-  const enCours = await getCurrentNonMaitrise(childId, today, supabase);
-  if (enCours) {
-    return { kind: 'exercise', data: enCours, raison: 'en_cours' };
-  }
-
-  // 4. PROCHAIN EXO DANS L'ORDRE DU JOUR
-  const prochain = await getNextInJour(childId, today, supabase);
-  if (prochain) {
-    return { kind: 'exercise', data: prochain, raison: 'progression' };
-  }
-
-  // 5. JOUR TERMINÉ ? On regarde le taux de maîtrise
-  const taux = await tauxMaitriseJour(childId, today, supabase);
-  if (taux >= SEUIL_MAITRISE_JOUR && today < 15) {
-    // Rattrapage éventuel : on saute des exos si retard
-    const rattrapage = await calculerRattrapage(childId, supabase);
-    const offset = rattrapage.exos_a_reduire;
-    const premier = await getFirstOfJour(today + 1, supabase, offset);
-    if (premier) {
-      return { kind: 'exercise', data: premier, raison: offset > 0 ? 'rattrapage' : 'progression' };
+  // 4. Quiz du jour (jour pair + pas encore passé)
+  if (today % 2 === 0) {
+    const dejaPasse = await quizDejaPasse(childId, today, supabase);
+    if (!dejaPasse) {
+      return { kind: 'quiz', data: { quiz_id: `quiz-j${pad(today)}`, jour: today } };
     }
   }
 
-  // 6. Plus rien à faire aujourd'hui
+  // 5. Jour suivant
+  if (today < 15) {
+    const suivantJour = await prochainDansJour(childId, today + 1, supabase);
+    if (suivantJour) {
+      return { kind: 'exercise', data: suivantJour.exo, raison: 'progression' };
+    }
+  }
+
+  // 6. Terminé
   return {
     kind: 'completed',
     data: {
       jour: today,
       message:
-        taux >= SEUIL_MAITRISE_JOUR
+        today >= 15
           ? 'Bravo, le programme est terminé ! La grande coupe t\'attend.'
-          : 'Tu as bien travaillé. Reviens demain pour la suite de l\'aventure.',
+          : 'Tu as tout maîtrisé pour aujourd\'hui. Reviens pour la suite de l\'aventure.',
     },
   };
 }
@@ -91,8 +85,7 @@ export async function nextExercise(
 // ============================================================
 
 /**
- * Détermine le "jour courant" pour l'enfant.
- * = max(jour) parmi les attempts (ou 1 si aucun attempt).
+ * Jour courant = plus grand jour parmi les tentatives (défaut 1, plafonné à 15).
  */
 async function currentJour(childId: string, supabase: SupabaseClient): Promise<number> {
   const { data } = await supabase
@@ -107,19 +100,59 @@ async function currentJour(childId: string, supabase: SupabaseClient): Promise<n
   return typeof j === 'number' && j > 0 ? Math.min(15, j) : 1;
 }
 
-async function quizPasseAujourdhui(
+/**
+ * Prochain exercice à servir dans un jour donné :
+ *   - phase 1 : premier exo jamais tenté (ordre croissant) ;
+ *   - phase 2 : premier exo tenté mais non maîtrisé (revisite).
+ * Retourne null si tous les exos du jour sont maîtrisés.
+ */
+async function prochainDansJour(
+  childId: string,
+  jour: number,
+  supabase: SupabaseClient
+): Promise<{ exo: Exercise; revisite: boolean } | null> {
+  const { data: exos } = await supabase
+    .from('exercises')
+    .select('*')
+    .eq('jour', jour)
+    .order('ordre_jour', { ascending: true });
+
+  if (!exos || exos.length === 0) return null;
+
+  const ids = exos.map((e) => e.id as string);
+  const { data: progresses } = await supabase
+    .from('progress')
+    .select('exercise_id, statut')
+    .eq('child_id', childId)
+    .in('exercise_id', ids);
+
+  const statuts = new Map<string, string>();
+  (progresses ?? []).forEach((p: { exercise_id: string; statut: string }) =>
+    statuts.set(p.exercise_id, p.statut)
+  );
+
+  // Phase 1 : jamais tenté (aucune ligne de progress)
+  for (const e of exos as Exercise[]) {
+    if (!statuts.has(e.id)) return { exo: e, revisite: false };
+  }
+  // Phase 2 : tenté mais pas encore maîtrisé
+  for (const e of exos as Exercise[]) {
+    if (statuts.get(e.id) !== 'maitrise') return { exo: e, revisite: true };
+  }
+  // Tout maîtrisé
+  return null;
+}
+
+async function quizDejaPasse(
   childId: string,
   jour: number,
   supabase: SupabaseClient
 ): Promise<boolean> {
-  const startOfDay = new Date();
-  startOfDay.setHours(0, 0, 0, 0);
   const { count } = await supabase
     .from('quiz_results')
     .select('id', { count: 'exact', head: true })
     .eq('child_id', childId)
-    .eq('jour', jour)
-    .gte('created_at', startOfDay.toISOString());
+    .eq('jour', jour);
   return (count ?? 0) > 0;
 }
 
@@ -140,77 +173,6 @@ async function getRevisionDue(
     .maybeSingle();
 
   if (error || !data) return null;
-  const exo = (data as any).exercises as Exercise | null;
+  const exo = (data as unknown as { exercises: Exercise | null }).exercises;
   return exo ?? null;
-}
-
-async function getCurrentNonMaitrise(
-  childId: string,
-  jour: number,
-  supabase: SupabaseClient
-): Promise<Exercise | null> {
-  const { data, error } = await supabase
-    .from('progress')
-    .select('exercise_id, exercises:exercise_id(*)')
-    .eq('child_id', childId)
-    .in('statut', ['en_cours', 'bloque'])
-    .order('exercise_id', { ascending: true })
-    .limit(20);
-
-  if (error || !data) return null;
-  // On préfère un exo du jour courant
-  const rows = data as unknown as Array<{ exercises: Exercise | null }>;
-  const candidats = rows.map((r) => r.exercises).filter((e): e is Exercise => !!e);
-  const duJour = candidats.find((e) => e.jour === jour);
-  return duJour ?? candidats[0] ?? null;
-}
-
-async function getNextInJour(
-  childId: string,
-  jour: number,
-  supabase: SupabaseClient
-): Promise<Exercise | null> {
-  // Récupérer tous les exos du jour, ordonnés
-  const { data: exos } = await supabase
-    .from('exercises')
-    .select('*')
-    .eq('jour', jour)
-    .order('ordre_jour', { ascending: true });
-
-  if (!exos || exos.length === 0) return null;
-
-  // Récupérer les progress pour ces exos
-  const ids = exos.map((e) => e.id as string);
-  const { data: progresses } = await supabase
-    .from('progress')
-    .select('exercise_id, statut')
-    .eq('child_id', childId)
-    .in('exercise_id', ids);
-
-  const statuts = new Map<string, string>();
-  (progresses ?? []).forEach((p: { exercise_id: string; statut: string }) =>
-    statuts.set(p.exercise_id, p.statut)
-  );
-
-  // Premier exo non terminé ('non_commence' OU pas de progress du tout)
-  for (const e of exos as Exercise[]) {
-    const s = statuts.get(e.id);
-    if (!s || s === 'non_commence') return e;
-  }
-  return null;
-}
-
-async function getFirstOfJour(
-  jour: number,
-  supabase: SupabaseClient,
-  offset: number = 0
-): Promise<Exercise | null> {
-  const { data } = await supabase
-    .from('exercises')
-    .select('*')
-    .eq('jour', jour)
-    .order('ordre_jour', { ascending: true })
-    .range(offset, offset);
-
-  return ((data?.[0] as Exercise | undefined) ?? null) || null;
 }

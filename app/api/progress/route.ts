@@ -90,6 +90,7 @@ export async function POST(req: NextRequest) {
   let scorePartiel = local.score_partiel ?? (correct ? 1 : 0);
   let feedbackClaude: string | null = null;
   let coutTokensClaude = 0;
+  let indetermine = false;
 
   // 5. Si validation locale impossible (rédigé libre / Claude requis) → on appelle Claude
   if (local.needs_claude) {
@@ -141,8 +142,14 @@ export async function POST(req: NextRequest) {
       scorePartiel = claudeResp.score_partiel ?? (correct ? 1 : 0);
       feedbackClaude = claudeResp.feedback ?? null;
     } else {
+      // Correction IA indisponible (panne / clé absente / réponse illisible).
+      // On ne bloque PAS l'élève : exercice laissé non maîtrisé, il pourra avancer
+      // et devra le revalider avant de débloquer le jour suivant.
       correct = false;
       scorePartiel = 0;
+      indetermine = true;
+      feedbackClaude =
+        'La correction automatique est momentanément indisponible. Tu peux passer à la suite et y revenir plus tard.';
     }
   }
 
@@ -245,6 +252,7 @@ export async function POST(req: NextRequest) {
   // 11. Réponse
   const result: ValidationResult = {
     correct,
+    indetermine,
     score_partiel: scorePartiel,
     feedback: feedbackClaude ?? (correct ? exo.explication_correcte ?? undefined : undefined),
     points_gagnes: points,

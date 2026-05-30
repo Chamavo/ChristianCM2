@@ -14,6 +14,8 @@ interface FeedbackPanelProps {
   /** Affiché si l'enfant a échoué 2 fois ou plus → suggestion décomposition */
   proposerDecomposition?: boolean;
   onDecomposer?: () => void;
+  /** Correction IA indisponible : on ne bloque pas, on invite à continuer. */
+  indetermine?: boolean;
 }
 
 export function FeedbackPanel({
@@ -26,7 +28,11 @@ export function FeedbackPanel({
   onReessayer,
   proposerDecomposition = false,
   onDecomposer,
+  indetermine = false,
 }: FeedbackPanelProps) {
+  // États visuels : indéterminé (ambre) > correct (vert) > incorrect (rouge)
+  const ton = indetermine ? 'neutre' : estCorrecte ? 'ok' : 'ko';
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -34,9 +40,9 @@ export function FeedbackPanel({
       transition={{ duration: 0.35 }}
       className={cn(
         'rounded-2xl p-5 border-2 shadow-xl',
-        estCorrecte
-          ? 'bg-gradient-to-br from-green-100 to-emerald-50 border-green-500'
-          : 'bg-gradient-to-br from-red-100 to-rose-50 border-red-500'
+        ton === 'ok' && 'bg-gradient-to-br from-green-100 to-emerald-50 border-green-500',
+        ton === 'ko' && 'bg-gradient-to-br from-red-100 to-rose-50 border-red-500',
+        ton === 'neutre' && 'bg-gradient-to-br from-amber-100 to-yellow-50 border-amber-500'
       )}
       role="status"
       aria-live="polite"
@@ -49,22 +55,26 @@ export function FeedbackPanel({
           className="text-4xl"
           aria-hidden="true"
         >
-          {estCorrecte ? (maitrise ? '✨' : '✓') : '✗'}
+          {ton === 'ok' ? (maitrise ? '✨' : '✓') : ton === 'neutre' ? '🦉' : '✗'}
         </motion.span>
         <div className="flex-1">
           <p
             className={cn(
               'font-bold text-lg',
-              estCorrecte ? 'text-green-800' : 'text-red-800'
+              ton === 'ok' && 'text-green-800',
+              ton === 'ko' && 'text-red-800',
+              ton === 'neutre' && 'text-amber-800'
             )}
           >
-            {estCorrecte
+            {ton === 'ok'
               ? maitrise
                 ? 'Maîtrisé, bravo !'
                 : 'Bonne réponse !'
-              : 'Pas tout à fait…'}
+              : ton === 'neutre'
+                ? 'Réponse enregistrée'
+                : 'Pas tout à fait…'}
           </p>
-          {estCorrecte && pointsGagnes > 0 && (
+          {ton === 'ok' && pointsGagnes > 0 && (
             <motion.p
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -78,14 +88,13 @@ export function FeedbackPanel({
         </div>
       </div>
 
-      {explication && (
+      {/* Explication : seulement si on a tranché (pas en mode indéterminé) */}
+      {explication && !indetermine && (
         <div className="bg-white/70 rounded-lg p-3 mb-3 border border-stone-200">
           <p className="text-xs uppercase tracking-wider text-stone-500 mb-1">
             Explication
           </p>
-          <p className="text-stone-800 text-sm leading-relaxed">
-            {explication}
-          </p>
+          <p className="text-stone-800 text-sm leading-relaxed">{explication}</p>
         </div>
       )}
 
@@ -101,7 +110,17 @@ export function FeedbackPanel({
       )}
 
       <div className="flex flex-col gap-2 mt-4">
-        {estCorrecte ? (
+        {indetermine ? (
+          // Correction IA indisponible : on ne bloque pas l'élève.
+          <button
+            type="button"
+            onClick={onSuivant}
+            className="w-full btn-gryffondor"
+            autoFocus
+          >
+            Continuer →
+          </button>
+        ) : estCorrecte ? (
           <button
             type="button"
             onClick={onSuivant}
