@@ -10,7 +10,7 @@ import { Clock, Target, Award, ChevronRight } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';
 export const metadata = {
-  title: 'Dashboard — Poudlard Maths',
+  title: 'Dashboard — Maths à l\'école des sorciers',
 };
 
 const EMOJI_MAISON: Record<Maison, string> = {

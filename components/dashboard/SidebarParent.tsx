@@ -131,7 +131,7 @@ export function SidebarParent({ enfants, alertesNonLues }: SidebarParentProps) {
       </Link>
 
       <div className="pt-6 mt-6 border-t border-stone-200 text-xs text-stone-400 px-3">
-        <GraduationCap className="w-4 h-4 inline mr-1" /> Poudlard Maths CM2
+        <GraduationCap className="w-4 h-4 inline mr-1" /> Maths à l&apos;école des sorciers · CM2
       </div>
     </aside>
   );

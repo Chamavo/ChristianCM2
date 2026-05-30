@@ -78,7 +78,7 @@ export default async function ParentLayout({
         <div className="flex items-center gap-3">
           <span className="text-2xl" aria-hidden="true">🪄</span>
           <h1 className="text-lg sm:text-xl font-bold">
-            Poudlard Maths{' '}
+            Maths à l&apos;école des sorciers{' '}
             <span className="text-amber-300 font-normal">· Espace Parent</span>
           </h1>
         </div>

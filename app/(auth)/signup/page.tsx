@@ -10,7 +10,7 @@ import {
 import { SignupForm } from './SignupForm';
 
 export const metadata = {
-  title: 'Inscription parent — Poudlard Maths',
+  title: 'Inscription parent — Maths à l\'école des sorciers',
 };
 
 export default function SignupPage() {

@@ -10,7 +10,7 @@ import {
 import { ResetForm } from './ResetForm';
 
 export const metadata = {
-  title: 'Mot de passe oublié — Poudlard Maths',
+  title: 'Mot de passe oublié — Maths à l\'école des sorciers',
 };
 
 export default function ResetPage() {

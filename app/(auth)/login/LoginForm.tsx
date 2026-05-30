@@ -49,7 +49,7 @@ export function LoginForm() {
         <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-500 mb-3">
           <Sparkles className="w-7 h-7 text-white" />
         </div>
-        <h1 className="text-2xl font-bold text-white">Poudlard Maths</h1>
+        <h1 className="text-2xl font-bold text-white">Maths à l&apos;école des sorciers</h1>
         <p className="text-slate-300 text-sm mt-1">Connecte-toi pour continuer ton marathon</p>
       </div>
 

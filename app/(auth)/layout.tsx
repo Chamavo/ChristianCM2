@@ -10,7 +10,7 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
           className="inline-flex items-center gap-2 text-amber-200/80 hover:text-amber-100 transition-colors"
         >
           <span className="text-2xl">🪄</span>
-          <span className="font-bold tracking-tight">Poudlard Maths</span>
+          <span className="font-bold tracking-tight">Maths à l&apos;école des sorciers</span>
         </Link>
       </header>
       <div className="flex-1 flex items-center justify-center px-4 pb-12">

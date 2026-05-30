@@ -8,7 +8,7 @@ import {
 import { LoginForm } from './LoginForm';
 
 export const metadata = {
-  title: 'Connexion — Poudlard Maths',
+  title: 'Connexion — Maths à l\'école des sorciers',
 };
 
 export default function LoginPage() {
