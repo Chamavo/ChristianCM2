@@ -368,9 +368,11 @@ export function ExerciceClient({
             aria-live="polite"
           >
             <div className="text-4xl mb-1" aria-hidden="true">
-              ✨
+              {finJourneeFete ? '🏆' : '✨'}
             </div>
-            <p className="font-bold text-lg text-green-800">Bravo !</p>
+            <p className="font-bold text-lg text-green-800">
+              {finJourneeFete ? 'Journée terminée, bravo ! 🎉' : 'Bravo !'}
+            </p>
             {pointsGagnes > 0 && (
               <p className="text-amber-700 font-bold">
                 +{pointsGagnes} point{pointsGagnes > 1 ? 's' : ''} pour ta maison ⚡
@@ -378,7 +380,7 @@ export function ExerciceClient({
             )}
             <p className="mt-2 text-sm text-green-700 inline-flex items-center gap-2">
               <span className="inline-block w-4 h-4 rounded-full border-2 border-green-300 border-t-green-700 animate-spin" />
-              Question suivante…
+              {finJourneeFete ? 'On continue l’aventure…' : 'Question suivante…'}
             </p>
           </motion.div>
         )}
