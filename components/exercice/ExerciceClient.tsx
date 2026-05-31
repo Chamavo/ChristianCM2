@@ -12,6 +12,7 @@ import { DecompositionWizard } from './DecompositionWizard';
 import { FeedbackPanel } from './FeedbackPanel';
 import { PointsMaisonBadge } from '@/components/gamification/PointsMaisonBadge';
 import { BoutonQuitter } from '@/components/layout/BoutonQuitter';
+import { DetecteurFocus } from './DetecteurFocus';
 import { skipExercise } from '@/app/(child)/actions';
 import { cn } from '@/lib/utils';
 
@@ -263,6 +264,9 @@ export function ExerciceClient({
           seuilTempsLongSec={SEUIL_TEMPS_LONG}
         />
       </div>
+
+      {/* Anti-triche : journalise les sorties d'onglet/fenêtre */}
+      <DetecteurFocus exerciseId={exercise.id} jour={jourActuel} />
 
       {/* PROGRESSION (barre fine) */}
       <div className="bg-stone-800 px-4 py-1.5">

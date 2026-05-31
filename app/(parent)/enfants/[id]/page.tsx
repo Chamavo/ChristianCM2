@@ -14,7 +14,7 @@ import type {
   ThemeTaux,
   ExerciceRateRow,
 } from '@/lib/types-dashboard';
-import { FileDown, Clock, BarChart3, ClipboardList, AlertTriangle } from 'lucide-react';
+import { FileDown, Clock, BarChart3, ClipboardList, AlertTriangle, FileText } from 'lucide-react';
 
 // Recharts via dynamic import (évite les soucis SSR)
 const ProgressionChart = dynamic(
@@ -201,6 +201,12 @@ export default async function EnfantDetailPage({ params }: PageProps) {
           className="px-3 py-2 text-stone-600 hover:text-amber-700 inline-flex items-center gap-1"
         >
           Quiz
+        </Link>
+        <Link
+          href={`/enfants/${params.id}/rapport`}
+          className="px-3 py-2 text-stone-600 hover:text-amber-700 inline-flex items-center gap-1"
+        >
+          <FileText className="w-4 h-4" /> Rapport du jour
         </Link>
       </nav>
 
