@@ -14,6 +14,7 @@ import { PointsMaisonBadge } from '@/components/gamification/PointsMaisonBadge';
 import { BoutonQuitter } from '@/components/layout/BoutonQuitter';
 import { DetecteurFocus } from './DetecteurFocus';
 import { skipExercise } from '@/app/(child)/actions';
+import { celebrerPalier, celebrerFinJournee } from '@/lib/celebration';
 import { cn } from '@/lib/utils';
 
 interface ExerciceClientProps {
@@ -46,6 +47,7 @@ export function ExerciceClient({
   const [etape, setEtape] = useState<Etape>('enonce');
   const [enCoursValidation, setEnCoursValidation] = useState(false);
   const [reussi, setReussi] = useState(false);
+  const [finJourneeFete, setFinJourneeFete] = useState(false);
   const [pointsGagnes, setPointsGagnes] = useState(0);
   const [flashErreur, setFlashErreur] = useState<string | null>(null);
   const [decomposition, setDecomposition] = useState<Decomposition | null>(null);
@@ -106,7 +108,19 @@ export function ExerciceClient({
         // automatiquement, SANS afficher d'explication.
         setReussi(true);
         setPointsGagnes(data.points_gagnes || 0);
-        setTimeout(() => suivant(), 1100);
+
+        // Célébrations : fin de journée (30e) = pluie de confettis + sirène ;
+        // palier (10e, 20e) = petit signe visuel + sonore.
+        const finJournee = ordreAffiche >= totalExosJour;
+        const palier = !finJournee && ordreAffiche % 10 === 0;
+        if (finJournee) {
+          setFinJourneeFete(true);
+          celebrerFinJournee();
+          setTimeout(() => suivant(), 3500); // on laisse profiter de la fête
+        } else {
+          if (palier) celebrerPalier();
+          setTimeout(() => suivant(), 1100);
+        }
       } else {
         // #4 : mauvaise réponse → on révèle UN indice, sans montrer la bonne réponse.
         const indiceDispo = nbIndices < indices.length;
