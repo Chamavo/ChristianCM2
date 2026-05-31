@@ -292,7 +292,7 @@ export function ExerciceClient({
               </span>
             )}
             {exercise.narration && (
-              <p className="text-stone-700 italic text-xs leading-snug">
+              <p className="text-stone-800 text-2xl leading-snug">
                 {exercise.narration}
               </p>
             )}
