@@ -52,3 +52,7 @@ build.log
 
 # Image HERO hebergee sur Supabase Storage (hors git) — voir scripts/upload-hero.ts
 public/HERO_Potter.png
+
+# Sauvegardes locales d.env (ne jamais commit)
+*.bak
+.env*.bak

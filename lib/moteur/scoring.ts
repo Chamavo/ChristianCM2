@@ -18,7 +18,10 @@ export function calculerPoints(
 ): number {
   if (!est_correct) return 0;
 
-  const base = exo.points_maison ?? 5;
+  // `|| 5` (et non `?? 5`) : la colonne points_maison vaut 0 par défaut en base
+  // et n'est pas renseignée par le seed → un correct doit toujours valoir ≥ 1 point,
+  // sinon le trigger scores_maison (garde `points_gagnes > 0`) n'incrémente jamais.
+  const base = exo.points_maison || 5;
   if (nb_indices <= 0) return base;
 
   const indices = exo.indices ?? [];

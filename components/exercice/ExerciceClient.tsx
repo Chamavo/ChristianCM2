@@ -8,7 +8,6 @@ import { ChronoExercice } from './ChronoExercice';
 import { ExerciceQcm } from './ExerciceQcm';
 import { ExerciceRedige } from './ExerciceRedige';
 import { ExerciceNumerique } from './ExerciceNumerique';
-import { IndiceModal } from './IndiceModal';
 import { DecompositionWizard } from './DecompositionWizard';
 import { FeedbackPanel } from './FeedbackPanel';
 import { PointsMaisonBadge } from '@/components/gamification/PointsMaisonBadge';
@@ -25,7 +24,7 @@ interface ExerciceClientProps {
   retourHref?: string;
 }
 
-type Etape = 'enonce' | 'feedback' | 'decomposition' | 'fin_decomposition';
+type Etape = 'enonce' | 'decomposition' | 'fin_decomposition';
 
 const SEUIL_TEMPS_LONG = 240; // 4 min
 
@@ -44,31 +43,46 @@ export function ExerciceClient({
   const [nbErreurs, setNbErreurs] = useState(0);
   const [tempsEcoule, setTempsEcoule] = useState(0);
   const [etape, setEtape] = useState<Etape>('enonce');
-  const [resultat, setResultat] = useState<ValidationResult | null>(null);
-  const [indiceOuvert, setIndiceOuvert] = useState(false);
-  const [showPoints, setShowPoints] = useState(false);
   const [enCoursValidation, setEnCoursValidation] = useState(false);
-  const [decomposition, setDecomposition] = useState<Decomposition | null>(
-    null
-  );
+  const [reussi, setReussi] = useState(false);
+  const [pointsGagnes, setPointsGagnes] = useState(0);
+  const [flashErreur, setFlashErreur] = useState<string | null>(null);
+  const [decomposition, setDecomposition] = useState<Decomposition | null>(null);
   const [erreurApi, setErreurApi] = useState<string | null>(null);
 
   const indices = exercise.indices ?? [];
-  const peutIndice = nbIndices < indices.length;
-  const peutDecomposer =
-    nbErreurs >= 2 || tempsEcoule >= SEUIL_TEMPS_LONG;
-
+  const peutDecomposer = nbErreurs >= 2 || tempsEcoule >= SEUIL_TEMPS_LONG;
   const progressionPct = Math.round((nbMaitrisesJour / totalExosJour) * 100);
 
-  const utiliserIndice = useCallback(() => {
-    setNbIndices((n) => Math.min(n + 1, indices.length));
-    setIndiceOuvert(false);
-  }, [indices.length]);
+  const suivant = useCallback(async () => {
+    try {
+      const res = await fetch('/api/progress/next-exercise', { method: 'GET' });
+      if (!res.ok) {
+        router.push(retourHref);
+        return;
+      }
+      const data = (await res.json()) as
+        | { kind: 'exercise'; data: { id: string } }
+        | { kind: 'quiz'; data: { quiz_id: string; jour: number } }
+        | { kind: 'completed'; data: unknown };
+
+      if (data.kind === 'exercise' && data.data?.id) {
+        router.push(`/exercice/${data.data.id}`);
+      } else if (data.kind === 'quiz' && data.data?.jour) {
+        router.push(`/quiz/J${data.data.jour}`);
+      } else {
+        router.push(retourHref);
+      }
+    } catch {
+      router.push(retourHref);
+    }
+  }, [router, retourHref]);
 
   const valider = useCallback(async () => {
-    if (!reponse || enCoursValidation) return;
+    if (!reponse || enCoursValidation || reussi) return;
     setEnCoursValidation(true);
     setErreurApi(null);
+    setFlashErreur(null);
 
     try {
       const res = await fetch('/api/progress', {
@@ -83,33 +97,43 @@ export function ExerciceClient({
           device: 'mobile',
         }),
       });
-
-      if (!res.ok) {
-        throw new Error(`HTTP ${res.status}`);
-      }
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = (await res.json()) as ValidationResult;
-      setResultat(data);
-      setEtape('feedback');
-      if (!data.correct) {
-        setNbErreurs((n) => n + 1);
+
+      if (data.correct) {
+        // #1 + #3 : bonne réponse → on félicite brièvement et on enchaîne
+        // automatiquement, SANS afficher d'explication.
+        setReussi(true);
+        setPointsGagnes(data.points_gagnes || 0);
+        setTimeout(() => suivant(), 1100);
       } else {
-        setShowPoints(true);
-        setTimeout(() => setShowPoints(false), 1800);
+        // #4 : mauvaise réponse → on révèle UN indice, sans montrer la bonne réponse.
+        const indiceDispo = nbIndices < indices.length;
+        setNbErreurs((n) => n + 1);
+        if (indiceDispo) setNbIndices((n) => Math.min(n + 1, indices.length));
+        setFlashErreur(
+          indiceDispo
+            ? 'Pas tout à fait… 💡 Regarde l’indice et réessaie.'
+            : 'Pas tout à fait… relis bien l’énoncé et réessaie.'
+        );
       }
-    } catch (e) {
+    } catch {
       setErreurApi(
-        "Impossible de valider ta réponse. Vérifie ta connexion et réessaie."
+        'Impossible de valider ta réponse. Vérifie ta connexion et réessaie.'
       );
     } finally {
       setEnCoursValidation(false);
     }
-  }, [reponse, exercise.id, tempsEcoule, nbIndices, enCoursValidation]);
-
-  const reessayer = useCallback(() => {
-    setEtape('enonce');
-    setResultat(null);
-    setReponse('');
-  }, []);
+  }, [
+    reponse,
+    enCoursValidation,
+    reussi,
+    exercise.id,
+    tempsEcoule,
+    nbIndices,
+    indices.length,
+    suivant,
+  ]);
 
   const lancerDecomposition = useCallback(async () => {
     setErreurApi(null);
@@ -118,7 +142,6 @@ export function ExerciceClient({
       setEtape('decomposition');
       return;
     }
-    // Sinon on demande à Claude
     try {
       const res = await fetch('/api/claude/decomposer', {
         method: 'POST',
@@ -136,7 +159,6 @@ export function ExerciceClient({
 
   const decompositionTerminee = useCallback(
     async (succes: boolean) => {
-      // On enregistre la tentative en mode décomposition
       try {
         await fetch('/api/progress', {
           method: 'POST',
@@ -152,42 +174,13 @@ export function ExerciceClient({
           }),
         });
       } catch {
-        // Tolère l'échec — la décomp a été affichée
+        /* tolère l'échec */
       }
       setEtape('fin_decomposition');
     },
     [exercise.id, tempsEcoule, nbIndices]
   );
 
-  const suivant = useCallback(async () => {
-    try {
-      const res = await fetch('/api/progress/next-exercise', {
-        method: 'GET',
-      });
-      if (!res.ok) {
-        router.push(retourHref);
-        return;
-      }
-      const data = (await res.json()) as
-        | { kind: 'exercise'; data: { id: string } }
-        | { kind: 'quiz'; data: { quiz_id: string; jour: number } }
-        | { kind: 'completed'; data: unknown };
-
-      if (data.kind === 'exercise' && data.data?.id) {
-        router.push(`/exercice/${data.data.id}`);
-      } else if (data.kind === 'quiz' && data.data?.jour) {
-        router.push(`/quiz/J${data.data.jour}`);
-      } else {
-        // 'completed' ou réponse inattendue → retour à l'accueil
-        router.push(retourHref);
-      }
-    } catch {
-      router.push(retourHref);
-    }
-  }, [router, retourHref]);
-
-  // Anti-blocage : passer DÉFINITIVEMENT l'exercice (statut 'reporte' côté serveur),
-  // puis avancer. Évite qu'un exercice invalidable bloque tout le marathon.
   const passerDefinitivement = useCallback(async () => {
     const ok = window.confirm(
       'Passer définitivement cette question ?\n\n' +
@@ -203,22 +196,17 @@ export function ExerciceClient({
     suivant();
   }, [exercise.id, suivant]);
 
-  // Touche Entrée → valider si réponse remplie et pas en feedback
+  // Ctrl/Cmd + Entrée → valider
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (etape !== 'enonce') return;
-      if (
-        e.key === 'Enter' &&
-        (e.metaKey || e.ctrlKey) &&
-        reponse &&
-        !enCoursValidation
-      ) {
+      if (etape !== 'enonce' || reussi) return;
+      if (e.key === 'Enter' && (e.metaKey || e.ctrlKey) && reponse && !enCoursValidation) {
         valider();
       }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [etape, reponse, valider, enCoursValidation]);
+  }, [etape, reponse, valider, enCoursValidation, reussi]);
 
   const renduFormulaire = () => {
     switch (exercise.type) {
@@ -234,17 +222,13 @@ export function ExerciceClient({
             }
             selection={reponse || null}
             onSelect={setReponse}
-            modeRevue={etape === 'feedback'}
-            reponseCorrecte={exercise.reponse_correcte}
+            desactive={reussi}
+            modeRevue={false}
           />
         );
       case 'numerique':
         return (
-          <ExerciceNumerique
-            valeur={reponse}
-            onChange={setReponse}
-            desactive={etape === 'feedback'}
-          />
+          <ExerciceNumerique valeur={reponse} onChange={setReponse} desactive={reussi} />
         );
       case 'redige_court':
       case 'redige_libre':
@@ -253,86 +237,62 @@ export function ExerciceClient({
             type={exercise.type}
             valeur={reponse}
             onChange={setReponse}
-            desactive={etape === 'feedback'}
+            desactive={reussi}
           />
         );
       default:
         return (
           <p className="text-amber-200 italic">
-            Type d'exercice « {exercise.type} » non encore supporté.
+            Type d&apos;exercice « {exercise.type} » non encore supporté.
           </p>
         );
     }
   };
 
   return (
-    <div className="relative">
+    <div className="relative flex flex-col">
       {/* HEADER spécifique exercice */}
-      <div className="bg-stone-900/90 backdrop-blur text-amber-100 px-4 py-3 flex items-center justify-between border-b-2 border-amber-700 sticky top-0 z-30">
+      <div className="bg-stone-900/90 backdrop-blur text-amber-100 px-4 py-2 flex items-center justify-between border-b-2 border-amber-700 sticky top-0 z-30">
         <BoutonQuitter href={retourHref} />
         <span className="text-xs uppercase tracking-wider opacity-80">
-          Jour {jourActuel} — Exercice {ordreAffiche}/{totalExosJour}
+          Jour {jourActuel} — Ex. {ordreAffiche}/{totalExosJour}
         </span>
-        <div className="flex items-center gap-3">
-          <ChronoExercice
-            pause={etape !== 'enonce'}
-            onTick={setTempsEcoule}
-            seuilTempsLongSec={SEUIL_TEMPS_LONG}
-          />
-          {/* Lampe indice — s'allume quand un indice est utilisé */}
-          <span
-            className={cn(
-              'text-lg transition-all',
-              nbIndices > 0
-                ? 'opacity-100 drop-shadow-[0_0_4px_rgba(252,211,77,0.9)]'
-                : 'opacity-30'
-            )}
-            title={`${nbIndices} indice(s) utilisé(s)`}
-            aria-label={`${nbIndices} indices utilisés`}
-          >
-            💡
-          </span>
-        </div>
+        <ChronoExercice
+          pause={etape !== 'enonce' || reussi}
+          onTick={setTempsEcoule}
+          seuilTempsLongSec={SEUIL_TEMPS_LONG}
+        />
       </div>
 
-      {/* PROGRESSION */}
-      <div className="bg-stone-800 px-4 py-2">
-        <div className="w-full bg-stone-700 rounded-full h-2 overflow-hidden">
+      {/* PROGRESSION (barre fine) */}
+      <div className="bg-stone-800 px-4 py-1.5">
+        <div className="w-full bg-stone-700 rounded-full h-1.5 overflow-hidden">
           <motion.div
-            className="bg-gradient-to-r from-amber-500 to-amber-300 h-2 rounded-full"
+            className="bg-gradient-to-r from-amber-500 to-amber-300 h-1.5 rounded-full"
             initial={{ width: 0 }}
             animate={{ width: `${progressionPct}%` }}
             transition={{ duration: 0.6 }}
           />
         </div>
-        <p className="text-amber-200 text-xs mt-1 text-center">
-          {nbMaitrisesJour} maîtrisé{nbMaitrisesJour > 1 ? 's' : ''} sur{' '}
-          {totalExosJour}
-        </p>
       </div>
 
       <PointsMaisonBadge
-        points={resultat?.points_gagnes ?? 0}
+        points={pointsGagnes}
         maison={exercise.maison_bonus}
-        visible={showPoints}
+        visible={reussi}
       />
 
-      <section className="max-w-2xl mx-auto px-4 py-6 space-y-4">
-        {/* NARRATION SCÈNE */}
-        {(exercise.scene_hp || exercise.narration) && (
-          <div className="parchemin rounded-lg p-4 border-2 border-amber-800/30">
+      <section className="w-full max-w-2xl mx-auto px-4 py-3 space-y-3">
+        {/* NARRATION (compacte) */}
+        {(exercise.scene_hp || exercise.narration) && etape === 'enonce' && (
+          <div className="parchemin rounded-lg px-3 py-2 border border-amber-800/30">
             {exercise.scene_hp && (
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-2xl" aria-hidden="true">
-                  🪄
-                </span>
-                <h2 className="text-amber-900 font-bold uppercase text-xs tracking-widest">
-                  {exercise.scene_hp}
-                </h2>
-              </div>
+              <span className="text-amber-900 font-bold uppercase text-[10px] tracking-widest">
+                🪄 {exercise.scene_hp}
+              </span>
             )}
             {exercise.narration && (
-              <p className="text-stone-700 italic text-sm leading-relaxed">
+              <p className="text-stone-700 italic text-xs leading-snug">
                 {exercise.narration}
               </p>
             )}
@@ -340,36 +300,37 @@ export function ExerciceClient({
         )}
 
         {/* ÉNONCÉ */}
-        <div className="bg-white rounded-lg p-5 shadow-lg border border-stone-200">
-          <div className="flex items-start justify-between mb-3 gap-2">
-            <span className="bg-amber-100 text-amber-900 text-xs font-bold px-2 py-1 rounded">
-              {exercise.theme}
-            </span>
-            <span className="text-xs text-stone-500 shrink-0">
-              +{exercise.points_maison ?? 5} pts maison
-            </span>
-          </div>
-          <p className="text-lg leading-relaxed text-stone-900">
-            {exercise.enonce}
-          </p>
-          {exercise.image_url && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={exercise.image_url}
-              alt=""
-              className="mt-3 rounded-lg max-h-64 mx-auto"
-            />
-          )}
-        </div>
-
-        {/* Indices déjà révélés (inline) */}
-        {nbIndices > 0 && etape === 'enonce' && (
-          <div className="bg-amber-900/30 border border-amber-700/40 rounded-lg p-3">
-            <p className="text-xs uppercase tracking-wider text-amber-300 mb-2">
-              <span aria-hidden="true">💡</span> Indice
-              {nbIndices > 1 ? 's' : ''} ({nbIndices})
+        {etape === 'enonce' && (
+          <div className="bg-white rounded-lg p-4 shadow-lg border border-stone-200">
+            <div className="flex items-start justify-between mb-2 gap-2">
+              <span className="bg-amber-100 text-amber-900 text-xs font-bold px-2 py-0.5 rounded">
+                {exercise.theme}
+              </span>
+              <span className="text-xs text-stone-500 shrink-0">
+                +{exercise.points_maison || 5} pts maison
+              </span>
+            </div>
+            <p className="text-base leading-relaxed text-stone-900">
+              {exercise.enonce}
             </p>
-            <ul className="space-y-1">
+            {exercise.image_url && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={exercise.image_url}
+                alt=""
+                className="mt-2 rounded-lg max-h-44 mx-auto"
+              />
+            )}
+          </div>
+        )}
+
+        {/* Indices révélés (sur erreur) */}
+        {nbIndices > 0 && etape === 'enonce' && !reussi && (
+          <div className="bg-amber-900/30 border border-amber-700/40 rounded-lg px-3 py-2">
+            <p className="text-[10px] uppercase tracking-wider text-amber-300 mb-1">
+              <span aria-hidden="true">💡</span> Indice{nbIndices > 1 ? 's' : ''}
+            </p>
+            <ul className="space-y-0.5">
               {indices.slice(0, nbIndices).map((ind, i) => (
                 <li key={i} className="text-sm text-amber-100">
                   <strong>{i + 1}.</strong> {ind.texte}
@@ -379,90 +340,83 @@ export function ExerciceClient({
           </div>
         )}
 
-        {/* CORPS — formulaire OU décomposition OU feedback */}
-        {etape === 'enonce' && (
+        {/* ÉTAT : bonne réponse → félicitation + enchaînement auto */}
+        {reussi && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="rounded-2xl p-5 border-2 border-green-500 bg-gradient-to-br from-green-100 to-emerald-50 text-center shadow-xl"
+            role="status"
+            aria-live="polite"
+          >
+            <div className="text-4xl mb-1" aria-hidden="true">
+              ✨
+            </div>
+            <p className="font-bold text-lg text-green-800">Bravo !</p>
+            {pointsGagnes > 0 && (
+              <p className="text-amber-700 font-bold">
+                +{pointsGagnes} point{pointsGagnes > 1 ? 's' : ''} pour ta maison ⚡
+              </p>
+            )}
+            <p className="mt-2 text-sm text-green-700 inline-flex items-center gap-2">
+              <span className="inline-block w-4 h-4 rounded-full border-2 border-green-300 border-t-green-700 animate-spin" />
+              Question suivante…
+            </p>
+          </motion.div>
+        )}
+
+        {/* CORPS interactif (tant qu'on n'a pas réussi) */}
+        {etape === 'enonce' && !reussi && (
           <>
             {renduFormulaire()}
 
+            {flashErreur && (
+              <p
+                role="status"
+                aria-live="polite"
+                className="text-amber-100 text-sm bg-amber-900/40 border border-amber-600/50 rounded-lg px-3 py-2"
+              >
+                {flashErreur}
+              </p>
+            )}
             {erreurApi && (
               <p
                 role="alert"
-                className="text-red-300 text-sm bg-red-900/40 border border-red-700/50 rounded p-2"
+                className="text-red-200 text-sm bg-red-900/40 border border-red-700/50 rounded px-3 py-2"
               >
                 {erreurApi}
               </p>
             )}
 
-            {/* ACTIONS */}
-            <div className="flex gap-2 pt-2">
-              <button
-                type="button"
-                onClick={() => setIndiceOuvert(true)}
-                disabled={!peutIndice}
-                className="flex-1 bg-stone-200 hover:bg-stone-300 disabled:opacity-50 disabled:cursor-not-allowed text-stone-700 font-semibold py-3 rounded-lg flex items-center justify-center gap-2 text-sm"
-                aria-label={
-                  peutIndice
-                    ? `Demander un indice (${indices[nbIndices]?.cout_points ?? 1} point)`
-                    : 'Plus d\'indice disponible'
-                }
-              >
-                <span aria-hidden="true">💡</span> Indice
-                {peutIndice && (
-                  <span className="text-xs opacity-70">
-                    (-{indices[nbIndices]?.cout_points ?? 1} pt)
-                  </span>
-                )}
-              </button>
-              <button
-                type="button"
-                onClick={lancerDecomposition}
-                disabled={!peutDecomposer}
-                className={cn(
-                  'flex-1 font-semibold py-3 rounded-lg flex items-center justify-center gap-2 text-sm transition-all',
-                  peutDecomposer
-                    ? 'bg-purple-600 hover:bg-purple-500 text-white animate-pulse'
-                    : 'bg-stone-200 text-stone-500 cursor-not-allowed opacity-50'
-                )}
-                aria-label={
-                  peutDecomposer
-                    ? 'Décomposer l\'exercice en étapes'
-                    : 'Décomposition disponible après 2 erreurs ou 4 minutes'
-                }
-              >
-                <span aria-hidden="true">🪄</span>
-                {peutDecomposer
-                  ? 'Décomposer en étapes'
-                  : 'Aide (bientôt)'}
-              </button>
-            </div>
-
             <button
               type="button"
               onClick={valider}
               disabled={!reponse || enCoursValidation}
-              className="w-full btn-gryffondor py-4 text-lg mt-4 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full btn-gryffondor py-3 text-lg shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {enCoursValidation
-                ? 'Validation…'
-                : 'Valider ma réponse ✓'}
+              {enCoursValidation ? 'Validation…' : 'Valider ✓'}
             </button>
-          </>
-        )}
 
-        {etape === 'feedback' && resultat && (
-          <FeedbackPanel
-            estCorrecte={resultat.correct}
-            indetermine={resultat.indetermine}
-            pointsGagnes={resultat.points_gagnes}
-            maitrise={resultat.maitrise}
-            explication={exercise.explication_correcte}
-            feedbackClaude={resultat.feedback ?? null}
-            onSuivant={suivant}
-            onReessayer={reessayer}
-            proposerDecomposition={nbErreurs >= 1}
-            onDecomposer={lancerDecomposition}
-            onPasserDefinitivement={passerDefinitivement}
-          />
+            {/* Anti-blocage : visible seulement après 2 erreurs / temps long */}
+            {peutDecomposer && (
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={lancerDecomposition}
+                  className="flex-1 bg-purple-600 hover:bg-purple-500 text-white font-semibold py-2.5 rounded-lg text-sm"
+                >
+                  🪄 Voir les étapes
+                </button>
+                <button
+                  type="button"
+                  onClick={passerDefinitivement}
+                  className="flex-1 bg-stone-700 hover:bg-stone-600 text-amber-100 font-semibold py-2.5 rounded-lg text-sm"
+                >
+                  Passer →
+                </button>
+              </div>
+            )}
+          </>
         )}
 
         {etape === 'decomposition' && decomposition && (
@@ -486,14 +440,6 @@ export function ExerciceClient({
           />
         )}
       </section>
-
-      <IndiceModal
-        ouvert={indiceOuvert}
-        indices={indices}
-        nbUtilises={nbIndices}
-        onConfirmerProchain={utiliserIndice}
-        onFermer={() => setIndiceOuvert(false)}
-      />
     </div>
   );
 }

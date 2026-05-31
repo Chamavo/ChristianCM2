@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 
@@ -25,9 +26,12 @@ export function BoutonQuitter({
   className = '',
 }: BoutonQuitterProps) {
   const router = useRouter();
+  const [partir, setPartir] = useState(false);
 
   const quitter = () => {
+    if (partir) return;
     if (confirmMessage && !window.confirm(confirmMessage)) return;
+    setPartir(true);
     router.push(href);
   };
 
@@ -35,19 +39,30 @@ export function BoutonQuitter({
     <motion.button
       type="button"
       onClick={quitter}
+      disabled={partir}
+      aria-busy={partir}
       aria-label={`${label} (ta progression est sauvegardée)`}
       title="Quitter — ta progression est sauvegardée"
-      whileHover={{ scale: 1.08, rotate: -8 }}
-      whileTap={{ scale: 0.92, x: 6, rotate: 4 }}
-      className={`group inline-flex items-center gap-1.5 rounded-full bg-amber-900/40 hover:bg-amber-800/60 border border-amber-600/40 px-3 py-1.5 text-amber-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 ${className}`}
+      whileHover={partir ? undefined : { scale: 1.08, rotate: -8 }}
+      whileTap={partir ? undefined : { scale: 0.92, x: 6, rotate: 4 }}
+      className={`group inline-flex items-center gap-1.5 rounded-full bg-amber-900/40 hover:bg-amber-800/60 border border-amber-600/40 px-3 py-1.5 text-amber-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 disabled:cursor-wait ${className}`}
     >
-      <span
-        className="text-xl leading-none transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-        aria-hidden="true"
-      >
-        🧹
+      {partir ? (
+        <span
+          className="inline-block w-4 h-4 rounded-full border-2 border-amber-200/40 border-t-amber-100 animate-spin"
+          aria-hidden="true"
+        />
+      ) : (
+        <span
+          className="text-xl leading-none transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+          aria-hidden="true"
+        >
+          🧹
+        </span>
+      )}
+      <span className="text-xs font-semibold uppercase tracking-wide">
+        {partir ? 'Sortie…' : label}
       </span>
-      <span className="text-xs font-semibold uppercase tracking-wide">{label}</span>
     </motion.button>
   );
 }
